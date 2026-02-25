@@ -1,0 +1,478 @@
+# 🧭 Polymath Compass Vocabulary Extension
+# Version: 1.0
+# Purpose: Extends controlled-vocabulary.yaml with life quadrant mappings
+# Last Updated: 2026-01-28
+# Usage: Import alongside controlled-vocabulary.yaml for compass readings
+
+---
+
+# =============================================================================
+# LIFE QUADRANTS - THE FOUR DOMAINS
+# =============================================================================
+
+life_quadrants:
+  description: "The four domains of a well-lived polymathic life"
+  
+  vocation:
+    name: "Vocation (Soul Work)"
+    definition: "What you love + what you're good at + what the world needs + what you can be paid for"
+    energy_state: "Flow, high meaning, sustainable intensity"
+    muse: "Calliope (Epic Poetry)"
+    hormone_primary: "Dopamine"
+    hormone_secondary: "Oxytocin"
+    time_allocation: "40-60% of creative hours"
+    enneagram_affinities:
+      - type: 5
+        role: "Integration target (5→8)"
+      - type: 4
+        role: "Natural home (authentic expression)"
+      - type: 8
+        role: "Natural home (decisive action)"
+    indicators:
+      - "Creates tangible output"
+      - "Serves others meaningfully"
+      - "Generates sustainable income"
+      - "Feels deeply aligned"
+      - "Would do even without payment (but deserves payment)"
+    vault_mappings:
+      - para: "Projects"
+        confidence: 0.85
+      - para: "Areas (active)"
+        confidence: 0.70
+
+  occupation:
+    name: "Occupation (Craft Work)"
+    definition: "What you're good at + what you can be paid for (may or may not love)"
+    energy_state: "Competence, steady, sustainable"
+    muse: "Polymnia (Hymns/Sacred Work)"
+    hormone_primary: "Endorphins"
+    hormone_secondary: "Cortisol (regulated)"
+    time_allocation: "20-35% of total hours"
+    enneagram_affinities:
+      - type: 1
+        role: "Natural home (perfectionism in craft)"
+      - type: 3
+        role: "Natural home (achievement)"
+      - type: 6
+        role: "Natural home (reliable service)"
+    indicators:
+      - "Pays bills consistently"
+      - "Uses developed skills"
+      - "May feel detached but competent"
+      - "Foundation for vocation to exist"
+      - "Craft practice with market value"
+    vault_mappings:
+      - para: "Areas (Skills-Development)"
+        confidence: 0.80
+      - para: "Resources (practical guides)"
+        confidence: 0.60
+
+  recreation:
+    name: "Recreation (Rest and Play)"
+    definition: "What you love (but not for work or purpose)"
+    energy_state: "Restoration, joy, non-productive being"
+    muse: "Thalia (Comedy)"
+    hormone_primary: "Serotonin"
+    hormone_secondary: "Dopamine (low-stakes)"
+    time_allocation: "10-20% of waking hours"
+    enneagram_affinities:
+      - type: 7
+        role: "Natural home (novelty for joy)"
+      - type: 9
+        role: "Natural home (peace and comfort)"
+      - type: 4
+        role: "Aesthetic absorption"
+    indicators:
+      - "No ulterior motive"
+      - "Body-based, not just mind-based"
+      - "Actually restores energy"
+      - "Not 'productive rest'"
+      - "Fun without guilt"
+    vault_mappings:
+      - para: "Resources (pure enjoyment)"
+        confidence: 0.70
+      - domain: "Fiction"
+        confidence: 0.80
+      - domain: "Music"
+        confidence: 0.75
+    warning_signs:
+      - "Research disguised as fun"
+      - "Accumulation disguised as hobby"
+      - "Learning for 'maybe someday'"
+
+  triage:
+    name: "Triage (Sorting and Deciding)"
+    definition: "Deciding where things go, what to release, what to hold"
+    energy_state: "Executive function, discernment, temporary attention"
+    muse: "Urania (Astronomy/Navigation)"
+    hormone_primary: "Cortisol (acute)"
+    hormone_secondary: "Norepinephrine"
+    time_allocation: "5-15% (concentrated, not distributed)"
+    enneagram_affinities:
+      - type: 5
+        role: "Over-investment trap"
+      - type: 1
+        role: "Perfecting the system"
+      - type: 6
+        role: "Contingency planning"
+    indicators:
+      - "Decision-pending items"
+      - "Not yet categorized"
+      - "Requires active choice"
+      - "Temporary state (should resolve)"
+    vault_mappings:
+      - para: "Resources (unprocessed)"
+        confidence: 0.90
+      - para: "Archives (holding)"
+        confidence: 0.50
+    actions:
+      promote: "Move to Vocation or Occupation"
+      archive: "Move to Archives with completion"
+      release: "Delete with gratitude"
+      defer: "Bookmark + 30-day revisit (max 1 cycle)"
+
+# =============================================================================
+# MUSE-QUADRANT ALIGNMENT
+# =============================================================================
+
+muse_quadrant_alignment:
+  description: "How each Muse relates to the four life quadrants"
+  
+  calliope:
+    name: "Calliope (Epic Poetry)"
+    primary_quadrant: "vocation"
+    secondary_quadrant: "occupation"
+    enneagram: 7
+    hormone: "Testosterone"
+    invocation: "For grand creative works that serve the world"
+    
+  clio:
+    name: "Clio (History)"
+    primary_quadrant: "triage"
+    secondary_quadrant: "vocation"
+    enneagram: 2
+    hormone: "Oxytocin"
+    invocation: "For learning from the past to serve the present"
+    
+  erato:
+    name: "Erato (Love Poetry)"
+    primary_quadrant: "recreation"
+    secondary_quadrant: "vocation"
+    enneagram: 6
+    hormone: "Estrogen"
+    invocation: "For connection and emotional expression"
+    
+  euterpe:
+    name: "Euterpe (Music)"
+    primary_quadrant: "recreation"
+    secondary_quadrant: "occupation"
+    enneagram: 3
+    hormone: "Endorphins"
+    invocation: "For the harmony of body and achievement"
+    
+  melpomene:
+    name: "Melpomene (Tragedy)"
+    primary_quadrant: "triage"
+    secondary_quadrant: "recreation"
+    enneagram: 5
+    hormone: "Cortisol"
+    invocation: "For deep knowledge and understanding shadows"
+    note: "⚠️ Your dominant Muse - watch for over-invocation"
+    
+  polymnia:
+    name: "Polymnia (Hymns)"
+    primary_quadrant: "occupation"
+    secondary_quadrant: "vocation"
+    enneagram: 1
+    hormone: "Melatonin"
+    invocation: "For sacred craft and perfected practice"
+    
+  terpsichore:
+    name: "Terpsichore (Dance)"
+    primary_quadrant: "vocation"
+    secondary_quadrant: "recreation"
+    enneagram: 8
+    hormone: "Adrenaline"
+    invocation: "For embodied action and decisive movement"
+    note: "⭐ Integration target Muse - invoke more often"
+    
+  thalia:
+    name: "Thalia (Comedy)"
+    primary_quadrant: "recreation"
+    secondary_quadrant: "vocation"
+    enneagram: 4
+    hormone: "Dopamine"
+    invocation: "For joy, play, and lightness of being"
+    
+  urania:
+    name: "Urania (Astronomy)"
+    primary_quadrant: "triage"
+    secondary_quadrant: "occupation"
+    enneagram: 9
+    hormone: "Serotonin"
+    invocation: "For navigation, perspective, and pattern-seeing"
+
+# =============================================================================
+# ENNEAGRAM QUADRANT DISTRIBUTION
+# =============================================================================
+
+enneagram_quadrant_patterns:
+  description: "How each type naturally distributes energy across quadrants"
+  
+  type_1:
+    name: "Reformer"
+    over_invests: "triage"
+    under_invests: "recreation"
+    healthy_balance: { vocation: 35, occupation: 35, recreation: 15, triage: 15 }
+    integration_move: "Accept 'good enough' in vocation"
+    
+  type_2:
+    name: "Helper"
+    over_invests: "vocation (for others)"
+    under_invests: "recreation (self-care)"
+    healthy_balance: { vocation: 40, occupation: 25, recreation: 25, triage: 10 }
+    integration_move: "Include own desires in vocation"
+    
+  type_3:
+    name: "Achiever"
+    over_invests: "occupation"
+    under_invests: "recreation (being vs doing)"
+    healthy_balance: { vocation: 40, occupation: 30, recreation: 20, triage: 10 }
+    integration_move: "Vocation that doesn't need external applause"
+    
+  type_4:
+    name: "Individualist"
+    over_invests: "recreation (aesthetic absorption)"
+    under_invests: "occupation"
+    healthy_balance: { vocation: 45, occupation: 20, recreation: 25, triage: 10 }
+    integration_move: "Commit to disciplined craft practice"
+    
+  type_5:
+    name: "Investigator"
+    over_invests: "triage (accumulation)"
+    under_invests: "vocation (output)"
+    healthy_balance: { vocation: 45, occupation: 25, recreation: 15, triage: 15 }
+    integration_move: "Transform knowledge into creation (5→8)"
+    note: "⚠️ YOUR PRIMARY TYPE - 75.5% of collection"
+    stress_indicator: ">40% in triage = accumulation trap"
+    integration_indicator: ">30% in vocation = healthy flow"
+    
+  type_6:
+    name: "Loyalist"
+    over_invests: "triage (contingency planning)"
+    under_invests: "vocation (risk-taking)"
+    healthy_balance: { vocation: 35, occupation: 35, recreation: 20, triage: 10 }
+    integration_move: "Commit to uncertain callings"
+    
+  type_7:
+    name: "Enthusiast"
+    over_invests: "recreation (novelty seeking)"
+    under_invests: "triage (sitting with discomfort)"
+    healthy_balance: { vocation: 40, occupation: 25, recreation: 20, triage: 15 }
+    integration_move: "Depth over breadth in vocation"
+    note: "Stress path destination for Type 5"
+    
+  type_8:
+    name: "Challenger"
+    over_invests: "vocation (impact)"
+    under_invests: "recreation (vulnerability)"
+    healthy_balance: { vocation: 45, occupation: 30, recreation: 15, triage: 10 }
+    integration_move: "Sustainable occupation, not just bursts"
+    note: "⭐ Integration destination for Type 5"
+    
+  type_9:
+    name: "Peacemaker"
+    over_invests: "recreation (numbing)"
+    under_invests: "triage (expressing preferences)"
+    healthy_balance: { vocation: 35, occupation: 30, recreation: 25, triage: 10 }
+    integration_move: "Declare vocational identity clearly"
+
+# =============================================================================
+# PARA → QUADRANT TRANSLATION
+# =============================================================================
+
+para_quadrant_translation:
+  description: "How PARA categories map to life quadrants"
+  
+  projects:
+    primary_quadrant: "vocation"
+    secondary_quadrant: "occupation"
+    confidence: 0.85
+    note: "Active creation = almost always vocation"
+    
+  areas:
+    Skills-Development:
+      primary_quadrant: "occupation"
+      secondary_quadrant: "vocation"
+      confidence: 0.75
+    Other:
+      primary_quadrant: "occupation"
+      confidence: 0.70
+      
+  resources:
+    default:
+      primary_quadrant: "triage"
+      confidence: 0.60
+      note: "Most resources need quadrant decision"
+    Knowledge/Research:
+      primary_quadrant: "triage"
+      confidence: 0.85
+      warning: "⚠️ 50.6% of collection - accumulation trap indicator"
+    Health/Wellness:
+      primary_quadrant: "occupation"
+      secondary_quadrant: "recreation"
+      confidence: 0.70
+    Fiction:
+      primary_quadrant: "recreation"
+      confidence: 0.80
+    Occult:
+      primary_quadrant: "vocation"
+      secondary_quadrant: "recreation"
+      confidence: 0.65
+      note: "Depends on creative output intention"
+    Technology:
+      primary_quadrant: "occupation"
+      secondary_quadrant: "vocation"
+      confidence: 0.70
+      
+  archives:
+    primary_quadrant: "completed"
+    note: "Archives are resolved triage - neither quadrant nor burden"
+
+# =============================================================================
+# HORMONAL FLOW STATES
+# =============================================================================
+
+hormonal_quadrant_mapping:
+  description: "Optimal hormonal states for each quadrant"
+  
+  vocation:
+    primary_hormone: "dopamine"
+    secondary_hormone: "oxytocin"
+    state: "Creative flow with connection"
+    signs_of_health:
+      - "Time disappears while working"
+      - "Feel proud of output"
+      - "Want to share with others"
+      - "Sustainable energy after"
+    signs_of_imbalance:
+      - "Chasing dopamine hits without output"
+      - "Creating in isolation without service"
+      
+  occupation:
+    primary_hormone: "endorphins"
+    secondary_hormone: "cortisol_regulated"
+    state: "Steady competent production"
+    signs_of_health:
+      - "Reliable output quality"
+      - "Recovery possible after work"
+      - "Skills developing over time"
+    signs_of_imbalance:
+      - "Burnout cycles"
+      - "No joy, only competence"
+      
+  recreation:
+    primary_hormone: "serotonin"
+    secondary_hormone: "dopamine_lowstakes"
+    state: "Contentment without striving"
+    signs_of_health:
+      - "Actually feel rested after"
+      - "Body included, not just mind"
+      - "No guilt attached"
+    signs_of_imbalance:
+      - "Recreation as escape"
+      - "Numbing instead of restoring"
+      
+  triage:
+    primary_hormone: "cortisol"
+    secondary_hormone: "norepinephrine"
+    state: "Acute focus for decision-making"
+    signs_of_health:
+      - "Decisions actually made"
+      - "Items move out of triage"
+      - "Brief, concentrated sessions"
+    signs_of_imbalance:
+      - "Chronic low-grade triage (sorting without deciding)"
+      - "Cortisol never resolving"
+      - "Pile grows despite 'organizing'"
+
+# =============================================================================
+# DECISION FRAMEWORK
+# =============================================================================
+
+triage_decision_tree:
+  description: "How to move items out of triage"
+  
+  promote_to_vocation:
+    conditions:
+      - "Will create tangible output"
+      - "Serves your authentic calling"
+      - "Can set a deadline"
+      - "Has integration potential (5→8)"
+    action: "Add to Projects, set creation intention"
+    
+  promote_to_occupation:
+    conditions:
+      - "Develops marketable skill"
+      - "Practical application clear"
+      - "Part of craft practice"
+    action: "Add to Areas/Skills-Development"
+    
+  categorize_as_recreation:
+    conditions:
+      - "Pure enjoyment intent"
+      - "No output expectation"
+      - "Not research disguised as fun"
+    action: "Consume and release (no hoarding)"
+    
+  archive_with_completion:
+    conditions:
+      - "Already extracted value"
+      - "Reference value only"
+      - "No action remaining"
+    action: "Move to Archives with summary note"
+    
+  release_entirely:
+    conditions:
+      - "No value extracted or extractable"
+      - "Acquired for wrong reasons"
+      - "Duplicate of something better"
+      - "Sitting >1 year untouched"
+    action: "Delete without backup"
+
+# =============================================================================
+# WEEKLY COMPASS RITUAL
+# =============================================================================
+
+weekly_practice:
+  name: "The Sunday Compass"
+  duration: "15 minutes"
+  
+  questions:
+    vocation: "What did I CREATE this week from what I know?"
+    occupation: "What craft did I practice for its own sake?"
+    recreation: "What did I enjoy with no ulterior motive?"
+    triage: "What did I DECIDE to release, not just defer?"
+    
+  journaling_prompt: |
+    This week, the Muse who visited most was ______.
+    The Muse I needed but ignored was ______.
+    One thing I can promote from Triage to Vocation is ______.
+    One thing I can release entirely is ______.
+    
+  integration_check: |
+    Am I moving toward Type 8 (decisive action)?
+    Or am I scattering toward Type 7 (more novelty)?
+
+# =============================================================================
+# NOTES
+# =============================================================================
+
+notes:
+  - "This vocabulary extends controlled-vocabulary.yaml for compass readings"
+  - "Primary use case: Type 5 integration (accumulation → creation)"
+  - "Vocation hour daily is the core intervention"
+  - "Triage should be ≤15% of attention; >40% = accumulation trap"
+  - "Recreation must be body-based, not just mind-rest"
+  - "The goal is not less curiosity, but channeled curiosity"
+  - "Weekly compass practice prevents drift"

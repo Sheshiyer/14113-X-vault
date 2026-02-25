@@ -1,0 +1,640 @@
+# ⭐ Controlled Vocabulary - Proven Taxonomies
+# 📊 Version: 2.0 (Skills Edition)
+# 🔍 Source: 4 Complete Migrations (3,565 files, 32.63 GB)
+# 📅 Last Updated: 2026-01-25
+# ✅ Status: REALITY-TESTED (not theoretical)
+
+---
+
+# =============================================================================
+# METADATA
+# =============================================================================
+metadata:
+  version: "2.0"
+  framework: "Greek Muses Enneagram + PARA"
+  migrations_analyzed: 4
+  total_files_processed: 3565
+  total_size: "32.63 GB"
+  migrations:
+    - name: "Mushroom Collection"
+      files: 467
+      date: "2026-01-24"
+    - name: "Research Collection"  
+      files: 1050
+      date: "2026-01-24"
+    - name: "EPUB + PDFS"
+      files: 2048
+      date: "2026-01-25"
+    - name: "Audio Books"
+      files: ~350
+      date: "2026-01-24"
+  
+  collection_archetype: "The Eclectic Scholar (Type 5→4→7)"
+  archetype_notes: "Type 5 dominant (75.5%), stress path to Type 7 visible (Knowledge accumulation), integration path to Type 8 needed (action over accumulation)"
+
+# =============================================================================
+# PARA STRUCTURE DISTRIBUTION (PROVEN)
+# =============================================================================
+para_structure:
+  distribution:
+    Resources: 
+      count: 1823
+      percentage: 89.0
+      note: "Expected for reference library - knowledge accumulation"
+    Areas:
+      count: 192
+      percentage: 9.4
+      note: "Skills-Development - actionable ongoing work"
+    Projects:
+      count: 33
+      percentage: 1.6
+      note: "Phassion only - active research project"
+    Archives:
+      count: 0
+      percentage: 0.0
+      note: "Not used in current migrations"
+  
+  routing_logic:
+    - rule: "Books/Papers → Resources (default 89%)"
+    - rule: "Skills/Guides → Areas (9.4%)"
+    - rule: "Active research → Projects (1.6%)"
+    - rule: "Reference material → Resources"
+
+# =============================================================================
+# ENNEAGRAM CLASSIFICATION SYSTEM (PROVEN)
+# =============================================================================
+enneagram:
+  distribution:
+    type_5:
+      name: "Type 5 - Melpomene (Investigator)"
+      count: 1546
+      percentage: 75.5
+      muse: "Melpomene (Tragedy)"
+      hormone_primary: "Cortisol"
+      hormone_challenge: "Cortisol (information overwhelm)"
+      traits: "Knowledge accumulation, research, analysis, investigation"
+      note: "DOMINANT - Reflects Eclectic Scholar archetype"
+      stress_path: "Type 5 → Type 7 (scatter, hyperconsumption)"
+      integration_path: "Type 5 → Type 8 (action, decisive implementation)"
+    
+    type_3:
+      name: "Type 3 - Euterpe (Achiever/Healer)"
+      count: 112
+      percentage: 5.5
+      muse: "Euterpe (Music)"
+      hormone_primary: "Endorphins"
+      hormone_reward: "Endorphins (achievement high)"
+      traits: "Health, wellness, healing, achievement, optimization"
+    
+    type_8:
+      name: "Type 8 - Terpsichore (Challenger)"
+      count: 100
+      percentage: 4.9
+      muse: "Terpsichore (Dance)"
+      hormone_primary: "Adrenaline"
+      hormone_expansion: "Testosterone (dominance)"
+      traits: "Power analysis, systems, control, critical thinking"
+    
+    type_1:
+      name: "Type 1 - Polymnia (Reformer)"
+      count: 87
+      percentage: 4.2
+      muse: "Polymnia (Hymns)"
+      hormone_primary: "Melatonin"
+      hormone_regulation: "Melatonin (order, precision)"
+      traits: "Sacred geometry, systems thinking, perfectionism"
+    
+    type_4:
+      name: "Type 4 - Thalia (Individualist)"
+      count: 80
+      percentage: 3.9
+      muse: "Thalia (Comedy)"
+      hormone_primary: "Dopamine"
+      hormone_variety: "Dopamine (novelty seeking)"
+      traits: "Occult, mysticism, individualism, unique paths"
+    
+    type_7:
+      name: "Type 7 - Calliope (Enthusiast)"
+      count: 46
+      percentage: 2.2
+      muse: "Calliope (Epic Poetry)"
+      hormone_primary: "Testosterone"
+      hormone_expansion: "Testosterone (adventure)"
+      traits: "Hidden history, alternative science, exploration"
+    
+    type_6:
+      name: "Type 6 - Erato (Loyalist)"
+      count: 31
+      percentage: 1.5
+      muse: "Erato (Love Poetry)"
+      hormone_primary: "Estrogen"
+      hormone_bonding: "Oxytocin (security through connection)"
+      traits: "Law, systems, loyalty, security"
+    
+    type_9:
+      name: "Type 9 - Urania (Peacemaker)"
+      count: 26
+      percentage: 1.3
+      muse: "Urania (Astronomy)"
+      hormone_primary: "Serotonin"
+      hormone_peace: "Serotonin (contentment)"
+      traits: "Consciousness, meditation, peace, harmony"
+    
+    type_2:
+      name: "Type 2 - Clio (Helper)"
+      count: 20
+      percentage: 1.0
+      muse: "Clio (History)"
+      hormone_primary: "Oxytocin"
+      hormone_connection: "Oxytocin (bonding)"
+      traits: "Personal development, helping, service"
+
+  classification_metrics:
+    average_confidence: 0.623
+    min_confidence: 0.600
+    max_confidence: 0.850
+    threshold: 0.600
+
+# =============================================================================
+# DOMAIN TAXONOMY (35 ACTUAL DESTINATIONS)
+# =============================================================================
+domains:
+  # Top-level categories (14 total)
+  categories:
+    - Knowledge               # 1036 files (56.8% of Resources)
+    - Skills-Development      # 192 files (9.4% - in Areas)
+    - Health                  # 167 files (9.2% of Resources)
+    - Occult                  # 129 files (7.1% of Resources)
+    - Technology              # 102 files (5.6% of Resources)
+    - Alternative-Science     # 97 files (5.3% of Resources)
+    - Critical-Thinking       # 92 files (5.0% of Resources)
+    - General                 # 72 files (3.9% of Resources)
+    - Consciousness           # 37 files (2.0% of Resources)
+    - Spirituality            # 36 files (2.0% of Resources)
+    - Personal-Development    # 17 files (0.9% of Resources)
+    - Nature                  # 15 files (0.8% of Resources)
+    - Law                     # 12 files (0.7% of Resources)
+    - Philosophy              # 7 files (0.4% of Resources)
+    - Economics               # 4 files (0.2% of Resources)
+  
+  # Full 35 subdomain paths (exact destinations)
+  subdomains:
+    - path: "Knowledge/Research"
+      count: 1036
+      percentage: 50.6
+      para: "Resources"
+      note: "Largest category - general knowledge accumulation"
+    
+    - path: "Skills-Development"
+      count: 192
+      percentage: 9.4
+      para: "Areas"
+      note: "Actionable skill-building (not passive reading)"
+    
+    - path: "Health/Wellness"
+      count: 81
+      percentage: 4.0
+      para: "Resources"
+    
+    - path: "Occult/Esoteric-Knowledge"
+      count: 78
+      percentage: 3.8
+      para: "Resources"
+    
+    - path: "General/Uncategorized"
+      count: 72
+      percentage: 3.5
+      para: "Resources"
+      note: "Catch-all for unclear classifications"
+    
+    - path: "Health/Medicinal-Mushrooms"
+      count: 70
+      percentage: 3.4
+      para: "Resources"
+      note: "Cross-collection integration (books + papers)"
+    
+    - path: "Technology/Engineering"
+      count: 59
+      percentage: 2.9
+      para: "Resources"
+    
+    - path: "Alternative-Science/Hidden-History"
+      count: 54
+      percentage: 2.6
+      para: "Resources"
+    
+    - path: "Critical-Thinking/Hidden-Knowledge"
+      count: 39
+      percentage: 1.9
+      para: "Resources"
+    
+    - path: "Phassion/Research"
+      count: 33
+      percentage: 1.6
+      para: "Projects"
+      note: "Only active project - wearable bioelectronics research"
+    
+    - path: "Critical-Thinking/Power-Analysis"
+      count: 29
+      percentage: 1.4
+      para: "Resources"
+    
+    - path: "Spirituality/Mysticism"
+      count: 25
+      percentage: 1.2
+      para: "Resources"
+    
+    - path: "Critical-Thinking/David-Icke"
+      count: 24
+      percentage: 1.2
+      para: "Resources"
+      note: "Author-specific subcategory"
+    
+    - path: "Technology/MEMS"
+      count: 24
+      percentage: 1.2
+      para: "Resources"
+      note: "Micro-Electro-Mechanical Systems - Phassion related"
+    
+    - path: "Occult/Ceremonial-Magic"
+      count: 22
+      percentage: 1.1
+      para: "Resources"
+    
+    - path: "Alternative-Science/Exploration"
+      count: 19
+      percentage: 0.9
+      para: "Resources"
+    
+    - path: "Technology/Electromagnetics"
+      count: 19
+      percentage: 0.9
+      para: "Resources"
+    
+    - path: "Occult/Hermetic-Alchemy"
+      count: 18
+      percentage: 0.9
+      para: "Resources"
+    
+    - path: "Alternative-Science/Water-Science"
+      count: 17
+      percentage: 0.8
+      para: "Resources"
+    
+    - path: "Personal-Development/Growth"
+      count: 17
+      percentage: 0.8
+      para: "Resources"
+    
+    - path: "Consciousness/Altered-States"
+      count: 16
+      percentage: 0.8
+      para: "Resources"
+    
+    - path: "Nature/Permaculture"
+      count: 15
+      percentage: 0.7
+      para: "Resources"
+    
+    - path: "Law/Legal-Systems"
+      count: 12
+      percentage: 0.6
+      para: "Resources"
+    
+    - path: "Spirituality/Personal-Journey"
+      count: 11
+      percentage: 0.5
+      para: "Resources"
+    
+    - path: "Consciousness/Psychedelics"
+      count: 11
+      percentage: 0.5
+      para: "Resources"
+    
+    - path: "Consciousness/Lucid-Dreaming"
+      count: 10
+      percentage: 0.5
+      para: "Resources"
+    
+    - path: "Health/Hormonal-Health"
+      count: 9
+      percentage: 0.4
+      para: "Resources"
+    
+    - path: "Occult/Thelemic-Tradition"
+      count: 7
+      percentage: 0.3
+      para: "Resources"
+    
+    - path: "Philosophy/Esoteric-Philosophy"
+      count: 7
+      percentage: 0.3
+      para: "Resources"
+    
+    - path: "Alternative-Science/Sacred-Geometry"
+      count: 6
+      percentage: 0.3
+      para: "Resources"
+    
+    - path: "Health/Natural-Medicine"
+      count: 5
+      percentage: 0.2
+      para: "Resources"
+    
+    - path: "Occult/Divination-Healing"
+      count: 4
+      percentage: 0.2
+      para: "Resources"
+    
+    - path: "Economics/Banking-Systems"
+      count: 4
+      percentage: 0.2
+      para: "Resources"
+    
+    - path: "Health/Biohacking"
+      count: 2
+      percentage: 0.1
+      para: "Resources"
+    
+    - path: "Alternative-Science/Biogeometry"
+      count: 1
+      percentage: 0.0
+      para: "Resources"
+
+# =============================================================================
+# FORMAT DISTRIBUTION
+# =============================================================================
+formats:
+  supported:
+    PDF:
+      count: 1672
+      percentage: 81.6
+      extraction: "PyPDF2 + pdfplumber (first 5 pages + last page)"
+    
+    EPUB:
+      count: 340
+      percentage: 16.6
+      extraction: "ebooklib (first chapter + TOC)"
+    
+    OTHER:
+      count: 31
+      percentage: 1.5
+      note: "Papers, HTML, etc."
+    
+    MOBI:
+      count: 5
+      percentage: 0.2
+      note: "Convert to EPUB if possible"
+  
+  extraction_settings:
+    pdf:
+      pages_to_extract: 5
+      include_last_page: true
+      max_text_length: 10000
+      fallback_to_pdfplumber: true
+    
+    epub:
+      chapters_to_extract: 1
+      include_toc: true
+      max_text_length: 10000
+
+# =============================================================================
+# QUALITY METRICS (PROVEN THRESHOLDS)
+# =============================================================================
+quality:
+  thresholds:
+    success_rate: 0.95              # >95% files processed successfully
+    metadata_completeness: 0.90     # >90% fields populated
+    moc_coverage: 0.85              # >85% files linked to MOCs
+    link_validity: 0.98             # >98% links functional
+    max_error_rate: 0.05            # <5% errors tolerated
+  
+  classification:
+    min_confidence: 0.600
+    avg_confidence: 0.623
+    max_confidence: 0.850
+  
+  processing:
+    batch_size: 50
+    parallel_workers: 4
+    retry_attempts: 3
+    preserve_originals: true
+    normalize_filenames: true
+
+# =============================================================================
+# ARCHETYPE PATTERNS (OBSERVED)
+# =============================================================================
+archetype_patterns:
+  primary_archetype: "The Eclectic Scholar (Type 5→4→7)"
+  
+  stress_path:
+    from: "Type 5 (Investigator)"
+    to: "Type 7 (Enthusiast)"
+    manifestation: "Knowledge accumulation without synthesis, scatter, hyperconsumption"
+    evidence: "50.6% of collection in Knowledge/Research (1,036 books)"
+    hormone_shift: "Cortisol (overwhelm) → Testosterone (manic expansion)"
+  
+  integration_path:
+    from: "Type 5 (Investigator)"
+    to: "Type 8 (Challenger)"
+    desired_outcome: "Action over accumulation, decisive implementation"
+    strategy: "Move knowledge from Resources to Projects/Areas"
+    hormone_shift: "Cortisol (information) → Adrenaline (action)"
+  
+  secondary_expressions:
+    - type: "Type 3 (Achiever/Healer)"
+      percentage: 5.5
+      domains: ["Health/Wellness", "Health/Medicinal-Mushrooms"]
+      note: "Optimization and healing focus"
+    
+    - type: "Type 8 (Challenger)"
+      percentage: 4.9
+      domains: ["Critical-Thinking/Power-Analysis", "Law/Legal-Systems"]
+      note: "Power dynamics and systems analysis"
+    
+    - type: "Type 4 (Individualist)"
+      percentage: 3.9
+      domains: ["Occult/Esoteric-Knowledge", "Spirituality/Mysticism"]
+      note: "Unique spiritual path, esotericism"
+
+# =============================================================================
+# MOC INTEGRATION (10 CREATED)
+# =============================================================================
+mocs:
+  master_index: "Books-Master-Index.md"
+  
+  category_indexes:
+    - "General-Knowledge-Library-Index.md"        # 1,256 books (Type 5→7 visible)
+    - "Health-Library-Index.md"                   # 243 books (Type 3 dominant)
+    - "Technology-Library-Index.md"               # 102 books (Phassion integration)
+    - "Skills-Development-Library-Index.md"       # 192 books (in AREAS)
+    - "Occult-Library-Index.md"                   # 123 books (Type 4+5)
+    - "Consciousness-Library-Index.md"            # 40 books
+    - "Critical-Thinking-Library-Index.md"        # 92 books (Type 8+5)
+  
+  cross_collection_bridges:
+    - "Phassion-Research-Hub.md"                  # 33 books + 47 papers = 80 resources
+    - "Medicinal-Mushroom-Library.md"             # 70 books + 395 papers = 465 resources
+  
+  coverage:
+    total_books: 2048
+    books_in_mocs: ~1900
+    coverage_percentage: 92.8
+    note: "Exceeds 85% threshold"
+
+# =============================================================================
+# SKILLS CONFIGURATION (NEW - Not in Original Orchestrator)
+# =============================================================================
+skills:
+  approach: "Interactive with approval gates"
+  execution: "Native Claude (no API calls)"
+  state_management: "Session files (markdown, JSON)"
+  pipeline: "6-stage (preserved from orchestrator)"
+  
+  skill_list:
+    - name: "discovery-skill"
+      stage: 1
+      function: "Inventory + SHA-256 hashing"
+      output: "discovery-manifest.json"
+    
+    - name: "extraction-skill"
+      stage: 2
+      function: "Text extraction (PDF/EPUB)"
+      output: "extractions/*.txt"
+    
+    - name: "analysis-skill"
+      stage: 3
+      function: "Enneagram + PARA classification"
+      output: "analysis-results.json"
+      note: "CRITICAL - uses this vocabulary file"
+    
+    - name: "routing-skill"
+      stage: 4
+      function: "Destination mapping"
+      output: "routing-manifest.json"
+    
+    - name: "processing-skill"
+      stage: 5
+      function: "Markdown generation + file copy"
+      output: "*.md wrappers + copied files"
+    
+    - name: "integration-skill"
+      stage: 6
+      function: "MOC updates"
+      output: "Updated MOC files"
+    
+    - name: "orchestrator-skill"
+      stage: "meta"
+      function: "Coordinates all 6 stages"
+      output: "Complete migration"
+
+# =============================================================================
+# MIGRATION STATISTICS
+# =============================================================================
+statistics:
+  migrations_complete: 4
+  total_files: 3565
+  total_size: "32.63 GB"
+  success_rate: 1.00              # 100% (all migrations successful)
+  
+  by_migration:
+    mushroom:
+      files: 467
+      books: 72
+      papers: 395
+      success_rate: 1.00
+      date: "2026-01-24"
+    
+    research:
+      files: 1050
+      papers: 1050
+      success_rate: 1.00
+      date: "2026-01-24"
+    
+    epub_pdfs:
+      files: 2048
+      books: 2048
+      success_rate: 1.00
+      date: "2026-01-25"
+    
+    audio_books:
+      files: ~350
+      books: ~350
+      success_rate: 1.00
+      date: "2026-01-24"
+
+# =============================================================================
+# POLYMATH CONVERGENCE CLASSIFICATION (NEW - v2.1)
+# =============================================================================
+polymath_convergence:
+  enabled: true
+  multi_type_threshold: 0.15  # Include secondary types >15% weight
+  max_types: 4  # Primary, secondary, tertiary, quaternary
+  weighted_confidence: true  # Calculate composite confidence
+  hormone_cascade: true  # Map all significant types to hormones
+  min_composite_confidence: 0.750  # Higher threshold for polymath
+
+  description: "Documents integrating 3+ Enneagram types with >15% weight each"
+
+  examples:
+    - name: "AIPRM-Acousmaticos-Numerology (archived)"
+      weights:
+        type_5: 0.40  # Investigator (research depth)
+        type_1: 0.25  # Reformer (sacred geometry)
+        type_4: 0.20  # Individualist (occult synthesis)
+        type_9: 0.15  # Peacemaker (consciousness)
+
+  special_document_types:
+    foundational:
+      description: "Documents establishing vault frameworks"
+      requires_constellation_moc: true
+
+    genesis:
+      description: "Origin conversations for major systems"
+      requires_constellation_moc: true
+
+    constellation:
+      description: "Multi-domain convergence documents"
+      requires_constellation_moc: true
+
+# =============================================================================
+# PATTERN TYPES (NEW - v2.1)
+# =============================================================================
+pattern_types:
+  coherence_signal:
+    description: "Patterns appearing 3+ times across independent systems"
+    weight_threshold: 3
+    depth_validation: true
+    examples: [8, 19, 5, 7]
+    note: "Cross-domain pattern validation for foundational documents"
+
+  spiral_cycle:
+    description: "Thematic evolution boundaries in recursive documents"
+    detection: "domain_shift OR integration_synthesis OR emergence_event"
+    markers:
+      - "new domain introduction"
+      - "integration synthesis"
+      - "emergence events"
+    note: "Used in AIPRM transcript processing"
+
+  fractal_nesting:
+    description: "Self-similar patterns at multiple scales"
+    validation: "same pattern in micro/macro contexts"
+    note: "Pattern repeats across different scales of analysis"
+
+# =============================================================================
+# NOTES
+# =============================================================================
+notes:
+  - "This vocabulary is REALITY-TESTED from 3,565 files across 4 migrations"
+  - "Replaces theoretical 68-tag, 26-category system from orchestrator"
+  - "35 actual destinations (not 26 theoretical categories)"
+  - "Type 5 dominance (75.5%) reflects collector archetype"
+  - "Integration path (5→8) needed: action over accumulation"
+  - "Skills approach replaces 4,271 Python files + API calls"
+  - "All quality thresholds proven (>95%, >90%, >85%)"
+  - "Session files replace SQLite databases"
+  - "Interactive approval replaces batch automation"
+  - "Native Claude replaces OpenRouter API ($0 costs)"
+  - "v2.1 adds polymath convergence classification and pattern types (2026-02-01)"
+

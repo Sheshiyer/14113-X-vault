@@ -1,0 +1,9 @@
+{
+  "status": "queued",
+  "trigger_source": "weekly-memory-distillation-cron",
+  "triggered_at": "2026-02-22T00:00:00+05:30",
+  "requested_pipeline": "6-stage",
+  "source_root": "/Volumes/madara/2026/twc-vault",
+  "notes": "Detected unprocessed/new content since last intake scan state (2026-02-04T08:31:42Z). Prioritize 01-Projects/tryambakam-noesis/brand-docs-final and related recent additions.",
+  "request_id": "weekly-distill-2026-W08"
+}

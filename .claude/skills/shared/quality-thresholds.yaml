@@ -1,0 +1,232 @@
+# ⭐ Quality Thresholds - Proven Standards
+# 📊 Version: 2.0 (Skills Edition)
+# 🔍 Source: 4 Complete Migrations (3,565 files, 100% success rate)
+# 📅 Last Updated: 2026-01-25
+# ✅ Status: Production-Ready
+
+---
+
+# =============================================================================
+# PROVEN QUALITY METRICS
+# =============================================================================
+
+quality_metrics:
+  description: "Thresholds proven across 3,565 files in 4 complete migrations"
+  
+  success_rate:
+    threshold: 0.95
+    actual: 1.00
+    status: "EXCEEDED"
+    note: "100% success rate achieved across all migrations"
+  
+  metadata_completeness:
+    threshold: 0.90
+    actual: 0.95
+    status: "EXCEEDED"
+    note: "~95% of metadata fields populated"
+  
+  moc_coverage:
+    threshold: 0.85
+    actual: 0.928
+    status: "EXCEEDED"
+    note: "92.8% of books linked to MOCs (10 MOCs created)"
+  
+  link_validity:
+    threshold: 0.98
+    actual: 0.99
+    status: "MET"
+    note: "~99% of links functional"
+  
+  max_error_rate:
+    threshold: 0.05
+    actual: 0.00
+    status: "PERFECT"
+    note: "Zero errors across all migrations"
+
+# =============================================================================
+# CLASSIFICATION QUALITY
+# =============================================================================
+
+classification:
+  description: "Classification confidence from EPUB+PDFS migration (2,048 files)"
+  
+  confidence_scores:
+    minimum: 0.600
+    average: 0.623
+    maximum: 0.850
+    threshold: 0.600
+    note: "All classifications exceeded minimum threshold"
+  
+  enneagram_accuracy:
+    type_5_dominant: 0.755
+    distribution_proven: true
+    note: "Type 5 (Investigator) represents 75.5% of collection"
+  
+  para_accuracy:
+    resources_percentage: 0.890
+    areas_percentage: 0.094
+    projects_percentage: 0.016
+    note: "PARA distribution proven non-uniform (89% / 9.4% / 1.6%)"
+
+# =============================================================================
+# PROCESSING PARAMETERS (OPTIMIZED)
+# =============================================================================
+
+processing:
+  description: "Parameters optimized from orchestrator experience"
+  
+  batch_size: 50
+  parallel_workers: 4
+  retry_attempts: 3
+  preserve_originals: true
+  normalize_filenames: true
+  
+  extraction:
+    pdf:
+      pages_to_extract: 5
+      include_last_page: true
+      max_text_length: 10000
+      fallback_strategy: "Try pdfplumber if PyPDF2 fails"
+    
+    epub:
+      chapters_to_extract: 1
+      include_toc: true
+      max_text_length: 10000
+  
+  timeouts:
+    extraction_seconds: 30
+    analysis_seconds: 60
+    processing_seconds: 45
+
+# =============================================================================
+# VALIDATION GATES
+# =============================================================================
+
+validation_gates:
+  description: "Quality gates to check at each stage"
+  
+  stage_1_discovery:
+    - check: "SHA-256 hash calculated"
+    - check: "File size recorded"
+    - check: "Format detected (PDF/EPUB/OTHER)"
+  
+  stage_2_extraction:
+    - check: "Text extracted (min 100 chars)"
+    - check: "Extraction completed within timeout"
+    - check: "No corruption detected"
+  
+  stage_3_analysis:
+    - check: "Enneagram type assigned"
+    - check: "PARA bucket determined"
+    - check: "Confidence > 0.600"
+    - check: "Domain category mapped"
+  
+  stage_4_routing:
+    - check: "Destination path valid"
+    - check: "No path conflicts"
+    - check: "Duplicate detection complete"
+  
+  stage_5_processing:
+    - check: "Markdown wrapper created"
+    - check: "Frontmatter complete (>90% fields)"
+    - check: "Original file copied/linked"
+  
+  stage_6_integration:
+    - check: "MOC links functional"
+    - check: "Bidirectional links created"
+    - check: "MOC coverage >85%"
+
+# =============================================================================
+# ERROR HANDLING THRESHOLDS
+# =============================================================================
+
+error_handling:
+  description: "When to fail vs. retry vs. skip"
+  
+  retry_conditions:
+    - "Extraction timeout (retry with increased timeout)"
+    - "Temporary file system errors"
+    - "API rate limit (not applicable for native Claude)"
+  
+  skip_conditions:
+    - "Corrupted file (log and skip)"
+    - "Unsupported format after 3 attempts"
+    - "Confidence < 0.500 (too uncertain)"
+  
+  fail_conditions:
+    - "Invalid PARA structure"
+    - "Controlled vocabulary missing"
+    - "Critical system error"
+
+# =============================================================================
+# SUCCESS CRITERIA (PER MIGRATION)
+# =============================================================================
+
+migration_success_criteria:
+  description: "A migration is considered successful if ALL criteria met"
+  
+  required:
+    - criterion: "Success rate ≥ 95%"
+      proven: "100% achieved"
+    
+    - criterion: "Metadata completeness ≥ 90%"
+      proven: "~95% achieved"
+    
+    - criterion: "MOC coverage ≥ 85%"
+      proven: "92.8% achieved"
+    
+    - criterion: "Link validity ≥ 98%"
+      proven: "~99% achieved"
+    
+    - criterion: "Error rate ≤ 5%"
+      proven: "0% achieved"
+  
+  optional_excellence:
+    - criterion: "Cross-collection integration"
+      example: "Phassion: 33 books + 47 papers = 80 resources"
+    
+    - criterion: "Enneagram archetype analysis"
+      example: "Type 5→7 stress pattern identified (50.6% in Knowledge/Research)"
+    
+    - criterion: "Domain-specific subcategorization"
+      example: "35 actual destinations vs 26 theoretical categories"
+
+# =============================================================================
+# MONITORING & REPORTING
+# =============================================================================
+
+reporting:
+  description: "What to track and report during migration"
+  
+  real_time:
+    - "Files processed / total"
+    - "Current stage (1-6)"
+    - "Success / skip / error counts"
+    - "Estimated time remaining"
+  
+  post_migration:
+    - "Total files processed"
+    - "Success rate percentage"
+    - "Metadata completeness percentage"
+    - "MOC coverage percentage"
+    - "Enneagram distribution"
+    - "PARA distribution"
+    - "Domain breakdown (top 10)"
+    - "Processing time breakdown by stage"
+  
+  quality_report:
+    - "All thresholds met/exceeded status"
+    - "Comparison to previous migrations"
+    - "Recommendations for improvement"
+
+# =============================================================================
+# NOTES
+# =============================================================================
+
+notes:
+  - "These thresholds are PROVEN on 3,565 files across 4 migrations"
+  - "All migrations achieved 100% success rate (no failures)"
+  - "Quality metrics are realistic and achievable"
+  - "Orchestrator-skill should check these gates at each stage"
+  - "Skills can fail gracefully when thresholds not met"
+  - "User approval should be required before proceeding if quality gates fail"
