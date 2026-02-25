@@ -1,0 +1,14 @@
+topic: Bioelectric Body
+date: '2026-02-25'
+channel: X
+status: draft
+source_lattice:
+  areas: []
+  resources: []
+  projects: []
+depth_gates:
+  runtime_claim: pending
+  pattern_claim: pending
+  embodied_intervention: pending
+  non_pitch_closure: pending
+evidence_chunks: []

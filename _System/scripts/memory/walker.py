@@ -83,7 +83,7 @@ def get_moc_links(root: str | Path) -> Set[str]:
 
 _MOC_LINKS = None
 
-def build_meta(rel_path, heading, frontmatter, chunk_idx, vault_root=None):
+def build_meta(rel_path, heading, frontmatter, chunk_idx, vault_root=None, text=None, quality_score=1.0):
     global _MOC_LINKS
     if _MOC_LINKS is None:
         # Dynamically determine the vault root if not provided
@@ -112,17 +112,24 @@ def build_meta(rel_path, heading, frontmatter, chunk_idx, vault_root=None):
     if file_stem in _MOC_LINKS:
         priority += 0.5  # Boost files explicitly linked in the System MOC
 
-    return {
+    # Day 5: Quality Signal Boost
+    priority *= (0.5 + (quality_score * 0.5))
+
+    meta = {
         "path": rel_path,
         "para": para,
         "is_archive": is_archive,
-        "priority": priority,
+        "priority": round(priority, 3),
+        "quality_score": quality_score,
         "domain": infer_domain(rel_path),
         "heading": heading,
         "frontmatter_tags": [str(t) for t in tags],
         "chunk_index": chunk_idx,
         "enneagram_uuid": f"E{para[0]}{len(rel_path)}"
     }
+    if text:
+        meta["text"] = text
+    return meta
 
 def safe_read(path):
     try:

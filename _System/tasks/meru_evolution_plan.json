@@ -1,0 +1,334 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "name": "Meru Memory Vault Evolution",
+    "repo_root": "/Volumes/madara/2026/twc-vault",
+    "generated_on": "2026-02-25",
+    "generated_by": "task-master-planner",
+    "assumptions": [
+      "The external samskara volume is always mounted during indexing.",
+      "The .venv-meru environment is the primary execution runtime.",
+      "FAISS and all-MiniLM-L6-v2 remain the baseline semantic stack."
+    ],
+    "risks": [
+      "I/O bottleneck if samskara volume is slow.",
+      "Memory spikes during final assembly of 10M+ chunks.",
+      "Deduplication collisions on short, meaningful phrases."
+    ]
+  },
+  "phases": [
+        {
+          "phase_id": "P1",
+          "name": "Automation & Operational Stability",
+          "objective": "Establish bulletproof background processing and health monitoring.",
+          "sprints": [
+            {
+              "sprint_id": "S1",
+              "duration_weeks": 1,
+              "focus": "Automated Build Pipeline",
+              "tasks": [
+                { "id": "P1-S1-01", "title": "Implement cron-triggered nightly build", "area": "infra", "owner_role": "DevOps", "est_hours": 4, "dependencies": [], "deliverable": "A shell script and crontab entry for 2 AM incremental updates.", "acceptance": "Index updates automatically without manual intervention." },
+                { "id": "P1-S1-02", "title": "Build centralized logging for indexer", "area": "infra", "owner_role": "DevOps", "est_hours": 6, "dependencies": ["P1-S1-01"], "deliverable": "Unified logging system in _System/memory/logs/.", "acceptance": "Logs track errors, chunk counts, and dedupe stats per run." },
+                { "id": "P1-S1-03", "title": "Create health-check dashboard CLI", "area": "backend", "owner_role": "Backend Eng", "est_hours": 8, "dependencies": [], "deliverable": "vmem health command showing index age and coverage.", "acceptance": "Displays accurate metadata stats and last-updated timestamp." },
+                { "id": "P1-S1-04", "title": "Auto-recovery for interrupted builds", "area": "backend", "owner_role": "Backend Eng", "est_hours": 10, "dependencies": [], "deliverable": "Enhanced checkpoint logic in index_full.py.", "acceptance": "Indexer resumes from exact file offset after a crash." },
+                { "id": "P1-S1-05", "title": "Implement disk space monitor for samskara", "area": "infra", "owner_role": "DevOps", "est_hours": 4, "dependencies": [], "deliverable": "Alerting script if /Volumes/madara drops below 10GB.", "acceptance": "Indexer stops safely if disk space is critical." },
+                { "id": "P1-S1-06", "title": "Add Slack/Discord notifications for build success", "area": "infra", "owner_role": "DevOps", "est_hours": 4, "dependencies": ["P1-S1-01"], "deliverable": "Webhook integration for indexer status.", "acceptance": "Summary report sent to team channel after build." },
+                { "id": "P1-S1-07", "title": "Implement file integrity validation pass", "area": "qa", "owner_role": "QA Eng", "est_hours": 8, "dependencies": [], "deliverable": "Script to check for broken symlinks in the vault.", "acceptance": "Identifies files missing from samskara volume." },
+                { "id": "P1-S1-08", "title": "Dockerize the Meru indexing runtime", "area": "infra", "owner_role": "DevOps", "est_hours": 12, "dependencies": [], "deliverable": "Dockerfile for portable indexing environment.", "acceptance": "Indexer runs identically on laptop and server." },
+                { "id": "P1-S1-09", "title": "Build metadata schema validator", "area": "qa", "owner_role": "QA Eng", "est_hours": 6, "dependencies": [], "deliverable": "Pydantic-based validator for meta.json.", "acceptance": "Ensures all chunks have mandatory PARA and Enneagram tags." },
+                { "id": "P1-S1-10", "title": "Implement automated backup for FAISS index", "area": "infra", "owner_role": "DevOps", "est_hours": 4, "dependencies": [], "deliverable": "Rsync/R2 backup script for memory/ directory.", "acceptance": "Previous index versions are recoverable." }
+              ]
+            }
+          ]
+        },
+        {
+          "phase_id": "P2",
+          "name": "Search & Retrieval UX",
+          "objective": "Improve the precision and usability of the semantic search interface.",
+          "sprints": [
+            {
+              "sprint_id": "S1",
+              "duration_weeks": 1,
+              "focus": "TUI & Visual Search",
+              "tasks": [
+                { "id": "P2-S1-11", "title": "Interactive TUI for vmem search", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 12, "dependencies": [], "deliverable": "A Textual-based UI for browsing search results.", "acceptance": "Users can scroll through hits and open files in Obsidian." },
+                { "id": "P2-S1-12", "title": "Add score-histogram visualization", "area": "data", "owner_role": "Data Scientist", "est_hours": 6, "dependencies": ["P2-S1-11"], "deliverable": "Visual distribution of search confidence in the TUI.", "acceptance": "Shows how well the query matches the top 50 results." },
+                { "id": "P2-S1-13", "title": "Implement Hybrid Search (Keyword + Vector)", "area": "backend", "owner_role": "Backend Eng", "est_hours": 16, "dependencies": [], "deliverable": "Combining BM25 keyword matching with FAISS vectors.", "acceptance": "Exact phrase matches rank higher than loose semantic matches." },
+                { "id": "P2-S1-14", "title": "Dynamic chunk context expander", "area": "backend", "owner_role": "Backend Eng", "est_hours": 8, "dependencies": ["P2-S1-11"], "deliverable": "In-UI option to view +/- 2 chunks around a result.", "acceptance": "Allows reading full context without opening the file." },
+                { "id": "P2-S1-15", "title": "Save/Recall search sessions", "area": "backend", "owner_role": "Backend Eng", "est_hours": 6, "dependencies": ["P2-S1-11"], "deliverable": "History tracking for semantic queries.", "acceptance": "Previous queries can be re-run from a list." },
+                { "id": "P2-S1-16", "title": "Filter search by Enneagram Type", "area": "backend", "owner_role": "Backend Eng", "est_hours": 4, "dependencies": [], "deliverable": "--type CLI flag for search.", "acceptance": "Results restricted to specific personality archetypes." },
+                { "id": "P2-S1-17", "title": "Export search results to Markdown", "area": "backend", "owner_role": "Backend Eng", "est_hours": 4, "dependencies": [], "deliverable": "--output report.md flag.", "acceptance": "Creates a formatted summary of top search hits." },
+                { "id": "P2-S1-18", "title": "Add 'Copy to Clipboard' in TUI", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 2, "dependencies": ["P2-S1-11"], "deliverable": "Keyboard shortcut to copy chunk text.", "acceptance": "Speeds up manual drafting from evidence." },
+                { "id": "P2-S1-19", "title": "Implement 'Similar to this file' search", "area": "backend", "owner_role": "Backend Eng", "est_hours": 8, "dependencies": [], "deliverable": "Search by path instead of query string.", "acceptance": "Finds files semantically closest to a given vault doc." },
+                { "id": "P2-S1-20", "title": "Improve PDF page-number precision", "area": "data", "owner_role": "Data Eng", "est_hours": 10, "dependencies": [], "deliverable": "Correct page tracking in metadata for all PDF extractors.", "acceptance": "Search results link directly to correct physical page." }
+              ]
+            }
+          ]
+        },
+        {
+          "phase_id": "P3",
+          "name": "Content Engine Integration",
+          "objective": "Tighten the loop between semantic memory and automated content production.",
+          "sprints": [
+            {
+              "sprint_id": "S1",
+              "duration_weeks": 1,
+              "focus": "Automated Brief Generation",
+              "tasks": [
+                { "id": "P3-S1-21", "title": "Multi-topic cross-pollination in briefs", "area": "data", "owner_role": "AI Eng", "est_hours": 10, "dependencies": [], "deliverable": "Scaffolder supports multiple topic seeds.", "acceptance": "Briefs pull evidence from the intersection of topics." },
+                { "id": "P3-S1-22", "title": "Auto-detect Enneagram lenses for topics", "area": "data", "owner_role": "AI Eng", "est_hours": 12, "dependencies": [], "deliverable": "Sentiment/Style analysis to pick the best Enneagram lens.", "acceptance": "Indexer metadata helps pick the target personality type." },
+                { "id": "P3-S1-23", "title": "Implement automated quality gates", "area": "qa", "owner_role": "QA Eng", "est_hours": 8, "dependencies": [], "deliverable": "Script to block _processing -> _approved if lattice is weak.", "acceptance": "Drafts without 2 Area and 1 Resource source are flagged." },
+                { "id": "P3-S1-24", "title": "Direct push to Substack API", "area": "infra", "owner_role": "DevOps", "est_hours": 14, "dependencies": [], "deliverable": "Integration script for Substack drafting.", "acceptance": "Markdown from _approved uploads as a Substack draft." },
+                { "id": "P3-S1-25", "title": "Evidence-to-Citation formatter", "area": "backend", "owner_role": "Backend Eng", "est_hours": 6, "dependencies": [], "deliverable": "Convert evidence chunks into formal academic citations.", "acceptance": "Appends a Bibliography to every Substack draft." },
+                { "id": "P3-S1-26", "title": "Add 'Visual Prompt' generation to brief", "area": "data", "owner_role": "AI Eng", "est_hours": 8, "dependencies": [], "deliverable": "Generates Nano Banana prompts based on evidence.", "acceptance": "Briefs include image generation concepts for IG/Substack." },
+                { "id": "P3-S1-27", "title": "Implement thread-length optimization", "area": "data", "owner_role": "Data Scientist", "est_hours": 6, "dependencies": [], "deliverable": "Token-aware chunking for X thread drafting.", "acceptance": "Auto-splits evidence into 280-char ready blocks." },
+                { "id": "P3-S1-28", "title": "Auto-internal-linking in drafts", "area": "backend", "owner_role": "Backend Eng", "est_hours": 10, "dependencies": [], "deliverable": "Suggests related vault links within generated copy.", "acceptance": "Increases vault density through automated cross-links." },
+                { "id": "P3-S1-29", "title": "Bulk-generate 30-day content series", "area": "product", "owner_role": "Content Strategist", "est_hours": 16, "dependencies": ["P3-S1-21"], "deliverable": "Batch scaffolding script for monthly campaigns.", "acceptance": "Generates 30 coordinated briefs from a single meta-theme." },
+                { "id": "P3-S1-30", "title": "Implement human-in-the-loop review UI", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 12, "dependencies": [], "deliverable": "Simple CLI picker to approve/reject evidence chunks.", "acceptance": "User can curate the source lattice before drafting." }
+              ]
+            }
+          ]
+        },
+        {
+          "phase_id": "P4",
+          "name": "Scaling & Performance",
+          "objective": "Optimize for the next 10M chunks and faster extraction.",
+          "sprints": [
+            {
+              "sprint_id": "S1",
+              "duration_weeks": 1,
+              "focus": "High-Density Optimization",
+              "tasks": [
+                { "id": "P4-S1-31", "title": "Implement FP16 Quantization for FAISS", "area": "data", "owner_role": "Data Scientist", "est_hours": 12, "dependencies": [], "deliverable": "Index size reduced by 50% using half-precision.", "acceptance": "Search speed increases with minimal accuracy loss." },
+                { "id": "P4-S1-32", "title": "Distributed Extraction with Ray/Dask", "area": "infra", "owner_role": "DevOps", "est_hours": 20, "dependencies": [], "deliverable": "Multi-core parallel file processing pipeline.", "acceptance": "Full rebuild time reduced by 4x on multi-core Mac." },
+                { "id": "P4-S1-33", "title": "Chunk-level semantic deduplication", "area": "data", "owner_role": "Data Scientist", "est_hours": 16, "dependencies": [], "deliverable": "Clustering pass to remove near-identical semantic chunks.", "acceptance": "Reduces index noise for highly repetitive source material." },
+                { "id": "P4-S1-34", "title": "Implement HNSW Index for sub-10ms search", "area": "backend", "owner_role": "Backend Eng", "est_hours": 10, "dependencies": [], "deliverable": "Upgrade from FlatIP to HNSW index type.", "acceptance": "Search remains instant even as index scales past 10M chunks." },
+                { "id": "P4-S1-35", "title": "Automated index pruning", "area": "backend", "owner_role": "Backend Eng", "est_hours": 8, "dependencies": [], "deliverable": "Retention policy logic for old Archives data.", "acceptance": "Allows keeping only high-prana chunks from old archives." },
+                { "id": "P4-S1-36", "title": "Support for OCR-on-demand for scanned PDFs", "area": "backend", "owner_role": "Data Eng", "est_hours": 14, "dependencies": [], "deliverable": "Tesseract/PyPDF2 integration for image-PDFs.", "acceptance": "Scanned documents are no longer skipped by indexer." },
+                { "id": "P4-S1-37", "title": "Optimize Meta-mapped embedding loading", "area": "backend", "owner_role": "Backend Eng", "est_hours": 6, "dependencies": [], "deliverable": "Zero-copy loading for faster search startup.", "acceptance": "Search CLI starts in <500ms." },
+                { "id": "P4-S1-38", "title": "Implement Multi-GPU encoding support", "area": "infra", "owner_role": "DevOps", "est_hours": 10, "dependencies": [], "deliverable": "SentenceTransformer distribution across all available GPUs.", "acceptance": "Full rebuild speed scales with hardware." },
+                { "id": "P4-S1-39", "title": "Incremental index compaction", "area": "backend", "owner_role": "Backend Eng", "est_hours": 8, "dependencies": [], "deliverable": "De-fragmentation logic for long-term incremental updates.", "acceptance": "Maintains index performance after 100+ incremental runs." },
+                { "id": "P4-S1-40", "title": "Memory-aware assembly for 10M+ chunks", "area": "backend", "owner_role": "Backend Eng", "est_hours": 12, "dependencies": [], "deliverable": "Streaming shard merge logic.", "acceptance": "Prevents RAM exhaustion during the final FAISS merge." }
+              ]
+            }
+          ]
+        },
+        {
+          "phase_id": "P5",
+          "name": "Integration & Intelligence",
+          "objective": "Expand the Meru layer into a proactive knowledge agent.",
+          "sprints": [
+            {
+              "sprint_id": "S1",
+              "duration_weeks": 1,
+              "focus": "Active Intelligence",
+              "tasks": [
+                { "id": "P5-S1-41", "title": "Knowledge Gap Detection", "area": "data", "owner_role": "Data Scientist", "est_hours": 14, "dependencies": [], "deliverable": "Identifies PARA domains with low semantic density.", "acceptance": "Suggests where the user should focus research next." },
+                { "id": "P5-S1-42", "title": "Auto-Tagging Recommendation Engine", "area": "data", "owner_role": "AI Eng", "est_hours": 10, "dependencies": [], "deliverable": "Suggests Enneagram/Domain tags for new notes.", "acceptance": "Based on similar chunks in the existing index." },
+                { "id": "P5-S1-43", "title": "Cross-Project Dependency Visualizer", "area": "backend", "owner_role": "Backend Eng", "est_hours": 16, "dependencies": [], "deliverable": "Graph export of semantically linked projects.", "acceptance": "Visualizes how 01-Projects share foundational knowledge." },
+                { "id": "P5-S1-44", "title": "Implement 'Prana' score for chunks", "area": "data", "owner_role": "Data Scientist", "est_hours": 12, "dependencies": [], "deliverable": "Advanced ranking based on link-density and age.", "acceptance": "Recent, highly-linked notes rank higher than isolated ones." },
+                { "id": "P5-S1-45", "title": "Semantic Folder Routing Suggestions", "area": "backend", "owner_role": "Backend Eng", "est_hours": 8, "dependencies": [], "deliverable": "Indexer suggests correct PARA path for new files.", "acceptance": "Matches incoming text to existing cluster centroids." },
+                { "id": "P5-S1-46", "title": "Build 'Knowledge Summary' CLI", "area": "backend", "owner_role": "AI Eng", "est_hours": 10, "dependencies": [], "deliverable": "vmem summarize <topic> command.", "acceptance": "Synthesizes a 3-paragraph summary using top chunks." },
+                { "id": "P5-S1-47", "title": "Implement semantic search API (FastAPI)", "area": "infra", "owner_role": "DevOps", "est_hours": 12, "dependencies": [], "deliverable": "REST endpoint for the Meru layer.", "acceptance": "Other tools can query the vault over HTTP." },
+                { "id": "P5-S1-48", "title": "Add 'Time-Travel' search mode", "area": "backend", "owner_role": "Backend Eng", "est_hours": 8, "dependencies": [], "deliverable": "Search restricted to specific date ranges.", "acceptance": "See how your understanding of a topic evolved over time." },
+                { "id": "P5-S1-49", "title": "Integrate with Obsidian 'Smart Connections'", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 14, "dependencies": [], "deliverable": "JSON compatibility bridge for Obsidian plugins.", "acceptance": "Meru index powers local Obsidian UI features." },
+                { "id": "P5-S1-50", "title": "Final Vault Integrity & Performance Audit", "area": "qa", "owner_role": "QA Eng", "est_hours": 10, "dependencies": ["P4-S1-40"], "deliverable": "Final benchmarking report for 3.2M chunks.", "acceptance": "All systems verified green for v3.0 production." }
+              ]
+            }
+          ]
+        }
+    ,
+    {
+      "phase_id": "P2",
+      "name": "Search & Retrieval UX",
+      "objective": "Improve the precision and usability of the semantic search interface.",
+      "sprints": [
+        {
+          "sprint_id": "S1",
+          "duration_weeks": 1,
+          "focus": "TUI & Visual Search",
+          "tasks": [
+            {
+              "id": "P2-S1-06",
+              "title": "Interactive TUI for vmem search",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 12,
+              "dependencies": [],
+              "deliverable": "A Textual-based UI for browsing search results.",
+              "acceptance": "Users can scroll through hits and open files in Obsidian."
+            },
+            {
+              "id": "P2-S1-07",
+              "title": "Add score-histogram visualization",
+              "area": "data",
+              "owner_role": "Data Scientist",
+              "est_hours": 6,
+              "dependencies": ["P2-S1-06"],
+              "deliverable": "Visual distribution of search confidence in the TUI.",
+              "acceptance": "Shows how well the query matches the top 50 results."
+            },
+            {
+              "id": "P2-S1-08",
+              "title": "Implement Hybrid Search (Keyword + Vector)",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 16,
+              "dependencies": [],
+              "deliverable": "Combining BM25 keyword matching with FAISS vectors.",
+              "acceptance": "Exact phrase matches rank higher than loose semantic matches."
+            },
+            {
+              "id": "P2-S1-09",
+              "title": "Dynamic chunk context expander",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 8,
+              "dependencies": ["P2-S1-06"],
+              "deliverable": "In-UI option to view +/- 2 chunks around a result.",
+              "acceptance": "Allows reading full context without opening the file."
+            },
+            {
+              "id": "P2-S1-10",
+              "title": "Save/Recall search sessions",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 6,
+              "dependencies": ["P2-S1-06"],
+              "deliverable": "History tracking for semantic queries.",
+              "acceptance": "Previous queries can be re-run from a list."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_id": "P3",
+      "name": "Content Engine Integration",
+      "objective": "Tighten the loop between semantic memory and automated content production.",
+      "sprints": [
+        {
+          "sprint_id": "S1",
+          "duration_weeks": 1,
+          "focus": "Automated Brief Generation",
+          "tasks": [
+            {
+              "id": "P3-S1-11",
+              "title": "Multi-topic cross-pollination in briefs",
+              "area": "data",
+              "owner_role": "AI Eng",
+              "est_hours": 10,
+              "dependencies": [],
+              "deliverable": "Scaffolder supports multiple topic seeds.",
+              "acceptance": "Briefs pull evidence from the intersection of topics."
+            },
+            {
+              "id": "P3-S1-12",
+              "title": "Auto-detect Enneagram lenses for topics",
+              "area": "data",
+              "owner_role": "AI Eng",
+              "est_hours": 12,
+              "dependencies": [],
+              "deliverable": "Sentiment/Style analysis to pick the best Enneagram lens.",
+              "acceptance": "Indexer metadata helps pick the target personality type."
+            },
+            {
+              "id": "P3-S1-13",
+              "title": "Implement automated quality gates",
+              "area": "qa",
+              "owner_role": "QA Eng",
+              "est_hours": 8,
+              "dependencies": [],
+              "deliverable": "Script to block _processing -> _approved if lattice is weak.",
+              "acceptance": "Drafts without 2 Area and 1 Resource source are flagged."
+            },
+            {
+              "id": "P3-S1-14",
+              "title": "Direct push to Substack API",
+              "area": "infra",
+              "owner_role": "DevOps",
+              "est_hours": 14,
+              "dependencies": [],
+              "deliverable": "Integration script for Substack drafting.",
+              "acceptance": "Markdown from _approved uploads as a Substack draft."
+            },
+            {
+              "id": "P3-S1-15",
+              "title": "Evidence-to-Citation formatter",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 6,
+              "dependencies": [],
+              "deliverable": "Convert evidence chunks into formal academic citations.",
+              "acceptance": "Appends a Bibliography to every Substack draft."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_id": "P4",
+      "name": "Scaling & Performance",
+      "objective": "Optimize for the next 10M chunks and faster extraction.",
+      "sprints": [
+        {
+          "sprint_id": "S1",
+          "duration_weeks": 1,
+          "focus": "High-Density Optimization",
+          "tasks": [
+            {
+              "id": "P4-S1-16",
+              "title": "Implement FP16 Quantization for FAISS",
+              "area": "data",
+              "owner_role": "Data Scientist",
+              "est_hours": 12,
+              "dependencies": [],
+              "deliverable": "Index size reduced by 50% using half-precision.",
+              "acceptance": "Search speed increases with minimal accuracy loss."
+            },
+            {
+              "id": "P4-S1-17",
+              "title": "Distributed Extraction with Ray/Dask",
+              "area": "infra",
+              "owner_role": "DevOps",
+              "est_hours": 20,
+              "dependencies": [],
+              "deliverable": "Multi-core parallel file processing pipeline.",
+              "acceptance": "Full rebuild time reduced by 4x on multi-core Mac."
+            },
+            {
+              "id": "P4-S1-18",
+              "title": "Chunk-level semantic deduplication",
+              "area": "data",
+              "owner_role": "Data Scientist",
+              "est_hours": 16,
+              "dependencies": [],
+              "deliverable": "Clustering pass to remove near-identical semantic chunks.",
+              "acceptance": "Reduces index noise for highly repetitive source material."
+            },
+            {
+              "id": "P4-S1-19",
+              "title": "Implement HNSW Index for sub-10ms search",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 10,
+              "dependencies": [],
+              "deliverable": "Upgrade from FlatIP to HNSW index type.",
+              "acceptance": "Search remains instant even as index scales past 10M chunks."
+            },
+            {
+              "id": "P4-S1-20",
+              "title": "Automated index pruning",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 8,
+              "dependencies": [],
+              "deliverable": "Retention policy logic for old Archives data.",
+              "acceptance": "Allows keeping only high-prana chunks from old archives."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+topic: X Profile Pinned Opener + Visual Map
+channel: twitter
+format: pinned-thread
+intent: brand-alignment
+summary: Bio-aligned opener and visual directions mapped to brand-docs-final for profile/pinned reset.
+required_claims:
+  runtime_claim: "Consciousness is a given. Self-consciousness is a practice."
+  pattern_claim: "Most systems teach tools; this work trains authorship."
+  enneagram_lens: ""
+  embodied_intervention: "Body as medium. Breath as interface."
+  closure_style: non-pitch
+sources:
+  areas: []
+  resources: []
+  project:
+    - /Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/brand-docs-final/03-voice-and-tone.md
+    - /Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/brand-docs-final/05-messaging-direction-summary.md
+    - /Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/brand-docs-final/06-visual-identity.md
+    - /Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/brand-docs-final/14-visual-prompt-cookbook.md
+    - /Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/brand-docs-final/brand-config.yaml
+gates:
+  min_area_sources: 0
+  min_resource_sources: 0
+  meta_language_removed: true
+metadata:
+  draft_file: x-profile/pinned-opener-and-visual-map-2026-02-25.md
+  workflow_state: processing

@@ -1,11 +1,6 @@
 """
 batch_processor.py — Memory-safe batch processing with checkpoint/resume
-for indexing large document corpora (47+ GB of PDFs, EPUBs, DOCX).
-
-Classes:
-    BatchProcessor  — main processor with configurable batch size
-    ErrorAggregator — counts errors by type
-    Checkpoint      — save/load progress for resume after interruption
+for indexing large document corpora.
 """
 
 from __future__ import annotations
@@ -15,13 +10,15 @@ import os
 import resource
 import sys
 import time
+import re
+import hashlib
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from chunker import Chunk, chunk_markdown, chunk_txt, extract_frontmatter, MAX_CHUNK_CHARS
+from chunker import Chunk, chunk_markdown, chunk_txt, extract_frontmatter, MAX_CHUNK_CHARS, QualityScorer
 from walker import walk_vault, safe_read, is_noisy, prepend_context, build_meta, ALL_EXTENSIONS
 from extractors import chunk_file, ExtractedDoc
 from extractors.pdf_extractor import is_scanned as pdf_is_scanned
@@ -39,7 +36,6 @@ class ErrorAggregator:
         self.examples: dict[str, list[str]] = {}  # first 3 per type
 
     def add(self, rel_path: str, error: str) -> None:
-        # Normalize error type
         err_type = error.split(":")[0] if ":" in error else error
         self.counts[err_type] = self.counts.get(err_type, 0) + 1
         examples = self.examples.setdefault(err_type, [])
@@ -88,7 +84,6 @@ class Checkpoint:
             json.dump(data, f, indent=2)
 
     def load(self) -> bool:
-        """Load checkpoint. Returns True if loaded, False if no checkpoint."""
         if not os.path.exists(self.path):
             return False
         with open(self.path) as f:
@@ -113,26 +108,39 @@ class Checkpoint:
 # ---------------------------------------------------------------------------
 
 def get_rss_mb() -> float:
-    """Get current process RSS in MB (macOS/Linux)."""
     usage = resource.getrusage(resource.RUSAGE_SELF)
-    # macOS reports in bytes, Linux in KB
     if sys.platform == "darwin":
         return usage.ru_maxrss / (1024 * 1024)
     return usage.ru_maxrss / 1024
 
 
-_MEMORY_WARN_MB = 6000  # warn if RSS > 6 GB
-
-
 def check_memory(label: str = "") -> bool:
-    """Log warning if memory usage exceeds threshold. Returns True if OK."""
     rss = get_rss_mb()
-    if rss > _MEMORY_WARN_MB:
-        print(f"  ⚠ Memory warning{' (' + label + ')' if label else ''}: "
-              f"RSS = {rss:.0f} MB (threshold {_MEMORY_WARN_MB} MB)",
-              file=sys.stderr)
+    if rss > 6000:
+        print(f"  ⚠ Memory warning ({label}): RSS = {rss:.0f} MB", file=sys.stderr)
         return False
     return True
+
+
+# ---------------------------------------------------------------------------
+# B-W6-07: Deduplicator (Day 5)
+# ---------------------------------------------------------------------------
+
+class Deduplicator:
+    """Track chunk hashes to avoid near-duplicate indexing."""
+    def __init__(self):
+        self.seen_hashes: set[str] = set()
+
+    def is_duplicate(self, text: str) -> bool:
+        normalized = "".join(re.findall(r"\w+", text.lower()))
+        if not normalized: return True
+        h = hashlib.sha256(normalized.encode()).hexdigest()
+        if h in self.seen_hashes:
+            return True
+        self.seen_hashes.add(h)
+        return False
+
+_DEDUPE = Deduplicator()
 
 
 # ---------------------------------------------------------------------------
@@ -146,13 +154,8 @@ def process_file(
     errors: ErrorAggregator,
     scanned_log: list[str],
 ) -> tuple[list[str], list[dict]]:
-    """Process a single file into texts + metadata for embedding.
-
-    Returns (texts, meta) parallel lists. Empty on skip/error.
-    """
     ext = os.path.splitext(rel_path)[1].lower()
 
-    # --- Markdown / TXT: existing Phase A pipeline ---
     if ext in (".md", ".txt"):
         content = safe_read(abs_path)
         if not content:
@@ -163,10 +166,7 @@ def process_file(
             return [], []
 
         is_md = ext == ".md"
-        frontmatter = None
-        body = content
-        if is_md:
-            frontmatter, body = extract_frontmatter(content)
+        frontmatter, body = extract_frontmatter(content) if is_md else (None, content)
 
         if len(body.strip()) < 50:
             errors.add(rel_path, "too_short_body")
@@ -177,45 +177,45 @@ def process_file(
             errors.add(rel_path, "no_chunks")
             return [], []
 
-        texts = []
-        meta = []
+        texts, meta = [], []
         for ci, chunk in enumerate(chunks):
+            q_score = QualityScorer.score(chunk.text, chunk.heading)
+            if q_score < 0.3: continue
+            if _DEDUPE.is_duplicate(chunk.text): continue
+
             texts.append(prepend_context(chunk.text, rel_path, chunk.heading))
-            m = build_meta(rel_path, chunk.heading, frontmatter, ci)
+            m = build_meta(rel_path, chunk.heading, frontmatter, ci, text=chunk.text, quality_score=q_score)
             m["file_format"] = ext.lstrip(".")
             meta.append(m)
         return texts, meta
 
-    # --- Binary formats: PDF / EPUB / DOCX ---
     if ext in (".pdf", ".epub", ".docx"):
         chunks_list, doc, err = chunk_file(abs_path)
         if err:
             errors.add(rel_path, err)
             return [], []
-
         if not chunks_list:
             errors.add(rel_path, "no_chunks")
             return [], []
 
-        # Flag scanned PDFs
         if ext == ".pdf" and doc and doc.extraction_quality < 0.2:
             scanned_log.append(rel_path)
             errors.add(rel_path, "scanned_pdf")
             return [], []
 
-        texts = []
-        meta = []
+        texts, meta = [], []
         fmt_label = ext.lstrip(".")
         for ci, chunk in enumerate(chunks_list):
+            q_score = QualityScorer.score(chunk.text, chunk.heading)
+            if q_score < 0.3: continue
+            if _DEDUPE.is_duplicate(chunk.text): continue
+
             texts.append(prepend_context(chunk.text, rel_path, chunk.heading))
-            m = build_meta(rel_path, chunk.heading, None, ci)
+            m = build_meta(rel_path, chunk.heading, None, ci, text=chunk.text, quality_score=q_score)
             m["file_format"] = fmt_label
-            # Add format-specific metadata
             if doc and doc.metadata:
-                if doc.metadata.get("title"):
-                    m["doc_title"] = doc.metadata["title"]
-                if doc.metadata.get("author"):
-                    m["doc_author"] = doc.metadata["author"]
+                if doc.metadata.get("title"): m["doc_title"] = doc.metadata["title"]
+                if doc.metadata.get("author"): m["doc_author"] = doc.metadata["author"]
             if ext == ".pdf" and chunk.heading and chunk.heading.startswith("Page"):
                 m["page"] = chunk.heading
             elif ext == ".epub" and chunk.heading:
@@ -227,22 +227,9 @@ def process_file(
     return [], []
 
 
-# ---------------------------------------------------------------------------
-# B-W6-06: Scanned PDF logger
-# ---------------------------------------------------------------------------
-
 def save_scanned_log(scanned: list[str], path: str) -> None:
-    """Write list of scanned PDFs to a text file."""
     with open(path, "w") as f:
-        for p in sorted(scanned):
-            f.write(p + "\n")
+        for p in sorted(scanned): f.write(p + "\n")
 
 
-__all__ = [
-    "ErrorAggregator",
-    "Checkpoint",
-    "check_memory",
-    "get_rss_mb",
-    "process_file",
-    "save_scanned_log",
-]
+__all__ = ["ErrorAggregator", "Checkpoint", "check_memory", "get_rss_mb", "process_file", "save_scanned_log"]

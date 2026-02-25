@@ -91,6 +91,53 @@ def chunk_txt(text):
     return chunks
 
 _FM_RE = re.compile(r"\A---\s*\n(.*?\n)---\s*\n?", re.DOTALL)
+
+# ---------------------------------------------------------------------------
+# Quality Scoring (Day 5)
+# ---------------------------------------------------------------------------
+
+class QualityScorer:
+    """Score a chunk's quality based on text characteristics."""
+    
+    _BOILERPLATE_PATTERNS = [
+        re.compile(r"\[\[.*?\]\]", re.IGNORECASE),  # wikilinks only
+        re.compile(r"^\s*[\\*_-]{3,}\s*$", re.MULTILINE),  # dividers
+        re.compile(r"^\s*tags:\s*#.*$", re.IGNORECASE | re.MULTILINE),  # tag lines
+        re.compile(r"^\s*Exported with AIPRM.*$", re.IGNORECASE | re.MULTILINE),
+    ]
+
+    @staticmethod
+    def score(text: str, heading: Optional[str] = None) -> float:
+        """Calculate quality score 0.0 - 1.0."""
+        text = text.strip()
+        if not text: return 0.0
+        
+        score = 1.0
+        
+        # 1. Penalty for tiny chunks
+        if len(text) < 100:
+            score *= 0.5
+        elif len(text) < 300:
+            score *= 0.8
+            
+        # 2. Penalty for low-information boilerplate
+        clean_text = text
+        for pattern in QualityScorer._BOILERPLATE_PATTERNS:
+            clean_text = pattern.sub("", clean_text)
+            
+        if len(clean_text.strip()) < (len(text) * 0.3):
+            score *= 0.4  # Mostly links/tags/dividers
+            
+        # 3. Heading signal boost
+        if heading:
+            score = min(1.0, score + 0.1)
+            
+        # 4. Repeated character penalty (e.g. lists of underscores)
+        if re.search(r"([ \-_*#=]){5,}", text):
+            score *= 0.9
+
+        return round(score, 3)
+
 def extract_frontmatter(text):
     m = _FM_RE.match(text)
     if not m: return None, text

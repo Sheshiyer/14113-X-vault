@@ -178,6 +178,7 @@ def format_results(
                 "page": r.get("page", ""),
                 "chapter": r.get("chapter", ""),
                 "doc_title": r.get("doc_title", ""),
+                "text": r.get("text", ""),
             })
         return json.dumps(out, indent=2, ensure_ascii=False)
 
@@ -465,14 +466,20 @@ def main() -> None:
         print("  Run index_vault.py first.", file=sys.stderr)
         sys.exit(1)
 
-    print("Loading index...", end=" ", flush=True)
+    if not args.json_output:
+        print("Loading index...", end=" ", flush=True, file=sys.stderr)
+    
     index = load_index(faiss_path)
     meta = load_metadata(meta_path)
-    print(f"{index.ntotal:,} chunks loaded.")
-
-    print("Loading model...", end=" ", flush=True)
+    
+    if not args.json_output:
+        print(f"{index.ntotal:,} chunks loaded.", file=sys.stderr)
+        print("Loading model...", end=" ", flush=True, file=sys.stderr)
+    
     model = SentenceTransformer(args.model)
-    print("ready.")
+    
+    if not args.json_output:
+        print("ready.", file=sys.stderr)
 
     if args.batch:
         # B-W9: Batch mode

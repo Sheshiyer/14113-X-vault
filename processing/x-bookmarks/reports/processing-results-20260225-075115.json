@@ -1,0 +1,32 @@
+{
+  "stage": "processing-complete",
+  "pipeline": "x-bookmarks-sync",
+  "processed": 0,
+  "failed": 0,
+  "skipped": 4,
+  "total": 4,
+  "success_rate": 0.0,
+  "timestamp": "2026-02-25T02:21:15Z",
+  "files": [
+    {
+      "id": "2025920521871716562",
+      "markdown_wrapper": "/Volumes/madara/2026/twc-vault/processing/x-bookmarks/items/2025920521871716562.md",
+      "status": "skipped_exists"
+    },
+    {
+      "id": "2023957499183829467",
+      "markdown_wrapper": "/Volumes/madara/2026/twc-vault/processing/x-bookmarks/items/2023957499183829467.md",
+      "status": "skipped_exists"
+    },
+    {
+      "id": "2019801485870305325",
+      "markdown_wrapper": "/Volumes/madara/2026/twc-vault/processing/x-bookmarks/items/2019801485870305325.md",
+      "status": "skipped_exists"
+    },
+    {
+      "id": "2018362304073441639",
+      "markdown_wrapper": "/Volumes/madara/2026/twc-vault/processing/x-bookmarks/items/2018362304073441639.md",
+      "status": "skipped_exists"
+    }
+  ]
+}

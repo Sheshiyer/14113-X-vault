@@ -23,7 +23,7 @@ import time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from chunker import chunk_markdown, chunk_txt, extract_frontmatter
-from walker import walk_vault, safe_read, is_noisy, prepend_context, build_meta, ProgressTracker
+from walker import walk_vault, safe_read, is_noisy, prepend_context, build_meta, ProgressTracker, ALL_EXTENSIONS
 from embedder import (
     encode_chunked,
     build_faiss_index,
@@ -46,9 +46,27 @@ from incremental import (
     load_embeddings,
     merge_index,
 )
-from index_vault import SkipLogger
+from batch_processor import ErrorAggregator, process_file
 
 from sentence_transformers import SentenceTransformer
+
+
+# ---------------------------------------------------------------------------
+# Simple SkipLogger
+# ---------------------------------------------------------------------------
+
+class SkipLogger:
+    def __init__(self, path: str):
+        self.path = path
+        self.file = open(path, "w")
+        self.count = 0
+
+    def log(self, rel_path: str, reason: str) -> None:
+        self.file.write(f"{rel_path}: {reason}\n")
+        self.count += 1
+
+    def close(self) -> None:
+        self.file.close()
 
 
 # ---------------------------------------------------------------------------
@@ -57,6 +75,27 @@ from sentence_transformers import SentenceTransformer
 
 _DEFAULT_VAULT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 _DEFAULT_OUTPUT = os.path.join(_DEFAULT_VAULT, "_System", "memory")
+
+_FORMAT_MAP = {
+    "md": ".md",
+    "txt": ".txt",
+    "pdf": ".pdf",
+    "epub": ".epub",
+    "docx": ".docx",
+}
+
+
+def parse_formats(fmt_str: str) -> set[str]:
+    if fmt_str.lower() == "all":
+        return ALL_EXTENSIONS
+    exts = set()
+    for f in fmt_str.split(","):
+        f = f.strip().lower()
+        if f in _FORMAT_MAP:
+            exts.add(_FORMAT_MAP[f])
+        elif f.startswith("."):
+            exts.add(f)
+    return exts or ALL_EXTENSIONS
 
 
 # ---------------------------------------------------------------------------
@@ -67,61 +106,25 @@ def rechunk_files(
     vault_path: str,
     rel_paths: list[str],
     skip_log: SkipLogger,
+    extensions: set[str] | None = None,
 ) -> tuple[list[str], list[dict]]:
-    """Chunk a specific set of files and return texts + metadata.
-
-    Parameters
-    ----------
-    vault_path : str
-        Vault root directory.
-    rel_paths : list[str]
-        Vault-relative file paths to process.
-    skip_log : SkipLogger
-        Logger for skipped files.
-
-    Returns
-    -------
-    (texts, meta) : tuple
-        Parallel lists of context-prepended chunk texts and metadata dicts.
-    """
+    """Chunk a specific set of files and return texts + metadata."""
     all_texts: list[str] = []
     all_meta: list[dict] = []
 
+    errors = ErrorAggregator()
+    scanned_pdfs: list[str] = []
+
     for rel_path in rel_paths:
         abs_path = os.path.join(vault_path, rel_path)
-
-        content = safe_read(abs_path)
-        if not content:
-            skip_log.log(rel_path, "encoding_error")
+        texts, meta = process_file(abs_path, rel_path, vault_path, errors, scanned_pdfs)
+        
+        if not texts:
+            skip_log.log(rel_path, "skipped_or_error")
             continue
-
-        if is_noisy(content):
-            skip_log.log(rel_path, "noisy")
-            continue
-
-        is_md = rel_path.lower().endswith(".md")
-        frontmatter = None
-        body = content
-        if is_md:
-            frontmatter, body = extract_frontmatter(content)
-
-        if len(body.strip()) < 50:
-            skip_log.log(rel_path, "too_short_body")
-            continue
-
-        if is_md:
-            chunks = chunk_markdown(body)
-        else:
-            chunks = chunk_txt(body)
-
-        if not chunks:
-            skip_log.log(rel_path, "no_chunks")
-            continue
-
-        for ci, chunk in enumerate(chunks):
-            text_with_ctx = prepend_context(chunk.text, rel_path, chunk.heading)
-            all_texts.append(text_with_ctx)
-            all_meta.append(build_meta(rel_path, chunk.heading, frontmatter, ci))
+            
+        all_texts.extend(texts)
+        all_meta.extend(meta)
 
     return all_texts, all_meta
 
@@ -136,16 +139,21 @@ def full_rebuild(
     model_name: str,
     batch_size: int,
     mega_batch: int,
+    extensions: set[str] | None = None,
 ) -> dict:
     """Run a complete re-index (same as index_vault but saves embeddings + mtimes)."""
     os.makedirs(output_dir, exist_ok=True)
-    skip_log = SkipLogger(os.path.join(output_dir, "skipped.log"))
+    
+    errors = ErrorAggregator()
+    scanned_pdfs: list[str] = []
 
     # Phase 1: Walk + Chunk
     print("Phase 1/3: Walking vault and chunking files...")
     t0 = time.monotonic()
 
-    file_list = list(walk_vault(vault_path))
+    if extensions is None:
+        extensions = ALL_EXTENSIONS
+    file_list = list(walk_vault(vault_path, extensions=extensions))
     total_files = len(file_list)
     print(f"  Found {total_files:,} files to process")
 
@@ -156,53 +164,21 @@ def full_rebuild(
     files_indexed = 0
 
     for idx, (abs_path, rel_path) in enumerate(file_list):
-        content = safe_read(abs_path)
-        if not content:
-            skip_log.log(rel_path, "encoding_error")
-            tracker.update(idx + 1); emitter.emit("indexing.active", {"progress": (idx+1)/total_files}, kosha_layer="annamaya")
-            continue
-
-        if is_noisy(content):
-            skip_log.log(rel_path, "noisy")
-            tracker.update(idx + 1); emitter.emit("indexing.active", {"progress": (idx+1)/total_files}, kosha_layer="annamaya")
-            continue
-
-        is_md = rel_path.lower().endswith(".md")
-        frontmatter = None
-        body = content
-        if is_md:
-            frontmatter, body = extract_frontmatter(content)
-
-        if len(body.strip()) < 50:
-            skip_log.log(rel_path, "too_short_body")
-            tracker.update(idx + 1); emitter.emit("indexing.active", {"progress": (idx+1)/total_files}, kosha_layer="annamaya")
-            continue
-
-        if is_md:
-            chunks = chunk_markdown(body)
-        else:
-            chunks = chunk_txt(body)
-
-        if not chunks:
-            skip_log.log(rel_path, "no_chunks")
-            tracker.update(idx + 1); emitter.emit("indexing.active", {"progress": (idx+1)/total_files}, kosha_layer="annamaya")
-            continue
-
-        for ci, chunk in enumerate(chunks):
-            text_with_ctx = prepend_context(chunk.text, rel_path, chunk.heading)
-            all_texts.append(text_with_ctx)
-            all_meta.append(build_meta(rel_path, chunk.heading, frontmatter, ci))
-
-        files_indexed += 1
-        tracker.update(idx + 1); emitter.emit("indexing.active", {"progress": (idx+1)/total_files}, kosha_layer="annamaya")
+        texts, meta = process_file(abs_path, rel_path, vault_path, errors, scanned_pdfs)
+        
+        if texts:
+            all_texts.extend(texts)
+            all_meta.extend(meta)
+            files_indexed += 1
+            
+        tracker.update(idx + 1)
 
     tracker.finish()
-    skip_log.close()
 
     chunk_count = len(all_texts)
     t1 = time.monotonic()
     print(f"  Chunking done: {files_indexed:,} files → {chunk_count:,} chunks "
-          f"({skip_log.count} skipped) in {t1 - t0:.1f}s")
+          f"({errors.total} errors/skipped) in {t1 - t0:.1f}s")
 
     if chunk_count == 0:
         print("ERROR: No chunks produced. Aborting.")
@@ -247,6 +223,10 @@ def full_rebuild(
     mtime_map = collect_mtimes(file_list)
     save_file_mtimes(mtime_map, hashes_path)
 
+    if scanned_pdfs:
+        from batch_processor import save_scanned_log
+        save_scanned_log(scanned_pdfs, os.path.join(output_dir, "scanned_pdfs.txt"))
+
     total_time = time.monotonic() - t0
     stats = save_stats(
         file_count=files_indexed,
@@ -254,7 +234,7 @@ def full_rebuild(
         model_name=model_name,
         extra={
             "total_files_walked": total_files,
-            "files_skipped": skip_log.count,
+            "files_skipped": errors.total,
             "total_time_seconds": round(total_time, 1),
             "mode": "full_rebuild",
         },
@@ -262,7 +242,7 @@ def full_rebuild(
     )
 
     _print_summary(
-        files_indexed, chunk_count, skip_log.count,
+        files_indexed, chunk_count, errors.total,
         faiss_path, meta_path, emb_path, output_dir, total_time,
     )
     return stats
@@ -278,6 +258,7 @@ def incremental_update(
     model_name: str,
     batch_size: int,
     mega_batch: int,
+    extensions: set[str] | None = None,
 ) -> dict:
     """Run an incremental update: detect changes, re-embed only diffs."""
     t0 = time.monotonic()
@@ -299,7 +280,9 @@ def incremental_update(
 
     # Step 1: Walk vault and collect current mtimes
     print("Step 1/5: Walking vault...")
-    file_list = list(walk_vault(vault_path))
+    if extensions is None:
+        extensions = ALL_EXTENSIONS
+    file_list = list(walk_vault(vault_path, extensions=extensions))
     current_map = collect_mtimes(file_list)
     print(f"  Found {len(file_list):,} files")
 
@@ -323,7 +306,7 @@ def incremental_update(
     print(f"Step 3/5: Re-chunking {n_new + n_mod} changed files...")
     skip_log = SkipLogger(os.path.join(output_dir, "skipped.log"))
     changed_rel_paths = new_files + modified_files
-    new_texts, new_meta = rechunk_files(vault_path, changed_rel_paths, skip_log)
+    new_texts, new_meta = rechunk_files(vault_path, changed_rel_paths, skip_log, extensions=extensions)
     skip_log.close()
     print(f"  Produced {len(new_texts):,} chunks from {n_new + n_mod} files "
           f"({skip_log.count} skipped)")
@@ -485,6 +468,11 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Force complete re-index (ignore mtime state)",
     )
+    parser.add_argument(
+        "--formats",
+        default="all",
+        help="Comma-separated formats: md,txt,pdf,epub,docx or all",
+    )
     return parser.parse_args()
 
 
@@ -499,6 +487,8 @@ def main() -> None:
     print(f"  Batch:    {args.batch_size}")
     print()
 
+    extensions = parse_formats(args.formats)
+
     if args.full_rebuild:
         stats = full_rebuild(
             vault_path=args.vault_path,
@@ -506,6 +496,7 @@ def main() -> None:
             model_name=args.model,
             batch_size=args.batch_size,
             mega_batch=args.mega_batch,
+            extensions=extensions,
         )
     else:
         stats = incremental_update(
@@ -514,6 +505,7 @@ def main() -> None:
             model_name=args.model,
             batch_size=args.batch_size,
             mega_batch=args.mega_batch,
+            extensions=extensions,
         )
 
     if not stats:

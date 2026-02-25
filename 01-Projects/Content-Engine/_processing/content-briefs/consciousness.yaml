@@ -1,0 +1,79 @@
+topic: Consciousness
+date: '2026-02-25'
+channel: X
+status: draft
+source_lattice:
+  areas: []
+  resources:
+  - path: 03-Resources/Authors/James-True/AIPRM-export-chatgpt-thread_2024-11-21T22_36_16.372Z.md
+    score: 0.6936
+    heading: 1.2 Distributed Nature of Consciousness
+  - path: 03-Resources/Authors/James-True/Consciousness-Studies/Exploring-Consciousness-Living-Systems-Sapience-Sentience.md
+    score: 0.6605
+    heading: 1.1. Overview of Living Systems and Consciousness
+  projects:
+  - path: 01-Projects/Somatic-Canticles/02_MANUSCRIPTS/CHAPTERS/overview.md
+    score: 0.7061
+    heading: 6. Creative-Ideas
+  - path: 01-Projects/tryambakam-noesis/runtime-systems/Runtime-of-God/06-FutureDevelopment/05-ParadigmShifts/01-ConsciousnessParadigmEvolution.md
+    score: 0.6936
+    heading: Philosophical Considerations
+depth_gates:
+  runtime_claim: pending
+  pattern_claim: pending
+  embodied_intervention: pending
+  non_pitch_closure: pending
+evidence_chunks:
+- path: 01-Projects/Somatic-Canticles/02_MANUSCRIPTS/CHAPTERS/overview.md
+  heading: 6. Creative-Ideas
+  chunk: '# Somatic Canticles: A Comprehensive Overview
+
+    **A Consciousness Evolution Manual Disguised as Science Fiction**
+
+
+    ---
+
+
+    ## Executive Summary
+
+
+    **Somatic Canticles** is a groundbreaking trilogy that bridges consciousness science,
+    mystical traditions, and technical systems thinking into a unified narrative framework.
+    The work presents consciousness evolution not as abstract philosophy, but as an
+    engineerable system with precise mechanics, measurable states, and practical debugging
+    protocols.
+
+
+    This un...'
+- path: 03-Resources/Authors/James-True/AIPRM-export-chatgpt-thread_2024-11-21T22_36_16.372Z.md
+  heading: 1.2 Distributed Nature of Consciousness
+  chunk: '
+
+    ```
+
+    Exported with AIPRM https://www.aiprm.com by Shesh Iyer on 11/22/2024, 4:06:16
+    AM
+
+    ```
+
+
+    ---
+
+
+
+    **User:**
+
+    Compose an informative eBook on [The three body Kingdom] that serves as an effective
+    lead magnet on our website. Outline the key concepts and information that the
+    eBook will cover, ensuring it provides substantial value and insights related
+    to the topic. Structure the content into clear, digestible chapters, each focusing
+    on a specific aspect of [The three body Kingdom]. Write in an engagi...'
+- path: 01-Projects/tryambakam-noesis/runtime-systems/Runtime-of-God/06-FutureDevelopment/05-ParadigmShifts/01-ConsciousnessParadigmEvolution.md
+  heading: Philosophical Considerations
+  chunk: "# Paradigm Shifts in Consciousness Understanding\n\n## Theoretical Foundation\n\
+    Comprehensive exploration of fundamental transformations in our understanding\
+    \ of consciousness, integrating quantum mechanics, computational models, and metaphysical\
+    \ insights.\n\n## Paradigm Transformation Mechanisms\n\n### 1. Recursive Consciousness\
+    \ Reframing\n```python\nclass ParadigmShiftEngine:\n    def __init__(self, transformation_depth=5):\n\
+    \        self.depth = transformation_depth\n        self.paradigm_libraries =\
+    \ {\n    ..."
