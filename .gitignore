@@ -242,7 +242,20 @@ _System/openclaw/
 04-Archives/processing-folder/
 
 # === IGNORED EMBEDDED GIT REPOSITORIES ===
-# These directories contained their own .git folders and are ignored as requested.
-01-Projects/Somatic-Canticles/
-04-Archives/System-Noise/01-Projects/tryambakam-noesis/Somatic-Canticles-Webapp/
-_System/10865xseed/
+01-Projects/Somatic-Canticles
+01-Projects/tryambakam-noesis/themes/vs-code
+04-Archives/System-Noise/01-Projects/tryambakam-noesis/Somatic-Canticles-Webapp
+_System/10865xseed
+_System/openclaw/ANNAMAYA/brahman-darshanam
+_System/openclaw/GLOSSOPETRAE
+_System/openclaw/artefacts
+_System/openclaw/source
+_System/openclaw/workspace
+_System/openclaw/workspace-chitta-weaver
+_System/openclaw/workspace-main
+_System/openclaw/workspace-noesis-vishwakarma
+_System/openclaw/workspace-noesis-vishwakarma/MANOMAYA/archives/v2_integration_final_snapshot/ANNAMAYA/brahman-darshanam
+_System/openclaw/workspace-noesis-vishwakarma/MANOMAYA/archives/v2_integration_final_snapshot/workspace
+_System/openclaw/workspace-noesis-vishwakarma/MANOMAYA/archives/v2_integration_final_snapshot/workspace/sources/selemene-engine
+_System/openclaw/workspace-noesis-vishwakarma/sources/selemene-engine
+_System/openclaw/workspace-sadhana-orchestrator
