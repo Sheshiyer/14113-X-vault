@@ -1,0 +1,1 @@
+[Context] + [Specific Information] + [Intent/Goal] + [Response Format (if needed)] = Perfect Prompt

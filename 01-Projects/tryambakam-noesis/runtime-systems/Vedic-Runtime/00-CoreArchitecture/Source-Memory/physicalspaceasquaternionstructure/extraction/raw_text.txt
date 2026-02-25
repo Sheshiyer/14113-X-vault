@@ -1,0 +1,356 @@
+                                                                                                                                                    math-ph/0307038
+
+                                                                      Physical Space as a Quaternion Structure, I:
+                                                                          Maxwell Equations. A Brief Note.
+                                                                                            Peter Michael Jack∗
+                                                                                            Hypercomplex Systems
+                                                                                             Toronto, Canada †
+                                                                                            (Dated: July 18, 2003)
+                                                        This paper shows how to write Maxwell’s Equations in Hamilton’s Quaternions. The fact that the
+                                                     quaternion product is non-commuting leads to distinct left and right derivatives which must both be
+                                                     included in the theory. A new field component is then revealed, which reduces part of the degree of
+                                                     freedom found in the gauge, but which can then be used to explain thermoelectricity, suggesting that
+                                                     the theory of heat has just as fundamental a connection to electromagnetism as the magnetic field
+                                                     has to the electric field, for the new theory now links thermal, electric, and magnetic phenomena
+                                                     altogether in one set of elementary equations. This result is based on an initial hypothesis, named
+
+
+
+
+arXiv:math-ph/0307038v1 18 Jul 2003
+                                                     “The Quaternion Axiom,” that postulates physical space is a quaternion structure.
+
+                                                     PACS numbers: 03.50.De, 72.15.Jf, 72.20.Pa, 73.50.Lw, 74.25.Fy
+
+
+                                                I.    THE QUATERNION AXIOM.                               and ‘operate to the left’, respectively. Then, for example,
+                                                                                                          if the ‘a’ term is the operator, and the ‘b’ term is the
+                                        The quaternions                                                   variable acted upon by the operator, we have;
+
+                                                       a = a0 + a1.i + a2.j + a3.k                (1)                 a → b = a0.b0 − a1.b1 − a2.b2 − a3.b3
+                                        where i, j, k are the anti-commuting hypercomplex                                   + a0.(b1.i + b2.j + b3.k)
+                                      roots of -1, and the a0, a1, a2, a3 are elements of the                               + (a1.i + a2.j + a3.k).b0             (3)
+                                      real number set, can be used to write down Maxwell’s                                  + (a2.b3 − a3.b2).i
+                                      Equations. We postulate that physical space is a quater-
+                                                                                                                            + (a3.b1 − a1.b3).j
+                                      nion structure, so that the units { i, j, k} represent space
+                                      dimensions, while the scalar { 1} represents time, and                                + (a1.b2 − a2.b1).k
+                                      the space units obey the product rules given by W. R.
+                                      Hamilton in 1843[1] ;                                                           b ← a = a0.b0 − a1.b1 − a2.b2 − a3.b3
+                                                                                                                            + a0.(b1.i + b2.j + b3.k)
+                                                                                                                            + (a1.i + a2.j + a3.k).b0             (4)
+                                                            i2 = j 2 = k 2 = −1
+                                                                                                                            − (a2.b3 − a3.b2).i
+                                                                                                  (2)
+                                                                                                                            − (a3.b1 − a1.b3).j
+                                              i = jk = −kj, j = ki = −ik, k = ij = −ji
+                                                                                                                            − (a1.b2 − a2.b1).k
+                                         We shall refer to this postulate as The Quaternion Ax-              Note, we only need the symbols, → and ← , between
+                                      iom. A position vector in this quaternion space will take           the quaternions themselves. Once we have resolved the
+                                      the form, r = ct + ix + jy + kz, with c the characteris-            algebra to the level of the components, we can revert to
+                                      tic speed that links clock ticks to metre rules, equivalent         the usual convention of putting the operator on the left
+                                      here to the speed of light, so that all measures within this        and the variable acted upon on the right.
+                                      quaternion 4-vector are ultimately in the same units-of-               If there is no physical reason to select one product over
+                                      length.                                                             the other, both products must be accounted for equally
+                                                                                                          in the expressions used to model phenomena in any given
+                                                                                                          theory, otherwise such expressions will have an inherent
+                                                       A.   Ambiguous Product.                            left-hand or right-hand bias.
+                                                                                                             When dealing with operator products therefore, we de-
+                                        Now, because quaternions don’t commute, we need to                fine the right product by, a → b, and the left product by,
+                                      recognise the distinction between left and right actions.           b ← a. Then the two combinations of these, the symmet-
+                                      Consider two quaternion variables a & b. Let us define              ric product, {a,b}, and the antisymmetric product, [a,b],
+                                      the symbols ‘→’ and ‘←’ to mean ‘operate to the right’              are defined correspondingly by;
+                                                                                                                          {a, b} = (1/2)(a → b + b ← a)           (5)
+
+                                      ∗ Alumnus of the Physics Department of Columbia University, NY.
+                                      † Electronic address: math@hypercomplex.com                                         [a, b] = (1/2)(a → b − b ← a)           (6)
+                                                                                                                      2
+
+   Which product we employ in our theory, and where,             Now, although we could invent constructions using the
+is dictated by the symmetries inherent in the physical        quaternion conjugate to eliminate the time component
+problem.                                                      from all our calculations and so obtain the exact results
+                                                              of the 3-vector calculus, this would make the calculations
+                                                              more contrived and less natural than the simple structure
+           II.     MAXWELL EQUATIONS.                         presented here. We therefore let the natural structure of
+                                                              the algebra lead us instead, to the results that follow
+  Now, let the Electromagnetic Potential be                   from accepting this new field component, rather than try
+                                                              to eliminate it from our framework. Then, by inspection,
+                 A = U + A1.i + A2.j + A3.k             (7)   the reformulated Maxwell Field Equations are,
+
+  and the differential operator (d/dr) be defined by,
+                                                                               [d/dr, B] = +{d/dr, E}              (13)
+            d    1 ∂   ∂    ∂     ∂
+               =     +   i+    j+    k                  (8)
+            dr   c ∂t ∂x    ∂y    ∂z
+                                                                               [d/dr, E] = −{d/dr, B}              (14)
+  then by inspection, the Electric and Magnetic fields as
+quaternions are,                                                 The antisymmetric derivative of the magnetic field is
+                                                              the positive of the symmetric derivative of the electric
+ E = −{d/dr, A} = −(1/2)(d/dr → A + A ← d/dr) (9)             field. And, the antisymmetric derivative of the electric
+                                                              field is the negative of the symmetric derivative of the
+                                                              magnetic field. The first represents a real physical law,
+ B = +[d/dr, A] = +(1/2)(d/dr → A − A ← d/dr) (10)            while the second is easily proven to be an algebraic
+                                                              identity when given the definitions of the electric and
+   That is, the electric field is the negative symmetric      magnetic fields above.
+derivative of the potential, and the magnetic field is the
+positive antisymmetric derivative of the potential. The         When written in the vector notation of Heaviside-
+space components of these quaternion fields correspond        Gibbs, these two 4-vector (quaternion) equations become
+exactly to the electric and magnetic fields in the usual      the usual four 3-vector equations,
+3-vector calculus. However, the electric quaternion field
+now has a time component, which we label, T, so that,                   curl(B) = +1/c.∂E/∂t + grad(T )            (15)
+E = T + E, while the magnetic quaternion field has no
+time component, so that, B = 0 + B. And if we allow our                 curl(E) = −1/c.∂B/∂t                       (16)
+notation to alternate between Heaviside-Gibbs 3-vector                   div(E) = +1/c.∂T /∂t                      (17)
+and that of Hamilton’s Quaternion 3-vector, taking care                  div(B) = 0                                (18)
+to match up only the components of the appropriate ex-
+pressions, we can write the quaternion derivative in terms
+of the more familiar vector notation,                                      T = −1/c.∂U/∂t + div(A)                 (19)
+                                                                           E = −grad(U ) − 1/c.∂A/∂t               (20)
+d      1 ∂U            1 ∂A                                                B = curl(A)                             (21)
+   →A=      − div(A) +      + grad(U ) + curl(A)
+dr     c ∂t            c ∂t
+                                             (11)
+                                                              provided we now identify the electric charge density, ρ,
+                                                              and electric current density, J, with the terms involving
+     d    1 ∂U            1 ∂A                                T. Thus, 4πρ = +1/c.∂T /∂t, and 4πJ/c = grad(T ).
+A←      =      − div(A) +      + grad(U ) − curl(A)             The scalar quantity, T, we shall call the “Temporal
+     dr   c ∂t            c ∂t
+                                                (12)          Field.” This scalar field has the same units-of-dimension
+                                                              as the electric and magnetic vector fields in our Gaussian
+where we observe that the quaternion derivative has           system of units. And thus for a given charge, q, the
+“five” distinct parts, much like the five fingers on the      quantity, qT, has units of force, similar to the electric
+human hand. The electric field is then obtained from          force, qE, and the magnetic force, qv/c × B. However,
+clapping the hands together, so that the distinction          this scalar force has no space direction. Instead, it
+between the two vanish (and consequently giving rise, as      acts along the timeline, since that is the scalar axis
+we shall see, to “heat” as well as electricity). While, the   under The Quaternion Axiom used as the basis of this
+magnetic field is obtained from the opposite action of        derivation.
+pulling the hands apart, so that the distinction between
+the two become more pronounced.                                 What effect is produced by a scalar force acting along
+                                                              the timeline?
+                                                                                                                      3
+
+           III.   THERMOELECTRICITY.                            When we introduce the electric charge density and elec-
+                                                             tric current source terms, as additional inhomogeneous
+   The electric force moving a charge, q, through a dis-     parameters to the temporal terms, instead of identify-
+placement, dx, does work, dW = qE·dx. And work is a          ing the electric source directly with the temporal terms
+form of energy. This energy is delivered to the external     themselves, the second equation is unchanged, and the
+environment, and is available, for example, as mechan-       first equation says,
+ical work, capable of moving the parts of a mechanical
+system against a frictional resistance.                        d/dr → (d/dr → A) + (A ← d/dr) ← d/dr = 8πJ
+                                                                                                                   (24)
+
+                       A.   Heat.                            where, J = (ρ, J/c). In the Heaviside-Gibbs 3-vector for-
+                                                             mat, the new inhomogeneous electromagnetic equations
+   Similarly, the temporal force acting on a charge, q,      therefore become,
+for a time interval, cdt, produces an energy-like term,
+dW = −qT cdt (the minus sign reflecting the opposite               curl(B) = +1/c.∂E/∂t + grad(T ) + 4πJ/c         (25)
+signs in the squares of the unit time, 12 = +1, and                curl(E) = −1/c.∂B/∂t                            (26)
+unit space, i2 = j 2 = k 2 = −1, measures, in the                   div(E) = +1/c.∂T /∂t + 4πρ                     (27)
+quaternion spacetime, needed here because E and dx are              div(B) = 0                                     (28)
+Heaviside-Gibbs vectors; thus a positive charge, q > 0,
+under the influence of a positive value temporal field,
+T > 0, produces the equivalent of negative work, i.e.                     T = −1/c.∂U/∂t + div(A)                  (29)
+the charge-field interacting system will absorb energy
+from its surroundings, positive charges thus effectively                  E = −grad(U ) − 1/c.∂A/∂t                (30)
+appearing “cold,” while negative charges effectively                      B = curl(A)                              (31)
+appearing “hot”).
+                                                               These equations then make a clearer distinction
+  In this case, over the given time interval, energy is      between the “thermal” and the “electric” source contri-
+absorbed or evolved from the charge-field interacting        butions to the electromagnetic fields.
+system accordingly as the signs of the charge and the
+temporal field are the same or opposite. Since this scalar      P. W. Bridgman[2] observed, in 1961, that thermoelec-
+energy does not require the charge to move in space,         tric phenomena require the phenomenological description
+in order to materialize as some observable physical          of e.m.f to allow for two different kinds of electromo-
+phenomena the energy that is absorbed and/or evolved         tive force, one that provides what he calls the “working”
+must manifest as a form of heat. Moreover, this heat is      e.m.f, and the other that provides the “driving” e.m.f,
+proportional to the first power of the charge, and thus      for the thermoelectric system. The “working” e.m.f is
+reverses sign with the change in sign of the charge, or      responsible for the production of the total energy that
+correspondingly a change in sign of the electric current,    emerges from the system, while the “driving” e.m.f is re-
+making this a reversible heat, corresponding to the          sponsible for moving the charges in the system, giving
+experimental observations already known as Peltier and       rise to the electric current.
+Thomson Heats in thermoelectricity.                             These two e.m.fs, traditionally considered the same
+                                                             normally in electricity, are not the same when including
+   Thus, the temporal field, T = −1/c.∂U/∂t + div(A),        thermoelectric effects.
+represents the total heat energy per unit charge evolving       Bridgman invents a thermodynamic construction to
+per unit time (i.e. time measured in units of length)        define these two phenomenologically required e.m.fs,
+from the charge-field interacting system due to both the     but he emphasises that since these are constructions
+loss in electrostatic potential energy at the location and   they are not directly observable. Here we find an
+the flow of electrodynamic momentum out of the same          alternative explanation of Bridgman’s idea of the two
+location, much like the diffusion heat flow being due        e.m.fs, on grounds much more fundamentally linked to
+to the sum of two different processes, conduction and        the electromagnetic equations and not requiring his ad
+convection, in nonequilibrium thermodynamics.                hoc thermodynamic arguments.
+
+   Now, instead of using the symmetric and antisymmet-         If we take our new Coulomb-Gauss law, eqn (27), and
+ric derivatives, the two quaternion electromagnetic equa-    separate the sources so that we isolate each effect in or-
+tions can also be written using the left and right deriva-   der to consider the impact of one independently of the
+tives of the potential.                                      other, we find the corresponding result to Bridgman’s
+                                                             two e.m.fs.
+  d/dr → (d/dr → A) + (A ← d/dr) ← d/dr = 0 (22)               We set the free electric charge density to zero and label
+  d/dr → (A ← d/dr) − (d/dr → A) ← d/dr = 0 (23)             the electric field, whose source is given by the temporal
+                                                                                                                          4
+
+term, +1/c.∂T /∂t, alone, with a subscript to indicate         dT /dK = −1/(qc).d(−qT c)/dK, and -qTc is the heat
+this part arises from the temporal source; ET .                energy absorbed per unit time by the charge, q, we see
+                                                               that dT/dK is effectively the measure of a type of “heat
+                                                               capacity” of the unit charge within the particular mate-
+                 div(ET ) = +1/c.∂T /∂t                (32)    rial.
+  Then, by subtracting this electric field from the to-           Consequently, from the new Coulomb-Gauss law, we
+tal field we obtain the Coulomb-Gauss law we are more          infer that an electric field, ET , is induced by a time rate
+familiar with, consisting of just the free electric charge     of change in temperature, the magnitude of the field be-
+density as source.                                             ing determined by this special “heat capacity” of a unit
+                                                               charge within the material and the rate of change of tem-
+                   div(E − ET ) = 4πρ                  (33)    perature with time. The direction of the field is radially
+                                                               away from the point at which the temperature change
+   Here, we can define E, as the “driving” field, since this   occurs.
+is clearly responsible for moving the charges through the
+region of space. Then, E−ET , is the “working” field, that        In an homogeneous isotropic medium, the neighbour-
+determines the total energy (i.e. net energy) delivered        ing points also produce similar fields, but being oppo-
+by the field in the act of moving those charges—part of        sitely directed, they cancel each other, leaving no net
+the energy that would normally be observed due to a            field within the medium. However, where there is an
+charge moving under the influence of that total electric       anisotropy introduced into the medium, such as a tem-
+field being now reabsorbed instead by the mechanics of         perature gradient within the material, a net field will
+the reversible thermoelectric heat in the internal energy      emerge along the direction of that anisotropy. This is
+conversion process.                                            consistent with Bridgman’s thermoelectric e.m.f induced
+   It is not clear to me, however, whether these two           by changing temperature with time, which requires the
+e.m.fs should simply replace Bridgman’s constructions,         presence of an isothermal electric current, thus providing
+or whether Bridgman’s e.m.fs should be considered to           the requisite anisotropy, and also consistent with the py-
+exist independently, thus masking the presence of the          roelectric effect where the mechanical stress and strain
+quaternion results.                                            provide the anisotropic conditions. Thus, here again, we
+                                                               find the effects of the temporal field being masked by
+   Bridgman also notes that symmetric thermoelectric ar-       other theoretically anticipated and experimentally known
+guments require that a time varying temperature will in-       phenomena.
+duce a related thermoelectric electromotive force in the
+material undergoing the variation of temperature, an ef-
+fect that has not yet been experimentally observed.
+   Now, we would expect that the temporal field, T, in an
+                                                                                  C.   Seebeck Effect
+homogeneous material, would itself be uniform through-
+out the material medium, and show no direct indepen-
+dent variation in space or time, except that, given the          Now, consider an electric charge moving from one ma-
+close relation to heat energy, the temporal field would        terial medium into another, say two different metals.
+vary directly with temperature, K, and would conse-            From the rest frame of the moving charge, we find that
+quently show an indirect space variation and time varia-       there is a jump in the temporal field, T, at the time the
+tion to the extent that the temperature itself varies with     charge is seen to cross the boundary from one metal and
+space and time.[3]                                             enter the other metal in the lab frame. This time rate of
+                                                               change of temporal field is seen as an electric field, ET ,
+                                                               by the charge, according to our new Coulomb-Gauss law,
+                       B.   dT/dK                              and this produces an electric force on the charge that ac-
+                                                               celerates it from rest in its instantaneous rest frame, or
+   This relationship between the temporal field and tem-       just accelerates the charge in the lab frame, and this is
+perature can be more clearly expressed functionally, T =       the source of the Seebeck thermoelectric e.m.f.
+T (K). And with this in mind, we conclude that the time           Note, no static surface charges are required at the
+rate of change of the temporal field is proportional to the    boundary between the two metals to establish an electro-
+time rate of change of the temperature,                        static field that will then accelerate the charges to sustain
+                    1 ∂T   1 dT ∂K                             the current. The jump in the temporal field between the
+                         =                             (34)    two metals, which is essentially related to the jump in the
+                    c ∂t   c dK ∂t
+                                                               specific heat capacities per unit charge and the jump in
+  In fact, for any given homogeneous material medium,          electrical conductivity, is the sole source of the manifest
+the measure of the temporal field is simply a measure          e.m.f. Randomly moving charges that cross the bound-
+of the temperature, because the parameter dT/dK is a           ary will be accelerated by this e.m.f, and a closed circuit
+characteristic of the medium. Given that we can write,         will thus sustain a current.
+                                                                                                                        5
+
+                  D.    Thomson Effect                          from the “irreversible heat” due to Joule heating by
+                                                                measuring the total heat produced by the current
+   Consider the new form of Ampere’s law. If we multi-          flowing in one direction, then reversing the direction of
+ply both sides of the equation (25) by the ratio of cur-        the current and measuring the total heat again. The
+rent to electrical conductivity, J/σ, using the vector “dot     difference between the two total heats is then twice the
+product,” then write the gradient of the temporal field         Thomson Heat.
+in terms of the temperature gradient, and re-arrange the
+terms, we obtain four quantities that sum to zero,                 We are now in a position to interpret the special “heat
+                                                                capacity” parameter, dT/dK, introduced above. It is es-
+      J2    c dT                                                sentially equivalent to the product of the Thomson Spe-
+         +          J · grad(K)                  (35)           cific Heat and the Electrical Conductivity of the medium,
+      σ    4πσ dK
+            c                  1                                hT · σ, and thus it is indeed a characteristic of the ma-
+         −     J · curl(B) +      J · ∂E/∂t = 0.                terial.
+           4πσ                4πσ
+
+   The first term we recognise as the Joule Heat produced       IV.    POLARIZATION AND MAGNETIZATION.
+by an electrical current. It is proportional to the square of
+the electrical current density, J2 , and is thus independent      We can identify the net electric field with the electric
+of the direction of the current or the sign of the charge       displacement, D = E − ET . Then, if we define the
+carriers.                                                       magnetic field, BT , to be that which solves the equation,
+   The second term we recognise has the form of the             curl(BT ) = +1/c.∂ET /∂t + grad(T ), we can write,
+Thomson Heat produced by an electrical current flowing          H = B − BT , and obtain the more familiar macroscopic
+up a temperature gradient. It is linear in the electrical       equations.
+current density, J, and thus reverses sign when the cur-
+rent reverses direction or the signs of the charge carriers        We can then argue that in a macroscopic medium, the
+are reversed.                                                   effects due to the presence of these new terms, grad(T )
+   These two terms must just balance the last two terms         and +1/c.∂T /∂t, are normally hidden in the complexities
+in this equation, for a thermally isolated electromagnetic      of the Polarization and Magnetization parameters that
+system. But if we design an experiment to reduce the lat-       describe the material, and thus, in many instances, the
+ter two terms to zero, say, for example, we arrange things      effects of the temporal field are not easily separated to
+so that the electric field is constant in time, ∂E/∂t = 0,      be identified and measured as independent phenomena.
+and the circulation of the magnetic field is perpendicu-
+lar to the current flow, J · curl(B) = 0, then the system
+can no longer be thermally isolated, in general, and we                          V.   CONCLUSION.
+must either pump heat energy into or extract heat out
+to maintain our particular requirements.
+   When placing this electromagnetic system in contact             When James Clerk Maxwell[4] wrote the second
+with heat reservoirs, therefore, and allowing heat to be        edition of his Treatise on Electricity and Magnetism
+exchanged between the system and the reservoirs, in such        he included a quaternion representation of his elec-
+a way that the last two terms vanish, we obtain the con-        tromagnetic equations, but he did not include both
+ditions that characterize the Thomson Heat experiment.          left-hand and right-hand derivatives, and the differential
+The rate of net heat energy exchanged with the reserv-          operator nabla was restricted to the 3-dimensional space
+iors, dQ/dt, is now equal to the sum of the first two heats,    form lacking a time component, and so his work is
+and the equation becomes the usual Thomson Heat equa-           fundamentally different from that presented here.
+tion of thermoelectricity, which says the rate of produc-
+tion of heat by the system is the sum of the irreversible          Indeed, in the calculus of quaternions the differential
+Joule Heat and the reversible Thomson Heat,                     operator almost always appears on the left acting
+                                                                towards the variable on the right, ignoring the other al-
+           dQ                                                   ternative. And even though, Charles Jasper Joly[5] notes
+              = J2 /σ − hT J · grad(K)                  (36)    the distinction in his book A Manual of Quaternions,
+           dt
+                    c dT                                        the importance of the idea goes unnoticed, unexplored,
+           hT = −                                       (37)    and unused. As a consequence of this, an important
+                  4πσ dK
+                                                                field component went missing in Maxwell’s Equations,
+  Where now, hT , is the Thomson Specific Heat of               and all of modern physics has developed from there
+the material, which is defined to be the quantity of            perpetuating one of the consequences of this oversight,
+“reversible heat” absorbed per unit time by an electrical       namely, that the electromagnetic field possesses six
+current of unit strength flowing up a temperature               components, whereas, as we have shown, there should
+gradient of one degree per unit length in a wire of unit        be seven.
+area cross section. The “reversible heat” is separated
+                                                                                                                             6
+
+   Our macroscopic experience tells us that heat is pro-       particle is complete—we infer such a particle must have
+duced by two opposing agents acting, the one against the       an extended structure with a variable intrinsic pulse in
+other, rubbing as it were, as in the familiar case of me-      addition to its quantum mechanically determined fixed
+chanical friction, to produce the gross fire that manifests    intrinsic spin.
+as heat when there is contact with matter. So, when
+we find the electric field is also the sum of two oppos-         This brief note introduces the essential ideas that will
+ing principles, the left-handed tension acting against the     be explored more fully in a future paper.
+right-handed tension, we should not be surprised to find
+a heat component, a more subtle fire, hiding within the
+field, and emerging as heat when the field comes into
+contact with charged matter.
+   Indeed, the action of a material body can be generally
+                                                                                    Acknowledgments
+described in terms of three transformations: translations,
+rotations, and pulsations. The electric field, E, tends to
+induce translations in a test charge, while the magnetic          I wish to acknowledge the encouragement from the
+field, B, tends to induce rotations when the charge is         usenet community of sci.physics, sci.physics.particle, and
+moving, we are then left to conclude that the temporal         sci.math, where the lively discussion my ideas began in
+field, T, tends to induce the pulsations.                      1995, and to acknowledge Prof. Pertti Lounesto in partic-
+   Thus, with the inclusion of the missing temporal            ular, who kept prompting me to get these ideas published
+field the description of the action of a charged material      in a more formal medium.
+
+
+
+
+[1] W. R. Hamilton, 1844, On a new species of Imagi-           [3] We use the letter, K, for temperature, instead of the more
+    nary Quantities connected with the Theory of Quaternions       usual letter, T, since the latter is being used here for the
+    [communicated November 13, 1843], Ir. Acad. Proc., II,         temporal field, and we can remember this as K for Kelvin
+    424-434.                                                       instead of T for Thomson, given that William Thomson
+[2] P. W. Bridgman, 1961, The Thermodynamics of Elec-              became Lord Kelvin, hence the promotion of the letter.
+    trical Phenomena in Metals and a Condensed Collec-         [4] J. C. Maxwell, 1954, Treatise on Electricity and Mag-
+    tion of Thermodynamic Formulas, Dover Publications. –          netism, 3rd ed., 2 vols, Dover, New York.
+    for definitions of “working” and “driving” electromotive   [5] C. J. Joly, 1905, A Manual of Quaternions, London
+    forces, see comments in preface page v, and text pages         Macmillan. In Art 57, Joly recognises the two different left
+    19,61,63,69,129ff. And for comments relating to the ex-        and right differentiations; pp.74-77, and Exercises Ex.5,
+    pected, but as yet unseen, “E.M.F. produced by temper-         Ex.11, on pg.76.
+    ature varying with time,” see preface page vi, and text
+    pages 144-145.
+

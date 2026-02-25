@@ -1,0 +1,481 @@
+12/5/2018                             Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+INFINITE PATTERNS
+
+
+
+
+                                                                                   3 Jan 201628 Jul 2018
+
+
+
+Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu
+Shastra
+
+MAN, MATTER AND MATHEMATICS
+
+History has shown us that from the beginning of man’s evolution, there has always been an attempt to understand the unknown, to differentiate between good and bad forces/energies,
+to harness and propitiate the former and keep away the latter. The various forces of nature were personiﬁed in abstract or anthropomorphic forms giving birth to the concepts of different
+religions. Even with progress in scientiﬁc knowledge, there still remain vast undiscovered areas of the cosmos keeping these concepts alive.
+
+To make sense out of the universe, patterns were made- the unknown in terms of the known, the unmanifest in terms of the manifest. Some were just expressive art forms. In Hindu
+tradition the ﬂoor patterns, the wall paintings and other traditional art forms drew inspiration from nature, everyday life and myths about the supernatural. However, others professed to
+have a scientiﬁc basis. The various magical charts – the mandalas/yantras/astrological charts – showed a deep understanding of the workings of the universe- the movements of the sun,
+moon, stars, etc., The underlying framework for most forms of expression was the order of geometry and the primary aim was to harmonise man with the cosmos.
+
+The study of geometry cannot be separated from the study of numbers. Numbers are the fundamental units determining the nature of matter. In Hindu thought number is considered an
+expression of the structure of the universe and a bridge between man and the universe. Everything that exists has a certain unique numerical structure and shares numerical relationships
+with other things. Mathematics forms the foundation for most of the sciences. The Fibonacci series exhibited in plants is an example from the life sciences. The motor behind the computer
+revolution of today is the binary system; a system wherein anything is described only in two states- an absence or a presence, a system of zero and one. One can come up with numerous
+such illustrations.
+
+The scope of this inquiry limits itself to the relationship between the magic square- a type of mathematical puzzle, and some basic tenets of Hindu thought as expressed in religion and
+architecture.
+
+
+
+MANDALA
+
+Mandala is the generic name for any plan/chart, which represents the cosmos metaphysically/symbolically, a microcosm of the universe from the standpoint of man. In Hindu cosmology
+the surface of the earth is represented as a square, the most fundamental of all Hindu forms. The earth is represented as four cornered with reference to the horizon’s relationship with
+sunrise and sunset, the North and South direction. The earth is thus called Caturbhrsti- four cornered- and is represented in the symbolic form of the Prithvi Mandala. The astrological
+charts or horoscopes- Rasi, Navamsa, etc., also represent in a square plan the ecliptic- the positions of the sun, moon, planets and zodiacal constellations with reference to the native’s
+place and time of birth.
+
+The Vaastu Purusha Mandala is one such mandala, which forms an integral part of Vaastu Shastra- the ancient Hindu canons of town planning and architecture. These have come to us in
+the form of texts like Manasara, Mayamatam, Viswakarma Vaastushastra, Samarangana Sutradara, Silparatna, etc., Abiding by the principles of these Shastras, environments can be
+designed to be built in harmony with the physical and the metaphysical forces/energies of the cosmos- gravitational, electromagnetic, supernatural etc., Vaastu can be loosely translated
+to mean the physical environment and Purusha refers to energy, power, soul or cosmic man. Vaastu Purusha Mandala is the metaphysical plan of a building/temple/site that incorporates
+the course of the heavenly bodies and supernatural forces.
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/                                              1/18
+12/5/2018                             Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+The legend of the Vaastu Purusha goes like this. Once there was a formless being blocking the heaven from the earth. Brahma and many other Gods trapped him to the ground.
+Depending on the contribution and positions of the various Gods in performing this act, portions were allocated to each God in a hierarchical manner on the Vaastu Purusha Mandala.
+Brahma occupied the central portion and other Gods were distributed around in a concentric pattern. There are 45 Gods in all- including Brahma- out of which 32 are outer Gods.
+
+The principal Gods/presiding deities of each direction are:
+
+Northeast- Isaana- Lord of all quarters
+East- Aditya- Sun God
+Southeast- Agni-Lord of Fire
+South- Yama- Lord of Death
+Southwest- Pitru- ancestors
+West- Varuna- Lord of water
+Northwest- Vayu- Lord Of Winds
+North- Kubera- Lord of Wealth
+Centre- Brahma- Lord/Creator of the Universe
+
+In accordance with the position occupied by the Gods, the zoning of site and distribution of rooms in a building are to be done. Thus northeast should house the pooja room, east-
+bathroom, southeast- kitchen, south- bedroom, southwest- armoury, west- dining, northwest –cowshed, north- treasury.
+
+The Vaastu Purusha is the presiding deity of any site. Usually he is depicted as lying on it with the head in the northeast and the legs in the southwest but he keeps changing his position
+throughout the year.
+
+
+
+
+The form of the Vaastu Purusha Mandala is basically a square but there are various types of mandalas depending on the way in which the basic square is divided. In each case, the square
+is subdivided into smaller squares by lines running parallel/perpendicular to the sides. Each side of the square can be divided from 1 to 32 divisions. Thus, the number of squares in the
+Vaastu Purusha Mandala may vary from 1 squared to 32 squared ,i.e from 1, 4, 16, 25 and so on to 1024. Each of these mandalas is given a distinct name and has applications only in
+certain speciﬁc contexts.
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/                                               2/18
+12/5/2018                              Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+The mandala being a metaphysical plan is put to use in site planning and architecture through a process called the Pada Vinyasa. Pada Vinyasa is a method whereby any site can be
+divided into uniform grids/modules called Padas. Depending on the position of the Gods occupying the various modules, the zoning of the site and disposition of functions in a building
+are arrived at. A site of any shape can be divided using the Pada Vinyasa. Sites are known by the number of divisions on each side.
+
+
+
+TYPES OF MANDALAS AND CORRESPONDING NAMES OF SITES
+
+One square- Sakala- single divided site- Eka-pada
+Four squares- Pechaka – two divided site- Dwi-pada
+Nine squares- Pitha- three divided site- Tri-pada
+Sixteen squares- Mahaapitha- four divided site- Chatush-pada
+Twenty ﬁve- Upapitha- ﬁve divided site- Pancha-pada
+Thirty six- Ugrapitha- six divided site- Shashtha-pada
+Forty nine- Sthandila- seven divided site- Sapta-pada
+Sixty four- Manduka/Chandita- eight divided site- Ashta-pada
+Eighty one- Paramasaayika- nine divided site- Nava-pada
+Hundred- Aasana- ten divided site- Dasa-pada
+
+The mandalas have certain distinct properties. In some instances, different texts attribute differing characteristics/usage to them. Here certain generally accepted aspects are described.
+
+The central area in all these mandalas is set apart for Brahma- the Brahmasthana. The space occupied by it varies in different mandalas. In Pitha [9] and Upapitha [25] it occupies one
+square module. In Mahaapitha [16], Ugrapitha [36] and Manduka [64] it occupies four square modules. In Sthandila [49] and Paramasaayika [81] it occupies nine square modules.
+
+The Pitha is an ampliﬁed Prithvimandala in which, according to some texts, the central space is occupied by earth. The Sthandila mandala is used in a concentric manner.
+
+The most important mandalas are the Manduka/Chandita Mandala of 64 squares and the Paramasaayika Mandala of 81 squares- especially the former. The normal position of the Vaastu
+Purusha- head in Northeast, legs in Southwest- is as depicted in the Paramasaayika Mandala. However, in the Manduka Mandala the Vaastu Purusha is depicted with head towards East
+and feet towards West.
+
+An important aspect about the mandala is that when divided into an odd number of squares, or ayugma, its centre is constituted by one module or pada and when divided into an even
+number of squares or yugma, its centre is constituted by a point formed by the intersection of the two perpendicular central lines. In spatial terms, the former is sakala or
+manifest/morphic and the latter is nishkala or unmanifest/amorphous. Thus the Sakala is complete in itself and is used for shrines of gods with form- sakalamoorthy- and to perform
+yagnas. However, the Pechaka is used for installation of idols without form-nishkalamoorthy- and for auspicious, pure performances. The Hindu idea of god/worship itself has two
+phases – Sagunopaasana, the supreme as personal God with attributes and Nirgunopaasana, the supreme as absolute spirit unconditioned by attributes.
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/                                                  3/18
+12/5/2018                             Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+A further interpretation of this suggests that residential buildings are better set out in an odd number of modules because the nishkala or amorphous centre would cause too high a
+concentration of energy for the occupants. Even then, the central space – Brahmasthana should be left unbuilt and rooms are to be organised around it. In temples, the amorphous centre
+would be beneﬁcial to the worshippers, being a source of great energy. This could also be used in settlements. Another property of the mandala is that it has certain points called marmas
+which are vital and vulnerable energy spots on which nothing should be built. They are determined by certain proportional relationships of the squares and the diagonals.
+
+
+
+BRIEF EXPOSITION OF SOME OF THE OTHER ASPECTS OF VAASTU SHASTRA
+
+All places of dwelling are termed Vastu. The actual physical manifestation/form of the dwelling is called Vaastu. Four categories of Vaastu have been identiﬁed namely
+
+The earth/site- Bhoomi, the principal dwelling place on which everything else rests.
+The structures on the earth- the mansions, etc., – Prasada .
+Movable objects- vehicles, etc., – Yaana.
+Furniture- the bedstead, etc., – Sayana.
+
+The principles of Vaastu Shaastra deal with site selection, site planning and orientation, zoning and disposition of rooms, proportional relationships between the various parts of the
+building, the character of a building etc., Here only certain broad principles germane to the discussion are brought in.
+Sites suitable for different castes are given, the most exalted one being of square shape. Rectangle is also acceptable. Sites sloping down towards North or East are considered good with
+higher levels in the South and West. Bhu- Pariksha or examination of soil conditions, Sanku Sthaapanam or method for ﬁxing the orientation are also described. The mandala and the
+pada vinyasa form the foundation for site planning and architectural design and have already been discussed. There are other principles, which involve certain mathematical calculations
+– Maana for proportional relationships in a building, Aayaadi for beneﬁts-, which specify conditions for maximum wellbeing for the residents of a building.
+
+Some principles have been interpreted in certain popular forms which are not featured in well researched academic works. Never the less they have been taken at face value and included
+into the discussion.
+
+
+
+
+Open spaces in site and openings in the building are to be more in the North and East than in the South and the West. No obstacles are to be present in the North and the East. Sites
+having a longer East- West axis are considered better. Levels in the building are to be generally higher in the South and West when compared to the North and East. The Southwest corner
+is to be the highest, the second highest- Southeast, the third highest- Northwest, and ﬁnally the lowest- Northeast. The triangle formed by joining the Southwest, Southeast and the
+Northwest corner of the site is attributed to the moon and the triangle formed by joining the Northeast, Northwest and Southeast corner of the site is attributed to the sun. The former
+should be heavier and higher and the latter light and lower. The diagonal connecting Southwest and Northeast is to be longer than the diagonal connecting Southeast and Northwest. An
+extended Northeast is considered beneﬁcial. These rules are attributed mainly to consideration of the sun’s path, the rotation of the earth, etc., The morning sun is considered especially
+beneﬁcial and purifying. The magnetic ﬁeld is also considered. The body is considered a magnet with the head, the heaviest and most important part being considered the North Pole and
+the feet the south pole. Hence sleeping with one’s head in the north causes a repulsive force with the earth’s magnetic north and thus is harmful. Bedrooms should therefore be designed
+keeping this in mind.
+
+
+
+A BALANCE OF FORCES IN VAASTU SHASTRA
+
+To sum up, the principles of Vaastu shastra- of which the Vaastu Purusha Mandala forms a very important part- expound a method whereby a balance can be achieved; a balance of
+different forms of energy, known and unknown, a balance which is beneﬁcial to living beings, a balance which relates animate and inanimate objects.
+
+
+
+MAGIC SQUARES
+
+Magic squares consist of a number of integers arranged in the form of a square in such a way that the sum of the numbers in every row, column and diagonal are the same. This sum can
+be calculated using the formula [N x [N squared+1]]/2. A magic square may have odd or even number of rows and columns. Usually the magic square is ﬁlled up by consecutive
+numbers from one to N squared where N is the number of rows or columns. A magic square is designated with reference to this. Thus a magic square of order N will have N number of
+rows and columns and will be ﬁlled by numbers ranging from one to N squared. There are many ways to arrive at magic squares but the standard and simplest way is to follow certain
+conﬁgurations/formulae which generate regular patterns. There are also other forms displaying similar characteristics – magic circles, magic polygons, even magic cubes extending the
+concept to the third dimension.
+
+
+
+BRIEF HISTORY OF MAGIC SQUARES
+
+Magic Squares have fascinated humanity throughout the ages and have been around for over 4,000 years.
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/                                              4/18
+12/5/2018                              Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+Chinese literature dating from as early as 2800 BC talks about the legend of Lo Shu or ’scroll of the river Lo’. In the ancient time of China, there was a huge ﬂood. The people tried to offer
+some sacriﬁce to the ‘river god’ of one of the ﬂooding rivers, the ‘Lo’ river, to calm his anger. Then there emerged from the water a turtle with a curious ﬁgure/pattern on its shell; there
+were circular dots of numbers that were arranged in a three by three nine-grid pattern such that the sum of the numbers in each row, column and diagonal was the same- 15. This number
+is also equal to the 15 days in each of the 24 cycles of the Chinese solar year. This pattern, in a certain way, helped in controlling the river.
+
+The Lo Shu Square, as the magic square on the turtle shell is called, is an important part of Feng Shui, the ancient Chinese art of geomancy. Feng Shui, literally meaning wind and water,
+speciﬁes principles of designing environments in tune with elemental forces that may be natural or supernatural. It is beyond the scope of the discussion to bring in more details and
+comparisons. But an interesting fact is that traditional Chinese cities and temples were laid out in a square broken into nine sections. The odd numbers in the Lo Shu Square are male or
+yang and even numbers are female or yin. The numbers 1- the beginning of all things and 9- representing completion are considered most auspicious. The number 5 at the centre is the
+most powerful. The Lo Shu square in the form of a trigram, gives the basis for determining the orientation of buildings. The Lo shu square is also a diagrammatic representation of the
+seasons showing the ratio of yin- the feminine force and yang- the masculine force in the annual cycle.
+
+The magic square ﬁgures in Greek writings dating from about 1300 BC and was used by Arabian astrologers in the ninth century when drawing up horoscopes.
+
+In Khajuraho in India was found inscribed the earliest fourth order magic square, dating from the eleventh or twelfth century. This was a peculiar type known as the diabolic or
+pandiagonal magic square where even the broken diagonals have the same sum.
+
+
+
+
+Magic squares were also frequently found in various cultures, for example, Egypt and India, engraved on stone or metal and worn as talismans, the belief being that magic squares had
+astrological and divinatory qualities- longevity and disease prevention [against plague etc.,] could be ensured by their usage. The Kubera -Kolam is a ﬂoor painting used in India which is
+in the form of a magic square of order three. It begins with the number twenty and ends with the number twenty-eight.
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/                                                  5/18
+12/5/2018                               Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+                                                                                                                Magic squares have become a symbol that unites many cultures.
+
+
+
+TYPES OF MAGIC SQUARES
+
+Magic squares exist for all values of N with only one sole exception- it is impossible to construct a magic square of order 2. Magic squares can be classiﬁed into three types – odd, doubly
+even and singly even. The difference between doubly even and singly even is that whereas in the former N is divisible by four, in the latter N is divisible only by two. The odd number
+magic square and the doubly even magic square are easy to generate, particularly the former. However, the singly even magic square is more difﬁcult to generate. In this context only the
+odd number and doubly even types are discussed.
+
+METHOD OF CONSTRUCTING A MAGIC SQUARE OF ODD ORDER N
+Starting from the central column of the last row with the number 1, the fundamental movement for ﬁlling the squares is diagonally down, right- one step at a time. If a ﬁlled square is
+encountered the movement is vertically up one square and then continuing as before. If a move goes outside the square, then it is considered in the ﬁrst row or column as the case may be.
+The same pattern can be achieved starting from the central column of the ﬁrst row. In this case the fundamental movement is diagonally up, left- one step at a time. If a ﬁlled square is
+encountered the movement is vertically down one square and then continuing as before. If a move goes outside the square, then it is considered as last row or column as the case may be.
+
+METHOD OF CONSTRUCTING A MAGIC SQUARE OF ORDER 3
+Each square is named as in a matrix-the square constituting the ﬁrst row, ﬁrst column is [1,1] and that constituting the last row, last column is [3,3]. Starting from last row, middle column
+[3,2] enter the number 1. The next square to be ﬁlled is diagonally down, right. But this is [4,3] which goes outside the magic square. Instead of this use [1,3], 1 taking the place of 4. So the
+next number 2 is entered in [1,3]. The next square is [2,4], hence it has to be read as [2,1], enter 3 into this square. The next square is [3,2] which is what was started with in the ﬁrst place
+and is already ﬁlled. So go up vertically one step from [2,1] instead of diagonal down, right. This leads to [1,1],enter the number 4 here. The next number 5 is entered in [2,2] and 6 in [3,3]
+both going diagonally down, right. The next square is [4,4] which has to be read as [1,1], but this has already been ﬁlled. Hence go up vertically one step from [3,3] to [2,3] and enter the
+number 7. The next number 8 is entered in [3,4] read as [3,1]. The last number 9 is entered in [4,2] read as [1,2]. Thus now all the squares have been ﬁlled up and the total of each row,
+column and diagonal is 15.
+
+Similar patterns can also be repeated starting from certain other squares, but this is the simplest method.
+
+METHOD OF CONSTRUCTING A MAGIC SQUARE OF DOUBLY EVEN ORDER N
+All the numbers are written in order from right to left across each row in turn, starting from the top right hand corner. Numbers are then either retained in the same place or interchanged
+with their diametrically opposite numbers in a certain regular pattern. In the magic square of order N=4, the numbers in the four central squares and one square at each corner are
+retained in the same place and the others are interchanged with their diametrically opposite numbers. In the magic square of order N= 8, the same is done- the 16 central squares and 4
+squares at each corner are retained in their places and the rest are switched.
+
+The starting point could be from any corner and directions can change accordingly. Other regular patterns can also generate a doubly even type but this is the simplest.
+
+
+
+SOME PROPERTIES OF THE MAGIC SQUARES
+
+TOTALS
+Totals of squares are taken in the following manner
+
+1. At Corners- excluding the central row[s] and column[s].
+
+2. In the middle of each side – excluding the corners mentioned in the conﬁguration above.
+
+3. In L shaped conﬁgurations consisting of corners as described above and also including the central row[s] and column [s].
+
+In each of the above conﬁgurations, the number of rows/columns taken as central ones is as illustrated in the sketches for various orders. Also the centre-most squares formed at the
+intersection of the central row[s] and column[s] are excluded because they are neutral and do not affect the order of the totals.
+
+4. In 4 triangular quadrants created by diagonal lines.
+
+5. In 4 square quadrants created by lines at right angles.
+
+In the above two conﬁgurations the numbers are considered at full, half or quarter value depending on where the dividing lines cut them.
+
+In each of the above conﬁgurations except that in 5, a clear ascending/descending order is exhibited. This order follows a ‘Z’ shaped pattern with different points of origin. Order in 1 is
+the exact reverse of the order in 3. Orders in 2 and 4 are the same and are similar to the order in 3. In the conﬁguration as described in 5, there is no ascending/descending order and all
+totals are the same.
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/                                                     6/18
+12/5/2018                         Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/           7/18
+12/5/2018                         Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/           8/18
+12/5/2018                         Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/           9/18
+12/5/2018                         Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/           10/18
+12/5/2018                         Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/           11/18
+12/5/2018                         Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/           12/18
+12/5/2018                              Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+PATTERNS
+Very interesting geometric patterns are generated in the magic squares depending on the way in which the numbers are considered. The geometric forms so generated exhibit the same
+underlying pattern within the category [odd or doubly even] whatever may be the magnitude of N but there is a distinct difference across categories [between odd and doubly even].
+
+PATTERN 1- FORMED BY CONTINUOUS LINES CONNECTING THE NUMBERS FROM 1 TO N
+The odd order magic square generates a pattern that is diamond/rhombus shaped with the axis running from the bottom left hand corner to the top right hand corner. A deﬁnite
+directionality is thus exhibited towards the diagonal, with the width of the diamond from top left to bottom right being less than its width from bottom left to top right. The total pattern
+formed is broad at the centre and tapers towards the peripheries.
+
+The doubly even order magic square generates a pattern that shows a mildly deﬁned diagonal from bottom left to top right; but the dominant impression is one of a radiating pattern
+from the centre to the periphery, with the least size at the centre and maximum size at the peripheries.
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/                                               13/18
+12/5/2018                              Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+PATTERN 2- FORMED BY DISCONTINUOUS LINES CONNECTING THE NUMBERS IN GROUPS OF FOUR CONSTITUTING FOUR CORNERS OF AN IMAGINARY SQUARE, IN AN
+ASCENDING ORDER.
+The pattern as described above generates three types of geometric conditions- convergence, divergence and parallels. It is difﬁcult to describe all the effects caused by the patterns
+verbally; they are best illustrated through sketches. Examples of higher order squares give a clearer picture when compared to lower order ones. In the illustrations, the lowest numbers
+are indicated by dots and the highest numbers by arrows- the extension of these dots suggest the three conditions and the origin of forces.
+
+The odd order magic square generates a distinct convergence at the top- right corner. The place of convergence varies from the exact corner of the square to much beyond it. The bottom-
+left corner displays an impression of emptiness. This in conjunction with a divergence of lines exhibited on either side of the bottom- left suggests a major area of repulsion/void in the
+bottom- left corner. The axis suggested is from bottom- left to top- right. There are also parallel lines at various places and they show a clear grouping in the higher order magic squares.
+
+The doubly even order magic square suggests an axis either from top to bottom [showing a concentration of lines] or left to right [impression of emptiness] giving rise to a waist like
+constriction at the centre. There are divergences and convergences on either side of the vertical axis but the general effect is one of divergence. All the parallel lines run towards the right
+from the top right of the square.
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/                                                  14/18
+12/5/2018                         Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/           15/18
+12/5/2018                         Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/           16/18
+12/5/2018                              Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+
+
+
+
+A BALANCE OF FORCES IN MAGIC SQUARES
+
+The magic square is an amazing display of the balance of opposing forces, and a neutralisation of lower and higher values. All rows, columns and diagonals add up to the same total. All
+four square quadrants add up to the same total. The corners and sides tend to cause diametrically opposing and neutralising effects. It results in beautiful patterns that explicitly display
+the equilibrium inherent in a dynamic yet stable system.
+
+
+
+MAGIC SQUARES AND MANDALAS
+
+Having looked at both the magic square and some of the tenets of Vaastu Shastra, the similarities between the two are strikingly apparent and amazing to discover. Considering the top of
+the magic square as North a comparison can be drawn.
+
+-The central space as neutral can be compared to the Brahmasthana. All the numbers within the central spaces of a magic square lie around the central value.
+
+-The central space as morphic is suggested in the odd order square by the diamond shaped form bulging at the centre. This can be compared to the reference of Sakala as morphic and
+complete, housing shrines for Gods with form. The statically stable form [when compared to the dynamic shape generated in the doubly even order magic square] can be related to the
+suggested usage of odd numbered mandalas for residences.
+
+-The central space as amorphous and energy generating is suggested in the doubly even order square by the voids and the dynamic, emanating nature of lines. This can be related to the
+suggested usage of even numbered mandalas for temples and for idols without form, being too strong for residential usage.
+
+-The diagonal axis of the odd order magic square is in the same position as the Vaastu purusha in the Paramasaayika Mandala [81 squares].
+
+-The horizontal/vertical axis of the doubly even magic square is of the same nature as the Vaastu Purusha in the Manduka Mandala[ 64 squares].
+
+– The diamond shaped pattern in the odd order magic square with its length and width can be compared to the longer diagonal from Southwest to Northeast and the shorter diagonal
+from Northwest to Southeast suggested in Vaastu.
+
+-The extended convergence at the top-right in the odd order magic square can be compared to the extended northeast corner of site suggested in Vaastu for beneﬁts and well being.
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/                                               17/18
+12/5/2018                               Magic Squares and Vaastu Purusha Mandala – A Mathematical Interpretation of Vaastu Shastra – INFINITE PATTERNS
+– In Vaastu, energy is considered to be emanating from the Northeast corner. The highest levels of energy and the lowest level of height thus go together. The numerical values given in
+the different types of totals in a magic square can be interpreted in terms of energy or heights and accordingly the pattern can be started at a speciﬁc point. In this comparison the values
+are taken in terms of height. Thus the lowest numerical value is considered as giving the highest value of energy. The hierarchies of values follow patterns in the form of a Z- the same as
+suggested in Vaastu – Southwest, Southeast, Northwest, Northeast. Never the less there is also a reverse effect. To explain this effect, the starting points of the magic squares of order 8 and
+9 have been selected in two ways to give diametrically opposite effects. Taken one way, the corners of squares [conﬁguration 1] will follow Vaastu while the sides[2], the L-shapes at
+corners[3] and the triangular quadrants[4] will give a diametrically opposite effect; taken another way a reverse condition prevails. However in both cases the patterns formed will not
+change due to the reversal of numbers. Which effect is more compatible to the principles of Vaastu is an important point to be explored.
+
+
+
+FORCES OR FARCES?
+
+The similarities between the magic square and the mandala can lead to an understanding of the universe as a complex matrix, a web of forces in which all threads are interwoven. On the
+other hand, they can also be dismissed off as mere coincidences or complex meaningless contrivations. One is free to make one’s judgement. As a matter of fact, this analysis was
+triggered off merely by an accidental discovery of some of the coincidences, with just a superﬁcial knowledge of Vaastu Shastra. But this led to a deeper study wherein more coincidences
+were discovered. And ﬁnally came the discovery of the existence of the Lo Shu magic square and its important role in Feng shui.
+
+There also exists, as mentioned earlier, another category of forms known as magic cubes. Magic cubes display a balance of forces in all three directions and are very complex three-
+dimensional forms. Their analysis in this context would probably lead to deeper meanings.
+
+Many creative thinkers, architects including, have compared the shunya/bindu at the centre of the mandala with the Black Hole theory of the cosmos. Taking this comparison to magic
+squares-the doubly even magic square shows a dynamic emanation/radiation or a sucking vortex depending on how one looks at it. In any case, it suggests a great source of energy when
+compared to the relatively stable centre of the odd order magic square. Is it the Big Bang with its singularity or is it the Black Hole? Which is the light of creation and which is the darkness
+of death? Does creation manifest itself in a continuous cycle of numbers-odd and even? Are the answers to be found in religion, myth or science? In any case, an attempt can be made only
+when there is a cross-disciplinary, holistic approach to understanding the world.
+
+This is the original form of the article Man, Matter and Magic Squares published in the journal Architecture + Design, July-August 2000 issue.
+
+                                                                                             ADVERTISEMENT
+                                                                           Advertisements
+
+
+
+
+                                                                                                     REPORT THIS AD
+
+
+
+
+                                                                                                     REPORT THIS AD
+Leave a comment
+
+
+                                                                                            WordPress.com.
+
+
+
+
+https://sitalakshmikr.wordpress.com/2016/01/03/magic-squares-and-vaastu-purusha-mandala-a-mathematical-interpretation-of-vaastu-shastra/                                                  18/18
+

@@ -1,0 +1,185 @@
+# Cross-References for 01-Projects\Core-Framework\Architecture\Breath-Architecture\breath-training-course.md
+
+## Character Connections
+
+## Concept Connections
+- **Somatic-Canticles\CHANGELOG.md** - Concepts: debug protocol
+- **01-Projects\Core-Framework\index.md** - Concepts: debug protocol
+- **01-Projects\Core-Framework\Architecture\Service-Architecture\Divination-Techniques\TarotReadingSessions.md** - Concepts: debug protocol
+- **01-Projects\Core-Framework\Architecture\Service-Architecture\ServicePackages\StarterDebugPackage.md** - Concepts: debug protocol
+- **01-Projects\Core-Framework\Development\Content-Runtime\Agent-Systems\agents\ThreadWeaver.md** - Concepts: debug protocol
+- **01-Projects\Core-Framework\Frameworks\Spiral-Protocol\implementation-guide.md** - Concepts: debug protocol
+- **01-Projects\Core-Framework\Frameworks\Spiral-Protocol\pattern-recognition-framework.md** - Concepts: debug protocol
+- **01-Projects\Core-Framework\Frameworks\Spiral-Protocol\spiral-consciousness-protocol.md** - Concepts: debug protocol
+- **01-Projects\Products\Temporal-Raaga\system-architecture-scan.md** - Concepts: debug protocol
+- **01-Projects\Products\Consciousness-Extension\docs\Features.md** - Concepts: debug protocol
+- **01-Projects\Runtime-Systems\Runtime-of-God\00-ProjectStructure.md** - Concepts: debug protocol
+- **01-Projects\Runtime-Systems\Runtime-of-God\core-system-architecture.md** - Concepts: debug protocol
+- **01-Projects\Runtime-Systems\Vedic-Runtime\Shikshavalli\04_Implementation_Protocol.md** - Concepts: debug protocol
+- **01-Projects\Runtime-Systems\Vedic-Runtime\01-TaittiriyaUpanishad\00-Overview\integration-points.md** - Concepts: debug protocol
+- **01-Projects\TheWhyChromosome-Brand\Blog-Ideas\Bali Padiyami and the ancient Greek ritual of Pharmacos.md** - Concepts: debug protocol
+- **01-Projects\TheWhyChromosome-Brand\Branding\Knowledge Base for Brand, Style, Audience, Flow, and Website.md** - Concepts: debug protocol
+- **01-Projects\WitnessOS\04-Game-Resources\Access-Levels.md** - Concepts: debug protocol
+- **01-Projects\WitnessOS\05-Cross-Project-Links\Three-Body-Kingdom-Integration.md** - Concepts: debug protocol
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\FIELDMAP.md** - Concepts: debug protocol
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\GLOSSARY.md** - Concepts: debug protocol
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\MAPS.md** - Concepts: debug protocol
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Guides\FIELDWORK.md** - Concepts: debug protocol
+- **02-Areas\Brand-Architecture\Critique.md** - Concepts: debug protocol
+- **02-Areas\Brand-Identity\social-profiles.md** - Concepts: debug protocol
+- **02-Areas\Consciousness-Models\_consciousness-architecture-hub.md** - Concepts: debug protocol
+- **02-Areas\Muse-Enneagram-Framework\spolski-endocrine-correspondence.md** - Concepts: debug protocol
+- **02-Areas\Muse-Enneagram-Framework\_index.md** - Concepts: debug protocol
+- **02-Areas\Pattern-Studies\_pattern-cross-reference-system.md** - Concepts: debug protocol
+- **02-Areas\Technical-Mystical-Integration\_concept-hub.md** - Concepts: debug protocol
+- **02-Areas\Technical-Mystical-Integration\_debugging-practices.md** - Concepts: debug protocol
+- **02-Areas\Consciousness-Models\Archetypal-Programming\Navaratri-Muses-Integration.md** - Concepts: debug protocol
+- **02-Areas\Consciousness-Models\Bioelectric-Systems\Bioelectric-Pattern-Framework.md** - Concepts: debug protocol
+- **02-Areas\Consciousness-Models\Bioelectric-Systems\mitochondrial-subconsciousness-patterns.md** - Concepts: debug protocol
+- **02-Areas\Consciousness-Models\Information-Processing\Pain-Information-Framework.md** - Concepts: debug protocol
+- **02-Areas\Consciousness-Models\Psychedelic-Frameworks\Psychedelic-Information-Framework.md** - Concepts: debug protocol
+- **02-Areas\Creative-Ideas\Content-Ideas\The Sacred Runtime.md** - Concepts: debug protocol
+- **02-Areas\Creative-Ideas\Content-Ideas\The Universal Runtime Environment - Your Consciousness Needs Better Error Handling.md** - Concepts: debug protocol
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\_tags.md** - Concepts: debug protocol
+- **02-Areas\Technical-Mystical-Integration\Archetypal-Systems\Symbolic-Systems-Analysis.md** - Concepts: debug protocol
+- **02-Areas\Technical-Mystical-Integration\Biosensor-Integration\Biosensor-Field-Integration-Framework.md** - Concepts: debug protocol
+- **02-Areas\Technical-Mystical-Integration\Biosensor-Integration\Biosensor-Implementation-Guide.md** - Concepts: debug protocol
+- **02-Areas\Technical-Mystical-Integration\Archetypal-Systems\Archetypal-Patterns\Compassion-Duality-Framework.md** - Concepts: debug protocol
+- **02-Areas\Technical-Mystical-Integration\Archetypal-Systems\Archetypal-Patterns\Feminine-Fear-Pattern.md** - Concepts: debug protocol
+- **02-Areas\Technical-Mystical-Integration\Consciousness-Systems\Metacybernetic-Models\Sapience-Sentience-Framework.md** - Concepts: debug protocol
+- **03-Resources\Content\Articles\_index.md** - Concepts: debug protocol
+- **03-Resources\Content\Content-Seeds\temperature-consciousness-thread-v2.md** - Concepts: debug protocol
+- **03-Resources\Content\Articles\Substack\ancient-debugging-consciousness.md** - Concepts: debug protocol
+- **03-Resources\Content\Articles\Substack\consciousness-legacy-code.md** - Concepts: debug protocol
+- **03-Resources\Content\Articles\Substack\runtime-of-god-ancient-debug-protocols.md** - Concepts: debug protocol
+- **03-Resources\Technical\Development\AI-Tools\Productivity-Platforms\find-amplify.md** - Concepts: debug protocol
+- **03-Resources\Technical\Development\AI-Tools\Web-Scraping\browse-ai.md** - Concepts: debug protocol
+- **docs\consciousness\FIELDMAP.md** - Concepts: debug protocol
+- **docs\consciousness\GLOSSARY.md** - Concepts: debug protocol
+- **docs\project-history\Acousmaticos Numerology Interpretation Apr 26 2025.md** - Concepts: debug protocol
+- **docs\consciousness\GUIDES\FIELDWORK.md** - Concepts: debug protocol
+- **Rubbish\2025-07-01\GALACTIC_FEDERATION_TRANSFORMATION_PLAN.md** - Concepts: debug protocol
+- **Rubbish\2025-07-01\memory_codex.md** - Concepts: debug protocol
+- **Rubbish\2025-07-01\story_threads.md** - Concepts: debug protocol
+- **Rubbish\2025-07-01\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: debug protocol
+- **Rubbish\2025-07-01\2025-07-01 18.03.39.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: debug protocol
+- **Rubbish\2025-07-01\2025-07-01 18.05.10.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: debug protocol
+- **Rubbish\2025-07-01\2025-07-01 18.06.11.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\CHANGELOG.md** - Concepts: debug protocol
+- **Somatic-Canticles\01_WORLD_BIBLE\00_CORE_FOUNDATION\03_VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: debug protocol
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\PLOT_INTEGRATION.md** - Concepts: debug protocol
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CHANGELOG.md** - Concepts: debug protocol
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\MANUSCRIPT_ALIGNMENT_GUIDE.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_DIALOGUE_EXAMPLES.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PRODUCTION_GUIDE.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PROTOCOL_AWAKENING.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\memory_codex.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\memory_codex.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\story_threads.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\STORYBOARD_PROMPTS.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\PLANNING\Book-1-Chapter-Plan.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-02-The-Debug-Protocol.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-04-The-Anamnesis-Engine.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-05-The-Myocardial-Chorus.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-06-The-Three-Body-Coordination.md** - Concepts: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-07-The-Witness-Integration.md** - Concepts: debug protocol
+- **_System\structure\concept-relationship-map.md** - Concepts: debug protocol
+- **_System\structure\document-templates.md** - Concepts: debug protocol
+- **_System\structure\maps-of-content.md** - Concepts: debug protocol
+- **_System\Templates\ai-preset-configurations.md** - Concepts: debug protocol
+- **_System\Templates\framework-doc.md** - Concepts: debug protocol
+- **_System\Templates\Content\_templates\Pattern-Transformations\Esoteric-Wordplay-Patterns.md** - Concepts: debug protocol
+- **_System\Templates\Content\_templates\Pattern-Transformations\Language-Transformation-Protocol.md** - Concepts: debug protocol
+- **_System\Templates\Content-Processing\platform-agents\consciousnesscompiler.md** - Concepts: debug protocol
+- **_System\Templates\Content-Processing\platform-agents\synapticsage.md** - Concepts: debug protocol
+
+## WitnessOS Protocol Connections
+- **Somatic-Canticles\CHANGELOG.md** - Protocols: debug protocol
+- **01-Projects\Core-Framework\index.md** - Protocols: debug protocol
+- **01-Projects\Core-Framework\Architecture\Service-Architecture\Divination-Techniques\TarotReadingSessions.md** - Protocols: debug protocol
+- **01-Projects\Core-Framework\Architecture\Service-Architecture\ServicePackages\StarterDebugPackage.md** - Protocols: debug protocol
+- **01-Projects\Core-Framework\Development\Content-Runtime\Agent-Systems\agents\ThreadWeaver.md** - Protocols: debug protocol
+- **01-Projects\Core-Framework\Frameworks\Spiral-Protocol\implementation-guide.md** - Protocols: debug protocol
+- **01-Projects\Core-Framework\Frameworks\Spiral-Protocol\pattern-recognition-framework.md** - Protocols: debug protocol
+- **01-Projects\Core-Framework\Frameworks\Spiral-Protocol\spiral-consciousness-protocol.md** - Protocols: debug protocol
+- **01-Projects\Products\Temporal-Raaga\system-architecture-scan.md** - Protocols: debug protocol
+- **01-Projects\Products\Consciousness-Extension\docs\Features.md** - Protocols: debug protocol
+- **01-Projects\Runtime-Systems\Runtime-of-God\00-ProjectStructure.md** - Protocols: debug protocol
+- **01-Projects\Runtime-Systems\Runtime-of-God\core-system-architecture.md** - Protocols: debug protocol
+- **01-Projects\Runtime-Systems\Vedic-Runtime\Shikshavalli\04_Implementation_Protocol.md** - Protocols: debug protocol
+- **01-Projects\Runtime-Systems\Vedic-Runtime\01-TaittiriyaUpanishad\00-Overview\integration-points.md** - Protocols: debug protocol
+- **01-Projects\TheWhyChromosome-Brand\Blog-Ideas\Bali Padiyami and the ancient Greek ritual of Pharmacos.md** - Protocols: debug protocol
+- **01-Projects\TheWhyChromosome-Brand\Branding\Knowledge Base for Brand, Style, Audience, Flow, and Website.md** - Protocols: debug protocol
+- **01-Projects\WitnessOS\04-Game-Resources\Access-Levels.md** - Protocols: debug protocol
+- **01-Projects\WitnessOS\05-Cross-Project-Links\Three-Body-Kingdom-Integration.md** - Protocols: debug protocol
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\FIELDMAP.md** - Protocols: debug protocol
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\GLOSSARY.md** - Protocols: debug protocol
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\MAPS.md** - Protocols: debug protocol
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Guides\FIELDWORK.md** - Protocols: debug protocol
+- **02-Areas\Brand-Architecture\Critique.md** - Protocols: debug protocol
+- **02-Areas\Brand-Identity\social-profiles.md** - Protocols: debug protocol
+- **02-Areas\Consciousness-Models\_consciousness-architecture-hub.md** - Protocols: debug protocol
+- **02-Areas\Muse-Enneagram-Framework\spolski-endocrine-correspondence.md** - Protocols: debug protocol
+- **02-Areas\Muse-Enneagram-Framework\_index.md** - Protocols: debug protocol
+- **02-Areas\Pattern-Studies\_pattern-cross-reference-system.md** - Protocols: debug protocol
+- **02-Areas\Technical-Mystical-Integration\_concept-hub.md** - Protocols: debug protocol
+- **02-Areas\Technical-Mystical-Integration\_debugging-practices.md** - Protocols: debug protocol
+- **02-Areas\Consciousness-Models\Archetypal-Programming\Navaratri-Muses-Integration.md** - Protocols: debug protocol
+- **02-Areas\Consciousness-Models\Bioelectric-Systems\Bioelectric-Pattern-Framework.md** - Protocols: debug protocol
+- **02-Areas\Consciousness-Models\Bioelectric-Systems\mitochondrial-subconsciousness-patterns.md** - Protocols: debug protocol
+- **02-Areas\Consciousness-Models\Information-Processing\Pain-Information-Framework.md** - Protocols: debug protocol
+- **02-Areas\Consciousness-Models\Psychedelic-Frameworks\Psychedelic-Information-Framework.md** - Protocols: debug protocol
+- **02-Areas\Creative-Ideas\Content-Ideas\The Sacred Runtime.md** - Protocols: debug protocol
+- **02-Areas\Creative-Ideas\Content-Ideas\The Universal Runtime Environment - Your Consciousness Needs Better Error Handling.md** - Protocols: debug protocol
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\_tags.md** - Protocols: debug protocol
+- **02-Areas\Technical-Mystical-Integration\Archetypal-Systems\Symbolic-Systems-Analysis.md** - Protocols: debug protocol
+- **02-Areas\Technical-Mystical-Integration\Biosensor-Integration\Biosensor-Field-Integration-Framework.md** - Protocols: debug protocol
+- **02-Areas\Technical-Mystical-Integration\Biosensor-Integration\Biosensor-Implementation-Guide.md** - Protocols: debug protocol
+- **02-Areas\Technical-Mystical-Integration\Archetypal-Systems\Archetypal-Patterns\Compassion-Duality-Framework.md** - Protocols: debug protocol
+- **02-Areas\Technical-Mystical-Integration\Archetypal-Systems\Archetypal-Patterns\Feminine-Fear-Pattern.md** - Protocols: debug protocol
+- **02-Areas\Technical-Mystical-Integration\Consciousness-Systems\Metacybernetic-Models\Sapience-Sentience-Framework.md** - Protocols: debug protocol
+- **03-Resources\Content\Articles\_index.md** - Protocols: debug protocol
+- **03-Resources\Content\Content-Seeds\temperature-consciousness-thread-v2.md** - Protocols: debug protocol
+- **03-Resources\Content\Articles\Substack\ancient-debugging-consciousness.md** - Protocols: debug protocol
+- **03-Resources\Content\Articles\Substack\consciousness-legacy-code.md** - Protocols: debug protocol
+- **03-Resources\Content\Articles\Substack\runtime-of-god-ancient-debug-protocols.md** - Protocols: debug protocol
+- **03-Resources\Technical\Development\AI-Tools\Productivity-Platforms\find-amplify.md** - Protocols: debug protocol
+- **03-Resources\Technical\Development\AI-Tools\Web-Scraping\browse-ai.md** - Protocols: debug protocol
+- **docs\consciousness\FIELDMAP.md** - Protocols: debug protocol
+- **docs\consciousness\GLOSSARY.md** - Protocols: debug protocol
+- **docs\project-history\Acousmaticos Numerology Interpretation Apr 26 2025.md** - Protocols: debug protocol
+- **docs\consciousness\GUIDES\FIELDWORK.md** - Protocols: debug protocol
+- **Rubbish\2025-07-01\GALACTIC_FEDERATION_TRANSFORMATION_PLAN.md** - Protocols: debug protocol
+- **Rubbish\2025-07-01\memory_codex.md** - Protocols: debug protocol
+- **Rubbish\2025-07-01\story_threads.md** - Protocols: debug protocol
+- **Rubbish\2025-07-01\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: debug protocol
+- **Rubbish\2025-07-01\2025-07-01 18.03.39.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: debug protocol
+- **Rubbish\2025-07-01\2025-07-01 18.05.10.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: debug protocol
+- **Rubbish\2025-07-01\2025-07-01 18.06.11.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\CHANGELOG.md** - Protocols: debug protocol
+- **Somatic-Canticles\01_WORLD_BIBLE\00_CORE_FOUNDATION\03_VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: debug protocol
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\PLOT_INTEGRATION.md** - Protocols: debug protocol
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CHANGELOG.md** - Protocols: debug protocol
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\MANUSCRIPT_ALIGNMENT_GUIDE.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_DIALOGUE_EXAMPLES.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PRODUCTION_GUIDE.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PROTOCOL_AWAKENING.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\memory_codex.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\memory_codex.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\story_threads.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\STORYBOARD_PROMPTS.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\PLANNING\Book-1-Chapter-Plan.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-02-The-Debug-Protocol.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-04-The-Anamnesis-Engine.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-05-The-Myocardial-Chorus.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-06-The-Three-Body-Coordination.md** - Protocols: debug protocol
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-07-The-Witness-Integration.md** - Protocols: debug protocol
+- **_System\structure\concept-relationship-map.md** - Protocols: debug protocol
+- **_System\structure\document-templates.md** - Protocols: debug protocol
+- **_System\structure\maps-of-content.md** - Protocols: debug protocol
+- **_System\Templates\ai-preset-configurations.md** - Protocols: debug protocol
+- **_System\Templates\framework-doc.md** - Protocols: debug protocol
+- **_System\Templates\Content\_templates\Pattern-Transformations\Esoteric-Wordplay-Patterns.md** - Protocols: debug protocol
+- **_System\Templates\Content\_templates\Pattern-Transformations\Language-Transformation-Protocol.md** - Protocols: debug protocol
+- **_System\Templates\Content-Processing\platform-agents\consciousnesscompiler.md** - Protocols: debug protocol
+- **_System\Templates\Content-Processing\platform-agents\synapticsage.md** - Protocols: debug protocol

@@ -1,0 +1,567 @@
+/**
+ * Somatic Canticles Global Styles
+ * 
+ * A sacred design system based on power numbers:
+ * 8, 13, 19, 21, 44, 125, 152
+ * 
+ * Golden Ratio (φ): 1.618
+ */
+
+@import "tailwindcss";
+
+/* ============================================
+   TAILWIND V4 THEME CONFIGURATION
+   Power Numbers Design System
+   Use Tailwind naming: --color-* becomes colors
+   ============================================ */
+
+@theme {
+  /* POWER NUMBER COLORS - Tailwind v4 format */
+  --color-octave: #FF6B6B;
+  --color-octave-50: #FFF5F5;
+  --color-octave-100: #FFE3E3;
+  --color-octave-200: #FFC9C9;
+  --color-octave-300: #FF9999;
+  --color-octave-400: #FF6B6B;
+  --color-octave-500: #FA5252;
+  --color-octave-600: #E64545;
+  --color-octave-700: #C92A2A;
+  --color-octave-800: #A61E1E;
+  --color-octave-900: #821818;
+
+  --color-transform: #9B59B6;
+  --color-transform-50: #F8F0FC;
+  --color-transform-100: #F3D9FA;
+  --color-transform-200: #EEBEF7;
+  --color-transform-300: #E599F7;
+  --color-transform-400: #DA77F2;
+  --color-transform-500: #CC5DE8;
+  --color-transform-600: #9B59B6;
+  --color-transform-700: #7E3D96;
+  --color-transform-800: #682E7A;
+  --color-transform-900: #521F5E;
+
+  --color-solar: #F1C40F;
+  --color-solar-50: #FFFBE6;
+  --color-solar-100: #FFF3BF;
+  --color-solar-200: #FFEC99;
+  --color-solar-300: #FFE066;
+  --color-solar-400: #FFD43B;
+  --color-solar-500: #F1C40F;
+  --color-solar-600: #D4A109;
+  --color-solar-700: #B8860B;
+  --color-solar-800: #9A7B0A;
+  --color-solar-900: #7C6608;
+
+  --color-build: #2ECC71;
+  --color-build-50: #EBFBEE;
+  --color-build-100: #D3F9D8;
+  --color-build-200: #B2F2BB;
+  --color-build-300: #8CE99A;
+  --color-build-400: #69DB7C;
+  --color-build-500: #2ECC71;
+  --color-build-600: #229954;
+  --color-build-700: #1B7F44;
+  --color-build-800: #156A38;
+  --color-build-900: #104E2C;
+
+  --color-witness: #3498DB;
+  --color-witness-50: #E7F5FF;
+  --color-witness-100: #D0EBFF;
+  --color-witness-200: #A5D8FF;
+  --color-witness-300: #74C0FC;
+  --color-witness-400: #4DABF7;
+  --color-witness-500: #3498DB;
+  --color-witness-600: #2874A6;
+  --color-witness-700: #1C5A82;
+  --color-witness-800: #164B6E;
+  --color-witness-900: #113A55;
+
+  --color-unity: #E67E22;
+  --color-unity-50: #FFF4E6;
+  --color-unity-100: #FFE8CC;
+  --color-unity-200: #FFD8A8;
+  --color-unity-300: #FFC078;
+  --color-unity-400: #FFA94D;
+  --color-unity-500: #E67E22;
+  --color-unity-600: #D35400;
+  --color-unity-700: #A04000;
+  --color-unity-800: #853A0B;
+  --color-unity-900: #662F0B;
+
+  --color-creative: #1ABC9C;
+  --color-creative-50: #E6FCF5;
+  --color-creative-100: #C3FAE8;
+  --color-creative-200: #96F7D6;
+  --color-creative-300: #63E6BE;
+  --color-creative-400: #38D9A9;
+  --color-creative-500: #1ABC9C;
+  --color-creative-600: #16A085;
+  --color-creative-700: #0F766E;
+  --color-creative-800: #0D5C57;
+  --color-creative-900: #0A4844;
+
+  /* Aliases for consistency */
+  --color-architect: #3498DB;
+  --color-world: #2ECC71;
+  --color-life: #E74C3C;
+
+  /* Neutral/Void */
+  --color-void: #0A0A0F;
+  --color-void-50: #F8F9FA;
+  --color-void-100: #F1F3F5;
+  --color-void-200: #E9ECEF;
+  --color-void-300: #DEE2E6;
+  --color-void-400: #CED4DA;
+  --color-void-500: #ADB5BD;
+  --color-void-600: #868E96;
+  --color-void-700: #495057;
+  --color-void-800: #343A40;
+  --color-void-900: #0A0A0F;
+
+  /* Surface colors - CRITICAL: These must map to utilities */
+  --color-surface: #0f0f12;
+  --color-surface-elevated: #1a1a1f;
+
+  /* Text colors */
+  --color-text: #f5f5f7;
+  --color-text-muted: #a1a1aa;
+
+  /* POWER NUMBER SPACING (8px base) */
+  --spacing-2: 8px;
+  --spacing-3: 13px;
+  --spacing-5: 19px;
+  --spacing-13: 52px;
+  --spacing-19: 76px;
+  --spacing-21: 84px;
+  --spacing-44: 176px;
+  --spacing-125: 500px;
+  --spacing-152: 608px;
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.618;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  min-height: 100vh;
+}
+
+/* Selection styling */
+::selection {
+  background-color: var(--color-octave-300);
+  color: var(--color-void-900);
+}
+
+/* Focus visible styles */
+:focus-visible {
+  outline: 2px solid var(--color-octave);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   ANIMATION KEYFRAMES
+   ============================================ */
+
+/* Mandala spin - sacred rotation */
+@keyframes mandala-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Breath cycle - expansion and contraction */
+@keyframes breath {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  44% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  88% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
+
+/* Fade in with upward motion */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(21px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Sacred shimmer */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Chakra activation */
+@keyframes chakra-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 21px 8px rgba(255, 107, 107, 0.2);
+  }
+}
+
+/* Waveform animation */
+@keyframes waveform {
+  0%, 100% {
+    height: 8px;
+  }
+  50% {
+    height: 44px;
+  }
+}
+
+/* Sacred geometry rotation */
+@keyframes sacred-rotate {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.13);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+@layer utilities {
+  /* Text gradient utility */
+  .text-gradient-octave {
+    background: linear-gradient(135deg, var(--color-octave-400), var(--color-octave-600));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-transform {
+    background: linear-gradient(135deg, var(--color-transform-400), var(--color-transform-600));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-solar {
+    background: linear-gradient(135deg, var(--color-solar-400), var(--color-solar-600));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-unity {
+    background: linear-gradient(135deg, var(--color-unity-400), var(--color-unity-600));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Glass morphism */
+  .glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+  }
+
+  .glass-dark {
+    background: rgba(10, 10, 15, 0.44);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Sacred glows */
+  .glow-octave {
+    box-shadow: var(--shadow-octave);
+  }
+
+  .glow-transform {
+    box-shadow: var(--shadow-transform);
+  }
+
+  .glow-solar {
+    box-shadow: var(--shadow-solar);
+  }
+
+  .glow-build {
+    box-shadow: var(--shadow-build);
+  }
+
+  .glow-witness {
+    box-shadow: var(--shadow-witness);
+  }
+
+  .glow-unity {
+    box-shadow: var(--shadow-unity);
+  }
+
+  .glow-creative {
+    box-shadow: var(--shadow-creative);
+  }
+
+  /* Chapter lock states */
+  .chapter-locked {
+    opacity: 0.44;
+    filter: blur(8px);
+    transform: scale(0.95);
+    pointer-events: none;
+  }
+
+  .chapter-unlocking {
+    animation: unlock-sequence var(--duration-13) cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .chapter-unlocked {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+
+  /* Golden ratio typography */
+  .text-golden {
+    line-height: var(--leading-golden);
+  }
+
+  .text-golden-tight {
+    line-height: var(--leading-golden-tight);
+  }
+
+  .text-golden-loose {
+    line-height: var(--leading-golden-loose);
+  }
+
+  /* Sacred animation utilities */
+  .animate-pulse-8 {
+    animation: pulse-8 var(--duration-8) cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-pulse-13 {
+    animation: pulse-13 var(--duration-13) ease-in-out infinite;
+  }
+
+  .animate-solar-glow {
+    animation: solar-glow var(--duration-19) ease-in-out infinite;
+  }
+
+  .animate-unlock {
+    animation: unlock-sequence var(--duration-13) cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-mandala {
+    animation: mandala-spin 44s linear infinite;
+  }
+
+  .animate-mandala-fast {
+    animation: mandala-spin 8s linear infinite;
+  }
+
+  .animate-breath {
+    animation: breath var(--duration-125) ease-in-out infinite;
+  }
+
+  .animate-breath-slow {
+    animation: breath var(--duration-152) ease-in-out infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up var(--duration-8) cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 3000ms linear infinite;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.13) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+  }
+
+  .animate-chakra {
+    animation: chakra-pulse var(--duration-21) ease-in-out infinite;
+  }
+
+  /* Transition timing functions */
+  .ease-sacred {
+    transition-timing-function: cubic-bezier(0.618, 0.382, 0.382, 0.618);
+  }
+
+  .ease-unlock {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .ease-transform {
+    transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  /* Aspect ratios for sacred geometry */
+  .aspect-golden {
+    aspect-ratio: 1.618;
+  }
+
+  .aspect-golden-inverse {
+    aspect-ratio: 0.618;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ============================================
+   COMPONENT STYLES
+   ============================================ */
+
+@layer components {
+  /* Button base styles */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-13);
+    font-weight: 500;
+    line-height: var(--leading-golden);
+    border-radius: var(--radius-8);
+    transition: all var(--duration-8) ease;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+  .btn:focus-visible {
+    outline: 2px solid var(--color-ring);
+    outline-offset: 2px;
+  }
+
+  .btn-octave {
+    background-color: var(--color-octave-500);
+    color: white;
+  }
+
+  .btn-octave:hover {
+    background-color: var(--color-octave-600);
+    box-shadow: var(--shadow-octave);
+  }
+
+  .btn-transform {
+    background-color: var(--color-transform-500);
+    color: white;
+  }
+
+  .btn-transform:hover {
+    background-color: var(--color-transform-600);
+    box-shadow: var(--shadow-transform);
+  }
+
+  /* Card styles */
+  .card {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-13);
+    padding: var(--space-13);
+    transition: all var(--duration-8) ease;
+  }
+
+  .card:hover {
+    border-color: var(--color-void-300);
+    box-shadow: 0 4px 21px -4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Input styles */
+  .input {
+    width: 100%;
+    padding: var(--space-2) var(--space-3);
+    font-size: 16px;
+    line-height: var(--leading-golden);
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-8);
+    transition: all var(--duration-8) ease;
+  }
+
+  .input:focus {
+    outline: none;
+    border-color: var(--color-ring);
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.13);
+  }
+
+  .input::placeholder {
+    color: var(--color-muted-foreground);
+  }
+
+  /* Mandala container */
+  .mandala-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mandala-ring {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 50%;
+  }
+
+  /* Biorhythm wheel segments */
+  .biorhythm-segment {
+    transition: all var(--duration-8) ease;
+  }
+
+  .biorhythm-segment:hover {
+    filter: brightness(1.13);
+    transform: scale(1.02);
+  }
+}

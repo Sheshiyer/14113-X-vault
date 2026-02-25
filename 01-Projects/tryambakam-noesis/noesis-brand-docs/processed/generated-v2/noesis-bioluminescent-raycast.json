@@ -1,0 +1,16 @@
+{
+  "name": "Noesis Bioluminescent",
+  "author": "Tryambakam Noesis",
+  "appearance": "dark",
+  "colors": {
+    "raycast.primaryText": "#F0EDE3",
+    "raycast.secondaryText": "#8A9BA8",
+    "raycast.background": "#0A1628",
+    "raycast.subBackground": "#1A3850",
+    "raycast.accent": "#C4873B",
+    "raycast.accentText": "#0A1628",
+    "raycast.backgroundHover": "#2A4D6B",
+    "raycast.border": "#8A9BA880",
+    "raycast.destructive": "#C65D3B"
+  }
+}

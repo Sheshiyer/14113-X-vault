@@ -1,0 +1,32 @@
+{
+  "completion-21": {
+    "file": "completion-21.opus",
+    "path": "/Volumes/madara/2026/twc-vault/03-Resources/Media/Audio/Breathwork/Stubs/completion-21.opus",
+    "sha256": "c5229878b29008ac1c6767507ed744b434425280eacf3140dad5d30140e9d2ee",
+    "bytes": 75994
+  },
+  "leadership-19": {
+    "file": "leadership-19.opus",
+    "path": "/Volumes/madara/2026/twc-vault/03-Resources/Media/Audio/Breathwork/Stubs/leadership-19.opus",
+    "sha256": "cf728a07b9cba8282df8c82c68d0e65f9238dfdda2c9c899599bb3407c088477",
+    "bytes": 72617
+  },
+  "octave-8": {
+    "file": "octave-8.opus",
+    "path": "/Volumes/madara/2026/twc-vault/03-Resources/Media/Audio/Breathwork/Stubs/octave-8.opus",
+    "sha256": "b308b1e97fa051653bdcf4e8f1ca2a0c535740e616fcd2dbd95d68362dde7c34",
+    "bytes": 53768
+  },
+  "pacing_478": {
+    "file": "pacing_478.opus",
+    "path": "/Volumes/madara/2026/twc-vault/03-Resources/Media/Audio/Breathwork/Stubs/pacing_478.opus",
+    "sha256": "19b48526e0f7212c071c87dd9ce4e70b9022fa0bf1ab8c7da2d6d6fad0d1ddff",
+    "bytes": 178485
+  },
+  "transformation-13": {
+    "file": "transformation-13.opus",
+    "path": "/Volumes/madara/2026/twc-vault/03-Resources/Media/Audio/Breathwork/Stubs/transformation-13.opus",
+    "sha256": "71bca9340fd54a46d4131b750f0654820bc62c4c7d4d3bd4ce85889cd79d3175",
+    "bytes": 65060
+  }
+}

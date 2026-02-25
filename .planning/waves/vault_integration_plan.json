@@ -1,0 +1,259 @@
+{
+  "project": "Brahman-Darshanam Vault Integration",
+  "metadata": {
+    "total_tasks": 70,
+    "waves": 6,
+    "primary_owner": "noesis-vishwakarma"
+  },
+  "tasks": [
+    {
+      "id": "T01", "title": "Update vault_stats.py for ratio export", "area": "data", "owner_role": "Backend Eng", "est_hours": 2,
+      "dependencies": [], "deliverable": "Machine-readable coverage ratio output.", "acceptance": "DATA_COVERAGE_RATIO visible in stdout."
+    },
+    {
+      "id": "T02", "title": "Register VAULT_COVERAGE in prana stream", "area": "backend", "owner_role": "Backend Eng", "est_hours": 1,
+      "dependencies": ["T01"], "deliverable": "Telemetry event for connectivity stats.", "acceptance": "Events visible in prana.db."
+    },
+    {
+      "id": "T03", "title": "Create realization_sync.py logic", "area": "backend", "owner_role": "Backend Eng", "est_hours": 3,
+      "dependencies": ["T02"], "deliverable": "Sync between coverage and current_ui.json.", "acceptance": "current_ui.json reflects real coverage."
+    },
+    {
+      "id": "T04", "title": "Expose 'Island Clusters' in walker.py", "area": "data", "owner_role": "Data Eng", "est_hours": 6,
+      "dependencies": [], "deliverable": "Detection of disconnected sub-graphs.", "acceptance": "Output lists unlinked related nodes."
+    },
+    {
+      "id": "T05", "title": "Implement Terminology Dictionary", "area": "product", "owner_role": "Content Arch", "est_hours": 2,
+      "dependencies": [], "deliverable": "JSON map for WitnessOS -> Noesis.", "acceptance": "Mapping file exists in config/."
+    },
+    {
+      "id": "T06", "title": "Initialize failed_links.json queue", "area": "infra", "owner_role": "DevOps", "est_hours": 1,
+      "dependencies": [], "deliverable": "Dead-letter queue for low-conf matches.", "acceptance": "File exists in production quarantine."
+    },
+    {
+      "id": "T07", "title": "Enrich meta.json with Enneagram UUIDs", "area": "data", "owner_role": "Data Eng", "est_hours": 4,
+      "dependencies": [], "deliverable": "UUID generation in metadata builder.", "acceptance": "meta.json records have stable IDs."
+    },
+    {
+      "id": "T08", "title": "Setup maintenance log rotation", "area": "infra", "owner_role": "DevOps", "est_hours": 2,
+      "dependencies": [], "deliverable": "Automated log clearing for ground jobs.", "acceptance": "status.json remains small and current."
+    },
+    {
+      "id": "T09", "title": "Finalize production weekly_maintenance.py", "area": "backend", "owner_role": "Backend Eng", "est_hours": 2,
+      "dependencies": ["T03"], "deliverable": "Unified orchestrator script.", "acceptance": "Script executes full cycle in prod."
+    },
+    {
+      "id": "T10", "title": "Verify Madara-OpenClaw path alignment", "area": "qa", "owner_role": "QA", "est_hours": 2,
+      "dependencies": [], "deliverable": "QA report on absolute path resolution.", "acceptance": "Zero path-not-found errors in logs."
+    },
+    {
+      "id": "T11", "title": "Bind dashboard header to 'Realization' value", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 3,
+      "dependencies": ["T03"], "deliverable": "Live visual progress bar in UI.", "acceptance": "Bar fills as MOC coverage increases."
+    },
+    {
+      "id": "T12", "title": "Animate Nadi-Mapper node pulse", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 4,
+      "dependencies": ["T07"], "deliverable": "Visual feedback for background indexing.", "acceptance": "Node pulses during update_index run."
+    },
+    {
+      "id": "T13", "title": "Import Enneagram Colors into UI state", "area": "frontend", "owner_role": "UI/UX", "est_hours": 2,
+      "dependencies": [], "deliverable": "Theme-aware hex color registry.", "acceptance": "CSS variables available for edges."
+    },
+    {
+      "id": "T14", "title": "Implement Edge Coloration logic", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 5,
+      "dependencies": ["T13", "T19"], "deliverable": "Dynamic SVG link coloring.", "acceptance": "Edges glow by Enneagram type color."
+    },
+    {
+      "id": "T15", "title": "Create 'Connectivity' Sidebar panel", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 4,
+      "dependencies": ["T04"], "deliverable": "UI list showing orphans and islands.", "acceptance": "Clickable list of unlinked nodes."
+    },
+    {
+      "id": "T16", "title": "Add 'Migration Alert' toast", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 3,
+      "dependencies": ["T05"], "deliverable": "Prompt for terminology cleanup.", "acceptance": "Toast appears when drift is detected."
+    },
+    {
+      "id": "T17", "title": "Integrate 'Sankalpa' Search input", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 5,
+      "dependencies": [], "deliverable": "Semantic search bar on dashboard.", "acceptance": "Input triggers FAISS backend query."
+    },
+    {
+      "id": "T18", "title": "Modify topology_snapshot parser", "area": "backend", "owner_role": "Backend Eng", "est_hours": 2,
+      "dependencies": ["T07"], "deliverable": "Add UUIDs to topology JSON export.", "acceptance": "Snapshot nodes match meta.json IDs."
+    },
+    {
+      "id": "T19", "title": "Export Enneagram types to topology", "area": "backend", "owner_role": "Backend Eng", "est_hours": 2,
+      "dependencies": ["T18"], "deliverable": "Metadata in edge objects for UI.", "acceptance": "Topology JSON includes edge 'type'."
+    },
+    {
+      "id": "T20", "title": "Sync UI theme to current_ui.json", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 2,
+      "dependencies": [], "deliverable": "Persistent dashboard theme state.", "acceptance": "Dark/Light mode saved in production."
+    },
+    {
+      "id": "T21", "title": "Develop 'Primary Hub' footer bot", "area": "backend", "owner_role": "Agent Eng", "est_hours": 5,
+      "dependencies": [], "deliverable": "Auto-insertion of backlink footers.", "acceptance": "Linked files have correct hub footer."
+    },
+    {
+      "id": "T22", "title": "Create 'Semantic Lookahead' utility", "area": "backend", "owner_role": "Agent Eng", "est_hours": 8,
+      "dependencies": [], "deliverable": "Context injection script for agent init.", "acceptance": "Agents start with relevant vault data."
+    },
+    {
+      "id": "T23", "title": "Map Agent roles to Library MOCs", "area": "product", "owner_role": "System Arch", "est_hours": 3,
+      "dependencies": [], "deliverable": "Registry of Agent-MOC affinity.", "acceptance": "Correct hub used for lookahead."
+    },
+    {
+      "id": "T24", "title": "Implement 'Drift Audit' background job", "area": "backend", "owner_role": "Backend Eng", "est_hours": 4,
+      "dependencies": [], "deliverable": "PARA semantic verification task.", "acceptance": "Weekly report of misfiled notes."
+    },
+    {
+      "id": "T25", "title": "Automate term migration executions", "area": "backend", "owner_role": "Backend Eng", "est_hours": 4,
+      "dependencies": ["T05"], "deliverable": "Background worker for term purge.", "acceptance": "WitnessOS terms replaced weekly."
+    },
+    {
+      "id": "T26", "title": "Setup 'Kernel Vitality' telemetry", "area": "backend", "owner_role": "Backend Eng", "est_hours": 4,
+      "dependencies": ["T02"], "deliverable": "Aggregated system health score.", "acceptance": "Vitality numeric in prana.db."
+    },
+    {
+      "id": "T27", "title": "Implement Cross-Kosha semantic search", "area": "data", "owner_role": "Data Eng", "est_hours": 10,
+      "dependencies": [], "deliverable": "Bridges between projects and research.", "acceptance": "Search finds overlaps across PARA."
+    },
+    {
+      "id": "T28", "title": "Detect 'Circular Connectivity' loops", "area": "data", "owner_role": "Data Eng", "est_hours": 4,
+      "dependencies": [], "deliverable": "Report on island-locked MOCs.", "acceptance": "Identifies hubs needing external links."
+    },
+    {
+      "id": "T29", "title": "Automate MOC count updates", "area": "backend", "owner_role": "Backend Eng", "est_hours": 2,
+      "dependencies": [], "deliverable": "Real-time file count sync for hubs.", "acceptance": "MOC totals match actual filesystem."
+    },
+    {
+      "id": "T30", "title": "Verify Agent context window usage", "area": "infra", "owner_role": "DevOps", "est_hours": 3,
+      "dependencies": ["T22"], "deliverable": "Audit of prana injection tokens.", "acceptance": "Report on cost vs search relevance."
+    },
+    {
+      "id": "T31", "title": "Create 'Island' visualization shader", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 6,
+      "dependencies": ["T12"], "deliverable": "Visual glow for disconnected clusters.", "acceptance": "Disconnected nodes amber pulse."
+    },
+    {
+      "id": "T32", "title": "Implement 'Prana Flow' animation", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 10,
+      "dependencies": ["T12"], "deliverable": "Animated SVG data flow lines.", "acceptance": "Visual flow Resource -> Agent nodes."
+    },
+    {
+      "id": "T33", "title": "Develop 'Archetypal Balance' Radar", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 6,
+      "dependencies": ["T07"], "deliverable": "UI component for Enneagram spread.", "acceptance": "Radar chart shows vault type density."
+    },
+    {
+      "id": "T34", "title": "Create 'MOC Deep-Dive' detail modal", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 6,
+      "dependencies": ["T15"], "deliverable": "File browser integration within UI.", "acceptance": "Clicking MOC node shows contents."
+    },
+    {
+      "id": "T35", "title": "Implement 'Vault Conversation' chat", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 8,
+      "dependencies": ["T17"], "deliverable": "RAG-only REPL mode in dashboard.", "acceptance": "Chat only uses local vault index."
+    },
+    {
+      "id": "T36", "title": "Add 'Maintenance Trigger' UI button", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 2,
+      "dependencies": ["T09"], "deliverable": "Manual override for ground jobs.", "acceptance": "Button starts weekly_maintenance.py."
+    },
+    {
+      "id": "T37", "title": "Develop 'Synthesis Note' drafter", "area": "backend", "owner_role": "Agent Eng", "est_hours": 6,
+      "dependencies": ["T27"], "deliverable": "Auto-creation of [[Bridge]] files.", "acceptance": "Writes draft cross-links to vault."
+    },
+    {
+      "id": "T38", "title": "Audit Agent hallucination drift", "area": "qa", "owner_role": "QA", "est_hours": 6,
+      "dependencies": ["T22"], "deliverable": "Validation of injected prana truth.", "acceptance": "Report flags contradictions in output."
+    },
+    {
+      "id": "T39", "title": "Perform Full Kernel Re-indexing", "area": "infra", "owner_role": "DevOps", "est_hours": 4,
+      "dependencies": ["T07"], "deliverable": "Clean FAISS index with new IDs.", "acceptance": "Zero drift in initial build."
+    },
+    {
+      "id": "T40", "title": "Final Dashboard Performance Audit", "area": "qa", "owner_role": "QA", "est_hours": 4,
+      "dependencies": ["T35"], "deliverable": "Report on UI responsiveness.", "acceptance": "Dashboard renders in < 200ms."
+    },
+    {
+      "id": "T41", "title": "Update system-stats API endpoint", "area": "backend", "owner_role": "Backend Eng", "est_hours": 3,
+      "dependencies": ["T03"], "deliverable": "API returning vault coverage JSON.", "acceptance": "Frontend can fetch stats via HTTP."
+    },
+    {
+      "id": "T42", "title": "Implement 'Drift Reason' metadata", "area": "data", "owner_role": "Data Eng", "est_hours": 4,
+      "dependencies": ["T24"], "deliverable": "Verbose explanation for flagged drift.", "acceptance": "Log shows WHY similarity is low."
+    },
+    {
+      "id": "T43", "title": "Create 'Orphan Weighting' algorithm", "area": "data", "owner_role": "Data Eng", "est_hours": 5,
+      "dependencies": ["T04"], "deliverable": "Priority list for linking orphans.", "acceptance": "Sidebar sorts by semantic signal."
+    },
+    {
+      "id": "T44", "title": "Add 'Terminal Output' scroll to UI", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 4,
+      "dependencies": ["T36"], "deliverable": "Live log tailing in dashboard.", "acceptance": "Maintenance stdout visible in UI."
+    },
+    {
+      "id": "T45", "title": "Bind 'Intent Projection' glow", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 6,
+      "dependencies": ["T17"], "deliverable": "Visual highlights for search match.", "acceptance": "Nodes pulse on relevant search terms."
+    },
+    {
+      "id": "T46", "title": "Implement 'Permissioned Hydration'", "area": "backend", "owner_role": "Backend Eng", "est_hours": 4,
+      "dependencies": ["T22"], "deliverable": "Folder-level access for agents.", "acceptance": "Archives not injected by default."
+    },
+    {
+      "id": "T47", "title": "Create 'MOC Coverage Trend' dataset", "area": "backend", "owner_role": "Data Eng", "est_hours": 3,
+      "dependencies": ["T02"], "deliverable": "Historical DB entries for coverage.", "acceptance": "Table exists in prana.db."
+    },
+    {
+      "id": "T48", "title": "Add 'Drift Resolution' modal", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 6,
+      "dependencies": ["T24"], "deliverable": "UI to re-tag misfiled notes.", "acceptance": "One-click frontmatter correction."
+    },
+    {
+      "id": "T49", "title": "Develop 'Synthesis Report' generator", "area": "backend", "owner_role": "Agent Eng", "est_hours": 8,
+      "dependencies": ["T37"], "deliverable": "Weekly automated synthesis summary.", "acceptance": "Markdown report in .planning/reports."
+    },
+    {
+      "id": "T50", "title": "Final Brahman-Darshanam Polish", "area": "frontend", "owner_role": "UI/UX", "est_hours": 4,
+      "dependencies": ["T44"], "deliverable": "CSS glassmorphism refinements.", "acceptance": "Matches Apple iOS26 aesthetic."
+    },
+    {
+      "id": "T51", "title": "Establish 'Dead-Links' monitor", "area": "qa", "owner_role": "QA", "est_hours": 2,
+      "dependencies": [], "deliverable": "Broken wikilink detection script.", "acceptance": "0 broken links in root MOCs."
+    },
+    {
+      "id": "T52", "title": "Implement 'Bridge Auto-Approve' threshold", "area": "backend", "owner_role": "Backend Eng", "est_hours": 3,
+      "dependencies": ["T21"], "deliverable": "Commit links > 0.85 immediately.", "acceptance": "High-conf links skip UI review."
+    },
+    {
+      "id": "T53", "title": "Create 'Island Merging' tool", "area": "data", "owner_role": "Data Eng", "est_hours": 6,
+      "dependencies": ["T28"], "deliverable": "Promote clusters to new MOCs.", "acceptance": "Tool creates MOC for dense orphans."
+    },
+    {
+      "id": "T54", "title": "Add 'Agent Vitality' node status", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 4,
+      "dependencies": ["T26"], "deliverable": "Glow effect for healthy agents.", "acceptance": "Nodes green if active telemetry."
+    },
+    {
+      "id": "T55", "title": "Implement 'History Scrub' for terms", "area": "infra", "owner_role": "DevOps", "est_hours": 5,
+      "dependencies": ["T25"], "deliverable": "Git-rewrite for term migration.", "acceptance": "WitnessOS terms purged from git history."
+    },
+    {
+      "id": "T56", "title": "Update README with integration architecture", "area": "product", "owner_role": "Technical Writer", "est_hours": 2,
+      "dependencies": [], "deliverable": "Full system documentation.", "acceptance": "README reflects new UI/Data flow."
+    },
+    {
+      "id": "T57", "title": "Setup 'Auto-Skeleton' cron", "area": "infra", "owner_role": "DevOps", "est_hours": 1,
+      "dependencies": [], "deliverable": "Hourly handover.json update.", "acceptance": "Skeleton is never > 1h stale."
+    },
+    {
+      "id": "T58", "title": "Final Integration Load Balance", "area": "infra", "owner_role": "DevOps", "est_hours": 4,
+      "dependencies": ["T39"], "deliverable": "Memory-efficient FAISS serving.", "acceptance": "Index uses < 1GB RAM during query."
+    },
+    {
+      "id": "T59", "title": "Generate Phase 5 Completion Summary", "area": "product", "owner_role": "Project Lead", "est_hours": 2,
+      "dependencies": ["T50"], "deliverable": "Full project retrospective report.", "acceptance": "Report exists in .planning/."
+    },
+    {
+      "id": "T60", "title": "Ritual Completion Ceremony", "area": "product", "owner_role": "Alchemist", "est_hours": 1,
+      "dependencies": ["T59"], "deliverable": "System notification: VAULT UNIFIED.", "acceptance": "Final Sattvic event in telemetry stream."}, 
+    {"id": "T61", "title": "Implement 'Contextual Awareness' tooltip", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 4, "dependencies": ["T15"], "deliverable": "Tooltip showing orphan metadata on hover.", "acceptance": "Shows PARA/Enneagram/Similarity in UI."}, 
+    {"id": "T62", "title": "Develop 'Similarity Heatmap'", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 8, "dependencies": ["T14"], "deliverable": "Vault-wide semantic density view.", "acceptance": "Hot/Cold spots for linking visible."}, 
+    {"id": "T63", "title": "Integrate 'Voice Command' REPL", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 10, "dependencies": ["T35"], "deliverable": "Web Speech API integration.", "acceptance": "User can query vault via voice."}, 
+    {"id": "T64", "title": "Implement 'Cross-Link' validation gate", "area": "qa", "owner_role": "QA", "est_hours": 4, "dependencies": ["T37"], "deliverable": "Check logic for synthesis links.", "acceptance": "Ensures links are semantic, not generic."}, 
+    {"id": "T65", "title": "Develop 'Daily Evolution' dashboard", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 6, "dependencies": ["T47"], "deliverable": "Visual timeline of vault growth.", "acceptance": "Shows daily increase in connectivity."}, 
+    {"id": "T66", "title": "Add 'Agent Collaboration' lines", "area": "frontend", "owner_role": "Frontend Eng", "est_hours": 5, "dependencies": ["T32"], "deliverable": "Visual links between working agents.", "acceptance": "Lines connect agents sharing prana."}, 
+    {"id": "T67", "title": "Implement 'Vault Lockdown' mode", "area": "infra", "owner_role": "DevOps", "est_hours": 3, "dependencies": [], "deliverable": "One-click read-only toggle for vault.", "acceptance": "Prevents writes during deep indexing."}, 
+    {"id": "T68", "title": "Create 'Archetypal Avatar' for nodes", "area": "frontend", "owner_role": "UI/UX", "est_hours": 4, "dependencies": ["T11"], "deliverable": "Icons for MOC nodes by Enneagram.", "acceptance": "Type 5 node shows 'Investigator' icon."}, 
+    {"id": "T69", "title": "Perform Final Security Audit", "area": "infra", "owner_role": "DevOps", "est_hours": 6, "dependencies": ["T58"], "deliverable": "Report on API/State exposure.", "acceptance": "No private data in public/ JSONs."}, 
+    {"id": "T70", "title": "Establish 'Maintenance Continuity'", "area": "infra", "owner_role": "DevOps", "est_hours": 2, "dependencies": ["T57"], "deliverable": "Self-healing cron monitoring.", "acceptance": "Cron restarts automatically on fail."}
+  ]
+}

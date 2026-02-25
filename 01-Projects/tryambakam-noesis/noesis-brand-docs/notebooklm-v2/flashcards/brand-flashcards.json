@@ -1,0 +1,409 @@
+{
+  "title": "System Flashcards",
+  "cards": [
+    {
+      "front": "What is the core philosophical pivot of Tryambakam Noesis regarding meaning?",
+      "back": "The shift from receiving or consuming meaning to consciously authoring it."
+    },
+    {
+      "front": "In the Tryambakam Noesis framework, what is 'authorship' contrasted with?",
+      "back": "Being a 'user' or a passive recipient of external systems."
+    },
+    {
+      "front": "How does Tryambakam Noesis define success for its practitioners?",
+      "back": "Success is achieved when the practitioner no longer needs the system and has attained independence."
+    },
+    {
+      "front": "What are the two 'Witness Agents' that serve as internal guardrails in the system?",
+      "back": "Aletheios and Pichet."
+    },
+    {
+      "front": "Which Witness Agent is associated with the Left Pillar and functions to provide coherence, reflection, and analysis?",
+      "back": "Aletheios."
+    },
+    {
+      "front": "Which Witness Agent is associated with the Right Pillar and functions to provide vitality, instinct, and action?",
+      "back": "Pichet."
+    },
+    {
+      "front": "What does the 'Aletheios' agent do when it detects a state of overwhelm in the user?",
+      "back": "It simplifies and orders the information to restore coherence."
+    },
+    {
+      "front": "What is the primary function of the 'Pichet' agent when it detects stagnation?",
+      "back": "It vitalizes the user and introduces novelty."
+    },
+    {
+      "front": "The Selemene Engine is composed of how many total symbolic-computational engines?",
+      "back": "Sixteen."
+    },
+    {
+      "front": "In the 16-engine stack, how many engines are built as 'Rust Cores' for precision computation?",
+      "back": "Eleven."
+    },
+    {
+      "front": "How many 'TypeScript Bridges' exist in the engine stack for symbolic interpretation?",
+      "back": "Five."
+    },
+    {
+      "front": "What is the function of the 'Temporal Grammar' engine?",
+      "back": "It uses a five-fold calendar to map auspicious timing based on Vedic traditions."
+    },
+    {
+      "front": "Which engine maps life chapters using 120-year planetary periods?",
+      "back": "Chronofield (Vimshottari Dasha)."
+    },
+    {
+      "front": "What does the 'Energetic Authority' engine analyze?",
+      "back": "Bodygraph mechanics and decision-making architecture based on specific human wiring."
+    },
+    {
+      "front": "The 'Gift-Shadow Spectrum' engine maps developmental arcs across which three states?",
+      "back": "Shadow, Gift, and Activated State (Siddhi)."
+    },
+    {
+      "front": "What specific data is used by the 'Numeric Architecture' engine to encode archetypal patterns?",
+      "back": "Birth data."
+    },
+    {
+      "front": "Which engine tracks physical, emotional, and intellectual sine-wave rhythms?",
+      "back": "The Three-Wave Cycle (Biorhythms)."
+    },
+    {
+      "front": "What is the purpose of 'Circadian Cartography' in the 16-engine stack?",
+      "back": "It maps organ activation and rhythms to specific times of the day."
+    },
+    {
+      "front": "The 'Bioelectric Field' engine measures patterns in which part of the human system?",
+      "back": "The subtle energy body (biofield)."
+    },
+    {
+      "front": "What correlation does the 'Physiognomic Mapping' engine identify?",
+      "back": "The relationship between facial features, organ health, and life patterns."
+    },
+    {
+      "front": "Which engine uses sound and acoustic frequency as a structural computational substrate?",
+      "back": "Resonance Architecture (Nadabrahman)."
+    },
+    {
+      "front": "What does the 'Active Planetary Weather' engine compare?",
+      "back": "Current planetary positions relative to an individual's natal chart."
+    },
+    {
+      "front": "In the TypeScript Bridges, what is the 'Archetypal Mirror'?",
+      "back": "A 78-card symbolic reflection system used to mirror the user's current state."
+    },
+    {
+      "front": "Which symbolic engine uses a 64-state pattern recognition oracle?",
+      "back": "Hexagram Navigation (I Ching)."
+    },
+    {
+      "front": "What does the 'Nine-Point Architecture' engine map?",
+      "back": "The movement from fixation to essence across nine distinct personality types (Enneagram)."
+    },
+    {
+      "front": "Which engine analyzes mathematical symmetries found in nature and consciousness?",
+      "back": "Geometric Resonance (Sacred Geometry)."
+    },
+    {
+      "front": "What is the purpose of the 'Sigil Forge' engine?",
+      "back": "It is used for creating unique symbolic geometries for practice."
+    },
+    {
+      "front": "The Tripartite consciousness framework (Kha-Ba-La) consists of which three co-arising principles?",
+      "back": "Spirit (Kha), Body (Ba), and Inertia (La)."
+    },
+    {
+      "front": "In the Kha-Ba-La model, what does the principle 'Kha' represent?",
+      "back": "Spirit or the witness principle that observes without attachment."
+    },
+    {
+      "front": "In the Kha-Ba-La model, what does the principle 'Ba' represent?",
+      "back": "The Body or embodiment, serving as the vehicle through which knowing becomes action."
+    },
+    {
+      "front": "In the Kha-Ba-La model, what does the principle 'La' represent?",
+      "back": "Inertia or resistance, providing the friction necessary to give form to awareness."
+    },
+    {
+      "front": "What is the primary voice persona of Tryambakam Noesis?",
+      "back": "The Anatomist Who Sees Fractals."
+    },
+    {
+      "front": "What four cultural sources define the 'Voice DNA' of Tryambakam Noesis?",
+      "back": "Rick & Morty, Alan Watts, Alex Grey (Anatomy), and Alex Grey (Sacred Mirrors)."
+    },
+    {
+      "front": "What are the three core tone descriptors for the Tryambakam Noesis brand?",
+      "back": "Grounded, Direct, and Respectful-Challenging."
+    },
+    {
+      "front": "What distinguishes 'Somatic Canticles' from traditional books?",
+      "back": "They are adaptive reading experiences where text unfolds based on the user's biorhythm (Three-Wave) cycles."
+    },
+    {
+      "front": "In the '.init Protocols', what are the four distinct 'spins' or phases of ritual training?",
+      "back": "Entry, Cultivation, Integration, and Independence."
+    },
+    {
+      "front": "The 'Infinite Treasure Hunt' is a cryptographic game based on which four life aims?",
+      "back": "The Purusharthas: Dharma (Alignment), Artha (Resource), Kama (Drive), and Moksha (Release)."
+    },
+    {
+      "front": "What is the symbolic 'lumber' mentioned in 'The Plumber' manga series?",
+      "back": "The vertebral pole or the axis mundi (the consciousness spine)."
+    },
+    {
+      "front": "What are 'Decision Mirrors' in the Tryambakam Noesis product line?",
+      "back": "Interfaces that integrate 16-engine data with biological inputs like HRV for practical decision-making."
+    },
+    {
+      "front": "What is the 'Kopina' device?",
+      "back": "A bioelectric sacral interface wearable designed to amplify physiological signaling."
+    },
+    {
+      "front": "What specific material in the Kopina wearable harvests energy from body movement?",
+      "back": "PVDF piezoelectric fibers."
+    },
+    {
+      "front": "What is the corrected technical term for 'Chakra' in the system's nomenclature?",
+      "back": "Biofield Locus (or Physiological Locus)."
+    },
+    {
+      "front": "What is the corrected technical term for 'Sacred Geometry'?",
+      "back": "Geometric frequency resonance."
+    },
+    {
+      "front": "What is the corrected technical term for 'Energy Healing'?",
+      "back": "Biofield calibration."
+    },
+    {
+      "front": "How does the system rename 'Transits' in its technical stack?",
+      "back": "Active Planetary Weather."
+    },
+    {
+      "front": "In the V2 visual identity, what is the primary color name and hex code?",
+      "back": "Void Teal (#0A1628)."
+    },
+    {
+      "front": "What does the secondary color 'Phosphor Cream' (#F0EDE3) represent in the V2 visual identity?",
+      "back": "The illuminated page or phosphorescent surface (warm luminous off-white)."
+    },
+    {
+      "front": "What is the 'V2 Sigil' composed of symbolically?",
+      "back": "Three converging fiber-optic filaments representing Soma, Manas, and Muladhara."
+    },
+    {
+      "front": "In the V2 Sigil, which filament represents the 'Witness Capacity' (Manas)?",
+      "back": "The Solar Bronze filament."
+    },
+    {
+      "front": "What font is used for 'Headers' in the V2 visual system?",
+      "back": "Exo 2."
+    },
+    {
+      "front": "What font is used for 'Body' text in the V2 visual system?",
+      "back": "Space Grotesk."
+    },
+    {
+      "front": "Which font is designated for 'Data/Technical' content in the V2 system?",
+      "back": "Fira Code."
+    },
+    {
+      "front": "What is the 'Kha-Ba-La' model renamed to in the simplified Lexicon Map?",
+      "back": "The Triad: Field-Form-Friction."
+    },
+    {
+      "front": "What does the term 'Chronofield' replace in traditional Vedic terminology?",
+      "back": "Vimshottari Dasha."
+    },
+    {
+      "front": "What term replaces 'Biorhythm' to describe the physical, emotional, and intellectual cycles?",
+      "back": "Three-Wave Cycle."
+    },
+    {
+      "front": "What are the four components of the 'Purushartha' in the brand's 'Four Vectors' model?",
+      "back": "Alignment (Dharma), Resource (Artha), Drive (Kama), and Release (Moksha)."
+    },
+    {
+      "front": "What is the 'Selemene Engine'?",
+      "back": "The computational core and orchestrator of the 16-engine stack."
+    },
+    {
+      "front": "What is the specific age range of the 'Seeker Simon' buyer persona?",
+      "back": "32-48."
+    },
+    {
+      "front": "What is the 'Root Cause Analysis' regarding the failure of previous systems like meditation apps?",
+      "back": "They provide technique without philosophy and position the individual as a user rather than an author."
+    },
+    {
+      "front": "What is the 'Investment Philosophy' for Tryambakam Noesis digital access?",
+      "back": "Donation-supported (honor system), framed as 'pay what sovereignty demands'."
+    },
+    {
+      "front": "What is the 'Wait Time' recommendation before asking a user for a product review?",
+      "back": "30 to 45 days, to allow for genuine practice integration."
+    },
+    {
+      "front": "In 'Layer 3' of the ecosystem, what does the category 'Field Harmonizers' include?",
+      "back": "Tools like tuning forks, orgonite pyramids, and selenite wands."
+    },
+    {
+      "front": "What is the 'Gold Accent' material used sparingly in packaging design?",
+      "back": "Aged Gold foil stamping (matte finish)."
+    },
+    {
+      "front": "How does the 'Somatic Canticles' system decide which content is available to the user daily?",
+      "back": "It generates an 'access map' based on the user's date of birth and current Three-Wave cycle peaks and troughs."
+    },
+    {
+      "front": "What is the primary material used in the base of 'Kopina' foundational wear?",
+      "back": "Organic cotton substrate."
+    },
+    {
+      "front": "What geometric pattern is embroidered in copper on Kopina to provide frequency resonance?",
+      "back": "The Sri Yantra."
+    },
+    {
+      "front": "What is the technical term for the mechanism by which Kopina enhances sacral signaling?",
+      "back": "Bioelectric sacral amplification."
+    },
+    {
+      "front": "Why does the system avoid the term 'Energy Healing'?",
+      "back": "It is considered too vague; 'Biofield calibration' is preferred as it implies technical adjustment."
+    },
+    {
+      "front": "What are the three core colors used in the V1 visual identity?",
+      "back": "Deep Ink (#1A1A2E), Bone (#F5F0E8), and Aged Gold (#B8860B)."
+    },
+    {
+      "front": "In the V2 visual identity, what material replaces 'Stone' from V1?",
+      "back": "Terrazzo or Polished Concrete."
+    },
+    {
+      "front": "What does the 'Solarpunk' element of the V2 theme signify?",
+      "back": "Regenerative growth and the organic integration of living systems with technology."
+    },
+    {
+      "front": "What is the 'Master Negative Prompt' for V2 image generation designed to avoid?",
+      "back": "Cyberpunk aesthetics, neon, stock photo warmth, and mystical/floating imagery."
+    },
+    {
+      "front": "The 'Infinite Treasure Hunt' commentaries correspond to which four vectors?",
+      "back": "Dharma, Artha, Kama, and Moksha."
+    },
+    {
+      "front": "What is embedded cryptographically across the four Purushartha commentaries?",
+      "back": "A Bitcoin seedphrase."
+    },
+    {
+      "front": "What is the 'Success Metric' for the builder of Tryambakam Noesis?",
+      "back": "User independence (the user no longer needing the system)."
+    },
+    {
+      "front": "In the nomenclature corrections, what replaces 'Mala beads'?",
+      "back": "Crystal Array Necklace (for storing biofield energy)."
+    },
+    {
+      "front": "What does 'Soma' represent in the V2 Sigil filaments?",
+      "back": "The source signal (represented by the Chlorophyll green filament)."
+    },
+    {
+      "front": "What does 'Muladhara' represent in the V2 Sigil filaments?",
+      "back": "Physical grounding (represented by the Void Teal filament)."
+    },
+    {
+      "front": "What is the intended emotional progression of a user from 'First Contact' to 'Maturity'?",
+      "back": "Intrigue, Recognition, Challenge, Cultivation, and finally Independence."
+    },
+    {
+      "front": "What is the name of the orchestrator core for the 16 engines?",
+      "back": "The Selemene Engine."
+    },
+    {
+      "front": "The 'Decision Mirrors' oracle uses biological data from which sources?",
+      "back": "HRV (Heart Rate Variability) from devices like Apple Health or Google Fit."
+    },
+    {
+      "front": "What specific type of 'Authority' does the system emphasize in decision-making?",
+      "back": "Energetic Authority (sacral/generator response)."
+    },
+    {
+      "front": "Which engine maps the '27 lunar mansions' or qualitative textures of temporal cycles?",
+      "back": "Lunar Terrain (Nakshatra)."
+    },
+    {
+      "front": "What is the 'Aletheia' reference in the name of the agent Aletheios?",
+      "back": "It is the Greek term for 'unconcealment' or truth."
+    },
+    {
+      "front": "What is 'Lethe' in the context of the agent Pichet?",
+      "back": "It refers to the Greek concept of 'forgetting' or concealment, which Pichet 'conquers'."
+    },
+    {
+      "front": "How does the 'Grounded Depth' aesthetic (V1) differ from 'Bioluminescent Architecture' (V2)?",
+      "back": "V1 focuses on stone and manuscript; V2 focuses on glass, living moss, and bio-digital integration."
+    },
+    {
+      "front": "What is the 'Primary Risk' identified in the launch strategy?",
+      "back": "Attracting 'consumption-seekers' instead of 'sovereignty-seekers'."
+    },
+    {
+      "front": "Which subreddits are identified as high-signal communities for 'Seeker Simon'?",
+      "back": "r/Jung, r/philosophy, r/RationalPsychonaut, and r/Existentialism."
+    },
+    {
+      "front": "What is the 'Inverted Revenue Model' of Tryambakam Noesis?",
+      "back": "The core digital experience is free/donation-based, while physical products and 1:1 mentorship are paid."
+    },
+    {
+      "front": "What is the 'Price Philosophy' regarding subscriptions?",
+      "back": "Tryambakam Noesis is NOT subscription-based to avoid creating artificial ongoing need."
+    },
+    {
+      "front": "What is 'Physiognomic Mapping'?",
+      "back": "The technical engine that correlates facial features with organ health and life patterns."
+    },
+    {
+      "front": "In the packaging guide, what is the 'Hidden Element 1' found inside the box lid?",
+      "back": "A philosophical fragment or question centered and debossed inside the lid."
+    },
+    {
+      "front": "What does the 'Acoustic Resonance Pattern (Raga)' engine encode?",
+      "back": "Emotion-acoustic coherence through melodic frameworks."
+    },
+    {
+      "front": "The '.init Protocols' are mapped across how many operational micro-rituals?",
+      "back": "Sixteen."
+    },
+    {
+      "front": "What is 'Field Layer' a brand-native translation for?",
+      "back": "Kosha (the subtle energy sheaths)."
+    },
+    {
+      "front": "What does 'Pattern Recurrence' replace in the lexicon for 'Karma'?",
+      "back": "Cause-effect patterns that repeat until interrupted by novelty."
+    },
+    {
+      "front": "Which engine identifies archetypal number patterns in birth data?",
+      "back": "Numeric Architecture."
+    },
+    {
+      "front": "What is the 'Witness Self' referred to as in the Lexicon Bridge?",
+      "back": "Atman."
+    },
+    {
+      "front": "What replaces 'Tarot' in the function-descriptive terminology?",
+      "back": "Archetypal Mirror."
+    },
+    {
+      "front": "How many episodes are in 'The Plumber' manga series?",
+      "back": "Twelve."
+    },
+    {
+      "front": "What is the 'Wait Time' for the Somatic Canticles content to unlock?",
+      "back": "It is variable and depends on the body's 'readiness' signals detected via Three-Wave cycles."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "ok": true,
+    "model": "fal-ai/nano-banana-pro",
+    "payload_index": 1,
+    "output": "/Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/brand-docs-final/generated-v3/2A-model-sweep-20260223-011628/nano_banana_pro__payload1.png"
+  },
+  {
+    "ok": true,
+    "model": "fal-ai/flux-pro/kontext",
+    "payload_index": 1,
+    "output": "/Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/brand-docs-final/generated-v3/2A-model-sweep-20260223-011628/flux_kontext__payload1.png"
+  },
+  {
+    "ok": true,
+    "model": "fal-ai/flux-pro/kontext/max",
+    "payload_index": 1,
+    "output": "/Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/brand-docs-final/generated-v3/2A-model-sweep-20260223-011628/flux_kontext_max__payload1.png"
+  },
+  {
+    "ok": false,
+    "model": "bria/fibo-edit/edit"
+  }
+]

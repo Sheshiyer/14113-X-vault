@@ -1,0 +1,76 @@
+{
+  "source_folder": "/Volumes/madara/2026/twc-vault/01-Projects/Magic-Unschool/processing-intake",
+  "vault_root": "/Volumes/madara/2026/twc-vault",
+  "routed_at": "2026-01-28T11:22:00+05:30",
+  "routes": [
+    {
+      "id": "ROUTE_001",
+      "source_file": "Magic Unschool.pdf",
+      "source_path": "/Volumes/madara/2026/twc-vault/01-Projects/Magic-Unschool/processing-intake/Magic Unschool.pdf",
+      "para_bucket": "03-Resources",
+      "subdomain": "Occult/Esoteric-Knowledge",
+      "destination_folder": "/Volumes/madara/2026/twc-vault/03-Resources/Occult/Esoteric-Knowledge",
+      "destination_file": "Magic-Unschool-Notes.md",
+      "pdf_destination": "/Volumes/madara/2026/twc-vault/03-Resources/Occult/Esoteric-Knowledge/attachments/Magic Unschool.pdf",
+      "conflict": false,
+      "action": "create"
+    },
+    {
+      "id": "ROUTE_002",
+      "source_file": "Magenarayan Notes-2.pdf",
+      "source_path": "/Volumes/madara/2026/twc-vault/01-Projects/Magic-Unschool/processing-intake/Magenarayan Notes-2.pdf",
+      "para_bucket": "03-Resources",
+      "subdomain": "Occult/Esoteric-Knowledge",
+      "destination_folder": "/Volumes/madara/2026/twc-vault/03-Resources/Occult/Esoteric-Knowledge",
+      "destination_file": "Magenarayan-Notes-2.md",
+      "pdf_destination": "/Volumes/madara/2026/twc-vault/03-Resources/Occult/Esoteric-Knowledge/attachments/Magenarayan Notes-2.pdf",
+      "conflict": false,
+      "action": "create"
+    },
+    {
+      "id": "ROUTE_003",
+      "source_file": "magenarayan notes.pdf",
+      "source_path": "/Volumes/madara/2026/twc-vault/01-Projects/Magic-Unschool/processing-intake/magenarayan notes.pdf",
+      "para_bucket": "03-Resources",
+      "subdomain": "Occult/Esoteric-Knowledge",
+      "destination_folder": "/Volumes/madara/2026/twc-vault/03-Resources/Occult/Esoteric-Knowledge",
+      "destination_file": "Magenarayan-Notes-1.md",
+      "pdf_destination": "/Volumes/madara/2026/twc-vault/03-Resources/Occult/Esoteric-Knowledge/attachments/magenarayan notes.pdf",
+      "conflict": false,
+      "action": "create"
+    },
+    {
+      "id": "ROUTE_004",
+      "source_file": "magenotes-3.pdf",
+      "source_path": "/Volumes/madara/2026/twc-vault/01-Projects/Magic-Unschool/processing-intake/magenotes-3.pdf",
+      "para_bucket": "03-Resources",
+      "subdomain": "Occult/Esoteric-Knowledge",
+      "destination_folder": "/Volumes/madara/2026/twc-vault/03-Resources/Occult/Esoteric-Knowledge",
+      "destination_file": "Magenarayan-Notes-3.md",
+      "pdf_destination": "/Volumes/madara/2026/twc-vault/03-Resources/Occult/Esoteric-Knowledge/attachments/magenotes-3.pdf",
+      "conflict": false,
+      "action": "create"
+    },
+    {
+      "id": "ROUTE_005",
+      "source_file": "WHOLYDROPS notes.pdf",
+      "source_path": "/Volumes/madara/2026/twc-vault/01-Projects/Magic-Unschool/processing-intake/WHOLYDROPS notes.pdf",
+      "para_bucket": "03-Resources",
+      "subdomain": "Health/Natural-Medicine",
+      "destination_folder": "/Volumes/madara/2026/twc-vault/03-Resources/Health/Natural-Medicine",
+      "destination_file": "WHOLYDROPS-Protocol-Notes.md",
+      "pdf_destination": "/Volumes/madara/2026/twc-vault/03-Resources/Health/Natural-Medicine/attachments/WHOLYDROPS notes.pdf",
+      "conflict": false,
+      "action": "create"
+    }
+  ],
+  "statistics": {
+    "total_routes": 5,
+    "by_destination": {
+      "03-Resources/Occult/Esoteric-Knowledge": 4,
+      "03-Resources/Health/Natural-Medicine": 1
+    },
+    "conflicts": 0,
+    "renames": 0
+  }
+}

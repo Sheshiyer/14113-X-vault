@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"34e5d618e136bef5","type":"text","text":"The Digital Mystic's Guide to Reality Hacking","x":-380,"y":-280,"width":250,"height":60},
+		{"id":"0b1c8f9985afa238","type":"text","text":"The Quantum Web of Ancient Seers","x":-505,"y":-190,"width":250,"height":60},
+		{"id":"5312efc9dfa238c5","type":"text","text":"Your Reality is a Smart Contract","x":-180,"y":-190,"width":250,"height":60},
+		{"id":"f913b64bd8fa2acd","type":"text","text":"The Sacred Development Stack","x":-505,"y":-73,"width":250,"height":60},
+		{"id":"5fe688b2a0177664","type":"text","text":"Deploying Higher Consciousness","x":-180,"y":-73,"width":250,"height":60},
+		{"id":"00c61dd57b5a0bb8","type":"text","text":"En'light'ment and zkSync","x":-333,"y":-446,"width":250,"height":60},
+		{"id":"15cc95829503467f","type":"text","text":"Custom Agentic GPT ","x":280,"y":-820,"width":250,"height":60},
+		{"id":"72cdd72d9846d65f","type":"text","text":"Talking to the reptiles ChatGPT from the slides","x":-10,"y":-720,"width":250,"height":60},
+		{"id":"07ceb14c0a02feb4","type":"text","text":"the holy wafer and the silcion wafers","x":-333,"y":-660,"width":250,"height":60},
+		{"id":"12aa51956c0bf241","type":"text","text":"Jewellary and Melamu","x":-333,"y":-560,"width":250,"height":60},
+		{"id":"c736861501e71de0","type":"text","text":"Piloerection and going super sayyan","x":-379,"y":-924,"width":250,"height":58}
+	],
+	"edges":[
+		{"id":"a99fe1ca8ba289f3","fromNode":"72cdd72d9846d65f","fromSide":"top","toNode":"15cc95829503467f","toSide":"left"}
+	]
+}

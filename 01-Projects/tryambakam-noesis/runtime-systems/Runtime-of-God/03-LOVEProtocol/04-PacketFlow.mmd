@@ -1,0 +1,17 @@
+# LOVE Protocol Packet Flow
+
+sequenceDiagram
+    participant AL as Application Layer
+    participant TL as Transport Layer
+    participant NL as Network Layer
+    participant DL as Data Link Layer
+    participant PL as Physical Layer
+
+    AL->>TL: BeliefPattern(pattern_data)
+    Note over TL: Apply biofield encoding
+    TL->>NL: FieldPacket(encoded_data)
+    Note over NL: Route through mycelial network
+    NL->>DL: NetworkPacket(routed_data)
+    Note over DL: Encode in water/salt medium
+    DL->>PL: PhysicalPattern(final_data)
+    Note over PL: Project into morphic field

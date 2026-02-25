@@ -1,0 +1,317 @@
+{
+  "title": "Noesis Quiz",
+  "questions": [
+    {
+      "question": "In the Tryambakam Noesis framework, which element of the Kha-Ba-La triad represents the 'Inertia' or 'Resistance' that gives form to formless intention?",
+      "answerOptions": [
+        {
+          "text": "Kha",
+          "isCorrect": false,
+          "rationale": "Kha represents the spirit, the observer, and the author-drive rather than the force of resistance."
+        },
+        {
+          "text": "Ba",
+          "isCorrect": false,
+          "rationale": "Ba represents the body, the vehicle for embodiment, and the medium through which knowing becomes doing."
+        },
+        {
+          "text": "La",
+          "isCorrect": true,
+          "rationale": "La is defined as the force of inertia, friction, and gravity that acts as the necessary sculpting material for consciousness."
+        },
+        {
+          "text": "Noesis",
+          "isCorrect": false,
+          "rationale": "Noesis is a term for cultivated intuition or the act of knowing, rather than one of the three co-arising forces in the triad."
+        }
+      ],
+      "hint": "Think of the specific Sanskrit-derived syllable associated with 'Breath as Interface' in the brand tagline."
+    },
+    {
+      "question": "The 'Seeker-Simon' persona is described by a specific 'Defining Paradox.' What is this paradox?",
+      "answerOptions": [
+        {
+          "text": "Financially unstable but internally wealthy",
+          "isCorrect": false,
+          "rationale": "The persona actually earns between $75K and $200K+ and has achieved external financial freedom."
+        },
+        {
+          "text": "Externally free but internally running inherited code",
+          "isCorrect": true,
+          "rationale": "This paradox highlights that while the seeker has achieved geographic and financial freedom, they are still bound by unexamined psychological patterns."
+        },
+        {
+          "text": "Highly tech-savvy but afraid of artificial intelligence",
+          "isCorrect": false,
+          "rationale": "Simon is comfortable with terminal, APIs, and AI tools, and understands AI as infrastructure rather than being afraid of it."
+        },
+        {
+          "text": "Intellectually simple but spiritually complex",
+          "isCorrect": false,
+          "rationale": "The persona is actually highly educated (graduate degree or autodidact equivalent) and reads scientific papers for fun."
+        }
+      ],
+      "hint": "Consider the gap between achieved geographic/financial independence and automatic interior responses."
+    },
+    {
+      "question": "Tryambakam Noesis is described as a 'Quine.' What is the fundamental design principle of a Quine in this context?",
+      "answerOptions": [
+        {
+          "text": "The system succeeds only when the user no longer needs it",
+          "isCorrect": true,
+          "rationale": "A Quine is a self-replicating program; here it refers to a practice that internalizes so deeply the practitioner becomes independent of the system."
+        },
+        {
+          "text": "The system expands indefinitely to capture all wisdom traditions",
+          "isCorrect": false,
+          "rationale": "While it integrates 16 engines, the goal is not infinite expansion but the eventual obsolescence of the tool for the user."
+        },
+        {
+          "text": "The system requires a lifetime subscription to maintain results",
+          "isCorrect": false,
+          "rationale": "The brand explicitly refuses subscription-based models because they create dependency rather than sovereignty."
+        },
+        {
+          "text": "The system utilizes artificial intelligence to automate the healing process",
+          "isCorrect": false,
+          "rationale": "The system focuses on training the user to author their own meaning rather than automating the process via AI."
+        }
+      ],
+      "hint": "Reflect on the software engineering concept of a program that produces its own source code as output."
+    },
+    {
+      "question": "According to the product positioning, why do 'Meditation Apps' typically fail the Seeker-Simon persona?",
+      "answerOptions": [
+        {
+          "text": "They provide habit without philosophy or adaptation to biorhythmic state",
+          "isCorrect": true,
+          "rationale": "Apps often focus on gamified streaks and generic techniques, failing to address 'who' is watching or the user's specific biological cycles."
+        },
+        {
+          "text": "They are too expensive for the average consultant's income",
+          "isCorrect": false,
+          "rationale": "The persona has a high income and is more concerned with structural failures in the practice than the price point."
+        },
+        {
+          "text": "They require too much technical knowledge of APIs",
+          "isCorrect": false,
+          "rationale": "Simon is comfortable with technology; the issue is that apps are often too simplified or 'infantilizing' for his intelligence."
+        },
+        {
+          "text": "They focus exclusively on somatic data at the expense of intellect",
+          "isCorrect": false,
+          "rationale": "The materials state apps have a 'zero Ba' gap, meaning they actually lack body intelligence integration."
+        }
+      ],
+      "hint": "Think about the 'Kha-Ba-La gap' mentioned in the failed solutions analysis."
+    },
+    {
+      "question": "The Noesis Engine consists of 16 engines divided into two technical categories. Which of the following correctly describes the distribution?",
+      "answerOptions": [
+        {
+          "text": "8 Rust cores for precision, 8 Python bridges for logic",
+          "isCorrect": false,
+          "rationale": "The system uses Rust and TypeScript specifically, and the count is not an even split."
+        },
+        {
+          "text": "11 Rust cores for precision, 5 TypeScript bridges for symbolic interpretation",
+          "isCorrect": true,
+          "rationale": "The Rust core handles sub-millisecond astronomical and biofield calculations, while TypeScript handles symbolic systems like Tarot and I Ching."
+        },
+        {
+          "text": "16 Rust engines to ensure maximum performance across all traditional lenses",
+          "isCorrect": false,
+          "rationale": "While performance is key, five of the engines are bridged via TypeScript to handle specific symbolic interpretation logic."
+        },
+        {
+          "text": "5 Rust cores for biofield data, 11 TypeScript bridges for Vedic calculations",
+          "isCorrect": false,
+          "rationale": "Vedic astronomical calculations (Temporal Grammar, Chronofield) are actually part of the high-precision Rust core."
+        }
+      ],
+      "hint": "High-precision astronomical calculations require a systems-level language, while symbolic interpretation uses a more flexible bridge language."
+    },
+    {
+      "question": "The Noesis Engine compass resolves into four cardinal directions. Which direction is specifically associated with 'metabolizing' surfacing material rather than just managing it?",
+      "answerOptions": [
+        {
+          "text": "STABILIZE",
+          "isCorrect": false,
+          "rationale": "STABILIZE is for when the ground has shifted and the practitioner needs to find footing."
+        },
+        {
+          "text": "HEAL",
+          "isCorrect": true,
+          "rationale": "The HEAL direction is activated when something surfaces that requires deep metabolization and integration."
+        },
+        {
+          "text": "CREATE",
+          "isCorrect": false,
+          "rationale": "CREATE is for shaping processed raw material into something new that didn't exist before."
+        },
+        {
+          "text": "MUTATE",
+          "isCorrect": false,
+          "rationale": "MUTATE is for structural evolution when a current pattern is complete and ready to be replaced."
+        }
+      ],
+      "hint": "This direction is often the starting point for post-retreat integration when insight needs to be processed somaticly."
+    },
+    {
+      "question": "The visual identity of Tryambakam Noesis is based on Goethe's Theory of Colours. In this system, which color represents the 'Resolution' where polarity finds equilibrium?",
+      "answerOptions": [
+        {
+          "text": "Witness Violet",
+          "isCorrect": false,
+          "rationale": "Witness Violet represents the intensification of the dark pole into pure awareness (Kha)."
+        },
+        {
+          "text": "Sacred Gold",
+          "isCorrect": false,
+          "rationale": "Sacred Gold represents the 'Plus apex' or the active fire of directed attention (Ba)."
+        },
+        {
+          "text": "Coherence Emerald",
+          "isCorrect": true,
+          "rationale": "In Goethe's system, green is the state where polarity rests, which Tryambakam Noesis maps to harmonic alignment and resonance."
+        },
+        {
+          "text": "Flow Indigo",
+          "isCorrect": false,
+          "rationale": "Flow Indigo represents the yielding depth of passive receptivity and deep minus polarity."
+        }
+      ],
+      "hint": "This color is used for success states and HRV coherence indicators in the UI."
+    },
+    {
+      "question": "What is the specific purpose of the '.init Protocols' in the practitioner's daily engagement?",
+      "answerOptions": [
+        {
+          "text": "To serve as 90-second micro-ritual thresholds using breath, gesture, and declaration",
+          "isCorrect": true,
+          "rationale": "These protocols act as the connective tissue between states, marking the transition from running a pattern to witnessing it."
+        },
+        {
+          "text": "To provide a secure login method for the Selemene API",
+          "isCorrect": false,
+          "rationale": "The system currently offers free access with no signup required; .init is a practice threshold, not a security protocol."
+        },
+        {
+          "text": "To automate the calculation of Nakshatra and Panchanga data",
+          "isCorrect": false,
+          "rationale": "Calculations are handled by the Rust core engine; the protocol is the human-interface engagement with that data."
+        },
+        {
+          "text": "To track the user's progress through a competitive leaderboard",
+          "isCorrect": false,
+          "rationale": "The system explicitly refuses gamification elements like leaderboards or badges."
+        }
+      ],
+      "hint": "Consider the term 'interface' and the requirement for a 90-second embodied action."
+    },
+    {
+      "question": "The 'Somatic Canticles' sci-fi trilogy uses a unique prose principle. How is this principle described?",
+      "answerOptions": [
+        {
+          "text": "Lord of the Rings x Cyberpunk",
+          "isCorrect": false,
+          "rationale": "The system avoids typical fantasy/wellness tropes in favor of more precise clinical and visionary frameworks."
+        },
+        {
+          "text": "PubMed x Alex Grey",
+          "isCorrect": true,
+          "rationale": "This describes the fusion of clinical biological precision (e.g., astrocytes, apoptosis) with visionary, fractal artistry."
+        },
+        {
+          "text": "Silicon Valley x Vedic Sutras",
+          "isCorrect": false,
+          "rationale": "While it uses tech and Vedic elements, the prose principle specifically emphasizes the biological/visionary duality."
+        },
+        {
+          "text": "National Geographic x Jungian Psychology",
+          "isCorrect": false,
+          "rationale": "This doesn't capture the 'bioluminescent' and 'clinical' aesthetic defined in the voice and visual identity guides."
+        }
+      ],
+      "hint": "Look for a combination of a medical database and a visionary artist known for anatomical 'Sacred Mirrors'."
+    },
+    {
+      "question": "Which mathematical constant governs the type scale and proportional relationships within the Tryambakam Noesis visual identity?",
+      "answerOptions": [
+        {
+          "text": "The Golden Ratio ($\\phi \\approx 1.618$)",
+          "isCorrect": true,
+          "rationale": "The system uses the golden ratio to govern spacing and type sizes, reflecting structural patterns found in nature and sacred geometry."
+        },
+        {
+          "text": "The square root of 2 ($\\sqrt{2} \\approx 1.414$)",
+          "isCorrect": false,
+          "rationale": "While common in standard paper sizes (ISO), the source material explicitly specifies the use of the golden ratio $\\phi$."
+        },
+        {
+          "text": "Euler's number ($e \\approx 2.718$)",
+          "isCorrect": false,
+          "rationale": "Euler's number is used for growth/decay in calculus but isn't cited as the governing proportion for the visual type scale."
+        },
+        {
+          "text": "Pi ($\\pi \\approx 3.141$)",
+          "isCorrect": false,
+          "rationale": "Pi relates to circles, but the system relies on the spiral growth constant associated with sacred geometry."
+        }
+      ],
+      "hint": "This constant is also known as 'phi' and is found in the growth patterns of sunflowers and nautilus shells."
+    },
+    {
+      "question": "How does the 'Somatic Canticles' reading experience adapt to the individual practitioner?",
+      "answerOptions": [
+        {
+          "text": "It delivers chapters based on the user's current heart rate variability (HRV)",
+          "isCorrect": false,
+          "rationale": "HRV is integrated into the Financial Biosensor, but the book delivery specifically relies on birth-date-derived cycles."
+        },
+        {
+          "text": "It synchronizes chapter access to the user's birth-date-derived 'Three-Wave Cycle' biorhythms",
+          "isCorrect": true,
+          "rationale": "The system uses birth data to map physical, emotional, and intellectual cycles, serving chapters when the body is most ready to integrate them."
+        },
+        {
+          "text": "It requires a soulbound token to unlock subsequent chapters",
+          "isCorrect": false,
+          "rationale": "All 27 chapters are currently accessible for free; the token is a future roadmap item for progressive revelation, not a current gate."
+        },
+        {
+          "text": "It randomizes the order of chapters based on current planetary transits",
+          "isCorrect": false,
+          "rationale": "While it uses planetary data for other engines, the Canticles specifically use the 3-wave biorhythm cycle for timing."
+        }
+      ],
+      "hint": "The adaptation is 'biologically grounded' using physical, emotional, and intellectual peaks and troughs."
+    },
+    {
+      "question": "What is the 'hidden architectural skeleton' that governs the narrative structure of 'The Plumber' manga series?",
+      "answerOptions": [
+        {
+          "text": "The Periodic Table of Elements",
+          "isCorrect": false,
+          "rationale": "The system is based on symbolic and wisdom traditions rather than standard chemistry frameworks."
+        },
+        {
+          "text": "The 78-card Thoth-Crowley Tarot deck",
+          "isCorrect": true,
+          "rationale": "The tarot blueprint serves as a structural diagnostic for completeness, encoding the full cycle of human consciousness development within the manga's arc."
+        },
+        {
+          "text": "The 12 Labors of Hercules",
+          "isCorrect": false,
+          "rationale": "The 12 episodes of the manga correspond to the 16 engines, but the underlying blueprint is the 78-card tarot system."
+        },
+        {
+          "text": "The 64 Hexagrams of the I Ching",
+          "isCorrect": false,
+          "rationale": "While the I Ching is one of the 16 engines, it is not the primary structural blueprint for the manga's narrative skeleton."
+        }
+      ],
+      "hint": "The 'Tarot Blueprint' document describes this as 'structural engineering' used to verify system completeness."
+    }
+  ]
+}

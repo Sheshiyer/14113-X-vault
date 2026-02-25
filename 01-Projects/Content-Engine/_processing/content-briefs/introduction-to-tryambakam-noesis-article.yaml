@@ -1,0 +1,20 @@
+topic: An Introduction to Tryambakam Noesis: Rewrite Your Operating System
+channel: substack
+required_claims:
+  runtime_claim: ""
+  pattern_claim: ""
+  enneagram_lens: ""
+  embodied_intervention: ""
+  closure_style: non-pitch
+sources:
+  areas:[]
+  resources:[]
+  project:
+    - /Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/brand-docs-final/README.md
+    - /Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/brand-docs-final/01-buyer-persona.md
+gates:
+  min_area_sources: 2
+  min_resource_sources: 1
+  meta_language_removed: true
+metadata:
+  draft_file: introduction-to-tryambakam-noesis-article.md

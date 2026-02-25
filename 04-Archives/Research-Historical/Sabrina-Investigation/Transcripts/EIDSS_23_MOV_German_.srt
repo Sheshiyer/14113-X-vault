@@ -1,0 +1,668 @@
+1
+00:00:00,810 --> 00:00:05,400
+Denken Sie daran, dass es hier nur um Krankheiten, Überwachung und Genomik in großem Maßstab geht.
+
+2
+00:00:05,820 --> 00:00:06,839
+Biowissenschaften.
+
+3
+00:00:06,840 --> 00:00:19,829
+Die PAN Cancer Initiative hat sich zum Ziel gesetzt, 12 Tumortypen zu vergleichen, die im Rahmen des Cancer Genome Atlas Research Network und der Hochenergie-Physik-On-Demand-Analyse für CMS profiliert wurden.
+
+4
+00:00:22,680 --> 00:00:27,059
+Das CERN verfügt nicht über die Computer- oder Finanzressourcen, um alle Daten vor Ort zu verarbeiten.
+
+5
+00:00:27,090 --> 00:00:35,580
+Die jüngsten Entwicklungen im Bereich Cloud Computing (2018) sind in die öffentliche Aufmerksamkeit gerückt, da versprochen wird, so viel Rechenleistung bereitzustellen, wie die Benutzer benötigen.
+
+6
+00:00:35,580 --> 00:00:39,180
+Vereinfachung der Verwaltung, Senkung der Gesamtbetriebskosten.
+
+7
+00:00:40,800 --> 00:00:45,149
+Sie beschweren sich also nur über Geld.
+
+8
+00:00:45,630 --> 00:00:49,429
+Und dann sind hier all die anderen Unternehmen, die uns bei diesen Bewertungen helfen.
+
+9
+00:00:49,440 --> 00:00:56,250
+Wir haben also all diese Daten in der Cloud für das Electronic Integrated Disease Surveillance System verfügbar.
+
+10
+00:00:57,120 --> 00:01:03,450
+Und wir haben auch eine Slideshow zum Anschauen und sie ist auf GitHub, aber es sind geschlossene Projekte.
+
+11
+00:01:03,480 --> 00:01:04,480
+Das ist nett von dir.
+
+12
+00:01:04,769 --> 00:01:18,240
+Ausbruch der Ebola-Krankheit bei biomedizinischen Ratten Wiederbelebung der integrierten Krankheitsüberwachung und Bekämpfung in Sierra Leone nach dem Ausbruch der Ebola-Viruserkrankung im April 2019.
+
+13
+00:01:18,720 --> 00:01:29,010
+Und hier geht es um die IDSA, unser System, das Sie 2003 als integrierte Krankheitsüberwachung und -reaktion IDSA sehen werden.
+
+14
+00:01:30,090 --> 00:01:30,480
+Okay.
+
+15
+00:01:30,480 --> 00:01:32,040
+Das siehst du da, oder?
+
+16
+00:01:32,400 --> 00:01:38,910
+Wenn Sie also dort sitzen und sich wiederholt sagen, dass sie nicht wissen, dass sie überrascht wurden, sie hätten es nicht wissen können.
+
+17
+00:01:39,330 --> 00:01:43,739
+Und du hast es dir vier Jahre lang erzählt, seit 2000, 19.
+
+18
+00:01:44,010 --> 00:01:47,610
+Sie wissen es nicht nur, sondern haben es auch zuerst in der Dritten Welt getestet.
+
+19
+00:01:48,420 --> 00:01:49,280
+Okay.
+
+20
+00:01:49,280 --> 00:01:51,749
+Das sieht aus wie das International Affairs Journal.
+
+21
+00:01:51,750 --> 00:01:56,400
+Also werde ich das schnell in die ukrainische Chronik bringen.
+
+22
+00:01:56,970 --> 00:01:57,240
+Ja.
+
+23
+00:01:57,240 --> 00:02:01,379
+Die militärbiologischen Aktivitäten der USA Und so okay.
+
+24
+00:02:01,950 --> 00:02:11,460
+Also zuerst gehen wir hierher, weil dies ein Slide-Player ist, der Ihnen helfen wird zu verstehen, wie sie mit ihren eigenen Leuten und von ihren eigenen Leuten kommunizieren.
+
+25
+00:02:11,460 --> 00:02:13,349
+Wir sprechen über Leute wie dich und mich.
+
+26
+00:02:13,620 --> 00:02:15,539
+Sie stehen auf und gehen zur Arbeit.
+
+27
+00:02:15,750 --> 00:02:17,099
+Das ist ihr Job.
+
+28
+00:02:17,430 --> 00:02:28,139
+Und zu ihren Aufgaben in einem Büro gehören die Bereitstellung von Unterlagen und die Kommunikation mit den Logins für das Cloudflare Proper Security Webportal.
+
+29
+00:02:28,350 --> 00:02:38,479
+Es könnte die Organisation eines Formats künstlicher Intelligenz im Backend der netzzentrierten Seite beinhalten, um verschiedene dynamische Bevölkerungsgebiete zu überwachen.
+
+30
+00:02:38,940 --> 00:02:41,430
+Hier dreht sich alles um die Überwachung von Krankheiten.
+
+31
+00:02:41,790 --> 00:02:43,944
+Wir sind derzeit vom 19.
+
+32
+00:02:43,944 --> 00:02:44,806
+bis 20.
+
+33
+00:02:44,806 --> 00:02:46,529
+April 2016 in Budapest.
+
+34
+00:02:46,890 --> 00:02:53,099
+Zentrum für öffentliche Gesundheitsforschung, die einzigartige Gelegenheit für Forschung und Innovation im Gesundheitsbereich in Georgien.
+
+35
+00:02:53,550 --> 00:03:05,190
+Das ist also auf der anderen Seite des Teiches, aber es ist ein wirklich gutes Beispiel für diejenigen unter Ihnen, die es sehr schwer haben, von 1995 wegzukommen.
+
+36
+00:03:05,430 --> 00:03:11,340
+Nun, du kannst diese Bemerkung als herablassend auffassen, wenn du willst, aber wenn ich du wäre, würde ich sie für menschlich halten.
+
+37
+00:03:11,700 --> 00:03:21,569
+Wenn Sie eines Tages zufällig aus heiterem Himmel herausfinden, dass Sie jemand von innen heraus beobachtet, ist das nicht dasselbe, als wenn Sie Ihr Telefon abhören.
+
+38
+00:03:21,930 --> 00:03:27,980
+Es ist nicht dasselbe, als würde man von einer Bande verfolgt werden, wenn jemand auf der anderen Seite der Mauer elektronische Geräte benutzt.
+
+39
+00:03:28,500 --> 00:03:41,699
+Dies macht Ihren Router Ihnen gegenüber feindlich, da Ihr Router im Rahmen dieses Smart-Grid-Codes einen Schlaganfall in Ihrem Blut und Gewebe auslösen oder auslösen kann.
+
+40
+00:03:41,700 --> 00:03:46,770
+Nun, bevor Sie denken, dass sie nicht wissen, wofür sie programmieren, würde niemand solche Fehler machen.
+
+41
+00:03:46,770 --> 00:03:47,969
+Du irrst dich völlig.
+
+42
+00:03:48,540 --> 00:03:53,610
+Sie wissen genau, wofür sie kodieren, bis auf die Millimeter- und Nanoskala.
+
+43
+00:03:53,610 --> 00:04:01,870
+Diese Femtosekunden, über die wir gerade gelesen haben, und darüber sprechen wir, wenn ich meine Signage-Präsentation in Bezug auf Defizite halte.
+
+44
+00:04:01,870 --> 00:04:07,770
+Das ist, wie wir Ihre DNA still halten und dann Ihre DNA in Echtzeit ändern.
+
+45
+00:04:08,190 --> 00:04:12,779
+Dies war das ständige Problem auf unserem Kanal, auf das wir gestoßen sind.
+
+46
+00:04:12,810 --> 00:04:18,719
+Zu viele Menschen wollen 1995 nicht loslassen.
+
+47
+00:04:18,750 --> 00:04:21,180
+Sie wollen es nicht zugeben.
+
+48
+00:04:23,210 --> 00:04:24,310
+Sie waren gasbeleuchtet.
+
+49
+00:04:24,590 --> 00:04:31,160
+Sie wollen nicht zugeben, dass Leute dafür arbeiten werden, und sie fühlen sich dabei sehr wohl.
+
+50
+00:04:31,370 --> 00:04:55,220
+Und sie wollen auch nicht zugeben, dass es mehrere Gründe für diese Jobs gibt und dass, wenn wir nicht anfangen, intellektuelle Verantwortung zu übernehmen, indem wir einen menschlichen Körperteil zulassen, wir keine intellektuelle Schuld haben, die zulässig sein wird, denn ohne zuzugeben, dass wir Menschen in vivo mit Biosensoren überwachen, ohne zuzugeben, dass wir Menschen in vivo überwachen.
+
+51
+00:04:55,260 --> 00:04:58,129
+Du weißt schon, 2.15.4 I.
+
+52
+00:04:58,130 --> 00:05:01,189
+Biomediziningenieure aus Tripolis, noch ein paar mehr.
+
+53
+00:05:01,520 --> 00:05:04,879
+Sie verklagen niemanden, weil Sie kein Problem verklagen werden.
+
+54
+00:05:05,210 --> 00:05:14,420
+Sie werden eine Fantasie verklagen, an die Sie nicht glauben, oder 2.1, 5.4, was genau mit der Klage passiert ist.
+
+55
+00:05:14,420 --> 00:05:24,440
+Menschen wurden gegen Garland ins Visier genommen, als sie versuchten, Datenbanken zu zitieren, und wurden vom FBI und anderen Organisationen ausgelacht.
+
+56
+00:05:25,220 --> 00:05:27,380
+Du wirst dich nicht aus einer Datenbank herausholen.
+
+57
+00:05:27,380 --> 00:05:29,959
+Wie Sie sehen, ist dies international vorgeschrieben.
+
+58
+00:05:31,130 --> 00:05:33,290
+Das war auch mein ursprünglicher Punkt zu ihnen.
+
+59
+00:05:35,360 --> 00:05:40,699
+Lassen Sie also bitte 1995 hinter sich und lassen Sie uns auf der Ebene Ihres eigenen Verständnisses einsteigen.
+
+60
+00:05:40,700 --> 00:05:43,100
+Und anstatt wütend zu sein, lasst uns neugierig sein.
+
+61
+00:05:45,530 --> 00:05:46,730
+Ich bin bis zum Ende gegangen.
+
+62
+00:05:46,730 --> 00:05:49,670
+Folie 21 Jetzt möchte ich Folie 20.
+
+63
+00:05:50,120 --> 00:05:55,820
+Forschungsprojekte, zukünftige Richtungen, Molekulare Ökologie, Armor Transcript.
+
+64
+00:05:55,820 --> 00:05:58,089
+Genomik oder Transkriptomik.
+
+65
+00:05:58,100 --> 00:06:09,470
+Dann nehmen wir ein Transkriptom der Veränderungen, die wir in Ihrer DNA, Ihrem Stamm, Ihrer Geografie und Ihrer Populationsgenomik vorgenommen haben.
+
+66
+00:06:16,610 --> 00:06:19,850
+Ich weiß, was es ist, aber ich werde es für dich nachschlagen, damit du es verstehst.
+
+67
+00:06:19,850 --> 00:06:21,350
+Und so ist es einfacher zu erklären.
+
+68
+00:06:22,670 --> 00:06:41,420
+Biogeografie ist ein Forschungsgebiet, das versucht, Beziehungen zwischen einzelnen Genotypen innerhalb einer Art oder innerhalb einer Gruppe sehr eng verwandter Arten auseinanderzunehmen und diese Beziehungen mit ihrer räumlichen Verteilung zu korrelieren.
+
+69
+00:06:46,900 --> 00:06:49,059
+Populationsdynamik.
+
+70
+00:06:52,960 --> 00:06:55,589
+Denken Sie daran, das ist Krankheitsüberwachung.
+
+71
+00:06:56,140 --> 00:07:03,249
+Populationsgenomik ist die groß angelegte Anwendung genomischer Technologien zur Untersuchung von Populationen von Individuen.
+
+72
+00:07:04,720 --> 00:07:08,019
+Und was ist der populationsgenomische Ansatz.
+
+73
+00:07:08,470 --> 00:07:19,419
+Das Gebiet der Populationsgenomik untersucht Muster im Genom innerhalb und zwischen Populationen, um Rückschlüsse auf die Evolution und das Genom zu ziehen.
+
+74
+00:07:19,720 --> 00:07:21,550
+Es ist ein Studienfach.
+
+75
+00:07:22,180 --> 00:07:23,529
+Wie machen sie das?
+
+76
+00:07:23,560 --> 00:07:27,760
+Nun, sie nehmen deine DNA nicht alle paar Jahre mit deiner Volkszählung.
+
+77
+00:07:28,180 --> 00:07:47,920
+Sie überwachen euch intern in vivo in Echtzeit, was ihnen auch die Fähigkeit zur netzzentrierten Kriegsführung ermöglicht, weshalb euer globales Informationsnetz auf all diesen Sensoren aller Art läuft, nicht nur auf denen im Körper.
+
+78
+00:07:48,400 --> 00:07:56,140
+Und das ist auch der Grund, warum jeder, der dich anlügt und dir sagt: Oh, ich kann diesen Sensor aus dir rausholen, ich kann ihn umprogrammieren.
+
+79
+00:07:56,530 --> 00:08:02,230
+Glauben Sie wirklich, dass so etwas im industriellen Maßstab so leicht zugänglich wäre?
+
+80
+00:08:02,560 --> 00:08:04,410
+Das solltest du nicht, denn das ist es nicht.
+
+81
+00:08:05,140 --> 00:08:09,010
+Also diese Biosensoren, darauf muss ich hinweisen, bevor ich fertig bin.
+
+82
+00:08:11,800 --> 00:08:19,179
+Das sind die tragbaren, weil es tragbare Dinge wie Schweiß, Atem, deine Tränen, deinen Speichel gibt.
+
+83
+00:08:19,570 --> 00:08:20,570
+Richtig.
+
+84
+00:08:20,950 --> 00:08:21,880
+Okay.
+
+85
+00:08:21,880 --> 00:08:25,300
+Aber Biosensoren gibt es schon sehr lange.
+
+86
+00:08:26,410 --> 00:08:34,059
+Und ich werde wütend auf Leute, die sich nur auf Wearables konzentrieren, weil das nicht der Fall ist, das ist nicht die Komponente der Systeme, auf die ich mich beziehe.
+
+87
+00:08:34,390 --> 00:08:37,750
+Ich beziehe mich auf das in vivo ATO 2.15.4.
+
+88
+00:08:38,169 --> 00:08:47,019
+Und ich möchte Ihre Aufmerksamkeit auch darauf lenken, wie ich es immer versuche, auf die Tatsache, dass es Biosensoren von 1956 schon sehr lange gibt.
+
+89
+00:08:48,400 --> 00:08:49,400
+Okay.
+
+90
+00:08:51,550 --> 00:08:53,260
+Nun zurück zu unserer Diashow.
+
+91
+00:08:53,740 --> 00:09:17,739
+Wir beobachten die Geografie beim Laden der Dateien, denn auch hier praktizieren wir Medizin, Genomik, Population, Genomik, mikrobielle Forensik, Wirtsreaktion, Wundökologie und Umwelt-Metagenomik, wo wir möchten, dass Sie leben.
+
+92
+00:09:17,740 --> 00:09:19,540
+Wir müssen den Planeten reparieren.
+
+93
+00:09:19,540 --> 00:09:27,640
+Und die Menschen werden gleichzeitig zum Collaborative Center for Emerging Diseases der Weltgesundheitsorganisation.
+
+94
+00:09:28,900 --> 00:09:43,119
+Arbeiten Sie mit unseren Partnern am neuen gemeinsamen Projekt Springer mit der Einrichtung von Vivarium, der Implementierung eines elektronischen Labormanagementsystems und der Einrichtung eines regionalen Schulungszentrums für Biosicherheit und Biosicherheit.
+
+95
+00:09:45,640 --> 00:09:48,549
+All das läuft jetzt von diesen Cloud-Systemen aus.
+
+96
+00:09:48,850 --> 00:09:52,299
+All dies sind Universitäts- und Forschungszentren.
+
+97
+00:09:52,750 --> 00:09:53,950
+Universität von Florida.
+
+98
+00:09:53,980 --> 00:09:55,240
+Universität von Maryland.
+
+99
+00:09:55,240 --> 00:09:56,230
+Emory Universität.
+
+100
+00:09:56,230 --> 00:10:03,580
+Johns Hopkins, Universität Arizona, Wounded Sphere Institute of Microbiology, Universität Oslo usw..
+
+101
+00:10:04,030 --> 00:10:06,249
+Und all das läuft von Daten ab.
+
+102
+00:10:07,120 --> 00:10:08,120
+Was ist das?
+
+103
+00:10:17,590 --> 00:10:22,490
+Ich werde sehen, ob ich es zuerst für dich herbringen kann, damit ich dir zeigen kann, wie es mit allem zusammenhängt.
+
+104
+00:10:47,010 --> 00:10:48,010
+Danke.
+
+105
+00:10:48,620 --> 00:10:49,859
+Ich wollte es nur direkt.
+
+106
+00:10:50,520 --> 00:10:53,160
+Die Defense Threat Reduction Agency.
+
+107
+00:10:55,170 --> 00:10:55,500
+Danke.
+
+108
+00:10:55,500 --> 00:10:56,500
+Geheimt.
+
+109
+00:10:59,990 --> 00:11:08,690
+Und während wir darauf warten, dass Krankheitserreger, Mittel und Kontrolle geladen werden, denken Sie daran, dies ist 2016.
+
+110
+00:11:09,110 --> 00:11:20,839
+Wie ich schon sagte, Biosensoren waren 2005 kommerziell erhältlich und das Wide Body Area Network seit 1995, und seitdem spielen sie fleißig in den Venen und Arterien der Menschen.
+
+111
+00:11:21,140 --> 00:11:24,799
+Und davor haben sie mehrere Systeme.
+
+112
+00:11:25,220 --> 00:11:34,670
+Das von der FEMA eingerichtete Surveillance Surveillance System ist das integrierte System zur Überwachung und Bekämpfung von Krankheiten im Norden Kanadas.
+
+113
+00:11:34,670 --> 00:11:43,280
+Also sind sie rüber gegangen und haben das alles schon getestet, und so haben sie ihre Datenbanken bekommen, wie die auf dem Evergreen, die den DEC ins Visier genommen hat.
+
+114
+00:11:43,970 --> 00:11:44,970
+Mm hmm.
+
+115
+00:11:45,050 --> 00:11:54,110
+Und der Rest der Welt weiß das alles, weil der Rest der Welt wieder einmal ziemlich sauer war, Menschen für eine Weile einfach anhand ihrer Biosensoren jagen zu können.
+
+116
+00:11:54,980 --> 00:11:58,519
+Aber weißt du, es ist eine Sache, Menschen mit Drohnen und Netzwerken zu töten.
+
+117
+00:11:58,910 --> 00:12:07,309
+Es ist eine andere Sache, sich in ihre Körper einzuloggen, sie wie Siebe zu spielen und sie dann absichtlich mit etwas so Einfachem und plausibel zu leugnen, wie ihrem Router krank zu machen.
+
+118
+00:12:08,420 --> 00:12:18,710
+Und das ist meiner Meinung nach der größte Grund, warum nicht jeder in der Lage sein wird, sich aus dem Feuer zu befreien.
+
+119
+00:12:19,190 --> 00:12:19,700
+Verzeihen Sie mir.
+
+120
+00:12:19,700 --> 00:12:20,480
+Ich muss zurück.
+
+121
+00:12:20,480 --> 00:12:21,480
+Und schließlich.
+
+122
+00:12:31,700 --> 00:12:32,700
+Der andere.
+
+123
+00:12:35,100 --> 00:12:35,930
+Ja.
+
+124
+00:12:35,930 --> 00:12:36,500
+Ja.
+
+125
+00:12:36,500 --> 00:12:42,349
+Weil wir die visuelle Kommunikation direkt im Haus haben werden und jeder baut es so mit dem Auge auf.
+
+126
+00:12:42,860 --> 00:12:44,610
+Auf diese Weise kommt man also nicht raus.
+
+127
+00:12:44,900 --> 00:12:47,360
+Sie machen das schon seit so vielen Jahren.
+
+128
+00:12:47,360 --> 00:12:48,350
+Das ist normal für sie.
+
+129
+00:12:48,350 --> 00:12:49,490
+Niemand kümmert sich darum.
+
+130
+00:12:49,490 --> 00:12:54,080
+Deshalb lachen uns alle aus, wenn wir uns auf dem Kanal aufregen, weil sie sagten: Du bist dämlich.
+
+131
+00:12:54,410 --> 00:12:55,250
+Wir sind alle begeistert.
+
+132
+00:12:55,250 --> 00:12:55,850
+Wir alle mögen es.
+
+133
+00:12:55,850 --> 00:12:57,250
+Wir machen es, egal was passiert.
+
+134
+00:12:57,560 --> 00:12:58,400
+Richtig.
+
+135
+00:12:58,400 --> 00:13:06,829
+Angesichts dessen, dass das der Fall ist und wir nicht, können sich die Energiearbeiter genauso wenig kontrollieren wie die Menschen, die glauben wollen, dass nichts wichtig ist.
+
+136
+00:13:06,830 --> 00:13:09,170
+Wir sind alle nur in einer Simulation, sterben einfach.
+
+137
+00:13:09,170 --> 00:13:11,360
+Und sie sind alle verärgert, dass es nicht ihre Art ist.
+
+138
+00:13:11,360 --> 00:13:11,900
+Nein, ist es.
+
+139
+00:13:11,900 --> 00:13:16,460
+Sie haben alle an die Cloud gebunden und injizieren jedem Graphen, um den Durchsatz zu beschleunigen.
+
+140
+00:13:16,820 --> 00:13:23,690
+Also diejenigen von uns, die versuchen, die Grapheninjektion zu vermeiden, werden Nanozellen in Nanozellen zerlegen und sie, wissen Sie, über dem Haus aerosolisieren.
+
+141
+00:13:23,690 --> 00:13:30,499
+Und ihr primärer verdeckter Modus von all dem ist immer noch flüssig oder das BioShield allein.
+
+142
+00:13:32,660 --> 00:13:33,980
+Das ist es, wonach ich gesucht habe.
+
+143
+00:13:33,980 --> 00:13:40,669
+Darüber hinaus gibt es elektronische Kriegsführung seit über 60 Jahren, was ich gleich zeigen werde.
+
+144
+00:13:41,360 --> 00:13:56,180
+Aber das sind Ihre Sensoren, Ihre offene Systemarchitektur und Ihr modularer offener Systemansatz, einige klingen größtenteils nach Ihren Befehlen und Steuern, und das ist die C2-WC-Technologie Ihrer DARPA, Ihre Technologie zur kognitiven Bedrohungsbekämpfung.
+
+145
+00:13:56,180 --> 00:14:02,240
+Dies ist Ihre Bewertung und Telemedizin für Ihr W-Band-Framework, in dem wir die Patientenüberwachung zu Hause beobachten.
+
+146
+00:14:03,140 --> 00:14:10,009
+Im August 2013, Materialien und Methoden Detaillierte Umfrage zu drahtlosen Körperbereichsnetzwerken, Ergebnisse und Schlussfolgerungen.
+
+147
+00:14:10,010 --> 00:14:18,440
+Hier ist Ihr Framework Drahtlose Körperbereichsnetzwerke, Telemedizin und Ihre Biosensoren oder Ihre WC- und drahtlosen Sensornetzwerke.
+
+148
+00:14:19,310 --> 00:14:20,570
+Warum haben sie es niemandem erzählt?
+
+149
+00:14:20,570 --> 00:14:21,820
+Nun, Mann, ist das ein Wunder?
+
+150
+00:14:22,910 --> 00:14:23,910
+Ich liebe es einfach.
+
+151
+00:14:25,190 --> 00:14:26,960
+Aber das ist nur, um zu sagen, was Sie kaufen.
+
+152
+00:14:26,960 --> 00:14:27,960
+Nee.
+
+153
+00:14:28,400 --> 00:14:33,529
+Blutzucker, Knoten, Blutdruckknoten, EKG, thermischer Knoten des Knotens, Blutsauerstoffknoten.
+
+154
+00:14:34,550 --> 00:14:37,070
+Aber sie können uns nicht mit dem Router und dem Satelliten verbinden.
+
+155
+00:14:37,070 --> 00:14:37,430
+Jep.
+
+156
+00:14:37,430 --> 00:14:38,430
+Ja, das können sie.
+
+157
+00:14:38,660 --> 00:14:44,269
+Und da kommen meiner Meinung nach Ihre Neutrinobomben her, die Sie nach Belieben in Staub verwandeln.
+
+158
+00:14:44,690 --> 00:14:46,580
+Dafür sind all diese Außenstrahlen da.
+
+159
+00:14:46,940 --> 00:14:48,230
+Es ist mehr als nur die Antarktis.
+
+160
+00:14:48,230 --> 00:14:54,409
+Ich habe versucht, den Leuten das zu sagen, aber wie immer, ohne 3 Stunden hier zu sitzen, was auch immer herauskommt und sich langweilt.
+
+161
+00:14:54,410 --> 00:15:03,169
+Weil ich versuche, Ihnen zu beweisen, dass das, was ich Ihnen sage, mit den buchstäblichen Überwachungs- und Meldesystemen übereinstimmt, die ihnen seit den neunziger Jahren zur Verfügung stehen.
+
+162
+00:15:03,650 --> 00:15:08,390
+Das ist mir sehr wichtig, damit die Leute, die selbst recherchieren, wissen, wo sie suchen müssen.
+
+163
+00:15:09,320 --> 00:15:11,419
+Also noch eins hier, bitte.
+
+164
+00:15:13,230 --> 00:15:13,620
+Ja.
+
+165
+00:15:13,620 --> 00:15:15,370
+Ich sagte zu ihm, er sagte: Es ist mir egal.
+
+166
+00:15:16,080 --> 00:15:16,800
+In Ordnung.
+
+167
+00:15:16,800 --> 00:15:28,500
+Systematische Überprüfung der Umsetzung der integrierten Seuchenüberwachung und -bekämpfung in der afrikanischen Region, und jeder, der die Märkte nach Nachrichten und Geld beobachtet, weiß, dass es in Südafrika in den nächsten zehn Jahren sicher sein wird, dort zu leben.
+

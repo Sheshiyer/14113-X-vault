@@ -1,0 +1,186 @@
+{
+  "name": "Tryambakam Noesis",
+  "children": [
+    {
+      "name": "Core Philosophy",
+      "children": [
+        {
+          "name": "Kha-Ba-La Triad",
+          "children": [
+            {
+              "name": "Kha: Spirit/Observer"
+            },
+            {
+              "name": "Ba: Body/Medium"
+            },
+            {
+              "name": "La: Inertia/Interface"
+            }
+          ]
+        },
+        {
+          "name": "The Quine: Design for Obsolescence"
+        },
+        {
+          "name": "Self-Consciousness as Technology"
+        },
+        {
+          "name": "Sovereignty over Dependency"
+        }
+      ]
+    },
+    {
+      "name": "The Noesis Engine",
+      "children": [
+        {
+          "name": "16 Symbolic Lenses",
+          "children": [
+            {
+              "name": "11 Rust (Vedic/Biofield)"
+            },
+            {
+              "name": "5 TypeScript (Symbolic/Bridge)"
+            }
+          ]
+        },
+        {
+          "name": "The Compass",
+          "children": [
+            {
+              "name": "Stabilize"
+            },
+            {
+              "name": "Heal"
+            },
+            {
+              "name": "Create"
+            },
+            {
+              "name": "Mutate"
+            }
+          ]
+        },
+        {
+          "name": "6 Synthesis Workflows",
+          "children": [
+            {
+              "name": "Birth-Blueprint"
+            },
+            {
+              "name": "Daily-Practice"
+            },
+            {
+              "name": "Decision-Support"
+            },
+            {
+              "name": "Self-Inquiry"
+            },
+            {
+              "name": "Creative-Expression"
+            },
+            {
+              "name": "Full-Spectrum"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Product Ecosystem",
+      "children": [
+        {
+          "name": "Narrative Layer",
+          "children": [
+            {
+              "name": "Somatic Canticles (Trilogy)"
+            },
+            {
+              "name": "The Plumber (Manga)"
+            }
+          ]
+        },
+        {
+          "name": "Physical Layer",
+          "children": [
+            {
+              "name": ".init Protocols"
+            },
+            {
+              "name": "Bioalchemy (Tinctures/Attars)"
+            },
+            {
+              "name": "Ritual Objects (Orgonite/Pendants)"
+            }
+          ]
+        },
+        {
+          "name": "Decision Layer",
+          "children": [
+            {
+              "name": "Financial Biosensor"
+            },
+            {
+              "name": "Mentorship Crescendo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Buyer Persona: Seeker-Simon",
+      "children": [
+        {
+          "name": "Age: 28-42"
+        },
+        {
+          "name": "The Paradox: Externally Free, Internally Inherited"
+        },
+        {
+          "name": "Status: Post-Optimization Plateau"
+        },
+        {
+          "name": "Goal: Author at Source"
+        }
+      ]
+    },
+    {
+      "name": "Visual Identity",
+      "children": [
+        {
+          "name": "Goethe Color Theory",
+          "children": [
+            {
+              "name": "Witness Violet"
+            },
+            {
+              "name": "Sacred Gold"
+            },
+            {
+              "name": "Coherence Emerald"
+            },
+            {
+              "name": "Flow Indigo"
+            },
+            {
+              "name": "Void Black"
+            }
+          ]
+        },
+        {
+          "name": "Typography",
+          "children": [
+            {
+              "name": "Panchang (Display)"
+            },
+            {
+              "name": "Satoshi (Body)"
+            },
+            {
+              "name": "SF Mono (Data)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

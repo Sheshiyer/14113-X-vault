@@ -1,0 +1,17 @@
+last_updated: '2026-02-24T01:17:31.635960'
+report:
+  actual_cost_usd: 0
+  assets: []
+  assets_failed: 0
+  assets_generated: 0
+  brand_name: Tryambakam Noesis
+  completed_at: '2026-02-24T01:17:31.635018'
+  estimated_cost_usd: 0
+  scenario: custom
+  skills: []
+  skills_failed: 0
+  skills_skipped: 0
+  skills_succeeded: 0
+  started_at: '2026-02-24T01:17:31.630086'
+  status: failed
+  total_duration_seconds: 0.004956

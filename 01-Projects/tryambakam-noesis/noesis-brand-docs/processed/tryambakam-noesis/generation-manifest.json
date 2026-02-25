@@ -1,0 +1,118 @@
+{
+  "brand": "Tryambakam Noesis",
+  "depth_level": "focused",
+  "budget_tier": "standard",
+  "launch_channel": "dtc",
+  "mode": "legacy",
+  "domain_tags": [],
+  "total_assets": 15,
+  "total_api_calls": 31,
+  "estimated_cost_usd": 1.8,
+  "assets": [
+    {
+      "id": "2A",
+      "model": "nano-banana-pro",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.16
+    },
+    {
+      "id": "2B",
+      "model": "flux-2-pro",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.1
+    },
+    {
+      "id": "2C",
+      "model": "flux-2-pro",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.1
+    },
+    {
+      "id": "3A",
+      "model": "flux-2-pro",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.1
+    },
+    {
+      "id": "3B",
+      "model": "flux-2-pro",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.1
+    },
+    {
+      "id": "3C",
+      "model": "flux-2-pro",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.1
+    },
+    {
+      "id": "4A",
+      "model": "nano-banana-pro",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.16
+    },
+    {
+      "id": "4B",
+      "model": "flux-2-pro",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.1
+    },
+    {
+      "id": "5A",
+      "model": "recraft-v3",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.08
+    },
+    {
+      "id": "5C",
+      "model": "recraft-v3",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.08
+    },
+    {
+      "id": "5B",
+      "model": "nano-banana-pro",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.16
+    },
+    {
+      "id": "5D-1",
+      "model": "recraft-v3",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.08
+    },
+    {
+      "id": "5D-2",
+      "model": "recraft-v3",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.08
+    },
+    {
+      "id": "7A",
+      "model": "nano-banana-pro",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.16
+    },
+    {
+      "id": "8A",
+      "model": "nano-banana-pro",
+      "seeds": 3,
+      "calls": 3,
+      "est_cost": 0.24
+    }
+  ]
+}

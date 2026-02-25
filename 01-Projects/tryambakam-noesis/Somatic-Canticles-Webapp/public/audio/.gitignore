@@ -1,0 +1,11 @@
+# Ignore audio files - user-provided content
+*.mp3
+*.wav
+*.ogg
+*.flac
+*.aac
+*.m4a
+*.wma
+
+# But keep the directory structure
+!.gitkeep

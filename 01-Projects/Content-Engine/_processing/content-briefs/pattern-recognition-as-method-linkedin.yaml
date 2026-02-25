@@ -1,0 +1,24 @@
+topic: Pattern Recognition Is a Method, Not a Mood
+channel: linkedin
+required_claims:
+  runtime_claim: "state before story"
+  pattern_claim: "recurrence before narrative"
+  enneagram_lens: "defense mechanics over identity branding"
+  embodied_intervention: "7-day micro-interruption protocol"
+  closure_style: non-pitch
+sources:
+  areas:
+    - /Volumes/madara/2026/twc-vault/02-Areas/Pattern-Studies/_pattern-recognition-hub.md
+    - /Volumes/madara/2026/twc-vault/02-Areas/Consciousness-Models/_consciousness-architecture-hub.md
+    - /Volumes/madara/2026/twc-vault/02-Areas/Muse-Enneagram-Framework/muse-enneagram-matrix.md
+  resources:
+    - /Volumes/madara/2026/twc-vault/03-Resources/Synthesis/Mythic-Journey-HD-Integration-Map.md
+  project:
+    - /Volumes/madara/2026/twc-vault/01-Projects/Content-Engine/editorial/LAYERED-CONTEXT-STACK.md
+gates:
+  min_area_sources: 2
+  min_resource_sources: 1
+  meta_language_removed: true
+metadata:
+  draft_file: pattern-recognition-as-method-linkedin.md
+  scheduled_slot: 2026-03-04

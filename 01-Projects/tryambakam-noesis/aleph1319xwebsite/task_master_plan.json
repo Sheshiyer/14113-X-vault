@@ -1,0 +1,1127 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "name": "Tryambakam Noesis Ecosystem Website",
+    "repo_root": "/Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/aleph1319xwebsite",
+    "generated_on": "2026-02-16",
+    "generated_by": "task-master-planner",
+    "generation_mode": "initial",
+    "assumptions": [
+      "Noesis ecosystem architecture docs are canonical for layer modeling and access flows.",
+      "Selemene remains an external computation surface; this repo does not implement engine frontends.",
+      "Kopina integration uses technical nomenclature and campaign links as defined in KOPINA-INTEGRATION.md.",
+      "Primary delivery target is Cloudflare Pages + Workers with Supabase Postgres and Realtime.",
+      "Initial launch supports anonymous exploration plus authenticated admin/editor publishing."
+    ],
+    "risks": [
+      "Cross-document inconsistencies (13 vs 16 engines, legacy phrasing) can leak into public content.",
+      "WebGL performance variability across mobile devices may require progressive reduction in node complexity.",
+      "RLS or auth misconfiguration could block editorial workflows or expose unpublished content.",
+      "Weak handoff UX from ecosystem nodes to external compute surfaces may lower conversion.",
+      "Telemetry volume from high-frequency canvas interactions can impact API cost and latency."
+    ]
+  },
+  "phases": [
+    {
+      "phase_id": "P0",
+      "name": "Strategy & Experience Foundation",
+      "objective": "Align brand, spatial IA, and technical architecture for canvas-first execution.",
+      "sprints": [
+        {
+          "sprint_id": "S1",
+          "duration_weeks": 2,
+          "focus": "Discovery, consistency audit, and platform setup",
+          "tasks": [
+            {
+              "id": "P0-S1-01",
+              "title": "Reconcile ecosystem sources and lock canonical taxonomy",
+              "area": "product",
+              "owner_role": "Product Strategist",
+              "est_hours": 8,
+              "dependencies": [],
+              "deliverable": "Decision log defining canonical layer names, engine references, and naming constraints.",
+              "acceptance": "All P0 artifacts use consistent ecosystem terms and exclude engine-frontend scope."
+            },
+            {
+              "id": "P0-S1-02",
+              "title": "Define core success metrics and orientation KPIs",
+              "area": "product",
+              "owner_role": "Product Strategist",
+              "est_hours": 6,
+              "dependencies": [
+                "P0-S1-01"
+              ],
+              "deliverable": "Metric spec for orientation, exploration depth, and conversion.",
+              "acceptance": "KPIs have definitions, formulas, and dashboard owners."
+            },
+            {
+              "id": "P0-S1-03",
+              "title": "Select frontend and rendering stack with runtime boundaries",
+              "area": "infra",
+              "owner_role": "Tech Lead",
+              "est_hours": 8,
+              "dependencies": [
+                "P0-S1-01"
+              ],
+              "deliverable": "Architecture note for Next.js, R3F, and Worker boundaries.",
+              "acceptance": "Stack decision includes tradeoffs and approved module boundaries."
+            },
+            {
+              "id": "P0-S1-04",
+              "title": "Bootstrap repository, package tooling, and CI baseline",
+              "area": "infra",
+              "owner_role": "DevOps",
+              "est_hours": 10,
+              "dependencies": [
+                "P0-S1-03"
+              ],
+              "deliverable": "Working repo scaffold with lint/test CI jobs.",
+              "acceptance": "A sample PR triggers lint and tests successfully."
+            },
+            {
+              "id": "P0-S1-05",
+              "title": "Implement design token baseline from Noesis visual identity",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P0-S1-01"
+              ],
+              "deliverable": "Theme tokens for colors, typography, spacing, and surfaces.",
+              "acceptance": "Token package maps exactly to approved brand palette and type system."
+            },
+            {
+              "id": "P0-S1-06",
+              "title": "Draft graph data model for nodes, edges, and content blocks",
+              "area": "data",
+              "owner_role": "Backend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P0-S1-01"
+              ],
+              "deliverable": "ERD and schema proposal for graph and narrative content.",
+              "acceptance": "Model supports orientation nodes, engine nodes, pathways, and deep overlays."
+            },
+            {
+              "id": "P0-S1-07",
+              "title": "Design ingestion workflow for processed brand markdown",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P0-S1-06"
+              ],
+              "deliverable": "Plan for parsing markdown into graph-ready content payloads.",
+              "acceptance": "Workflow defines source mapping, transforms, and validation steps."
+            },
+            {
+              "id": "P0-S1-08",
+              "title": "Run rendering spike for chunking and culling strategy",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 12,
+              "dependencies": [
+                "P0-S1-03"
+              ],
+              "deliverable": "Prototype proving chunk manager + culling approach.",
+              "acceptance": "Prototype sustains target FPS with simulated 500-node graph."
+            },
+            {
+              "id": "P0-S1-09",
+              "title": "Publish engineering conventions and ADR process",
+              "area": "infra",
+              "owner_role": "Tech Lead",
+              "est_hours": 6,
+              "dependencies": [
+                "P0-S1-04"
+              ],
+              "deliverable": "Conventions doc for branching, reviews, and architectural records.",
+              "acceptance": "Conventions are committed and referenced in pull request template."
+            },
+            {
+              "id": "P0-S1-10",
+              "title": "Approve scope lock: no engine frontend in ecosystem website",
+              "area": "product",
+              "owner_role": "Tech Lead",
+              "est_hours": 4,
+              "dependencies": [
+                "P0-S1-01"
+              ],
+              "deliverable": "Signed scope lock note attached to architecture docs.",
+              "acceptance": "All P1+ backlog items comply with the no-engine-frontend constraint."
+            }
+          ]
+        },
+        {
+          "sprint_id": "S2",
+          "duration_weeks": 2,
+          "focus": "Experience spec, IA, and instrumentation planning",
+          "tasks": [
+            {
+              "id": "P0-S2-01",
+              "title": "Document 12 anime episodes and engine-to-lesson mappings",
+              "area": "product",
+              "owner_role": "Content Architect",
+              "est_hours": 8,
+              "dependencies": [
+                "P0-S1-01"
+              ],
+              "deliverable": "Episode mapping artifact in docs/p0 for symbolic narratives layer.",
+              "acceptance": "All 12 episodes have mapped lessons and website-node representation rules."
+            },
+            {
+              "id": "P0-S2-02",
+              "title": "Define `.init` protocol structure (13 rituals, 4 spins)",
+              "area": "product",
+              "owner_role": "Product Strategist",
+              "est_hours": 8,
+              "dependencies": [
+                "P0-S1-01"
+              ],
+              "deliverable": "Protocol architecture document covering spins, templates, and CTA model.",
+              "acceptance": "All 13 rituals are mapped to spins with reusable structure and progression logic."
+            },
+            {
+              "id": "P0-S2-03",
+              "title": "Design physical store category taxonomy and Kopina positioning",
+              "area": "product",
+              "owner_role": "Commerce Strategist",
+              "est_hours": 8,
+              "dependencies": [
+                "P0-S1-01"
+              ],
+              "deliverable": "Taxonomy doc for ritual objects and bioelectric interfaces.",
+              "acceptance": "Store categories are complete and Kopina nomenclature follows technical constraints."
+            },
+            {
+              "id": "P0-S2-04",
+              "title": "Outline 12-document mentorship report architecture",
+              "area": "product",
+              "owner_role": "Mentorship Lead",
+              "est_hours": 8,
+              "dependencies": [
+                "P0-S1-01"
+              ],
+              "deliverable": "Mentorship report module specification with cross-layer links.",
+              "acceptance": "All 12 report modules are defined with funnel and delivery constraints."
+            },
+            {
+              "id": "P0-S2-05",
+              "title": "Define media pipeline and LOD policy for images and 3D assets",
+              "area": "infra",
+              "owner_role": "Frontend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P0-S2-01"
+              ],
+              "deliverable": "Asset policy covering placeholders, compression, and progressive loading.",
+              "acceptance": "Policy includes size budgets and quality tiers for desktop/mobile."
+            },
+            {
+              "id": "P0-S2-06",
+              "title": "Design user flows for onboarding, exploration, and conversion",
+              "area": "product",
+              "owner_role": "UX Designer",
+              "est_hours": 10,
+              "dependencies": [
+                "P0-S2-01"
+              ],
+              "deliverable": "Flow diagrams for first session, depth exploration, and CTA pathways.",
+              "acceptance": "Flows include measurable events and no dead-end navigation states."
+            },
+            {
+              "id": "P0-S2-07",
+              "title": "Map ecosystem layer cards and integration-link schema",
+              "area": "data",
+              "owner_role": "Content Strategist",
+              "est_hours": 8,
+              "dependencies": [
+                "P0-S2-01"
+              ],
+              "deliverable": "Structured schema for layer cards, integration links, and handoff metadata.",
+              "acceptance": "Each ecosystem layer supports consistent node cards and validated handoff link fields."
+            },
+            {
+              "id": "P0-S2-08",
+              "title": "Define event taxonomy for interaction and funnel analytics",
+              "area": "backend",
+              "owner_role": "Data Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P0-S1-02",
+                "P0-S2-06"
+              ],
+              "deliverable": "Event dictionary and payload schema for analytics capture.",
+              "acceptance": "Event taxonomy supports orientation funnel and node-level engagement analysis."
+            },
+            {
+              "id": "P0-S2-09",
+              "title": "Finalize DesignSpec and ProjectArchitecture v1 artifacts",
+              "area": "product",
+              "owner_role": "Tech Lead",
+              "est_hours": 8,
+              "dependencies": [
+                "P0-S2-02",
+                "P0-S2-04",
+                "P0-S2-05",
+                "P0-S2-08"
+              ],
+              "deliverable": "Versioned specs ready for implementation kickoff.",
+              "acceptance": "Specs are complete, consistent, and linked to sprint backlog IDs."
+            },
+            {
+              "id": "P0-S2-10",
+              "title": "Run P1 kickoff review and dependency checkpoint",
+              "area": "product",
+              "owner_role": "Tech Lead",
+              "est_hours": 6,
+              "dependencies": [
+                "P0-S2-09"
+              ],
+              "deliverable": "Kickoff memo with scoped backlog and sequence validation.",
+              "acceptance": "All P1 tasks have clear owners, dependencies, and acceptance checks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_id": "P1",
+      "name": "Canvas Runtime & Interaction",
+      "objective": "Build a performant infinite-canvas runtime with robust navigation and fallback behavior.",
+      "sprints": [
+        {
+          "sprint_id": "S3",
+          "duration_weeks": 2,
+          "focus": "Canvas runtime foundation and navigation core",
+          "tasks": [
+            {
+              "id": "P1-S3-01",
+              "title": "Scaffold app shell with WebGL canvas mount and route layout",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P0-S2-10"
+              ],
+              "deliverable": "Running app shell with canvas host route and base UI chrome.",
+              "acceptance": "Canvas shell loads in dev and production builds without runtime errors."
+            },
+            {
+              "id": "P1-S3-02",
+              "title": "Implement camera controls for pan, zoom, and keyboard movement",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 12,
+              "dependencies": [
+                "P1-S3-01"
+              ],
+              "deliverable": "Input controller module for pointer and keyboard navigation.",
+              "acceptance": "Users can traverse the canvas smoothly with bounded interaction rules."
+            },
+            {
+              "id": "P1-S3-03",
+              "title": "Build spatial chunk manager for graph partition loading",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 12,
+              "dependencies": [
+                "P1-S3-01"
+              ],
+              "deliverable": "Chunk loader that activates/deactivates node clusters by viewport.",
+              "acceptance": "Only visible or nearby chunks are mounted in render tree."
+            },
+            {
+              "id": "P1-S3-04",
+              "title": "Add frustum culling and visibility heuristics",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P1-S3-03"
+              ],
+              "deliverable": "Visibility engine for node and edge render pruning.",
+              "acceptance": "Off-screen objects are culled with no visible pop artifacts beyond threshold."
+            },
+            {
+              "id": "P1-S3-05",
+              "title": "Create node primitive renderer and material token bindings",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 12,
+              "dependencies": [
+                "P1-S3-01",
+                "P0-S1-05"
+              ],
+              "deliverable": "Reusable node visual components with theme token integration.",
+              "acceptance": "Primary node variants render with brand-compliant typography and color states."
+            },
+            {
+              "id": "P1-S3-06",
+              "title": "Implement minimap and compass orientation module",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P1-S3-02"
+              ],
+              "deliverable": "Orientation UI showing position, heading, and jump shortcuts.",
+              "acceptance": "Users can jump to anchor zones and maintain directional context."
+            },
+            {
+              "id": "P1-S3-07",
+              "title": "Implement URL-state synchronization for focused nodes",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P1-S3-02"
+              ],
+              "deliverable": "Router integration linking camera target and selected node to URL.",
+              "acceptance": "Deep links restore node focus and camera framing reliably."
+            },
+            {
+              "id": "P1-S3-08",
+              "title": "Integrate command palette for node search and jump actions",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P1-S3-06",
+                "P1-S3-07"
+              ],
+              "deliverable": "Keyboard command surface for quick graph traversal.",
+              "acceptance": "Palette opens from keyboard shortcut and executes jump commands."
+            },
+            {
+              "id": "P1-S3-09",
+              "title": "Wire graph snapshot loader from stubbed API responses",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P1-S3-01",
+                "P0-S2-07"
+              ],
+              "deliverable": "Typed client and adapter for graph payload ingestion.",
+              "acceptance": "Canvas renders graph data from API payloads without schema errors."
+            },
+            {
+              "id": "P1-S3-10",
+              "title": "Deliver runtime demo with 500-node synthetic graph",
+              "area": "qa",
+              "owner_role": "QA",
+              "est_hours": 8,
+              "dependencies": [
+                "P1-S3-03",
+                "P1-S3-04",
+                "P1-S3-09"
+              ],
+              "deliverable": "Demo report covering FPS, memory, and interaction latency.",
+              "acceptance": "Runtime meets baseline FPS and interaction latency targets in test profile."
+            }
+          ]
+        },
+        {
+          "sprint_id": "S4",
+          "duration_weeks": 2,
+          "focus": "Interaction depth, fallback behavior, and performance hardening",
+          "tasks": [
+            {
+              "id": "P1-S4-01",
+              "title": "Implement progressive media loading with placeholders and LOD",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 12,
+              "dependencies": [
+                "P1-S3-10",
+                "P0-S2-05"
+              ],
+              "deliverable": "Media loader with staged quality and preload prioritization.",
+              "acceptance": "Visible media upgrades progressively without blocking interaction."
+            },
+            {
+              "id": "P1-S4-02",
+              "title": "Build deep panel overlay system for long-form node content",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P1-S3-07"
+              ],
+              "deliverable": "Overlay component supporting route-backed deep reading views.",
+              "acceptance": "Panels open/close via keyboard and preserve focus management."
+            },
+            {
+              "id": "P1-S4-03",
+              "title": "Add exploration path rail and breadcrumb history",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P1-S3-07"
+              ],
+              "deliverable": "UI rail showing traversal path and quick backtracking actions.",
+              "acceptance": "Users can return to previous nodes without losing context."
+            },
+            {
+              "id": "P1-S4-04",
+              "title": "Implement inertial transitions and motion safety settings",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P1-S3-02"
+              ],
+              "deliverable": "Motion system with reduced-motion support and inertia tuning.",
+              "acceptance": "Reduced-motion mode disables non-essential animated transitions."
+            },
+            {
+              "id": "P1-S4-05",
+              "title": "Build client-side fuzzy search ranking for graph nodes",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P1-S3-08",
+                "P0-S2-08"
+              ],
+              "deliverable": "Search module returning ranked node matches and action intents.",
+              "acceptance": "Top results remain relevant for canonical engine and pathway queries."
+            },
+            {
+              "id": "P1-S4-06",
+              "title": "Implement mobile gesture controls and viewport adaptation",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 12,
+              "dependencies": [
+                "P1-S3-02",
+                "P1-S4-01"
+              ],
+              "deliverable": "Touch interaction model for pinch, drag, and tap exploration.",
+              "acceptance": "Mobile users can navigate core flows without control conflicts."
+            },
+            {
+              "id": "P1-S4-07",
+              "title": "Close accessibility parity gaps across canvas interactions",
+              "area": "qa",
+              "owner_role": "QA",
+              "est_hours": 10,
+              "dependencies": [
+                "P1-S4-02",
+                "P0-S2-04"
+              ],
+              "deliverable": "Keyboard and screen-reader interaction support matrix.",
+              "acceptance": "All high-priority journeys pass keyboard-only and SR tests."
+            },
+            {
+              "id": "P1-S4-08",
+              "title": "Implement WebGL capability detection and fallback routing",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 6,
+              "dependencies": [
+                "P1-S3-01",
+                "P0-S2-04"
+              ],
+              "deliverable": "Capability guard routing users to `/index` fallback when needed.",
+              "acceptance": "Unsupported devices are routed cleanly with no blank states."
+            },
+            {
+              "id": "P1-S4-09",
+              "title": "Run profiling pass and optimize draw calls and memory",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 12,
+              "dependencies": [
+                "P1-S4-01",
+                "P1-S4-06",
+                "P1-S4-08"
+              ],
+              "deliverable": "Performance optimization report and applied runtime improvements.",
+              "acceptance": "Draw calls, memory usage, and frame stability meet sprint thresholds."
+            },
+            {
+              "id": "P1-S4-10",
+              "title": "Freeze frontend runtime contract for backend integration",
+              "area": "product",
+              "owner_role": "Tech Lead",
+              "est_hours": 6,
+              "dependencies": [
+                "P1-S4-05",
+                "P1-S4-07",
+                "P1-S4-09"
+              ],
+              "deliverable": "Signed frontend contract for APIs, events, and content schema.",
+              "acceptance": "No unresolved contract mismatches remain before backend sprint handoff."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_id": "P2",
+      "name": "Backend, Data, and Personalization",
+      "objective": "Deliver API/data/auth/realtime foundation supporting the canvas and admin operations.",
+      "sprints": [
+        {
+          "sprint_id": "S5",
+          "duration_weeks": 2,
+          "focus": "Data schema, auth/RLS, and API baseline",
+          "tasks": [
+            {
+              "id": "P2-S5-01",
+              "title": "Initialize Supabase project and migration workflow",
+              "area": "infra",
+              "owner_role": "DevOps",
+              "est_hours": 8,
+              "dependencies": [
+                "P1-S4-10"
+              ],
+              "deliverable": "Working Supabase environment with migration scripts and env setup.",
+              "acceptance": "Local and remote environments run migrations consistently."
+            },
+            {
+              "id": "P2-S5-02",
+              "title": "Create graph schema tables for nodes, edges, and node_content",
+              "area": "data",
+              "owner_role": "Backend Eng",
+              "est_hours": 12,
+              "dependencies": [
+                "P2-S5-01",
+                "P0-S1-06"
+              ],
+              "deliverable": "Database tables and constraints for graph content model.",
+              "acceptance": "Schema supports canonical graph reads and content joins."
+            },
+            {
+              "id": "P2-S5-03",
+              "title": "Create integration_profiles and pathways tables with metadata fields",
+              "area": "data",
+              "owner_role": "Backend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P2-S5-02",
+                "P0-S2-07"
+              ],
+              "deliverable": "Entity tables for integrations and pathways with slugs and publication states.",
+              "acceptance": "All ecosystem integrations and core pathways are represented with validation rules."
+            },
+            {
+              "id": "P2-S5-04",
+              "title": "Create auth and RBAC tables for admin/editor workflows",
+              "area": "data",
+              "owner_role": "Backend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P2-S5-01"
+              ],
+              "deliverable": "Role, permission, and user-role relation schema.",
+              "acceptance": "RBAC model maps to admin, editor, analyst, and viewer roles."
+            },
+            {
+              "id": "P2-S5-05",
+              "title": "Implement RLS policies for public published-read and protected writes",
+              "area": "data",
+              "owner_role": "Backend Eng",
+              "est_hours": 12,
+              "dependencies": [
+                "P2-S5-02",
+                "P2-S5-04"
+              ],
+              "deliverable": "RLS policy set and access tests for each role.",
+              "acceptance": "Unauthorized read/write attempts fail while valid role actions pass."
+            },
+            {
+              "id": "P2-S5-06",
+              "title": "Scaffold Worker API with typed middleware and error envelopes",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P2-S5-01",
+                "P0-S1-03"
+              ],
+              "deliverable": "API runtime with header validation and error model.",
+              "acceptance": "API returns standardized error envelopes for validation and auth failures."
+            },
+            {
+              "id": "P2-S5-07",
+              "title": "Implement GET graph and node detail endpoints",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P2-S5-02",
+                "P2-S5-06"
+              ],
+              "deliverable": "Read APIs for graph snapshots and node detail payloads.",
+              "acceptance": "Endpoints return typed responses matching frontend contract."
+            },
+            {
+              "id": "P2-S5-08",
+              "title": "Implement POST events endpoint with rate controls",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P2-S5-06",
+                "P0-S2-08"
+              ],
+              "deliverable": "Event ingestion endpoint with schema validation and throttling.",
+              "acceptance": "Malformed events are rejected and valid events persist reliably."
+            },
+            {
+              "id": "P2-S5-09",
+              "title": "Implement admin session start/end and token validation endpoints",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P2-S5-04",
+                "P2-S5-06"
+              ],
+              "deliverable": "Session APIs supporting protected editorial actions.",
+              "acceptance": "Only authenticated roles can access protected API routes."
+            },
+            {
+              "id": "P2-S5-10",
+              "title": "Create baseline integration test suite for schema and APIs",
+              "area": "qa",
+              "owner_role": "QA",
+              "est_hours": 8,
+              "dependencies": [
+                "P2-S5-05",
+                "P2-S5-07",
+                "P2-S5-08",
+                "P2-S5-09"
+              ],
+              "deliverable": "Integration tests for auth, graph reads, and event writes.",
+              "acceptance": "Integration suite passes in CI with deterministic fixtures."
+            }
+          ]
+        },
+        {
+          "sprint_id": "S6",
+          "duration_weeks": 2,
+          "focus": "Realtime updates, search, personalization, and analytics services",
+          "tasks": [
+            {
+              "id": "P2-S6-01",
+              "title": "Build search index table and refresh job",
+              "area": "data",
+              "owner_role": "Backend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P2-S5-02"
+              ],
+              "deliverable": "Index structures and job for search-ready content tokens.",
+              "acceptance": "Index refresh keeps published graph nodes queryable within SLA."
+            },
+            {
+              "id": "P2-S6-02",
+              "title": "Implement search API endpoint with hybrid ranking",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P2-S6-01",
+                "P2-S5-06"
+              ],
+              "deliverable": "`/api/search` endpoint with weighted relevance ranking.",
+              "acceptance": "Canonical queries return expected top results in contract tests."
+            },
+            {
+              "id": "P2-S6-03",
+              "title": "Implement realtime publish channel for node updates",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P2-S5-02",
+                "P2-S5-09"
+              ],
+              "deliverable": "Realtime stream for published node mutation events.",
+              "acceptance": "Subscribed clients receive update events within defined latency budget."
+            },
+            {
+              "id": "P2-S6-04",
+              "title": "Implement feature flag registry and flags endpoint",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P2-S5-06",
+                "P0-S1-09"
+              ],
+              "deliverable": "Service for environment-scoped feature flags.",
+              "acceptance": "Client can fetch and evaluate feature flags consistently."
+            },
+            {
+              "id": "P2-S6-05",
+              "title": "Implement personalization session service for journey continuity",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P2-S5-08"
+              ],
+              "deliverable": "Session model storing visited nodes and intent markers.",
+              "acceptance": "Returning sessions restore traversal context for anonymous users."
+            },
+            {
+              "id": "P2-S6-06",
+              "title": "Implement audit logging for protected write operations",
+              "area": "backend",
+              "owner_role": "Backend Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P2-S5-06",
+                "P2-S5-09"
+              ],
+              "deliverable": "Append-only audit trail for admin/editor changes.",
+              "acceptance": "All protected mutations emit audit entries with actor and request ID."
+            },
+            {
+              "id": "P2-S6-07",
+              "title": "Create analytics aggregations and reporting views",
+              "area": "data",
+              "owner_role": "Data Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P2-S5-08",
+                "P0-S2-08"
+              ],
+              "deliverable": "Materialized views for funnel and exploration metrics.",
+              "acceptance": "Reporting views power dashboard queries within performance budgets."
+            },
+            {
+              "id": "P2-S6-08",
+              "title": "Implement edge and DB cache strategy for read endpoints",
+              "area": "infra",
+              "owner_role": "DevOps",
+              "est_hours": 8,
+              "dependencies": [
+                "P2-S5-07",
+                "P2-S6-02"
+              ],
+              "deliverable": "Caching layer with invalidation rules and TTL strategy.",
+              "acceptance": "Cache hit ratios improve response latency without stale content regressions."
+            },
+            {
+              "id": "P2-S6-09",
+              "title": "Apply security hardening for headers, CORS, and abuse limits",
+              "area": "infra",
+              "owner_role": "Security Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P2-S5-06",
+                "P2-S5-08",
+                "P2-S6-04"
+              ],
+              "deliverable": "Security controls and automated verification checks.",
+              "acceptance": "Pen-test checklist passes and no critical header/security gaps remain."
+            },
+            {
+              "id": "P2-S6-10",
+              "title": "Complete backend readiness review and contract freeze",
+              "area": "product",
+              "owner_role": "Tech Lead",
+              "est_hours": 6,
+              "dependencies": [
+                "P2-S6-02",
+                "P2-S6-03",
+                "P2-S6-07",
+                "P2-S6-09"
+              ],
+              "deliverable": "Backend readiness report and frozen v1 API contract.",
+              "acceptance": "Frontend integration can proceed with no unresolved critical backend risks."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_id": "P3",
+      "name": "Product Surfaces, Quality, and Launch",
+      "objective": "Ship narrative surfaces, conversion flows, quality gates, and production launch readiness.",
+      "sprints": [
+        {
+          "sprint_id": "S7",
+          "duration_weeks": 2,
+          "focus": "Narrative surfaces, content integration, and conversion UX",
+          "tasks": [
+            {
+              "id": "P3-S7-01",
+              "title": "Implement production canvas chrome and orientation onboarding",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P2-S6-10"
+              ],
+              "deliverable": "Polished shell with onboarding prompts and anchor actions.",
+              "acceptance": "New users can complete orientation flow without assistance."
+            },
+            {
+              "id": "P3-S7-02",
+              "title": "Build Orientation Core and Why Noesis node clusters",
+              "area": "frontend",
+              "owner_role": "Content Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P3-S7-01",
+                "P0-S2-03"
+              ],
+              "deliverable": "Published node set for foundational narrative sections.",
+              "acceptance": "Core narrative nodes match approved copy and routing behavior."
+            },
+            {
+              "id": "P3-S7-03",
+              "title": "Build Selemene reference hub nodes and handoff routes",
+              "area": "frontend",
+              "owner_role": "Content Eng",
+              "est_hours": 12,
+              "dependencies": [
+                "P3-S7-01",
+                "P2-S5-03"
+              ],
+              "deliverable": "Reference node cluster and routes for all 16 engines as external integration handoffs.",
+              "acceptance": "All engine references resolve to metadata and handoff links without calculator UI components."
+            },
+            {
+              "id": "P3-S7-04",
+              "title": "Build practice pathways nodes and sequence interactions",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P3-S7-01",
+                "P2-S5-03"
+              ],
+              "deliverable": "Pathway surfaces linking sequential exploration steps.",
+              "acceptance": "Users can follow pathway progression and resume mid-path."
+            },
+            {
+              "id": "P3-S7-05",
+              "title": "Build use-case, proof, and ethos narrative clusters",
+              "area": "frontend",
+              "owner_role": "Content Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P3-S7-02"
+              ],
+              "deliverable": "Node clusters for objections, proof points, and positioning evidence.",
+              "acceptance": "Narrative clusters align with messaging-direction requirements."
+            },
+            {
+              "id": "P3-S7-06",
+              "title": "Implement offer and access route with preview/waitlist/donation",
+              "area": "frontend",
+              "owner_role": "Frontend Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P3-S7-01",
+                "P2-S5-08"
+              ],
+              "deliverable": "Conversion route and linked CTAs with event tracking hooks.",
+              "acceptance": "Offer route captures conversions and supports A/B copy variants."
+            },
+            {
+              "id": "P3-S7-07",
+              "title": "Build FAQ and objection-handling overlays",
+              "area": "frontend",
+              "owner_role": "Content Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P3-S7-05"
+              ],
+              "deliverable": "FAQ overlay set mapped to common objections.",
+              "acceptance": "FAQ overlays are searchable and route-addressable."
+            },
+            {
+              "id": "P3-S7-08",
+              "title": "Integrate launch communication excerpts into supporting nodes",
+              "area": "frontend",
+              "owner_role": "Content Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P3-S7-05"
+              ],
+              "deliverable": "Reusable modules for press, email, and social excerpts.",
+              "acceptance": "Modules render brand-consistent snippets with source attribution."
+            },
+            {
+              "id": "P3-S7-09",
+              "title": "Enable funnel tracking and controlled experiment flags",
+              "area": "backend",
+              "owner_role": "Data Eng",
+              "est_hours": 8,
+              "dependencies": [
+                "P3-S7-06",
+                "P2-S6-04",
+                "P2-S6-07"
+              ],
+              "deliverable": "Experiment-aware funnel tracking integrated with event pipeline.",
+              "acceptance": "Conversion funnel reports can segment by flag variant."
+            },
+            {
+              "id": "P3-S7-10",
+              "title": "Run brand and content QA signoff for launch copy",
+              "area": "qa",
+              "owner_role": "QA",
+              "est_hours": 8,
+              "dependencies": [
+                "P3-S7-02",
+                "P3-S7-03",
+                "P3-S7-05",
+                "P3-S7-07"
+              ],
+              "deliverable": "QA report validating tone, consistency, and route completeness.",
+              "acceptance": "No critical copy inconsistencies remain, including engine count, naming, and no-frontend constraints."
+            }
+          ]
+        },
+        {
+          "sprint_id": "S8",
+          "duration_weeks": 2,
+          "focus": "Verification, observability, release, and post-launch iteration",
+          "tasks": [
+            {
+              "id": "P3-S8-01",
+              "title": "Raise unit coverage for runtime state, adapters, and validators",
+              "area": "qa",
+              "owner_role": "QA",
+              "est_hours": 10,
+              "dependencies": [
+                "P3-S7-10"
+              ],
+              "deliverable": "Expanded unit suite for critical frontend/backend modules.",
+              "acceptance": "Coverage meets threshold for changed high-risk modules."
+            },
+            {
+              "id": "P3-S8-02",
+              "title": "Complete integration tests for API, auth, and RLS policies",
+              "area": "qa",
+              "owner_role": "QA",
+              "est_hours": 10,
+              "dependencies": [
+                "P3-S7-10",
+                "P2-S6-10"
+              ],
+              "deliverable": "Integration suite verifying role boundaries and data contracts.",
+              "acceptance": "All role-path tests pass and unauthorized paths fail as expected."
+            },
+            {
+              "id": "P3-S8-03",
+              "title": "Implement E2E flows for desktop, mobile, keyboard, and fallback",
+              "area": "qa",
+              "owner_role": "QA",
+              "est_hours": 12,
+              "dependencies": [
+                "P3-S7-01",
+                "P3-S7-06",
+                "P1-S4-08"
+              ],
+              "deliverable": "End-to-end suite covering core user journeys.",
+              "acceptance": "E2E suite passes in CI across target viewport/device presets."
+            },
+            {
+              "id": "P3-S8-04",
+              "title": "Run accessibility audit and remediate AA violations",
+              "area": "qa",
+              "owner_role": "QA",
+              "est_hours": 10,
+              "dependencies": [
+                "P3-S8-03",
+                "P1-S4-07"
+              ],
+              "deliverable": "Accessibility report and remediation patch set.",
+              "acceptance": "No critical or serious accessibility violations remain."
+            },
+            {
+              "id": "P3-S8-05",
+              "title": "Execute performance and load regression testing",
+              "area": "qa",
+              "owner_role": "Performance Eng",
+              "est_hours": 10,
+              "dependencies": [
+                "P3-S8-03",
+                "P1-S4-09",
+                "P2-S6-08"
+              ],
+              "deliverable": "Performance benchmark report for canvas and APIs.",
+              "acceptance": "All launch performance budgets are met or have approved exceptions."
+            },
+            {
+              "id": "P3-S8-06",
+              "title": "Configure production monitoring dashboards and alerts",
+              "area": "infra",
+              "owner_role": "DevOps",
+              "est_hours": 8,
+              "dependencies": [
+                "P3-S8-02",
+                "P3-S8-05"
+              ],
+              "deliverable": "Operational dashboards for API, runtime, and funnel health.",
+              "acceptance": "Alerts trigger correctly in staged incident simulations."
+            },
+            {
+              "id": "P3-S8-07",
+              "title": "Finalize staging and production deployment pipelines",
+              "area": "infra",
+              "owner_role": "DevOps",
+              "est_hours": 8,
+              "dependencies": [
+                "P3-S8-01",
+                "P3-S8-02",
+                "P3-S8-06"
+              ],
+              "deliverable": "Release pipeline with gated promotion from staging to production.",
+              "acceptance": "Production deployments require passing checks and support rollback."
+            },
+            {
+              "id": "P3-S8-08",
+              "title": "Execute launch checklist for security, content freeze, and rollback",
+              "area": "product",
+              "owner_role": "Tech Lead",
+              "est_hours": 8,
+              "dependencies": [
+                "P3-S8-04",
+                "P3-S8-05",
+                "P3-S8-07"
+              ],
+              "deliverable": "Launch readiness checklist signed by engineering and product.",
+              "acceptance": "No launch blocker remains open and rollback drill succeeds."
+            },
+            {
+              "id": "P3-S8-09",
+              "title": "Run beta launch and monitor first-week operational metrics",
+              "area": "product",
+              "owner_role": "Product Strategist",
+              "est_hours": 8,
+              "dependencies": [
+                "P3-S8-08"
+              ],
+              "deliverable": "Beta launch report with incident log and KPI snapshot.",
+              "acceptance": "Beta week completes with monitored metrics and documented adjustments."
+            },
+            {
+              "id": "P3-S8-10",
+              "title": "Produce post-launch retrospective and phase-2 roadmap",
+              "area": "product",
+              "owner_role": "Tech Lead",
+              "est_hours": 6,
+              "dependencies": [
+                "P3-S8-09"
+              ],
+              "deliverable": "Retrospective document and prioritized next-phase backlog.",
+              "acceptance": "Roadmap includes validated improvements from beta telemetry and feedback."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

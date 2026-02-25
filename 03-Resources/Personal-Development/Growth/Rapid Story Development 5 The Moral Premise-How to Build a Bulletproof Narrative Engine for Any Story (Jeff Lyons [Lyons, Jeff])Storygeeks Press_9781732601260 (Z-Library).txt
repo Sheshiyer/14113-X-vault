@@ -1,0 +1,941 @@
+Rapid Story Development #5
+
+
+The Moral Premise: How to Build a Bulletproof Narrative Engine for Any Story
+
+
+
+
+
+Jeff Lyons
+
+
+
+
+
+Rapid Story Development: How to Build a Bulletproof Narrative Engine for Any Story
+
+Copyright © 2018 by Jeff Lyons
+
+All rights reserved. No part of this book may be reproduced in any form by any electronic or mechanical means including photocopying, recording, or information storage and retrieval without permission in writing from the author.
+
+
+
+ISBN: 978-1-7326012-6-0 (e-book)
+
+
+
+Cover art by Jeff Lyons
+
+Interior design by Jeff Lyons
+
+Web: www.jefflyonsbooks.com
+
+
+
+Give feedback on the book at:
+
+info@storygeekspress.com
+
+
+
+First Edition
+
+Printed in the U.S.A
+
+
+
+
+
+Get the First in the Series
+
+
+
+
+
+Rapid Story Development #1: Commercial Pace in Fiction and Creative Nonfiction
+
+
+
+
+
+AVAILABLE ONLINE AT JEFFLYONSBOOKS.COM
+
+
+
+
+
+Dedication
+
+
+
+
+
+This is for loyal readers past, present, and future.
+
+Because without you, what’s the point?
+
+
+
+
+
+Acknowledgments
+
+
+
+
+
+The author would like to thank the following individuals for their support, help, encouragement, patience, infinite patience, faith, trust, belief, handouts, generosity, and small petty crimes undertaken to promote the success of this book.
+
+• Charlene DeLong and David Allan— thank you for being trusted beta readers, editors, and telling me the truth.
+
+
+
+
+
+Also by Jeff Lyons
+
+
+
+
+
+FICTION
+
+Jack Be Dead: Revelation (bk #1)
+
+13 Minutes
+
+Terminus Station
+
+The Abbess (coming)
+
+
+
+
+
+NONFICTION
+
+Anatomy of a Premise Line: How to Use Story and Premise Development for Writing Success
+
+Rapid Story Development: How to Use the Enneagram-Story Connection to Become a Master Storyteller (coming)
+
+Rapid Story Development: The Storyteller’s Toolbox Volume One
+
+
+
+
+
+RAPID STORY DEVELOPMENT E-BOOK SERIES
+
+#1: Commercial Pace in Fiction and Creative Nonfiction
+
+#2: Bust the Top Ten Creative Writing Myths to Become a Better Writer
+
+#3: Ten Questions Every Writer Needs to Ask Before They Hire a Consultant
+
+#4: Teams and Ensembles: How to Write Stories with Large Casts
+
+#5: The Moral Premise–How to Build a Bulletproof Narrative Engine for Any Story
+
+
+
+
+
+Contents
+
+
+
+
+Introduction
+
+
+
+
+
+Stories vs. Situations
+
+
+
+The Moral Premise
+
+
+
+What Is a Moral Component?
+
+
+
+Active vs Passive Protagonists
+
+
+
+Generic vs. Personal Moral Flaw
+
+
+
+Conclusion
+
+
+
+Appendix 1
+
+
+
+
+
+Also by Jeff Lyons
+
+
+
+About the Author
+
+
+
+Get the First in the Series
+
+
+
+Author Offer—Anatomy of a Premise Line
+
+
+
+
+
+Introduction
+
+
+
+
+
+Just a quick note about the contents of this e-book. Ninety per cent of the material herein is excerpted from my book Anatomy of a Premise Line: How to Master Premise and Story Development for Writing Success (Focal Press), the remaining ten per cent is new material not in Anatomy of a Premise Line . Because so much of this content is excerpted, this e-book will always be free to the reader.
+
+I chose to reproduce some of Anatomy of a Premise Line (with publisher permissions) here because the topic is so important and pivotal for the success of any writer that I wanted as many people as possible to be exposed to it, regardless whether they bought Anatomy of a Premise Line or not.
+
+If you read nothing else of mine, or never explore any other title in the “Rapid Story Development” series, please read this one—(and I am not trying to use hyperbole) it will change how you write, what you write, and why you write.
+
+~ Jeff Lyons
+
+
+
+
+
+Stories vs. Situations
+
+
+
+
+
+T his is an e-book about stories and moral components. The relationship of one to the other is so critical to the function of storytelling that I realized in writing this e-book that readers would be derailed in the discussion, early on, if I did not create a solid basis for understanding why a moral premise and a story are connected at the proverbial hip, indeed are essential to one another in the telling of any story. A writer cannot be expected to fully grasp the importance of a moral premise if he or she does not fully understand the nature of a story and how “stories” are not all created equal when it comes to moral elements.
+
+So, to that end this opening chapter will tackle the important topics of what a story is, what a story is not, why this distinction is important to you as a writer, and how you can proceed when you are sure you have a story—or whatever it is you have if you don’t have a story (yes, there is a name for it, but hang in there).
+
+
+
+
+
+What Is a Story?
+
+
+“Story” is a common term’d art in the world of creative writing— everyone knows what a story is, right? You would think so, but, alas, this is not the case. So don’t be offended by my question, because what we’re about to discuss is something that is not taught in writing classes, MFA programs, or written about in most writing-craft, how-to books. Knowing how to tell that you have a story and that it can survive the long story development process from beginning to end, is not some random bit of knowledge you pick up off the grass. It is skill that can be learned, like riding a bike and once learned, it can lift your storytelling craft to a level of mastery that will save you time, money and months of frustration writing yourself into literary corners and blind alleys.
+
+To appreciate the power of what I am about to describe, we must first begin with two obvious questions: what do I mean when I use the term “a story,” and if something is not a story, then what is that something else?
+
+When I ask groups of writers (novelists or screenwriters) to define this most basic storytelling idea, “what is a story?” I get as many definitions as there are people in the room. The responses are always generic and canned:
+
+A story is a narrative.
+
+A story is the sequential beats of what happens in a story.
+
+A story is your plot.
+
+A story is what your characters do.
+
+A story is a narration of events coming to some conclusion.
+
+
+
+All of these (and there are many others) have some ring of truth to them and for the most part, suffice when it comes to answering the question “what is a story?,” but none of these definitions defines the thing itself in a way that has meaning and significance for storytellers. So, here is a working definition of a story that captures the essence of the thing:
+
+A story is the combination and interplay of character and plot that is a metaphor for a human experience leading to emotional change.”
+
+
+
+
+
+Essentially, what this is saying is that if you are writing something that involves an individual carrying out actions on the page that combine to create a personal experience of emotional change and that experience conveys some insight into the human condition, then you have a story. Given this definition, it then follows that a story possesses five identifiable components:
+
+
+
+
+
+The Five Components of a Story:
+
+
+A story reveals something about the human condition or makes a statement about what it means to be human.
+
+A story tests personal character, over and over, to reveal deeper character.
+
+A story has subplots that are dramatic and thematic reflections of the journey of the protagonist, and that opens windows into character and motivation.
+
+A story ends in a different emotional space then it began.
+
+A story is driven by a strong moral component motivating the protagonist through the middle of the story, resulting in dramatically interconnected scene writing.
+
+
+
+This list of bullets is not arbitrary or pulled out of some hat like a rabbit by a magician. No, these components derive from story structure itself, that’s why they are real and possess the full force of drama (or comedy). Every story has a structure. If it doesn’t, then it’s not a story, it’s something else.
+
+If you have these five components clearly identified in your writing, then you can have confidence you have a story, and not that something else. You can be confident that there is an underlying foundation supporting any writing that will emerge, and that it will support your entire writing process. It is beyond the scope of this e-book to deal with the topic of story structure and its critical role in the story development process (see my book Anatomy of a Premise Line: How to Master Premise and Story Development for Writing Success (Focal Press)), but knowing how to identify a story—before you start writing—is invaluable to novelists struggling with any new story idea, or an old idea that is going nowhere.
+
+This is the craft skill I alluded to earlier. This is that bit of story wisdom that for some comes automatically, elegantly, without thought—as talent—but that for the rest of us comes as learned craft. Regardless of how it comes, as a gift from the gods, or as hard-earned mastery, this knowledge can make all the difference between getting lost in the story woods and writing reams of meandering pages, versus staying focused, directed and intentional in your writing.
+
+What do you do, however, when you write a story only to discover that those five story components are weak, or missing? You love your idea, but don’t want to abandon it. This is the other side of this story vs no-story coin. Remember, all stories have a structure. If they don’t, then they’re not stories, they’re something else—that something else is a called a situation.
+
+A situation is what most genre writers (horror, police procedural, detective, mystery, romance, etc.) are creating when they think they are writing stories. Situations are parts of stories, they are not stories themselves, but, they can still be compelling, fun, entertaining and wonderfully engaging. How can you tell if you have a situation? Like stories, situations have five identifiable components.
+
+
+
+
+
+The Five Components of a Situation:
+
+
+A situation is a problem, puzzle, or predicament with an obvious and direct solution.
+
+A situation does not reveal character; it mainly tests a character’s problem-solving skills.
+
+A situation’s plot twists ratchet up the puzzle or mystery (stakes), but rarely open character windows.
+
+A situation begins and ends in the same emotional space, especially for the protagonist.
+
+A situation has no, or a very weak, moral component, often leading to episodic writing.
+
+
+
+The last point (a weak or nonexistent moral component) is the key concept to be aware of. It is, in fact, the single most important element in what constitutes a story vs a situation, and is thus the crown jewel of any real story.
+
+A situation is all about the puzzle, mystery, or problem to be solved. Look at any police procedural TV show, or mystery novel (Agatha Christie, Sherlock Homes, etc.), or most monster movies; they are all about one question: how quickly and cleverly can the protagonist get out of the pickle they are in and solve the problem?
+
+Let’s take a classic (and my favorite) set-up: the twenty-something kids caught in a cabin in the woods with the monster/slasher/alien outside trying to get in to eat/slash/probe them. The only questions are: how many kids are going to be eaten/killed/probed, how bloody is it going to get and who will survive? That’s it. None of the characters is going to have a big revelatory moment where they realize they have to change their life to be a better person.
+
+There will be no moments where we get profound insights into the inner workings of the protagonist (assuming there is a main character). Any twists or plot complications will be all about ratcheting up the tension of the problem/puzzle, not pushing characters to some behavioral edge where we see who they are as people. The only change in the emotional space will be one of moving from happy-go-lucky (opening), to terror-filled (middle), to relief at surviving (end). In other words, the hero or heroine will end the adventure in the same emotional place inside themselves as they started.
+
+The most important differentiator of all is that there is no, or a very weak, moral component to the situation. A moral component means that any protagonist is driven from the inside by some basic belief about him or herself, which is essentially wrong, but that is coloring all their actions outside themselves in the story world. They are acting badly, because of this characterological blind spot and this is what they heal and change in the end. Every story has this; every situation does not. This one element alone is enough to help you quickly identify a situation from a story. Does your protagonist have a flaw that is screwing up their lives, that they would have anyway, regardless of the threat of being eaten/killed/probed? If the answer is yes, then you have a story and not a situation.
+
+There is, however, one gray-area worth mentioning. This is what I call the "basically good person caught in the no-win scenario" scenario. In the film world, some good examples of this are Gravity (2013, Warner Bros. ), The Martian (2015, Twentieth Century Fox), Taken (2008, EuropaCorp.), Godzilla (2014, Warner Bros.)—there are many others. These are all situations masquerading as stories, but they fall into this gray area; a little bit story, a little bit (or mostly) situation.
+
+The differentiator that pushes them over the story line into a situation is that the heroes and heroines in all these "stories" are all focused on surviving the problem/disaster/predicament they are facing, not working out some deep-seated flaw that is mucking up everyone’s lives around them. They are basically good people, thrust by circumstance (not of their own making) into fighting a losing battle, even though they may win in the end and this is what saves the story day; we root for them because they are getting crushed and find the will to live, or make some horrible choice that saves others. They don’t change, they’ve always been good (no full stop) and they end the story the same way, beat up and a bit worse for the wear—but alive.
+
+All of these movies were huge at the box office; great successes financially and with audiences. The fact is, movie/TV audiences love situations and readers love them in fiction. The caveat here is that to be successful on the screen, or in print, situations must overcome their story weaknesses, and this means doing three things: be fun, be entertaining and be engaging.
+
+They may not have anything to say about the human condition, and the protagonist may only be a leaf on the wind of fate, motivated only by a will to live and not by some twisted moral flaw they have to overcome in the end, but that’s alright as long as the audience has fun, is engaged and is entertained. Stories have to do these three things as well, but stories have the advantage of having a compelling human story driving the drama or comedy, on top of being fun, entertaining and engaging.
+
+However, if you have a situation and you don’t want to let it go, then your responsibility as a writer is to make it the best situation you can, from a reader-engagement perspective. Stories are not better than situations, they are more complex. So, write stories that will bring readers to tears, or bust their guts laughing and teach them what it means to be human along the way; or write a situation that will make them bite off their nails and scream out loud in excitement, unwilling to stop reading for fear of missing what’s next. Whichever you choose, do it consciously, be a conscious writer (see “Appendix 1”).
+
+
+
+
+
+So, I’m Writing a Story
+
+
+Now that you understand the difference between a story and a situation, if you choose to write a story you now also know that you must have a strong moral component. What does this mean? How do you find one, if you don’t have a clue where it might be? And once found, what do you do with it? Answering these questions, and more, is the purpose of the remainder of this e-book.
+
+
+
+
+
+The Moral Premise
+
+
+
+
+
+The moral basis of a story will make or break any story—every story needs a strong moral component.”
+
+
+
+
+
+S creenwriting gurus, script doctors, creative writing teachers, and successful writers in film, TV, and prose fiction have all written about the moral aspect of storytelling. They all tell you, “You need a protagonist who is flawed,” or “Your characters have to be broken in some way,” or “Your hero/heroine has to be damaged goods.”
+
+The idea, of course, is that the more damaged the goods, the more vulnerable and sympathetic they will be, and with something broken, there is something to fix. Even with characters who are evil to the core, like Hannibal Lechter (Silence of the Lambs ), or Michael Corleone (The Godfather Trilogy ) their evil has an unconscious quality to it that makes them likable beasts—they are oblivious to their madness and this gives them the patina of innocence.
+
+Entire books have been written about the moral underpinnings of storytelling and the need to have a moral heart to your story expressed through theme, or some moral argument sewn throughout your story. So, the idea of a moral premise is nothing new, and for many, it may be a tired and overplayed subject that has been adequately written about.
+
+I disagree, not so much because what has previously been written about the topic has been wanting or lacking substance, quite the contrary. There is a lot of great writing and teaching available on the subject of moral storytelling. What is lacking is not the expression of the need to do it in stories, what is lacking is a clear demonstration of how to execute it on the page and in a piece of writing. Very few teachers and commentators articulate a clear strategy for creating characters with convincing and sustainable moral components.
+
+Mostly what you will get are the protagonists straight out of central casting: the self-pitied, alcoholic lawyer crying in his beer because no one believes in him anymore; or the lonely, embittered, hired assassin questioning the meaninglessness of life; or the neurotic, obsessive-compulsive, plucky comic relief who is the sad-clown under all the affected happiness.
+
+All of these tropes are tropes for a reason, they are the easy road, or as they say in business, they are the low hanging fruit. Why climb the tree and risk falling when the effortless sweets are hanging right there in front of you? The reason you want to climb the tree is that you see more from the top and the light is much better to see what you’re grabbing. There is more risk, but no one ever wrote anything great playing it safe.
+
+
+
+
+
+What Does “Moral” Mean?
+
+
+In my story development workshops, I like to ask a simple question before I start, “What is a story.” You would think that in a room full of writers and storytellers that this is a no-brainer question. But, when I go around the room getting answers, the problem quickly emerges: there are as many definitions of a story as there are people in the room. How can that be? How is it possible not to have a consensus or common ground for one of the most basic concepts in creative writing? The answer is that it is not taught (or ineffectually taught). The idea, construct, and utility of this thing called a story is assumed to be known. Everyone knows what a story is, right? So, the gurus, teachers, and experts sally forth and teach their courses without ever establishing a common language and conceptual foundation to guide the teaching process.
+
+It is the same thing with the concept of “moral.” But, if you were to do the same thing with this word as I do with the word “story,” you would have the same experience. There would be as many definitions for moral as there are people in the room. And yet, everyone has an intuitive understanding of moral, just as they do of story. What they (and we as a community) lack is that common ground and conceptual foundation that establishes an intellectual and creative context for further discussion.
+
+And because this foundation is missing, writers fall back on what they know, or think they know, to answer the question, “What does moral mean?” Most often people will fall back on the easy tropes: the down and out alcoholic, the drug addict, the cheating husband, the bank robber, the pushy lawyer. None of these are moral problems; none of these are moral flaws. But, writers have been taught that these kinds of tropes are the required moral problems every protagonist should have. And herein lies the problem: writers settle for these easy answers. They never ask the next question: why? Why is my protagonist alcoholic? Why is my protagonist robbing banks? Why is my protagonist a jerk?
+
+And so we come to the essence of why this e-book is so important. It will not only define what moral means, but it will show you how to find the right moral flaw for any protagonist. It will show you the more profound questions to ask, how to ask them, and how to apply the results of the asking to your story. Rather than tell you to come up with a great moral problem for your protagonist, this e-book will show you how to build one.
+
+But, before the building must come the foundation. This means coming up with a workable definition that moral philosophers may not like, but that writers will find productive and powerful for their writing.
+
+
+
+
+
+“Moral” Definition for Writers:
+
+
+‘Moral’ refers to the principles, behaviors, and conduct that specify a person’s sense of right and wrong in themselves, and in the world, and that defines their impact in the world as a human being.
+
+
+
+
+
+We end on this definition because what comes next is a systematic breakdown of why this particular definition works best for creative writers and storytellers. It is worded in a particular way to cover three key areas of any moral premise: motivation, action, and dramatic tension.
+
+In the next chapters we will look at all the pieces you need to construct a powerful moral component, and then show you how to execute it (how deep to go) in your screenplay or novel to maximum effect so that every story you write will resonate with audience appeal, be populated by three-dimensional characters, and possess emotion-based storylines that will be dramatically bulletproof.
+
+
+
+
+
+What Is a Moral Component?
+
+
+
+
+
+T he previous chapter offered a working definition of moral that relates specifically to the function of telling a story. As part of that definition, I stated that three elements were specifically being identified in that definition: behavior, action, and dramatic tension.
+
+Beyond this definition, I would suggest that there is an actual construct that can help you identify, develop, and deliver a powerful moral premise for any story. This construct I call the moral component . The term “component” refers to a particular part of some larger whole; a part that contributes to the function of that whole, and to its efficiency. The moral premise, like any complex piece of machinery, is not a single widget working in isolation, but instead made up of many widgets working in harmony to achieve a sole purpose: tell a story.
+
+The moral component of any story is not a single quality or trait you strive to achieve in your novel or screenplay. The moral component is an amalgam of three core elements that work together to achieve the kind of storytelling that lifts any story from the mundane to the memorable. The three elements of any story’s moral component consist of the following:
+
+The moral blind spot
+
+The immoral effect
+
+The dynamic moral tension
+
+
+
+Moral Blind Spot
+
+The moral blind spot is literally that, a blind spot in the protagonist’s sense of right and wrong, not only within themselves, but in the world. The blind spot is a core belief that the protagonist holds that twists their moral compass in such a way as to poison all external relationships. This core belief is generated by a base fear about themselves, a fear to which they are blind but that nonetheless colors all their choices, decisions, attitudes, and actions —all of which results in the hurting of other people, not just themselves. The main character knows their core belief (superficially), is blind to their base fear, and is in denial about the negative impact he/she is having on others.
+
+Characters act out of motivation, and their actions are consistent with those motivations. The moral blind spot is the fuel of character motivation, so any actions a character carries out must be consistent with those motivations. They take on a moral tone because the character choices, decisions, attitudes, and actions negatively affect other people. It’s not only inner torment and angst directed against the self (though this could be going on as well). Their behavior emotionally hurts others.
+
+The moral blind spot is about how the protagonist is acting deficiently in the world, harming others, all because they hold a false belief about the world, a belief that throws them into fear (equally wrong) and that then acts as the driver for all scene-level motivation.
+
+Motivation is not about wanting something—motivation is the thing that makes the wanting exist at all. Characters have desire to find tangible objects that can feed the motivation driving their need to want whatever it is they want. Motivation sources from the inside out, not the outside in—it comes from the heart and soul of the character and everything in the story is at service to this inner driver.
+
+The key to understanding here is that this driver while sourcing from the inside, is never purely interior to the character. It must find its physical expression outside the character in the form of scene-level action on the page. This idea is at the heart of the old motto and cliché “show don’t tell.” The act of showing in a story is not just about making scenes visual; it is about tangibly externalizing, on the page, the internal drive that is wreaking havoc with the protagonist’s moral compass (i.e., the blind spot).
+
+Immoral Effect
+
+The immoral effect is the moral blind spot in action; it is how you “show, don’t tell.” There is no point in having your protagonist suffer from a skewed moral compass unless that skew demonstrates itself in action at the scene level in the novel or screenplay. If your protagonist is hurting other people, then the audience needs to see it happen, not merely know intellectually about the moral blind spot. To reiterate: your protagonist has a base fear that feeds a distorted belief about the world that, in turn, produces actions consistent with that fear and belief.
+
+An excellent example of this is Joe, the bank robber. Joe has a core fear that he is fatally broken and flawed and he’ll never figure out what’s wrong with him on his own (moral blind spot). So he develops a sense of entitlement (skewed belief), “The world owes me an answer to my problem. Somebody ‘out there’ has to fix me.” In a sense, Joe is waiting for the cavalry to come over the hill to rescue him, but in the meantime, he develops a twisted perception and belief that he’s owed something because of he is “the exception,” he’s the broken one. His core fear is that he is unfixable, his distorted belief is that this makes him entitled, and the immoral effect is that he forcibly takes what is owed him and screw the consequences.
+
+Joe has a blind spot of feeling unfixable and flawed, which he slathers over with a sense of entitlement to assuage the emotional pain of being hopelessly broken. He is unaware of his fear and core belief about himself; all he knows is how he compensates for it (entitlement), and this directs his actions in the world (“I’ll take what I want”).
+
+Most writers would settle for Joe being a bad guy and robbing banks. So, he’s a guy who has to learn how not to be a bad guy. He has to learn not to be greedy and selfish. Or in the parlance of the standard story guru world, he has to figure out his want (money) and his need (to not be selfish/greedy).
+
+The above need/want model is nowhere near what he needs to learn and is not even in the ballpark in clarifying or establishing this character’s real moral problem. But, using the cookie-cutter approaches of most story gurus, this is what most writers think is the direction to take Joe as a character. It should be obvious, even with this introductory discussion of Joe, that the blind spot/immoral effect components already deepen his character and will lead to a much more personal and satisfying conclusion for his growth arc in the story.
+
+Dynamic Moral Tension
+
+While the moral blind spot is the driver that generates the immoral effect, the dynamic moral tension is the engine that keeps it all running. Throughout your story, your protagonist will have to make choices, serious choices. He or she will not be choosing vanilla or chocolate, or pizza with or without pepperoni. No, the choices will be: do I cheat on my wife or not, do I kill this person or not, do I rob the bank or not, do I save myself or the infant baby on the train tracks?
+
+The choices are moral, in the context we have established with our definition of a moral premise. And the choices stem from the other two elements of the moral component we have covered, i.e., moral blind spot and immoral effect. Character choice does not exist in a vacuum, it is generated by the engine of the dynamic moral tension that is constantly testing, and prodding, and challenging your protagonist to change and grow, or disintegrate and spiral into a worse moral condition.
+
+This is critical to understand, because the dynamic moral tension, or the lack thereof, is what gives you a passive or active main character in your screenplay or novel. You want your hero or heroine to be active, not passive. What is the difference between the two? An active character is one that generates scene-level action based on the moral component. The active protagonist causes, directly or indirectly, everything that happens in your story. The passive protagonist is the main character that generates nothing, but who is always in reaction-mode responding to external events that force him-her to act. Passive main characters tend to be dull and boring because they get pushed around by events, rather than create the events of the story themselves.
+
+
+
+
+
+Four Examples:
+
+
+Before we end this chapter, let’s consider four examples from literature, theater, and film that illustrate this blind spot/immoral effect and dynamic moral tension inter-relationship to see how they play out in well-known stories:
+
+Example #1:
+
+Sunset Boulevard (screenplay Billy Wilder, 1950)
+
+Protagonist : Joe Gillis (William Holden)
+
+Moral Blind Spot : Joe feels he has no real value.
+
+Immoral Effect : Joe uses people for advancement, even as he demeans himself; manipulates others to look good.
+
+Blind Spot-Immoral Effect Connection : Because Joe’s lack of self-worth haunts him, he seeks out situations that remind him how “less than” he is, despite his hunger for achievement and the need to be admired. It is his ironic lack of value that drives his lust for being valued by others.
+
+Dynamic Moral Tension: Joe is continually being offered the choice to honor himself and leave this dysfunctional relationship and go with the younger woman, or stay and play out his old pattern. He keeps making the bad choice, to his doom.
+
+Example #2:
+
+Amadeus (play Peter Shaffer, 1980; screenplay Peter Shaffer, 1984)
+
+Protagonist : Antonio Salieri (F. Murray Abraham)
+
+Moral Blind Spot : Salieri feels he lacks talent, real genius—he’s ordinary.
+
+Immoral Effect : Salieri cannot tolerate anyone excelling at his expense, so he must destroy them.
+
+Blind Spot-Immoral Effect Connection : Because Salieri is driven by a core fear he is mediocre (i.e., ordinary), when faced with real genius in the form of Mozart he obsessively drives Mozart toward his ideal of perfection—and Mozart’s doom.
+
+Dynamic Moral Tension: Salieri is continually being offered the opportunity to treat Mozart as a more-talented colleague and be supportive, or continue his plan of manipulation and self-centeredness. He constantly chooses to act in his self-interest.
+
+Example #3:
+
+Of Mice and Men (novel John Steinbeck, 1937; screenplay Horton Foot and John Steinbeck, 1992)
+
+Protagonist : George Milton
+
+Moral Blind Spot : George fears will obliterate him if he lets down his guard.
+
+Immoral Effect : He must compulsively protect Lennie from the world, or else it may destroy him—Lennie being a metaphor for himself.
+
+Blind Spot-Immoral Effect Connection : Even while he resents his role as protector, he so thoroughly identifies with Lennie’s vulnerability to the world at large that he dooms both of them to a tragic end, when he is forced by his fear of the world to “protect” Lennie in an ultimate way: taking Lennie out of the world that threatens to destroy them both.
+
+Dynamic Moral Tension: George consistently faces the opportunity to face his fear of the world and let Lennie experience his relationship with life, or maintain his obsessive control, and keeps making the bad choice leading to the worst possible outcome.
+
+Example #4:
+
+The Verdict (novel Barry Reed, 1980; screenplay David Mamet, 1982)
+
+Protagonist : Frank Galvin
+
+Moral Blind Spot : Frank is blind to the fact that he sees himself as valueless and not mattering.
+
+Immoral Effect : He sees people as targets and easy prey for money; people don’t matter, they’re a means to an end.
+
+Blind Spot-Immoral Effect Connection : Frank takes advantage of people because they have no value to him, beyond what he can manipulate out of them, but he feels this about other people because he has no sense of worth about himself. He would not hurt other people if he found himself valuable; which is exactly what he does by the end of the story, reclaiming his humanity.
+
+Dynamic Moral Tension: Frank is offered multiple opportunities to do the right thing because it’s the right thing, rather than going for the easy money and the selfish payout, ultimately realizing he has dignity and value as a human being and that’s worth fighting for.
+
+All of these examples show the subtle and complex relationships between the three elements of the moral component. This single construct is the engine of any story’s middle; it is the thing that drives the narrative forward and helps the writer raise dramatic stakes and throw a story’s protagonist into ever deeper and dangerous emotional waters. The proactive vs passive nature of a protagonist is what makes or breaks the middle of any story. And how active or reactive a protagonist depends on how well these three elements play together.
+
+To more clearly see this dynamic relationship, it will be helpful to examine how it plays out graphically in the “Active Protagonist Loop” and the “Passive Protagonist Loop” detailed in the next chapter. These illustrations show clearly why the moral component acts as the main line of demarcation between any story and situation.
+
+
+
+
+
+Active vs Passive Protagonists
+
+
+
+
+
+I n the previous chapter, I introduced the concepts of passive and active protagonists and the moral component dynamics that contributed to a proactive vs reactive main character. All that was theoretically interesting, but a picture is worth a thousand words, so in this chapter we will look at how the three elements of the moral component (moral blind spot, immoral effect, dynamic moral tension) work inside a story to deliver the most robust possible narrative engine for dramatic or comedic action.
+
+
+
+
+
+The Passive Protagonist Loop:
+
+
+
+
+
+As I explained in the first chapter on stories vs situations, in a narrative with a passive protagonist, the hero-heroine face a problem-mystery-predicament. They did not create the problem themselves, the problem finds them, and they have to decide how to act. Their response to the problem, however, is reactive, not proactive. The situation is leading them; they are not leading the situation. Situations (and not stories) tend to have passive protagonists for this very reason. The situation drives the hero-heroine in situations, not the other way around. The passive protagonist is forced by events to make a reactive choice, which then leads to a reactive effect (their choice in action).
+
+The bottom part of the loop shows how this problem leads to choice, then to effect, and keeps looping around back onto itself, thus generating a kind of engine that fuels the passive choice/decision-making process of the main character. When the problem or mystery gets solved, the loop is interrupted, and the situation is over.
+
+Situations tend to evolve into episodic storytelling, which can be distracting and off-putting to audiences (and readers). Episodic writing is writing that is plagued by many narrative starts and stops, disconnected and standalone events, and mini-stories or situations within stories.
+
+Sometimes, protagonists can appear to be the instigator of things, and so the events appear to be generated by them, but this is not the case. They do something stupid or make a blunder “out of the blue,” and then an ensuing cascade of events forces them to react. The blunder or stupid mistake does not source from their moral component (i.e., their character), it is merely something they randomly do. Stories that portray the good and moral person caught up in the no-win scenario (All Is Lost (Lionsgate, 2013), Gravity (Warner Bros., 2013)) follows this passive loop structure.
+
+These situations test the protagonist’s stamina, will, or perseverance testing them to see if they have the metal to get through the crucible they’ve been thrust into by random chance, or being in the wrong place at the wrong time. Underdog stories follow this loop, unless they break out and make the story about why the protagonist is an underdog, examining the moral driver behind their passivity or underachievement (Straw Dogs (Cinema Releasing, 1971), Falling Down (Warner Bros., 1993)), and this—not merely surviving the situation—is the real lesson to be learned.
+
+
+
+
+
+The Active Protagonist Loop:
+
+
+
+
+
+In stories with active protagonists, all action is generated from the main character’s moral component. When the hero-heroine is driven by that core fear (moral blind spot), and then acts consistently with the fear (immoral effect), then all events in the story are directly or indirectly sourced from character, not generated as random external events.
+
+Let’s look at how this plays out with an example: Joe, the bank robber. Joe robs the bank because of his sense of entitlement, i.e., “the world owes me, so I get to take what I want” (moral blind spot ), and he commits a crime (immoral effect ); he does not blunder into a bank randomly and then pick up the wrong bag (filled with money) and accidentally robs the bank. Joe is the unwitting architect of his fall from grace. He is now a bank robber and on the run (problem/consequence ), and must now figure out the best way to escape and not lose everything.
+
+So, Joe calls up the best fixer he knows and arranges for his whole team to be snuck out of the country (proactive choice ), leading to the entire gang becoming international criminals and targets for global law enforcement—something the gang did not sign up for! Joe’s action creates a whole new complication, the gang becomes resentful and starts to conspire to perhaps turn Joe in, to save their skins (proactive effect ). Joe continues around the loop making choices that lead to complications, that lead to effects that lead to new problems, and so on, until this loop is interrupted by Joes moment of personal change, i.e., the truth moment. Joe is the source of the loop’s action. Joe drives events; events don’t drive Joe.
+
+
+
+
+
+Active Protagonist Loop Bottom Right
+
+
+
+
+
+Through the course of choices, actions, and effects Joe realizes he isn’t owed anything by the gang (entitlement blind spot )—he owes them. He owes them a chance to live normal lives and not go to jail because of him, so he does the right thing and sacrifices himself for the gang that has done so much for him (truth moment ). This change then leads Joe down the right side of the bottom portion of the diagram: he turns himself in (new moral choice ) and the gang escapes and their lives aren’t ruined (new moral effect) and the story is over.
+
+
+
+
+
+Active Protagonist Loop Bottom Left
+
+
+
+
+
+If however, Joe doesn’t have a true moment of growth but decides that he must become even more self-centered in order to survive (ala Al Pacino in The Godfather ), then he follows the left side of the bottom portion of the diagram: he sacrifices not himself, but the gang (new immoral choice ), takes all the money, and then lives a life on the run, never sleeping in the same place more than one night, trusting no one (new immoral effect ). The story ends with him alone in a cheap motel, surrounded by piles of money he can’t spend, watching bad game shows in the dark and eating junk food—story over.
+
+In the active protagonist loop, the protagonist has a blind spot in their moral outlook, a blind spot that leads them to generate a false belief about the world that in turn generates action that hurts other people (immoral effect ). This hurtful action leads to a problem or consequence.
+
+The problem or consequence is not some random, external thing forcing a reaction, no—quite the opposite—the problem only exists because of the moral component in action. This problem forces the protagonist the make a proactive choice /decision, leading to a proactive effect (they’ve created this mess, now they better do something about it). The loop portion of the diagram shows how this feeds back on itself, generating more choices and more effects that act as an engine to create and source scene-level conflict.
+
+It is only when the protagonist has their moment of growth (truth moment), where they figure out what they are doing wrong morally and heal their base fear (moral blind spot), where they can then make a new moral choice and take further moral action, effectively ending the story. If they do not have a positive growth moment, then they disintegrate down the path of de-evolution, and their moral crisis deepens, perhaps to the point of self-destruction (again, think of the Al Pacino character in The Godfather ).
+
+Conflict in any story sources from the protagonist’s moral component and this fuels the active protagonist loop, which drives the middle of any story—thus helping to avoid mushy middles and episodic writing.”
+
+
+
+
+
+As stated at the beginning of this e-book, the moral premise is so important that it can stand alone as the keystone supporting all story development and story structure components, regardless of the story system, guru, or writing method you may prefer. Without a moral component you have a situation, a passive protagonist (even if they are shooting everything in sight), and you run the risk of episodic writing. With a moral component you have a story and a bulletproof engine for generating character-based drama and comedy readers will come back to time and time again.
+
+
+
+
+
+Generic vs. Personal Moral Flaw
+
+
+
+
+
+O ne of the essential reasons for mastering the full complexity of the moral component of a story is that it helps the storyteller find a personal moral blind spot for the protagonist and not merely a generic flaw. A personal blind spot deepens the connection with the reader or audience and creates a more dramatic/comedic ending for any story. Falling back on generic and tropish moral problems is a trap that many writers fall into because they don’t fully appreciate the importance of breaking down the “moral problem” into its basic components (blind spot, immoral effect, dynamic moral tension).
+
+What do I mean by personal vs generic moral flaw? Let’s walk through an example that we used earlier to illustrate the difference:
+
+EXAMPLE: The Verdict (Twentieth Century Fox, 1982).
+
+Quick synopsis : Frank, an ambulance-chasing, alcoholic, loser attorney uses people for personal gain and only sees people for what advantage they can get him. He uses people for financial leverage, and that is the only value he sees in people. Other human beings are targets, not people. Their worth is defined only by what Frank can get out of them for himself.
+
+What is his generic flaw? Others story experts who have tackled this question have identified the following:
+
+Frank is controlling and manipulative , so he has to see this is wrong.
+
+Frank has to learn how to act justly in the world and not use people.
+
+Frank selfish and self-centered so he has to learn how to give selflessly.
+
+
+
+These are all generic, not personal. They are generic because none of them describes the why they only describe the what of Frank’s behavior. There is no clear light shown on his motivation for why he is controlling, or unjust, or selfish; just that he is one or more of those things.
+
+This is what most writers do with their protagonists. The afflict them with a generic issue that appears to be personal but isn’t. In the above scenario, we have no clue why Frank is acting the way he is acting; all we know is that he’s doing it and that it’s terrible and he needs to stop and be nicer.
+
+This generic approach is not bad or wrong, but it robs the writer, and the reader/audience, of the fullest expression of the story. It is the “cheap seats” solution to deepening character at the expense of real depth. Consider the alternative, personal , approach.
+
+What is his personal moral blind spot? The way you discover the personal flaw is by asking personal questions that get under the generic hood:
+
+Frank is acting like a jerk in the world. What would someone have to believe about themselves to justify such bad behavior?
+
+What is Frank afraid will happen if he does act justly, or is not controlling, or is not selfish?
+
+What horrible price will he have to pay if he doesn’t act immorally?
+
+What is Frank terrified of exposing about himself, and so covers it up with his jerky behavior?
+
+
+
+These are the kinds of questions (there are others) that must follow, once you the writer decides on the general conduct that will define your protagonist in their story world. You can’t say “he’s using others” and leave it at that. You have to ask, “why is he using others?” This is the only way to find out his real motivation for acting the way he does. Additionally, without knowing this motivation, you cannot have a convincing change for the protagonist at the end of the story. That final change/lesson-learned will end up as generic and lackluster as the original flaw, i.e., “he has to learn to be nice to people.”
+
+In this personal scenario, Frank is behaving badly in the world by using other people; they are targets, not people. Now ask the deeper, personal questions:
+
+What is Frank afraid will happen if he doesn’t take advantage of people?
+
+He is afraid that if he doesn’t “get his first,” then he will be left out. It’s a winner-take-all world, so get what you can get, while you can get it.
+
+What price would he have to pay if he doesn’t act immorally in the world?
+
+He would be humiliated and rejected as worthless by the world, the price he would pay would be a life of shame.
+
+What would he have to believe about the world to justify such behavior?
+
+That people have no value or worth beyond what he can squeeze out of them.
+
+What would he have to believe about himself to hold such a worldview?
+
+That he has no value or worth, because he is human too, and all humans are worthless.
+
+And so, this is Franks personal moral blind spot. He doesn’t know he feels that way about himself, but that’s what’s motivating his behavior toward others. That’s why it’s his blind spot: he is blind to it, but others see it all the time played out in his behavior.
+
+The whole story of The Verdict is about him fighting for the worth and value of a person that society has deemed worthless—a woman in a coma in a hospital bed. Frank learns, not that he has to be a champion and act justly, what he learns is that even a coma victim matters, and if someone like that matters, then he matters and has value, and he and she are both worth fighting for.
+
+Do you see how this is more personal and not high-level or generic? Do you see how this has more heart and emotion, and how asking deeper character questions about real motivation gets you to the foundation of why a character is acting the way they do? Do you see how this makes for a better protagonist and story?
+
+I cannot emphasize how powerful this technique of finding the personal moral blind spot can be for creating compelling and engaging protagonists. To help you fully master this technique, here are a few basic steps you can follow to begin to mature your personal approach to solving this problem in your stories.
+
+
+
+
+
+How to Build a Personal Moral Flaw
+
+
+There are many strategies “out there” for writing a morally challenged protagonist, but I believe the vast majority of those strategies miss this critical piece we are discussing here, i.e., how to make the moral flaw personal and the foundation of motivation.
+
+Almost everyone skims along the moral surface and avoids going deeper into the real character development that must be done. So, while many writers start off in the right direction, but cut themselves off at the knees by not following through with the tough character questions that deepen their protagonist.
+
+To transcend the generic, moral-flaw problem, make sure to do the following:
+
+1. Make sure the moral issue of your protagonist is a moral issue and not superficial. This means understanding the meaning of “moral” in a storytelling context.
+
+2. Ask the key personal questions that will uncover the real motivation for why your protagonist is acting the way he-she is acting. Always start with, “What would someone have to believe (incorrectly) about themselves to justify their bad behavior?”
+
+What is their worldview of others?
+
+What is their personal view of self?
+
+What is their greatest fear about what will happen if they change or get what they say they want?
+
+What price will they have to pay if they change?
+
+What fundamentally wrong core belief do they hold about who they are as a person?
+
+
+
+3. Break down that motivation/belief into the three building blocks of the moral component: moral blind spot, immoral effect, and dynamic moral tension.
+
+4. Make sure that whatever lesson is learned in the end, or whatever change your protagonist goes through, that it resolves the original blind spot, or that it makes it worse (assuming the character doesn’t change for the better, ala Michael Corleone in The Godfather ).
+
+If you implement these necessary steps with each new story and protagonist, your chances of having a deeper, more satisfying drama or comedy will be significantly increased, and readers or movie audiences will be more deeply engaged and committed to the protagonist’s journey from start to finish. And, you will have avoided the biggest mistake most writers make when constructing a moral premise, i.e., falling into the generic moral flaw trap.
+
+
+
+
+
+Conclusion
+
+
+
+
+
+W e’ve covered a lot of material in this small e-book. But, it is material that is barely covered at all in most other how-to creative writing books. At best, most gurus will offer a section of a chapter, or maybe a whole chapter devoted to the concept of the moral premise. But that’s about all, and certainly not much, or any, direction teaching you how to create a convincing moral component. Most writers are on their own, blowing in the wind.
+
+But, that is not you—at least it doesn’t have to be. You now know more about how to develop proactive, morally flawed, and dramatically consistent characters than 99 per cent of most writers. You now have the tools and techniques available to you to not only validate whether or not you have a story before you start writing but to also develop that story into a compelling life-lesson about what it means to be human.
+
+The moral basis of storytelling is the foundation of any real story. Most writers, through no fault of their own, are doomed to slog through the writing weeds and flounder in the story floodplains as they follow the consensus advice on how to write: “just do it.” But once again, that is not you, at least it doesn’t have to be. Now you know about development, moral components, blind spots, active protagonists, and stories vs situations.
+
+The idea of “winging it” may still hold some seductive draw, but do not listen to the Siren’s call, it will lure you to the rocks and your doom. Have confidence that, over time, all this information will trickle down from your conscious mind into your subconscious, and then into your creative process, and what was once mechanical process-procedures will become second nature and feel as natural to you as flight to an eagle.
+
+As a conscious writer, you have a new path opening up before you, one that is crowded with solutions and options, and one that knows how to avoid the story woods and floodplain expertly. I’m very excited to have shared all this information with you because I fully expect you to take it all and move forward—and be brilliant.
+
+THE END
+
+
+
+
+
+Appendix 1
+
+
+
+
+
+W HAT IT MEANS TO BE A CONSCIOUS WRITER
+
+
+
+This series of e-books covers many diverse topics, but one topic that spans across the entire series, touching every book, is the subject of “the conscious writer.” Consequently, even if the book you are reading does not mention this concept explicitly, it is implicitly embedded in every paragraph, in every bullet point, and in every topic heading.
+
+The idea of the conscious writer is so fundamental to my teaching and consulting that it has become not just a motto, but a manifesto. It"s something I would chip into sidewalks or spray-paint on blank walls under freeway overpasses, and on abandoned buildings, if I could (without risking fines or jail time).
+
+The origin of this idea came out of my evolution as a writer, but even more so it came from watching the thousands of consulting clients I"ve had over the years, both prose writers and screenwriters. Seeing how many of them were sleepwalking through their writing careers, blindly following how-to, creative writing memes, or obediently applying pointless paradigms and theories to their writing forced me to not only wake up in my own writing process, but to realize that “everyone deserved to be woken from their writing somnambulism and deserved to at least be given the opportunity to take back their creative power from whatever guru, methodology, or flavor-of-the-month, creative-writing secret sauce they may have given their power away to. Yes, I"m talking about empowerment.
+
+The word “empowerment” is way overused these days, having been effectively highjacked by the self-help and human potential movements of the 1980s and 1990s. But empowerment means something, and it means something important for creative people in particular. It means: giving yourself the permission and giving yourself the authority (authorship) to be powerful. Being powerful means: having the ability and the willingness to act. When you are empowered you are giving yourself permission to have power (i.e., exercise your ability and willingness to act). You cannot be powerful or empowered without being awake and conscious. The trances of the gurus are broken, and the charms of the writing-process charismatics are dispelled. It"s time that writers took back the word “empowerment” and made it our own.
+
+We live in an age where it has become frighteningly easy to go on autopilot and hand over creative control to “experts, gurus, teachers, or some authority. Being a conscious writer is all about taking your creative power back and taking full responsibility for “your writing process, creativity, writing successes, and writing failures. So, to that end, I have created the “Seven Qualities of the Conscious Writer.” Read them, live them, breath them not as some new dogma handed down from some new writing guru, but as wisdom you can choose or reject as you wish. Take what works, reject what doesn’t; then, move on—by choice!
+
+
+
+
+
+The Seven Qualities of a Conscious Writer:
+
+
+They intentionally make narrative choices based on creative objectives and goals; they do not stumble in the story dark, tripping into a story clueless how they got there.
+
+They know what they are writing, why they are writing it, and how they want to write it.
+
+They are always open to new approaches to storytelling and creative writing, and never dogmatic about any one approach.
+
+They are so steeped in the fundamentals of story development, and the best practices of creative writing that whenever they choose to stray from those fundamentals and best practices they do so with sure footedness, creative poise, and confidence in their craft.
+
+They listen to everyone, try everything, but follow no one; they are their own guru.
+
+They take responsibility for their failures as well as their successes and know that they (not some fortune cookie) are the only ones who can solve their writing problems—and they love that responsibility.
+
+They don’t give their creative power away to anyone or anything—ever.
+
+
+
+Being a conscious writer honors our true creative process and is the only path to achieve deep, authentic, and meaningful connection with readers. It is the best way to be your best writer-self.
+
+
+
+
+
+Remember: Listen to everyone, try everything, follow no one. You are your own story guru.”
+
+
+
+
+
+Call for Reviews
+
+
+
+
+
+Buy Other Titles Here:
+
+
+
+http://www.jefflyonsbooks.com
+
+
+
+DID YOU LIKE THIS BOOK? THEN, I NEED YOU …
+
+
+
+Without reviews, indie books like this one are almost impossible to market.
+
+If you purchased this book on any of the online book outlets, leaving a review will only take a minute and it will be incredibly helpful to me—and other readers.
+
+The truth is, VERY few readers leave reviews. Please help me by being the exception.
+
+Thank you in advance!
+
+Jeff
+
+
+
+
+
+Also by Jeff Lyons
+
+
+
+
+
+FICTION
+
+Jack Be Dead: Revelation (bk #1)
+
+13 Minutes
+
+Terminus Station
+
+The Abbess (coming)
+
+
+
+
+
+NONFICTION
+
+Anatomy of a Premise Line: How to Use Story and Premise Development for Writing Success
+
+Rapid Story Development: How to Use the Enneagram-Story Connection to Become a Master Storyteller (coming)
+
+Rapid Story Development: The Storyteller’s Toolbox Volume One
+
+
+
+
+
+RAPID STORY DEVELOPMENT E-BOOK SERIES
+
+#1: Commercial Pace in Fiction and Creative Nonfiction
+
+#2: Bust the Top Ten Creative Writing Myths to Become a Better Writer
+
+#3: Ten Questions Every Writer Needs to Ask Before They Hire a Consultant
+
+#4: Teams and Ensembles: How to Write Stories with Large Casts
+
+#5: The Moral Premise–How to Build a Bulletproof Narrative Engine for Any Story
+
+
+
+
+
+About the Author
+
+
+
+
+
+Jeff Lyons is a published author and story consultant with more than 25 years of experience in the publishing and entertainment industries. He has worked with literally thousands of screenwriters and novelists, including New York Times and USA Today bestselling authors. His writings on the craft of storytelling can be found in leading trade magazines like Writer’s Digest Magazine , Script Magazine , and The Writer Magazine, among others. His book, Anatomy of a Premise Line: How to Master Premise and Story Development for Writing Success was published by Focal Press in 2015. Jeff is a popular presenter at leading writing industry trade conferences, and has been invited to present and consult for the annual Producers Guild of America’s “Power of Diversity Producers Fellowship Program,” as well as for the Film Independent Screenwriting Lab. Jeff lives in Long Beach, California, has one weird cat, and desperately wants a dog. Visit www.jefflyonsbooks.com .
+
+
+
+
+
+Get the First in the Series
+
+
+
+
+
+Rapid Story Development #1: Commercial Pace in Fiction and Creative Nonfiction
+
+
+
+
+
+AVAILABLE ONLINE AT JEFFLYONSBOOKS.COM
+
+
+
+
+
+Author Offer—Anatomy of a Premise Line
+
+
+
+
+
+AVAILABLE ON ALL MAJOR ONLINE BOOKSELLERS
+
+
+
+
+
+"Every writer on the planet needs coffee, chocolate, and this book!"
+
+Caroline Leavitt: New York Times bestselling author of Is This Tomorrow
+
+
+
+
+
+[SEE NEXT PAGE]
+
+
+
+
+

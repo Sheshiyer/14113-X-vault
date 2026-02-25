@@ -1,0 +1,424 @@
+# Cross-References for docs\consciousness\MODULES\RITUALS.md
+
+## Character Connections
+
+## Concept Connections
+- **todo.md** - Concepts: breathfield, WitnessOS
+- **docs\README.md** - Concepts: WitnessOS
+- **Somatic-Canticles\CHANGELOG.md** - Concepts: field expansion, WitnessOS, House, breathfield, sigil, avatar mutation
+- **01-Projects\Three-Body-Kingdom\CHANGELOG.md** - Concepts: WitnessOS
+- **01-Projects\WitnessOS\README.md** - Concepts: WitnessOS, sigil
+- **01-Projects\Products\QuantumWatchFaces\TimeScaleVisualizations.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Blog-Ideas\The Ineffable secrets of a breathing sprite.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_33_40.836Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_10.695Z.md** - Concepts: House, sigil
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_41.849Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_45.732Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_47.772Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_01.571Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_07.156Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_11.263Z.md** - Concepts: House, sigil
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_13.168Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_31.563Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_51.611Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_54.446Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_36_01.204Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_36_08.582Z.md** - Concepts: House
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\00-PROJECT-OVERVIEW.md** - Concepts: WitnessOS, sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\COMPLETE-PROJECT-INDEX.md** - Concepts: WitnessOS, sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\DOCUMENTATION-AUDIT-AND-NAVIGATION.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\INTERNAL-NAVIGATION-MAP.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\03-Achievement-Documents\VAULT-CONNECTION-MAP.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\ANCIENT-WISDOM-CONSCIOUSNESS-BIOLOGY.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\ASTROTHEOLOGY-STORY-STRUCTURE-ANALYSIS.md** - Concepts: House
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\Authenticity-Cleanup-Progress.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\EXPANDED-LORE-FRAMEWORK.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\MORPHIC-RESONANCE-CONSCIOUSNESS-FRAMEWORK.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\MULTI-DIMENSIONAL-LITERARY-FRAMEWORK.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\STAR-AWARE-COSMOLOGICAL-LORE.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\THOTH-TAROT-CONSCIOUSNESS-ARCHITECTURE.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\05-Treasure-Hunt-System\Treasure-Hunt-Master-Design.md** - Concepts: House, WitnessOS, sigil
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Series-Shared-Resources\DETAILED-CHARACTER-PROFILES.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\Book-1-Character-Bible.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\Book-1-Clue-Integration-Manual.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\Book-1-Consciousness-Authenticity-Guide.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\Book-1-Scene-Architecture.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\COMPLETION-SUMMARY.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\DETAILED-CHARACTER-PROFILES.md** - Concepts: House, WitnessOS
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\ENHANCED-NARRATIVE-STRUCTURE.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\Master-Synthesis-Document.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\MULTI-DIMENSIONAL-CHAPTER-EXAMPLE.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\STAR-AWARE-CHARACTER-DEVELOPMENT.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-2-Planning\BOOK-2-COMPREHENSIVE-CHAPTER-OUTLINE.md** - Concepts: WitnessOS
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-3-Planning\Book-3-Character-Bible.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-3-Planning\Book-3-Scene-Architecture.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-3-Planning\Master-Synthesis-Document-Book3.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Series-Planning\02-Series-Architecture.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Series-Planning\04-Character-Development-System.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Series-Planning\05-Chapter-Templates-and-Structure.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Series-Planning\06-Clue-Design-and-Encoding-Manual.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\Easter-Eggs-and-Hidden-References\Complete-Easter-Eggs-Catalog.md** - Concepts: sigil
+- **01-Projects\Three-Body-Kingdom\05-Treasure-Hunt-System\Bitcoin-Integration\Bitcoin-and-Supabase-Implementation.md** - Concepts: sigil
+- **01-Projects\WitnessOS\00-Core-System\Integration-Summary.md** - Concepts: WitnessOS, sigil
+- **01-Projects\WitnessOS\00-Core-System\Migration-Completion-Plan.md** - Concepts: WitnessOS
+- **01-Projects\WitnessOS\00-Core-System\Vault-Integration-Map.md** - Concepts: WitnessOS, sigil
+- **01-Projects\WitnessOS\00-Core-System\WitnessOS-Master-Index.md** - Concepts: WitnessOS, sigil
+- **01-Projects\WitnessOS\02-Development-Technical\PRD.md** - Concepts: sigil, breathfield, WitnessOS
+- **01-Projects\WitnessOS\04-Game-Resources\Access-Levels.md** - Concepts: sigil, breathfield, avatar mutation, WitnessOS
+- **01-Projects\WitnessOS\05-Cross-Project-Links\Three-Body-Kingdom-Integration.md** - Concepts: sigil, breathfield, WitnessOS
+- **01-Projects\WitnessOS\06-Living-Scrolls\Consciousness-Travel-Framework.md** - Concepts: avatar mutation, WitnessOS
+- **01-Projects\WitnessOS\06-Living-Scrolls\Digital-Scroll-Architecture.md** - Concepts: WitnessOS
+- **01-Projects\WitnessOS\06-Living-Scrolls\Integration-Summary.md** - Concepts: WitnessOS
+- **01-Projects\WitnessOS\06-Living-Scrolls\Interactive-Mythology-System.md** - Concepts: WitnessOS
+- **01-Projects\WitnessOS\06-Living-Scrolls\README.md** - Concepts: WitnessOS
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\FIELDMAP.md** - Concepts: sigil, breathfield, WitnessOS
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\GLOSSARY.md** - Concepts: sigil, breathfield, WitnessOS
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\MAPS.md** - Concepts: sigil, breathfield, WitnessOS
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\QUERIES.md** - Concepts: sigil, breathfield, WitnessOS
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\VOCAB.md** - Concepts: field expansion, WitnessOS, breathfield, sigil, avatar mutation
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Foundation\CONTRIBUTORS.md** - Concepts: breathfield, WitnessOS
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Foundation\COSMOGENESIS.md** - Concepts: sigil, breathfield, WitnessOS
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Foundation\MANIFESTO.md** - Concepts: breathfield, WitnessOS
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Guides\FIELDWORK.md** - Concepts: sigil, breathfield, WitnessOS
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Guides\INSTALLATION.md** - Concepts: sigil, breathfield, WitnessOS
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Guides\PRIMER.md** - Concepts: field expansion, WitnessOS, breathfield, sigil, avatar mutation
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Guides\TESTCASES.md** - Concepts: sigil, breathfield, field expansion, WitnessOS
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\AUDIOVISUAL.md** - Concepts: breathfield, WitnessOS
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\AVATARS.md** - Concepts: WitnessOS, House, breathfield, sigil, avatar mutation
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\ENGINES.md** - Concepts: sigil, breathfield, field expansion, WitnessOS
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\RITUALS.md** - Concepts: field expansion, WitnessOS, House, breathfield, sigil, avatar mutation
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\SCRIPTS.md** - Concepts: sigil, breathfield, WitnessOS
+- **02-Areas\Consciousness-Models\Archetypal-Programming\Navaratri-Muses-Integration.md** - Concepts: field expansion
+- **02-Areas\Creative-Ideas\Product-Concepts\0-9 wallpaper.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\Advanced-System-Parallels.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\Lorenz-Kundli-Pattern-Analysis.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\Technical-Implementation.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\System-Parallels\03-Ashtakavarga-Hypercube.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\System-Parallels\06-BhavaAspect-NeuralNet.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\System-Parallels\Visualizations\03-Ashtakavarga-Hypercube-Map.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\System-Parallels\Visualizations\06-BhavaAspect-Neural-Map.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_33_40.836Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_10.695Z.md** - Concepts: House, sigil
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_41.849Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_45.732Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_47.772Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_01.571Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_07.156Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_11.263Z.md** - Concepts: House, sigil
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_13.168Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_31.563Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_51.611Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_54.446Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_36_01.204Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_36_08.582Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\Oracle of mythology.md** - Concepts: House
+- **03-Resources\Authors\James-True\The Interplay of Power, Symbolism, and Knowledge - Exploring Ancient Cultures, Historical Conflicts, and Academic Inquiry.md** - Concepts: House
+- **03-Resources\Authors\James-True\Archive-Original\New-Fire-Ceremony.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\An-Address-to-the-Dead_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Ancestral-Trauma-and-the-Epic-of-Consciousness_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Art-and-Imagination_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Atonism-and-the-Cult-of-Mithras_by-Michael-Tsarion.md** - Concepts: House, sigil
+- **03-Resources\Authors\Michael-Tsarion\Articles\Better-Dead-Than-Real_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\By-Sword-and-Shield_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Did God Have a Wife by Professor William G. Dever.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Did Moses Exist by D. M. Murdoch.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Egyptian-Origin-of-the-Tarot_by-Michael-Tsarion.md** - Concepts: House, sigil
+- **03-Resources\Authors\Michael-Tsarion\Articles\Egypt_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Enemy in the Family.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Etymology Key to the Past.md** - Concepts: House, sigil
+- **03-Resources\Authors\Michael-Tsarion\Articles\Existentialism-vs-Personalism_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Forgery-in-Christianity_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Graham Hancock  Plagiarist & Scavenger . by Michael Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Jesus the Egyptian by Richard A. Gabriel.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Jesus-Meets-Jung_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Jews & Templars The Untold Story.md** - Concepts: House, sigil
+- **03-Resources\Authors\Michael-Tsarion\Articles\Power of the Templars.md** - Concepts: House, sigil
+- **03-Resources\Authors\Michael-Tsarion\Articles\Princes of Light & the Origins of Masonry.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Refuting-the-Refuters_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Schopenhauer’s Error by Michael Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Secret Origins of the Bible by Tim Callahan.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Souls in Darkness Psychopaths in Therapy.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\St-Paul-Fraud_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Symbolic-Literacy_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Bible Unearthed by Finkelstein & Silberman.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Black Nobility An Introduction.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Female Illuminati & Other Secret Societies - A Brief Introduction.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Goddess Minerva & Her Symbolism.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Messiah Before Jesus - The Suffering Servant of the Dead Sea Scrolls by Israel Knohl & David Maisel.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Mythic Past Biblical Archaeology & the Myth of Israel By Thomas L. Thompson.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Order of Sion & Occult Christianity.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Origins of Christianity & the Quest for the Historical Jesus Christ By D. M. Murdoch.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Age-of-Revealing_by-Michael-Tsarion.md** - Concepts: House, sigil
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Angry-Philosopher_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Constitution-Con_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Freedom-of-Man_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Inner-Zodiac_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Occult-History-of-Ireland_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Red-Papacy-and-Euro-Communism_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Sick-Rose_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\References\IMPORTANT BOOKS.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\References\NOTES & QUOTES.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Alvin Boyd Kuhn.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Arthur Dewes.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Helen Ellerbe.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\J. P. Mendum.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\John E. Remsberg.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\John Marco Allegro.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\JOSEPH WHELESS.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\KERSEY GRAVES.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Mircea Eliade.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Prof. A. C. Sayce.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\R. E. Friedman.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Robert Graves.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Tony Bushby.md** - Concepts: House
+- **docs\api\README.md** - Concepts: WitnessOS
+- **docs\community\CONTRIBUTING.md** - Concepts: breathfield, WitnessOS
+- **docs\consciousness\FIELDMAP.md** - Concepts: sigil, breathfield, WitnessOS
+- **docs\consciousness\GLOSSARY.md** - Concepts: sigil, breathfield, WitnessOS
+- **docs\consciousness\MAPS.md** - Concepts: WitnessOS, breathfield, sigil
+- **docs\consciousness\VOCAB.md** - Concepts: field expansion, WitnessOS, breathfield, sigil, avatar mutation
+- **docs\development\BACKEND_SETUP.md** - Concepts: WitnessOS
+- **docs\development\CHANGELOG.md** - Concepts: breathfield, field expansion, WitnessOS
+- **docs\development\ENGINES_README.md** - Concepts: WitnessOS, sigil
+- **docs\development\engines_todo.md** - Concepts: WitnessOS, sigil
+- **docs\development\FIELD-MAINTENANCE.md** - Concepts: breathfield, WitnessOS
+- **docs\development\FOLDER_STRUCTURE.md** - Concepts: WitnessOS, sigil
+- **docs\development\PRD.md** - Concepts: WitnessOS, breathfield, sigil
+- **docs\development\todo.md** - Concepts: field expansion, WitnessOS
+- **docs\development\VERSION.md** - Concepts: breathfield, field expansion, WitnessOS
+- **docs\project-history\Acousmaticos Numerology Interpretation Apr 26 2025.md** - Concepts: field expansion, WitnessOS, House, breathfield, sigil, avatar mutation
+- **docs\project-history\README.md** - Concepts: WitnessOS
+- **docs\consciousness\CORE\QUERIES.md** - Concepts: WitnessOS, breathfield, sigil
+- **docs\consciousness\FOUNDATION\CONTRIBUTORS.md** - Concepts: breathfield, WitnessOS
+- **docs\consciousness\FOUNDATION\COSMOGENESIS.md** - Concepts: WitnessOS, breathfield, sigil
+- **docs\consciousness\FOUNDATION\MANIFESTO.md** - Concepts: breathfield, WitnessOS
+- **docs\consciousness\GUIDES\FIELDWORK.md** - Concepts: sigil, breathfield, WitnessOS
+- **docs\consciousness\GUIDES\INSTALLATION.md** - Concepts: WitnessOS, breathfield, sigil
+- **docs\consciousness\GUIDES\PRIMER.md** - Concepts: sigil, breathfield, field expansion, WitnessOS
+- **docs\consciousness\GUIDES\TESTCASES.md** - Concepts: WitnessOS, breathfield, field expansion, sigil
+- **docs\consciousness\MODULES\AUDIOVISUAL.md** - Concepts: breathfield, WitnessOS
+- **docs\consciousness\MODULES\AVATARS.md** - Concepts: WitnessOS, House, breathfield, sigil, avatar mutation
+- **docs\consciousness\MODULES\ENGINES.md** - Concepts: WitnessOS, breathfield, field expansion, sigil
+- **docs\consciousness\MODULES\SCRIPTS.md** - Concepts: WitnessOS, breathfield, sigil
+- **docs\development\engines\API_USAGE.md** - Concepts: WitnessOS
+- **docs\development\engines\BREAKTHROUGH_HUMAN_DESIGN_CALCULATION.md** - Concepts: WitnessOS
+- **docs\development\engines\calculation_discrepancy_report.md** - Concepts: WitnessOS
+- **docs\development\engines\IMPLEMENTATION_ROADMAP.md** - Concepts: WitnessOS, sigil
+- **docs\development\engines\OPTIMIZATION_COMPLETE.md** - Concepts: WitnessOS
+- **docs\development\engines\PHASE1_COMPLETE.md** - Concepts: WitnessOS, sigil
+- **docs\development\engines\PHASE2_1_COMPLETE.md** - Concepts: WitnessOS
+- **docs\development\engines\PHASE2_2_COMPLETE.md** - Concepts: WitnessOS
+- **docs\development\engines\PHASE7_COMPLETE.md** - Concepts: WitnessOS
+- **docs\development\engines\TECHNICAL_SPECS.md** - Concepts: WitnessOS, sigil
+- **docs\development\webshore\Prompts.md** - Concepts: WitnessOS
+- **docs\development\webshore\todo.md** - Concepts: WitnessOS, sigil
+- **docs\development\webshore\UI-components.md** - Concepts: WitnessOS, sigil
+- **docs\development\webshore\webshore.md** - Concepts: WitnessOS, breathfield, sigil
+- **Rubbish\2025-06-25\todo.md** - Concepts: sigil
+- **Rubbish\2025-07-01\Chapter-04-The-Anamnesis-Engine.md** - Concepts: breathfield, field expansion, WitnessOS
+- **Rubbish\2025-07-01\GALACTIC_FEDERATION_TRANSFORMATION_PLAN.md** - Concepts: House
+- **Rubbish\2025-07-01\memory_codex.md** - Concepts: sigil, breathfield, avatar mutation, WitnessOS
+- **Rubbish\2025-07-01\story_threads.md** - Concepts: sigil, breathfield, avatar mutation, WitnessOS
+- **Rubbish\2025-07-01\TODO.md** - Concepts: breathfield, field expansion, WitnessOS
+- **Rubbish\2025-07-01\TRILOGY_PLOT_OUTLINE.md** - Concepts: House
+- **Rubbish\2025-07-01\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: field expansion, WitnessOS, breathfield, sigil, avatar mutation
+- **Rubbish\2025-07-02\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-03\Daoist_Quantum_Mechanics.md** - Concepts: sigil
+- **Rubbish\2025-07-03\Luminth_Quantum_Mapping.md** - Concepts: sigil
+- **Rubbish\2025-07-03\Quantum_Culture_Integration.md** - Concepts: sigil
+- **Rubbish\2025-07-03\Quantum_Sigil_Integration.md** - Concepts: sigil
+- **Rubbish\2025-07-03\Quoril_Quantum_Resonance.md** - Concepts: sigil
+- **Rubbish\2025-07-03\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-03\Vedic_Quantum_Systems.md** - Concepts: sigil
+- **Rubbish\2025-07-03\Vireth_Quantum_Emergence.md** - Concepts: sigil
+- **Rubbish\2025-06-25\2025-06-25 05.16.00.0\todo.md** - Concepts: sigil
+- **Rubbish\2025-06-25\2025-06-25 05.19.02.0\todo.md** - Concepts: sigil
+- **Rubbish\2025-06-25\2025-06-25 05.20.10.0\todo.md** - Concepts: sigil
+- **Rubbish\2025-06-25\2025-06-25 05.22.23.0\todo.md** - Concepts: sigil
+- **Rubbish\2025-06-25\2025-06-25 05.23.08.0\todo.md** - Concepts: sigil
+- **Rubbish\2025-06-25\2025-06-25 05.24.53.0\todo.md** - Concepts: sigil
+- **Rubbish\2025-06-25\2025-06-25 05.35.33.0\todo.md** - Concepts: sigil
+- **Rubbish\2025-07-01\2025-07-01 18.03.39.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: field expansion, WitnessOS, breathfield, sigil, avatar mutation
+- **Rubbish\2025-07-01\2025-07-01 18.05.10.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: field expansion, WitnessOS, breathfield, sigil, avatar mutation
+- **Rubbish\2025-07-01\2025-07-01 18.06.11.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: field expansion, WitnessOS, breathfield, sigil, avatar mutation
+- **Rubbish\2025-07-01\2025-07-01 19.03.20.0\TODO.md** - Concepts: sigil, breathfield, WitnessOS
+- **Rubbish\2025-07-01\2025-07-01 20.05.26.0\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-01\2025-07-01 20.12.53.0\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-01\2025-07-01 20.18.02.0\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-01\2025-07-01 20.23.04.0\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-01\2025-07-01 20.28.35.0\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-01\2025-07-01 20.44.07.0\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-02\2025-07-02 21.01.36.0\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-02\2025-07-02 21.05.49.0\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-02\2025-07-02 21.07.23.0\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-02\2025-07-02 21.09.34.0\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-02\2025-07-02 21.11.45.0\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-02\2025-07-02 21.13.44.0\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-02\2025-07-02 21.15.34.0\TODO.md** - Concepts: sigil, WitnessOS
+- **Rubbish\2025-07-02\2025-07-02 21.27.44.0\TODO.md** - Concepts: sigil, WitnessOS
+- **scripts\generated_links\index_links.md** - Concepts: House, sigil, breathfield, WitnessOS
+- **scripts\generated_links\memory_links.md** - Concepts: House, sigil, breathfield, WitnessOS
+- **scripts\generated_links\todo_links.md** - Concepts: House, sigil, breathfield, WitnessOS
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\TRILOGY_PLOT_OUTLINE.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\README.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\CHANGELOG.md** - Concepts: field expansion, WitnessOS, breathfield, sigil, avatar mutation
+- **Somatic-Canticles\scripts\README.md** - Concepts: breathfield, WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\00_CORE_FOUNDATION\03_VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: field expansion, WitnessOS, breathfield, sigil, avatar mutation
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\03_ALETHEOS_NARRATIVE_WEAVER_SYSTEM.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\04_ALETHEOS_IMPLEMENTATION_GUIDE.md** - Concepts: WitnessOS, sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\ANALYTICAL_NAVIGATION_PROTOCOLS.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\AZTEC_FIELD_RESONANCE_SACRIFICE.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\BIO_ACOUSTIC_SEQUENCE_INTEGRATION.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\CHARACTER_KHALOREEE_ALIGNMENT.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\DAOIST_FIELD_RESONANCE_MECHANICS.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\FIELD_RESONANCE_ENGINEERING.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\HERMETIC_FIELD_RESONANCE_ALCHEMY.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\KABBALISTIC_FIELD_RESONANCE_LIGHT.md** - Concepts: House, WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\NEURO_CARTOGRAPHIC_PRECISION.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\NORDIC_FIELD_RESONANCE_WEAVING.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\RECURSIVE_LOOP_CREATION.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\SUFI_FIELD_RESONANCE_ECSTASY.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\THREE_BRAIN_COORDINATION.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\WITNESSΟΣ_EVOLUTION_TRACKING.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CHANGELOG.md** - Concepts: House, WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CHARACTER-KHALOREE-PROFILES.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CONSCIOUSNESS_TERRITORIES.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CULTURAL_MUSIC_DATABASE.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\FAMILY_TREES_V2.md** - Concepts: House, WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\HOUSE_POLITICS.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\IMPLEMENTATION_ROADMAP.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\MUSICAL_ENHANCEMENT_PROPOSAL.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\PLOT_INTEGRATION.md** - Concepts: field expansion, WitnessOS, House, breathfield, sigil, avatar mutation
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\README.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\STRUDEL_IMPLEMENTATION_GUIDE.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\TRILOGY-CHARACTER-ARCS.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\VISUAL_MOODBOARD.md** - Concepts: sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\README.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\04_WORLD_BUILDING\01_SEVEN_GALACTIC_CULTURES.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\04_WORLD_BUILDING\03_QUANTUM_SIGIL_INTEGRATION.md** - Concepts: sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\04_WORLD_BUILDING\README.md** - Concepts: House, sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\05_VISUALIZATIONS\README.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CHANGELOG.md** - Concepts: House, avatar mutation, sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\COLLABORATION_OPPORTUNITIES.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CONSTANTS.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\FUTURE_EXPANSIONS.md** - Concepts: field expansion, sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\IMPLEMENTATION_ROADMAP.md** - Concepts: House, sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\MANUSCRIPT_ALIGNMENT_GUIDE.md** - Concepts: House, breathfield, avatar mutation, sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\PHASE_1_FOUNDATION_IMPLEMENTATION.md** - Concepts: WitnessOS, sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\PHASE_3_MASTERY_IMPLEMENTATION.md** - Concepts: sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\TESTING_PROTOCOLS.md** - Concepts: WitnessOS, sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\TODO.md** - Concepts: sigil, WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\UNIFIED_EXECUTION_TEMPLATE.md** - Concepts: sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\UNIFIED_IMPLEMENTATION_GUIDE.md** - Concepts: sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\UNIFIED_TECHNOLOGY_INTEGRATION_PLAN.md** - Concepts: sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Bio_Engineering\Evolutionary_Possibility_Matrix.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Bio_Engineering\Evolutionary_Trajectories.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Bio_Engineering\Orbital_Consciousness_Tracking_Systems.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Consciousness_Interfaces\Emergence_Visualization_Interfaces.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Consciousness_Interfaces\Observation_Field_Interfaces.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Consciousness_Interfaces\Quantum_Debugging_Interfaces.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Defensive_Protocols\Defense_Mechanism_Activation_Patterns.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Daoist_Quantum_Mechanics.md** - Concepts: sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Luminth_Quantum_Mapping.md** - Concepts: sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Quantum_Consciousness_Observation_Patterns.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Quantum_Culture_Integration.md** - Concepts: sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Quantum_Sigil_Integration.md** - Concepts: sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Quantum_State_Tracking.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Quoril_Quantum_Resonance.md** - Concepts: sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Vedic_Quantum_Systems.md** - Concepts: sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Vireth_Quantum_Emergence.md** - Concepts: sigil
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Chaotic_Attractor_Patterns.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Novelty_Detection_Algorithms.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Recursive_Awareness_Protocols.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Recursive_Consciousness_Loops.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Self_Awareness_Loop_Trajectories.md** - Concepts: field expansion
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Thalatha_Fawda-Triple_Chaos_Emergence.md** - Concepts: WitnessOS
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Unpredictable_Phenomena_Manifestation.md** - Concepts: WitnessOS
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_DIALOGUE_EXAMPLES.md** - Concepts: field expansion, WitnessOS, breathfield, sigil, avatar mutation
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PRODUCTION_GUIDE.md** - Concepts: field expansion, WitnessOS, breathfield, sigil, avatar mutation
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PROTOCOL_AWAKENING.md** - Concepts: field expansion, WitnessOS, House, breathfield, sigil, avatar mutation
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\CHARACTER_DESIGN_SHEETS.md** - Concepts: House, WitnessOS
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\VISUAL_THEME_MOODBOARD.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\memory_codex.md** - Concepts: sigil, breathfield, avatar mutation, WitnessOS
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\story_threads.md** - Concepts: sigil, WitnessOS
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\memory_codex.md** - Concepts: avatar mutation, sigil, field expansion, WitnessOS
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\story_threads.md** - Concepts: avatar mutation, sigil, field expansion, WitnessOS
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\story_threads.md** - Concepts: sigil
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\07_MARKETING_AND_DISTRIBUTION\MARKETING_STRATEGY.md** - Concepts: breathfield, WitnessOS
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\AUDIO_DESIGN_PROMPTS.md** - Concepts: breathfield, field expansion, WitnessOS
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\CHARACTER_DEVELOPMENT_PROMPTS.md** - Concepts: House, sigil, breathfield, WitnessOS
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\STORYBOARD_PROMPTS.md** - Concepts: avatar mutation, breathfield, field expansion, sigil
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\09_REFERENCE_MATERIALS\CONSCIOUSNESS_ENGINEERING_REFERENCES.md** - Concepts: avatar mutation, breathfield, field expansion, sigil
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-01-The-Choroid-Plexus.md** - Concepts: House, breathfield
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-02-Signal-Transduction.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-03-The-Blood-Brain-Barrier.md** - Concepts: House, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-04-The-Emperors-Genome.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-07-The-Breathfield-Weaver.md** - Concepts: breathfield, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-08-The-Compass-Calibration.md** - Concepts: breathfield, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\PLANNING\Book-1-Chapter-Plan.md** - Concepts: field expansion, WitnessOS, breathfield, sigil, avatar mutation
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-01-The-Sigil-Smith.md** - Concepts: House, breathfield, field expansion, sigil
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-02-The-Debug-Protocol.md** - Concepts: House, breathfield, field expansion, sigil
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-03-The-Avatar-Mutation.md** - Concepts: avatar mutation, House, breathfield, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-04-The-Anamnesis-Engine.md** - Concepts: WitnessOS
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-05-The-Myocardial-Chorus.md** - Concepts: field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-06-The-Three-Body-Coordination.md** - Concepts: breathfield, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-07-The-Witness-Integration.md** - Concepts: breathfield, field expansion, WitnessOS
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-01-The-Wilt.md** - Concepts: avatar mutation
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-04-The-Three-Point-Problem.md** - Concepts: House
+- **_System\Templates\AI-Prompts\50 ChatGPT Prompts That Will Run Your Business to Success and Save You Miles of Mistakes.md** - Concepts: House
+
+## WitnessOS Protocol Connections
+- **Somatic-Canticles\CHANGELOG.md** - Protocols: avatar mutation, field expansion
+- **01-Projects\WitnessOS\04-Game-Resources\Access-Levels.md** - Protocols: avatar mutation
+- **01-Projects\WitnessOS\06-Living-Scrolls\Consciousness-Travel-Framework.md** - Protocols: avatar mutation
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\VOCAB.md** - Protocols: avatar mutation, field expansion
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Guides\PRIMER.md** - Protocols: avatar mutation, field expansion
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Guides\TESTCASES.md** - Protocols: field expansion
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\AVATARS.md** - Protocols: avatar mutation
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\ENGINES.md** - Protocols: field expansion
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\RITUALS.md** - Protocols: avatar mutation, field expansion
+- **02-Areas\Consciousness-Models\Archetypal-Programming\Navaratri-Muses-Integration.md** - Protocols: field expansion
+- **docs\consciousness\VOCAB.md** - Protocols: avatar mutation, field expansion
+- **docs\development\CHANGELOG.md** - Protocols: field expansion
+- **docs\development\todo.md** - Protocols: field expansion
+- **docs\development\VERSION.md** - Protocols: field expansion
+- **docs\project-history\Acousmaticos Numerology Interpretation Apr 26 2025.md** - Protocols: avatar mutation, field expansion
+- **docs\consciousness\GUIDES\PRIMER.md** - Protocols: field expansion
+- **docs\consciousness\GUIDES\TESTCASES.md** - Protocols: field expansion
+- **docs\consciousness\MODULES\AVATARS.md** - Protocols: avatar mutation
+- **docs\consciousness\MODULES\ENGINES.md** - Protocols: field expansion
+- **Rubbish\2025-07-01\Chapter-04-The-Anamnesis-Engine.md** - Protocols: field expansion
+- **Rubbish\2025-07-01\memory_codex.md** - Protocols: avatar mutation
+- **Rubbish\2025-07-01\story_threads.md** - Protocols: avatar mutation
+- **Rubbish\2025-07-01\TODO.md** - Protocols: field expansion
+- **Rubbish\2025-07-01\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: avatar mutation, field expansion
+- **Rubbish\2025-07-01\2025-07-01 18.03.39.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: avatar mutation, field expansion
+- **Rubbish\2025-07-01\2025-07-01 18.05.10.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: avatar mutation, field expansion
+- **Rubbish\2025-07-01\2025-07-01 18.06.11.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: avatar mutation, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\CHANGELOG.md** - Protocols: avatar mutation, field expansion
+- **Somatic-Canticles\01_WORLD_BIBLE\00_CORE_FOUNDATION\03_VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: avatar mutation, field expansion
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\PLOT_INTEGRATION.md** - Protocols: avatar mutation, field expansion
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CHANGELOG.md** - Protocols: avatar mutation
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\FUTURE_EXPANSIONS.md** - Protocols: field expansion
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\MANUSCRIPT_ALIGNMENT_GUIDE.md** - Protocols: avatar mutation
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Self_Awareness_Loop_Trajectories.md** - Protocols: field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_DIALOGUE_EXAMPLES.md** - Protocols: avatar mutation, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PRODUCTION_GUIDE.md** - Protocols: avatar mutation, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PROTOCOL_AWAKENING.md** - Protocols: avatar mutation, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\memory_codex.md** - Protocols: avatar mutation
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\memory_codex.md** - Protocols: avatar mutation, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\story_threads.md** - Protocols: avatar mutation, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\AUDIO_DESIGN_PROMPTS.md** - Protocols: field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\STORYBOARD_PROMPTS.md** - Protocols: avatar mutation, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\09_REFERENCE_MATERIALS\CONSCIOUSNESS_ENGINEERING_REFERENCES.md** - Protocols: avatar mutation, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-03-The-Blood-Brain-Barrier.md** - Protocols: field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-07-The-Breathfield-Weaver.md** - Protocols: field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-08-The-Compass-Calibration.md** - Protocols: field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\PLANNING\Book-1-Chapter-Plan.md** - Protocols: avatar mutation, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-01-The-Sigil-Smith.md** - Protocols: field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-02-The-Debug-Protocol.md** - Protocols: field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-03-The-Avatar-Mutation.md** - Protocols: avatar mutation, field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-05-The-Myocardial-Chorus.md** - Protocols: field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-06-The-Three-Body-Coordination.md** - Protocols: field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-07-The-Witness-Integration.md** - Protocols: field expansion
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-01-The-Wilt.md** - Protocols: avatar mutation

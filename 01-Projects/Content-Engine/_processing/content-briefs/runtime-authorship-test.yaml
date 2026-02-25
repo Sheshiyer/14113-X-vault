@@ -1,0 +1,20 @@
+topic: runtime-authorship
+channel: substack
+required_claims:
+  runtime_claim: ""
+  pattern_claim: ""
+  enneagram_lens: ""
+  embodied_intervention: ""
+  closure_style: non-pitch
+sources:
+  areas:
+    - /Volumes/madara/2026/twc-vault/02-Areas/Pattern-Studies/_pattern-recognition-hub.md
+    - /Volumes/madara/2026/twc-vault/02-Areas/Muse-Enneagram-Framework/muse-enneagram-matrix.md
+  resources:
+    - /Volumes/madara/2026/twc-vault/03-Resources/Content/Articles/Substack/runtime-of-god-ancient-debug-protocols.md
+  project:
+    - /Volumes/madara/2026/twc-vault/01-Projects/Content-Engine/_approved/ready-to-post/thread-the-runtime.md
+gates:
+  min_area_sources: 2
+  min_resource_sources: 1
+  meta_language_removed: true

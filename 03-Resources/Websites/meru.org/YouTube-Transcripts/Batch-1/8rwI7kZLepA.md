@@ -1,0 +1,66 @@
+# The Dynamics of a Circle and a Line
+
+- **Author:** Meru Video
+- **URL:** https://www.youtube.com/watch?v=8rwI7kZLepA
+- **Video ID:** 8rwI7kZLepA
+- **Entries:** 57
+
+## Transcript
+
+- **00:31** the hand model that makes the Hebrew
+- **00:34** Greek in it well we've done the Hebrew
+- **00:36** Hebrew letters this is the fluid
+- **00:38** rabbinic form of the rubra surest
+- **00:41** letters is nothing but a circle and a
+- **00:45** line pulled up into three day now there
+- **00:49** are fancier ways to make it one can make
+- **00:51** it using a mathematical curve known as
+- **00:54** the reciprocal spiral a reciprocal
+- **00:58** spiral starts out as a straight line
+- **01:00** asymptotic to y equals 1 dead straight
+- **01:03** and ends up making a perfect circle as
+- **01:06** it strangles the origin again mediating
+- **01:09** between a line and a circle between
+- **01:13** losing country between singularity and
+- **01:17** wholeness between the one and the many
+- **01:20** let me just read you up from a chart I
+- **01:25** think is sitting here I'll give you some
+- **01:28** of the examples of this embodiment if I
+- **01:30** can find one of it here it is
+- **01:33** there's rabbinic texts that talk about
+- **01:35** these as the extreme alternatives in
+- **01:39** philosophy this would be the one in the
+- **01:41** many
+- **01:50** and whatever they can to get one the one
+- **01:55** God and the whole inclusive the one Lord
+- **01:59** and the whole God this could be the
+- **02:02** particle and wave this could be as above
+- **02:05** so below
+- **02:06** and of course if we look at the if the
+- **02:08** earth plane is also what goes around
+- **02:10** comes around we are looking at line and
+- **02:13** circle Lord and God Sun and shield Sun
+- **02:19** and sky pillar and cloud thumb and
+- **02:23** fingers mind and warp mind and world a
+- **02:27** light flame and Lantern prophet and
+- **02:34** disciples that's going to be a circle of
+- **02:35** 12 when you when you actually make the
+- **02:38** full not out with all the fingers of the
+- **02:40** hand turns out there's 12 on the circle
+- **02:43** so there's 12 houses 12 prophets map
+- **02:47** table fossils 12 tribes 12 Imams 12
+- **02:53** hours day 12 hours night the mountain
+- **02:56** and and the K this is the mountain this
+- **02:58** is the cave we have ass caliber and the
+- **03:01** round table conductor in Orchestra
+- **03:05** monochord and and and the octave DNA in
+- **03:09** the organs same in different all the
+- **03:15** linear extensions as compliments to all
+- **03:19** of the spherical circular expansions
+- **03:24** circle in line how do you square circle
+- **03:26** with a straight edge and a compass was
+- **03:29** not doable it can't be done
+- **03:30** mathematically but it was pointing to
+- **03:33** the fact that the alphabet comes from
+- **03:34** trying to do it putting a circle and a
+- **03:37** line together

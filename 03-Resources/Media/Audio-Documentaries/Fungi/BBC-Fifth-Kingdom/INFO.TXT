@@ -1,0 +1,38 @@
+Fungi - The Fifth Kingdom - BBC Radio Documentary Series - cheops
+-----------------------------------------------------------------
+
+Series featuring scientists and amateur naturalists studying fungi, one of the largest and most fascinating groups of organisms on the planet.
+
+Five episodes of approximately 15 minutes each.
+
+Episode 1: A World Wide Web
+---------------------------
+Mycologists at the Royal Botanic Gardens, Kew, reveal some extraordinary facts. 
+
+Episode 2: What Lies Beneath
+----------------------------
+More fungi can be found in woodlands than anywhere else, appearing every autumn as their fruit bodies burst through the ground. Lynne Boddy of Cardiff University reveals the complex struggles which take place underground.
+
+Episode 3: Beyond Woodland
+--------------------------
+From red to yellow and pink to green, amateur naturalist Rosemary Winnall reveals the colourful delights of her garden where endless waxcaps, fairy clubs and earth tongues emerge.
+
+Episode 4: Anywhere and Everywhere
+----------------------------------
+Fungi can survive in any type of habitat. They form intricate relationships with their hosts or partners, manipulating the growth of plants and the relationship they have with insects.
+
+Episode 5: A Fungus Amongst Us
+------------------------------
+For all their fascinating lifestyles, fungi can be friend or foe. Mycologists reveal the impact that fungi have had on the planet and how our survival is dependent on their own. 
+
+First broadcast from 20080114 to 20080118.
+
+---------------------
+Type : mpeg 1 layer III
+Bitrate : 128
+Mode : joint stereo
+Frequency : 48000 Hz
+Encoder : Lame 3.96
+---------------------
+/c\ Ubuntu+MythTV+LAME+DVB-T=MP3 http://cheops.fm
+http://radioarchive.cc - the Spoken-Word Radio Torrent Archive

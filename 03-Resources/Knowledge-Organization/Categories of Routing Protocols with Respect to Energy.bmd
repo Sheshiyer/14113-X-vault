@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<map name="Categories of Routing Protocols with Respect to Energy" document_type="Blumind" editor_version="1.3.21.1">
+  <!--Create by Blumind, you can download it free from http://www.blumind.org/download-->
+  <info>
+    <author>Anon</author>
+    <company>
+    </company>
+    <version>1.0</version>
+  </info>
+  <layout>TREE_RIGHT</layout>
+  <attributes>
+    <item name="editor_show_sidebar">True</item>
+  </attributes>
+  <style>
+    <back_color>Window</back_color>
+    <fore_color>WindowText</fore_color>
+    <line_color>ControlDarkDark</line_color>
+    <border_color>ControlDark</border_color>
+    <node_back_color>Control</node_back_color>
+    <node_fore_color>ControlText</node_fore_color>
+    <select_color>Highlight</select_color>
+    <hover_color>HotTrack</hover_color>
+    <link_line_color>ActiveCaption</link_line_color>
+  </style>
+  <nodes>
+    <node text="Categories of Routing Protocols &#xD;&#xA;with Respect to Energy">
+      <style>
+        <back_color>ActiveCaption</back_color>
+        <fore_color>ActiveCaptionText</fore_color>
+        <border_color>GradientActiveCaption</border_color>
+        <padding>12</padding>
+      </style>
+      <nodes>
+        <node text="Mobility-Aware">
+          <nodes>
+            <node text="OBSFR" />
+            <node text="IM-SIMPLE" />
+            <node text="M-ATTEMPT" />
+          </nodes>
+        </node>
+        <node text="Thermal-Aware">
+          <nodes>
+            <node text="TARA" />
+            <node text="ATTEMPT" />
+            <node text="M-ATTEMPT" />
+            <node text="RE-ATTEMPT" />
+          </nodes>
+        </node>
+        <node text="Link-Aware">
+          <nodes>
+            <node text="CO-LAEEBA" />
+            <node text="LAEEBA" />
+            <node text="EAR" />
+            <node text="EAWD" />
+          </nodes>
+        </node>
+        <node text="Distance-Aware">
+          <nodes>
+            <node text="DARE" />
+            <node text="OCER" />
+            <node text="SIMPLE" />
+            <node text="IM-SIMPLE" />
+          </nodes>
+        </node>
+      </nodes>
+    </node>
+  </nodes>
+</map>

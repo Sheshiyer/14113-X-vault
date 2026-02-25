@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "last_updated": "2026-01-26",
+    "source": "Tryambakam Noesis Evolution",
+    "total_engines": 13
+  },
+  "engines": [
+    {
+      "id": "numerology",
+      "name": "Numerology",
+      "category": "foundational",
+      "description": "Life path, expression, and soul urge calculations from birth date and name",
+      "breath_pattern": "calm_steady",
+      "consciousness_level": "dormant",
+      "required_inputs": ["date", "full_name"],
+      "optional_inputs": ["birth_name"],
+      "primary_outputs": ["life_path", "expression_number", "soul_urge", "personality_number"],
+      "calculation_type": "numerological",
+      "processing_time_ms": 50,
+      "integration_points": ["human_design", "enneagram", "gene_keys"]
+    },
+    {
+      "id": "human_design",
+      "name": "Human Design",
+      "category": "systemic",
+      "description": "Complete bodygraph analysis with astronomical precision (type, strategy, authority, gates, channels)",
+      "breath_pattern": "rhythmic_balanced",
+      "consciousness_level": "seeking",
+      "required_inputs": ["date", "time", "location", "timezone"],
+      "optional_inputs": [],
+      "primary_outputs": ["type", "strategy", "authority", "defined_centers", "gates", "channels", "profile"],
+      "calculation_type": "astronomical",
+      "processing_time_ms": 150,
+      "integration_points": ["gene_keys", "vimshottari", "numerology"],
+      "astronomical_precision": "swiss_ephemeris_equivalent",
+      "coordinate_offsets": {
+        "personality": -120,
+        "design": 72
+      }
+    },
+    {
+      "id": "biorhythm",
+      "name": "Biorhythm",
+      "category": "cyclical",
+      "description": "Physical, emotional, and intellectual cycle analysis",
+      "breath_pattern": "energetic_rapid",
+      "consciousness_level": "dormant",
+      "required_inputs": ["date"],
+      "optional_inputs": ["target_date", "cycles"],
+      "primary_outputs": ["physical_cycle", "emotional_cycle", "intellectual_cycle", "critical_days"],
+      "calculation_type": "cyclical",
+      "processing_time_ms": 75,
+      "integration_points": ["vedicclock_tcm", "vimshottari"]
+    },
+    {
+      "id": "vimshottari",
+      "name": "Vimshottari Dasha",
+      "category": "temporal",
+      "description": "Vedic planetary period timeline mapping with mahadasha, antardasha, pratyantardasha",
+      "breath_pattern": "deep_slow",
+      "consciousness_level": "practicing",
+      "required_inputs": ["date", "time", "location", "timezone"],
+      "optional_inputs": ["dasha_depth"],
+      "primary_outputs": ["current_mahadasha", "current_antardasha", "dasha_timeline", "planetary_periods"],
+      "calculation_type": "astronomical",
+      "processing_time_ms": 200,
+      "integration_points": ["human_design", "vedicclock_tcm", "gene_keys"]
+    },
+    {
+      "id": "tarot",
+      "name": "Tarot",
+      "category": "divinatory",
+      "description": "Card spread interpretation and archetypal guidance",
+      "breath_pattern": "intentional_held",
+      "consciousness_level": "seeking",
+      "required_inputs": ["question"],
+      "optional_inputs": ["spread_type", "deck"],
+      "primary_outputs": ["cards_drawn", "positions", "interpretations", "synthesis"],
+      "calculation_type": "stochastic",
+      "processing_time_ms": 100,
+      "integration_points": ["iching", "gene_keys", "enneagram"]
+    },
+    {
+      "id": "iching",
+      "name": "I-Ching",
+      "category": "divinatory",
+      "description": "Hexagram generation and wisdom oracle with changing lines",
+      "breath_pattern": "deep_slow",
+      "consciousness_level": "seeking",
+      "required_inputs": ["question"],
+      "optional_inputs": ["method", "include_changing_lines"],
+      "primary_outputs": ["primary_hexagram", "changing_lines", "resulting_hexagram", "interpretation"],
+      "calculation_type": "stochastic",
+      "processing_time_ms": 80,
+      "integration_points": ["gene_keys", "tarot", "human_design"]
+    },
+    {
+      "id": "gene_keys",
+      "name": "Gene Keys",
+      "category": "transformational",
+      "description": "64 archetypal keys with shadow, gift, and siddhi pathways",
+      "breath_pattern": "deep_slow",
+      "consciousness_level": "practicing",
+      "required_inputs": ["date", "time", "location", "timezone"],
+      "optional_inputs": [],
+      "primary_outputs": ["life_work", "evolution", "radiance", "purpose", "genetic_pathways"],
+      "calculation_type": "astronomical",
+      "processing_time_ms": 175,
+      "integration_points": ["human_design", "iching", "vimshottari"],
+      "note": "Uses same astronomical engine as Human Design with shadow-gift-siddhi overlay"
+    },
+    {
+      "id": "enneagram",
+      "name": "Enneagram",
+      "category": "typological",
+      "description": "Personality type resonance mapping with wing and instinct analysis",
+      "breath_pattern": "calm_steady",
+      "consciousness_level": "seeking",
+      "required_inputs": ["date"],
+      "optional_inputs": ["full_name", "personality_indicators"],
+      "primary_outputs": ["primary_type", "wing", "triadic_center", "instinctual_variant", "growth_path"],
+      "calculation_type": "numerological",
+      "processing_time_ms": 90,
+      "integration_points": ["numerology", "tarot", "gene_keys"]
+    },
+    {
+      "id": "sacred_geometry",
+      "name": "Sacred Geometry",
+      "category": "symbolic",
+      "description": "Pattern generation and visualization (flower of life, metatron's cube, etc.)",
+      "breath_pattern": "calm_steady",
+      "consciousness_level": "practicing",
+      "required_inputs": ["date"],
+      "optional_inputs": ["pattern_type", "dimensions", "complexity"],
+      "primary_outputs": ["primary_pattern", "geometric_properties", "numerological_correlations", "svg_visualization"],
+      "calculation_type": "geometric",
+      "processing_time_ms": 120,
+      "integration_points": ["numerology", "gene_keys", "sigil_forge"]
+    },
+    {
+      "id": "sigil_forge",
+      "name": "Sigil Forge",
+      "category": "generative",
+      "description": "Intention-based symbol synthesis and manifestation sigils",
+      "breath_pattern": "intentional_held",
+      "consciousness_level": "embodying",
+      "required_inputs": ["intention"],
+      "optional_inputs": ["style", "complexity", "elements"],
+      "primary_outputs": ["sigil_svg", "activation_protocol", "charging_methods", "symbolic_breakdown"],
+      "calculation_type": "generative",
+      "processing_time_ms": 250,
+      "integration_points": ["sacred_geometry", "tarot", "iching"]
+    },
+    {
+      "id": "vedicclock_tcm",
+      "name": "VedicClock-TCM",
+      "category": "temporal",
+      "description": "Multi-dimensional consciousness optimization: Vedic time cycles + TCM organ rhythms",
+      "breath_pattern": "rhythmic_balanced",
+      "consciousness_level": "practicing",
+      "required_inputs": ["date", "time", "location", "timezone"],
+      "optional_inputs": ["target_date", "days_ahead", "dasha_depth", "optimization_focus"],
+      "primary_outputs": [
+        "panchanga",
+        "organ_clock_24h",
+        "five_elements_balance",
+        "constitutional_score",
+        "optimal_practices",
+        "timeline_forecast"
+      ],
+      "calculation_type": "astronomical",
+      "processing_time_ms": 400,
+      "integration_points": ["vimshottari", "biorhythm", "face_reading"],
+      "constitutional_mapping": {
+        "vata": ["air", "ether", "lungs", "kidneys"],
+        "pitta": ["fire", "water", "liver", "heart"],
+        "kapha": ["earth", "water", "spleen", "kidneys"]
+      }
+    },
+    {
+      "id": "face_reading",
+      "name": "Face Reading",
+      "category": "diagnostic",
+      "description": "TCM and Vedic facial analysis with health indicators and constitutional assessment",
+      "breath_pattern": "calm_steady",
+      "consciousness_level": "seeking",
+      "required_inputs": ["image_data"],
+      "optional_inputs": ["birth_date", "analysis_system"],
+      "primary_outputs": [
+        "facial_zones",
+        "constitutional_indicators",
+        "element_balance",
+        "health_markers",
+        "organ_reflections"
+      ],
+      "calculation_type": "analytical",
+      "processing_time_ms": 800,
+      "integration_points": ["vedicclock_tcm", "biofield"]
+    },
+    {
+      "id": "biofield",
+      "name": "Biofield Analyzer",
+      "category": "energetic",
+      "description": "Advanced energetic field analysis with spatial, temporal, and spectral metrics",
+      "breath_pattern": "coherent_sustained",
+      "consciousness_level": "embodying",
+      "required_inputs": ["biometric_consent"],
+      "optional_inputs": [
+        "birth_date",
+        "image_data",
+        "video_data",
+        "analysis_mode",
+        "analysis_depth",
+        "integrate_with_face_reading",
+        "integrate_with_vedic",
+        "integrate_with_tcm"
+      ],
+      "primary_outputs": [
+        "spatial_metrics",
+        "temporal_dynamics",
+        "color_coherence",
+        "composite_scores",
+        "multi_modal_integration",
+        "practice_suggestions"
+      ],
+      "calculation_type": "computational",
+      "processing_time_ms": 1500,
+      "integration_points": ["face_reading", "vedicclock_tcm", "biorhythm"],
+      "spatial_metrics": [
+        "fractal_dimension",
+        "entropy_form_coefficient",
+        "hurst_exponent",
+        "dfa_analysis",
+        "lyapunov_exponent"
+      ],
+      "privacy": {
+        "consent_required": true,
+        "store_analysis_only": true,
+        "retention_days": 30,
+        "compliance": ["GDPR", "CCPA"]
+      }
+    }
+  ],
+  "engine_categories": {
+    "foundational": ["numerology", "biorhythm"],
+    "systemic": ["human_design"],
+    "cyclical": ["biorhythm"],
+    "temporal": ["vimshottari", "vedicclock_tcm"],
+    "divinatory": ["tarot", "iching"],
+    "transformational": ["gene_keys"],
+    "typological": ["enneagram"],
+    "symbolic": ["sacred_geometry"],
+    "generative": ["sigil_forge"],
+    "diagnostic": ["face_reading"],
+    "energetic": ["biofield"]
+  },
+  "breath_patterns": {
+    "calm_steady": ["numerology", "enneagram", "sacred_geometry", "face_reading"],
+    "rhythmic_balanced": ["human_design", "vedicclock_tcm"],
+    "deep_slow": ["vimshottari", "gene_keys", "iching"],
+    "energetic_rapid": ["biorhythm"],
+    "intentional_held": ["tarot", "sigil_forge"],
+    "coherent_sustained": ["biofield"]
+  },
+  "consciousness_levels": {
+    "dormant": ["numerology", "biorhythm"],
+    "seeking": ["human_design", "tarot", "iching", "enneagram", "face_reading"],
+    "practicing": ["vimshottari", "gene_keys", "sacred_geometry", "vedicclock_tcm"],
+    "integrating": [],
+    "embodying": ["sigil_forge", "biofield"],
+    "transcending": []
+  }
+}

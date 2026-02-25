@@ -1,0 +1,75 @@
+---
+title: David Icke - I Am Me I Am Free
+author: Unknown
+type: book
+format: PDF
+file_size: 1.45 MB
+original_filename: David Icke - I Am Me I Am Free.pdf
+para_bucket: Resources
+para_category: Critical-Thinking
+enneagram_primary: Type 8 - Terpsichore (Challenger)
+enneagram_secondary: Type 5 - Melpomene (Investigator)
+hormone_primary: Adrenaline
+classification_confidence: 0.65
+content_type: Book - Conspiracy
+mocs:
+- '[[David-Icke-Collection]]'
+reading_status: Unread
+reading_priority: Medium
+reading_progress: 0
+date_added: '2026-01-25'
+date_processed: '2026-01-25T10:29:40.810026'
+sha256: 0935b34ffd9027160ba58fdd946559d071ac9a299bd271a4eca630fbfb3f0733
+duplicate_status: unique
+---
+
+# David Icke - I Am Me I Am Free
+
+## Book Information
+
+**Author**: Unknown  
+**Format**: PDF  
+**Reading Status**: Unread | **Priority**: Medium
+
+**Enneagram**: Type 8 - Terpsichore (Challenger) → Type 5 - Melpomene (Investigator)  
+**PARA**: Resources / Critical-Thinking
+
+---
+
+## Maps of Content
+
+- [[David-Icke-Collection]]
+
+---
+
+## Original Book
+
+![[David Icke - I Am Me I Am Free.pdf]]
+
+---
+
+## Reading Notes
+
+### Key Takeaways
+
+- 
+
+### Action Items
+
+- [ ] 
+
+### Quotes
+
+> 
+
+---
+
+## Metadata
+
+**Source**: Original file embedded above  
+**Processed**: 2026-01-25T10:29:40.810026  
+**Classification Confidence**: 65%
+
+---
+
+*Part of [[Books-Master-Index]]*

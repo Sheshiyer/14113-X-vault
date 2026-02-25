@@ -1,0 +1,74 @@
+{
+  "brand": "Tryambakam Noesis",
+  "generated_at": "2026-01-31T02:45:00+05:30",
+  "output_context": "landing-page",
+  "brand_context": {
+    "colors": {
+      "primary": { "name": "Deep Ink", "hex": "#1A1A2E" },
+      "secondary": { "name": "Bone", "hex": "#F5F0E8" },
+      "accent": { "name": "Aged Gold", "hex": "#B8860B" },
+      "support": { "name": "Stone Grey", "hex": "#6B6B6B" },
+      "warning": { "name": "Terracotta", "hex": "#C65D3B" }
+    },
+    "mood_keywords": ["grounded", "substantial", "architectural", "timeless", "depth", "discipline", "craft"],
+    "avoid": ["ethereal", "floating", "cosmic", "soft", "warm", "nurturing", "tech startup", "mystical", "occult", "stock photo", "posed faces"],
+    "imagery_style": "High contrast, natural light, textural focus, partial human presence",
+    "illustration_style": "Line-based, high density, single color, technical/architectural quality",
+    "graphic_elements": "Subtle grid patterns, circles/arcs (compass constructions), paper texture, 1px lines, no rounded corners",
+    "product_essence": "A living inquiry field that trains humans to recognize, refine, and consciously author the meaning systems they operate within",
+    "materials": ["stone", "wood", "paper", "metal", "leather"]
+  },
+  "prompts": [
+    {
+      "asset_id": "hero-001",
+      "type": "hero-image",
+      "service": "fal-flux",
+      "prompt": "A grounded architectural scene, deep blue-black ink tones, philosophical journal on dark stone surface, aged gold accent highlights, natural lighting, high contrast, textural paper, minimalist, no soft edges, atemporal craft aesthetic",
+      "negative_prompt": "ethereal, floating, cosmic, soft, warm colors, nurturing, tech startup, mystical, occult, stock photo",
+      "parameters": {
+        "width": 1920,
+        "height": 1080,
+        "guidance_scale": 7.5,
+        "num_inference_steps": 50,
+        "model": "flux-pro"
+      },
+      "brand_alignment": {
+        "primary_color": "#1A1A2E",
+        "mood": "grounded depth",
+        "style": "architectural, textural, high contrast"
+      }
+    },
+    {
+      "asset_id": "product-001",
+      "type": "product-shot",
+      "service": "fal-flux",
+      "prompt": "Minimalist philosophical journal book, leather-bound with subtle gold embossing, resting on a dark slate surface, deep navy blue-black tones, single warm spotlight from above, high contrast dramatic lighting, textural paper pages visible, architectural composition, sharp edges, matte finish, no decoration, substance over ornament",
+      "negative_prompt": "ethereal, floating, cosmic, soft, warm colors, nurturing, tech startup, mystical, occult, stock photo, glossy, plastic",
+      "parameters": {
+        "width": 1200,
+        "height": 800,
+        "guidance_scale": 7.5,
+        "num_inference_steps": 50,
+        "model": "flux-pro"
+      },
+      "brand_alignment": {
+        "primary_color": "#1A1A2E",
+        "mood": "substance, grounded",
+        "materials": ["leather", "stone", "paper"]
+      }
+    },
+    {
+      "asset_id": "model-001",
+      "type": "3d-model",
+      "service": "hunyuan3d",
+      "prompt": "leather-bound philosophical journal book, dark cover, clean geometric edges, matte finish",
+      "parameters": {
+        "bbox_condition": [1.5, 1.0, 0.2]
+      },
+      "brand_alignment": {
+        "materials": ["leather", "paper"],
+        "finish": "matte"
+      }
+    }
+  ]
+}

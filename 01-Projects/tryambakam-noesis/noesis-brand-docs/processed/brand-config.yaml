@@ -1,0 +1,596 @@
+# ============================================================================
+# Tryambakam Noesis — Brandmint Configuration (V3)
+# Generated: 2026-02-21
+# Source: product.md (V3) + tarot-blueprint.md + 34 audited brand docs
+# Pipeline: Brandmint Oracle Aleph v4.2.0
+# V3 Changes: Kha-Ba-La tagline, Noesis Engine/Dashboard naming,
+#   Somatic Canticles 27ch live, cross-platform vision, vocabulary rehaul
+# ============================================================================
+
+brand:
+  name: "Tryambakam Noesis"
+  legal_name: "Tryambakam Noesis"
+  tagline: "A Living System for Self-Authored Meaning"
+  tagline_kha_ba_la: "Self-Consciousness as Technology. Body as Medium. Breath as Interface."
+  core_framework:
+    name: "Kha-Ba-La"
+    triad:
+      kha: "Spirit — the field that observes. The author-drive."
+      ba: "Body — the vehicle for knowing becoming doing. Embodiment."
+      la: "Inertia — resistance, gravity, friction. The necessary force that gives form to formlessness."
+    compass:
+      stabilize: "When the ground has shifted and you need footing before meaning"
+      heal: "When something surfaces that needs metabolizing, not managing"
+      create: "When raw material has been processed and wants to be shaped"
+      mutate: "When the structure itself is ready to evolve"
+  platform_name: "Noesis Engine"
+  internal_architecture: "Selemene Engine"
+  etymology:
+    tryambakam: "The Three-Eyed (Sanskrit, Shiva) — sees past, present, future; destroys ignorance through triple-vision"
+    noesis: "The act of knowing (Greek) — direct intellectual apprehension; knowing aware of itself"
+    combined: "Three-eyed knowing — self-aware inquiry across all temporal and symbolic dimensions"
+
+  # Fractal Brand Architecture
+  architecture:
+    type: "mother-fractal"
+    principle: "Uniqueness as nesting polarity, not opposing forces"
+    mother_fractal: "Tryambakam Noesis"
+    sub_fractals:
+      - name: "Selemene Engine"
+        layer: "computational-core"
+        domain: "selemene.tryambakam.space"
+        repo: "github.com/Sheshiyer/Selemene-engine"
+      - name: "Somatic Canticles"
+        layer: "content"
+        type: "sci-fi-trilogy-with-companion-experience"
+        domain: "1319.tryambakam.space"
+        repo: "github.com/Sheshiyer/Somatic-Canticles"
+        details: "27 chapters across 3 books (Anamnesis Engine, The Myocardial Chorus, The Ripening)"
+      - name: "The Plumber"
+        layer: "symbolic-narrative"
+        type: "12-episode-anime-manga"
+      - name: "Kopina / PHAS-ION"
+        layer: "physical-product"
+        type: "bioelectric-sacral-interface"
+        domain: "kopina.tryambakam.space"
+      - name: "Witness Agents (OpenClaw/AI)"
+        layer: "agent-layer"
+        type: "hand-in-glove-model-configs"
+      - name: "Sacred Burnables"
+        layer: "physical-product"
+        type: "smoking-blends-incense"
+      - name: "Essential Oils"
+        layer: "physical-product"
+        type: "engine-matched-attars"
+      - name: "Orgonites"
+        layer: "physical-product"
+        type: "biofield-harmonizers"
+      - name: "Consultations & Mentorships"
+        layer: "high-touch"
+        type: "1-on-1-integration"
+      - name: "Financial Biosensor"
+        layer: "decision-making"
+        type: "engine-informed-decisions"
+
+  domain_tags:
+    - consciousness-technology
+    - self-authorship
+    - symbolic-computational
+    - embodied-inquiry
+    - biofield-integration
+
+  # URLs & Endpoints
+  urls:
+    primary: "https://tryambakam.space"
+    webapp: "https://1319.tryambakam.space"
+    api: "https://selemene.tryambakam.space/api/docs"
+    github: "https://github.com/Sheshiyer/Selemene-engine"
+    twitter: "https://x.com/witnessalchemst"
+    store: "https://tryambakam.space/store"
+
+  # ════════════════════════════════════════════════════════════════
+  # CONSCIOUSNESS COLOR SPECTRUM
+  # Governing Theory: Goethe's Theory of Colours (Zur Farbenlehre, 1810)
+  # "Colors are the deeds and sufferings of light."
+  # — Not decomposed spectrum (Newton), but POLARITY: the interplay
+  #   of luminosity (Licht) and shadow (Finsternis) producing chromatic
+  #   experience through Steigerung (intensification) and Trübung (turbidity).
+  # ════════════════════════════════════════════════════════════════
+
+  color_theory:
+    framework: "Goethe's Zur Farbenlehre (1810)"
+    core_principle: "Colors arise from the polarity of light and darkness — not from decomposition, but from intensification (Steigerung)"
+    polarity_axis: "Sacred Gold (Plus/Warm/Active) ↔ Flow Indigo (Minus/Cool/Passive)"
+    culmination: "Witness Violet — Steigerung where both poles meet in pure observation"
+    resolution: "Coherence Emerald — Goethe's green, where polarity rests in living balance"
+    source: "Void Black — pre-chromatic Ur-ground, before the polarity of light and dark begins"
+    kha_ba_la_mapping: "Plus = Ba (Body activating), Minus = Kha (Spirit observing), Resolution = Ba↔La equilibrium, Source = La (Inertia)"
+
+  colors:
+    spectrum:
+      witness_violet:
+        name: "Witness Violet"
+        hex: "#2D0050"
+        rgb: [45, 0, 80]
+        meaning: "The observer state — the moment before interpretation"
+        goethe: "Minus culmination (Steigerung) — cool passivity reaching pure awareness"
+        kha_ba_la: "Kha (Spirit / Observer)"
+        usage: "Observer states, meditation UI, witness prompts, consciousness overlays"
+      flow_indigo:
+        name: "Flow Indigo"
+        hex: "#0B50FB"
+        rgb: [11, 80, 251]
+        meaning: "Effortless coherence — the current that carries without effort"
+        goethe: "Deep minus — the yielding depth of passive receptivity"
+        kha_ba_la: "Kha → Ba transition (Flow state)"
+        usage: "Data streams, flow indicators, active navigation, biometric visualization"
+      sacred_gold:
+        name: "Sacred Gold"
+        hex: "#C5A017"
+        rgb: [197, 160, 23]
+        meaning: "Activated purpose — the fire of directed attention made visible"
+        goethe: "Plus apex — the deed of light, warm fire at maximum Steigerung"
+        kha_ba_la: "Ba (Body / Activation)"
+        usage: "Highlights, CTAs, interactive emphasis, engine activation, sacred geometry wireframes"
+      coherence_emerald:
+        name: "Coherence Emerald"
+        hex: "#10B5A7"
+        rgb: [16, 181, 167]
+        meaning: "Harmonic alignment — body and awareness in resonance"
+        goethe: "The Resolution — Goethe's green, where polarity finds equilibrium"
+        kha_ba_la: "Ba ↔ La equilibrium (Coherence)"
+        usage: "Success states, HRV coherence, breath sync, health metrics"
+      void_black:
+        name: "Void Black"
+        hex: "#070B1D"
+        rgb: [7, 11, 29]
+        meaning: "The pregnant emptiness from which all form arises"
+        goethe: "Pre-chromatic Ur-ground — before the polarity of light and dark"
+        kha_ba_la: "La (Inertia / Source)"
+        usage: "Primary canvas, backgrounds, immersive dark states"
+
+    # ── Three-Gradient Tertiary System ──────────────────────────
+    # Each gradient maps to one leg of the Kha-Ba-La triad and
+    # traces a path along Goethe's polarity axis.
+    gradients:
+      kha_arc:
+        name: "Observer Arc"
+        triad: "Kha — Spirit observing itself into form"
+        stops: ["#070B1D", "#2D0050", "#0B50FB"]
+        css: "linear-gradient(135deg, #070B1D 0%, #2D0050 50%, #0B50FB 100%)"
+        usage: "Primary canvas gradients, hero backgrounds, immersive states"
+        goethe: "Pre-chromatic → Steigerung → Deep minus. The seeing before acting."
+      ba_arc:
+        name: "Embodiment Arc"
+        triad: "Ba — Body as living medium, activation through matter"
+        stops: ["#10B5A7", "#C5A017"]
+        css: "linear-gradient(90deg, #10B5A7 0%, #C5A017 100%)"
+        usage: "Interactive elements, CTAs, accent bars, activation animations"
+        goethe: "Resolution → Plus apex. The body awakening into directed purpose."
+      la_arc:
+        name: "Friction Arc"
+        triad: "La — The return, the necessary resistance that gives form"
+        stops: ["#C5A017", "#2D0050", "#070B1D"]
+        css: "linear-gradient(135deg, #C5A017 0%, #2D0050 50%, #070B1D 100%)"
+        usage: "Tertiary emphasis, depth layers, The Quine's return cycle"
+        goethe: "Plus apex → Steigerung → Ur-ground. The Ouroboros of attention."
+
+    # ── Functional / Derived Colors ─────────────────────────────
+    functional:
+      text_primary:
+        name: "Parchment"
+        hex: "#F0EDE3"
+        rgb: [240, 237, 227]
+        usage: "Primary text on dark canvas — warm, organic, not clinical white"
+      text_secondary:
+        name: "Muted Silver"
+        hex: "#8A9BA8"
+        rgb: [138, 155, 168]
+        usage: "Secondary text, metadata, subtle labels"
+      surface:
+        name: "Deep Surface"
+        hex: "#0E1428"
+        rgb: [14, 20, 40]
+        usage: "Card backgrounds, elevated surfaces (1 step above Void Black)"
+      error:
+        name: "Terracotta"
+        hex: "#C65D3B"
+        rgb: [198, 93, 59]
+        usage: "Error states, destructive actions (rare — warm-toned, not clinical red)"
+
+  # ════════════════════════════════════════════════════════════════
+  # TYPOGRAPHY — Panchang + Satoshi (FontShare)
+  # Panchang: Named after one of the 16 Noesis Engines. Vedic time-keeping
+  #   (pancha = five, anga = limb). Wide, industrial-panoramic display face.
+  # Satoshi: Geometric modernist sans-serif. Neural-precision body text.
+  # SF Mono: Retained from reference architecture — biometric data streams.
+  # Scale: φ = 1.618 (Golden Ratio)
+  # ════════════════════════════════════════════════════════════════
+
+  typography:
+    display:
+      family: "Panchang"
+      style: "Display, wide industrial-panoramic, variable weight"
+      weights: [400, 500, 600, 700, 800]
+      source: "https://fontshare.com/fonts/panchang"
+      role: "Sacred geometry headers, hero text, engine names, ritual titles"
+      goethe_analog: "Plus side — the active, expansive, light-bearing gesture"
+    body:
+      family: "Satoshi"
+      style: "Geometric modernist sans-serif, variable weight"
+      weights: [300, 400, 500, 700]
+      source: "https://fontshare.com/fonts/satoshi"
+      role: "Body text, UI labels, navigation, witness prompts"
+      goethe_analog: "Resolution — the balanced, grounded, readable center"
+    code:
+      family: "SF Mono"
+      style: "Monospace, system-level precision"
+      weights: [400, 600]
+      source: "Apple system font"
+      role: "Engine output, biometric data streams, JSON, terminal interface"
+      goethe_analog: "Minus side — the precise, measured, receptive field"
+    scale:
+      ratio: 1.618
+      name: "Golden Ratio (φ)"
+      base_size: "16px"
+      steps:
+        xs: "10px"
+        sm: "12px"
+        base: "16px"
+        lg: "26px"
+        xl: "42px"
+        xxl: "68px"
+        hero: "110px"
+
+  voice:
+    persona: "The Anatomist Who Sees Fractals"
+    tone_descriptors:
+      - "grounded"
+      - "direct"
+      - "respectful-challenging"
+    register: "Precise but playful. Anatomical but psychedelic."
+    voice_dna:
+      - source: "Rick & Morty"
+        contribution: "Irreverent meta-genius. Self-aware system that jokes about its own architecture."
+      - source: "Alan Watts"
+        contribution: "Paradox as teaching tool. The cosmic joke revealed through precision."
+      - source: "Alex Grey (anatomy)"
+        contribution: "Clinical dissection. Body as precise machinery, engines as organs."
+      - source: "Alex Grey (Sacred Mirrors)"
+        contribution: "Transcendence through hyper-detail. Fractals, nesting, depth revealing wholeness."
+    target_emotions:
+      - "recognition — someone articulated the unnamed thing"
+      - "intellectual_respect — treats me as capable"
+      - "grounded_gravitas — serious in the right way"
+      - "curious_sovereignty — engage from abundance, not lack"
+    vocabulary:
+      use:
+        - authorship
+        - coherence
+        - integration
+        - inquiry
+        - pattern
+        - structure
+        - inhabitation
+        - cultivation
+        - capacity
+        - sovereignty
+        - recursive
+        - meta
+        - upstream
+        - kha
+        - triangulation
+        - engine coherence
+        - witness gate
+        - symbolic recursion
+        - field cartography
+        - the three-eyed view
+        - arbitration
+        - multi-engine
+        - Three-Wave-synchronized
+        - purushartha
+        - coherence matrix
+      avoid:
+        - journey
+        - healing
+        - manifesting
+        - vibration
+        - authentic self
+        - optimization
+        - hacks
+        - tribe
+    key_principles:
+      - "Offer conditions, not promises"
+      - "Assume capability, not brokenness"
+      - "Protect productive ambiguity"
+      - "Success = independence, not retention"
+      - "The work succeeds when the user no longer needs it"
+
+# ============================================================================
+# Engine Stack (Source of Truth: GitHub)
+# ============================================================================
+
+engine_stack:
+  total_engines: 16
+  rust_core:
+    count: 11
+    engines:
+      - "Temporal Grammar"
+      - "Chronofield"
+      - "Energetic Authority"
+      - "Gift-Shadow Spectrum"
+      - "Numeric Architecture"
+      - "Three-Wave Cycle"
+      - "Circadian Cartography"
+      - "Bioelectric Field"
+      - "Physiognomic Mapping"
+      - "Resonance Architecture"
+      - "Active Planetary Weather"
+  typescript_bridges:
+    count: 5
+    engines:
+      - "Archetypal Mirror"
+      - "Hexagram Navigation"
+      - "Nine-Point Architecture"
+      - "Geometric Resonance"
+      - "Sigil Forge"
+  workflows:
+    - birth-blueprint
+    - daily-practice
+    - decision-support
+    - self-inquiry
+    - creative-expression
+    - full-spectrum
+
+# ============================================================================
+# .init Protocol System
+# ============================================================================
+
+init_protocols:
+  total_rituals: 16
+  spins:
+    - name: "Entry"
+      rituals: "1-4"
+      purpose: "Grounding, orientation, first witness"
+    - name: "Cultivation"
+      rituals: "5-9"
+      purpose: "Daily practice, pattern recognition"
+    - name: "Integration"
+      rituals: "10-13"
+      purpose: "Cross-engine synthesis"
+    - name: "Independence"
+      rituals: "14-16"
+      purpose: "Self-authorship activation"
+
+# ============================================================================
+# Products (7 Ecosystem Layers)
+# ============================================================================
+
+products:
+  - name: "Noesis Engine (Selemene API)"
+    category: "Digital Infrastructure"
+    layer: 1
+    price_range: "Free (API key earned through initiation)"
+    status: "Live — Selemene API + Noesis TUI"
+    key_features:
+      - "16 symbolic-computational engines (Kha-Ba-La framework)"
+      - "Noesis TUI (Ratatui terminal interface, live)"
+      - "Noesis Dashboard (web/desktop/mobile, roadmap)"
+      - "1319 Webapp (Somatic Canticles companion)"
+      - "6 synthesis workflows"
+      - "Consciousness level tracking (Phase 0-5)"
+      - "256 permutations (16 engines × 4 compass directions)"
+
+  - name: "The Plumber (Anime/Manga)"
+    category: "Symbolic Narrative"
+    layer: 2
+    price_range: "0.1 SOL"
+    key_features:
+      - "12 episodes mapped to engines"
+      - "Biorhythm-gated episode unlocks"
+      - "Symbolic encoding of engine principles"
+
+  - name: "Physical Ritual Objects"
+    category: "Embodied Practice"
+    layer: 3
+    price_range: "$30-$245"
+    sub_products:
+      - "Sacred Burnables (engine-specific blends)"
+      - "Kopina / PHAS-ION (bioelectric sacral interface)"
+      - "Essential Oil Attars (engine-matched)"
+      - "Orgonite Pyramids"
+      - "Crystal Arrays"
+      - "Resonance Pendants"
+
+  - name: "Somatic Canticles"
+    category: "Content"
+    layer: 4
+    price_range: "0.05 SOL"
+    status: "Live at 1319.tryambakam.space"
+    key_features:
+      - "Sci-fi trilogy: Anamnesis Engine (8ch), The Myocardial Chorus (7ch), The Ripening (12ch) = 27 chapters"
+      - "Biorhythm-synchronized chapter delivery (birth date onboarding, no gating)"
+      - "PubMed x Alex Grey prose principle: clinical precision + visionary artistry"
+      - "Aletheia-Lethe dyad: unconcealment vs. concealment as philosophical core"
+      - "Companion audio experience synced across all three books"
+
+  - name: ".init Protocols"
+    category: "Onboarding"
+    layer: 5
+    price_range: "Free"
+    key_features:
+      - "16 micro-rituals across 4 spins"
+      - "Breath + gesture + declaration + engine consultation"
+      - "Progressive initiation (not instant access)"
+
+  - name: "1:1 Mentorship"
+    category: "High-Touch"
+    layer: 6
+    price_range: "$500-$1500/month (application required)"
+    key_features:
+      - "16-engine comprehensive report (12 documents)"
+      - "Active Planetary Weather consultation"
+      - "Personal PARA world creation"
+      - "6-month curriculum"
+      - "5-10 slots max"
+
+  - name: "Financial Biosensor"
+    category: "Decision-Making"
+    layer: 7
+    price_range: "Premium consultation"
+    key_features:
+      - "Engine-informed investment timing"
+      - "Career transition analysis"
+      - "Relocation decisions"
+      - "Relationship timing"
+
+# ============================================================================
+# Audience
+# ============================================================================
+
+audience:
+  persona_name: "Seeker Simon"
+  primary_age: "28-42"
+  gender_skew: "60/40 male, universal appeal"
+  income: "$75K-$200K+"
+  education: "Graduate degree or autodidact equivalent"
+  interests:
+    - "Philosophy (Stoics, Jung, Eastern texts)"
+    - "Long-form podcasts"
+    - "Systems thinking"
+    - "AI as mirror not master"
+    - "Embodied practice"
+  pain_points:
+    - "Exhausted with performative growth culture"
+    - "Insight without transformation (therapy)"
+    - "Technique without philosophy (meditation apps)"
+    - "Efficiency without orientation (productivity)"
+    - "Opening without integration (retreats)"
+    - "Information without embodiment (courses)"
+  root_cause: "All previous systems position you as user, not author"
+  psychographic_markers:
+    - "Sees through surface-level self-help"
+    - "Suspects most systems sell dependency"
+    - "Reads philosophy, avoids mainstream wellness"
+    - "Uses tools consciously, suspicious of optimization culture"
+
+# ============================================================================
+# Campaign
+# ============================================================================
+
+campaign:
+  platform: "kickstarter"
+  sub_fractal: "Kopina / PHAS-ION"
+  budget_tier: "lean"
+  timeline: "30 days (Feb 20 - Mar 21, 2026)"
+  funding_target: "$250K minimum"
+  backer_target: "1,000+"
+  payment_model: "Solana-based (post-traction)"
+  donation_model:
+    philosophy: "sovereignty-first investment, not transaction"
+    free_tier: "Complete digital access, permanent"
+    sustaining: "$10-50/month"
+    deep_support: "$100-300/month"
+    mentorship: "$500-1500/month (application)"
+
+# ============================================================================
+# Brandmint Document-to-Category Mapping
+# ============================================================================
+
+brandmint_mapping:
+  text_strategy:
+    buyer_persona: "01-buyer-persona.md"
+    product_positioning: "02-product-positioning.md"
+    messaging_direction: "05-messaging-direction-summary.md"
+    voice_and_tone: "03-voice-and-tone.md"
+    competitor_analysis: "07-competitor-analysis.md"
+    niche_validation: "../../brand-docs-final/product.md"  # V3 core product definition
+    brand_naming: "tryambakamoasis.md"  # Etymology + name evolution
+    tarot_blueprint: "../../brand-docs-final/tarot-blueprint.md"  # 78-card architectural skeleton
+
+  visual_prompters:
+    logo_prompts: "12-logo-prompts.md"
+    visual_prompt_cookbook: "14-visual-prompt-cookbook.md"
+    visual_prompt_cookbook_v2: "14v2-visual-prompt-cookbook.md"
+    visual_identity: "06-visual-identity.md"
+    visual_identity_expanded: "visual-identity-guide-expanded.md"
+    brand_context: "14v2-brand-context.md"
+
+  campaign_copy:
+    campaign_page: "donation-page-copy.md"
+    press_release: "08-press-release.md"
+    hooks: "13-short-form-hooks.md"
+    detailed_description: "04-detailed-product-description.md"
+
+  email_sequences:
+    launch_emails: "09-launch-email-sequence.md"
+    welcome_emails: "10-welcome-email-sequence.md"
+
+  brand_foundation:
+    packaging: "packaging-design-brief.md"
+    unboxing: "unboxing-experience.md"
+    spatial_architecture: "01-spatial-arch-latent-temple.md"
+
+  social_growth:
+    content_calendar: "11-social-content-calendar.md"
+    community: "community-seeding-guide.md"
+
+  # Internal / Meta Documents (not mapped to Brandmint categories)
+  internal:
+    index: "00-index.md"
+    knowledge_base: "AGENT-KNOWLEDGE-BASE.md"
+    audit_log: "INCONSISTENCY-AUDIT.md"
+    wiki: "wiki-index.md"
+    execution_plan: "orchv2-execution-plan.md"
+    skills_recommendations: "skills-upgrade-recommendations.md"
+    overview: "overview.md"
+
+  # Ecosystem-Level Documents (parent directory)
+  ecosystem:
+    architecture: "../ECOSYSTEM-ARCHITECTURE.md"
+    integration_map: "../INTEGRATION-MAP.md"
+    kopina_integration: "../KOPINA-INTEGRATION.md"
+    nomenclature: "../NOMENCLATURE-CORRECTIONS.md"
+    lexicon: "../LEXICON-MAP.md"
+
+# ============================================================================
+# Source of Truth Hierarchy
+# ============================================================================
+
+source_of_truth:
+  priority_order:
+    1: "product.md V3 (brand-docs-final/ — the authoritative product definition)"
+    2: "tarot-blueprint.md (brand-docs-final/ — 78-card architectural skeleton)"
+    3: "GitHub (Selemene-engine repo — engine names, counts, structure)"
+    4: "LEXICON-MAP.md (brand-native name mappings)"
+    5: "Somatic Canticles World Bible (01_WORLD_BIBLE/ — vocabulary, PubMed x Alex Grey)"
+    6: "ECOSYSTEM-ARCHITECTURE.md (7-layer structure)"
+    7: "brand-config.yaml (this file)"
+    8: "Individual brand docs (processed/)"
+
+# ============================================================================
+# Audit Status
+# ============================================================================
+
+audit:
+  version: "3.0"
+  date: "2026-02-21"
+  total_issues_resolved: 67
+  categories_audited: 12
+  documents_modified: 30
+  v3_changes:
+    - "WitnessOS → Noesis Engine (platform name)"
+    - "Tagline: added Kha-Ba-La triad (Self-Consciousness as Technology. Body as Medium. Breath as Interface.)"
+    - "Somatic Canticles: breathwork → sci-fi trilogy (27 chapters, 3 books, live at 1319)"
+    - "Visual dashboard → Noesis Dashboard (cross-platform: web/desktop/mobile)"
+    - "Audience age: 32-48 → 28-42"
+    - "Vocabulary audit: removed 'journey', 'path' from copy; 'healing'/'optimization' only in contrast context"
+    - "Added tarot-blueprint.md as architectural skeleton (78-card Thoth-Crowley mapping)"
+    - "Fabricated names removed (DashaBird)"
+    - "product.md V3 rewritten with real engine data, Kha-Ba-La, consciousness levels, SC World Bible vocabulary"
+  v2_corrections_preserved:
+    - "Engine count: 13 → 16 (system-wide)"
+    - "Engine categorization: Rust Core (11) + TypeScript Bridges (5)"
+    - "Voice persona: The Anatomist Who Sees Fractals"
+    - "Brand-native names per LEXICON-MAP"
+    - "OASIS references cleaned"

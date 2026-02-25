@@ -1,0 +1,24 @@
+topic: Why Insight Isn’t Change: A Runtime Model for Self-Authorship
+channel: substack
+required_claims:
+  runtime_claim: ""
+  pattern_claim: ""
+  enneagram_lens: ""
+  embodied_intervention: ""
+  closure_style: non-pitch
+sources:
+  areas:
+    - /Volumes/madara/2026/twc-vault/02-Areas/Consciousness-Models/_consciousness-architecture-hub.md
+    - /Volumes/madara/2026/twc-vault/02-Areas/Pattern-Studies/_pattern-recognition-hub.md
+    - /Volumes/madara/2026/twc-vault/02-Areas/Muse-Enneagram-Framework/muse-enneagram-matrix.md
+    - /Volumes/madara/2026/twc-vault/02-Areas/Technical-Mystical-Integration/_index.md
+  resources:
+    - /Volumes/madara/2026/twc-vault/03-Resources/Content/Articles/Substack/runtime-of-god-ancient-debug-protocols.md
+    - /Volumes/madara/2026/twc-vault/03-Resources/Synthesis/Mythic-Journey-HD-Integration-Map.md
+  project:[]
+gates:
+  min_area_sources: 2
+  min_resource_sources: 1
+  meta_language_removed: true
+metadata:
+  draft_file: introduction-to-tryambakam-noesis-substack-variant.md

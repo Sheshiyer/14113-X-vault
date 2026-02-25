@@ -1,0 +1,186 @@
+# Vault Intake Orchestrator Configuration
+# Version: 1.0.0
+
+vault:
+  root: /Volumes/madara/2026/twc-vault
+  processing_folder: /Volumes/madara/2026/twc-vault/processing-folder
+  para_structure:
+    projects: /Volumes/madara/2026/twc-vault/01-Projects
+    areas: /Volumes/madara/2026/twc-vault/02-Areas
+    resources: /Volumes/madara/2026/twc-vault/03-Resources
+    archives: /Volumes/madara/2026/twc-vault/04-Archives
+  system:
+    tags: /Volumes/madara/2026/twc-vault/_System/Tags
+    reports: /Volumes/madara/2026/twc-vault/_System/Reports
+    scripts: /Volumes/madara/2026/twc-vault/_System/scripts
+
+openrouter:
+  api_key: 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
+  
+  # Model pools for intelligent rotation
+  model_pools:
+    # General purpose models (rotate to avoid rate limits)
+    general:
+      - xiaomi/mimo-v2-flash:free
+      - google/gemma-3-27b-it:free
+      - z-ai/glm-4.5-air:free
+      - openai/gpt-oss-20b:free
+      - arcee-ai/trinity-mini:free
+      - moonshotai/kimi-k2:free
+      - tngtech/deepseek-r1t2-chimera:free
+    
+    # Advanced reasoning models (for complex analysis)
+    reasoning:
+      - deepseek/deepseek-r1-0528:free
+      - tngtech/deepseek-r1t2-chimera:free
+    
+    # Uncensored models (for sensitive/controversial content)
+    uncensored:
+      - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
+  
+  # Rotation strategy
+  rotation:
+    enabled: true
+    strategy: round_robin  # round_robin, random, or least_used
+    max_requests_per_model: 10  # Switch after N requests
+    cooldown_period: 60  # Seconds to wait before reusing a model
+  
+  # Model selection rules
+  selection_rules:
+    # Use uncensored models for these tags
+    uncensored_tags:
+      - adult-content
+      - controversial
+      - political
+      - conspiracy
+      - occult
+      - taboo
+    
+    # Use reasoning models for complex content
+    reasoning_tags:
+      - philosophy
+      - mathematics
+      - logic
+      - research
+      - analysis
+  
+  base_url: https://openrouter.ai/api/v1
+  rate_limit: 10  # requests per second
+  timeout: 60  # seconds
+  max_retries: 3
+  retry_delay: 2  # seconds
+
+processing:
+  batch_size: 50
+  parallel_workers: 4
+  retry_attempts: 3
+  dry_run: false
+  preserve_originals: true
+  use_hardlinks: false
+  normalize_filenames: true
+
+extraction:
+  allow_empty_text: true
+  pdf:
+    pages_to_extract: 5  # first N pages
+    include_last_page: true
+    max_text_length: 10000
+    fallback_to_pdfplumber: true
+  epub:
+    chapters_to_extract: 1
+    include_toc: true
+    max_text_length: 10000
+
+analysis:
+  mode: local
+  confidence_threshold: 0.6
+  min_tags: 2
+  max_tags: 5
+  min_mocs: 1
+  max_mocs: 3
+  enable_enneagram_mapping: true
+  enable_content_enhancement: false  # Set to true for quality improvement
+
+routing:
+  default_bucket: 03-Resources
+  duplicate_strategy: skip  # skip, overwrite, or rename
+  conflict_resolution: rename  # rename or overwrite
+
+metadata:
+  required_fields:
+    - title
+    - source_path
+    - destination_path
+    - para_bucket
+    - content_type
+    - domain_tags
+    - moc_links
+  optional_fields:
+    - author
+    - year
+    - publisher
+    - series
+    - topic_cluster
+    - language
+    - rights_status
+    - ennea_type
+    - muse_archetype
+    - endocrine_mapping
+
+filesystem:
+  ignore_patterns:
+    - "*.DS_Store"
+    - "*.tmp"
+    - "*.bak"
+    - "*~"
+    - ".git"
+    - "__pycache__"
+  supported_formats:
+    - .pdf
+    - .epub
+    - .md
+    - .html
+    - .mp3
+    - .m4a
+    - .wav
+    - .ogg
+    - .flac
+    - .txt
+  max_filename_length: 255
+
+logging:
+  level: INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  log_dir: /Volumes/madara/2026/twc-vault/_System/orchestrator/output/logs
+  log_file: orchestrator.log
+  rotation: daily
+  max_bytes: 10485760  # 10MB
+  backup_count: 10
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+database:
+  inventory_db: /Volumes/madara/2026/twc-vault/_System/orchestrator/data/inventory.db
+  processing_state_db: /Volumes/madara/2026/twc-vault/_System/orchestrator/data/processing_state.db
+  analytics_db: /Volumes/madara/2026/twc-vault/_System/orchestrator/data/analytics.db
+
+output:
+  extractions_dir: /Volumes/madara/2026/twc-vault/_System/orchestrator/output/extractions
+  analyses_dir: /Volumes/madara/2026/twc-vault/_System/orchestrator/output/analyses
+  manifests_dir: /Volumes/madara/2026/twc-vault/_System/orchestrator/output/manifests
+
+templates:
+  metadata_frontmatter: /Volumes/madara/2026/twc-vault/_System/orchestrator/templates/metadata_frontmatter.jinja2
+  moc_section: /Volumes/madara/2026/twc-vault/_System/orchestrator/templates/moc_section.jinja2
+  processing_report: /Volumes/madara/2026/twc-vault/_System/orchestrator/templates/processing_report.jinja2
+
+quality:
+  success_rate_threshold: 0.95
+  metadata_completeness_threshold: 0.90
+  moc_coverage_threshold: 0.85
+  link_validity_threshold: 0.98
+  max_error_rate: 0.05
+
+dashboard:
+  enabled: true
+  host: localhost
+  port: 8080
+  refresh_interval: 5  # seconds

@@ -1,0 +1,915 @@
+{
+    "meta": {
+        "version": "1.0.0",
+        "last_updated": "2026-01-26",
+        "description": "Human Design Gates to Gene Keys mapping with Shadow-Gift-Siddhi pathways",
+        "source": "Gene Keys transmission by Richard Rudd, aligned with Human Design gate system",
+        "total_gates": 64,
+        "note": "Gates and Gene Keys share the same numerical correspondence (1-64) but Gene Keys adds the shadow-gift-siddhi spectrum"
+    },
+    "gate_key_correspondences": {
+        "1": {
+            "gate_name": "Self-Expression",
+            "gene_key": 1,
+            "shadow": "Entropy",
+            "gift": "Freshness",
+            "siddhi": "Beauty",
+            "pathway": "The Path of the Creative",
+            "keywords": [
+                "creativity",
+                "primordial",
+                "expression",
+                "originality"
+            ]
+        },
+        "2": {
+            "gate_name": "The Receptive",
+            "gene_key": 2,
+            "shadow": "Dislocation",
+            "gift": "Orientation",
+            "siddhi": "Unity",
+            "pathway": "The Path of Being",
+            "keywords": [
+                "receptivity",
+                "direction",
+                "flow",
+                "belonging"
+            ]
+        },
+        "3": {
+            "gate_name": "Ordering",
+            "gene_key": 3,
+            "shadow": "Chaos",
+            "gift": "Innovation",
+            "siddhi": "Innocence",
+            "pathway": "The Path of Innovation",
+            "keywords": [
+                "mutation",
+                "birth",
+                "order_from_chaos",
+                "beginnings"
+            ]
+        },
+        "4": {
+            "gate_name": "Formulization",
+            "gene_key": 4,
+            "shadow": "Intolerance",
+            "gift": "Understanding",
+            "siddhi": "Forgiveness",
+            "pathway": "The Path of Universal Love",
+            "keywords": [
+                "logic",
+                "answers",
+                "mental_solutions",
+                "formulae"
+            ]
+        },
+        "5": {
+            "gate_name": "Fixed Patterns",
+            "gene_key": 5,
+            "shadow": "Impatience",
+            "gift": "Patience",
+            "siddhi": "Timelessness",
+            "pathway": "The Path of Patience",
+            "keywords": [
+                "timing",
+                "rhythm",
+                "habit",
+                "routine"
+            ]
+        },
+        "6": {
+            "gate_name": "Friction",
+            "gene_key": 6,
+            "shadow": "Conflict",
+            "gift": "Diplomacy",
+            "siddhi": "Peace",
+            "pathway": "The Path of the Peacemaker",
+            "keywords": [
+                "intimacy",
+                "friction",
+                "emotional_navigation",
+                "relating"
+            ]
+        },
+        "7": {
+            "gate_name": "The Army",
+            "gene_key": 7,
+            "shadow": "Division",
+            "gift": "Guidance",
+            "siddhi": "Virtue",
+            "pathway": "The Path of the Leader",
+            "keywords": [
+                "leadership",
+                "role",
+                "democracy",
+                "direction"
+            ]
+        },
+        "8": {
+            "gate_name": "Contribution",
+            "gene_key": 8,
+            "shadow": "Mediocrity",
+            "gift": "Style",
+            "siddhi": "Exquisiteness",
+            "pathway": "The Path of the Diamond",
+            "keywords": [
+                "uniqueness",
+                "contribution",
+                "authenticity",
+                "expression"
+            ]
+        },
+        "9": {
+            "gate_name": "Focus",
+            "gene_key": 9,
+            "shadow": "Inertia",
+            "gift": "Determination",
+            "siddhi": "Invincibility",
+            "pathway": "The Path of the Unstoppable",
+            "keywords": [
+                "focus",
+                "details",
+                "persistence",
+                "power"
+            ]
+        },
+        "10": {
+            "gate_name": "Behavior of Self",
+            "gene_key": 10,
+            "shadow": "Self-Obsession",
+            "gift": "Naturalness",
+            "siddhi": "Being",
+            "pathway": "The Path of Being",
+            "keywords": [
+                "love_of_self",
+                "self_empowerment",
+                "authenticity",
+                "being"
+            ]
+        },
+        "11": {
+            "gate_name": "Ideas",
+            "gene_key": 11,
+            "shadow": "Obscurity",
+            "gift": "Idealism",
+            "siddhi": "Light",
+            "pathway": "The Path of the Visionary",
+            "keywords": [
+                "ideas",
+                "vision",
+                "light",
+                "illumination"
+            ]
+        },
+        "12": {
+            "gate_name": "Caution",
+            "gene_key": 12,
+            "shadow": "Vanity",
+            "gift": "Discrimination",
+            "siddhi": "Purity",
+            "pathway": "The Path of the Pure",
+            "keywords": [
+                "articulation",
+                "expression",
+                "caution",
+                "discernment"
+            ]
+        },
+        "13": {
+            "gate_name": "The Listener",
+            "gene_key": 13,
+            "shadow": "Discord",
+            "gift": "Discernment",
+            "siddhi": "Empathy",
+            "pathway": "The Path of Universal Empathy",
+            "keywords": [
+                "listening",
+                "secrets",
+                "memory",
+                "witness"
+            ]
+        },
+        "14": {
+            "gate_name": "Power Skills",
+            "gene_key": 14,
+            "shadow": "Compromise",
+            "gift": "Competence",
+            "siddhi": "Bounteousness",
+            "pathway": "The Path of Abundance",
+            "keywords": [
+                "power",
+                "resource",
+                "manifestation",
+                "wealth"
+            ]
+        },
+        "15": {
+            "gate_name": "Extremes",
+            "gene_key": 15,
+            "shadow": "Dullness",
+            "gift": "Magnetism",
+            "siddhi": "Florescence",
+            "pathway": "The Path of Blooming",
+            "keywords": [
+                "extremes",
+                "rhythm",
+                "love_of_humanity",
+                "flourishing"
+            ]
+        },
+        "16": {
+            "gate_name": "Skills",
+            "gene_key": 16,
+            "shadow": "Indifference",
+            "gift": "Versatility",
+            "siddhi": "Mastery",
+            "pathway": "The Path of Mastery",
+            "keywords": [
+                "enthusiasm",
+                "skill",
+                "mastery",
+                "experimentation"
+            ]
+        },
+        "17": {
+            "gate_name": "Opinions",
+            "gene_key": 17,
+            "shadow": "Opinion",
+            "gift": "Far-sightedness",
+            "siddhi": "Omniscience",
+            "pathway": "The Path of the All-Seeing Eye",
+            "keywords": [
+                "logic",
+                "opinion",
+                "vision",
+                "pattern_recognition"
+            ]
+        },
+        "18": {
+            "gate_name": "Correction",
+            "gene_key": 18,
+            "shadow": "Judgment",
+            "gift": "Integrity",
+            "siddhi": "Perfection",
+            "pathway": "The Path of Healers",
+            "keywords": [
+                "judgment",
+                "healing",
+                "perfection",
+                "correction"
+            ]
+        },
+        "19": {
+            "gate_name": "Wanting",
+            "gene_key": 19,
+            "shadow": "Co-dependence",
+            "gift": "Sensitivity",
+            "siddhi": "Sacrifice",
+            "pathway": "The Path of the Mystic",
+            "keywords": [
+                "need",
+                "sensitivity",
+                "community",
+                "belonging"
+            ]
+        },
+        "20": {
+            "gate_name": "The Now",
+            "gene_key": 20,
+            "shadow": "Superficiality",
+            "gift": "Self-Assurance",
+            "siddhi": "Presence",
+            "pathway": "The Path of Presence",
+            "keywords": [
+                "now",
+                "contemplation",
+                "presence",
+                "awareness"
+            ]
+        },
+        "21": {
+            "gate_name": "Control",
+            "gene_key": 21,
+            "shadow": "Control",
+            "gift": "Authority",
+            "siddhi": "Valor",
+            "pathway": "The Path of the Sovereign",
+            "keywords": [
+                "control",
+                "authority",
+                "courage",
+                "power"
+            ]
+        },
+        "22": {
+            "gate_name": "Grace",
+            "gene_key": 22,
+            "shadow": "Dishonor",
+            "gift": "Graciousness",
+            "siddhi": "Grace",
+            "pathway": "The Path of Grace",
+            "keywords": [
+                "openness",
+                "grace",
+                "emotional_honesty",
+                "listening"
+            ]
+        },
+        "23": {
+            "gate_name": "Assimilation",
+            "gene_key": 23,
+            "shadow": "Complexity",
+            "gift": "Simplicity",
+            "siddhi": "Quintessence",
+            "pathway": "The Path of Simplicity",
+            "keywords": [
+                "assimilation",
+                "expression",
+                "simplicity",
+                "essence"
+            ]
+        },
+        "24": {
+            "gate_name": "Rationalization",
+            "gene_key": 24,
+            "shadow": "Addiction",
+            "gift": "Invention",
+            "siddhi": "Silence",
+            "pathway": "The Path of the Inventor",
+            "keywords": [
+                "rationalization",
+                "returning",
+                "silence",
+                "invention"
+            ]
+        },
+        "25": {
+            "gate_name": "Spirit of Self",
+            "gene_key": 25,
+            "shadow": "Constriction",
+            "gift": "Acceptance",
+            "siddhi": "Universal Love",
+            "pathway": "The Path of the Sacred Wound",
+            "keywords": [
+                "innocence",
+                "love",
+                "acceptance",
+                "universal_love"
+            ]
+        },
+        "26": {
+            "gate_name": "The Egoist",
+            "gene_key": 26,
+            "shadow": "Pride",
+            "gift": "Artfulness",
+            "siddhi": "Invisibility",
+            "pathway": "The Path of Sacred Trickster",
+            "keywords": [
+                "taming_power",
+                "willpower",
+                "ego",
+                "manipulation"
+            ]
+        },
+        "27": {
+            "gate_name": "Caring",
+            "gene_key": 27,
+            "shadow": "Selfishness",
+            "gift": "Altruism",
+            "siddhi": "Selflessness",
+            "pathway": "The Path of Food",
+            "keywords": [
+                "nourishment",
+                "caring",
+                "responsibility",
+                "selflessness"
+            ]
+        },
+        "28": {
+            "gate_name": "The Game Player",
+            "gene_key": 28,
+            "shadow": "Purposelessness",
+            "gift": "Totality",
+            "siddhi": "Immortality",
+            "pathway": "The Path of the Immortal",
+            "keywords": [
+                "struggle",
+                "purpose",
+                "totality",
+                "immortality"
+            ]
+        },
+        "29": {
+            "gate_name": "Perseverance",
+            "gene_key": 29,
+            "shadow": "Half-Heartedness",
+            "gift": "Commitment",
+            "siddhi": "Devotion",
+            "pathway": "The Path of Sacred Yes",
+            "keywords": [
+                "saying_yes",
+                "commitment",
+                "perseverance",
+                "devotion"
+            ]
+        },
+        "30": {
+            "gate_name": "Feelings",
+            "gene_key": 30,
+            "shadow": "Desire",
+            "gift": "Lightness",
+            "siddhi": "Rapture",
+            "pathway": "The Path of Desire",
+            "keywords": [
+                "desire",
+                "feelings",
+                "lightness",
+                "rapture"
+            ]
+        },
+        "31": {
+            "gate_name": "Influence",
+            "gene_key": 31,
+            "shadow": "Arrogance",
+            "gift": "Leadership",
+            "siddhi": "Humility",
+            "pathway": "The Path of Leadership",
+            "keywords": [
+                "influence",
+                "leadership",
+                "democracy",
+                "humility"
+            ]
+        },
+        "32": {
+            "gate_name": "Continuity",
+            "gene_key": 32,
+            "shadow": "Failure",
+            "gift": "Preservation",
+            "siddhi": "Veneration",
+            "pathway": "The Path of Ancestors",
+            "keywords": [
+                "duration",
+                "continuity",
+                "preservation",
+                "veneration"
+            ]
+        },
+        "33": {
+            "gate_name": "Privacy",
+            "gene_key": 33,
+            "shadow": "Forgetting",
+            "gift": "Mindfulness",
+            "siddhi": "Revelation",
+            "pathway": "The Path of the Sage",
+            "keywords": [
+                "retreat",
+                "privacy",
+                "mindfulness",
+                "revelation"
+            ]
+        },
+        "34": {
+            "gate_name": "Power",
+            "gene_key": 34,
+            "shadow": "Force",
+            "gift": "Strength",
+            "siddhi": "Majesty",
+            "pathway": "The Path of Power",
+            "keywords": [
+                "power",
+                "force",
+                "strength",
+                "majesty"
+            ]
+        },
+        "35": {
+            "gate_name": "Progress",
+            "gene_key": 35,
+            "shadow": "Hunger",
+            "gift": "Adventure",
+            "siddhi": "Boundlessness",
+            "pathway": "The Path of Wonders",
+            "keywords": [
+                "progress",
+                "experience",
+                "adventure",
+                "boundlessness"
+            ]
+        },
+        "36": {
+            "gate_name": "Crisis",
+            "gene_key": 36,
+            "shadow": "Turbulence",
+            "gift": "Humanity",
+            "siddhi": "Compassion",
+            "pathway": "The Path of Compassion",
+            "keywords": [
+                "crisis",
+                "darkening_light",
+                "humanity",
+                "compassion"
+            ]
+        },
+        "37": {
+            "gate_name": "The Family",
+            "gene_key": 37,
+            "shadow": "Weakness",
+            "gift": "Equality",
+            "siddhi": "Tenderness",
+            "pathway": "The Path of the Mother",
+            "keywords": [
+                "family",
+                "community",
+                "equality",
+                "tenderness"
+            ]
+        },
+        "38": {
+            "gate_name": "The Fighter",
+            "gene_key": 38,
+            "shadow": "Struggle",
+            "gift": "Perseverance",
+            "siddhi": "Honor",
+            "pathway": "The Path of the Warrior",
+            "keywords": [
+                "opposition",
+                "struggle",
+                "perseverance",
+                "honor"
+            ]
+        },
+        "39": {
+            "gate_name": "Provocation",
+            "gene_key": 39,
+            "shadow": "Provocation",
+            "gift": "Dynamism",
+            "siddhi": "Liberation",
+            "pathway": "The Path of Liberation",
+            "keywords": [
+                "provocation",
+                "spirit",
+                "dynamism",
+                "liberation"
+            ]
+        },
+        "40": {
+            "gate_name": "Aloneness",
+            "gene_key": 40,
+            "shadow": "Exhaustion",
+            "gift": "Resolve",
+            "siddhi": "Divine Will",
+            "pathway": "The Path of Aloneness",
+            "keywords": [
+                "deliverance",
+                "aloneness",
+                "resolve",
+                "divine_will"
+            ]
+        },
+        "41": {
+            "gate_name": "Contraction",
+            "gene_key": 41,
+            "shadow": "Fantasy",
+            "gift": "Anticipation",
+            "siddhi": "Emanation",
+            "pathway": "The Path of Anticipation",
+            "keywords": [
+                "decrease",
+                "fantasy",
+                "anticipation",
+                "emanation"
+            ]
+        },
+        "42": {
+            "gate_name": "Growth",
+            "gene_key": 42,
+            "shadow": "Expectation",
+            "gift": "Detachment",
+            "siddhi": "Celebration",
+            "pathway": "The Path of Celebration",
+            "keywords": [
+                "increase",
+                "growth",
+                "detachment",
+                "celebration"
+            ]
+        },
+        "43": {
+            "gate_name": "Breakthrough",
+            "gene_key": 43,
+            "shadow": "Deafness",
+            "gift": "Insight",
+            "siddhi": "Epiphany",
+            "pathway": "The Path of Breakthrough",
+            "keywords": [
+                "breakthrough",
+                "insight",
+                "individuality",
+                "epiphany"
+            ]
+        },
+        "44": {
+            "gate_name": "Alertness",
+            "gene_key": 44,
+            "shadow": "Interference",
+            "gift": "Teamwork",
+            "siddhi": "Synarchy",
+            "pathway": "The Path of Alchemy",
+            "keywords": [
+                "coming_to_meet",
+                "patterns",
+                "teamwork",
+                "synarchy"
+            ]
+        },
+        "45": {
+            "gate_name": "The Gatherer",
+            "gene_key": 45,
+            "shadow": "Dominance",
+            "gift": "Synergy",
+            "siddhi": "Communion",
+            "pathway": "The Path of the Synergist",
+            "keywords": [
+                "gathering_together",
+                "ownership",
+                "synergy",
+                "communion"
+            ]
+        },
+        "46": {
+            "gate_name": "Determination of Self",
+            "gene_key": 46,
+            "shadow": "Seriousness",
+            "gift": "Delight",
+            "siddhi": "Ecstasy",
+            "pathway": "The Path of Delight",
+            "keywords": [
+                "pushing_upward",
+                "body",
+                "delight",
+                "ecstasy"
+            ]
+        },
+        "47": {
+            "gate_name": "Realization",
+            "gene_key": 47,
+            "shadow": "Oppression",
+            "gift": "Transmutation",
+            "siddhi": "Transfiguration",
+            "pathway": "The Path of Transformation",
+            "keywords": [
+                "oppression",
+                "mind",
+                "transmutation",
+                "transfiguration"
+            ]
+        },
+        "48": {
+            "gate_name": "Depth",
+            "gene_key": 48,
+            "shadow": "Inadequacy",
+            "gift": "Resourcefulness",
+            "siddhi": "Wisdom",
+            "pathway": "The Path of the Well",
+            "keywords": [
+                "the_well",
+                "depth",
+                "resourcefulness",
+                "wisdom"
+            ]
+        },
+        "49": {
+            "gate_name": "Revolution",
+            "gene_key": 49,
+            "shadow": "Reaction",
+            "gift": "Revolution",
+            "siddhi": "Rebirth",
+            "pathway": "The Path of Rebirth",
+            "keywords": [
+                "revolution",
+                "principles",
+                "transformation",
+                "rebirth"
+            ]
+        },
+        "50": {
+            "gate_name": "Values",
+            "gene_key": 50,
+            "shadow": "Corruption",
+            "gift": "Equilibrium",
+            "siddhi": "Harmony",
+            "pathway": "The Path of Harmony",
+            "keywords": [
+                "the_cauldron",
+                "values",
+                "equilibrium",
+                "harmony"
+            ]
+        },
+        "51": {
+            "gate_name": "Shock",
+            "gene_key": 51,
+            "shadow": "Agitation",
+            "gift": "Initiative",
+            "siddhi": "Awakening",
+            "pathway": "The Path of the Shaman",
+            "keywords": [
+                "shock",
+                "arousing",
+                "initiative",
+                "awakening"
+            ]
+        },
+        "52": {
+            "gate_name": "Inaction",
+            "gene_key": 52,
+            "shadow": "Stress",
+            "gift": "Restraint",
+            "siddhi": "Stillness",
+            "pathway": "The Path of Stillness",
+            "keywords": [
+                "keeping_still",
+                "mountains",
+                "restraint",
+                "stillness"
+            ]
+        },
+        "53": {
+            "gate_name": "Beginnings",
+            "gene_key": 53,
+            "shadow": "Immaturity",
+            "gift": "Expansion",
+            "siddhi": "Superabundance",
+            "pathway": "The Path of Evolution",
+            "keywords": [
+                "development",
+                "beginnings",
+                "expansion",
+                "evolution"
+            ]
+        },
+        "54": {
+            "gate_name": "Ambition",
+            "gene_key": 54,
+            "shadow": "Greed",
+            "gift": "Aspiration",
+            "siddhi": "Ascension",
+            "pathway": "The Path of Aspiration",
+            "keywords": [
+                "marrying_maiden",
+                "ambition",
+                "aspiration",
+                "ascension"
+            ]
+        },
+        "55": {
+            "gate_name": "Spirit",
+            "gene_key": 55,
+            "shadow": "Victimization",
+            "gift": "Freedom",
+            "siddhi": "Freedom",
+            "pathway": "The Path of Freedom",
+            "keywords": [
+                "abundance",
+                "spirit",
+                "moods",
+                "freedom"
+            ]
+        },
+        "56": {
+            "gate_name": "Stimulation",
+            "gene_key": 56,
+            "shadow": "Distraction",
+            "gift": "Enrichment",
+            "siddhi": "Intoxication",
+            "pathway": "The Path of the Storyteller",
+            "keywords": [
+                "the_wanderer",
+                "stimulation",
+                "enrichment",
+                "intoxication"
+            ]
+        },
+        "57": {
+            "gate_name": "Intuition",
+            "gene_key": 57,
+            "shadow": "Unease",
+            "gift": "Intuition",
+            "siddhi": "Clarity",
+            "pathway": "The Path of the Intuitive",
+            "keywords": [
+                "the_gentle",
+                "intuition",
+                "clarity",
+                "clear_seeing"
+            ]
+        },
+        "58": {
+            "gate_name": "Vitality",
+            "gene_key": 58,
+            "shadow": "Dissatisfaction",
+            "gift": "Vitality",
+            "siddhi": "Bliss",
+            "pathway": "The Path of Bliss",
+            "keywords": [
+                "the_joyous",
+                "vitality",
+                "joy",
+                "bliss"
+            ]
+        },
+        "59": {
+            "gate_name": "Sexuality",
+            "gene_key": 59,
+            "shadow": "Dishonesty",
+            "gift": "Intimacy",
+            "siddhi": "Transparency",
+            "pathway": "The Path of Intimacy",
+            "keywords": [
+                "dispersion",
+                "sexuality",
+                "intimacy",
+                "transparency"
+            ]
+        },
+        "60": {
+            "gate_name": "Limitation",
+            "gene_key": 60,
+            "shadow": "Limitation",
+            "gift": "Realism",
+            "siddhi": "Justice",
+            "pathway": "The Path of Justice",
+            "keywords": [
+                "limitation",
+                "acceptance",
+                "realism",
+                "justice"
+            ]
+        },
+        "61": {
+            "gate_name": "Mystery",
+            "gene_key": 61,
+            "shadow": "Psychosis",
+            "gift": "Inspiration",
+            "siddhi": "Sanctity",
+            "pathway": "The Path of the Holy Fool",
+            "keywords": [
+                "inner_truth",
+                "mystery",
+                "inspiration",
+                "sanctity"
+            ]
+        },
+        "62": {
+            "gate_name": "Details",
+            "gene_key": 62,
+            "shadow": "Intellect",
+            "gift": "Precision",
+            "siddhi": "Impeccability",
+            "pathway": "The Path of Language",
+            "keywords": [
+                "preponderance_small",
+                "details",
+                "precision",
+                "impeccability"
+            ]
+        },
+        "63": {
+            "gate_name": "Doubt",
+            "gene_key": 63,
+            "shadow": "Doubt",
+            "gift": "Inquiry",
+            "siddhi": "Truth",
+            "pathway": "The Path of Truth",
+            "keywords": [
+                "after_completion",
+                "doubt",
+                "inquiry",
+                "truth"
+            ]
+        },
+        "64": {
+            "gate_name": "Confusion",
+            "gene_key": 64,
+            "shadow": "Confusion",
+            "gift": "Imagination",
+            "siddhi": "Illumination",
+            "pathway": "The Path of Illumination",
+            "keywords": [
+                "before_completion",
+                "confusion",
+                "imagination",
+                "illumination"
+            ]
+        }
+    },
+    "integration_notes": {
+        "human_design_to_gene_keys": "Human Design provides the energetic blueprint (gates, channels, centers). Gene Keys adds the evolutionary pathway (shadow to gift to siddhi) for each gate activation.",
+        "shadow_work": "The shadow frequency is the unconscious, reactive state of each gate. This is where most humans operate from.",
+        "gift_activation": "The gift is the creative, generative expression of the gate when operating from presence and awareness.",
+        "siddhi_realization": "The siddhi is the transcendent, enlightened expression of the gate - a state of grace rarely sustained but touchable in peak experiences.",
+        "practical_application": "Use Human Design to identify which gates are active in your chart. Use Gene Keys to understand the shadow-gift-siddhi spectrum of those specific gates and practice moving up the frequency from shadow to gift to siddhi."
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "last_updated": "2026-02-24T01:10:37.041495+00:00",
+  "steps": {
+    "Kosha Health Check": {
+      "timestamp": "2026-02-24T01:10:37.041735+00:00",
+      "status": "success",
+      "duration_ms": 59,
+      "error": null,
+      "fallback_used": false
+    },
+    "Vault Structural Stats": {
+      "timestamp": "2026-02-24T01:10:41.512661+00:00",
+      "status": "success",
+      "duration_ms": 4450,
+      "error": null,
+      "fallback_used": false
+    },
+    "Drift Audit": {
+      "timestamp": "2026-02-24T01:10:44.210230+00:00",
+      "status": "success",
+      "duration_ms": 2696,
+      "error": null,
+      "fallback_used": false
+    }
+  }
+}

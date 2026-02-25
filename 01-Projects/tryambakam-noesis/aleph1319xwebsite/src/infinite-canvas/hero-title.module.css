@@ -1,0 +1,38 @@
+.container {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  z-index: 100;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  opacity: 0;
+  /* GSAP reveals */
+  will-change: transform, opacity;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: clamp(0.12em, 0.8vw, 0.16em);
+  line-height: 1.1;
+  font-size: clamp(1.4rem, 4vw, 3.8rem);
+  font-family: var(--noesis-font-display, "Cormorant Garamond", "Times New Roman", serif);
+  font-weight: 300;
+  text-wrap: balance;
+  color: color-mix(in srgb, var(--color-phosphor-cream, #f0ede3) 90%, var(--color-solar-bronze, #c4873b));
+  text-shadow: 0 4px 34px rgba(7, 29, 48, 0.8);
+}
+
+.subtitle {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  font-size: 10px;
+  color: rgba(240, 237, 227, 0.45);
+  font-family: var(--noesis-font-mono, monospace);
+  font-weight: 400;
+}

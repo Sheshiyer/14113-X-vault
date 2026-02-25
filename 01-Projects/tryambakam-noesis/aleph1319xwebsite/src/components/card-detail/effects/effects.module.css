@@ -1,0 +1,160 @@
+/* effects.module.css — Shared styles for card-detail visual effect components */
+
+/* ── GlassmorphismPanel ─────────────────────────────────────────────── */
+
+.glassmorphismPanel {
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(10, 22, 40, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  padding: 32px;
+}
+
+/* ── MouseSpotlight ─────────────────────────────────────────────────── */
+
+.mouseSpotlight {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── TraversingGlitch ───────────────────────────────────────────────── */
+
+.traversingGlitch {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 5;
+  animation: traverse var(--traverse-speed, 8s) linear infinite;
+}
+
+@keyframes traverse {
+  0% {
+    top: -2px;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+/* ── PulsingStatusCluster ───────────────────────────────────────────── */
+
+.statusCluster {
+  display: flex;
+  gap: 16px;
+}
+
+.statusClusterVertical {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.statusItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.statusDotActive {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.statusLabel {
+  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #666;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ── ScanlineVariant ────────────────────────────────────────────────── */
+
+.scanlineVariant {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* ── DataRowReveal ──────────────────────────────────────────────────── */
+
+.dataRowReveal {
+  width: 100%;
+}
+
+.dataRowTrigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.dataRowTriggerLabel {
+  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #666;
+}
+
+.dataRowTriggerIcon {
+  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  font-size: 14px;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+.dataRowTriggerIconOpen {
+  transform: rotate(45deg);
+}
+
+.dataRowContent {
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.dataRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.dataRowLabel {
+  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.dataRowValue {
+  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  font-size: 12px;
+  color: #fff;
+}

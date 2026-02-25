@@ -1,0 +1,1390 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "name": "PARA Vault Local Memory Index",
+    "repo_root": "/Volumes/madara/2026/twc-vault",
+    "generated_on": "2026-02-23",
+    "generated_by": "task-master-planner + dispatching-parallel-agents",
+    "vault_stats": {
+      "markdown_files": 7099,
+      "markdown_size_mb": 58,
+      "pdf_files": 5966,
+      "pdf_size_gb": 16,
+      "epub_files": 884,
+      "epub_size_gb": 6.8,
+      "txt_files": 338,
+      "txt_size_mb": 25,
+      "docx_files": 100,
+      "total_para_domains": 35,
+      "frontmatter_coverage_pct": 5
+    },
+    "assumptions": [
+      "macOS with Python 3.10+ available in .venv-meru",
+      "sentence-transformers/all-MiniLM-L6-v2 model (~80MB) will be downloaded on first run",
+      "FAISS CPU-only is sufficient (no GPU needed for 58MB-83MB text)",
+      "PDF text extraction via PyMuPDF is acceptable quality for most PDFs",
+      "Vault structure is stable (PARA folders won't be renamed during indexing)",
+      "Existing .venv-meru can be extended with ML dependencies",
+      "Archives may contain duplicates of files in other PARA folders"
+    ],
+    "risks": [
+      "Some PDFs may be scanned images requiring OCR (not just text extraction)",
+      "Large AIPRM chat exports (>1MB) may produce noisy low-quality chunks",
+      "16GB PDF corpus text extraction could take 30-60 min depending on complexity",
+      "Extracted PDF text could be 2-5GB, pushing FAISS index to several GB",
+      "torch dependency is ~2GB download, may be slow on first install",
+      "Duplicate content in Archives inflates index size without adding value"
+    ]
+  },
+  "phases": [
+    {
+      "phase_id": "A",
+      "name": "Notes Layer — Markdown + TXT Indexing",
+      "objective": "Build a working local semantic search over all 7,099 markdown and 338 TXT files (83MB text). Produces a queryable FAISS index with PARA-aware metadata.",
+      "sprints": [
+        {
+          "sprint_id": "A-W1",
+          "wave": "Wave 1",
+          "duration_weeks": 0.5,
+          "focus": "Environment setup & dependency installation",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "A-W1-01",
+              "title": "Verify Python version in .venv-meru and ensure pip is current",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": [],
+              "deliverable": "Confirmed Python >=3.10 in .venv-meru with pip >=24",
+              "acceptance": "python --version returns 3.10+ and pip --version returns 24+"
+            },
+            {
+              "id": "A-W1-02",
+              "title": "Install sentence-transformers, faiss-cpu, numpy into .venv-meru",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W1-01"],
+              "deliverable": "All ML packages installed and importable",
+              "acceptance": "python -c 'import sentence_transformers; import faiss; import numpy' exits 0"
+            },
+            {
+              "id": "A-W1-03",
+              "title": "Install pyyaml for frontmatter parsing",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.1,
+              "dependencies": ["A-W1-01"],
+              "deliverable": "pyyaml importable",
+              "acceptance": "python -c 'import yaml' exits 0"
+            },
+            {
+              "id": "A-W1-04",
+              "title": "Create _System/scripts/memory/ directory structure",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.1,
+              "dependencies": [],
+              "deliverable": "Directory _System/scripts/memory/ exists",
+              "acceptance": "ls _System/scripts/memory/ succeeds"
+            },
+            {
+              "id": "A-W1-05",
+              "title": "Create _System/memory/ directory for index output",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.1,
+              "dependencies": [],
+              "deliverable": "Directory _System/memory/ exists",
+              "acceptance": "ls _System/memory/ succeeds"
+            },
+            {
+              "id": "A-W1-06",
+              "title": "Add _System/memory/ to .gitignore (index data is generated)",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.1,
+              "dependencies": ["A-W1-05"],
+              "deliverable": "_System/memory/ line in .gitignore",
+              "acceptance": "grep '_System/memory' .gitignore returns match"
+            },
+            {
+              "id": "A-W1-07",
+              "title": "Download and cache all-MiniLM-L6-v2 model locally",
+              "area": "data",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W1-02"],
+              "deliverable": "Model cached in HuggingFace cache dir",
+              "acceptance": "SentenceTransformer('all-MiniLM-L6-v2') loads without network"
+            },
+            {
+              "id": "A-W1-08",
+              "title": "Create requirements-memory.txt with pinned versions",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.1,
+              "dependencies": ["A-W1-02", "A-W1-03"],
+              "deliverable": "requirements-memory.txt in _System/scripts/memory/",
+              "acceptance": "File lists sentence-transformers, faiss-cpu, numpy, pyyaml with versions"
+            }
+          ]
+        },
+        {
+          "sprint_id": "A-W2",
+          "wave": "Wave 2",
+          "duration_weeks": 0.5,
+          "focus": "Core chunking library",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "A-W2-01",
+              "title": "Implement heading-based markdown splitter (split on ## headers)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["A-W1-04"],
+              "deliverable": "Function split_by_headings(text) -> list of (heading, content) tuples",
+              "acceptance": "Markdown with 5 ## sections returns 5 tuples with correct heading text"
+            },
+            {
+              "id": "A-W2-02",
+              "title": "Implement paragraph splitter for long sections (split on double newline)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W1-04"],
+              "deliverable": "Function split_paragraphs(text, max_chars=1200) -> list of strings",
+              "acceptance": "2400-char section splits into 2+ paragraphs each <=1200 chars"
+            },
+            {
+              "id": "A-W2-03",
+              "title": "Implement sliding window fallback for oversized paragraphs",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W1-04"],
+              "deliverable": "Function sliding_window(text, size=1000, overlap=200) -> list of strings",
+              "acceptance": "3000-char blob returns 3+ chunks with 200-char overlaps"
+            },
+            {
+              "id": "A-W2-04",
+              "title": "Compose full chunk_markdown(text) pipeline combining all three splitters",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["A-W2-01", "A-W2-02", "A-W2-03"],
+              "deliverable": "Function chunk_markdown(text) -> list of Chunk(heading, text, char_offset)",
+              "acceptance": "Large file with mixed sections and paragraphs chunks correctly end-to-end"
+            },
+            {
+              "id": "A-W2-05",
+              "title": "Implement YAML frontmatter extractor",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W1-03", "A-W1-04"],
+              "deliverable": "Function extract_frontmatter(text) -> (dict|None, body_text)",
+              "acceptance": "File with --- YAML --- block returns parsed dict and body without frontmatter"
+            },
+            {
+              "id": "A-W2-06",
+              "title": "Implement PARA category inferrer from file path",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W1-04"],
+              "deliverable": "Function infer_para(path) -> str ('Projects'|'Areas'|'Resources'|'Archives'|'System'|'Root')",
+              "acceptance": "01-Projects/foo.md returns 'Projects', 03-Resources/bar.md returns 'Resources'"
+            },
+            {
+              "id": "A-W2-07",
+              "title": "Implement domain inferrer from subfolder path using taxonomy",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["A-W1-04"],
+              "deliverable": "Function infer_domain(path) -> str (e.g. 'Health/Wellness', 'Knowledge/Research')",
+              "acceptance": "03-Resources/Health/Wellness/file.md returns 'Health/Wellness'"
+            },
+            {
+              "id": "A-W2-08",
+              "title": "Implement TXT file chunker (paragraph-based, no heading logic)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W2-02", "A-W2-03"],
+              "deliverable": "Function chunk_txt(text) reusing paragraph + sliding window splitters",
+              "acceptance": "Large TXT file chunks into <=1200 char pieces"
+            },
+            {
+              "id": "A-W2-09",
+              "title": "Create chunker.py module assembling all chunking functions",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W2-04", "A-W2-05", "A-W2-06", "A-W2-07", "A-W2-08"],
+              "deliverable": "chunker.py in _System/scripts/memory/ with all functions",
+              "acceptance": "from chunker import chunk_markdown, chunk_txt, extract_frontmatter, infer_para, infer_domain works"
+            }
+          ]
+        },
+        {
+          "sprint_id": "A-W3",
+          "wave": "Wave 3",
+          "duration_weeks": 0.5,
+          "focus": "File walker and metadata collection",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "A-W3-01",
+              "title": "Implement vault file walker with extension filter (.md, .txt)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W1-04"],
+              "deliverable": "Generator walk_vault(root, extensions) yielding (abs_path, rel_path)",
+              "acceptance": "Walks vault, skips .git/.obsidian/.venv/node_modules, yields only .md and .txt"
+            },
+            {
+              "id": "A-W3-02",
+              "title": "Implement file size filter (skip < 100 bytes)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W3-01"],
+              "deliverable": "Filter function or parameter in walker to skip tiny files",
+              "acceptance": "668 stub files are skipped"
+            },
+            {
+              "id": "A-W3-03",
+              "title": "Implement binary/noise detector (skip base64 blobs, single-line megafiles)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W3-01"],
+              "deliverable": "Function is_noisy(content) -> bool detecting binary-looking markdown",
+              "acceptance": "Returns True for files where >50% of content is a single line >10KB"
+            },
+            {
+              "id": "A-W3-04",
+              "title": "Implement encoding-safe file reader (UTF-8 with latin-1 fallback)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W1-04"],
+              "deliverable": "Function safe_read(path) -> str handling encoding errors",
+              "acceptance": "Reads both UTF-8 and latin-1 files without crashing"
+            },
+            {
+              "id": "A-W3-05",
+              "title": "Implement chunk context prepender (prepend file path + heading to chunk text)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W2-09"],
+              "deliverable": "Function prepend_context(chunk, rel_path, heading) -> str",
+              "acceptance": "Returns 'File: path\\nSection: heading\\ncontent' format"
+            },
+            {
+              "id": "A-W3-06",
+              "title": "Implement metadata record builder per chunk",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W2-09", "A-W3-01"],
+              "deliverable": "Function build_meta(rel_path, heading, frontmatter, chunk_idx) -> dict",
+              "acceptance": "Returns dict with path, para, domain, heading, frontmatter_tags, chunk_index"
+            },
+            {
+              "id": "A-W3-07",
+              "title": "Implement progress counter with ETA for file processing",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W1-04"],
+              "deliverable": "Simple progress printer showing files processed / total and estimated time remaining",
+              "acceptance": "Prints progress every 500 files with ETA"
+            }
+          ]
+        },
+        {
+          "sprint_id": "A-W4",
+          "wave": "Wave 4",
+          "duration_weeks": 0.5,
+          "focus": "Embedding pipeline and FAISS index builder",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "A-W4-01",
+              "title": "Implement batch embedding encoder with normalization",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["A-W1-07"],
+              "deliverable": "Function encode_chunks(model, texts, batch_size=256) -> np.ndarray (normalized FP32)",
+              "acceptance": "Returns normalized float32 array with shape (n_chunks, 384)"
+            },
+            {
+              "id": "A-W4-02",
+              "title": "Implement FAISS IndexFlatIP builder from embedding matrix",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W1-02"],
+              "deliverable": "Function build_faiss_index(embeddings) -> faiss.IndexFlatIP",
+              "acceptance": "Index created with correct dimensionality, search returns valid scores"
+            },
+            {
+              "id": "A-W4-03",
+              "title": "Implement FAISS index writer (save to disk)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W4-02"],
+              "deliverable": "Function save_index(index, path) wrapping faiss.write_index",
+              "acceptance": "vault.faiss file written to _System/memory/"
+            },
+            {
+              "id": "A-W4-04",
+              "title": "Implement metadata JSON writer (parallel to FAISS index)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W3-06"],
+              "deliverable": "Function save_metadata(records, path) writing meta.json",
+              "acceptance": "meta.json written with one record per chunk, array length matches FAISS index size"
+            },
+            {
+              "id": "A-W4-05",
+              "title": "Implement index stats writer (file count, chunk count, timestamp, model)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W1-04"],
+              "deliverable": "Function save_stats(stats_dict, path) writing index_stats.json",
+              "acceptance": "index_stats.json contains file_count, chunk_count, model_name, indexed_at"
+            },
+            {
+              "id": "A-W4-06",
+              "title": "Implement memory-efficient chunked encoding for large vaults",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["A-W4-01"],
+              "deliverable": "Encode in batches of 5000 chunks, concatenate numpy arrays, avoid OOM",
+              "acceptance": "70K chunks encode without exceeding 4GB RAM"
+            }
+          ]
+        },
+        {
+          "sprint_id": "A-W5",
+          "wave": "Wave 5",
+          "duration_weeks": 0.5,
+          "focus": "Full indexer assembly — index_vault.py",
+          "parallel_dispatch": false,
+          "tasks": [
+            {
+              "id": "A-W5-01",
+              "title": "Assemble index_vault.py main() combining walker → chunker → encoder → FAISS",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 2,
+              "dependencies": ["A-W2-09", "A-W3-07", "A-W4-06", "A-W4-03", "A-W4-04", "A-W4-05"],
+              "deliverable": "index_vault.py that reads all .md/.txt, chunks, embeds, and writes FAISS + meta.json",
+              "acceptance": "python index_vault.py completes and produces vault.faiss + meta.json + index_stats.json"
+            },
+            {
+              "id": "A-W5-02",
+              "title": "Add CLI args to index_vault.py (--vault-path, --output-dir, --model, --batch-size)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W5-01"],
+              "deliverable": "argparse-based CLI with sensible defaults",
+              "acceptance": "python index_vault.py --help shows all options"
+            },
+            {
+              "id": "A-W5-03",
+              "title": "Run full Phase A index build on vault and verify output",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W5-02"],
+              "deliverable": "Complete index of 7099 .md + 338 .txt files",
+              "acceptance": "index_stats.json shows expected file count, chunk count is 50K-80K range"
+            },
+            {
+              "id": "A-W5-04",
+              "title": "Log and report skipped files (too small, noisy, encoding errors)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W5-01"],
+              "deliverable": "Skipped files logged to _System/memory/skipped.log with reason",
+              "acceptance": "Log file lists each skipped file with reason (too_small, noisy, encoding_error)"
+            }
+          ]
+        },
+        {
+          "sprint_id": "A-W6",
+          "wave": "Wave 6",
+          "duration_weeks": 0.5,
+          "focus": "Query REPL system — query_vault.py",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "A-W6-01",
+              "title": "Implement FAISS index loader and metadata loader",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W5-03"],
+              "deliverable": "Functions load_index(path) and load_metadata(path)",
+              "acceptance": "Loads vault.faiss and meta.json into memory"
+            },
+            {
+              "id": "A-W6-02",
+              "title": "Implement query embedding encoder (single query → vector)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W4-01"],
+              "deliverable": "Function encode_query(model, text) -> np.ndarray normalized FP32",
+              "acceptance": "Returns (1, 384) normalized float32 array"
+            },
+            {
+              "id": "A-W6-03",
+              "title": "Implement FAISS search wrapper returning ranked results",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W6-01", "A-W6-02"],
+              "deliverable": "Function search(index, meta, query_vec, top_k) -> list of (score, meta_record)",
+              "acceptance": "Returns top-K results sorted by descending score with metadata"
+            },
+            {
+              "id": "A-W6-04",
+              "title": "Implement PARA filter (post-retrieval filter on para field)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W6-03"],
+              "deliverable": "Function filter_para(results, para_category) filtering results by PARA bucket",
+              "acceptance": "--para Projects returns only results from 01-Projects/"
+            },
+            {
+              "id": "A-W6-05",
+              "title": "Implement domain filter (post-retrieval filter with wildcard support)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W6-03"],
+              "deliverable": "Function filter_domain(results, pattern) supporting 'Health/*' glob",
+              "acceptance": "--domain 'Health/*' returns only Health/Wellness, Health/Medicinal-Mushrooms etc."
+            },
+            {
+              "id": "A-W6-06",
+              "title": "Implement result formatter with score, path, heading, snippet",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W6-03"],
+              "deliverable": "Function format_results(results) -> formatted string output",
+              "acceptance": "Prints rank, score, file path, section heading, and 220-char text snippet"
+            },
+            {
+              "id": "A-W6-07",
+              "title": "Implement interactive REPL loop with exit/quit handling",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W6-06"],
+              "deliverable": "REPL with Ask> prompt, handles empty input, exit, quit, Ctrl+C",
+              "acceptance": "Continuous query loop that gracefully exits on quit/exit/Ctrl+C"
+            },
+            {
+              "id": "A-W6-08",
+              "title": "Assemble query_vault.py with CLI args (--para, --domain, --top, --index-dir)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["A-W6-04", "A-W6-05", "A-W6-07"],
+              "deliverable": "query_vault.py with argparse CLI and interactive REPL",
+              "acceptance": "python query_vault.py --para Projects --top 5 launches REPL with filters active"
+            },
+            {
+              "id": "A-W6-09",
+              "title": "Add one-shot query mode (--query 'text' for non-interactive use)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W6-08"],
+              "deliverable": "--query flag that prints results and exits without REPL",
+              "acceptance": "python query_vault.py --query 'sacred geometry' prints results and exits"
+            }
+          ]
+        },
+        {
+          "sprint_id": "A-W7",
+          "wave": "Wave 7",
+          "duration_weeks": 0.5,
+          "focus": "Incremental update system — update_index.py",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "A-W7-01",
+              "title": "Implement mtime snapshot writer (record mtime for all indexed files)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W5-03"],
+              "deliverable": "Function save_file_mtimes(file_map, path) writing file_hashes.json",
+              "acceptance": "file_hashes.json maps relative_path -> mtime_float for all indexed files"
+            },
+            {
+              "id": "A-W7-02",
+              "title": "Implement mtime diff detector (new, modified, deleted files)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W7-01"],
+              "deliverable": "Function diff_files(old_map, current_walk) -> (new, modified, deleted) tuples",
+              "acceptance": "Adding/modifying/deleting a file shows in correct category"
+            },
+            {
+              "id": "A-W7-03",
+              "title": "Implement selective re-chunking for changed files only",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["A-W7-02", "A-W2-09"],
+              "deliverable": "Function rechunk_changed(new_files, modified_files) -> new chunks + metadata",
+              "acceptance": "Only changed files are re-read and re-chunked"
+            },
+            {
+              "id": "A-W7-04",
+              "title": "Implement index rebuild from merged embeddings (old unchanged + new)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["A-W7-03", "A-W4-02"],
+              "deliverable": "Function rebuild_index(old_embeddings, old_meta, new_embeddings, new_meta, deleted_paths)",
+              "acceptance": "Produces new FAISS index excluding deleted, including new/modified chunks"
+            },
+            {
+              "id": "A-W7-05",
+              "title": "Implement embedding cache (save raw numpy embeddings alongside FAISS)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W4-01"],
+              "deliverable": "Save/load embeddings.npy in _System/memory/ for incremental rebuilds",
+              "acceptance": "embeddings.npy loads as (N, 384) float32 array matching FAISS index"
+            },
+            {
+              "id": "A-W7-06",
+              "title": "Assemble update_index.py with CLI and progress reporting",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["A-W7-04", "A-W7-05"],
+              "deliverable": "update_index.py that detects changes, re-embeds only diffs, rebuilds index",
+              "acceptance": "Modifying 5 files and running update_index.py re-embeds only those 5, not all 7K"
+            },
+            {
+              "id": "A-W7-07",
+              "title": "Add --full-rebuild flag to force complete re-index",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W7-06"],
+              "deliverable": "--full-rebuild flag on update_index.py",
+              "acceptance": "Flag triggers full re-index regardless of mtime state"
+            }
+          ]
+        },
+        {
+          "sprint_id": "A-W8",
+          "wave": "Wave 8",
+          "duration_weeks": 0.5,
+          "focus": "Testing and validation of Phase A",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "A-W8-01",
+              "title": "Test chunker with known markdown files (small, medium, large)",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W2-09"],
+              "deliverable": "Test script verifying chunker on 3 vault files of different sizes",
+              "acceptance": "All chunks <= 1200 chars, no empty chunks, headings preserved"
+            },
+            {
+              "id": "A-W8-02",
+              "title": "Test PARA inferrer on 10 known paths",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W2-06"],
+              "deliverable": "Test assertions for 10 paths covering all PARA categories",
+              "acceptance": "All 10 paths return correct PARA category"
+            },
+            {
+              "id": "A-W8-03",
+              "title": "Test domain inferrer on 15 known subfolder paths",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W2-07"],
+              "deliverable": "Test assertions for 15 paths covering top domains from taxonomy",
+              "acceptance": "All 15 paths return correct domain string"
+            },
+            {
+              "id": "A-W8-04",
+              "title": "Test query relevance: 5 known-answer queries against the index",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["A-W6-08"],
+              "deliverable": "5 queries where expected file appears in top-5 results",
+              "acceptance": ">=4 of 5 queries return expected file in top-5"
+            },
+            {
+              "id": "A-W8-05",
+              "title": "Test PARA filter correctness (--para Projects returns only Projects)",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W6-08"],
+              "deliverable": "All results from --para Projects have path starting with 01-Projects/",
+              "acceptance": "Zero results from other PARA folders"
+            },
+            {
+              "id": "A-W8-06",
+              "title": "Test incremental update: add a new file, verify it appears in results",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W7-06"],
+              "deliverable": "Create temp .md file, run update, query for its content, verify hit",
+              "acceptance": "New file content appears in search results after update"
+            },
+            {
+              "id": "A-W8-07",
+              "title": "Benchmark: measure full index time, query latency, index file sizes",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W5-03", "A-W6-08"],
+              "deliverable": "Timing report: index_time, query_p50, query_p99, faiss_size_mb, meta_size_mb",
+              "acceptance": "Query latency < 100ms, index size documented"
+            },
+            {
+              "id": "A-W8-08",
+              "title": "Verify AIPRM chat export handling (large files chunk without crash)",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W5-03"],
+              "deliverable": "1.2MB AIPRM export indexed without OOM or crash",
+              "acceptance": "File produces reasonable number of chunks (not 1 huge chunk)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "phase_id": "B",
+      "name": "Full Corpus — PDF, EPUB, DOCX Extraction & Indexing",
+      "objective": "Extract text from 5,966 PDFs (16GB), 884 EPUBs (6.8GB), and 100 DOCX files. Extend the FAISS index to cover the full knowledge corpus.",
+      "sprints": [
+        {
+          "sprint_id": "B-W1",
+          "wave": "Wave 1",
+          "duration_weeks": 0.5,
+          "focus": "Extraction dependencies and shared utilities",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "B-W1-01",
+              "title": "Install PyMuPDF (fitz) for PDF text extraction",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W1-01"],
+              "deliverable": "PyMuPDF installed and importable",
+              "acceptance": "python -c 'import fitz' exits 0"
+            },
+            {
+              "id": "B-W1-02",
+              "title": "Install ebooklib for EPUB text extraction",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W1-01"],
+              "deliverable": "ebooklib installed and importable",
+              "acceptance": "python -c 'import ebooklib' exits 0"
+            },
+            {
+              "id": "B-W1-03",
+              "title": "Install python-docx for DOCX text extraction",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W1-01"],
+              "deliverable": "python-docx installed and importable",
+              "acceptance": "python -c 'import docx' exits 0"
+            },
+            {
+              "id": "B-W1-04",
+              "title": "Update requirements-memory.txt with extraction dependencies",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.1,
+              "dependencies": ["B-W1-01", "B-W1-02", "B-W1-03"],
+              "deliverable": "requirements-memory.txt includes pymupdf, ebooklib, python-docx",
+              "acceptance": "pip install -r requirements-memory.txt installs all deps"
+            },
+            {
+              "id": "B-W1-05",
+              "title": "Create _System/scripts/memory/extractors/ directory",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.1,
+              "dependencies": [],
+              "deliverable": "Directory exists for extractor modules",
+              "acceptance": "ls _System/scripts/memory/extractors/ succeeds"
+            },
+            {
+              "id": "B-W1-06",
+              "title": "Implement extraction result dataclass (ExtractedDoc: text, page_count, metadata)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["B-W1-05"],
+              "deliverable": "Shared dataclass used by all extractors",
+              "acceptance": "ExtractedDoc has text, source_path, page_count, format, extraction_quality fields"
+            }
+          ]
+        },
+        {
+          "sprint_id": "B-W2",
+          "wave": "Wave 2",
+          "duration_weeks": 1,
+          "focus": "PDF extraction pipeline",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "B-W2-01",
+              "title": "Implement PDF text extractor using PyMuPDF (page-by-page)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["B-W1-01", "B-W1-06"],
+              "deliverable": "Function extract_pdf(path) -> ExtractedDoc with full text",
+              "acceptance": "Extracts readable text from a known PDF, preserves page breaks"
+            },
+            {
+              "id": "B-W2-02",
+              "title": "Implement PDF metadata extractor (title, author, page count from PDF info)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W1-01"],
+              "deliverable": "Function extract_pdf_meta(path) -> dict with title, author, pages",
+              "acceptance": "Returns metadata dict for PDFs that have embedded metadata"
+            },
+            {
+              "id": "B-W2-03",
+              "title": "Implement PDF quality scorer (text density per page)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W2-01"],
+              "deliverable": "Function score_pdf_quality(extracted) -> float (0-1) based on text chars per page",
+              "acceptance": "Scanned-image PDFs score < 0.2, text PDFs score > 0.7"
+            },
+            {
+              "id": "B-W2-04",
+              "title": "Implement PDF page-aware chunker (chunk by page boundaries then paragraphs)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["B-W2-01", "A-W2-02", "A-W2-03"],
+              "deliverable": "Function chunk_pdf(extracted) -> list of Chunk with page numbers",
+              "acceptance": "Each chunk tagged with source page range"
+            },
+            {
+              "id": "B-W2-05",
+              "title": "Implement scanned-PDF detector (flag for OCR-needed files)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W2-03"],
+              "deliverable": "Function is_scanned(path) -> bool based on text density",
+              "acceptance": "Flags PDFs with < 50 chars/page as scanned"
+            },
+            {
+              "id": "B-W2-06",
+              "title": "Implement PDF error handler (corrupt files, password-protected, etc.)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W2-01"],
+              "deliverable": "Try/except wrapper logging failed PDFs to extraction_errors.log",
+              "acceptance": "Corrupt/locked PDFs logged and skipped without crashing pipeline"
+            },
+            {
+              "id": "B-W2-07",
+              "title": "Test PDF extractor on 5 known PDFs from vault (different sizes/types)",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W2-04"],
+              "deliverable": "Extraction test on small, medium, large, scanned, and metadata-rich PDFs",
+              "acceptance": "4/5 PDFs extract readable text, scanned PDF flagged correctly"
+            },
+            {
+              "id": "B-W2-08",
+              "title": "Assemble pdf_extractor.py module",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W2-04", "B-W2-05", "B-W2-06"],
+              "deliverable": "extractors/pdf_extractor.py with all PDF functions",
+              "acceptance": "from extractors.pdf_extractor import extract_pdf, chunk_pdf works"
+            }
+          ]
+        },
+        {
+          "sprint_id": "B-W3",
+          "wave": "Wave 3",
+          "duration_weeks": 0.5,
+          "focus": "EPUB extraction pipeline",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "B-W3-01",
+              "title": "Implement EPUB text extractor (chapter-by-chapter via ebooklib)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["B-W1-02", "B-W1-06"],
+              "deliverable": "Function extract_epub(path) -> ExtractedDoc with chapter-separated text",
+              "acceptance": "Extracts readable text from a known EPUB, preserves chapter structure"
+            },
+            {
+              "id": "B-W3-02",
+              "title": "Implement EPUB metadata extractor (title, author, language from OPF)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W1-02"],
+              "deliverable": "Function extract_epub_meta(path) -> dict with title, author, language",
+              "acceptance": "Returns metadata dict for EPUBs with OPF metadata"
+            },
+            {
+              "id": "B-W3-03",
+              "title": "Implement EPUB chapter-aware chunker",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["B-W3-01", "A-W2-02", "A-W2-03"],
+              "deliverable": "Function chunk_epub(extracted) -> list of Chunk with chapter info",
+              "acceptance": "Each chunk tagged with chapter name/number"
+            },
+            {
+              "id": "B-W3-04",
+              "title": "Implement HTML-to-text cleaner for EPUB content (strip tags)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W1-02"],
+              "deliverable": "Function clean_html(html) -> plain text using BeautifulSoup",
+              "acceptance": "HTML tags removed, whitespace normalized, content preserved"
+            },
+            {
+              "id": "B-W3-05",
+              "title": "Implement EPUB error handler (corrupt files, DRM, etc.)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["B-W3-01"],
+              "deliverable": "Try/except wrapper logging failed EPUBs",
+              "acceptance": "Corrupt/DRM EPUBs logged and skipped"
+            },
+            {
+              "id": "B-W3-06",
+              "title": "Assemble epub_extractor.py module",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W3-03", "B-W3-04", "B-W3-05"],
+              "deliverable": "extractors/epub_extractor.py with all EPUB functions",
+              "acceptance": "from extractors.epub_extractor import extract_epub, chunk_epub works"
+            }
+          ]
+        },
+        {
+          "sprint_id": "B-W4",
+          "wave": "Wave 4",
+          "duration_weeks": 0.5,
+          "focus": "DOCX extraction pipeline",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "B-W4-01",
+              "title": "Implement DOCX text extractor (paragraph-by-paragraph via python-docx)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W1-03", "B-W1-06"],
+              "deliverable": "Function extract_docx(path) -> ExtractedDoc",
+              "acceptance": "Extracts readable text from a known DOCX file"
+            },
+            {
+              "id": "B-W4-02",
+              "title": "Implement DOCX chunker reusing paragraph splitter",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W4-01", "A-W2-02"],
+              "deliverable": "Function chunk_docx(extracted) -> list of Chunk",
+              "acceptance": "Chunks DOCX content into <=1200 char pieces"
+            },
+            {
+              "id": "B-W4-03",
+              "title": "Assemble docx_extractor.py module",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["B-W4-02"],
+              "deliverable": "extractors/docx_extractor.py",
+              "acceptance": "from extractors.docx_extractor import extract_docx, chunk_docx works"
+            }
+          ]
+        },
+        {
+          "sprint_id": "B-W5",
+          "wave": "Wave 5",
+          "duration_weeks": 0.5,
+          "focus": "Unified extraction router",
+          "parallel_dispatch": false,
+          "tasks": [
+            {
+              "id": "B-W5-01",
+              "title": "Implement format router that dispatches to correct extractor by extension",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W2-08", "B-W3-06", "B-W4-03"],
+              "deliverable": "Function extract_file(path) routing .pdf/.epub/.docx to correct extractor",
+              "acceptance": "Correctly routes all three formats"
+            },
+            {
+              "id": "B-W5-02",
+              "title": "Implement unified chunk_file(path) combining extraction + chunking",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W5-01"],
+              "deliverable": "Function chunk_file(path) -> list of Chunk with format-specific metadata",
+              "acceptance": "Works for .pdf, .epub, .docx, .md, .txt"
+            },
+            {
+              "id": "B-W5-03",
+              "title": "Extend vault walker to include .pdf, .epub, .docx extensions",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W3-01"],
+              "deliverable": "walk_vault() with configurable extensions parameter",
+              "acceptance": "Walker yields all 7099 md + 338 txt + 5966 pdf + 884 epub + 100 docx"
+            },
+            {
+              "id": "B-W5-04",
+              "title": "Create extractors/__init__.py with unified API",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["B-W5-02"],
+              "deliverable": "__init__.py exporting extract_file and chunk_file",
+              "acceptance": "from extractors import chunk_file works"
+            }
+          ]
+        },
+        {
+          "sprint_id": "B-W6",
+          "wave": "Wave 6",
+          "duration_weeks": 1,
+          "focus": "Batch processing system for large corpus",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "B-W6-01",
+              "title": "Implement batch file processor with configurable batch size",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["B-W5-04"],
+              "deliverable": "Process files in batches of N, embed each batch, append to index",
+              "acceptance": "Can process 5966 PDFs in batches of 500 without OOM"
+            },
+            {
+              "id": "B-W6-02",
+              "title": "Implement progress tracker with file count, time elapsed, ETA",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W6-01"],
+              "deliverable": "Rich progress output: [1234/5966] 20.7% | 12m elapsed | ~46m remaining",
+              "acceptance": "ETA accuracy within 20% of actual time"
+            },
+            {
+              "id": "B-W6-03",
+              "title": "Implement extraction error aggregator (count by error type)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W6-01"],
+              "deliverable": "Summary of errors: {corrupt: 12, password: 3, encoding: 5, drm: 2}",
+              "acceptance": "Error summary printed at end and saved to extraction_report.json"
+            },
+            {
+              "id": "B-W6-04",
+              "title": "Implement checkpoint/resume (save progress so interrupted runs can resume)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["B-W6-01"],
+              "deliverable": "Checkpoint file tracking last processed file; --resume flag",
+              "acceptance": "Kill and restart: resumes from last checkpoint, not from beginning"
+            },
+            {
+              "id": "B-W6-05",
+              "title": "Implement memory monitor (warn if RAM usage exceeds threshold)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W6-01"],
+              "deliverable": "Log warning if process RSS > 6GB, flush embeddings to disk",
+              "acceptance": "Large corpus processing stays under 8GB RSS"
+            },
+            {
+              "id": "B-W6-06",
+              "title": "Implement scanned-PDF log (list OCR-needed files for future processing)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["B-W2-05", "B-W6-01"],
+              "deliverable": "scanned_pdfs.txt listing PDFs that yielded <50 chars/page",
+              "acceptance": "File written with one path per line for PDFs needing OCR"
+            }
+          ]
+        },
+        {
+          "sprint_id": "B-W7",
+          "wave": "Wave 7",
+          "duration_weeks": 1,
+          "focus": "Extended index build — full corpus",
+          "parallel_dispatch": false,
+          "tasks": [
+            {
+              "id": "B-W7-01",
+              "title": "Assemble index_full.py combining Phase A + Phase B into single pipeline",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 2,
+              "dependencies": ["B-W6-04", "B-W5-04", "A-W5-02"],
+              "deliverable": "index_full.py that indexes md + txt + pdf + epub + docx",
+              "acceptance": "Runs end-to-end on full vault, produces combined FAISS index"
+            },
+            {
+              "id": "B-W7-02",
+              "title": "Add --formats flag to select which file types to index",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W7-01"],
+              "deliverable": "--formats md,txt,pdf,epub,docx flag with defaults",
+              "acceptance": "--formats pdf,epub indexes only PDFs and EPUBs"
+            },
+            {
+              "id": "B-W7-03",
+              "title": "Run full corpus index build and record timings",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["B-W7-02"],
+              "deliverable": "Complete index of all file types with timing report",
+              "acceptance": "index_stats.json shows all file types, chunk counts, duration"
+            },
+            {
+              "id": "B-W7-04",
+              "title": "Add file_format field to metadata records for cross-format filtering",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["B-W7-01"],
+              "deliverable": "Each meta record includes format: 'md'|'txt'|'pdf'|'epub'|'docx'",
+              "acceptance": "Filter by format works in query_vault.py"
+            }
+          ]
+        },
+        {
+          "sprint_id": "B-W8",
+          "wave": "Wave 8",
+          "duration_weeks": 0.5,
+          "focus": "Deduplication and quality filtering",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "B-W8-01",
+              "title": "Implement content hash deduplicator (skip duplicate chunks across files)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["B-W7-01"],
+              "deliverable": "SHA-256 hash per chunk; skip if hash already seen",
+              "acceptance": "Duplicate AIPRM exports in Archives don't double-index"
+            },
+            {
+              "id": "B-W8-02",
+              "title": "Implement file-level dedup (detect identical files via file hash)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W7-01"],
+              "deliverable": "Skip files with identical SHA-256 to already-indexed file",
+              "acceptance": "Backup copies in Archives skipped, original indexed"
+            },
+            {
+              "id": "B-W8-03",
+              "title": "Implement low-quality chunk filter (drop chunks with <30 alpha chars)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W7-01"],
+              "deliverable": "Filter function dropping chunks that are mostly symbols/numbers/whitespace",
+              "acceptance": "Table-of-contents and copyright-page chunks filtered out"
+            },
+            {
+              "id": "B-W8-04",
+              "title": "Implement dedup report (count of duplicates skipped, space saved)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["B-W8-01", "B-W8-02"],
+              "deliverable": "Dedup stats in index_stats.json: files_deduped, chunks_deduped",
+              "acceptance": "Stats show non-zero dedup counts"
+            }
+          ]
+        },
+        {
+          "sprint_id": "B-W9",
+          "wave": "Wave 9",
+          "duration_weeks": 0.5,
+          "focus": "Enhanced query features for full corpus",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "B-W9-01",
+              "title": "Add --format filter to query_vault.py (search only PDFs, only markdown, etc.)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W7-04", "A-W6-08"],
+              "deliverable": "--format pdf flag in query CLI",
+              "acceptance": "--format pdf returns only results from PDF files"
+            },
+            {
+              "id": "B-W9-02",
+              "title": "Add page number display for PDF results",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["B-W7-04"],
+              "deliverable": "PDF results show source page number in output",
+              "acceptance": "PDF result displays 'Page: 42' alongside path and heading"
+            },
+            {
+              "id": "B-W9-03",
+              "title": "Add chapter display for EPUB results",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["B-W7-04"],
+              "deliverable": "EPUB results show chapter name in output",
+              "acceptance": "EPUB result displays 'Chapter: Introduction' alongside path"
+            },
+            {
+              "id": "B-W9-04",
+              "title": "Add --exclude-archives flag to skip 04-Archives results",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["A-W6-08"],
+              "deliverable": "--exclude-archives flag filtering out Archive results",
+              "acceptance": "Flag removes all results with para='Archives'"
+            },
+            {
+              "id": "B-W9-05",
+              "title": "Add JSON output mode (--json flag for programmatic use)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W6-08"],
+              "deliverable": "--json flag outputting results as JSON array",
+              "acceptance": "Output is valid JSON parseable by jq"
+            },
+            {
+              "id": "B-W9-06",
+              "title": "Implement multi-query mode (read queries from stdin, one per line)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["A-W6-09"],
+              "deliverable": "cat queries.txt | python query_vault.py --batch mode",
+              "acceptance": "Processes multiple queries from stdin, outputs results for each"
+            }
+          ]
+        },
+        {
+          "sprint_id": "B-W10",
+          "wave": "Wave 10",
+          "duration_weeks": 0.5,
+          "focus": "Monitoring, maintenance, and documentation",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "B-W10-01",
+              "title": "Implement index health check (verify FAISS index matches meta.json length)",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["B-W7-03"],
+              "deliverable": "health_check.py verifying index consistency",
+              "acceptance": "Reports OK if FAISS ntotal == len(meta.json), ERROR otherwise"
+            },
+            {
+              "id": "B-W10-02",
+              "title": "Implement index statistics reporter (breakdown by PARA, domain, format)",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W7-03"],
+              "deliverable": "stats command showing chunks per PARA bucket, per domain, per format",
+              "acceptance": "Prints table of chunk counts grouped by para/domain/format"
+            },
+            {
+              "id": "B-W10-03",
+              "title": "Extend update_index.py to handle PDF/EPUB/DOCX incrementally",
+              "area": "backend",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["A-W7-06", "B-W7-01"],
+              "deliverable": "Incremental updates work for all file formats, not just markdown",
+              "acceptance": "Adding a new PDF and running update_index.py indexes only that PDF"
+            },
+            {
+              "id": "B-W10-04",
+              "title": "Write README.md for _System/scripts/memory/ with usage instructions",
+              "area": "product",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W7-03", "A-W6-08"],
+              "deliverable": "README.md with quickstart, CLI reference, architecture overview",
+              "acceptance": "New user can index vault and query it following only the README"
+            },
+            {
+              "id": "B-W10-05",
+              "title": "Create shell alias / wrapper script for easy invocation",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.25,
+              "dependencies": ["B-W10-04"],
+              "deliverable": "vmem script: vmem search 'query', vmem index, vmem update, vmem stats",
+              "acceptance": "vmem search 'sacred geometry' returns results without typing full python path"
+            },
+            {
+              "id": "B-W10-06",
+              "title": "Final integration test: query spanning markdown notes + PDF books",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W9-01"],
+              "deliverable": "Query that returns results from both .md notes and .pdf books",
+              "acceptance": "Single query returns mixed format results ranked by relevance"
+            },
+            {
+              "id": "B-W10-07",
+              "title": "Performance benchmark: full corpus query latency and index size report",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W7-03"],
+              "deliverable": "Benchmark: query_latency_ms, index_size_mb, total_chunks, total_files",
+              "acceptance": "Query latency < 200ms even with full corpus index"
+            }
+          ]
+        },
+        {
+          "sprint_id": "B-W11",
+          "wave": "Wave 11",
+          "duration_weeks": 0.5,
+          "focus": "Headless Nightly Build & Monitoring",
+          "parallel_dispatch": true,
+          "tasks": [
+            {
+              "id": "B-W11-01",
+              "title": "Implement pulse_monitor.py for health tracking",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 1,
+              "dependencies": ["B-W10-01"],
+              "deliverable": "pulse_monitor.py script",
+              "acceptance": "Script correctly reports index health and process status",
+              "status": "DONE"
+            },
+            {
+              "id": "B-W11-02",
+              "title": "Implement run_headless.sh for detached execution",
+              "area": "infra",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W7-01"],
+              "deliverable": "run_headless.sh wrapper script",
+              "acceptance": "Starts indexing in background with nohup/disown and logs output",
+              "status": "DONE"
+            },
+            {
+              "id": "B-W11-03",
+              "title": "Verify background persistence and PID tracking",
+              "area": "qa",
+              "owner_role": "Agent",
+              "est_hours": 0.5,
+              "dependencies": ["B-W11-02"],
+              "deliverable": "PID file and status verification",
+              "acceptance": "Process continues after terminal closes; PID is tracked in .pid file",
+              "status": "DONE"
+            },
+            {
+              "id": "B-W11-04",
+              "title": "Perform full overnight indexing build",
+              "area": "ops",
+              "owner_role": "Agent",
+              "est_hours": 8,
+              "dependencies": ["B-W11-02"],
+              "deliverable": "Complete index of 13K+ files",
+              "acceptance": "Full index completed without interruption, vault.faiss updated",
+              "status": "PENDING"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

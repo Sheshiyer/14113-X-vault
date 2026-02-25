@@ -1,0 +1,19 @@
+topic: GitHub README Rewrite Prompt Scaffolding
+channel: internal
+required_claims:
+  runtime_claim: ""
+  pattern_claim: ""
+  enneagram_lens: ""
+  embodied_intervention: ""
+  closure_style: non-pitch
+sources:
+  areas:[]
+  resources:[]
+  project:
+    - /Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/brand-docs-final/brand-config.yaml
+gates:
+  min_area_sources: 2
+  min_resource_sources: 1
+  meta_language_removed: true
+metadata:
+  draft_file: github-readme-rewrite-prompt.md

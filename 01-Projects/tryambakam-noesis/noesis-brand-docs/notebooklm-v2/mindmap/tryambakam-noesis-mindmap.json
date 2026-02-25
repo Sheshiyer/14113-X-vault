@@ -1,0 +1,214 @@
+{
+  "name": "Tryambakam Noesis",
+  "children": [
+    {
+      "name": "Brand Foundation",
+      "children": [
+        {
+          "name": "Central Concept",
+          "children": [
+            {
+              "name": "Living System for Self-Authored Meaning"
+            },
+            {
+              "name": "Success equals user independence"
+            },
+            {
+              "name": "Anti-dependency design"
+            }
+          ]
+        },
+        {
+          "name": "Voice & Tone",
+          "children": [
+            {
+              "name": "The Anatomist Who Sees Fractals"
+            },
+            {
+              "name": "Grounded, direct, respectful-challenging"
+            },
+            {
+              "name": "Precise but playful"
+            }
+          ]
+        },
+        {
+          "name": "Visual Identity",
+          "children": [
+            {
+              "name": "Grounded Depth aesthetic"
+            },
+            {
+              "name": "Colors: Deep Ink, Bone, Aged Gold"
+            },
+            {
+              "name": "Typography: Cormorant Garamond, Source Sans 3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Product Architecture",
+      "children": [
+        {
+          "name": "16 Engine Stack",
+          "children": [
+            {
+              "name": "11 Rust Core Engines (Precision Computation)"
+            },
+            {
+              "name": "5 TypeScript Bridges (Symbolic Interpretation)"
+            },
+            {
+              "name": "Coherence Matrix arbitration"
+            }
+          ]
+        },
+        {
+          "name": "Witness Agents",
+          "children": [
+            {
+              "name": "Dual Guardrail Dyad"
+            },
+            {
+              "name": "Aletheios (Coherence/Order)"
+            },
+            {
+              "name": "Pichet (Vitality/Action)"
+            }
+          ]
+        },
+        {
+          "name": "Somatic Canticles",
+          "children": [
+            {
+              "name": "Three-Wave-synchronized narrative"
+            },
+            {
+              "name": "Biorhythm-paced content unlocking"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ecosystem Layers",
+      "children": [
+        {
+          "name": "Digital & Narrative",
+          "children": [
+            {
+              "name": "Selemene Engine (API/TUI)"
+            },
+            {
+              "name": "The Plumber (Manga Series)"
+            },
+            {
+              "name": "Infinite Treasure Hunt (Crypto Game)"
+            }
+          ]
+        },
+        {
+          "name": "Physical & High-Touch",
+          "children": [
+            {
+              "name": "Kopina (Bioelectric Sacral Interface)"
+            },
+            {
+              "name": "Ritual Objects (Oils, Incense, Orgonites)"
+            },
+            {
+              "name": "1:1 Mentorship (High-touch integration)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Market Intelligence",
+      "children": [
+        {
+          "name": "Buyer Persona",
+          "children": [
+            {
+              "name": "Seeker Simon (Age 32-48)"
+            },
+            {
+              "name": "Exhausted by performative growth"
+            },
+            {
+              "name": "Suspects systems sell dependency"
+            }
+          ]
+        },
+        {
+          "name": "Competitive Moat",
+          "children": [
+            {
+              "name": "Cross-tradition integration"
+            },
+            {
+              "name": "Authorship over consumption"
+            },
+            {
+              "name": "Biological data synthesis"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Business Model",
+      "children": [
+        {
+          "name": "Pricing Philosophy",
+          "children": [
+            {
+              "name": "Donation-supported core"
+            },
+            {
+              "name": "Sovereignty-first investment"
+            },
+            {
+              "name": "No subscription model"
+            }
+          ]
+        },
+        {
+          "name": "Strategy",
+          "children": [
+            {
+              "name": "Grassroots Sovereignty Launch"
+            },
+            {
+              "name": "Zero-cost community seeding"
+            },
+            {
+              "name": "Building in public"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Spatial Architecture",
+      "children": [
+        {
+          "name": "The Latent Temple",
+          "children": [
+            {
+              "name": "Procedural psychoreactive interface"
+            },
+            {
+              "name": "Gaussian Splat atmospheres"
+            },
+            {
+              "name": "Physics-based interaction (Rapier)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

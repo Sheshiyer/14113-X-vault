@@ -1,0 +1,75 @@
+---
+title: Guide to Growing Psychedelic Mushrooms for Personal Use
+author: Karen Boomer
+type: book
+format: PDF
+file_size: 1.69 MB
+original_filename: Guide to Growing Psychedelic Mushrooms for Personal Use by Karen
+  Boomer (z-lib.org).pdf
+para_bucket: Areas
+para_category: Skills-Development
+enneagram_primary: Type 4 - Thalia (Individualist)
+enneagram_secondary: Type 5 - Melpomene (Investigator)
+hormone_primary: Dopamine
+classification_confidence: 0.75
+content_type: Book - Skills
+mocs: []
+reading_status: Unread
+reading_priority: Medium
+reading_progress: 0
+date_added: '2026-01-25'
+date_processed: '2026-01-25T10:29:46.233434'
+sha256: c7b2bab26e835bbb5151324f89af24a44b240963515e25d1c8b9db6e5ef673fc
+duplicate_status: unique
+---
+
+# Guide to Growing Psychedelic Mushrooms for Personal Use
+
+## Book Information
+
+**Author**: Karen Boomer  
+**Format**: PDF  
+**Reading Status**: Unread | **Priority**: Medium
+
+**Enneagram**: Type 4 - Thalia (Individualist) → Type 5 - Melpomene (Investigator)  
+**PARA**: Areas / Skills-Development
+
+---
+
+## Maps of Content
+
+
+
+---
+
+## Original Book
+
+![[Guide to Growing Psychedelic Mushrooms for Personal Use by Karen Boomer (z-lib.org).pdf]]
+
+---
+
+## Reading Notes
+
+### Key Takeaways
+
+- 
+
+### Action Items
+
+- [ ] 
+
+### Quotes
+
+> 
+
+---
+
+## Metadata
+
+**Source**: Original file embedded above  
+**Processed**: 2026-01-25T10:29:46.233434  
+**Classification Confidence**: 75%
+
+---
+
+*Part of [[Books-Master-Index]]*

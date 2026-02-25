@@ -1,0 +1,342 @@
+{
+    "meta": {
+        "version": "1.0.0",
+        "last_updated": "2026-01-26",
+        "source": "Tryambakam Noesis Multi-Engine Workflows",
+        "total_workflows": 6
+    },
+    "workflows": {
+        "natal_blueprint": {
+            "name": "Natal Blueprint",
+            "description": "Complete birth chart analysis combining numerological essence with astronomical precision",
+            "engines": [
+                "numerology",
+                "human_design",
+                "vimshottari"
+            ],
+            "synthesis_theme": "foundational_design",
+            "consciousness_level": "seeking",
+            "breath_sequence": [
+                "ground",
+                "center",
+                "expand"
+            ],
+            "duration_minutes": 45,
+            "output_type": "life_architecture_map",
+            "recommended_for": [
+                "new_users",
+                "life_transitions",
+                "foundational_understanding"
+            ],
+            "integration_pattern": {
+                "numerology": "provides_life_path_foundation",
+                "human_design": "reveals_energetic_blueprint",
+                "vimshottari": "maps_temporal_unfoldment"
+            },
+            "synthesis_focus": [
+                "How does your life path number (numerology) express through your Human Design type?",
+                "Which dashas (vimshottari) activate which gates (human design)?",
+                "What is the coherence score across all three systems?"
+            ]
+        },
+        "career_purpose": {
+            "name": "Career & Life Purpose",
+            "description": "Identify authentic career path and life purpose through typological and archetypal analysis",
+            "engines": [
+                "numerology",
+                "enneagram",
+                "tarot"
+            ],
+            "synthesis_theme": "vocational_clarity",
+            "consciousness_level": "seeking",
+            "breath_sequence": [
+                "center",
+                "inquire",
+                "receive"
+            ],
+            "duration_minutes": 30,
+            "output_type": "purpose_roadmap",
+            "recommended_for": [
+                "career_transitions",
+                "purpose_seeking",
+                "talent_identification"
+            ],
+            "integration_pattern": {
+                "numerology": "reveals_life_path_direction",
+                "enneagram": "identifies_core_motivations_fears",
+                "tarot": "provides_archetypal_guidance"
+            },
+            "synthesis_focus": [
+                "What is the alignment between your life path (numerology) and enneagram type?",
+                "Which career archetypes (tarot) resonate with your core motivation (enneagram)?",
+                "What obstacles need addressing for authentic expression?"
+            ]
+        },
+        "spiritual_path": {
+            "name": "Spiritual Development Path",
+            "description": "Deep spiritual practice guidance through transformational wisdom systems",
+            "engines": [
+                "gene_keys",
+                "iching",
+                "sacred_geometry"
+            ],
+            "synthesis_theme": "consciousness_evolution",
+            "consciousness_level": "practicing",
+            "breath_sequence": [
+                "descend",
+                "witness",
+                "transcend"
+            ],
+            "duration_minutes": 60,
+            "output_type": "spiritual_roadmap",
+            "recommended_for": [
+                "spiritual_seekers",
+                "shadow_work",
+                "consciousness_evolution"
+            ],
+            "integration_pattern": {
+                "gene_keys": "identifies_shadow_gift_siddhi_pathways",
+                "iching": "provides_wisdom_transmission",
+                "sacred_geometry": "reveals_underlying_pattern_language"
+            },
+            "synthesis_focus": [
+                "What is your life's work (gene keys) expressed through geometric principles?",
+                "Which hexagrams (iching) support your current evolutionary stage (gene keys)?",
+                "How does sacred geometry encode your spiritual path?"
+            ]
+        },
+        "shadow_integration": {
+            "name": "Shadow Work & Integration",
+            "description": "Deep unconscious pattern recognition and transmutation practices",
+            "engines": [
+                "enneagram",
+                "tarot",
+                "gene_keys"
+            ],
+            "synthesis_theme": "unconscious_integration",
+            "consciousness_level": "practicing",
+            "breath_sequence": [
+                "descend",
+                "witness",
+                "transmute"
+            ],
+            "duration_minutes": 45,
+            "output_type": "shadow_work_roadmap",
+            "recommended_for": [
+                "shadow_work",
+                "emotional_healing",
+                "pattern_breaking"
+            ],
+            "integration_pattern": {
+                "enneagram": "reveals_core_fear_defense_patterns",
+                "tarot": "provides_archetypal_shadow_mapping",
+                "gene_keys": "shows_shadow_to_gift_transformation_path"
+            },
+            "synthesis_focus": [
+                "What is your enneagram shadow expressing through which gene key shadows?",
+                "Which tarot archetypes illuminate your transformation path?",
+                "What practices activate gift frequencies (gene keys) from shadow states (enneagram)?"
+            ]
+        },
+        "relationship_compatibility": {
+            "name": "Relationship Dynamics",
+            "description": "Deep compatibility analysis and relationship navigation guidance",
+            "engines": [
+                "human_design",
+                "numerology",
+                "gene_keys"
+            ],
+            "synthesis_theme": "relational_harmony",
+            "consciousness_level": "seeking",
+            "breath_sequence": [
+                "attune",
+                "reflect",
+                "harmonize"
+            ],
+            "duration_minutes": 50,
+            "output_type": "relationship_map",
+            "recommended_for": [
+                "partnerships",
+                "team_dynamics",
+                "family_healing"
+            ],
+            "integration_pattern": {
+                "human_design": "reveals_energetic_compatibility_electromagnetic",
+                "numerology": "shows_life_path_resonance_friction",
+                "gene_keys": "identifies_complementary_genetic_pathways"
+            },
+            "synthesis_focus": [
+                "How do Human Design types interact (electromagnetic dynamics)?",
+                "What are the life path number synergies and challenges (numerology)?",
+                "Which gene key pairings create transformational relationships?"
+            ],
+            "note": "Requires birth data for all individuals in relationship"
+        },
+        "optimal_timing": {
+            "name": "Sacred Timing & Optimization",
+            "description": "Multi-layered temporal analysis for chrono-biological optimization",
+            "engines": [
+                "vedicclock_tcm",
+                "biorhythm",
+                "vimshottari"
+            ],
+            "synthesis_theme": "chronobiological_optimization",
+            "consciousness_level": "practicing",
+            "breath_sequence": [
+                "attune",
+                "align",
+                "flow"
+            ],
+            "duration_minutes": 40,
+            "output_type": "sacred_schedule",
+            "recommended_for": [
+                "daily_optimization",
+                "event_planning",
+                "health_scheduling"
+            ],
+            "integration_pattern": {
+                "vedicclock_tcm": "provides_vedic_panchanga_and_tcm_organ_rhythms",
+                "biorhythm": "shows_personal_physical_emotional_intellectual_cycles",
+                "vimshottari": "reveals_planetary_period_influences"
+            },
+            "synthesis_focus": [
+                "What are the optimal times for meditation, work, rest, exercise?",
+                "Which dashas (vimshottari) align with biorhythm peaks?",
+                "How do TCM organ hours correlate with personal cycles?",
+                "When are auspicious windows for important activities?"
+            ],
+            "output_includes": [
+                "daily_schedule_recommendations",
+                "7_day_forecast",
+                "30_day_timeline"
+            ]
+        }
+    },
+    "workflow_sequences": {
+        "new_user_journey": [
+            {
+                "step": 1,
+                "workflow": "natal_blueprint",
+                "purpose": "Establish foundational understanding"
+            },
+            {
+                "step": 2,
+                "workflow": "career_purpose",
+                "purpose": "Apply foundation to practical life path"
+            },
+            {
+                "step": 3,
+                "workflow": "optimal_timing",
+                "purpose": "Integrate timing wisdom into daily life"
+            }
+        ],
+        "advanced_practitioner_journey": [
+            {
+                "step": 1,
+                "workflow": "spiritual_path",
+                "purpose": "Deepen spiritual practice"
+            },
+            {
+                "step": 2,
+                "workflow": "shadow_integration",
+                "purpose": "Work with unconscious material"
+            },
+            {
+                "step": 3,
+                "workflow": "relationship_compatibility",
+                "purpose": "Apply insights to relational field"
+            }
+        ]
+    },
+    "breath_sequences": {
+        "ground": {
+            "description": "Deep belly breathing, connecting to earth energy",
+            "pattern": "4_count_in_4_count_hold_6_count_out",
+            "repetitions": 9,
+            "purpose": "Establish foundation and presence"
+        },
+        "center": {
+            "description": "Heart-centered coherent breathing",
+            "pattern": "5_count_in_5_count_out",
+            "repetitions": 11,
+            "purpose": "Balance and centering"
+        },
+        "expand": {
+            "description": "Expansive breath with crown awareness",
+            "pattern": "7_count_in_1_count_suspend_7_count_out",
+            "repetitions": 7,
+            "purpose": "Expansion and cosmic connection"
+        },
+        "inquire": {
+            "description": "Questioning breath with pause for listening",
+            "pattern": "5_count_in_5_count_hold_5_count_out_5_count_hold",
+            "repetitions": 6,
+            "purpose": "Open receptivity to guidance"
+        },
+        "receive": {
+            "description": "Receptive breathing, soft and allowing",
+            "pattern": "gentle_in_long_soft_out",
+            "repetitions": 12,
+            "purpose": "Integration and reception"
+        },
+        "descend": {
+            "description": "Grounding descent into shadow territory",
+            "pattern": "3_count_in_9_count_out",
+            "repetitions": 8,
+            "purpose": "Safe descent into unconscious"
+        },
+        "witness": {
+            "description": "Neutral observing breath",
+            "pattern": "equal_breathing_4_4",
+            "repetitions": 10,
+            "purpose": "Non-reactive awareness"
+        },
+        "transmute": {
+            "description": "Transformative breath with intentional hold",
+            "pattern": "6_count_in_6_count_hold_intention_6_count_release",
+            "repetitions": 7,
+            "purpose": "Alchemical transformation"
+        },
+        "transcend": {
+            "description": "Uplifting expansive breath",
+            "pattern": "rapid_bhastrika_then_long_retention",
+            "repetitions": 3,
+            "purpose": "Elevation and transcendence"
+        },
+        "attune": {
+            "description": "Harmonizing breath with another's rhythm",
+            "pattern": "match_partner_or_field_rhythm",
+            "repetitions": "continuous",
+            "purpose": "Energetic attunement"
+        },
+        "reflect": {
+            "description": "Mirroring breath, observing resonance",
+            "pattern": "alternate_leading_following",
+            "repetitions": 6,
+            "purpose": "Relational awareness"
+        },
+        "harmonize": {
+            "description": "Synchronizing breath with field",
+            "pattern": "coherent_unified_rhythm",
+            "repetitions": 9,
+            "purpose": "Field coherence"
+        },
+        "align": {
+            "description": "Alignment with cosmic rhythm",
+            "pattern": "slow_deep_cosmic_timing",
+            "repetitions": 7,
+            "purpose": "Temporal synchronization"
+        },
+        "flow": {
+            "description": "Easy flowing breath, no resistance",
+            "pattern": "natural_ujjayi_ocean_breath",
+            "repetitions": "continuous",
+            "purpose": "Surrender to optimal timing"
+        }
+    },
+    "synthesis_patterns": {
+        "ai_synthesis_prompt_template": "Based on the following consciousness engine results: {engine_results}, and the user's context: {user_context}, provide a unified narrative that weaves together the insights from {engine_names}. Focus on: {synthesis_focus}. Tone should be {tone}. Depth level: {depth}.",
+        "correlation_calculation": "For each pair of engines in workflow, calculate correlation coefficient (0-1) based on thematic alignment, recommend practices where correlation is high, flag areas needing attention where correlation is low.",
+        "unified_recommendations": "Synthesize all engine recommendations into a single prioritized list ordered by impact, coherence, and user readiness. Include breath practices, timing suggestions, and consciousness exercises."
+    }
+}

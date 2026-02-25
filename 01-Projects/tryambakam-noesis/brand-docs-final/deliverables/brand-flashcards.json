@@ -1,0 +1,265 @@
+{
+  "title": "Noesis Flashcards",
+  "cards": [
+    {
+      "front": "In the Kha-Ba-La framework, what distinct role does the 'Kha' (Spirit) represent?",
+      "back": "The observer, the author-drive, and the witness field."
+    },
+    {
+      "front": "In the Kha-Ba-La framework, what distinct role does 'Ba' (Body) represent?",
+      "back": "The vehicle for embodiment and the process of knowing becoming doing."
+    },
+    {
+      "front": "In the Kha-Ba-La framework, what distinct role does 'La' (Inertia) represent?",
+      "back": "Resistance, friction, and the material force that gives form to formlessness."
+    },
+    {
+      "front": "How does the Tryambakam Noesis tagline 'Self-Consciousness as Technology' map to the Kha-Ba-La triad?",
+      "back": "It maps directly to Kha (Spirit)."
+    },
+    {
+      "front": "How does the Tryambakam Noesis tagline 'Body as Medium' map to the Kha-Ba-La triad?",
+      "back": "It maps directly to Ba (Body)."
+    },
+    {
+      "front": "How does the Tryambakam Noesis tagline 'Breath as Interface' map to the Kha-Ba-La triad?",
+      "back": "It maps directly to La (Inertia)."
+    },
+    {
+      "front": "According to the 'Seeker-Simon' persona, what is the defining paradox of the target user?",
+      "back": "The user is externally free but internally running inherited code."
+    },
+    {
+      "front": "Why is 'Therapy' identified as a failed solution for the Seeker-Simon persona?",
+      "back": "It provides narrative understanding (Kha) but lacks embodiment (Ba) and the capacity to rewrite code at the source."
+    },
+    {
+      "front": "What structural gap causes meditation apps to fail the target user persona?",
+      "back": "They offer generic habit/technique without philosophy or adaptation to the user's biorhythmic state."
+    },
+    {
+      "front": "The design principle of a system that creates the conditions to no longer need itself is called a _____.",
+      "back": "Quine"
+    },
+    {
+      "front": "What is the primary success criterion for a practitioner using Tryambakam Noesis?",
+      "back": "The practitioner's independence from the system itself."
+    },
+    {
+      "front": "Tryambakam Noesis identifies 'Self-consciousness' as what type of capacity?",
+      "back": "The recursive capacity to examine and rewrite the source code of one's own experience."
+    },
+    {
+      "front": "What are the four cardinal directions on the Noesis Engine compass?",
+      "back": "STABILIZE, HEAL, CREATE, and MUTATE."
+    },
+    {
+      "front": "In the Noesis Engine, which compass direction activates when a practitioner needs to metabolize rather than manage surfacing material?",
+      "back": "HEAL"
+    },
+    {
+      "front": "The Noesis Engine core is built using which high-performance programming language?",
+      "back": "Rust"
+    },
+    {
+      "front": "How many 'Symbolic-Computational Engines' currently make up the Noesis Engine platform?",
+      "back": "16"
+    },
+    {
+      "front": "Which engine in the Rust core computes the 120-year planetary period mapping?",
+      "back": "Chronofield"
+    },
+    {
+      "front": "Which Noesis engine translates the 78-card Thoth-Crowley symbolic reflection for a practitioner's current state?",
+      "back": "Archetypal Mirror"
+    },
+    {
+      "front": "Tryambakam Noesis visual identity is based on the color theory of which philosopher?",
+      "back": "Johann Wolfgang von Goethe"
+    },
+    {
+      "front": "According to Goethe's theory used in the brand, colors are not light decomposed but rather the 'deeds and sufferings' of _____.",
+      "back": "Light"
+    },
+    {
+      "front": "Term: Witness Violet (#2D0050)",
+      "back": "Definition: The color representing the observer state and the Kha (Spirit) leg of the triad."
+    },
+    {
+      "front": "Term: Sacred Gold (#C5A017)",
+      "back": "Definition: The color representing activated purpose and the Ba (Body) leg of the triad."
+    },
+    {
+      "front": "Term: Void Black (#070B1D)",
+      "back": "Definition: The pre-chromatic Ur-ground color representing La (Inertia) and the source of form."
+    },
+    {
+      "front": "In the Consciousness Color Spectrum, what state does Flow Indigo (#0B50FB) represent?",
+      "back": "Effortless coherence and the current that carries without effort."
+    },
+    {
+      "front": "In the Consciousness Color Spectrum, what state does Coherence Emerald (#10B5A7) represent?",
+      "back": "Harmonic alignment where the body and awareness are in resonance."
+    },
+    {
+      "front": "The wide, industrial-panoramic font used for sacred geometry headers is called _____.",
+      "back": "Panchang"
+    },
+    {
+      "front": "What is the specific numeric value of the mathematical constant governing the Tryambakam Noesis type scale?",
+      "back": "$\\phi = 1.618$ (The Golden Ratio)"
+    },
+    {
+      "front": "What are the three components of a '.init' protocol?",
+      "back": "Breath ratio, physical gesture, and spoken declaration."
+    },
+    {
+      "front": "The 'Somatic Canticles' sci-fi trilogy delivers its 27 chapters based on what personal data points?",
+      "back": "The practitioner's physical, emotional, and intellectual biorhythms."
+    },
+    {
+      "front": "What is the hidden architectural skeleton of the 12-episode manga series 'The Plumber'?",
+      "back": "The 78-card Thoth-Crowley tarot blueprint."
+    },
+    {
+      "front": "Which sub-fractal of the ecosystem maps the correlation between a practitioner's interior state and external financial decisions?",
+      "back": "Financial Biosensor"
+    },
+    {
+      "front": "What is the 'PubMed x Alex Grey' prose principle?",
+      "back": "A style that fuses clinical biological precision with visionary artistry."
+    },
+    {
+      "front": "In the Somatic Canticles world, what does the 'Aletheia-Lethe' dyad represent?",
+      "back": "The fundamental oscillation between unconcealment (truth) and concealment (patterns)."
+    },
+    {
+      "front": "What is the primary visual rule of the 'Bioluminescent Principle' used in brand art?",
+      "back": "Light must originate from within the organic structure rather than being projected onto it."
+    },
+    {
+      "front": "In the Tarot Blueprint, which Major Arcana card maps to the 'First Encounter' and the Seeker's potential?",
+      "back": "The Fool (0)"
+    },
+    {
+      "front": "In the Tarot Blueprint, which Major Arcana card maps to the Noesis Engine's 16-engine stack and structural framework?",
+      "back": "The Emperor (IV)"
+    },
+    {
+      "front": "In the Tarot Blueprint, which Major Arcana card maps to the descending shadow work of 'The Plumber'?",
+      "back": "The Devil (XV)"
+    },
+    {
+      "front": "The Tarot suit of 'Wands' (Fire) corresponds to which layer of the Tryambakam Noesis ecosystem?",
+      "back": "The Engine Layer (will, action, and computational tools)."
+    },
+    {
+      "front": "The Tarot suit of 'Cups' (Water) corresponds to which layer of the Tryambakam Noesis ecosystem?",
+      "back": "The Somatic Layer (emotion, narrative, and the body's intelligence)."
+    },
+    {
+      "front": "The Tarot suit of 'Swords' (Air) corresponds to which layer of the Tryambakam Noesis ecosystem?",
+      "back": "The Inquiry Layer (thought, truth, and self-examination)."
+    },
+    {
+      "front": "The Tarot suit of 'Pentacles' (Earth) corresponds to which layer of the Tryambakam Noesis ecosystem?",
+      "back": "The Material Layer (bioalchemy, ritual objects, and practical embodiment)."
+    },
+    {
+      "front": "Which Noesis Engine workflow is designed to reveal a practitioner's natal imprint and birth data architecture?",
+      "back": "birth-blueprint"
+    },
+    {
+      "front": "In the 5-phase consciousness level system, what is the 'Phase 3' state?",
+      "back": "Integrated (characterized by decreased reliance on the system)."
+    },
+    {
+      "front": "What is the 'Consciousness Level 4+' witness prompt?",
+      "back": "\"What witnesses this pattern arising?\""
+    },
+    {
+      "front": "Term: Soulbound Token",
+      "back": "Definition: A non-transferable digital credential with evolving metadata that reflects the depth of a practitioner's engagement."
+    },
+    {
+      "front": "What is the primary function of the 'Kha Arc' observer gradient?",
+      "back": "Representing the state of 'seeing before acting' through pre-chromatic to deep minus colors."
+    },
+    {
+      "front": "In the 30-day social content strategy, what is the purpose of 'Provocation' posts?",
+      "back": "To reframe perceptions and name patterns that the audience senses but cannot articulate (the 'Kha' move)."
+    },
+    {
+      "front": "Why does Tryambakam Noesis refuse the 'Subscription' business model?",
+      "back": "Subscriptions incentivize retention, whereas the platform's goal is the practitioner's independence."
+    },
+    {
+      "front": "What specific biological process is mapped to the Tarot card 'Death' (XIII) in the Somatic Canticles?",
+      "back": "Apoptosis (programmed cellular destruction)."
+    },
+    {
+      "front": "In the 'Financial Biosensor', what biometric input is integrated with planetary weather for decision reflection?",
+      "back": "HRV (Heart Rate Variability)."
+    },
+    {
+      "front": "Which Noesis engine determines the 'Chapter Access Map' for reading the Somatic Canticles?",
+      "back": "Three-Wave Cycle (mapping physical, emotional, and intellectual biorhythms)."
+    },
+    {
+      "front": "What is the 'Golden Meta-Prompt' principle for brand voice?",
+      "back": "The voice must be grounded, direct, and respectful-challenging, assuming the reader's capability."
+    },
+    {
+      "front": "Which color in the Consciousness Color Spectrum represents 'The Resolution' where polarity finds equilibrium?",
+      "back": "Coherence Emerald"
+    },
+    {
+      "front": "Concept: The Severance Event",
+      "back": "Definition: The narrative and experiential transition from inherited code to authored reality."
+    },
+    {
+      "front": "What is the significance of the 4:7:8 breath ratio in the brand's visual system?",
+      "back": "It is the recognized ratio for shifting the nervous system from chaos to coherence."
+    },
+    {
+      "front": "In the Tarot Blueprint, which card represents the .init protocols and the act of conscious initiation?",
+      "back": "The Magus (I)"
+    },
+    {
+      "front": "Which Noesis Engine uses mathematical symmetries underlying reality for interpretation?",
+      "back": "Geometric Resonance"
+    },
+    {
+      "front": "What does the 'Nakshatra' engine compute in the Temporal Grammar?",
+      "back": "The lunar constellation and five-fold calendar for auspicious timing (Panchanga)."
+    },
+    {
+      "front": "The geometric interlocking mark at the center of the brand is technically defined as a _____.",
+      "back": "Resonance pattern (Sigil)"
+    },
+    {
+      "front": "In the social content mix, what percentage is dedicated to 'Provocation' content?",
+      "back": "40%"
+    },
+    {
+      "front": "The Seeker-Simon persona \ub514\uc9c0\ud138 habitat includes which specific platforms?",
+      "back": "X/Twitter, Reddit, and Substack."
+    },
+    {
+      "front": "What is the name of the current terminal-based interactive dashboard for the Noesis Engine?",
+      "back": "Noesis TUI (Ratatui)"
+    },
+    {
+      "front": "Which Major Arcana card maps to the High-Touch Mentorship sub-fractal?",
+      "back": "The Hierophant (V)"
+    },
+    {
+      "front": "In the Somatic Canticles, which card represents the 'Redacted belief shadow'?",
+      "back": "The High Priestess (II)"
+    },
+    {
+      "front": "What is the design philosophy for physical ritual objects in Tryambakam Noesis?",
+      "back": "Objects should serve the relationship with practice rather than ownership, using natural materials like bronze and dark wood."
+    }
+  ]
+}

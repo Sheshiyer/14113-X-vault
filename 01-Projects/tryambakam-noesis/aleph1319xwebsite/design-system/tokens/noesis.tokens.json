@@ -1,0 +1,156 @@
+{
+  "$schema": "https://tokens.studio/schemas/json",
+  "global": {
+    "color": {
+      "ink": {
+        "950": { "value": "#0E1020", "type": "color" },
+        "900": { "value": "#1A1A2E", "type": "color" },
+        "800": { "value": "#14172A", "type": "color" }
+      },
+      "bone": {
+        "100": { "value": "#F5F0E8", "type": "color" }
+      },
+      "gold": {
+        "500": { "value": "#B8860B", "type": "color" }
+      },
+      "stone": {
+        "500": { "value": "#6B6B6B", "type": "color" },
+        "300": { "value": "#C6C7CE", "type": "color" }
+      },
+      "terracotta": {
+        "500": { "value": "#C65D3B", "type": "color" }
+      },
+      "signal": {
+        "cyan": { "value": "#3EA7A3", "type": "color" }
+      }
+    },
+    "space": {
+      "0": { "value": "0", "type": "spacing" },
+      "1": { "value": "4px", "type": "spacing" },
+      "2": { "value": "8px", "type": "spacing" },
+      "3": { "value": "12px", "type": "spacing" },
+      "4": { "value": "16px", "type": "spacing" },
+      "5": { "value": "24px", "type": "spacing" },
+      "6": { "value": "32px", "type": "spacing" },
+      "7": { "value": "40px", "type": "spacing" },
+      "8": { "value": "56px", "type": "spacing" }
+    },
+    "radius": {
+      "none": { "value": "0px", "type": "borderRadius" },
+      "xs": { "value": "2px", "type": "borderRadius" },
+      "sm": { "value": "4px", "type": "borderRadius" },
+      "md": { "value": "8px", "type": "borderRadius" }
+    },
+    "border": {
+      "thin": { "value": "1px", "type": "borderWidth" },
+      "thick": { "value": "2px", "type": "borderWidth" }
+    },
+    "fontFamily": {
+      "display": { "value": "Cormorant Garamond", "type": "fontFamilies" },
+      "body": { "value": "Source Sans 3", "type": "fontFamilies" },
+      "mono": { "value": "JetBrains Mono", "type": "fontFamilies" }
+    },
+    "fontSize": {
+      "xs": { "value": "12px", "type": "fontSizes" },
+      "sm": { "value": "14px", "type": "fontSizes" },
+      "md": { "value": "16px", "type": "fontSizes" },
+      "lg": { "value": "18px", "type": "fontSizes" },
+      "h3": { "value": "24px", "type": "fontSizes" },
+      "h2": { "value": "32px", "type": "fontSizes" },
+      "h1": { "value": "40px", "type": "fontSizes" },
+      "display": { "value": "56px", "type": "fontSizes" }
+    },
+    "lineHeight": {
+      "tight": { "value": "110%", "type": "lineHeights" },
+      "normal": { "value": "150%", "type": "lineHeights" },
+      "loose": { "value": "160%", "type": "lineHeights" }
+    },
+    "motion": {
+      "duration": {
+        "instant": { "value": "80ms", "type": "duration" },
+        "fast": { "value": "160ms", "type": "duration" },
+        "base": { "value": "240ms", "type": "duration" },
+        "slow": { "value": "360ms", "type": "duration" },
+        "deep": { "value": "520ms", "type": "duration" }
+      },
+      "easing": {
+        "standard": { "value": "cubic-bezier(0.22, 1, 0.36, 1)", "type": "cubicBezier" },
+        "enter": { "value": "cubic-bezier(0, 0, 0.2, 1)", "type": "cubicBezier" },
+        "exit": { "value": "cubic-bezier(0.4, 0, 1, 1)", "type": "cubicBezier" },
+        "glitch": { "value": "steps(6, end)", "type": "other" }
+      }
+    },
+    "opacity": {
+      "subtle": { "value": "0.72", "type": "opacity" },
+      "muted": { "value": "0.56", "type": "opacity" },
+      "disabled": { "value": "0.4", "type": "opacity" }
+    },
+    "shadow": {
+      "overlay": { "value": "0 20px 60px rgba(0,0,0,0.45)", "type": "boxShadow" },
+      "focus": { "value": "0 0 0 2px rgba(184,134,11,0.65)", "type": "boxShadow" }
+    }
+  },
+  "semantic": {
+    "surface": {
+      "canvas": { "value": "{global.color.ink.950}", "type": "color" },
+      "elevated": { "value": "{global.color.ink.800}", "type": "color" },
+      "terminal": { "value": "#0C0F18", "type": "color" }
+    },
+    "text": {
+      "primary": { "value": "{global.color.bone.100}", "type": "color" },
+      "secondary": { "value": "{global.color.stone.300}", "type": "color" },
+      "muted": { "value": "{global.color.stone.500}", "type": "color" },
+      "accent": { "value": "{global.color.gold.500}", "type": "color" }
+    },
+    "stroke": {
+      "subtle": { "value": "rgba(245,240,232,0.16)", "type": "color" },
+      "strong": { "value": "rgba(245,240,232,0.32)", "type": "color" }
+    },
+    "feedback": {
+      "warning": { "value": "{global.color.terracotta.500}", "type": "color" },
+      "info": { "value": "{global.color.signal.cyan}", "type": "color" }
+    }
+  },
+  "component": {
+    "node": {
+      "bg": { "value": "{semantic.surface.elevated}", "type": "color" },
+      "text": { "value": "{semantic.text.primary}", "type": "color" },
+      "border": { "value": "{semantic.stroke.subtle}", "type": "color" },
+      "radius": { "value": "{global.radius.sm}", "type": "borderRadius" },
+      "padding": { "value": "{global.space.4}", "type": "spacing" }
+    },
+    "overlay": {
+      "bg": { "value": "rgba(14,16,32,0.92)", "type": "color" },
+      "border": { "value": "{semantic.stroke.strong}", "type": "color" },
+      "shadow": { "value": "{global.shadow.overlay}", "type": "boxShadow" },
+      "radius": { "value": "{global.radius.md}", "type": "borderRadius" }
+    },
+    "terminal": {
+      "bg": { "value": "{semantic.surface.terminal}", "type": "color" },
+      "text": { "value": "{semantic.text.primary}", "type": "color" },
+      "cursor": { "value": "{global.color.gold.500}", "type": "color" },
+      "fontFamily": { "value": "{global.fontFamily.mono}", "type": "fontFamilies" },
+      "fontSize": { "value": "{global.fontSize.sm}", "type": "fontSizes" }
+    },
+    "button": {
+      "primaryBg": { "value": "{global.color.gold.500}", "type": "color" },
+      "primaryText": { "value": "{global.color.ink.950}", "type": "color" },
+      "secondaryBg": { "value": "transparent", "type": "color" },
+      "secondaryBorder": { "value": "{semantic.stroke.strong}", "type": "color" },
+      "radius": { "value": "{global.radius.sm}", "type": "borderRadius" },
+      "height": { "value": "44px", "type": "sizing" }
+    }
+  },
+  "modes": {
+    "mobile-compact": {
+      "component": {
+        "node": {
+          "padding": { "value": "{global.space.3}", "type": "spacing" }
+        },
+        "terminal": {
+          "fontSize": { "value": "{global.fontSize.xs}", "type": "fontSizes" }
+        }
+      }
+    }
+  }
+}

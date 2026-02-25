@@ -1,0 +1,109 @@
+#!/usr/bin/env bash
+# vmem — Vault Memory Index CLI wrapper
+#
+# Usage:
+#   vmem <query>                         # quick one-shot search
+#   vmem search "sacred geometry"        # explicit search
+#   vmem search -f pdf "biogeometry"     # search only PDFs
+#   vmem search --json "kriya yoga"      # JSON output
+#   vmem repl                            # interactive REPL
+#   vmem repl --para Projects            # REPL with filter
+#   vmem index                           # full corpus re-index
+#   vmem index --formats pdf,epub        # index specific formats
+#   vmem index --resume                  # resume interrupted build
+#   vmem status                          # check index health
+#   vmem batch queries.txt               # batch queries from file
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+VAULT="$(cd "$SCRIPT_DIR/../../.." && pwd)"
+VENV="$VAULT/.venv-meru/bin/python"
+
+if [[ ! -f "$VENV" ]]; then
+    echo "ERROR: venv not found at $VENV" >&2
+    echo "  Run: python3 -m venv $VAULT/.venv-meru && pip install -r $SCRIPT_DIR/requirements-memory.txt" >&2
+    exit 1
+fi
+
+cmd="${1:-}"
+
+case "$cmd" in
+    search|s)
+        shift
+        # Extract query from last positional arg, pass rest as flags
+        args=()
+        query=""
+        while [[ $# -gt 0 ]]; do
+            case "$1" in
+                -f|--format|-n|--top|--para|--domain)
+                    args+=("$1" "$2"); shift 2 ;;
+                --json|--exclude-archives)
+                    args+=("$1"); shift ;;
+                *)
+                    query="$1"; shift ;;
+            esac
+        done
+        if [[ -z "$query" ]]; then
+            echo "Usage: vmem search [flags] <query>" >&2; exit 1
+        fi
+        exec "$VENV" "$SCRIPT_DIR/query_vault.py" "${args[@]}" --query "$query"
+        ;;
+    repl|r)
+        shift
+        exec "$VENV" "$SCRIPT_DIR/query_vault.py" "$@"
+        ;;
+    index|i)
+        shift
+        exec "$VENV" "$SCRIPT_DIR/index_full.py" "$@"
+        ;;
+    batch|b)
+        shift
+        file="${1:-}"
+        if [[ -z "$file" ]]; then
+            echo "Usage: vmem batch <queries.txt> [flags]" >&2; exit 1
+        fi
+        shift
+        exec "$VENV" "$SCRIPT_DIR/query_vault.py" --batch "$file" "$@"
+        ;;
+    status|st)
+        exec "$VENV" "$SCRIPT_DIR/health_check.py"
+        ;;
+    help|--help|-h|"")
+        cat <<EOF
+vmem — Vault Memory Index
+
+Commands:
+  search <query>     One-shot semantic search (alias: s)
+  repl               Interactive search REPL (alias: r)
+  index              Run full corpus indexer (alias: i)
+  batch <file>       Batch queries from file (alias: b)
+  status             Check index health (alias: st)
+
+Search flags:
+  -f, --format       Filter by format (md, pdf, epub, docx)
+  -n, --top          Number of results (default: 8)
+  --para             Filter by PARA category
+  --domain           Filter by domain (supports globs)
+  --json             Output as JSON
+  --exclude-archives Skip Archives category
+
+Index flags:
+  --formats          Comma-separated: md,txt,pdf,epub,docx or 'all'
+  --resume           Resume interrupted build
+  --file-batch       Files per shard (default: 500)
+
+Examples:
+  vmem "sacred geometry"
+  vmem search -f pdf "biogeometry"
+  vmem search --json --para Projects "timeline"
+  vmem repl --domain "Health/*"
+  vmem index --formats pdf,epub
+  vmem batch queries.txt --json
+EOF
+        ;;
+    *)
+        # Bare query: vmem "sacred geometry"
+        exec "$VENV" "$SCRIPT_DIR/query_vault.py" --query "$cmd"
+        ;;
+esac

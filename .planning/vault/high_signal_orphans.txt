@@ -1,0 +1,100 @@
+   - 03-Resources/README.md
+   - 03-Resources/Technical.md
+   - 03-Resources/ai-tools/prompts/25-ChatGPT-Prompts-career-building.md
+   - 03-Resources/ai-tools/prompts/50-ChatGPT-Business-Success-Prompts.md
+   - 03-Resources/ai-tools/prompts/AIPRM-Agents.md
+   - 03-Resources/ai-tools/prompts/Business-Prompts.md
+   - 03-Resources/ai-tools/prompts/New-Startup-Ideas.md
+   - 03-Resources/ai-tools/prompts/Prompt-Engineering-Principles.md
+   - 03-Resources/ai-tools/prompts/Prompt-Structuring.md
+   - 03-Resources/ai-tools/prompts/Prompts-for-Business-Owners.md
+   - 03-Resources/Alternative-Science/Biogeometry/(Biogeometry) Ibrahim Karim - BIOGEOMETRY SIGNATURES.md
+   - 03-Resources/Alternative-Science/Exploration/06_Alchemical_Symbols_and_Symbolism_An_Exploration_Presentation.md
+   - 03-Resources/Alternative-Science/Exploration/A Brief History of the Future - Jacques Attali x.md
+   - 03-Resources/Alternative-Science/Exploration/aetheriussociety-fbi1-.md
+   - 03-Resources/Alternative-Science/Exploration/Cosmic Orbit - Connect to the Universe from Within (2005)(en)(190s) by Mantak Chia (z-lib.org).md
+   - 03-Resources/Alternative-Science/Exploration/Cosmic Sounds by Mantak Chia (z-lib.org).md
+   - 03-Resources/Alternative-Science/Exploration/Cosmic_adventure_other_secrets_beyond_the_night_sky_McKnight,_AlanBerman.md
+   - 03-Resources/Alternative-Science/Exploration/Ether, God and Devil - Super Imposition by Wilhelm Reich (z-lib.org).md
+   - 03-Resources/Alternative-Science/Exploration/Ether-Technology by Rho Sigma, Edgar Mitchell (z-lib (1).org).md
+   - 03-Resources/Alternative-Science/Exploration/Fulcanelli_and_the_alchemical_revival_the_man_behind_the_mystery.md
+   - 03-Resources/Alternative-Science/Exploration/FUTURE SUB-LETHAL, INCAPACITATING & PARALYSING TECHNOLOGIES - Dr Steve Wright.md
+   - 03-Resources/Alternative-Science/Exploration/Genes,_Giants,_Monsters,_and_Men_The_Surviving_Elites_of_the_Cosmic (1).md
+   - 03-Resources/Alternative-Science/Exploration/GENI_05152012 Exploring Networks of the Future.md
+   - 03-Resources/Alternative-Science/Exploration/Gods_of_air_and_darkness_the_possibility_of_a_nuclear_war_in_the.md
+   - 03-Resources/Alternative-Science/Exploration/Human heart, cosmic heart  a doctor’s quest to understand, treat, and prevent cardiovascular disease by Cowan, Thomas (z-lib.org).md
+   - 03-Resources/Alternative-Science/Exploration/Human_Devolution_A_Vedic_Alternative_to_Darwins_Theory_by_Michael.md
+   - 03-Resources/Alternative-Science/Exploration/Human_heart,_cosmic_heart_a_doctors_quest_to_understand,_treat,.md
+   - 03-Resources/Alternative-Science/Exploration/Miniature Uav And Future Electronic Warfare.md
+   - 03-Resources/Alternative-Science/Exploration/Modern Aether Science - Aspden, Harold.md
+   - 03-Resources/Alternative-Science/Exploration/Modern-Electrics-1908-04.md
+   - 03-Resources/Alternative-Science/Exploration/Modern-Electrics-1908-05.md
+   - 03-Resources/Alternative-Science/Exploration/Modern-Electrics-1909-07.md
+   - 03-Resources/Alternative-Science/Exploration/Modern-Electrics-1909-09.md
+   - 03-Resources/Alternative-Science/Exploration/Modern-Electrics-1912-02.md
+   - 03-Resources/Alternative-Science/Exploration/Modern-Electrics-1912-06.md
+   - 03-Resources/Alternative-Science/Exploration/Psinergy - Tech PDF 2023.md
+   - 03-Resources/Alternative-Science/Exploration/radionics USPA_2019.key.md
+   - 03-Resources/Alternative-Science/Exploration/Right Is Might by Richard W. Wetherill (z-lib.org).md
+   - 03-Resources/Alternative-Science/Exploration/Secrets of the Aether.md
+   - 03-Resources/Alternative-Science/Exploration/The Art of Map Illustration A Step-by-Step Artistic Exploration of Contemporary Cartography and Mapmaking (James Gulliver Hancock, Hennie Haworth etc.) (z-lib.org).md
+   - 03-Resources/Alternative-Science/Exploration/The Bullet Journal Method Track the Past, Order the Present, Design the Future by Ryder Carroll (z-lib.org).md
+   - 03-Resources/Alternative-Science/Exploration/The_Cosmic_Octave_The_origin_of_harmony (1).md
+   - 03-Resources/Alternative-Science/Exploration/The_Fellowship_of_the_River_A_Medical_Doctor’s_Exploration_into (1).md
+   - 03-Resources/Alternative-Science/Exploration/The_Orion_Mystery_Unlocking_the_Secrets_of_the_Pyramids_by_Robert.md
+   - 03-Resources/Alternative-Science/Exploration/US20030197093A1 Magnetic Vortex wormhole generator.md
+   - 03-Resources/Alternative-Science/Exploration/US20060070371A1 Electric dipole moment propulsion system.md
+   - 03-Resources/Alternative-Science/Exploration/US20060112848A1 Permanent magnet propulsion system.md
+   - 03-Resources/Alternative-Science/Exploration/US20060145019A1 Triangular spacecraft.md
+   - 03-Resources/Alternative-Science/Hidden-History/1894.md
+   - 03-Resources/Alternative-Science/Hidden-History/1907__clymer___ancient_mystic_oriental_masonry.md
+03-Resources/uncategorized/1743-0003-2-6 A wireless body area network of intelligent motion sensors for rehabilitation
+03-Resources/uncategorized/1894
+03-Resources/uncategorized/1905862237.Beekeeping
+03-Resources/uncategorized/1907__clymer___ancient_mystic_oriental_masonry
+03-Resources/uncategorized/1918__de_laurence___the_old_book_of_magic
+03-Resources/Unsorted/Newsletters/I-Havent-Seen-You
+03-Resources/Unsorted/Profiles/MRHIGH3R
+03-Resources/Unsorted/Profiles/Rahul-Sharma
+03-Resources/Unsorted/Profiles/Suresh-Surenthiran
+03-Resources/Video-Analysis/james-true/Cellular-Hallucination-Theory-Advanced-Runtime-Analysis
+03-Resources/Video-Analysis/james-true/endocrine-constellation-transcript
+03-Resources/Video-Analysis/james-true/james-true-anarchy-analysis-v1-0-0
+03-Resources/Video-Analysis/james-true/james-true-mythology-consciousness-analysis-v1-0-0
+03-Resources/Video-Analysis/james-true/Regeneration-Consciousness-Field-Theory
+03-Resources/Video-Analysis/james-true/talking-to-the-reptile-series-analysis-v1-0-0
+03-Resources/Video-Analysis/james-true/transcript-raw-v1-0-0
+03-Resources/Video-Analysis/james-true/images/EYE-of-RA
+03-Resources/Video-Analysis/SlickDissident/72-sacred-geometry-analysis-v1-0-0
+03-Resources/Video-Analysis/SlickDissident/_index-v1-0-0
+03-Resources/Video-Analysis/SlickDissident/_pattern-analysis-v1-0-0
+03-Resources/Video-Analysis/SlickDissident/captain-marvel-priestess-analysis-v1-0-0
+03-Resources/Video-Analysis/SlickDissident/current-events-pattern-analysis-v1-0-0
+03-Resources/Video-Analysis/SlickDissident/fool-card-captain-america-analysis-v1-0-0
+03-Resources/Video-Analysis/SlickDissident/hanged-man-houdini-analysis-v1-0-0
+03-Resources/Video-Analysis/SlickDissident/iron-man-tarot-analysis-v1-0-0
+03-Resources/Video-Analysis/SlickDissident/leviathan-enneagram-analysis-v1-0-0
+03-Resources/Video-Analysis/SlickDissident/nine-muses-endocrine-analysis-v1-0-0
+03-Resources/Video-Analysis/SlickDissident/prime-system-transcript-analysis-v1-0-0
+03-Resources/Video-Analysis/SlickDissident/spiritual-self-defense-analysis-v1-0-0
+03-Resources/Video-Analysis/SlickDissident/i-mago-es/Slick-Fundamentals
+03-Resources/Websites/meru.org/crawl_report
+03-Resources/Websites/meru.org/README
+03-Resources/Websites/meru.org/urls_by_section
+03-Resources/Websites/meru.org/youtube_inventory_report
+03-Resources/Websites/meru.org/YouTube-Transcripts/_SUMMARY
+03-Resources/Websites/meru.org/YouTube-Transcripts/_SYNTHESIS
+03-Resources/Websites/meru.org/YouTube-Transcripts/Batch-1/1GNUadL_gHU
+03-Resources/Websites/meru.org/YouTube-Transcripts/Batch-1/8rwI7kZLepA
+03-Resources/Websites/meru.org/YouTube-Transcripts/Batch-1/NnwmiT4VsdM
+03-Resources/Websites/meru.org/YouTube-Transcripts/Batch-1/uLbuGu6MWAE
+03-Resources/Websites/meru.org/YouTube-Transcripts/Batch-2/feYsbcU83HE
+03-Resources/Websites/meru.org/YouTube-Transcripts/Batch-2/J6OsDczx5iM
+03-Resources/Websites/meru.org/YouTube-Transcripts/Batch-2/OJGW2UANWRE
+03-Resources/Websites/meru.org/YouTube-Transcripts/Batch-2/yGUzWMqiuzA
+03-Resources/Websites/meru.org/YouTube-Transcripts/Batch-3/l9yFwGfJIB8
+03-Resources/Websites/meru.org/YouTube-Transcripts/Batch-3/vE-ViyPXj4Q
+03-Resources/Websites/meru.org/YouTube-Transcripts/Batch-3/zYgP__Ke3SQ
+03-Resources/Websites/meru.org/YouTube-Transcripts/Comprehension/Batch-1-Comprehension
+03-Resources/Websites/meru.org/YouTube-Transcripts/Comprehension/Batch-2-Comprehension
+03-Resources/Websites/meru.org/YouTube-Transcripts/Comprehension/Batch-3-Comprehension

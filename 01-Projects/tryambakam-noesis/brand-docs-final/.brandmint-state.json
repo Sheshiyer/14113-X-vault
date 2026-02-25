@@ -1,0 +1,32 @@
+{
+  "brand": "Tryambakam Noesis",
+  "scenario": "ScenarioType.BRAND_GENESIS",
+  "started_at": "2026-02-23T02:54:34.918679",
+  "updated_at": "2026-02-24T01:17:31.630266",
+  "waves": {
+    "1": {
+      "status": "complete",
+      "text_skills_run": 3,
+      "visual_assets_generated": 0,
+      "completed_at": "2026-02-23T02:55:00.000000"
+    },
+    "2": {
+      "status": "complete",
+      "text_skills_run": 3,
+      "visual_assets_generated": 0,
+      "completed_at": "2026-02-23T02:56:00.000000"
+    },
+    "3": {
+      "status": "complete",
+      "text_skills_run": 1,
+      "visual_assets_generated": 13,
+      "completed_at": "2026-02-23T03:10:00.000000"
+    },
+    "4": {
+      "status": "complete",
+      "text_skills_run": 0,
+      "visual_assets_generated": 2,
+      "completed_at": "2026-02-24T01:17:00.000000"
+    }
+  }
+}

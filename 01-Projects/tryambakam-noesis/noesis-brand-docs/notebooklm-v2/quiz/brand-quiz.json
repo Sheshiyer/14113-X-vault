@@ -1,0 +1,317 @@
+{
+  "title": "System Quiz",
+  "questions": [
+    {
+      "question": "In the Selemene Engine architecture, which programming language is specifically allocated for the 'Bridges' that handle symbolic interpretation, such as the Archetypal Mirror and Hexagram Navigation?",
+      "answerOptions": [
+        {
+          "text": "TypeScript",
+          "isCorrect": true,
+          "rationale": "TypeScript is used for the five symbolic bridge engines that translate complex patterns into interpretive meaning."
+        },
+        {
+          "text": "Rust",
+          "isCorrect": false,
+          "rationale": "Rust is utilized for the eleven core computational engines requiring high-precision data processing rather than symbolic translation."
+        },
+        {
+          "text": "Neo-Sanskrit",
+          "isCorrect": false,
+          "rationale": "Neo-Sanskrit is a procedural xenolinguistic seed used for narrative and poetic contexts, not the technical codebase of the engines."
+        },
+        {
+          "text": "Solana",
+          "isCorrect": false,
+          "rationale": "Solana is the blockchain substrate mentioned for future one-time acquisition models, not the language used for engine logic."
+        }
+      ],
+      "hint": "Consider the distinction between precision computation and high-level symbolic translation within the system's stack."
+    },
+    {
+      "question": "The Guardrail Dyad consists of two witness agents, Aletheios and Pichet. Which of the following accurately describes the specific architectural function of Pichet?",
+      "answerOptions": [
+        {
+          "text": "Vitality, instinct, and novelty to counteract stagnation.",
+          "isCorrect": true,
+          "rationale": "Pichet serves as the 'Right Pillar,' acting to introduce novelty and vitality when the system detects the user is stagnant."
+        },
+        {
+          "text": "Coherence, reflection, and analysis to counteract overwhelm.",
+          "isCorrect": false,
+          "rationale": "This describes Aletheios, the 'Left Pillar,' which focuses on structural integrity and simplifying complexity."
+        },
+        {
+          "text": "The preservation of hidden memory and the logic of concealment.",
+          "isCorrect": false,
+          "rationale": "Pichet is the 'conqueror' of concealment ($Lethe$), seeking to overcome forgetting rather than preserve it."
+        },
+        {
+          "text": "Direct arbitration between the eleven Rust core engines.",
+          "isCorrect": false,
+          "rationale": "While the Dyad arbitrates engine conflicts, Pichet's primary functional essence is vitality and action, not general arbitration."
+        }
+      ],
+      "hint": "Look for the agent associated with 'The Conqueror' and the Right Pillar of the system's architecture."
+    },
+    {
+      "question": "Under the 'Bioluminescent Architecture' (V2) visual identity, what is the specific distribution and role of the color 'Void Teal' ($\\#0A1628$)?",
+      "answerOptions": [
+        {
+          "text": "$60\\%$ distribution for primary backgrounds and deep surfaces.",
+          "isCorrect": true,
+          "rationale": "Void Teal serves as the dominant foundation color, providing a sci-fi depth that represents oceanic potential."
+        },
+        {
+          "text": "$30\\%$ distribution for text, cards, and breathing space.",
+          "isCorrect": false,
+          "rationale": "Phosphor Cream ($\\#F0EDE3$) is designated for the $30\\%$ role to provide luminous warmth and readability."
+        },
+        {
+          "text": "$10\\%$ distribution for CTAs and interactive accent highlights.",
+          "isCorrect": false,
+          "rationale": "Solar Bronze ($\\#C4873B$) is used for the $10\\%$ accent role to represent oxidized copper-gold precision."
+        },
+        {
+          "text": "Support role used exclusively for circuit-trace filigree and borders.",
+          "isCorrect": false,
+          "rationale": "Titanium ($\\#8A9BA8$) is the support color used for structural elements and borders."
+        }
+      ],
+      "hint": "This color represents the primary substrate and deep potential of the V2 visual system."
+    },
+    {
+      "question": "The Kopina sacral interface utilizes $PVDF$ fibers. What is the fundamental material science mechanism that allows these fibers to power the system?",
+      "answerOptions": [
+        {
+          "text": "The piezoelectric effect, harvesting energy from biomechanical movement.",
+          "isCorrect": true,
+          "rationale": "Polyvinylidene Fluoride ($PVDF$) fibers generate microcurrents specifically through the mechanical stress of body movement."
+        },
+        {
+          "text": "The photoelectric effect, capturing ambient light via solar mesh.",
+          "isCorrect": false,
+          "rationale": "While solar panel mesh is a V2 material, Kopina's core self-powering mechanism is kinetic, not light-based."
+        },
+        {
+          "text": "Thermoelectric generation, utilizing the delta between body and air temperature.",
+          "isCorrect": false,
+          "rationale": "The system relies on kinetic movement rather than thermal gradients to generate its bioelectric signal."
+        },
+        {
+          "text": "Magnetic induction through the copper-thread circuitry.",
+          "isCorrect": false,
+          "rationale": "The copper threads are for EM field alignment and conductivity, while the $PVDF$ fibers are the actual power source."
+        }
+      ],
+      "hint": "Focus on the property of certain materials to generate electricity when subjected to mechanical pressure or movement."
+    },
+    {
+      "question": "In the Tryambakam Noesis lexicon, the traditional term 'Vimshottari Dasha' is functionally bridged to which brand-native term?",
+      "answerOptions": [
+        {
+          "text": "Chronofield",
+          "isCorrect": true,
+          "rationale": "The Chronofield engine maps the $120$-year planetary period cycles traditionally known as Vimshottari Dasha."
+        },
+        {
+          "text": "Temporal Grammar",
+          "isCorrect": false,
+          "rationale": "Temporal Grammar is the brand-native term for the five-fold Vedic calendar, or Panchanga."
+        },
+        {
+          "text": "Circadian Cartography",
+          "isCorrect": false,
+          "rationale": "Circadian Cartography refers to the mapping of organ activation to time-of-day, bridged from the Vedic/TCM Organ Clock."
+        },
+        {
+          "text": "Resonance Architecture",
+          "isCorrect": false,
+          "rationale": "Resonance Architecture is the brand term for sound-as-structure, traditionally known as Nadabrahman."
+        }
+      ],
+      "hint": "Think of the engine that maps active 'life chapters' and long-term planetary timing."
+    },
+    {
+      "question": "Which specific 'Purushartha' or Vector represents material purpose and the right relationship with wealth and resources?",
+      "answerOptions": [
+        {
+          "text": "Artha",
+          "isCorrect": true,
+          "rationale": "Artha (Resource) is the vector focused on material purpose and wealth as a tool for navigation."
+        },
+        {
+          "text": "Dharma",
+          "isCorrect": false,
+          "rationale": "Dharma (Alignment) focuses on duty, natural law, and acting in accordance with one's nature."
+        },
+        {
+          "text": "Kama",
+          "isCorrect": false,
+          "rationale": "Kama (Drive) focuses on creative desire and pleasure as a navigational force."
+        },
+        {
+          "text": "Moksha",
+          "isCorrect": false,
+          "rationale": "Moksha (Release) focuses on liberation and the termination of compulsive seeking or pattern recurrence."
+        }
+      ],
+      "hint": "This vector is associated with the 'Infinite Treasure Hunt' and the right relationship with means."
+    },
+    {
+      "question": "The voice of Tryambakam Noesis is described as 'The Anatomist Who Sees Fractals.' Which of the following is an 'Avoid' directive when writing in this voice?",
+      "answerOptions": [
+        {
+          "text": "Using warm and nurturing 'hand-holding' language.",
+          "isCorrect": true,
+          "rationale": "The voice is direct and respectful-challenging; it assumes capability rather than providing parental coddling."
+        },
+        {
+          "text": "Using structural humor and irreverent precision.",
+          "isCorrect": false,
+          "rationale": "Structural humor is a core component of the persona, inspired by sources like Rick \\& Morty."
+        },
+        {
+          "text": "Describing the body as a circuit or precise machinery.",
+          "isCorrect": false,
+          "rationale": "Anatomical precision and mechanical metaphors are central to the 'Anatomist' persona."
+        },
+        {
+          "text": "Addressing the 'watcher' or the seeker itself.",
+          "isCorrect": false,
+          "rationale": "The system specifically targets the examination of the storyteller/watcher rather than just the story/thought."
+        }
+      ],
+      "hint": "Think about how the system views the user's intelligence and the desired emotional distance of the guide."
+    },
+    {
+      "question": "What is the 'Success Metric' that defines when the Tryambakam Noesis system has performed its function correctly for a participant?",
+      "answerOptions": [
+        {
+          "text": "The user reaches a state of independence and no longer needs the system.",
+          "isCorrect": true,
+          "rationale": "The system is designed for self-authorship, meaning it succeeds only when the user outgrows their dependency on it."
+        },
+        {
+          "text": "The user maintains a $500$-day streak of daily inquiry exercises.",
+          "isCorrect": false,
+          "rationale": "The system explicitly critiques streak-based gamification as a distraction from genuine authorship."
+        },
+        {
+          "text": "The user achieves a 'Siddhi' or fully activated state in the Gift-Shadow spectrum.",
+          "isCorrect": false,
+          "rationale": "While it maps these states, the ultimate metric is authorship and independence, not the attainment of a specific spiritual rank."
+        },
+        {
+          "text": "The user transitions from the Free tier to the 1:1 Mentorship tier.",
+          "isCorrect": false,
+          "rationale": "Retention and upsells are traditional business metrics; Tryambakam Noesis measures success by decreased dependency."
+        }
+      ],
+      "hint": "Traditional systems want you to stay; this system's goal is the opposite."
+    },
+    {
+      "question": "How do the 'Somatic Canticles' differ from a traditional online course or book in terms of user engagement?",
+      "answerOptions": [
+        {
+          "text": "Access to chapters is restricted based on the user's Three-Wave biorhythm cycles.",
+          "isCorrect": true,
+          "rationale": "The narrative trilogy is synchronized to physical, emotional, and intellectual cycles to ensure the body is ready for integration."
+        },
+        {
+          "text": "They are delivered as high-density manga to bypass intellectual resistance.",
+          "isCorrect": false,
+          "rationale": "This describes the 'Symbolic Narratives' (The Plumber), whereas Somatic Canticles are a text-based narrative trilogy."
+        },
+        {
+          "text": "They require a subscription to maintain access to the full digital framework.",
+          "isCorrect": false,
+          "rationale": "The digital framework is free and permanent; it does not use a subscription model to lock content."
+        },
+        {
+          "text": "They are designed to be 'binge-read' to create an opening for transformation.",
+          "isCorrect": false,
+          "rationale": "The system specifically prevents forced consumption/binging to allow for natural integration periods."
+        }
+      ],
+      "hint": "Consider the role of the 'Three-Wave Cycle' in the product's delivery architecture."
+    },
+    {
+      "question": "In the V2 visual identity, the 'Sigil' has been updated from a cartographic mark to which of the following?",
+      "answerOptions": [
+        {
+          "text": "Three converging fiber-optic filaments of illuminated glass.",
+          "isCorrect": true,
+          "rationale": "The V2 sigil represents the convergence of Soma, Manas, and Muladhara through bioluminescent glass fibers."
+        },
+        {
+          "text": "A stylized third-eye within a copper Sri Yantra geometry.",
+          "isCorrect": false,
+          "rationale": "The brand documentation explicitly states the sigil is NOT a third eye or a triangle."
+        },
+        {
+          "text": "An anatomical drawing of the vertebral pole as a circuit board.",
+          "isCorrect": false,
+          "rationale": "While this is a visual motif, the sigil itself is the three-filament convergence point."
+        },
+        {
+          "text": "A titanium-etched hexagram representing the $64$ states of navigation.",
+          "isCorrect": false,
+          "rationale": "The hexagrams are part of the symbolic engine stack, but the sigil represents the primary bio-digital convergence point."
+        }
+      ],
+      "hint": "The new sigil uses a 'bio-digital' metaphor involving filaments and a phosphorescent nexus."
+    },
+    {
+      "question": "Which engine is responsible for mapping organ activation to the time of day, used to determine when specific physiological functions are dominant?",
+      "answerOptions": [
+        {
+          "text": "Circadian Cartography",
+          "isCorrect": true,
+          "rationale": "Circadian Cartography bridges the Vedic/TCM Organ Clock to map biological activation throughout the day."
+        },
+        {
+          "text": "Temporal Grammar",
+          "isCorrect": false,
+          "rationale": "Temporal Grammar focuses on auspicious timing and calendar-based rhythms rather than organ-specific cycles."
+        },
+        {
+          "text": "Bioelectric Field",
+          "isCorrect": false,
+          "rationale": "The Bioelectric Field engine measures electromagnetic patterns rather than the temporal mapping of organ functions."
+        },
+        {
+          "text": "Resonance Architecture",
+          "isCorrect": false,
+          "rationale": "Resonance Architecture focuses on acoustic frequency and sound synthesis."
+        }
+      ],
+      "hint": "This engine is based on the 'Organ Clock' tradition but uses a functional brand name."
+    },
+    {
+      "question": "According to the 'Nomenclature Corrections' document, why should the term 'Bioelectric signaling amplification' be used instead of 'Chakra activation'?",
+      "answerOptions": [
+        {
+          "text": "It provides a technical mechanism that earns wonder through specificity.",
+          "isCorrect": true,
+          "rationale": "The system's philosophy is to describe the physical reality so precisely that the 'sacred' becomes self-evident without vague labels."
+        },
+        {
+          "text": "The term 'Chakra' is proprietary to traditional Vedic institutions.",
+          "isCorrect": false,
+          "rationale": "The issue is not proprietary rights, but the 'spiritual baggage' and lack of mechanism in traditional terminology."
+        },
+        {
+          "text": "'Activation' implies a binary state that the engines cannot calculate.",
+          "isCorrect": false,
+          "rationale": "The engines can calculate states, but 'amplification' describes the physiological process more accurately than the spiritual label."
+        },
+        {
+          "text": "It prevents the system from being associated with Eastern philosophy.",
+          "isCorrect": false,
+          "rationale": "The system intentionally integrates Eastern traditions; it simply transforms the labels to be function-descriptive."
+        }
+      ],
+      "hint": "Reflect on the 'Anatomist Who Sees Fractals' principle regarding the earning of wonder."
+    }
+  ]
+}

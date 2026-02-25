@@ -1,0 +1,152 @@
+{
+  "timestamp": "2026-02-15T19:49:30.262Z",
+  "version": "1.0.0",
+  "noesis": {
+    "timestamp": "2026-02-15T19:49:56.270Z",
+    "khaloree": 31,
+    "vikara": 89,
+    "vayu": "prana",
+    "cliffordOctave": 1,
+    "moonPhase": "Waxing Gibbous",
+    "dayOfMoonCycle": 12
+  },
+  "tarotOfTheDay": {
+    "number": 1,
+    "name": "The Magician",
+    "sanskritName": "मायावी (Māyāvī)",
+    "keywords": [
+      "manifestation",
+      "resourcefulness",
+      "power",
+      "inspired action"
+    ],
+    "meaning": {
+      "upright": "Manifestation, resourcefulness, power, inspired action. All tools are present.",
+      "reversed": "Manipulation, poor planning, untapped talents",
+      "shadow": "Doubt in one's own power"
+    },
+    "kosha": "pranamaya",
+    "element": "Air",
+    "planet": "Mercury",
+    "dayOfWeek": 1
+  },
+  "heroPhase": {
+    "number": 1,
+    "name": "ORDINARY WORLD",
+    "sanskritName": "सामान्यलोक (Sāmānyaloka)",
+    "tarotCard": 0,
+    "kosha": "annamaya",
+    "description": "The hero begins in a mundane situation, unaware of the adventure to come. This is the established world before the journey.",
+    "tasks": [
+      "Setup project scaffolding",
+      "Install dependencies",
+      "Configure development environment",
+      "Establish design tokens",
+      "Create directory structure"
+    ],
+    "sankalpa": "We begin not knowing, and that is perfect.",
+    "progressIndicators": {
+      "starting": "Nothing exists yet. Blank canvas.",
+      "middle": "Files are being created. Structure emerging.",
+      "completing": "Foundation is solid. Ready for activation."
+    }
+  },
+  "yugaOfTheMoment": {
+    "name": "dvapara",
+    "sanskritName": "द्वापरयुग (Dvāparayuga)",
+    "color": "#CD7F32",
+    "duration": {
+      "min": 30,
+      "max": 60
+    },
+    "characteristics": [
+      "Forcing, struggling",
+      "Bugs multiply",
+      "Frustration emerges",
+      "Slower progress",
+      "Cognitive load high"
+    ],
+    "tarotCards": [
+      15,
+      16
+    ],
+    "kosha": "manomaya",
+    "exitSignals": [
+      "Same bug recurring",
+      "Breaking things without fixing",
+      "Exhaustion obvious",
+      "Confusion dominant"
+    ],
+    "resetActions": [
+      "Stop immediately",
+      "Take a real break",
+      "Change environment",
+      "Physical movement"
+    ]
+  },
+  "currentVayu": {
+    "name": "prana",
+    "direction": "inward/upward",
+    "domain": "life force, inspiration",
+    "quality": "vitalizing, awakening",
+    "associatedKosha": "pranamaya"
+  },
+  "cycles": {
+    "moment": {
+      "yuga": "krita",
+      "progress": 0
+    },
+    "session": {
+      "yuga": "krita",
+      "heroPhase": 12,
+      "progress": 0
+    },
+    "day": {
+      "tarot": 1,
+      "heroPhase": 12,
+      "progress": 0.05486111111111111
+    },
+    "week": {
+      "heroPhase": 1,
+      "progress": 0.007837301587301587
+    },
+    "moon": {
+      "phase": "Waning Crescent",
+      "progress": 0.9671867618490734
+    },
+    "quarter": {
+      "heroPhase": 1,
+      "progress": 0
+    }
+  },
+  "sankalpa": "We begin not knowing, and that is perfect.",
+  "recentDraws": [
+    {
+      "card": {
+        "number": 0,
+        "name": "The Fool",
+        "sanskritName": "मूर्ख (Mūrka)",
+        "keywords": [
+          "beginnings",
+          "innocence",
+          "spontaneity",
+          "free spirit"
+        ],
+        "meaning": {
+          "upright": "Beginnings, innocence, spontaneity, a free spirit. The leap into the unknown.",
+          "reversed": "Holding back, recklessness, risk-taking without thought",
+          "shadow": "Fear of starting, paralysis by analysis"
+        },
+        "kosha": "annamaya",
+        "element": "Air"
+      },
+      "orientation": "upright",
+      "timestamp": "2026-02-15T19:49:51.639Z",
+      "seed": 247024080,
+      "meaningForContext": "Beginnings, innocence, spontaneity, a free spirit. The leap into the unknown. "
+    }
+  ],
+  "completedTasks": [],
+  "_savedAt": "2026-02-15T19:49:56.272Z",
+  "_version": "1.0.0"
+}

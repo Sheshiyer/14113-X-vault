@@ -1,0 +1,9 @@
+2025/11/09-05:21:12.878 982f Reusing MANIFEST /Users/magenarayan/Library/Application Support/Claude/Local Storage/leveldb/MANIFEST-000001
+2025/11/09-05:21:12.878 982f Recovering log #3
+2025/11/09-05:21:12.878 982f Reusing old log /Users/magenarayan/Library/Application Support/Claude/Local Storage/leveldb/000003.log 
+2025/11/09-05:59:13.684 9831 Level-0 table #5: started
+2025/11/09-05:59:13.694 9831 Level-0 table #5: 17229 bytes OK
+2025/11/09-05:59:13.702 9831 Delete type=0 #3
+2025/11/09-06:36:13.679 9831 Level-0 table #7: started
+2025/11/09-06:36:13.692 9831 Level-0 table #7: 16850 bytes OK
+2025/11/09-06:36:13.699 9831 Delete type=0 #4

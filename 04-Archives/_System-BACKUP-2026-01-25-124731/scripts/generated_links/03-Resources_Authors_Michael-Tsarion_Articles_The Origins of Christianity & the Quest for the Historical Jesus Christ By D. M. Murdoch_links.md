@@ -1,0 +1,851 @@
+# Cross-References for 03-Resources\Authors\Michael-Tsarion\Articles\The Origins of Christianity & the Quest for the Historical Jesus Christ By D. M. Murdoch.md
+
+## Character Connections
+- **memory.md** - Characters: Sona
+- **todo.md** - Characters: Sona
+- **Somatic-Canticles\CHANGELOG.md** - Characters: Sona
+- **01-Projects\DAKM-Philosophy\Cosmic Enlightenment - Navigating the Nexus of Wholeness.md** - Characters: Sona
+- **01-Projects\DAKM-Philosophy\Echoes of Wholeness - Navigating the Nexus of Veritas.md** - Characters: Sona
+- **01-Projects\DAKM-Philosophy\Nexus Enlightenment - Karma and Cosmos in the Age of Harmony.md** - Characters: Sona
+- **01-Projects\DAKM-Philosophy\Quantum Artha - Weaving Meaning in the Tapestry of Time.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\_index.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\CHANGELOG.md** - Characters: Sona
+- **01-Projects\Core-Framework\Frameworks\Bioelectric-Integration.md** - Characters: Sona
+- **01-Projects\Core-Framework\Frameworks\_index.md** - Characters: Sona
+- **01-Projects\Core-Framework\Architecture\Service-Architecture\emanation-patterns.md** - Characters: Sona
+- **01-Projects\Core-Framework\Architecture\Service-Architecture\field-pattern-implementation.md** - Characters: Sona
+- **01-Projects\Core-Framework\Architecture\variable-architecture\index.md** - Characters: Sona
+- **01-Projects\Core-Framework\Architecture\Service-Architecture\Divination-Techniques\AstroHerbalismGuidance.md** - Characters: Sona
+- **01-Projects\Core-Framework\Architecture\Service-Architecture\Divination-Techniques\NumerologyReports.md** - Characters: Sona
+- **01-Projects\Core-Framework\Architecture\Service-Architecture\Divination-Techniques\SacredGeometryConsultation.md** - Characters: Sona
+- **01-Projects\Core-Framework\Development\Content-Runtime\Agent-Systems\agents\ThreadWeaver.md** - Characters: Sona
+- **01-Projects\Core-Framework\Development\Product-Development\Consciousness-Mobile-Suite\QuantumWatchFaces.md** - Characters: Sona
+- **01-Projects\Core-Framework\Development\Product-Development\Consciousness-Mobile-Suite\SacredWallpaperPack.md** - Characters: Sona
+- **01-Projects\Core-Framework\Development\Product-Development\Physical-Products\EssentialOilBlends.md** - Characters: Sona
+- **01-Projects\Core-Framework\Development\Product-Development\Physical-Products\Wholybaths.md** - Characters: Sona
+- **01-Projects\Core-Framework\Frameworks\Odyssey-Framework\framework.md** - Characters: Sona
+- **01-Projects\Core-Framework\Frameworks\Spiral-Protocol\spiral-consciousness-protocol.md** - Characters: Sona
+- **01-Projects\Core-Framework\Templates-and-Tools\agent-templates\ContentResonanceEngineer.md** - Characters: Sona
+- **01-Projects\Core-Framework\Templates-and-Tools\agent-templates\FieldIntegrationSynthesizer.md** - Characters: Sona
+- **01-Projects\Core-Framework\Templates-and-Tools\agent-templates\RuntimePatternArchitect.md** - Characters: Sona
+- **01-Projects\Core-Framework\Templates-and-Tools\Tools\AI\ai-sales-transformation-protocols.md** - Characters: Sona
+- **01-Projects\Core-Framework\Templates-and-Tools\Tools\AI\chatgpt-productivity-optimization.md** - Characters: Sona
+- **01-Projects\Core-Framework\Templates-and-Tools\Tools\AI\chatgpt-prompting-cheatsheet.md** - Characters: Sona
+- **01-Projects\Products\PHAS-ION\educational-sequence.md** - Characters: Sona
+- **01-Projects\Products\PHAS-ION\marketing-narrative.md** - Characters: Sona
+- **01-Projects\Products\PHAS-ION\natural-energy-story.md** - Characters: Sona
+- **01-Projects\Products\PHAS-ION\project-overview.md** - Characters: Sona
+- **01-Projects\Products\Consciousness-Extension\docs\Features.md** - Characters: Sona
+- **01-Projects\Products\QuantumWatchFaces\docs\user-onboarding-flow.md** - Characters: Sona
+- **01-Projects\Products\RealityWraps\docs\framework.md** - Characters: Sona
+- **01-Projects\Products\RealityWraps\docs\PRD.md** - Characters: Sona
+- **01-Projects\Products\RealityWraps\implementation\prompt-engineering-framework.md** - Characters: Sona
+- **01-Projects\Products\RealityWraps\implementation\website-copy.md** - Characters: Sona
+- **01-Projects\Products\TimeTurner\docs\copy.md** - Characters: Sona
+- **01-Projects\Products\Truth-Initiate-Database\docs\API_Documentation.md** - Characters: Sona
+- **01-Projects\Products\Truth-Initiate-Database\docs\Architecture.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Runtime-of-God\core-system-architecture.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Runtime-of-God\02-ConsciousnessImplementation\02-DevRuntimeEnvironment.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Runtime-of-God\03-LOVEProtocol\02-FieldEquations.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Runtime-of-God\07-ExperimentalResults\02-ComprehensiveValidation.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Runtime-of-God\08-Applications\00-Overview.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Runtime-of-God\08-Applications\01-ConsciousnessApplications.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Runtime-of-God\03-LOVEProtocol\equations\01-FieldEquations.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Runtime-of-God\05-SystemIntegration\01-BioFieldMapping\00-FieldIntegrationProtocol.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Runtime-of-God\05-SystemIntegration\01-BioFieldMapping\01-MappingProtocol.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Runtime-of-God\05-SystemIntegration\04-HolisticIntegration\00-HolisticIntegrationFramework.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Runtime-of-God\06-FutureDevelopment\03-CrossCulturalMapping\00-MythologicalComputationFramework.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Runtime-of-God\06-FutureDevelopment\04-EmergentTechnologies\00-TechnologicalConvergenceFramework.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Runtime-of-God\06-FutureDevelopment\05-ParadigmShifts\00-ConsciousnessParadigmEvolutionFramework.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Vedic-Runtime\00-CoreArchitecture\01-TransliterationStandards.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Vedic-Runtime\PurushaSookta\Thesis_Overview.md** - Characters: Sona
+- **01-Projects\Runtime-Systems\Vedic-Runtime\01-TaittiriyaUpanishad\02-Brahmānandavalli\sanskrit\transliteration.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Blog-Ideas\Consciousness Runtime Framework Diagrams.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Blog-Ideas\Reality.compile Ancient Source Code Running Your Consciousness.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Blog-Ideas\the ero sensei - anime references to pryapus and the awakening of the emphallos.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Blog-Ideas\The Ineffable secrets of a breathing sprite.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Blog-Ideas\Yantra and tantra in the age of LLMs.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Branding\Audience Segments for The Why Chromosome by Shesh Iyer.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Branding\Knowledge Base for Brand, Style, Audience, Flow, and Website.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Branding\Products and services.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Branding\Shesh Iyer - The Why Chromosome.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Branding\TheWhyChromosome Agent Suite.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Branding\TheWhyChromosome Enhanced Content Generation System.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Branding\website icons prompts.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Branding\Website image prompts.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_31_19.683Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_31_58.133Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_33_40.836Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_33_43.170Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_33_45.300Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_02.305Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_10.695Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_35.682Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_41.849Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_45.732Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_47.772Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_55.366Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_01.571Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_03.821Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_07.156Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_11.263Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_13.168Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_31.563Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_51.611Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_54.446Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_36_01.204Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_36_08.582Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_36_16.372Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_36_27.153Z.md** - Characters: Sona
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\shesh iyer.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\00-PROJECT-OVERVIEW.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\COMPLETE-PROJECT-INDEX.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\DOCUMENTATION-AUDIT-AND-NAVIGATION.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\INTERNAL-NAVIGATION-MAP.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\memory.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\PHASE-2-INTEGRATION-PLAN.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\PROJECT-DIRECTORY-ORGANIZATION.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\PROJECT-STRUCTURE-REORGANIZED.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\03-Achievement-Documents\INTEGRATION-RECOVERY-SUMMARY.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\03-Achievement-Documents\VAULT-CONNECTION-MAP.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\ANCIENT-WISDOM-CONSCIOUSNESS-BIOLOGY.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\ASTROTHEOLOGY-STORY-STRUCTURE-ANALYSIS.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\CHARACTER-NAMING-SYSTEM.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\EXPANDED-LORE-FRAMEWORK.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\MORPHIC-RESONANCE-CONSCIOUSNESS-FRAMEWORK.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\STAR-AWARE-COSMOLOGICAL-LORE.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\THOTH-TAROT-CONSCIOUSNESS-ARCHITECTURE.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\05-Treasure-Hunt-System\Treasure-Hunt-Master-Design.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-1-Awakening-in-the-Labyrinth\memory.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-1-Awakening-in-the-Labyrinth\structure.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Series-Shared-Resources\marketing-concept.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Series-Shared-Resources\marketing-materials-list.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Series-Shared-Resources\UI.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-1-Awakening-in-the-Labyrinth\Chapters\Chapter-01-XVI-The-Tower\Chapter-01.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-1-Awakening-in-the-Labyrinth\Chapters\Chapter-02-XIII-Death\Chapter-02-XIII-Death-Pattern-Dissolution-INTEGRATED.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-1-Awakening-in-the-Labyrinth\Chapters\Chapter-03-0-The-Fool\Chapter-03-0-The-Fool-New-Consciousness-Potential-INTEGRATED.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-2-The-Limbic-Labyrinth\Chapters\Chapter-08-III-Empress\Chapter-08-III-Empress-Creative-Emotional-Abundance.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-2-The-Limbic-Labyrinth\Chapters\Chapter-09-IV-Emperor\Chapter-09-IV-Emperor-Emotional-Authority-and-Structure.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-2-The-Limbic-Labyrinth\Chapters\Chapter-10-V-Hierophant\Chapter-10-V-Hierophant-Emotional-Wisdom-Teaching.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-2-The-Limbic-Labyrinth\Chapters\Chapter-11-VI-Lovers\Chapter-11-VI-Lovers-Sacred-Relationship-Consciousness.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-2-The-Limbic-Labyrinth\Chapters\Chapter-12-VII-Chariot\Chapter-12-VII-Chariot-Emotional-Mastery-Direction.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-2-The-Limbic-Labyrinth\Chapters\Chapter-13-IX-Hermit\Chapter-13-IX-Hermit-Inner-Emotional-Wisdom.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-2-The-Limbic-Labyrinth\Chapters\Chapter-14-X-Fortune\Chapter-14-X-Fortune-Emotional-Transformation-Cycles.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-3-The-Neocortex-Mysteries\Chapters\Chapter-15-XV-The-Devil\Chapter-15-XV-The-Devil-Shadow-of-Cosmic-Creativity.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-3-The-Neocortex-Mysteries\Chapters\Chapter-16-XVI-The-Tower\Chapter-16-XVI-The-Tower-Destruction-and-Creative-Renewal.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-3-The-Neocortex-Mysteries\Chapters\Chapter-17-XVII-The-Star\Chapter-17-XVII-The-Star-Cosmic-Inspiration-and-Guidance.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-3-The-Neocortex-Mysteries\Chapters\Chapter-18-XVIII-The-Moon\Chapter-18-XVIII-The-Moon-Illusion-and-Multi-Dimensional-Reality.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-3-The-Neocortex-Mysteries\Chapters\Chapter-19-XIX-The-Sun\Chapter-19-XIX-The-Sun-Illuminated-Creative-Consciousness.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-3-The-Neocortex-Mysteries\Chapters\Chapter-20-XX-Judgement\Chapter-20-XX-Judgement-Ultimate-Cosmic-Creative-Responsibility.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\01-Core-Books\Book-3-The-Neocortex-Mysteries\Chapters\Chapter-21-XXI-The-World\Chapter-21-XXI-The-World-Perfect-Cosmic-Creative-Integration.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\Book-1-Character-Bible.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\Book-1-Clue-Integration-Manual.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\Book-1-Consciousness-Authenticity-Guide.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\Book-1-Scene-Architecture.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\COMPLETION-SUMMARY.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\DETAILED-CHARACTER-PROFILES.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\ENHANCED-NARRATIVE-STRUCTURE.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\Master-Synthesis-Document.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\MULTI-DIMENSIONAL-CHAPTER-EXAMPLE.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\STAR-AWARE-CHARACTER-DEVELOPMENT.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-2-Planning\BOOK-2-COMPREHENSIVE-CHAPTER-OUTLINE.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-2-Planning\BOOK-2-DEVELOPMENT-ROADMAP.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-2-Planning\BOOK-2-MASTER-PLANNING-DOCUMENT.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-2-Planning\Master-Synthesis-Document-Book2.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-3-Planning\Book-3-Character-Bible.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-3-Planning\Book-3-Treasure-Hunt-Manual.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-3-Planning\todo-book3.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Series-Planning\01-KHA-LORE-EE-CENTRAL-CONCEPT.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Series-Planning\01-Project-Bible.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Series-Planning\02-Series-Architecture.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Series-Planning\04-Character-Development-System.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Series-Planning\06-CHARACTER-NAMES-VOCAL-VARIETY.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Series-Planning\06-Clue-Design-and-Encoding-Manual.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Series-Planning\07-ENANTIODROMIA-TENSION-ARCHITECTURE.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Series-Planning\08-CHAPTER-1-STAR-AWARE-INTEGRATION.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\Ancient-Wisdom-Integration\Wisdom-Traditions-Synthesis.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\Archival-Protocols\ARCHIVAL-PLAN.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\Consciousness-Science-References\Complete-Bibliography-and-Citations.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\Easter-Eggs-and-Hidden-References\Complete-Easter-Eggs-Catalog.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\Sacred-Mathematics\Sacred-Mathematics-Framework.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\05-Treasure-Hunt-System\Community-Validation\Community-Validation-Framework.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\05-Treasure-Hunt-System\Community-Validation\Peer-Review-Guidelines.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\05-Treasure-Hunt-System\Consciousness-Validation-Protocols\Consciousness-Assessment-Methods.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\06-Anime-Series\AI-Animation-Assets\Character-Design-Prompts.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\06-Anime-Series\AI-Animation-Assets\Sacred-Geometry-Animation-Library.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\06-Anime-Series\Episode-Scripts\Anime-Series-Master-Plan.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\06-Anime-Series\Production-Planning\AI-Animation-Production-Guide.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\07-Strategic-Planning\Community-Building\Global-Consciousness-Community-Framework.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\07-Strategic-Planning\Marketing-Innovation\AI-Agent-Consciousness-Outreach-Strategy.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\07-Strategic-Planning\Marketing-Innovation\AI-Agent-Implementation-Roadmap.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\07-Strategic-Planning\Marketing-Innovation\AI-Agent-Technical-Implementation.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\07-Strategic-Planning\Marketing-Innovation\AI-Automation-Integration-Summary.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\07-Strategic-Planning\Marketing-Innovation\Consciousness-Based-Marketing-Strategy.md** - Characters: Sona
+- **01-Projects\Three-Body-Kingdom\07-Strategic-Planning\Release-Strategy\Macro-Roadmap.md** - Characters: Sona
+- **01-Projects\WitnessOS\00-Core-System\Integration-Summary.md** - Characters: Sona
+- **01-Projects\WitnessOS\00-Core-System\Vault-Integration-Map.md** - Characters: Sona
+- **01-Projects\WitnessOS\02-Development-Technical\PRD.md** - Characters: Sona
+- **01-Projects\WitnessOS\04-Game-Resources\Access-Levels.md** - Characters: Sona
+- **01-Projects\WitnessOS\05-Cross-Project-Links\Three-Body-Kingdom-Integration.md** - Characters: Sona
+- **01-Projects\WitnessOS\06-Living-Scrolls\Consciousness-Travel-Framework.md** - Characters: Sona
+- **01-Projects\WitnessOS\06-Living-Scrolls\Digital-Scroll-Architecture.md** - Characters: Sona
+- **01-Projects\WitnessOS\06-Living-Scrolls\Integration-Summary.md** - Characters: Sona
+- **01-Projects\WitnessOS\06-Living-Scrolls\Interactive-Mythology-System.md** - Characters: Sona
+- **01-Projects\WitnessOS\06-Living-Scrolls\README.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\FIELDMAP.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\GLOSSARY.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\MAPS.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\QUERIES.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Core\VOCAB.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Foundation\CONTRIBUTORS.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Foundation\COSMOGENESIS.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Foundation\MANIFESTO.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Guides\FIELDWORK.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Guides\INSTALLATION.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Guides\PRIMER.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Guides\TESTCASES.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\AUDIOVISUAL.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\AVATARS.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\ENGINES.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\RITUALS.md** - Characters: Sona
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\SCRIPTS.md** - Characters: Sona
+- **02-Areas\Brand-Architecture\Critique.md** - Characters: Sona
+- **02-Areas\Consciousness-Models\_consciousness-architecture-hub.md** - Characters: Sona
+- **02-Areas\Muse-Enneagram-Framework\endocrine-constellation-pattern.md** - Characters: Sona
+- **02-Areas\Muse-Enneagram-Framework\spolski-endocrine-correspondence.md** - Characters: Sona
+- **02-Areas\Pattern-Studies\Historical-Knowledge-Patterns.md** - Characters: Sona
+- **02-Areas\Consciousness-Models\Archetypal-Programming\archetypal-programming-patterns.md** - Characters: Sona
+- **02-Areas\Consciousness-Models\Bioelectric-Systems\Bioelectric-Pattern-Framework.md** - Characters: Sona
+- **02-Areas\Consciousness-Models\Bioelectric-Systems\mitochondrial-subconsciousness-patterns.md** - Characters: Sona
+- **02-Areas\Consciousness-Models\Bioelectric-Systems\temperature-consciousness-correlation-v2.md** - Characters: Sona
+- **02-Areas\Consciousness-Models\Bioelectric-Systems\zinc-charge-interface-v2.md** - Characters: Sona
+- **02-Areas\Consciousness-Models\Information-Processing\maya-gaia-processing-v2.md** - Characters: Sona
+- **02-Areas\Consciousness-Models\Information-Processing\twilight-language-processing-v2.md** - Characters: Sona
+- **02-Areas\Consciousness-Models\Social-Programming\media-consciousness-stream.md** - Characters: Sona
+- **02-Areas\Consciousness-Models\Social-Programming\social-validation-consciousness-model.md** - Characters: Sona
+- **02-Areas\Creative-Ideas\Product-Concepts\Business Plan.md** - Characters: Sona
+- **02-Areas\Creative-Ideas\Product-Concepts\Home made soaps.md** - Characters: Sona
+- **02-Areas\Creative-Ideas\Product-Concepts\iOS wallpaper pack.md** - Characters: Sona
+- **02-Areas\Muse-Enneagram-Framework\Endocrine-Muse-Matrix\Pattern-Analysis.md** - Characters: Sona
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\Lorenz-Kundli-Pattern-Analysis.md** - Characters: Sona
+- **02-Areas\Technical-Mystical-Integration\Archetypal-Systems\Symbolic-Systems-Analysis.md** - Characters: Sona
+- **02-Areas\Technical-Mystical-Integration\Biosensor-Integration\Biosensor-Field-Integration-Framework.md** - Characters: Sona
+- **02-Areas\Technical-Mystical-Integration\Biosensor-Integration\Biosensor-Implementation-Guide.md** - Characters: Sona
+- **02-Areas\Technical-Mystical-Integration\Biosensor-Integration\Biosensor-Pattern-Recognition-Protocol.md** - Characters: Sona
+- **02-Areas\Technical-Mystical-Integration\Implementation-Frameworks\Sri-Rudra-Prashna-Optimization.md** - Characters: Sona
+- **02-Areas\Technical-Mystical-Integration\Implementation-Frameworks\Integration\Neural-Circuit-Design-Patterns.md** - Characters: Sona
+- **02-Areas\Technical-Mystical-Integration\Implementation-Frameworks\Integration\salary-negotiation-success-patterns.md** - Characters: Sona
+- **03-Resources\Authors\_index.md** - Characters: Sona
+- **03-Resources\Content\Address-to-Dead-Analysis.md** - Characters: Sona
+- **03-Resources\Content\Address-to-Dead-References.md** - Characters: Sona
+- **03-Resources\Quotes-Collections\Random Qoutes.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_31_19.683Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_31_58.133Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_33_40.836Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_33_43.170Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_33_45.300Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_02.305Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_10.695Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_35.682Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_41.849Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_45.732Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_47.772Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_55.366Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_01.571Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_03.821Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_07.156Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_11.263Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_13.168Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_31.563Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_51.611Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_54.446Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_36_01.204Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_36_08.582Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_36_16.372Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_36_27.153Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\Oracle of mythology.md** - Characters: Sona
+- **03-Resources\Authors\James-True\Talking to Reptiles - Pt 2.md** - Characters: Sona
+- **03-Resources\Authors\James-True\The Interplay of Power, Symbolism, and Knowledge - Exploring Ancient Cultures, Historical Conflicts, and Academic Inquiry.md** - Characters: Sona
+- **03-Resources\Authors\James-True\_index.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\_index.md** - Characters: Sona
+- **03-Resources\Authors\James-True\Archive-Original\AIPRM-export-chatgpt-thread_2024-06-21T22_30_54.775Z.md** - Characters: Sona
+- **03-Resources\Authors\James-True\Archive-Original\Decoding-the-Narrative-Deep-Dive-Symbolism-Themes-Historical-Contexts.md** - Characters: Sona
+- **03-Resources\Authors\James-True\Archive-Original\New-Fire-Ceremony.md** - Characters: Sona
+- **03-Resources\Authors\James-True\Archive-Original\Talking-to-Reptiles-Pt-1.md** - Characters: Sona
+- **03-Resources\Authors\James-True\Technical-Frameworks\Consciousness-Processing-Reptile-Loop-Analysis.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Age-of-Idolatry_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Aleister-Crowley-and-the-Aeon-of-Horus_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\An-Address-to-the-Dead_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Anarchism-Refuted_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Ancestral-Trauma-and-the-Epic-of-Consciousness_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Art-and-Imagination_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Atonism-and-the-Cult-of-Mithras_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Blake-and-Women_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\By-Sword-and-Shield_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Children of Thanatos The Marcusan Society.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Contrarium_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Dark Mother Divine Deconstructing Feminism.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Deep-Peaks_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Does-God-Have-an-Unconscious_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Dragon-Fight_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Egyptian-Origin-of-the-Tarot_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Egypt_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Enemy in the Family.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Etymology Key to the Past.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Existentialism-vs-Personalism_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Exploring the Origins of Jehovah.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Forgery-in-Christianity_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Happy-Discontents-and-the-Unreality-Principle_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\History of the Medes (Magi & Enchanters of Old).md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Identifying-the-Vampiristic-Type_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\In-Words-We-Trust_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Individuation-and-the-Will-to-Meaning_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Jesus the Egyptian by Richard A. Gabriel.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Jesus-Meets-Jung_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Jews & Templars The Untold Story.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Jung-and-the-Psyche_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Koyaanisqatsi-The-Anatomy-of-World-Decay_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Light-Magic-Masonry_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Mysticism-Truth-or-Falsity_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\PERSONALISM  .  by Michael Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Personalism-and-Its-Enemies_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Pestilence-The-Curse-of-Christianity_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Philosopher-of-Death_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Power of the Templars.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Princes of Light & the Origins of Masonry.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Prisoners of Childhood Adultism, Psychiatry & the Fifth Commandment.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Refuting-the-Refuters_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Say No to Psychology.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Schelling Zone.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Schopenhauer’s Error by Michael Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Secret Origins of the Bible by Tim Callahan.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Souls in Darkness Psychopaths in Therapy.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\St-Paul-Fraud_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Stilling-the-Mind_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Surviving-the-Pathocalypse_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Symbolic-Literacy_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Bible Unearthed by Finkelstein & Silberman.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Biography of Satan by Kersey Graves.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Black Nobility An Introduction.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Case For A Mythical Jesus by Earl Doherty.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Devil in Charge  . by Michael Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Early History of God by Prof. Mark S. Smith.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Female Illuminati & Other Secret Societies - A Brief Introduction.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Ghebers of Hebron by Samuel F. Dunlop (1894).md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Goddess Minerva & Her Symbolism.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Jesus Puzzle By Earl Doherty.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Mythic Past Biblical Archaeology & the Myth of Israel By Thomas L. Thompson.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Order of Sion & Occult Christianity.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Science of Vertigo.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Age-of-Revealing_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Angry-Philosopher_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Average-Persona-Understanding-the-Psychopath_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Case-for-Idealism_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Constitution-Con_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Fall-of-Albion_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Freedom-of-Man_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Inner-Zodiac_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Occult-History-of-Ireland_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Red-Papacy-and-Euro-Communism_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Sick-Rose_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Understanding-Steiner_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Were-Talking-Heroes_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\William-Blake-and-the-Unconscious_by-Michael-Tsarion.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Female-Dragon-Court\FEMALE DRAGON COURT (& their Agents).md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Otto-Weininger\Excerpts.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\References\IMPORTANT BOOKS.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\References\NOTES & QUOTES.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Alexander Hislop.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Alexander S. Holub.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Arthur Dewes.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Helen Ellerbe.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\J. P. Mendum.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\John E. Remsberg.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\JOSEPH WHELESS.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\KERSEY GRAVES.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Mircea Eliade.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Prof. A. C. Sayce.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\R. E. Friedman.md** - Characters: Sona
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Tony Bushby.md** - Characters: Sona
+- **03-Resources\Content\Content-Seeds\temperature-consciousness-thread-v2.md** - Characters: Sona
+- **03-Resources\Content\Content-Seeds\temperature-consciousness-thread.md** - Characters: Sona
+- **03-Resources\Content\Document-Analyses\Anarchism-Refuted-Analysis.md** - Characters: Sona
+- **03-Resources\Content\Articles\Substack\runtime-of-god-ancient-debug-protocols.md** - Characters: Sona
+- **03-Resources\Sacred-Science\Consciousness-Studies\Pattern-Recognition.md** - Characters: Sona
+- **03-Resources\Sacred-Science\Consciousness-Studies\Integration\gut-detox-pattern-protocols.md** - Characters: Sona
+- **03-Resources\Technical\Biofield-Research\Biofield-Research.md** - Characters: Sona
+- **03-Resources\Technical\Biofield-Research\Biosensor-Technology-Summary.md** - Characters: Sona
+- **03-Resources\Technical\Documentation\hornevian-groups-analysis-v1-0-0.md** - Characters: Sona
+- **03-Resources\Technical\Integration-Specs\microservices-specification.md** - Characters: Sona
+- **03-Resources\Technical\Biofield-Research\Research\do-you.md** - Characters: Sona
+- **03-Resources\Technical\Development\AI-Tools\Backend-Platforms\buildship.md** - Characters: Sona
+- **03-Resources\Technical\Development\AI-Tools\Productivity-Platforms\find-amplify.md** - Characters: Sona
+- **03-Resources\Technical\Development\API\detailed-specifications\oracle-system-integrity.md** - Characters: Sona
+- **03-Resources\Technical\Development\Tools\AI\chatgpt-prompting-cheatsheet.md** - Characters: Sona
+- **03-Resources\Technical\Documentation\Guides\canvas-implementation-guide.md** - Characters: Sona
+- **03-Resources\Technical\Documentation\Guides\getting-started-with-reader.md** - Characters: Sona
+- **03-Resources\Technical\Documentation\Guides\reader-frequently-asked-questions.md** - Characters: Sona
+- **03-Resources\Video-Analysis\james-true\james-true-anarchy-analysis-v1-0-0.md** - Characters: Sona
+- **03-Resources\Video-Analysis\SlickDissident\current-events-pattern-analysis-v1-0-0.md** - Characters: Sona
+- **03-Resources\Video-Analysis\SlickDissident\hanged-man-houdini-analysis-v1-0-0.md** - Characters: Sona
+- **03-Resources\Video-Analysis\SlickDissident\leviathan-enneagram-analysis-v1-0-0.md** - Characters: Sona
+- **03-Resources\Video-Analysis\SlickDissident\prime-system-transcript-analysis-v1-0-0.md** - Characters: Sona
+- **docs\consciousness\FIELDMAP.md** - Characters: Sona
+- **docs\consciousness\GLOSSARY.md** - Characters: Sona
+- **docs\consciousness\MAPS.md** - Characters: Sona
+- **docs\consciousness\VOCAB.md** - Characters: Sona
+- **docs\development\CHANGELOG.md** - Characters: Sona
+- **docs\development\ENGINES_README.md** - Characters: Sona
+- **docs\development\engines_todo.md** - Characters: Sona
+- **docs\development\FIELD-MAINTENANCE.md** - Characters: Sona
+- **docs\development\FOLDER_STRUCTURE.md** - Characters: Sona
+- **docs\development\PRD.md** - Characters: Sona
+- **docs\development\todo.md** - Characters: Sona
+- **docs\development\VERSION.md** - Characters: Sona
+- **docs\project-history\Acousmaticos Numerology Interpretation Apr 26 2025.md** - Characters: Sona
+- **docs\consciousness\CORE\QUERIES.md** - Characters: Sona
+- **docs\consciousness\FOUNDATION\COSMOGENESIS.md** - Characters: Sona
+- **docs\consciousness\GUIDES\FIELDWORK.md** - Characters: Sona
+- **docs\consciousness\GUIDES\PRIMER.md** - Characters: Sona
+- **docs\consciousness\GUIDES\TESTCASES.md** - Characters: Sona
+- **docs\consciousness\MODULES\AUDIOVISUAL.md** - Characters: Sona
+- **docs\consciousness\MODULES\AVATARS.md** - Characters: Sona
+- **docs\consciousness\MODULES\ENGINES.md** - Characters: Sona
+- **docs\consciousness\MODULES\SCRIPTS.md** - Characters: Sona
+- **docs\development\engines\API_USAGE.md** - Characters: Sona
+- **docs\development\engines\OPTIMIZATION_COMPLETE.md** - Characters: Sona
+- **docs\development\engines\PHASE1_COMPLETE.md** - Characters: Sona
+- **docs\development\engines\PHASE2_1_COMPLETE.md** - Characters: Sona
+- **docs\development\engines\PHASE2_2_COMPLETE.md** - Characters: Sona
+- **docs\development\engines\PHASE7_COMPLETE.md** - Characters: Sona
+- **docs\development\engines\TECHNICAL_SPECS.md** - Characters: Sona
+- **docs\development\webshore\Prompts.md** - Characters: Sona
+- **docs\development\webshore\todo.md** - Characters: Sona
+- **docs\development\webshore\UI-components.md** - Characters: Sona
+- **docs\development\webshore\webshore.md** - Characters: Sona
+- **Rubbish\2025-06-25\Chapter-01-XVI-The-Tower-Foundation-Disruption-INTEGRATED.md** - Characters: Sona
+- **Rubbish\2025-06-25\memory.md** - Characters: Sona
+- **Rubbish\2025-06-25\todo.md** - Characters: Sona
+- **Rubbish\2025-07-01\ANAMNESIS-ENGINE-SPECS.md** - Characters: Sona
+- **Rubbish\2025-07-01\Chapter-04-The-Anamnesis-Engine.md** - Characters: Sona
+- **Rubbish\2025-07-01\GALACTIC_FEDERATION_TRANSFORMATION_PLAN.md** - Characters: Sona
+- **Rubbish\2025-07-01\memory_codex.md** - Characters: Sona
+- **Rubbish\2025-07-01\story_threads.md** - Characters: Sona
+- **Rubbish\2025-07-01\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-01\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Characters: Sona
+- **Rubbish\2025-07-02\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-03\Character_Awareness_Systems.md** - Characters: Sona
+- **Rubbish\2025-07-03\Compression_Optimization.md** - Characters: Sona
+- **Rubbish\2025-07-03\Daoist_Quantum_Mechanics.md** - Characters: Sona
+- **Rubbish\2025-07-03\Dimensional_Transition_Patterns.md** - Characters: Sona
+- **Rubbish\2025-07-03\Efficiency_Metrics.md** - Characters: Sona
+- **Rubbish\2025-07-03\Fiction_Reality_Boundaries.md** - Characters: Sona
+- **Rubbish\2025-07-03\Fourth_Wall_Protocols.md** - Characters: Sona
+- **Rubbish\2025-07-03\Information_Density_Patterns.md** - Characters: Sona
+- **Rubbish\2025-07-03\Luminth_Quantum_Mapping.md** - Characters: Sona
+- **Rubbish\2025-07-03\Meta_Awareness_Interfaces.md** - Characters: Sona
+- **Rubbish\2025-07-03\Meta_Dimensional_Resonance_Patterns.md** - Characters: Sona
+- **Rubbish\2025-07-03\Meta_Narrative_Interfaces.md** - Characters: Sona
+- **Rubbish\2025-07-03\Narrative_Field_Dynamics.md** - Characters: Sona
+- **Rubbish\2025-07-03\Quantum_Culture_Integration.md** - Characters: Sona
+- **Rubbish\2025-07-03\Quantum_Sigil_Integration.md** - Characters: Sona
+- **Rubbish\2025-07-03\Quoril_Quantum_Resonance.md** - Characters: Sona
+- **Rubbish\2025-07-03\State_Management_Interfaces.md** - Characters: Sona
+- **Rubbish\2025-07-03\State_Transition_Sequences.md** - Characters: Sona
+- **Rubbish\2025-07-03\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-03\Vedic_Quantum_Systems.md** - Characters: Sona
+- **Rubbish\2025-07-03\Vireth_Quantum_Emergence.md** - Characters: Sona
+- **Rubbish\2025-06-25\2025-06-25 05.12.47.0\Chapter-01-XVI-The-Tower-Foundation-Disruption-INTEGRATED.md** - Characters: Sona
+- **Rubbish\2025-06-25\2025-06-25 05.14.21.0\Chapter-01-XVI-The-Tower-Foundation-Disruption-INTEGRATED.md** - Characters: Sona
+- **Rubbish\2025-06-25\2025-06-25 05.16.00.0\todo.md** - Characters: Sona
+- **Rubbish\2025-06-25\2025-06-25 05.19.02.0\todo.md** - Characters: Sona
+- **Rubbish\2025-06-25\2025-06-25 05.20.10.0\todo.md** - Characters: Sona
+- **Rubbish\2025-06-25\2025-06-25 05.21.08.0\memory.md** - Characters: Sona
+- **Rubbish\2025-06-25\2025-06-25 05.22.23.0\todo.md** - Characters: Sona
+- **Rubbish\2025-06-25\2025-06-25 05.23.08.0\todo.md** - Characters: Sona
+- **Rubbish\2025-06-25\2025-06-25 05.23.48.0\memory.md** - Characters: Sona
+- **Rubbish\2025-06-25\2025-06-25 05.24.53.0\todo.md** - Characters: Sona
+- **Rubbish\2025-06-25\2025-06-25 05.34.20.0\memory.md** - Characters: Sona
+- **Rubbish\2025-06-25\2025-06-25 05.35.33.0\todo.md** - Characters: Sona
+- **Rubbish\2025-07-01\2025-07-01 18.03.39.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Characters: Sona
+- **Rubbish\2025-07-01\2025-07-01 18.05.10.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Characters: Sona
+- **Rubbish\2025-07-01\2025-07-01 18.06.11.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Characters: Sona
+- **Rubbish\2025-07-01\2025-07-01 18.33.24.0\GALACTIC_FEDERATION_TRANSFORMATION_PLAN.md** - Characters: Sona
+- **Rubbish\2025-07-01\2025-07-01 19.03.20.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-01\2025-07-01 20.05.26.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-01\2025-07-01 20.12.53.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-01\2025-07-01 20.18.02.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-01\2025-07-01 20.23.04.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-01\2025-07-01 20.28.35.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-01\2025-07-01 20.44.07.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-02\2025-07-02 21.01.36.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-02\2025-07-02 21.05.49.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-02\2025-07-02 21.07.23.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-02\2025-07-02 21.09.34.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-02\2025-07-02 21.11.45.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-02\2025-07-02 21.13.44.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-02\2025-07-02 21.15.34.0\TODO.md** - Characters: Sona
+- **Rubbish\2025-07-02\2025-07-02 21.27.44.0\TODO.md** - Characters: Sona
+- **scripts\generated_links\index_links.md** - Characters: Sona
+- **scripts\generated_links\memory_links.md** - Characters: Sona
+- **scripts\generated_links\todo_links.md** - Characters: Sona
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\FUTURE-BOOK-OUTLINES.md** - Characters: Sona
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\TRILOGY_MASTER_PLAN.md** - Characters: Sona
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\TRILOGY_PLOT_OUTLINE.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\README.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\CHANGELOG.md** - Characters: Sona
+- **Somatic-Canticles\scripts\README.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\00_CORE_FOUNDATION\00_SERIES_BIBLE.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\00_CORE_FOUNDATION\01_KEY_CONCEPTS.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\00_CORE_FOUNDATION\03_VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\00_TRYAMBAKAM_PROTOCOL.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\01_BIOLOGICAL_STYLE_GUIDE.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\02_ANAMNESIS_ENGINE_SPECS.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\03_ALETHEOS_NARRATIVE_WEAVER_SYSTEM.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\04_ALETHEOS_IMPLEMENTATION_GUIDE.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\05_TRIANGULATION_ENGINE_SPECS.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\ANALYTICAL_NAVIGATION_PROTOCOLS.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\AZTEC_FIELD_RESONANCE_SACRIFICE.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\BIO_ACOUSTIC_SEQUENCE_INTEGRATION.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\CHARACTER_KHALOREEE_ALIGNMENT.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\DAOIST_FIELD_RESONANCE_MECHANICS.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\FIELD_RESONANCE_ENGINEERING.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\HERMETIC_FIELD_RESONANCE_ALCHEMY.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\KABBALISTIC_FIELD_RESONANCE_LIGHT.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\NEURO_CARTOGRAPHIC_PRECISION.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\NORDIC_FIELD_RESONANCE_WEAVING.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\RECURSIVE_LOOP_CREATION.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\SUFI_FIELD_RESONANCE_ECSTASY.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\THREE_BRAIN_COORDINATION.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\WITNESSΟΣ_EVOLUTION_TRACKING.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\02-SOMANAUT-TEAM-ROSTER.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CHANGELOG.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CHARACTER-KHALOREE-PROFILES.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CHARACTER-SYSTEM-MAP.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CONSCIOUSNESS_TERRITORIES.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CULTURAL_MUSIC_DATABASE.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\FAMILY_TREES_V2.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\HOUSE_POLITICS.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\IMPLEMENTATION_ROADMAP.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\MUSICAL_ENHANCEMENT_PROPOSAL.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\PLOT_INTEGRATION.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\README.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\STRUDEL_IMPLEMENTATION_GUIDE.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\TRILOGY-CHARACTER-ARCS.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\VISUAL_MOODBOARD.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\README.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\04_WORLD_BUILDING\00_GALACTIC_FEDERATION_CHARTER.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\04_WORLD_BUILDING\01_GALACTIC_FEDERATION_TRANSFORMATION_PLAN.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\04_WORLD_BUILDING\01_SEVEN_GALACTIC_CULTURES.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\05_VISUALIZATIONS\02_TECHNOLOGY_MAP.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\05_VISUALIZATIONS\README.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\05_VISUALIZATIONS\VISUAL_CONCEPT_MATERIALS.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\05_VISUALIZATIONS\VISUAL_STORYBOARD_DEMO.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CHANGELOG.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\COLLABORATION_OPPORTUNITIES.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CONSTANTS.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\DOCUMENTATION_REQUIREMENTS.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\FUTURE_EXPANSIONS.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\IMPLEMENTATION_ROADMAP.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\INTEGRATION_TESTING_PROTOCOL.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\MANUSCRIPT_ALIGNMENT_GUIDE.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\PHASE_1_FOUNDATION_IMPLEMENTATION.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\PHASE_2_DEVELOPMENT_IMPLEMENTATION.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\PHASE_3_MASTERY_IMPLEMENTATION.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\SAFETY_MEASURES.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\SCALABILITY_ROADMAP.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\TESTING_PROTOCOLS.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\TODO.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\UNIFIED_EXECUTION_TEMPLATE.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\UNIFIED_IMPLEMENTATION_GUIDE.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\UNIFIED_TECHNOLOGY_INTEGRATION_PLAN.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\VALIDATION_FRAMEWORK.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Bio_Engineering\Consciousness_Compression_Patterns.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Bio_Engineering\Consciousness_Elevation_Paths.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Bio_Engineering\Dehydration_Protocols.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Bio_Engineering\Evolutionary_Possibility_Matrix.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Bio_Engineering\Evolutionary_Trajectories.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Bio_Engineering\Orbital_Consciousness_Tracking_Systems.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Consciousness_Interfaces\Character_Awareness_Systems.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Consciousness_Interfaces\Crystallization_Interfaces.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Consciousness_Interfaces\Emergence_Visualization_Interfaces.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Consciousness_Interfaces\Meta_Awareness_Interfaces.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Consciousness_Interfaces\Meta_Narrative_Interfaces.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Consciousness_Interfaces\Observation_Field_Interfaces.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Consciousness_Interfaces\Quantum_Debugging_Interfaces.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Consciousness_Interfaces\Stability_Maintenance_Interfaces.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Consciousness_Interfaces\State_Management_Interfaces.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Consciousness_Interfaces\Transformation_Interfaces.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Defensive_Protocols\Adaptive_Threat_Response_Systems.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Defensive_Protocols\Crash_Prevention_Systems.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Defensive_Protocols\Defense_Mechanism_Activation_Patterns.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Defensive_Protocols\Fourth_Wall_Protocols.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Defensive_Protocols\Khaloree_Firewall_Protocols.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Narrative_Dynamics\Fiction_Reality_Boundaries.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Narrative_Dynamics\Meta_Dimensional_Resonance_Patterns.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Narrative_Dynamics\Narrative_Field_Dynamics.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Narrative_Dynamics\Observation_Effect_Dynamics.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Daoist_Quantum_Mechanics.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Luminth_Quantum_Mapping.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Quantum_Consciousness_Effects.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Quantum_Consciousness_Observation_Patterns.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Quantum_Culture_Integration.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Quantum_Entanglement_Defense_Networks.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Quantum_Sigil_Integration.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Quantum_State_Tracking.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Quoril_Quantum_Resonance.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Vedic_Quantum_Systems.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\Quantum_Systems\Vireth_Quantum_Emergence.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Amplification_Protocols.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Chaotic_Attractor_Patterns.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Compression_Optimization.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Dimensional_Transition_Patterns.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Efficiency_Metrics.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Information_Density_Patterns.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Novelty_Detection_Algorithms.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Recursive_Awareness_Protocols.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Recursive_Consciousness_Loops.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Self_Awareness_Loop_Trajectories.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\State_Transition_Sequences.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\System_Evolution_Patterns.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Thalatha_Fawda-Triple_Chaos_Emergence.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Transformation_Sequences.md** - Characters: Sona
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\System_Operations\Unpredictable_Phenomena_Manifestation.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_DIALOGUE_EXAMPLES.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PRODUCTION_GUIDE.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PROTOCOL_AWAKENING.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\CHARACTER_DESIGN_SHEETS.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\README.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\VISUAL_THEME_MOODBOARD.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\memory_codex.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\story_threads.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\memory_codex.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\story_threads.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\memory_codex.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\story_threads.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\07_MARKETING_AND_DISTRIBUTION\MARKETING_STRATEGY.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\AUDIO_DESIGN_PROMPTS.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\CHARACTER_DEVELOPMENT_PROMPTS.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\STORYBOARD_PROMPTS.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\VISUAL_GENERATION_WORKFLOW.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\09_REFERENCE_MATERIALS\CONSCIOUSNESS_ENGINEERING_REFERENCES.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\09_REFERENCE_MATERIALS\VISUAL_GENERATION_QUALITY_CONTROL.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\10_MOODBOARDS\01_DR_CORVAN_MOODBOARD.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\10_MOODBOARDS\02_DR_SONA_MOODBOARD.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\10_MOODBOARDS\03_DR_JIAN_MOODBOARD.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\10_MOODBOARDS\04_GIDEON_MOODBOARD.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\10_MOODBOARDS\05_CONSCIOUSNESS_ENGINEERING_MOODBOARD.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\10_MOODBOARDS\08_OVERALL_VISUAL_THEME_MOODBOARD.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\10_MOODBOARDS\README.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\00_PLANNING\CHAPTERS_4-7_DETAILED_OUTLINES.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\00_PLANNING\PLOT_OUTLINE.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-01-The-Choroid-Plexus.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-02-Signal-Transduction.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-03-The-Blood-Brain-Barrier.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-04-The-Emperors-Genome.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-05-The-Endocrine-Dogma.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-06-The-Synaptic-Crossroads.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-07-The-Breathfield-Weaver.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-08-The-Compass-Calibration.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\PLANNING\Book-1-Chapter-Plan.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\00_PLANNING\DETAILED_PLOT_OUTLINE.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-01-The-Sigil-Smith.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-02-The-Debug-Protocol.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-03-The-Avatar-Mutation.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-04-The-Anamnesis-Engine.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-05-The-Myocardial-Chorus.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-06-The-Three-Body-Coordination.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-07-The-Witness-Integration.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\00_PLANNING\DETAILED_PLOT_OUTLINE.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-01-The-Wilt.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-02-The-Gardener.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-03-The-Final-Diagnosis.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-04-The-Three-Point-Problem.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-05-The-Note-and-the-Bell.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-06-The-Test-Fire.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-07-The-Perfect-World.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-08-The-Flaw-in-the-Code.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-09-The-Final-Procedure.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-10-The-Void-of-Pure-Potential.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-11-The-Architecture-of-New-Reality.md** - Characters: Sona
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-12-The-New-Beginning.md** - Characters: Sona
+- **_System\Integration\Core-Framework-Combined-Authors-Integration.md** - Characters: Sona
+- **_System\Integration\DAKM-Philosophy-James-True-Integration.md** - Characters: Sona
+- **_System\Integration\Magic-Unschool-Combined-Authors-Integration.md** - Characters: Sona
+- **_System\Integration\Master-Integration-Navigation-System.md** - Characters: Sona
+- **_System\Integration\Practical-Application-Pathways.md** - Characters: Sona
+- **_System\Integration\Products-James-True-Practical-Integration.md** - Characters: Sona
+- **_System\Integration\Project-Author-Integration-Analysis.md** - Characters: Sona
+- **_System\Integration\TheWhyChromosome-Brand-James-True-Integration.md** - Characters: Sona
+- **_System\Integration\Three-Body-Kingdom-Michael-Tsarion-Integration.md** - Characters: Sona
+- **_System\Integration\_index.md** - Characters: Sona
+- **_System\Reports\refactor_Todo_OLD.md** - Characters: Sona
+- **_System\structure\document-templates.md** - Characters: Sona
+- **_System\structure\maps-of-content.md** - Characters: Sona
+- **_System\structure\vault-structure.md** - Characters: Sona
+- **_System\Tags\taxonomy.md** - Characters: Sona
+- **_System\Templates\ai-preset-configurations.md** - Characters: Sona
+- **_System\Templates\content-migration.md** - Characters: Sona
+- **_System\Templates\pattern-recognition.md** - Characters: Sona
+- **_System\structure\document-templates\pattern-analysis.md** - Characters: Sona
+- **_System\structure\tagging-system\tagging-protocol.md** - Characters: Sona
+- **_System\Templates\AI-Prompts\25 ChatGPT Prompts to build career in 2023.md** - Characters: Sona
+- **_System\Templates\AI-Prompts\Business Prompts.md** - Characters: Sona
+- **_System\Templates\AI-Prompts\New Startup Ideas.md** - Characters: Sona
+- **_System\Templates\AI-Prompts\Prompt structuring.md** - Characters: Sona
+- **_System\Templates\Content\_templates\content-template.md** - Characters: Sona
+- **_System\Templates\Content-Processing\platform-agents\deepfieldarchitect.md** - Characters: Sona
+- **_System\Templates\Content-Processing\platform-agents\fieldresonator.md** - Characters: Sona
+- **_System\Templates\Content-Processing\platform-agents\synapticsage.md** - Characters: Sona
+
+## Concept Connections
+- **Somatic-Canticles\CHANGELOG.md** - Concepts: House
+- **01-Projects\Products\QuantumWatchFaces\TimeScaleVisualizations.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Blog-Ideas\The Ineffable secrets of a breathing sprite.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_33_40.836Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_10.695Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_41.849Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_45.732Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_47.772Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_01.571Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_07.156Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_11.263Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_13.168Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_31.563Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_51.611Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_54.446Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_36_01.204Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_36_08.582Z.md** - Concepts: House
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\ASTROTHEOLOGY-STORY-STRUCTURE-ANALYSIS.md** - Concepts: House
+- **01-Projects\Three-Body-Kingdom\05-Treasure-Hunt-System\Treasure-Hunt-Master-Design.md** - Concepts: House
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\DETAILED-CHARACTER-PROFILES.md** - Concepts: House
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\AVATARS.md** - Concepts: House
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\RITUALS.md** - Concepts: House
+- **02-Areas\Creative-Ideas\Product-Concepts\0-9 wallpaper.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\Advanced-System-Parallels.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\Lorenz-Kundli-Pattern-Analysis.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\Technical-Implementation.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\System-Parallels\03-Ashtakavarga-Hypercube.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\System-Parallels\06-BhavaAspect-NeuralNet.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\System-Parallels\Visualizations\03-Ashtakavarga-Hypercube-Map.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\System-Parallels\Visualizations\06-BhavaAspect-Neural-Map.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_33_40.836Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_10.695Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_41.849Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_45.732Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_47.772Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_01.571Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_07.156Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_11.263Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_13.168Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_31.563Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_51.611Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_54.446Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_36_01.204Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_36_08.582Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\Oracle of mythology.md** - Concepts: House
+- **03-Resources\Authors\James-True\The Interplay of Power, Symbolism, and Knowledge - Exploring Ancient Cultures, Historical Conflicts, and Academic Inquiry.md** - Concepts: House
+- **03-Resources\Authors\James-True\Archive-Original\New-Fire-Ceremony.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\An-Address-to-the-Dead_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Ancestral-Trauma-and-the-Epic-of-Consciousness_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Art-and-Imagination_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Atonism-and-the-Cult-of-Mithras_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Better-Dead-Than-Real_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\By-Sword-and-Shield_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Did God Have a Wife by Professor William G. Dever.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Did Moses Exist by D. M. Murdoch.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Egyptian-Origin-of-the-Tarot_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Egypt_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Enemy in the Family.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Etymology Key to the Past.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Existentialism-vs-Personalism_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Forgery-in-Christianity_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Graham Hancock  Plagiarist & Scavenger . by Michael Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Jesus the Egyptian by Richard A. Gabriel.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Jesus-Meets-Jung_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Jews & Templars The Untold Story.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Power of the Templars.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Princes of Light & the Origins of Masonry.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Refuting-the-Refuters_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Schopenhauer’s Error by Michael Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Secret Origins of the Bible by Tim Callahan.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Souls in Darkness Psychopaths in Therapy.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\St-Paul-Fraud_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Symbolic-Literacy_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Bible Unearthed by Finkelstein & Silberman.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Black Nobility An Introduction.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Female Illuminati & Other Secret Societies - A Brief Introduction.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Goddess Minerva & Her Symbolism.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Messiah Before Jesus - The Suffering Servant of the Dead Sea Scrolls by Israel Knohl & David Maisel.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Mythic Past Biblical Archaeology & the Myth of Israel By Thomas L. Thompson.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Order of Sion & Occult Christianity.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Age-of-Revealing_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Angry-Philosopher_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Constitution-Con_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Freedom-of-Man_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Inner-Zodiac_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Occult-History-of-Ireland_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Red-Papacy-and-Euro-Communism_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Sick-Rose_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\References\IMPORTANT BOOKS.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\References\NOTES & QUOTES.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Alvin Boyd Kuhn.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Arthur Dewes.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Helen Ellerbe.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\J. P. Mendum.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\John E. Remsberg.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\John Marco Allegro.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\JOSEPH WHELESS.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\KERSEY GRAVES.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Mircea Eliade.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Prof. A. C. Sayce.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\R. E. Friedman.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Robert Graves.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Tony Bushby.md** - Concepts: House
+- **docs\project-history\Acousmaticos Numerology Interpretation Apr 26 2025.md** - Concepts: House
+- **docs\consciousness\MODULES\AVATARS.md** - Concepts: House
+- **docs\consciousness\MODULES\RITUALS.md** - Concepts: House
+- **Rubbish\2025-07-01\GALACTIC_FEDERATION_TRANSFORMATION_PLAN.md** - Concepts: House
+- **Rubbish\2025-07-01\TRILOGY_PLOT_OUTLINE.md** - Concepts: House
+- **scripts\generated_links\index_links.md** - Concepts: House
+- **scripts\generated_links\memory_links.md** - Concepts: House
+- **scripts\generated_links\todo_links.md** - Concepts: House
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\TRILOGY_PLOT_OUTLINE.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\README.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\KABBALISTIC_FIELD_RESONANCE_LIGHT.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CHANGELOG.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CHARACTER-KHALOREE-PROFILES.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CONSCIOUSNESS_TERRITORIES.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CULTURAL_MUSIC_DATABASE.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\FAMILY_TREES_V2.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\HOUSE_POLITICS.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\IMPLEMENTATION_ROADMAP.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\MUSICAL_ENHANCEMENT_PROPOSAL.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\PLOT_INTEGRATION.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\README.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\STRUDEL_IMPLEMENTATION_GUIDE.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\TRILOGY-CHARACTER-ARCS.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\README.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\04_WORLD_BUILDING\01_SEVEN_GALACTIC_CULTURES.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\04_WORLD_BUILDING\README.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\05_VISUALIZATIONS\README.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CHANGELOG.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\COLLABORATION_OPPORTUNITIES.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CONSTANTS.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\IMPLEMENTATION_ROADMAP.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\MANUSCRIPT_ALIGNMENT_GUIDE.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PROTOCOL_AWAKENING.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\CHARACTER_DESIGN_SHEETS.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\VISUAL_THEME_MOODBOARD.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\CHARACTER_DEVELOPMENT_PROMPTS.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-01-The-Choroid-Plexus.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-02-Signal-Transduction.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-03-The-Blood-Brain-Barrier.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-04-The-Emperors-Genome.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-01-The-Sigil-Smith.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-02-The-Debug-Protocol.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-03-The-Avatar-Mutation.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-04-The-Three-Point-Problem.md** - Concepts: House
+- **_System\Templates\AI-Prompts\50 ChatGPT Prompts That Will Run Your Business to Success and Save You Miles of Mistakes.md** - Concepts: House
+
+## WitnessOS Protocol Connections

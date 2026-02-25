@@ -1,0 +1,33 @@
+Internal Server Error
+
+Traceback (most recent call last):
+  File "/opt/homebrew/lib/python3.14/site-packages/fal_client/client.py", line 561, in _raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '500 Internal Server Error' for url 'https://queue.fal.run/bria/fibo-edit/requests/285b21f6-c033-45c5-9e46-7c7798b6cb0e'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/noesis-brand-docs/processed/tryambakam-noesis/scripts/run-2a-multimodel-test.py", line 80, in try_model
+    result = fal_client.subscribe(model_id, arguments=payload)
+  File "/opt/homebrew/lib/python3.14/site-packages/fal_client/client.py", line 1866, in subscribe
+    return _do_subscribe()
+  File "/opt/homebrew/lib/python3.14/site-packages/fal_client/client.py", line 1863, in _do_subscribe
+    return handle.get()
+           ~~~~~~~~~~^^
+  File "/opt/homebrew/lib/python3.14/site-packages/fal_client/client.py", line 1132, in get
+    response = _maybe_retry_request(self.client, "GET", self.response_url)
+  File "/opt/homebrew/lib/python3.14/site-packages/fal_client/client.py", line 1019, in _maybe_retry_request
+    return _request(client, method, url, **kwargs)
+  File "/opt/homebrew/lib/python3.14/site-packages/fal_client/client.py", line 914, in _request
+    _raise_for_status(response)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.14/site-packages/fal_client/client.py", line 568, in _raise_for_status
+    raise FalClientHTTPError(
+    ...<6 lines>...
+    ) from exc
+fal_client.client.FalClientHTTPError: Internal Server Error

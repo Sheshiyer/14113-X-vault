@@ -1,0 +1,20 @@
+topic: Daily Log Ritual Demo — 2026-02-17
+channel: internal
+required_claims:
+  runtime_claim: ""
+  pattern_claim: ""
+  enneagram_lens: ""
+  embodied_intervention: ""
+  closure_style: non-pitch
+sources:
+  areas:[]
+  resources:[]
+  project:
+    - /Volumes/madara/2026/twc-vault/01-Projects/Content-Engine/editorial/daily-log-ritual.md
+    - /Volumes/madara/2026/twc-vault/01-Projects/Content-Engine/editorial/media-intelligent-content-system.md
+gates:
+  min_area_sources: 2
+  min_resource_sources: 1
+  meta_language_removed: true
+metadata:
+  draft_file: ritual-demo-2026-02-17.md

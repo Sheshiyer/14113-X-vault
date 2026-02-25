@@ -1,0 +1,86 @@
+brand:
+  name: "Tryambakam Noesis"
+  tagline: "A Living System for Self-Authored Meaning"
+  archetype: "The Seasoned Cartographer"
+  voice: "Grounded, direct, respectful-challenging"
+  domain: "Consciousness technology"
+
+theme:
+  name: "Goethe Spectrum Systems"
+  description: "Bioluminescent architecture, sacred geometry, engineered ritual artifacts"
+  metaphor: "Observer light moving through embodied matter"
+  mood_keywords: ["precise", "luminous", "ritual", "modular", "editorial"]
+
+palette:
+  primary:
+    name: "Void Black"
+    hex: "#070B1D"
+    role: "primary backgrounds"
+  secondary:
+    name: "Flow Indigo"
+    hex: "#0B50FB"
+    role: "secondary surfaces and gradients"
+  accent:
+    name: "Sacred Gold"
+    hex: "#C5A017"
+    role: "highlights and key strokes"
+  support:
+    name: "Witness Violet"
+    hex: "#2D0050"
+    role: "supportive contrast"
+  signal:
+    name: "Coherence Emerald"
+    hex: "#10B5A7"
+    role: "signal accents"
+
+typography:
+  header:
+    font: "Panchang"
+    display_weight: "SemiBold"
+    emphasis_weight: "Bold"
+    case: "all caps"
+  body:
+    font: "Satoshi"
+  data:
+    font: "SF Mono"
+
+materials:
+  - "oxidized copper"
+  - "borosilicate glass"
+  - "quartz"
+  - "living moss"
+  - "matte technical paper"
+
+photography:
+  style: "editorial product realism with controlled highlights"
+  environment: "quiet atelier / greenhouse hybrid"
+  constraint: "hands not faces"
+  camera: "medium-format look, 80mm"
+
+illustration:
+  style: "heritage linework + computational geometry"
+  references: "engraving, schematic, minimal vector"
+
+sigil:
+  description: "canonical Tryambakam Noesis sigil from approved logo pack"
+  components: ["Soma", "Manas", "Muladhara"]
+
+negative_prompt: "random logos, unrelated symbols, anime mascots, cluttered typography, v2 color system"
+
+generation:
+  provider: "fal"
+  output_dir: "/Volumes/madara/2026/twc-vault/01-Projects/tryambakam-noesis/brand-docs-final/generated-v3"
+
+execution_context:
+  depth_level: "focused"
+  tone: "premium"
+  launch_channel: "dtc"
+
+prompts:
+  illustration:
+    icon_groups:
+      - name: "Vedic Engines"
+      - name: "Western Engines"
+      - name: "Bridge Engines"
+      - name: "Somatic & Resonance"
+      - name: "Forge & Geometry"

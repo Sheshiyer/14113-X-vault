@@ -1,0 +1,151 @@
+# Cross-References for Rubbish\2025-07-01\TRILOGY_MASTER_PLAN.md
+
+## Character Connections
+
+## Concept Connections
+- **memory.md** - Concepts: anamnesis engine, myocardial chorus
+- **todo.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\CHANGELOG.md** - Concepts: anamnesis engine, myocardial chorus
+- **Rubbish\2025-07-01\ANAMNESIS-ENGINE-SPECS.md** - Concepts: anamnesis engine
+- **Rubbish\2025-07-01\Chapter-04-The-Anamnesis-Engine.md** - Concepts: anamnesis engine
+- **Rubbish\2025-07-01\GALACTIC_FEDERATION_TRANSFORMATION_PLAN.md** - Concepts: anamnesis engine, myocardial chorus
+- **Rubbish\2025-07-01\memory_codex.md** - Concepts: anamnesis engine
+- **Rubbish\2025-07-01\story_threads.md** - Concepts: anamnesis engine
+- **Rubbish\2025-07-01\TRILOGY_PLOT_OUTLINE.md** - Concepts: anamnesis engine, myocardial chorus
+- **Rubbish\2025-07-01\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: anamnesis engine, myocardial chorus
+- **Rubbish\2025-07-01\2025-07-01 18.03.39.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: anamnesis engine, myocardial chorus
+- **Rubbish\2025-07-01\2025-07-01 18.05.10.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: anamnesis engine, myocardial chorus
+- **Rubbish\2025-07-01\2025-07-01 18.06.11.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: anamnesis engine, myocardial chorus
+- **scripts\generated_links\memory_links.md** - Concepts: anamnesis engine, myocardial chorus
+- **scripts\generated_links\todo_links.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\FUTURE-BOOK-OUTLINES.md** - Concepts: myocardial chorus
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\TRILOGY-ARC-OUTLINE.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\TRILOGY_MASTER_PLAN.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\TRILOGY_PLOT_OUTLINE.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\CHANGELOG.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\00_CORE_FOUNDATION\00_SERIES_BIBLE.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\00_CORE_FOUNDATION\01_KEY_CONCEPTS.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\00_CORE_FOUNDATION\03_VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\00_TRYAMBAKAM_PROTOCOL.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\01_BIOLOGICAL_STYLE_GUIDE.md** - Concepts: myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\02_ANAMNESIS_ENGINE_SPECS.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\03_ALETHEOS_NARRATIVE_WEAVER_SYSTEM.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\05_TRIANGULATION_ENGINE_SPECS.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\AZTEC_FIELD_RESONANCE_SACRIFICE.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\DAOIST_FIELD_RESONANCE_MECHANICS.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\HERMETIC_FIELD_RESONANCE_ALCHEMY.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\KABBALISTIC_FIELD_RESONANCE_LIGHT.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\NORDIC_FIELD_RESONANCE_WEAVING.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\README.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\SUFI_FIELD_RESONANCE_ECSTASY.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\02-SOMANAUT-TEAM-ROSTER.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CHANGELOG.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CHARACTER-KHALOREE-PROFILES.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\IMPLEMENTATION_ROADMAP.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\PLOT_INTEGRATION.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\STRUDEL_IMPLEMENTATION_GUIDE.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\TRILOGY-CHARACTER-ARCS.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\04_WORLD_BUILDING\04_TAROT_BIOLOGICAL_EVENT_MAP.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CHANGELOG.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CONSTANTS.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\INTEGRATION_TESTING_PROTOCOL.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\MANUSCRIPT_ALIGNMENT_GUIDE.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\TODO.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_DIALOGUE_EXAMPLES.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PRODUCTION_GUIDE.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PROTOCOL_AWAKENING.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\memory_codex.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\memory_codex.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\story_threads.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\story_threads.md** - Concepts: myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\AUDIO_DESIGN_PROMPTS.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\STORYBOARD_PROMPTS.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\00_PLANNING\PLOT_OUTLINE.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-01-The-Choroid-Plexus.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-02-Signal-Transduction.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-05-The-Endocrine-Dogma.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-06-The-Synaptic-Crossroads.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\PLANNING\Book-1-Chapter-Plan.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\00_PLANNING\DETAILED_PLOT_OUTLINE.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-04-The-Anamnesis-Engine.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-05-The-Myocardial-Chorus.md** - Concepts: myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\00_PLANNING\DETAILED_PLOT_OUTLINE.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-01-The-Wilt.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-02-The-Gardener.md** - Concepts: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-03-The-Final-Diagnosis.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-04-The-Three-Point-Problem.md** - Concepts: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-05-The-Note-and-the-Bell.md** - Concepts: myocardial chorus
+
+## WitnessOS Protocol Connections
+- **memory.md** - Protocols: anamnesis engine, myocardial chorus
+- **todo.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\CHANGELOG.md** - Protocols: anamnesis engine, myocardial chorus
+- **Rubbish\2025-07-01\ANAMNESIS-ENGINE-SPECS.md** - Protocols: anamnesis engine
+- **Rubbish\2025-07-01\Chapter-04-The-Anamnesis-Engine.md** - Protocols: anamnesis engine
+- **Rubbish\2025-07-01\GALACTIC_FEDERATION_TRANSFORMATION_PLAN.md** - Protocols: anamnesis engine, myocardial chorus
+- **Rubbish\2025-07-01\memory_codex.md** - Protocols: anamnesis engine
+- **Rubbish\2025-07-01\story_threads.md** - Protocols: anamnesis engine
+- **Rubbish\2025-07-01\TRILOGY_PLOT_OUTLINE.md** - Protocols: anamnesis engine, myocardial chorus
+- **Rubbish\2025-07-01\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: anamnesis engine, myocardial chorus
+- **Rubbish\2025-07-01\2025-07-01 18.03.39.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: anamnesis engine, myocardial chorus
+- **Rubbish\2025-07-01\2025-07-01 18.05.10.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: anamnesis engine, myocardial chorus
+- **Rubbish\2025-07-01\2025-07-01 18.06.11.0\VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: anamnesis engine, myocardial chorus
+- **scripts\generated_links\memory_links.md** - Protocols: anamnesis engine, myocardial chorus
+- **scripts\generated_links\todo_links.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\FUTURE-BOOK-OUTLINES.md** - Protocols: myocardial chorus
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\TRILOGY-ARC-OUTLINE.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\TRILOGY_MASTER_PLAN.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\TRILOGY_PLOT_OUTLINE.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\CHANGELOG.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\00_CORE_FOUNDATION\00_SERIES_BIBLE.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\00_CORE_FOUNDATION\01_KEY_CONCEPTS.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\00_CORE_FOUNDATION\03_VOCABULARY_OF_CONSCIOUSNESS_ENGINEERING.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\00_TRYAMBAKAM_PROTOCOL.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\01_BIOLOGICAL_STYLE_GUIDE.md** - Protocols: myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\02_ANAMNESIS_ENGINE_SPECS.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\03_ALETHEOS_NARRATIVE_WEAVER_SYSTEM.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\05_TRIANGULATION_ENGINE_SPECS.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\AZTEC_FIELD_RESONANCE_SACRIFICE.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\DAOIST_FIELD_RESONANCE_MECHANICS.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\HERMETIC_FIELD_RESONANCE_ALCHEMY.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\KABBALISTIC_FIELD_RESONANCE_LIGHT.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\NORDIC_FIELD_RESONANCE_WEAVING.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\README.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\SUFI_FIELD_RESONANCE_ECSTASY.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\02-SOMANAUT-TEAM-ROSTER.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CHANGELOG.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CHARACTER-KHALOREE-PROFILES.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\IMPLEMENTATION_ROADMAP.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\PLOT_INTEGRATION.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\STRUDEL_IMPLEMENTATION_GUIDE.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\TRILOGY-CHARACTER-ARCS.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\04_WORLD_BUILDING\04_TAROT_BIOLOGICAL_EVENT_MAP.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CHANGELOG.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CONSTANTS.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\INTEGRATION_TESTING_PROTOCOL.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\MANUSCRIPT_ALIGNMENT_GUIDE.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\TODO.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_DIALOGUE_EXAMPLES.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PRODUCTION_GUIDE.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PROTOCOL_AWAKENING.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\memory_codex.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\memory_codex.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\story_threads.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\story_threads.md** - Protocols: myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\AUDIO_DESIGN_PROMPTS.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\STORYBOARD_PROMPTS.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\00_PLANNING\PLOT_OUTLINE.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-01-The-Choroid-Plexus.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-02-Signal-Transduction.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-05-The-Endocrine-Dogma.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-06-The-Synaptic-Crossroads.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\PLANNING\Book-1-Chapter-Plan.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\00_PLANNING\DETAILED_PLOT_OUTLINE.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-04-The-Anamnesis-Engine.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-05-The-Myocardial-Chorus.md** - Protocols: myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\00_PLANNING\DETAILED_PLOT_OUTLINE.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-01-The-Wilt.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-02-The-Gardener.md** - Protocols: anamnesis engine, myocardial chorus
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-03-The-Final-Diagnosis.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-04-The-Three-Point-Problem.md** - Protocols: anamnesis engine
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-05-The-Note-and-the-Bell.md** - Protocols: myocardial chorus

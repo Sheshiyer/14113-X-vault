@@ -1,0 +1,111 @@
+/* ── Shared components for card-detail archetypes ── */
+
+/* ── CartographerNote ── */
+
+.cartographerNote {
+  padding: 24px 0;
+  border-left-width: 2px;
+  border-left-style: solid;
+  padding-left: 24px;
+  margin: 24px 0;
+}
+
+.cartographerLabel {
+  font-family: var(--noesis-font-mono, monospace);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #555;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.cartographerText {
+  font-family: var(--noesis-font-mono, monospace);
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: italic;
+  margin: 0;
+  max-width: 560px;
+}
+
+/* ── SeekerQuestion ── */
+
+.seekerQuestion {
+  padding: 24px 0;
+  margin: 24px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-left: 20px;
+}
+
+.seekerLabel {
+  font-family: var(--noesis-font-mono, monospace);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #666;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.seekerText {
+  font-family: var(--noesis-font-display, serif);
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+  margin: 0;
+  max-width: 560px;
+}
+
+/* ── KeyInsight ── */
+
+.keyInsight {
+  border-left-width: 3px;
+  border-left-style: solid;
+  padding-left: 24px;
+  margin: 32px 0;
+}
+
+.keyInsightText {
+  font-family: var(--noesis-font-display, serif);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  line-height: 1.35;
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+  max-width: 640px;
+}
+
+/* ── PracticePrompt ── */
+
+.practicePrompt {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  margin: 24px 0;
+}
+
+.practiceLabel {
+  font-family: var(--noesis-font-mono, monospace);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #666;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.practiceLabelPrefix {
+  color: #888;
+  margin-right: 6px;
+}
+
+.practiceText {
+  font-family: var(--noesis-font-mono, monospace);
+  font-size: 13px;
+  line-height: 1.7;
+  color: #999;
+  margin: 0;
+  max-width: 560px;
+}

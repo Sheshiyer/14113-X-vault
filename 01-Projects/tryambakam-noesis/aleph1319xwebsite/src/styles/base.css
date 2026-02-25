@@ -1,0 +1,655 @@
+:root {
+  /* Global color tokens (Ritual-Tech Noir) */
+  --color-void-teal: #1A1A2E;
+  --color-phosphor-cream: #F5F0E8;
+  --color-solar-bronze: #B8860B;
+  --color-titanium: #6B6B6B;
+  --color-chlorophyll: #3EA7A3;
+
+  --noesis-color-ink-950: #0E1020;
+  /* Night 900 */
+  --noesis-color-ink-900: #14172A;
+  /* Night 800 */
+  --noesis-color-ink-800: #1A1A2E;
+  /* Deep Ink */
+  --noesis-color-bone-100: #F5F0E8;
+  /* Bone */
+  --noesis-color-gold-500: #B8860B;
+  /* Aged Gold */
+  --noesis-color-stone-500: #6B6B6B;
+  /* Stone Grey */
+  --noesis-color-stone-300: #DADBE1;
+  /* Mist 200 */
+  --noesis-color-terracotta-500: #C65D3B;
+  /* Terracotta */
+  --noesis-color-signal-cyan: #3EA7A3;
+  /* Signal Cyan */
+
+  /* Space tokens */
+  --noesis-space-0: 0;
+  --noesis-space-1: 4px;
+  --noesis-space-2: 8px;
+  --noesis-space-3: 12px;
+  --noesis-space-4: 16px;
+  --noesis-space-5: 24px;
+  --noesis-space-6: 32px;
+  --noesis-space-7: 40px;
+  --noesis-space-8: 56px;
+
+  /* Radius and border tokens */
+  --noesis-radius-none: 0;
+  --noesis-radius-xs: 2px;
+  --noesis-radius-sm: 4px;
+  --noesis-radius-md: 8px;
+  --noesis-border-thin: 1px;
+  --noesis-border-thick: 2px;
+
+  /* Typography tokens */
+  --noesis-font-display: "Cormorant Garamond", serif;
+  --noesis-font-body: "Source Sans 3", sans-serif;
+  --noesis-font-mono: "JetBrains Mono", monospace;
+  --noesis-font-size-xs: 12px;
+  --noesis-font-size-sm: 14px;
+  --noesis-font-size-md: 16px;
+  --noesis-font-size-lg: 18px;
+  --noesis-font-size-h3: 24px;
+  /* Heading S */
+  --noesis-font-size-h2: 32px;
+  /* Heading M */
+  --noesis-font-size-h1: 40px;
+  /* Heading L */
+  --noesis-font-size-display-l: 56px;
+  /* Display L */
+  --noesis-font-size-display-xl: 72px;
+  /* Display XL */
+  --noesis-line-height-1: 1.0;
+  --noesis-line-height-1-05: 1.05;
+  --noesis-line-height-1-1: 1.1;
+  --noesis-line-height-1-15: 1.15;
+  --noesis-line-height-1-2: 1.2;
+  --noesis-line-height-1-4: 1.4;
+  --noesis-line-height-1-5: 1.5;
+  --noesis-line-height-1-55: 1.55;
+
+  /* Motion tokens */
+  --noesis-motion-duration-instant: 80ms;
+  --noesis-motion-duration-fast: 160ms;
+  --noesis-motion-duration-base: 240ms;
+  --noesis-motion-duration-slow: 360ms;
+  --noesis-motion-duration-deep: 520ms;
+  --noesis-motion-easing-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --noesis-motion-easing-enter: cubic-bezier(0, 0, 0.2, 1);
+  --noesis-motion-easing-exit: cubic-bezier(0.4, 0, 1, 1);
+  --noesis-motion-easing-glitch: steps(6, end);
+
+  /* Opacity and shadow tokens */
+  --noesis-opacity-subtle: 0.72;
+  --noesis-opacity-muted: 0.56;
+  --noesis-opacity-disabled: 0.4;
+  --noesis-shadow-overlay: 0 10px 40px rgba(0, 0, 0, 0.35);
+  --noesis-shadow-focus: 0 0 0 2px rgba(184, 134, 11, 0.65);
+
+  /* Semantic tokens */
+  --noesis-semantic-surface-canvas: var(--noesis-color-ink-950);
+  --noesis-semantic-surface-elevated: var(--noesis-color-ink-800);
+  --noesis-semantic-surface-terminal: #0c0f18;
+  --noesis-semantic-text-primary: var(--noesis-color-bone-100);
+  --noesis-semantic-text-secondary: var(--noesis-color-stone-300);
+  --noesis-semantic-text-muted: var(--noesis-color-stone-500);
+  --noesis-semantic-text-accent: var(--noesis-color-gold-500);
+  --noesis-semantic-stroke-subtle: rgba(245, 240, 232, 0.16);
+  --noesis-semantic-stroke-strong: rgba(245, 240, 232, 0.32);
+  --noesis-semantic-feedback-warning: var(--noesis-color-terracotta-500);
+  --noesis-semantic-feedback-info: var(--noesis-color-signal-cyan);
+
+  /* Component tokens */
+  --noesis-component-node-bg: var(--noesis-semantic-surface-elevated);
+  --noesis-component-node-text: var(--noesis-semantic-text-primary);
+  --noesis-component-node-border: var(--noesis-semantic-stroke-subtle);
+  --noesis-component-node-radius: var(--noesis-radius-sm);
+  --noesis-component-node-padding: var(--noesis-space-4);
+  --noesis-component-overlay-bg: rgba(14, 16, 32, 0.92);
+  --noesis-component-overlay-border: var(--noesis-semantic-stroke-strong);
+  --noesis-component-overlay-shadow: var(--noesis-shadow-overlay);
+  --noesis-component-overlay-radius: var(--noesis-radius-md);
+  --noesis-component-terminal-bg: var(--noesis-semantic-surface-terminal);
+  --noesis-component-terminal-text: var(--noesis-semantic-text-primary);
+  --noesis-component-terminal-cursor: var(--noesis-color-gold-500);
+  --noesis-component-terminal-font-family: var(--noesis-font-mono);
+  --noesis-component-terminal-font-size: var(--noesis-font-size-sm);
+  --noesis-component-button-primary-bg: var(--noesis-color-gold-500);
+  --noesis-component-button-primary-text: var(--noesis-color-ink-950);
+  --noesis-component-button-secondary-bg: transparent;
+  --noesis-component-button-secondary-border: var(--noesis-semantic-stroke-strong);
+  --noesis-component-button-radius: var(--noesis-radius-sm);
+  --noesis-component-button-height: 44px;
+}
+
+:root[data-mode="mobile-compact"],
+.mode-mobile-compact {
+  --noesis-component-node-padding: var(--noesis-space-3);
+  --noesis-component-terminal-font-size: var(--noesis-font-size-xs);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--noesis-semantic-text-primary);
+  background:
+    radial-gradient(circle at 12% 18%, rgba(74, 124, 89, 0.12), transparent 44%),
+    radial-gradient(circle at 88% 5%, rgba(196, 135, 59, 0.14), transparent 28%),
+    linear-gradient(180deg, var(--noesis-semantic-surface-canvas) 0%, var(--noesis-color-ink-900) 100%);
+  font-family: var(--noesis-font-body);
+  font-size: var(--noesis-font-size-md);
+  line-height: var(--noesis-line-height-normal);
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, var(--noesis-semantic-text-accent) 70%, transparent);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--noesis-shadow-focus);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Terminal styles moved to terminal.module.css */
+
+/* Linear /index fallback — REMOVED */
+
+/* Glitch utility classes shared by overlay/canvas transitions */
+.glitch-transition-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  mix-blend-mode: screen;
+  background:
+    repeating-linear-gradient(180deg,
+      transparent 0 2px,
+      color-mix(in srgb, var(--noesis-semantic-feedback-info) 20%, transparent) 2px 3px),
+    linear-gradient(90deg,
+      color-mix(in srgb, var(--noesis-semantic-feedback-warning) 18%, transparent),
+      transparent 25%,
+      color-mix(in srgb, var(--noesis-semantic-text-accent) 16%, transparent) 55%,
+      transparent 100%);
+}
+
+.glitch-enter,
+.glitch-exit {
+  will-change: transform, opacity, filter;
+}
+
+.glitch-enter {
+  opacity: 0;
+  transform: scale(1.012) translateZ(0);
+  filter: saturate(1.12);
+}
+
+.glitch-enter-active {
+  animation: noesis-glitch-enter var(--noesis-motion-duration-fast) var(--noesis-motion-easing-glitch) both;
+}
+
+.glitch-exit {
+  opacity: 1;
+  transform: scale(1) translateZ(0);
+}
+
+.glitch-exit-active {
+  animation:
+    noesis-glitch-exit var(--noesis-motion-duration-base) var(--noesis-motion-easing-exit) both,
+    noesis-glitch-burst var(--noesis-motion-duration-fast) var(--noesis-motion-easing-glitch) 1;
+}
+
+.glitch-scanline {
+  position: relative;
+  overflow: hidden;
+}
+
+.glitch-scanline::before {
+  content: "";
+  position: absolute;
+  inset: -100% 0 auto 0;
+  height: 55%;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(180deg,
+      transparent 0%,
+      color-mix(in srgb, var(--noesis-semantic-text-accent) 16%, transparent) 50%,
+      transparent 100%);
+  animation: noesis-scanline 8s linear infinite;
+}
+
+@keyframes noesis-glitch-enter {
+  0% {
+    opacity: 0;
+    transform: scale(1.012);
+    filter: hue-rotate(-7deg);
+  }
+
+  40% {
+    opacity: 0.88;
+    transform: translate3d(-2px, 0, 0);
+  }
+
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: none;
+  }
+}
+
+@keyframes noesis-glitch-exit {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  30% {
+    opacity: 0.95;
+    transform: translate3d(3px, 0, 0);
+  }
+
+  70% {
+    opacity: 0.35;
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.99);
+  }
+}
+
+@keyframes noesis-glitch-burst {
+
+  0%,
+  100% {
+    filter: none;
+  }
+
+  50% {
+    filter: contrast(1.35) hue-rotate(14deg);
+  }
+}
+
+@keyframes noesis-scanline {
+
+  0%,
+  72%,
+  100% {
+    transform: translate3d(0, -120%, 0);
+    opacity: 0;
+  }
+
+  74% {
+    opacity: 0.28;
+  }
+
+  86% {
+    transform: translate3d(0, 280%, 0);
+    opacity: 0.08;
+  }
+}
+
+/* Terminal responsive styles moved to terminal.module.css */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .glitch-scanline::before {
+    display: none;
+  }
+}
+
+/* App shell */
+.app-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.app-main {
+  padding: var(--noesis-space-4);
+  display: grid;
+  gap: var(--noesis-space-3);
+  position: relative;
+}
+
+.app-main:has(.experience-panel--canvas) {
+  padding: 0;
+  gap: 0;
+}
+
+.experience-panel {
+  width: min(100%, 1400px);
+  margin: 0 auto;
+  display: grid;
+  gap: var(--noesis-space-4);
+}
+
+.experience-panel--canvas {
+  width: 100%;
+  max-width: none;
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+  gap: 0;
+}
+
+.experience-panel__intro {
+  display: grid;
+  gap: var(--noesis-space-2);
+}
+
+.experience-panel__eyebrow {
+  margin: 0;
+  font-family: var(--noesis-font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: var(--noesis-font-size-xs);
+  color: var(--noesis-semantic-text-muted);
+}
+
+.experience-panel__title {
+  margin: 0;
+  font-family: var(--noesis-font-display);
+  line-height: var(--noesis-line-height-tight);
+  font-size: clamp(var(--noesis-font-size-h3), 4vw, var(--noesis-font-size-h1));
+}
+
+.experience-panel__copy {
+  margin: 0;
+  max-width: 72ch;
+  color: var(--noesis-semantic-text-secondary);
+}
+
+.experience-panel__canvas-wrap {
+  border: var(--noesis-border-thin) solid var(--noesis-semantic-stroke-subtle);
+  border-radius: var(--noesis-radius-md);
+  overflow: hidden;
+  background: color-mix(in srgb, var(--noesis-color-ink-900) 90%, black);
+  box-shadow: var(--noesis-component-overlay-shadow);
+}
+
+/* TopBar — REMOVED */
+
+.app-toast {
+  justify-self: center;
+  width: min(100%, 620px);
+  padding: var(--noesis-space-3) var(--noesis-space-4);
+  border: var(--noesis-border-thin) solid color-mix(in srgb, var(--noesis-semantic-text-accent) 72%, transparent);
+  border-radius: var(--noesis-radius-sm);
+  background: color-mix(in srgb, var(--noesis-color-ink-900) 76%, black);
+  box-shadow: var(--noesis-component-overlay-shadow);
+  font-family: var(--noesis-font-mono);
+  font-size: var(--noesis-font-size-sm);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  will-change: transform, opacity;
+}
+
+/* Infinite field */
+.infinite-field {
+  font-family: var(--noesis-font-body);
+}
+
+.infinite-field__world {
+  transition:
+    filter var(--noesis-motion-duration-base) var(--noesis-motion-easing-standard),
+    opacity var(--noesis-motion-duration-base) var(--noesis-motion-easing-standard);
+}
+
+.infinite-field__node {
+  appearance: none;
+  touch-action: none;
+  transition:
+    transform var(--noesis-motion-duration-fast) var(--noesis-motion-easing-standard),
+    opacity var(--noesis-motion-duration-fast) var(--noesis-motion-easing-standard),
+    filter var(--noesis-motion-duration-fast) var(--noesis-motion-easing-standard);
+}
+
+.infinite-field__node:hover {
+  transform: translate(-50%, -50%) translateY(-2px);
+}
+
+.infinite-field__node:active {
+  transform: translate(-50%, -50%) scale(0.985);
+}
+
+.infinite-field__node.is-active {
+  z-index: 3;
+}
+
+.infinite-field__links {
+  opacity: 0.72;
+  transition:
+    opacity var(--noesis-motion-duration-base) var(--noesis-motion-easing-standard),
+    filter var(--noesis-motion-duration-base) var(--noesis-motion-easing-standard);
+}
+
+.infinite-field__hud {
+  font-family: var(--noesis-font-mono);
+  transition:
+    opacity var(--noesis-motion-duration-base) var(--noesis-motion-easing-standard),
+    transform var(--noesis-motion-duration-base) var(--noesis-motion-easing-standard);
+}
+
+.infinite-field.overlay-open .infinite-field__world {
+  filter: saturate(0.78);
+}
+
+.infinite-field.overlay-open .infinite-field__links {
+  opacity: 0.28;
+  filter: blur(0.2px);
+}
+
+.infinite-field.overlay-open .infinite-field__node:not(.is-active) {
+  opacity: 0.58;
+  filter: saturate(0.62);
+}
+
+.infinite-field.overlay-open .infinite-field__node.is-active {
+  animation: noesis-node-active-glitch 260ms var(--noesis-motion-easing-glitch) 1;
+}
+
+.infinite-field.overlay-open .infinite-field__hud {
+  opacity: 0.55;
+  transform: translateY(4px);
+}
+
+/* Scene overlay */
+.scene-overlay {
+  animation: noesis-overlay-fade-in var(--noesis-motion-duration-fast) var(--noesis-motion-easing-enter) both;
+}
+
+.scene-overlay__panel {
+  transform-origin: center;
+  position: relative;
+  z-index: 2;
+}
+
+.scene-overlay__backdrop {
+  z-index: 0;
+}
+
+.scene-overlay__glitch {
+  z-index: 1;
+  opacity: 0;
+}
+
+.scene-overlay--exiting .scene-overlay__panel,
+.scene-overlay--exiting .scene-overlay__backdrop {
+  pointer-events: none;
+}
+
+.scene-overlay__panel::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scene-overlay__panel::-webkit-scrollbar-track {
+  background: color-mix(in srgb, var(--noesis-color-ink-900) 80%, black);
+}
+
+.scene-overlay__panel::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--noesis-semantic-text-accent) 45%, var(--noesis-color-ink-900));
+}
+
+.scene-overlay__title,
+.scene-overlay__subtitle,
+.scene-overlay__summary,
+.scene-overlay__detail {
+  max-width: 70ch;
+}
+
+.scene-overlay--reduced-motion {
+  animation: none;
+}
+
+.signal-chamber {
+  width: min(100%, 760px);
+  border: var(--noesis-border-thin) solid var(--noesis-semantic-stroke-strong);
+  border-radius: var(--noesis-radius-md);
+  background:
+    linear-gradient(160deg,
+      color-mix(in srgb, var(--noesis-color-ink-900) 90%, black),
+      color-mix(in srgb, var(--noesis-color-ink-800) 72%, black));
+  box-shadow: var(--noesis-component-overlay-shadow);
+  padding: var(--noesis-space-5);
+  display: grid;
+  gap: var(--noesis-space-4);
+  will-change: transform, opacity;
+}
+
+.signal-chamber__label {
+  margin: 0;
+  font-family: var(--noesis-font-mono);
+  font-size: var(--noesis-font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--noesis-semantic-text-muted);
+}
+
+.signal-chamber__line {
+  margin: 0;
+  font-family: var(--noesis-font-mono);
+  font-size: clamp(var(--noesis-font-size-base), 2vw, var(--noesis-font-size-lg));
+  color: var(--noesis-semantic-text-accent);
+  letter-spacing: 0.04em;
+  line-height: var(--noesis-line-height-relaxed);
+}
+
+.signal-chamber__button {
+  min-height: var(--noesis-component-button-height);
+  width: fit-content;
+  border-radius: var(--noesis-component-button-radius);
+  border: var(--noesis-border-thin) solid var(--noesis-semantic-stroke-strong);
+  background: color-mix(in srgb, var(--noesis-color-ink-900) 84%, transparent);
+  color: var(--noesis-semantic-text-primary);
+  padding: 0 var(--noesis-space-4);
+  cursor: pointer;
+  font-family: var(--noesis-font-mono);
+  font-size: var(--noesis-font-size-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.signal-chamber__button:hover {
+  color: var(--noesis-semantic-text-accent);
+  border-color: var(--noesis-semantic-text-accent);
+}
+
+@keyframes noesis-overlay-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes noesis-node-active-glitch {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    filter: none;
+  }
+
+  35% {
+    transform: translate(calc(-50% + 1px), -50%) scale(1.015);
+    filter: hue-rotate(12deg);
+  }
+
+  70% {
+    transform: translate(calc(-50% - 1px), -50%) scale(0.995);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    filter: none;
+  }
+}
+
+@media (max-width: 980px) {
+  .app-main {
+    padding: var(--noesis-space-3);
+  }
+}
+
+@media (max-width: 640px) {
+  .experience-panel__canvas-wrap {
+    border-radius: var(--noesis-radius-sm);
+  }
+
+  .infinite-field {
+    cursor: default !important;
+  }
+
+  .infinite-field__node:hover {
+    transform: translate(-50%, -50%);
+  }
+}

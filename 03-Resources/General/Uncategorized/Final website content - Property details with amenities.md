@@ -1,0 +1,74 @@
+---
+title: Final website content - Property details with amenities
+author: Unknown
+type: book
+format: PDF
+file_size: 172.69 KB
+original_filename: Final website content - Property details with amenities.pdf
+para_bucket: Resources
+para_category: General
+enneagram_primary: Type 1 - Polymnia (Reformer)
+enneagram_secondary: Type 5 - Melpomene (Investigator)
+hormone_primary: Melatonin
+classification_confidence: 0.65
+content_type: Book - General
+mocs: []
+reading_status: Unread
+reading_priority: Medium
+reading_progress: 0
+date_added: '2026-01-25'
+date_processed: '2026-01-25T10:29:44.165425'
+sha256: 3d4b69f17a3e87548f3f4daa950bbe3d6223251e55779644c9b1334a46191167
+duplicate_status: unique
+---
+
+# Final website content - Property details with amenities
+
+## Book Information
+
+**Author**: Unknown  
+**Format**: PDF  
+**Reading Status**: Unread | **Priority**: Medium
+
+**Enneagram**: Type 1 - Polymnia (Reformer) → Type 5 - Melpomene (Investigator)  
+**PARA**: Resources / General
+
+---
+
+## Maps of Content
+
+
+
+---
+
+## Original Book
+
+![[Final website content - Property details with amenities.pdf]]
+
+---
+
+## Reading Notes
+
+### Key Takeaways
+
+- 
+
+### Action Items
+
+- [ ] 
+
+### Quotes
+
+> 
+
+---
+
+## Metadata
+
+**Source**: Original file embedded above  
+**Processed**: 2026-01-25T10:29:44.165425  
+**Classification Confidence**: 65%
+
+---
+
+*Part of [[Books-Master-Index]]*

@@ -1,0 +1,46 @@
+{
+  "brand": "Tryambakam Noesis",
+  "depth_level": "focused",
+  "budget_tier": "standard",
+  "launch_channel": "dtc",
+  "mode": "domain-aware",
+  "domain_tags": [
+    "consciousness",
+    "wellness",
+    "technology",
+    "practice-platform",
+    "sacred-geometry",
+    "vedic",
+    "biorhythm",
+    "self-inquiry"
+  ],
+  "total_assets": 3,
+  "total_api_calls": 6,
+  "estimated_cost_usd": 0.36,
+  "assets": [
+    {
+      "id": "2A",
+      "name": "Brand Kit Bento Grid",
+      "model": "nano-banana-pro",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.16
+    },
+    {
+      "id": "2B",
+      "name": "Brand Seal",
+      "model": "flux-2-pro",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.1
+    },
+    {
+      "id": "3C",
+      "name": "Essence Vial",
+      "model": "flux-2-pro",
+      "seeds": 2,
+      "calls": 2,
+      "est_cost": 0.1
+    }
+  ]
+}

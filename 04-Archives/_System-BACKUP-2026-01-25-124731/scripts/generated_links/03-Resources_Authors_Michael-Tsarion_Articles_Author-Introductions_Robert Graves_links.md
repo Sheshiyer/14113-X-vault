@@ -1,0 +1,155 @@
+# Cross-References for 03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Robert Graves.md
+
+## Character Connections
+
+## Concept Connections
+- **Somatic-Canticles\CHANGELOG.md** - Concepts: House
+- **01-Projects\Products\QuantumWatchFaces\TimeScaleVisualizations.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Blog-Ideas\The Ineffable secrets of a breathing sprite.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_33_40.836Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_10.695Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_41.849Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_45.732Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_34_47.772Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_01.571Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_07.156Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_11.263Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_13.168Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_31.563Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_51.611Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_35_54.446Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_36_01.204Z.md** - Concepts: House
+- **01-Projects\TheWhyChromosome-Brand\Content-Strategy\AIPRM-export-chatgpt-thread_2024-11-21T22_36_08.582Z.md** - Concepts: House
+- **01-Projects\Three-Body-Kingdom\04-Supporting-Materials\ASTROTHEOLOGY-STORY-STRUCTURE-ANALYSIS.md** - Concepts: House
+- **01-Projects\Three-Body-Kingdom\05-Treasure-Hunt-System\Treasure-Hunt-Master-Design.md** - Concepts: House
+- **01-Projects\Three-Body-Kingdom\02-Planning-Documents\Book-1-Planning\DETAILED-CHARACTER-PROFILES.md** - Concepts: House
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\AVATARS.md** - Concepts: House
+- **01-Projects\WitnessOS\01-Consciousness-Framework\Modules\RITUALS.md** - Concepts: House
+- **02-Areas\Creative-Ideas\Product-Concepts\0-9 wallpaper.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\Advanced-System-Parallels.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\Lorenz-Kundli-Pattern-Analysis.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\Technical-Implementation.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\System-Parallels\03-Ashtakavarga-Hypercube.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\System-Parallels\06-BhavaAspect-NeuralNet.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\System-Parallels\Visualizations\03-Ashtakavarga-Hypercube-Map.md** - Concepts: House
+- **02-Areas\Pattern-Studies\Lorenz-Kundli-Mapping\System-Parallels\Visualizations\06-BhavaAspect-Neural-Map.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_33_40.836Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_10.695Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_41.849Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_45.732Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_34_47.772Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_01.571Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_07.156Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_11.263Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_13.168Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_31.563Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_51.611Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_35_54.446Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_36_01.204Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\AIPRM-export-chatgpt-thread_2024-11-21T22_36_08.582Z.md** - Concepts: House
+- **03-Resources\Authors\James-True\Oracle of mythology.md** - Concepts: House
+- **03-Resources\Authors\James-True\The Interplay of Power, Symbolism, and Knowledge - Exploring Ancient Cultures, Historical Conflicts, and Academic Inquiry.md** - Concepts: House
+- **03-Resources\Authors\James-True\Archive-Original\New-Fire-Ceremony.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\An-Address-to-the-Dead_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Ancestral-Trauma-and-the-Epic-of-Consciousness_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Art-and-Imagination_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Atonism-and-the-Cult-of-Mithras_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Better-Dead-Than-Real_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\By-Sword-and-Shield_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Did God Have a Wife by Professor William G. Dever.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Did Moses Exist by D. M. Murdoch.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Egyptian-Origin-of-the-Tarot_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Egypt_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Enemy in the Family.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Etymology Key to the Past.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Existentialism-vs-Personalism_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Forgery-in-Christianity_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Graham Hancock  Plagiarist & Scavenger . by Michael Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Jesus the Egyptian by Richard A. Gabriel.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Jesus-Meets-Jung_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Jews & Templars The Untold Story.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Power of the Templars.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Princes of Light & the Origins of Masonry.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Refuting-the-Refuters_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Schopenhauer’s Error by Michael Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Secret Origins of the Bible by Tim Callahan.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Souls in Darkness Psychopaths in Therapy.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\St-Paul-Fraud_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Symbolic-Literacy_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Bible Unearthed by Finkelstein & Silberman.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Black Nobility An Introduction.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Female Illuminati & Other Secret Societies - A Brief Introduction.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Goddess Minerva & Her Symbolism.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Messiah Before Jesus - The Suffering Servant of the Dead Sea Scrolls by Israel Knohl & David Maisel.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Mythic Past Biblical Archaeology & the Myth of Israel By Thomas L. Thompson.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Order of Sion & Occult Christianity.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The Origins of Christianity & the Quest for the Historical Jesus Christ By D. M. Murdoch.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Age-of-Revealing_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Angry-Philosopher_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Constitution-Con_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Freedom-of-Man_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Inner-Zodiac_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Occult-History-of-Ireland_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Red-Papacy-and-Euro-Communism_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\The-Sick-Rose_by-Michael-Tsarion.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\References\IMPORTANT BOOKS.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\References\NOTES & QUOTES.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Alvin Boyd Kuhn.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Arthur Dewes.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Helen Ellerbe.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\J. P. Mendum.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\John E. Remsberg.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\John Marco Allegro.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\JOSEPH WHELESS.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\KERSEY GRAVES.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Mircea Eliade.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Prof. A. C. Sayce.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\R. E. Friedman.md** - Concepts: House
+- **03-Resources\Authors\Michael-Tsarion\Articles\Author-Introductions\Tony Bushby.md** - Concepts: House
+- **docs\project-history\Acousmaticos Numerology Interpretation Apr 26 2025.md** - Concepts: House
+- **docs\consciousness\MODULES\AVATARS.md** - Concepts: House
+- **docs\consciousness\MODULES\RITUALS.md** - Concepts: House
+- **Rubbish\2025-07-01\GALACTIC_FEDERATION_TRANSFORMATION_PLAN.md** - Concepts: House
+- **Rubbish\2025-07-01\TRILOGY_PLOT_OUTLINE.md** - Concepts: House
+- **scripts\generated_links\index_links.md** - Concepts: House
+- **scripts\generated_links\memory_links.md** - Concepts: House
+- **scripts\generated_links\todo_links.md** - Concepts: House
+- **Somatic-Canticles\00_PLANNING_AND_ROADMAP\TRILOGY_PLOT_OUTLINE.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\README.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\01_PROTOCOLS_AND_SYSTEMS\KABBALISTIC_FIELD_RESONANCE_LIGHT.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CHANGELOG.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CHARACTER-KHALOREE-PROFILES.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CONSCIOUSNESS_TERRITORIES.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\CULTURAL_MUSIC_DATABASE.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\FAMILY_TREES_V2.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\HOUSE_POLITICS.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\IMPLEMENTATION_ROADMAP.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\MUSICAL_ENHANCEMENT_PROPOSAL.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\PLOT_INTEGRATION.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\README.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\STRUDEL_IMPLEMENTATION_GUIDE.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\02_CHARACTER_SYSTEM\TRILOGY-CHARACTER-ARCS.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\03_TECHNOLOGY\README.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\04_WORLD_BUILDING\01_SEVEN_GALACTIC_CULTURES.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\04_WORLD_BUILDING\README.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\05_VISUALIZATIONS\README.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CHANGELOG.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\COLLABORATION_OPPORTUNITIES.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\CONSTANTS.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\IMPLEMENTATION_ROADMAP.md** - Concepts: House
+- **Somatic-Canticles\01_WORLD_BIBLE\99_PROJECT_MANAGEMENT\MANUSCRIPT_ALIGNMENT_GUIDE.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\ANIME_ARC_01_PROTOCOL_AWAKENING.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\CHARACTER_DESIGN_SHEETS.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\VISUAL_THEME_MOODBOARD.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\ANIME_ARC_01\08_DEVELOPMENT_PROMPTS\CHARACTER_DEVELOPMENT_PROMPTS.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-01-The-Choroid-Plexus.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-02-Signal-Transduction.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-03-The-Blood-Brain-Barrier.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_1_ANAMNESIS_ENGINE\01_DRAFTS\Chapter-04-The-Emperors-Genome.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-01-The-Sigil-Smith.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-02-The-Debug-Protocol.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_2_THE_MYOCARDIAL_CHORUS\01_DRAFTS\Chapter-03-The-Avatar-Mutation.md** - Concepts: House
+- **Somatic-Canticles\02_MANUSCRIPTS\BOOK_3_THE_RIPENING\01_DRAFTS\Chapter-04-The-Three-Point-Problem.md** - Concepts: House
+- **_System\Templates\AI-Prompts\50 ChatGPT Prompts That Will Run Your Business to Success and Save You Miles of Mistakes.md** - Concepts: House
+
+## WitnessOS Protocol Connections

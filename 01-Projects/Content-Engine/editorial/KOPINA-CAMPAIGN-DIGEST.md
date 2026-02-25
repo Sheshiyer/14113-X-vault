@@ -1,0 +1,1 @@
+/Users/sheshnarayaniyer/.openclaw/workspace-noesis-vishwakarma/memory/KOPINA-CAMPAIGN-DIGEST.md

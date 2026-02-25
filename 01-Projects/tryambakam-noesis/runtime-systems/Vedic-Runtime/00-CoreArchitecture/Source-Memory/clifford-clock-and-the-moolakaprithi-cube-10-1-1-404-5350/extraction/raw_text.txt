@@ -1,0 +1,1177 @@
+Clifford Clock and the
+Moolakaprithi Cube
+
+
+
+
+By John Frederick Sweeney
+
+Abstract: Matter begins with the Clifford Clock at the border of the Substratum
+state; then can be traced through to the Moolaprakrithi state. Along the way,
+this paper traces the Trigrams of Chinese metaphysics to the Clifford Clock
+and the Clock of Complex Spaces, the binary aspects of the trigrams and the
+binary aspects of the Octonions and the Fano Plane, then the construction of
+the 3 x 3 x 3 Cube from the Trigrams; then isomorphic relations between the
+Cube and the Klein Quartic and the Sierspinski Triangle; Clifford Algebras and
+their organization via Pascal’s Triangle (Zhang Hui’s Triangle or Mount Meru);
+connections to the Magic Triangle of Exceptional Lie Algebras which
+terminates with E8.
+Table of Contents
+Introduction                              3
+Clifford Clock                            4
+Clock of Complex Spaces                   4
+Hurwitz Quarternions (Hurwitz Integers)   16
+Binary Trigrams and Octonions             19
+3 x 3 x 3 Cube of Trigrams                23
+Sierspinski Triangle                      29
+Clifford Algebra Classification Pyramid   34
+Klein Quartic                             40
+Octonion Power Series                     44
+Moolakaprithi in Vedic Physics            47
+Conclusion                                49
+Bibliography                              50
+Introduction
+The author began to write a series of papers on Vixra in order to provide the
+foundation in mathematical physics for Chinese divination, specifically for Qi
+Men Dun Jia, among the most advanced forms of divination known to the
+Chinese for two thousand years or longer. In order to achieve this purpose, it
+soon became necessary to provide the foundation for Vedic Physics in terms
+of contemporary science, since Vedic Physics provides the proper scientific
+paradigm necessary to prove that divination is not magic, but rather advanced
+science that contemporary science fails to explain.
+
+Vedic Physics originates with the Vedas, or the most ancient books known to
+humanity, which in turn were committed to written language after millennia as
+an exclusive oral tradition, during the pre – Ice Age era at least 14,000 years
+ago. The science is highly advanced, representing a development of five to
+ten thousand years beyond our present level of science. Some books
+published in India explain this science but they are poorly written and lack
+editing, which makes it all the more difficult to establish credibility in the west,
+where people are resistant to doctrines from India and China.
+
+For this reason, the author of this paper took to editing and re – presenting
+some of those works in the hope of their gaining credibility in Europe and the
+Americas. Here is an excerpt from one of the books:
+
+Vedic Physics demonstrates through algebraic mathematics that the
+infinitesimal displacement identifying the geodesic, itself has a coherent
+potential that can be expressed in a self-similar and perpetually coherent
+Moolaprakriti power series by a dimensionless variable, up to infinite levels,
+which seems to be new to physics.
+
+This paper links the Octonions to the eight trigrams of the I Ching and then to
+an Octonion Power Series, the opposite of which is a series of logarithms
+moving back to the Substratum. In this sense, this current paper builds on two
+earlier papers which explained the Clifford Clock, Bott Periodicity and the
+Clock of Complex Spaces, which form isomorphic relationships with the basic
+Qi Men Dun Jia Cosmic Board.
+
+The key to these connections lies in a 3 x 3 x 3 cube, which in Vedic Physics,
+forms the Moolaprakriti, a key component of the Substratum, the invisible
+black hole form of matter. At the same time, the 3 x 3 x 3 cube forms
+isomorphic relations with the eight trigrams of the I Ching, as well as the 64
+amino acids of DNA, then with the Octonions, the Klein Quartic, the 24
+Hurwitz Quarternions (Hurwitz Integers), and the tetrahedron.
+Clifford Clock
+
+
+
+
+John Baez on the Clifford Clock and
+Clock of Complex Spaces
+Now for some math. It's always great when two subjects you're interested in
+turn out to be bits of the same big picture. That's why I've been really excited
+lately about Bott periodicity and the "super-Brauer group".
+I wrote about Bott periodicity in "week105", and about the Brauer group in
+"week209", but I should remind you about them before putting them together.
+Bott periodicity is all about how math and physics in n+8-dimensional space
+resemble math and physics in n-dimensional space. It's a weird and wonderful
+pattern that you'd never guess without doing some calculations. It shows up in
+many guises, which turn out to all be related. The simplest one to verify is the
+pattern of Clifford algebras.
+You're probably used to the complex numbers, where you throw in
+just one square root of -1, called i. And maybe you've heard of the
+Quaternions, where you throw in two square roots of -1, called i and j, and
+demand that they anti - commute:
+                                        ij = -ji
+This implies that k = ij is another square root of -1. Try it and see!
+In the late 1800s, Clifford realized there's no need to stop here. He invented
+what we now call the "Clifford algebras" by starting with the real numbers and
+throwing in n square roots of -1, all of which anti - commute with each other.
+The result is closely related to rotations in n+1 dimensions, as I explained in
+"week82".
+I'm not sure who first worked out all the Clifford algebras - perhaps it was
+Cartan - but the interesting fact is that they follow a periodic pattern. If we use
+Cn to stand for the Clifford algebra generated by n anti - commuting square
+roots of -1, they go like this:
+                      Number
+C0                    R
+C1                    C
+C2                    H
+C3                    H+H
+C4                    H(2)
+C5                    C(4)
+C6                    R(8)
+C7                    R(8) + R(8)
+where:
+        R(n) means n x n real matrices,
+        C(n) means n x n complex matrices, and
+        H(n) means n x n quaternionic matrices.
+All these become algebras with the usual addition and multiplication of
+matrices. Finally, if A is an algebra, A + A consists of pairs of guys in A, with
+pairwise addition and multiplication.
+What happens next? Well, from then on things sort of "repeat" with period 8:
+Cn+8 consists of 16 x 16 matrices whose entries lie in Cn!
+So, you can remember all the Clifford algebras with the help of this eight-hour
+clock:
+                        0
+
+                        R
+
+            7                        1
+
+                R+R                  C
+
+
+
+
+          6 R                             H 2
+
+
+
+
+                 C                  H+H
+
+             5                       3
+
+                        H
+
+                        4
+To use this clock, you have to remember to use matrices of the right size to
+get Cn to have dimension 2n. So, when I write "R + R" next to the "7" on the
+clock, I don't mean C7 is really R + R.
+
+To get C7, you have to take R + R and beef it up until it becomes an algebra of
+dimension 27 = 128. You do this by taking R(8) + R(8), since this has
+dimension 8 x 8 + 8 x 8 = 128.
+Similarly, to get C10, you note that 10 is 2 modulo 8, so you look at "2" on the
+clock and see "H" next to it, meaning the Quaternions.
+But to get C10, you have to take H and beef it up until it becomes an algebra of
+dimension 210 = 1024.
+You do this by taking H(16), since this has dimension 4 x 16 x 16 = 1024.
+This "beefing up" process is actually quite interesting. For any associative
+algebra A, the algebra A(n) consisting of n x n matrices with entries in A is a
+lot like A itself. The reason is that they have equivalent categories of
+representations!
+To see what I mean by this, remember that a "representation" of an algebra is
+a way for its elements to act as linear transformations of some vector space.
+For example, R(n) acts as linear transformations of R n by matrix multiplication,
+so we say R(n) has a representation on Rn. More generally, for any algebra A,
+the algebra A(n) has a representation on A n.
+More generally still, if we have any representation of A on a vector space V,
+we get a representation of A(n) on V n. It's less obvious, but true, that every
+representation of A(n) comes from a representation of A this way.
+In short, just as n x n matrices with entries in A form an algebra A(n) that's a
+beefed-up version of A itself, every representation of A(n) is a beefed-up
+version of some representation of A.
+Even better, the same sort of thing is true for maps between representations
+of A(n). This is what we mean by saying that A(n) and A have equivalent
+categories of representations.
+If you just look at the categories of representations of these two algebras as
+abstract categories, there's no way to tell them apart! We say two algebras
+are "Morita equivalent" when this happens.
+It's fun to study Morita equivalence classes of algebras - say algebras over
+the real numbers, for example. The tensor product of algebras gives us a way
+to multiply these classes. If we just consider the invertible classes, we get
+a group. This is called the "Brauer group" of the real numbers.
+The Brauer group of the real numbers is just Z/2, consisting of the classes [R]
+and [H]. These correspond to the top and bottom of the Clifford clock! Part of
+the reason is that
+H tensor H = R(4)
+
+so when we take Morita equivalence classes we get
+[H] x [H] = [R]
+But, you may wonder where the complex numbers went! Alas, the Morita
+equivalence class [C] isn't invertible, so it doesn't live in the Brauer group. In
+fact, we have this little multiplication table for tensor product of algebras:
+
+     tensor      R       C      H
+          ----------------------
+      R    | R        C      H
+            |
+      C    | C       C+C C(2)
+          |
+      H    | H       C(2) R(4)
+
+Anyone with an algebraic bone in their body should spend an afternoon
+figuring out how this works! But I won't explain it now.
+Instead, I'll just note that the complex numbers are very aggressive and
+infectious - tensor anything with a C in it and you get more C's. That's
+because they're a field in their own right - and that's why they don't live in the
+Brauer group of the real numbers.
+They do, however, live in the super-Brauer group of the real numbers, which
+is Z/8 - the Clifford clock itself!
+But before I explain that, I want to show you what the categories of
+representations of the Clifford algebras look like:
+
+1                             0                              7
+split Real vector             Real vector                    Complex vector
+spaces                        spaces                         spaces
+6                                                            2
+Real vector                                                  Quaternionic
+spaces                                                       vector
+5                             4                              3
+Complex vector                Quaternionic                   split Quaternionic
+spaces                        vector spaces                  vector spaces
+                              0
+
+                     Real vector spaces
+
+                                         7
+                     1
+       split Real vector spaces           Complex vector spaces
+
+
+
+
+6 Real vector spaces                  Quaternionic vector spaces
+                                                                                   2
+
+
+
+
+       Complex vector spaces         split Quaternionic vector spaces
+   5                                              3
+
+
+                  Quaternionic vector spaces
+
+                         4
+
+You can read this information off the 8-hour Clifford clock I showed you
+before, at least if you know some stuff:
+    A real vector space is just something like R n
+       A complex vector space is just something like Cn
+       A quaternionic vector space is just something like H n
+and a "split" vector space is a vector space that's been written as the direct
+sum of two subspaces.
+Take C4, for example -
+The Clifford algebra generated by 4 anti - commuting square roots of -1. The
+Clifford clock tells us this is H + H. And if you think about it, a representation of
+this is just a pair of representations of H. So, it's two quaternionic vector
+spaces - or if you prefer, a "split" quaternionic vector space.
+Or take C7. The Clifford clock says this is R + R... or at least Morita equivalent
+to R + R: it's actually R(8) + R(8), but that's just a beefed-up version of R + R,
+with an equivalent category of representations. So, the category of
+representations of C7 is equivalent to the category of split real vector spaces.
+And so on. Note that when we loop all the way around the clock, our Clifford
+algebra becomes 16 x 16 matrices of what it was before, but this is Morita
+equivalent to what it was. So, we have a truly period-8 clock of categories!
+But here's the really cool part: there are also arrows going clockwise and
+counterclockwise around this clock! Arrows between categories are called
+"functors".
+Each Clifford algebra is contained in the next one, since they're built by
+throwing in more and more square roots of -1. So, if we have a representation
+of Cn, it gives us a representation of Cn-1. Ditto for maps between
+representations.
+So, we get a functor from the category of representations of C n to the category
+of representations of Cn-1. This is called a "forgetful functor", since it "forgets"
+that we have representations of Cn and just thinks of them as representations
+of Cn-1.
+So, we have forgetful functors cycling around counterclockwise!
+Even better, all these forgetful functors have "left adjoints" going back the
+other way. I talked about left adjoints in "week77", so I won't say much about
+them now. I'll just give an example.
+Here's a forgetful functor:
+              forget complex structure
+complex vector spaces ---------------------------> real vector spaces
+
+which is one of the counterclockwise arrows on the Clifford clock. This functor
+takes a complex vector space and forgets your ability to multiply vectors by i,
+thus getting a real vector space.
+
+When you do this to Cn, you get R2n.
+This functor has a left adjoint:
+                  complexify
+complex vector spaces   <--------------------------   real vector spaces
+
+where you take a real vector space and "complexify" it by tensoring it with the
+complex numbers. When you do this to Rn, you get Cn.
+So, we get a beautiful version of the Clifford clock with forgetful functors
+cycling around counterclockwise and their left adjoints cycling around
+clockwise! When I realized this, I drew a big picture of it in my math notebook
+- I always carry around a notebook for precisely this sort of thing.
+Unfortunately, it's a bit hard to draw this chart in ASCII, so I won't include it
+here.
+Instead, I'll draw something easier. For this, note the following mystical fact.
+The Clifford clock is symmetrical under reflection around the 3-o'clock/7-
+o'clock axis:
+                             0
+
+                       real vector spaces
+
+                                                7
+1
+    split real vector spaces                     complex vector spaces
+                    \
+                      \
+                        \
+                          \
+6 real vector spaces                    \    quaternionic vector spaces 2
+                            \
+                              \
+                                \
+                                    \
+        complex vector spaces               split quaternionic vector spaces
+    5                                                     3
+
+
+                    quaternionic vector spaces
+
+                            4
+It seems bizarre at first that it's symmetrical along this axis instead of the more
+obvious 0-o'clock/4-o'clock axis. But there's a good reason, which I already
+mentioned: the Clifford algebra Cn is related to rotations in n+1 dimensions.
+I would be very happy if you had enough patience to listen to a full
+explanation of this fact, along with everything else I want to say. But I bet you
+don't... so I'll hasten on to the really cool stuff.
+First of all, using this symmetry we can fold the Clifford clock in half... and the
+forgetful functors on one side perfectly match their left adjoints on the other
+side!
+So, we can save space by drawing this "folded" Clifford clock:
+
+            split real vector spaces
+
+                    |^
+        forget splitting | | double
+                    v|
+
+             real vector spaces
+
+                  |^
+            complexify | | forget complex structure
+                  v|
+
+            complex vector spaces
+
+                   |^
+          quaternionify | | forget quaternionic structure
+                   v|
+
+            quaternionic vector spaces
+
+                  |^
+               double | | forget splitting
+                  v|
+
+          split quaternionic vector spaces
+
+The forgetful functors march downwards on the right, and their left adjoints
+march back up on the left! The arrows going between 7 o'clock and 0 o'clock
+look a bit weird:
+            split real vector spaces
+
+                    |^
+        forget splitting | | double
+                    V|
+
+              real vector spaces
+
+Why is "forget splitting" on the left, where the left adjoints belong, when it's
+obviously an example of a forgetful functor?
+One answer is that this is just how it works. Another answer is that it happens
+when we wrap all the way around the clock - it's like how going from midnight
+to 1 am counts as going forwards in time even though the number is getting
+smaller.
+A third answer is that the whole situation is so symmetrical that the functors
+I've been calling "left adjoints" are also "right adjoints" of their partners! So, we
+can change our mind about which one is "forgetful", without getting in trouble.
+But enough of that: I really want to explain how this stuff is related to the
+super-Brauer group, and then tie it all in to the topology of Bott periodicity.
+We'll see how far I get before giving up in exhaustion....
+What's a super-Brauer group? It's just like a Brauer group, but where we use
+Super Algebras instead of algebras! A "superalgebra" is just physics jargon for
+a Z/2-graded algebra - that is, an algebra A that's a direct sum of an "even" or
+"bosonic" part A0 and an "odd" or "fermionic" part A 1:
+A = A 0 + A1
+such that multiplying a guy in Ai and a guy in Aj gives a guy in Ai+j, where we
+add the subscripts mod 2.
+The tensor product of Super Algebras is defined differently than for algebras.
+If A and B are ordinary algebras, when we form their tensor product, we
+decree that everybody in A commutes with everyone in B. For Super Algebras
+we decree that everybody in A "super - commutes" with everyone in B -
+meaning that
+ab = ba
+if either a or b are even (bosonic) while
+ab = -ba
+if a and b are both odd (fermionic).
+Apart from these modifications, the super-Brauer group works almost like the
+Brauer group. We start with Super Algebras over our favorite field - here let's
+use the real numbers.
+We say two Super Algebras are "Morita equivalent" if they have equivalent
+categories of representations. We can multiply these Morita equivalence
+classes by taking tensor products, and if we just keep the invertible classes
+we get a group: the super-Brauer group.
+As I've hinted already, the super-Brauer group of the real numbers is Z/8 - just
+the Clifford algebra clock in disguise!
+Here's why:
+The Clifford algebras all become Super Algebras if we decree that all the
+square roots of -1 that we throw in are "odd" elements. And if we do this, we
+get something great:
+Cn tensor Cm = Cn + m
+The point is that all the square roots of -1 we threw in to get
+Cn anticommute with those we threw in to get Cm.
+Taking Morita equivalence classes, this mean
+[Cn] [Cm] = [Cn+m]
+but we already know that
+[Cn+8] = [Cn]
+so we get the group Z/8. It's not obvious that this is all the super-Brauer
+group, but it actually is - that's the hard part.
+Now let's think about what we've got. We've got the super-Brauer group, Z/8,
+which looks like an 8-hour clock. But before that, we had the categories of
+representations of Clifford algebras, which formed an 8-hour clock with
+functors cycling around in both directions.
+In fact these are two sides of the same coin - or clock, actually. The super-
+Brauer group consists of Morita equivalence classes of Clifford algebras,
+where Morita equivalence means "having equivalent categories of
+representations". But, our previous clock just shows their categories of
+representations!
+This suggests that the functors cycling around in both directions are secretly
+an aspect of the super-Brauer group. And indeed they are! The functors going
+clockwise are just "tensoring with C1", since you can tensor a representation
+of Cn with C1 and get a representation of Cn+1. And the functors going
+counterclockwise are "tensoring with C-1"... or C7 if you insist, since C-1 doesn't
+strictly make sense, but 7 equals -1 mod 8, so it does the same job.
+Hurwitz Quaternions (or Hurwitz integer)
+
+
+In mathematics, a Hurwitz quaternion (or Hurwitz integer) is
+a quaternion whose components are either all integers or all half-
+integers (halves of an odd integer; a mixture of integers and half-integers is
+not allowed). The set of all Hurwitz Quaternions is
+
+
+
+   It can be confirmed that H is closed under quaternion multiplication and
+   addition, which makes it a subring of the ring of all Quaternions H.
+   A Lipschitz quaternion (or Lipschitz integer) is a quaternion whose
+   components are all integers. The set of all Lipschitz Quaternions
+
+
+
+       forms a subring of the Hurwitz Quaternions H.
+       As a group, H is free abelian with generators {½(1+i+j+k), i, j, k}. It
+       therefore forms a lattice in R4. This lattice is known as
+       the F4 lattice since it is the root lattice of the semisimple Lie algebra F4.
+       The Lipschitz Quaternions L form an index 2 sublattice of H.
+       The group of units in L is the order 8 quaternion group Q = {±1, ±i, ±j,
+       ±k}. The group of units in H is a nonabelian group of order 24 known
+       as thebinary tetrahedral group. T
+       he elements of this group include the 8 elements of Q along with the
+       16 Quaternions {½(±1±i±j±k)} where signs may be taken in any
+       combination. The quaternion group is a normal subgroup of the binary
+       tetrahedral group U(H). The elements of U(H), which all have norm 1,
+       form the vertices of the 24-cell inscribed in the 3-sphere.
+       The Hurwitz Quaternions form an order (in the sense of ring theory) in
+       the division ring of Quaternions with rational components. It is in fact
+       a maximal order; this accounts for its importance. The Lipschitz
+       Quaternions, which are the more obvious candidate for the idea of
+       an integral quaternion, also form an order.
+       However, this latter order is not a maximal one, and therefore (as it
+       turns out) less suitable for developing a theory of left
+       ideals comparable to that of algebraic number theory. What Adolf
+       Hurwitz realised, therefore, was that this definition of Hurwitz integral
+       quaternion is the better one to operate with. This was one major step
+       in the theory of maximal orders, the other being the remark that they
+       will not, for a non-commutative ring such as H, be unique. One
+       therefore needs to fix a maximal order to work with, in carrying over
+       the concept of an algebraic integer.
+The norm of a Hurwitz quaternion, given by (see below), is always the
+square root of an integer. By a theorem of Lagrange every
+nonnegative integer can be written as a sum of at most four squares.
+Thus, every nonnegative integer is the squared norm of some
+Lipschitz (or Hurwitz) quaternion. A Hurwitz integer is a prime
+element if and only if its norm is a prime number.
+Binary Trigrams and Octonions
+
+
+
+
+Each of the eight trigrams of Chinese metaphysics can be assigned a binary
+value as above. The same can be done for each of the Octonions.
+
+
+
+
+With both systems translated into binary form, we can now begin to explore
+the relationships between the 8 x 8 = 64 hexagrams and the 168 aspects of
+the Octonions.
+
+In the advanced Chinese divination method known as Qi Men Dun Jia, one of
+the eigth trigram positions (palaces) is always vacant, which means in real
+terms that there are only seven functioning trigrams at any time. The missing
+eighth trigram represents a vacancy, which means the unknown or not yet
+manifest Event - Body which will come into realization at some distant point in
+the future, from later the same day to years later.
+3 x 3 x 3 Cube of Trigrams
+
+
+
+
+With binary assignments made, it is possible to assign corner values per each
+trigram. (This section courtesy SM Philipps).
+Clifford Algebras consist of tri - vectors.
+
+The eight trigrams define the eight corners of a cube because their three
+yin/yang lines correspond to the three faces (positive or negative) that
+intersect at these corners.
+
+The left, back and bottom faces are (– ) faces. Their intersection defines the
+Earth (K’un) trigram with three yin (negative) lines. Triple combinations of (+)
+and (– ) faces define the remaining six corners of the cube.
+
+The arrows along the edges of the cube indicate the positivity or negativity of
+a face. It is a (+) face if the arrow points along the positive X- , Y- or Z-axes
+and a (–) face if it points along the negative axes. The table below interprets
+the trigrams in terms of the faces of the cube:
+As in the case of their binary number representations, in which the integers 0
+and 1 in each binary number signify the values of the Cartesian coordinates of
+the corners of a cube, the first four trigrams define corners of one face and the
+last four trigrams define corners of the face parallel to it (Fig. 7). The
+difference here is that the two sets of four trigrams correspond to the top and
+bottom faces instead of to the left and right faces.
+
+
+
+
+Note the even - numbers forming the diagonal.
+
+
+
+
+One might as well assign the 24 Hurwitz Algebras to these sides, which brings
+a relationship with the Octonions, for which 168 is a key number:
+
+There are 168 permutations of "twisted Octonions" for each of the 30 sets of
+triads (168*30=5040=7!).
+
+The 7 points of the Fano plane represent the 7 imaginary octonions and
+the 168 symmetries are permutation symmetries that preserve
+an octonion multiplicatio
+
+The musical counterpart of the 168 permutations of the seven unit
+imaginary octonionsand their conjugates are the 168 repetitions of all rising
+and falling
+
+Remarkable correspondence exists between the 168 permutations of the
+seven 3-tuples of octonions, the 168 automorphisms of the Klein Quartic,
+the 168
+
+Combinations of one, two and three octonions from the two sets of seven 3-
+tuples with (84+84=168) possible orderings of the pairs and triplets in them.
+
+Double cover of the finite subgroup of SU(3) of order 168,
+
+Octonions constituting the root system of E8 form a closed algebra where the
+root ...subgroup is of order 168 with 8 conjugacy classes possessing the
+structure
+
+The heptagonal hyperbolic plane is linked to the number 168, and by
+extension to the Klein Quadric, PSL (2,7), the Fano Plane and Octonions.
+
+The Fano plane is the simple group of group order168 (Klein 1870)
+Hexagrams along the diagonal of the table symbolise the three cube faces
+whose intersection defines a corner of a cube. The pairing of each trigram
+with a different one symbolises an association between the three faces
+defining a corner of the central cube
+
+The three faces of one of the cubes surrounding it that is contiguous with this
+corner. Each corner of the cube at the centre of the 3×3×3 array of cubes is
+the point of intersection of the corners of seven other cubes.
+
+Each corner of the grey cube (a) at the centre of a 3×3×3 array of cubes
+touches three cubes (coloured blue, indigo & violet in (b)) at the same level as
+itself and four cubes (red, orange, yellow & green) that are either above or
+below it.
+
+These (the violet, indigo and blue cubes) are at the same height as the cube
+and the remaining four (the green, yellow, orange and red ones) are above or
+below it.
+
+Let us express the pattern of eight cubes centred on any corner of the central
+cube as
+
+                              8 = (1 + 3) + 4, (1)
+
+where ‘1’ always denotes the central cube, ‘3’ denotes the three cubes
+contiguous with it at the same height and ‘4’ denotes the four contiguous
+cubes above or below it. As we jump from corner to corner in the top face of
+the central cube, the L-shaped pattern
+
+
+
+
+of three coloured cubes in the same plane rotates (Fig. 3), as do the four
+cubes above them. Likewise, as we go from corner to corner in the bottom
+face of the central cube, the three cubes in the same plane change, as do the
+four cubes below them. Movement Figure 3. Three cubes on the same level
+are contiguous with each corner of the central (grey) cube.
+
+
+
+
+through all eight corners of the central cube involves every one of the 26 ^1
+cubes in the 3×3×3 array because they are all contiguous with its corners.
+
+Each corner of the central cube is the point of intersection of the three
+orthogonal faces of each of the seven cubes that are contiguous with it. The
+number of such faces generating the corners of the central cube is 8×3×7 =
+168.
+Counting these corners in the same way as the pattern of cubes, that is,
+differentiating any corner from the three corners at the same height and the
+four corners below them, then
+
+
+
+
+The three orthogonal faces consist of the face perpendicular to one
+coordinate axis (for convenience, let us choose the X -axis) and the two faces
+perpendicular to the two other axes. So
+
+
+
+
+                                               Courtesy SM Philipps
+
+
+
+
+signifies the three faces of cubes that are orthogonal to the X-axis and
+associated with the three corners at the same height as the corner labeled ‘1’
+(and similarly for the Y - and Z-axes), and 4X (≡4×1X) denotes the four faces
+orthogonal to the X-axis associated with the four corners below corner ‘1’ (and
+similarly for 4Y and 4Z).
+
+Therefore, substituting Equation 6 in Equation 3,
+
+
+
+
+The 168 faces of the 26 cubes surrounding the central cube that touch its
+eight corners consist of seven sets of 24 faces.
+
+Each set consists of the three orthogonal faces of the cube corresponding to
+corner ‘1’, the seven faces perpendicular to the X-axis at the seven other
+corners, the seven faces perpendicular to the Y-axis at these corners and the
+seven faces perpendicular to the Z -axis at these corners.
+
+Each group of seven faces comprises a face for each of the three corners of
+the central cube at the same height as corner ‘1’ and a face for each of the
+four corners below it. The 24 faces naturally divide into two groups of twelve:
+
+
+Courtesy SM Philipps
+Courtesy SM Philipps
+
+The figure above is the Sierspinski Triangle.
+Wikipedia on the Sierspinski Triangle
+The Sierpinski triangle (also with the original orthography Sierpiński), also
+called the Sierpinski gasket or theSierpinski Sieve, is
+a fractal and attractive fixed set named after
+the Polish mathematician Wacław Sierpiński who described it in 1915.
+However, similar patterns appear already in the 13th-
+century Cosmati mosaics in the cathedral ofAnagni, Italy,[1] and other places,
+such as in the nave of the Roman Basilica of Santa Maria in Cosmedin.[2]
+Originally constructed as a curve, this is one of the basic examples of self-
+similar sets, i.e. it is a mathematically generated pattern that can be
+reproducible at any magnification or reduction.
+Comparing the Sierpinski triangle or the Sierpinski carpet to equivalent
+repetitive tiling arrangements, it is evident that similar structures can be built
+into any rep-tile arrangements.
+
+
+
+
+Sierpinski    triangle     in     logic:   The     first  16 conjunctions of
+lexicographically ordered arguments The columns interpreted as binary
+numbers give 1, 3, 5, 15, 17, 51... (sequence A001317 in OEIS)
+Magic Triangle
+This shape formed by the Exceptional Lie Algebras fits neatly into the white
+spaces in the logic diagram above. A point of further research for the author is
+to explore the relationships between the Exceptional Lie Algebras, Sierspinski
+Triangle and Clifford Algebras (see below). The author of this diagram felt that
+the triangle should be further extended, but this may show the natural limit.
+
+
+
+
+An algorithm for obtaining arbitrarily close approximations to the Sierpinski
+triangle is as follows:
+Note: each removed triangle (a trema) is topologically an open set.[3]
+
+
+
+
+           1. Start with any triangle in a plane (any closed, bounded region
+           in the plane will actually work). The canonical Sierpinski triangle
+            uses an equilateral triangle with a base parallel to the horizontal
+            axis (first image).
+            2. Shrink the triangle to ½ height and ½ width, make three
+            copies, and position the three shrunken triangles so that each
+            triangle touches the two other triangles at a corner (image 2). Note
+            the emergence of the central hole - because the three shrunken
+            triangles can between them cover only 3/4 of the area of the
+            original. (Holes are an important feature of Sierpinski's triangle.)
+            3. Repeat step 2 with each of the smaller triangles (image 3 and
+            so on).
+    This process of recursively removing triangles is an example of a finite
+    subdivision rule.
+    Note that this infinite process is not dependent upon the starting shape
+    being a triangle—it is just clearer that way. The first few steps starting, for
+    example, from a square also tend towards a Sierpinski triangle. Michael
+    Barnsley used an image of a fish to illustrate this in his paper "V-variable
+    fractals and superfractals."[4]
+
+
+The actual fractal is what would be obtained after an infinite number of
+iterations. More formally, one describes it in terms of functions on closed sets
+of points. If we let   note the dilation by a factor of ½ about a point a, then
+the Sierpinski triangle with corners a, b, and c is the fixed set of the
+transformation       U   U .
+This is an attractive fixed set, so that when the operation is applied to any
+other set repeatedly, the images converge on the Sierpinski triangle. This is
+what is happening with the triangle above, but any other set would suffice.
+If one takes a point and applies each of the transformations , , and            to
+it randomly, the resulting points will be dense in the Sierpinski triangle, so the
+following algorithm will again generate arbitrarily close approximations to it:
+Start by labeling p1, p2 and p3 as the corners of the Sierpinski triangle, and a
+random point v1. Set vn+1 = ½ ( vn + prn ), where rn is a random number 1, 2 or
+3. Draw the points v1 to v∞. If the first point v1 was a point on the Sierpiński
+triangle, then all the points vn lie on the Sierpinski triangle.
+If the first point v1 to lie within the perimeter of the triangle is not a point on the
+Sierpinski triangle, none of the points vn will lie on the Sierpinski triangle,
+however they will converge on the triangle. If v1 is outside the triangle, the
+only way vn will land on the actual triangle, is if vn is on what would be part of
+the triangle, if the triangle was infinitely large.
+Or more simply:
+       1. Take 3 points in a plane to form a triangle, you need not draw it.
+       2. Randomly select any point inside the triangle and consider that
+       your current position.
+       3. Randomly select any one of the 3 vertex points.
+       4. Move half the distance from your current position to the selected
+       vertex.
+       5. Plot the current position.
+       6. Repeat from step 3.
+Note: This method is also called the Chaos game. You can start from any
+point outside or inside the triangle, and it would eventually form the Sierpinski
+Gasket with a few leftover points. It is interesting to do this with pencil and
+paper. A brief outline is formed after placing approximately one hundred
+points, and detail begins to appear after a few hundred.
+
+
+
+
+Sierpinski triangle using IFS
+Or using an Iterated function system
+An alternative way of computing the Sierpinski triangle uses an Iterated
+function system and starts by a point at the origin (x0 = 0, y0 = 0). The new
+points are iteratively computed by randomly applying (with equal probability)
+one of the following three coordinate transformations (using the so-
+called chaos game):
+xn+1 = 0.5 xn
+yn+1 = 0.5 yn; a half-size copy
+This coordinate transformation is drawn in yellow in the figure.
+xn+1 = 0.5 xn + 0.25
+
+yn+1 = 0.5 yn + 0.5   ; a half-size copy shifted right and up
+This coordinate transformation is drawn using red color in the figure.
+xn+1 = 0.5 xn + 0.5
+yn+1 = 0.5 yn; a half-size copy doubled shifted to the right
+When this coordinate transformation is used, the triangle is drawn in blue.
+Or using an L-system — The Sierpinski triangle drawn using an L-system.
+bitwise AND - The 2D AND function, z=AND(x,y) can also produce a white on
+black right angled Sierpinski triangle if all pixels of which z=0 are white, and all
+other values of z are black.
+bitwise XOR - The values of the discrete, 2D XOR function, z=XOR(x,y) also
+exhibit structures related to the Sierpinski triangle.
+For example, one could generate the Sierpinski triangle by setting up a 2
+dimensional matrix, [rows][columns] placing the uppermost point on [1][n/2],
+then cycling through the remaining cells row by row the value of the cell being
+XOR([i-1][j-1],[i-1][j+1])
+
+
+Other means — The Sierpinski triangle also appears in certain cellular
+automata (such as Rule 90), including those relating to Conway's Game of
+Life. The automaton "12/1" when applied to a single cell will generate four
+approximations of the Sierpinski triangle.
+If one takes Pascal's triangle with 2n rows and colors the even numbers white,
+and the odd numbers black, the result is an approximation to the Sierpinski
+triangle. More precisely, the limit as n approaches infinity of this parity-colored
+2n-row Pascal triangle is the Sierpinski triangle.
+
+Properties[edit source]
+For integer number of dimensions d, when doubling a side of an
+object, 2 d copies of it are created, i.e. 2 copies for 1 dimensional object, 4
+copies for 2 dimensional object and 8 copies for 3 dimensional object.
+For Sierpinski triangle doubling its side creates 3 copies of itself. Thus
+Sierpinski triangle has Hausdorff dimension log(3)/log(2) ≈ 1.585, which
+follows from solving 2 d = 3 for d. [5]
+The area of a Sierpinski triangle is zero (in Lebesgue measure). The area
+remaining after each iteration is clearly 3/4 of the area from the previous
+iteration, and an infinite number of iterations results in zero.
+Intuitively one can see this applies to any geometrical construction with an
+infinite number of iterations, each of which decreases the size by an amount
+proportional to a previous iteration.[citation needed]
+Higher - Dimension Analogues
+
+
+
+
+The tetrix is the three-dimensional analogue of the Sierpinski triangle, formed
+by repeatedly shrinking a regular tetrahedron to one half its original height,
+putting together four copies of this tetrahedron with corners touching, and
+then repeating the process.
+This can also be done with a square pyramid and five copies instead. A tetrix
+constructed from an initial tetrahedron of side-length L has the property that
+the total surface area remains constant with each iteration.
+The initial surface area of the (iteration-0) tetrahedron of side-length L
+is        . At the next iteration, the side-length is halved
+
+
+
+     and there are 4 such smaller tetrahedra. Therefore, the total surface area
+     after the first iteration is:
+
+
+
+
+        This remains the case after each iteration. Though the surface area of
+        each subsequent tetrahedron is 1/4 that of the tetrahedron in the
+        previous iteration, there are 4 times as many—thus maintaining a
+        constant total surface area.
+        The total enclosed volume, however, is geometrically decreasing
+        (factor of 0.5) with each iteration and asymptotically approaches 0 as
+        the number of iterations increases. In fact, it can be shown that, while
+        having fixed area, it has no 3-dimensional character.
+
+
+        The Hausdorff dimension of such a construction is            which
+        agrees with the finite area of the figure. (A Hausdorff dimension strictly
+        between 2 and 3 would indicate 0 volume and infinite area.)
+Clifford Algebra Classification
+All told there are three properties which determine the class of the
+algebra Cℓp,q(R):
+     signature mod 2: n is even/odd: central simple or not
+    signature mod 4: ω2 = ±1: if not central simple, center is R⊕R or C
+    signature mod 8: the Brauer class of the algebra (n even) or even
+   subalgebra (n odd) is R or H
+
+Each of these properties depends only on the signature p − q modulo 8. The
+complete classification table is given below. The size of the matrices is
+determined by the requirement that Cℓp,q(R) have dimension 2p+q.
+
+
+                     Cℓp,q(R)                                   Cℓp,q(R)
+p−q mod 8 ω2                      p−q mod 8 ω2
+                    (n = p+q)                                  (n = p+q)
+
+
+       0       +      R(2n/2)           1         +      R(2(n−1)/2)⊕R(2(n−1)/2)
+
+       2       −      R(2n/2)           3         −             C(2(n−1)/2)
+
+       4       +    H(2(n−2)/2)         5         +      H(2(n−3)/2)⊕H(2(n−3)/2)
+
+       6       −    H(2(n−2)/2)         7         −             C(2(n−1)/2)
+
+It may be seen that of all matrix ring types mentioned, there is only one type
+shared between both complex and real algebras: the type C(2m).
+For example,Cℓ2(C) and Cℓ3,0(R) are both determined to be C(2). It is important
+to note that there is a difference in the classifying isomorphisms used.
+Since theCℓ2(C) is algebra isomorphic via a C-linear map (which is
+necessarily R-linear), and Cℓ3,0(R) is algebra isomorphic via an R-linear
+map, Cℓ2(C) andCℓ3,0(R) are R-algebra isomorphic.
+A table of this classification for p + q ≤ 8 follows. Here p + q runs vertically
+and p − q runs horizontally (e.g. the algebra Cℓ1,3(R) ≅ H(2) is found in row 4,
+column −2).
+       8     7      6      5       4      3      2       1       0      −1     −2      −3     −4     −5      −6      −7      −8
+
+  0                                                              R
+
+  1                                                      R2              C
+
+  2                                             R(2)            R(2)            H
+
+  3                                      C(2)           R2(2)           C(2)           H2
+
+  4                               H(2)          R(4)            R(4)           H(2)           H(2)
+
+  5                       H2(2)          C(4)           R2(4)           C(4)          H2(2)          C(4)
+
+  6                H(4)           H(4)          R(8)            R(8)           H(4)           H(4)          R(8)
+
+  7         C(8)          H2(4)          C(8)           R2(8)           C(8)          H2(4)          C(8)           R2(8)
+
+  8 R(16)          H(8)           H(8)          R(16)           R(16)          H(8)           H(8)          R(16)           R(16)
+
+
+
+  ω2   +     −      −      +       +      −      −       +       +       −      −      +       +      −      −       +       +
+
+
+
+
+Symmetries
+There is a tangled web of symmetries and relationships in the above table.
+Write A[n] := A ⊗ Mn(R) for n×n matrices with coefficients in A,
+andCℓ(p+1,q+1) for the real Clifford algebra.
+
+
+
+       (Going over 4 spots in any row yields an identical algebra.)
+       From these Bott Periodicity follows:
+
+
+             If the signature satisfies p − q ≡ 1 (mod 4) then
+
+
+                    (The table is symmetric about columns with signature 1, 5, −3,
+                    −7, and so forth.) Thus if the signature satisfies p − q ≡ 1 (mod
+                    4),
+Klein Quartic / Wikipedia
+
+In hyperbolic geometry, the Klein quartic, named after Felix Klein, is
+a compact Riemann surface of genus 3 with the highest possible
+order automorphism group for this genus, namely order 168 orientation-
+preserving automorphisms, and 336 automorphisms if orientation may be
+reversed.
+As such, the Klein quartic is the Hurwitz surface of lowest possible genus;
+see Hurwitz's automorphisms theorem. Its (orientation-preserving)
+automorphism group is isomorphic to PSL(2,7), the second-smallest non-
+abelian simple group. The quartic was first described in (Klein 1878b).
+Klein's quartic occurs in many branches of mathematics, in contexts
+including representation theory, homology theory,octonion
+multiplication, Fermat's last theorem, and the Stark-Heegner
+theorem on imaginary quadratic number fields ofclass number one; see (Levy
+1999) for a survey of properties.
+Originally, the "Klein quartic" referred specifically to the subset of the complex
+projective plane CP2 defined by the equation given in the As an algebraic
+curve section. This has a specific Riemannian metric (that makes it a minimal
+surface in CP2), under which its Gaussian curvature is not constant.
+But more commonly (as in this article) it is now thought of as any Riemann
+surface that is conformally equivalent to this algebraic curve, and especially
+the one that is a quotient of the hyperbolic plane H2 by a
+certain cocompact group G that acts freely on H2 by isometries.
+This gives the Klein quartic a Riemannian metric of constant negative
+curvature = −1 that it inherits from H2. This set of conformally equivalent
+Riemannian surfaces is precisely the same as all compact Riemannian
+surfaces of genus 3 whose conformal automorphism group is isomorphic to
+the unique simple group of order 168.
+This group is known as PSL(2,Z/7Z), and also as the isomorphic
+group PSL(3, Z/2Z). By covering space theory, the group G mentioned above
+is isomorphic to the fundamental group of the compact surface of genus 3.
+
+The Klein quartic is related to various other surfaces.
+Geometrically, it is the smallest Hurwitz surface (lowest genus); the next is
+the Macbeath surface (genus 7), and the following is the First Hurwitz triplet (3
+surfaces of genus 14). More generally, it is the most symmetric surface of a
+given genus (being a Hurwitz surface); in this class, the Bolza surface is the
+most symmetric genus 2 surface, while Bring's surface is a highly symmetric
+genus 4 surface – see isometries of Riemann surfaces for further discussion.
+Algebraically, the (affine) Klein quartic is the modular curve X(7) and the
+projective Klein quartic is its compactification, just as the dodecahedron (with
+a cusp in the center of each face) is the modular curve X(5); this explains the
+relevance for number theory.
+More subtly, the (projective) Klein quartic is a Shimura curve (as are the
+Hurwitz surface of genus 7 and 14), and as such parametrizes principally
+polarized abelian varieties of dimension 6.[11]
+There are also other quartic surfaces of interest – see special quartic
+surfaces.
+More exceptionally, the Klein quartic forms part of a "trinity" in the sense
+of Vladimir Arnold, which can also be described as a McKay correspondence.
+In this collection, the projective special linear groups PSL(2,5), PSL(2,7), and
+PSL(2,11) (orders 60, 168, 660) are analogous, corresponding to icosahedral
+symmetry (genus 0), the symmetries of the Klein quartic (genus 3), and
+the buckyball surface (genus 70).[12] These are further connected to many
+other exceptional phenomena, which is elaborated at "trinities".
+
+
+
+
+The Klein Configuration of the 168 elements of the group PSL(2,7) of
+transformations of the Klein Quartic.
+Octonion Power Series
+
+
+
+
+The Octonion Power Series is essential in combinatorial Vedic Physics, and
+the exponents can be converted into logarithms.
+MoolaKaprithi in Vedic Physics
+
+
+
+
+                     The red cube is the Moolakaprithi .
+
+It is shown as the red cube in the diagram and displays the cubic form
+maintained by the 8 vibrating larger blue cubes. That red cube can be
+described in terms of interactive counts of vibrations in a cyclic-period,
+assuming that all the eight blue cubes interact in the same location. The size
+of the red cube has a specific numerical relationship to the larger cube, which
+can be numerically related in powers of 2 or
+
+
+
+
+The larger blue cube can be considered as just the combination of the smaller
+- sized red cubes. The collection of red cubes act as a blue cube by vibrating
+together as a coherent, synchronous, group displaying Thaamasic
+simultaneous activity.
+
+If the coherent and synchronised state of interacting (vibrating together
+simultaneously) is disrupted, then that position produces the effect of the red
+cube. It then becomes a cube vibrating out of step or synchrony. It becomes a
+cube that does not remain in the same state or location as the rest and which
+displays a different condition.
+This is the fundamental condition of commencement of activity called
+Moolaprakrithi. Moolaprakrarithi - the red cube is not a cube - but a state of a
+cube in an active state or a state different from the rest.
+
+It is a vibrating form that exists only because other vibrating cubes exist, and
+is a holographic form. The meeting point of three axes shares a single point,
+which in reality is cubic point. It is the fundamental concept of a unit of charge
+in Physics called a Purusha. An important change of condition takes place at
+this interactive interface. The impact between two cubes can result in 3 states
+of interactive reactions as defined in the Guna Theorems.
+
+There follows instantaneous separation on impact, as an inelastic reaction of
+the Sathwa state. Or it may elastically vibrate and remain in a resonant Raja
+state.
+
+Finally, the states may combine together to attain a uniform, singular,
+synchronous and coherent state of activity, as one larger cube in the Thaama
+state as shown in the diagram. The Sathwa state shows the radiation of a set
+of Moolaprakrithis as Vrithis (coherent particle states)) on sudden or inelastic
+collision.
+
+The Raja state shows the resonant harmony of two sets of Moolaprakrithis
+interacting simultaneously at the same rate as a bound state. The Thaama
+state shows the absorption of two sets of Moolaprakrithis in a higher state of
+activity as superposing, compressing, or denser states.
+
+If the red cube Moolaprakrithi is considered the elemental unitary state, then
+larger cubes can be created as multiples of the elemental unitary state, as
+vibrant but coherent and unitary states.
+
+The Moolaprakrithi is a cube of space in a vibratory state and the non -
+vibratory state of this same unit of space cannot remain in that size because
+of the axiomatic nature of Guna interactions. Hence the elemental
+components in space combine, agglomerate, or join together as a larger, self-
+limiting unit of space, which can remain static, coherent, passive or non -
+manifest etc.
+
+There is a single Guna law that acts in identical ways at every agglomerate
+level of phenomena. At each level there exist the same proportionate limits of
+maximum and minimum interactive counts, but the form and size may vary to
+attain balance at each level.
+
+Saying it another way, perpetual self - similar oscillatory activity comes to a
+stop naturally only at the Purusha level. For this reason it is called the Andha -
+thaamshra or dark and dense state of Super - posed vibrations in space. The
+Guna principles explain why and how this has to be. When the oscillatory
+state becomes undetectable by super - positioning of counts, then
+communication with that state is cut off and the state enters into an isolated,
+black hole state.
+
+The ability to discriminate the interval between interactive counts disappears,
+and it superposes on the previous count. This is the black hole state in
+Physics. Therefore every unit of quiescent, apparently static, barely resonant
+and non - manifest unit of space is a Purusha - a massive black hole, a
+potential state of dormant, internal, stress and trans - migrational activity of
+elemental components in space. Conceptually, the black hole state behaves
+exactly like deep - sea components.
+
+The natural drift of active states towards lower or reduced activity levels is
+purely due to the action and reaction counts not being cyclically equal. As an
+example: if a 20 interactions per cycle (ipc) unit inter - acta with a 10 ipc unit,
+the 20 ipc will move in towards the 10 ipc unit, because for every 2 counts,
+there is only one reacting count, to attain a balance of counts.
+
+This is the fundamental cause of transmigration of counts between any two
+different count rate states. It is the only reason that all identified forces in
+Physics, like gravity, electromagnetic, weak and strong accelerate from a
+higher interactive count rate to a lower one.
+
+At the basic elemental level, this drift of Moolaprakrithy counts towards the
+Purusha coherent states is observed as a gravitating phenomenon. At
+intermediate levels, this type of migration of counts display the Linga/Bhaava
+and Abiman/Ahankar changes in the Thaama-Raja-Sathwa Guna
+characteristics, which represent the strong, weak and electro - magnetic
+interactive spectrum.
+With each count, there may occur one rotation, giving a series of ten counts
+and ten rotations as shown above in the diagram by SM Philipps.
+Conclusion
+
+Philipps showed the relationship between the 3 x 3 x 3 Cube of the I Ching
+Trigrams, the Klein Quartic and the Sierspinski Triangle, which relates to
+Pascal’s Triangle (Zhang Hui Triangle or Mount Meru in Vedic Physics) and
+combinatorial math.
+
+Many additional connections prove possible here, especially with the Magic
+Triangle of Exceptional Lie Algebras, and the Pascal Triangle - like
+organization of Clifford Algebras. As John Baez points out, Clifford Algebras
+are based on the (n +1) equation.
+
+Pascal’s Triangle and the Octonions via the Fano Plane enjoy direct
+connections to the Fibonacci Numbers and to the Golden Ratio, and this is not
+accidental. The author hypothesizes this is presence as the border between
+two states of matter, either Thaamas, Raja or Satvic. The Golden Ratio has
+the function of modulating between states which vibrate at different ratios.
+
+The binary qualities of the I Ching Trigrams immediately form an association
+with the binary qualities of the Octonions, the multiplication table for which is
+the Fano Plane, an equilateral triangle such as those that form the Sierspinski
+Triangle. Thus we begin to see a rich complex of inter - relationships between
+these different mathematical concepts, which focus around the 3 x 3 x 3 cube.
+
+The author surmise that these relationships are not accidental by any means,
+and that the 3 x 3 x 3 cube, a product heretofore of a westerner’s
+manipulation of an ancient Chinese concept, is in fact the Moolaprakrithy, the
+ancient Vedic concept and the very heart of Vedic Nuclear Physics. These
+relationships and identities indicate the importance of linking contemporary
+physics with sacred and religious constructs for the purpose of giving full
+articulation to Vedic Physics in terms of contemporary mathematical physics.
+Bibliography
+
+
+
+
+John Baez
+
+http://math.ucr.edu/home/baez/klein.html
+
+http://math.ucr.edu/home/baez/week77.html
+
+http://math.ucr.edu/home/baez/week211.html
+
+
+
+
+http://modular.math.washington.edu/edu/2010/414/projects/hoon_kwon.pdf
+http://finitegeometry.org/sc/8/plane.html
+Contact
+The author may be contacted at jaq 2013 at outlook dot com connect the
+spaces
+
+
+
+
+Some men see things as they are and say why?
+                     I dream things that never were and say why not?
+
+Let's dedicate ourselves to what the Greeks wrote so many years ago: to
+tame the savageness of man and make gentle the life of this world.
+
+                       Robert Francis Kennedy
+

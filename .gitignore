@@ -1,0 +1,242 @@
+# Root Level .gitignore for PARA Knowledge Management System
+# This file ensures the entire PARA structure remains lightweight and git-friendly
+
+# === SYSTEM FILES ===
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# === ARCHIVE & COMPRESSION ===
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.war
+*.ear
+*.sar
+*.class
+*.deb
+*.rpm
+*.msi
+*.msm
+*.msp
+*.appx
+
+# === MEDIA FILES (LARGE BINARIES) ===
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.bmp
+*.tiff
+*.psd
+*.ai
+*.eps
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.mp3
+*.wav
+*.flac
+*.aac
+*.wma
+*.pdf
+*.epub
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# === DATABASE FILES ===
+*.sql
+*.sqlite
+*.db
+*.db3
+*.mdb
+*.accdb
+*.frm
+*.myd
+*.myi
+
+# === TEMPORARY FILES ===
+*.tmp
+*.temp
+*.log
+*.bak
+*.backup
+*.old
+*.orig
+*.copy
+*.save
+*~
+
+# === CACHE DIRECTORIES ===
+.cache/
+temp/
+tmp/
+cache/
+
+# === DEVELOPMENT ENVIRONMENTS ===
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Tool-specific configs
+.cursor/
+.obsidian/
+.clawdhub/
+.birdrc.json5
+
+# === BUILD OUTPUTS ===
+dist/
+build/
+out/
+target/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+
+# === ENVIRONMENT FILES ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === BACKUP FILES ===
+*.backup
+*.old
+*.orig
+*.rej
+
+# === LARGE DATA FILES ===
+*.csv
+*.tsv
+*.jsonl
+*.xml
+*.yaml
+*.yml
+
+# === RESOURCE DIRECTORIES (PARA-SPECIFIC) ===
+**/resources/
+**/assets/images/
+**/assets/videos/
+**/assets/audio/
+**/uploads/
+**/downloads/
+
+# === GENERATED FILES ===
+generated/
+output/
+
+# === AGENT MEMORY (OPTIONAL) ===
+# Uncomment if you want to exclude agent memory files
+# memory.md
+# todo.md
+
+# === VECTOR INDEX (GENERATED) ===
+_System/memory/
+
+# === PROJECT SPECIFIC EXCLUSIONS ===
+# These can be overridden in individual project .gitignore files
+.claude/
+skills/
+_ARCHIVE/
+_System/openclaw/
+
+# === OFFICE TEMP FILES ===
+~$*.doc*
+~$*.xls*
+~$*.ppt*
+
+# === MISCELLANEOUS ===
+*.pid
+*.seed
+*.pid.lock
+.npm
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.node_repl_history
+*.tgz
+.yarn-integrity
+
+# === PARA STRUCTURE PRESERVATION ===
+# Keep empty directories by including .gitkeep files
+!.gitkeep
+
+# Allow specific configuration files
+!*.config.js
+!*.config.ts
+!*.json
+!*.yaml
+!*.yml
+!*.md
+!*.txt
+!*.py
+!*.js
+!*.ts
+!*.jsx
+!*.tsx
+!*.sh
+!*.bash
+!*.zsh
+
+# Allow template files
+!90-Templates/**
+# Ignore temporary and migrated archive data
+04-Archives/processing-folder/
+
+# === IGNORED EMBEDDED GIT REPOSITORIES ===
+# These directories contained their own .git folders and are ignored as requested.
+01-Projects/Somatic-Canticles/
+04-Archives/System-Noise/01-Projects/tryambakam-noesis/Somatic-Canticles-Webapp/
+_System/10865xseed/

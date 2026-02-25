@@ -1,0 +1,324 @@
+# Tryambakam Noesis — Brand Configuration
+# BrandMint Oracle Aleph v4.1.0
+# Generated: 2026-02-23
+
+# Visual Identity Theme
+theme:
+  name: "Bioluminescent Consciousness"
+  description: "Light from within organic structure — sacred geometry as data visualization"
+
+# Color Palette (Consciousness Color Spectrum — Goethe's Theory)
+palette:
+  primary:
+    name: "Witness Violet"
+    hex: "#2D0050"
+    description: "Kha (Spirit/Observer) — Steigerung culmination"
+  secondary:
+    name: "Flow Indigo"
+    hex: "#0B50FB"
+    description: "Kha→Ba (Flow state) — Deep minus"
+  accent:
+    name: "Sacred Gold"
+    hex: "#C5A017"
+    description: "Ba (Body/Activation) — Plus apex"
+  success:
+    name: "Coherence Emerald"
+    hex: "#10B5A7"
+    description: "Ba↔La (Coherence) — Resolution"
+  background:
+    name: "Void Black"
+    hex: "#070B1D"
+    description: "La (Inertia/Source) — Pre-chromatic Ur-ground"
+  text:
+    name: "Parchment"
+    hex: "#F0EDE3"
+    description: "Primary text on dark canvas"
+  support:
+    name: "Muted Silver"
+    hex: "#8A9BA8"
+    description: "Secondary text, metadata"
+  surface:
+    name: "Deep Surface"
+    hex: "#0E1428"
+    description: "Card backgrounds"
+  error:
+    name: "Terracotta"
+    hex: "#C65D3B"
+    description: "Error states, destructive actions"
+  signal:
+    name: "Coherence Emerald"
+    hex: "#10B5A7"
+    description: "Success signals, positive states"
+  warning:
+    name: "Sacred Gold"
+    hex: "#C5A017"
+    description: "Warning states, attention needed"
+  info:
+    name: "Flow Indigo"
+    hex: "#0B50FB"
+    description: "Informational states"
+
+# Typography
+typography:
+  header:
+    font: "Panchang"
+    display_weight: "Bold"
+    weights: [400, 500, 600, 700, 800]
+  body:
+    font: "Satoshi"
+    weights: [300, 400, 500, 700]
+  mono:
+    font: "SF Mono"
+  data:
+    font: "SF Mono"
+    description: "Biometric data, code, technical information"
+
+brand:
+  name: "Tryambakam Noesis"
+  tagline: "Self-Consciousness as Technology. Body as Medium. Breath as Interface."
+  slug: "tryambakam-noesis"
+  domain: "tryambakam.space"
+
+  # Brand Archetype
+  archetype: "The Anatomist Who Sees Fractals"
+  positioning: "Self-consciousness as a practiced technology for post-conventional seekers who have exhausted the wellness stack and need to examine the examiner."
+
+  # Domain Tags (controls which visual assets generate)
+  domain_tags:
+    - consciousness
+    - wellness
+    - technology
+    - practice-platform
+    - sacred-geometry
+    - vedic
+    - biorhythm
+    - self-inquiry
+
+  # Visual Identity — Consciousness Color Spectrum (Goethe's Theory)
+  colors:
+    primary: "#2D0050"      # Witness Violet — Kha (Spirit/Observer)
+    secondary: "#0B50FB"    # Flow Indigo — Kha→Ba (Flow state)
+    accent: "#C5A017"       # Sacred Gold — Ba (Body/Activation)
+    success: "#10B5A7"      # Coherence Emerald — Ba↔La (Coherence)
+    background: "#070B1D"   # Void Black — La (Inertia/Source)
+    text: "#F0EDE3"         # Parchment — Primary text
+    text_secondary: "#8A9BA8"  # Muted Silver — Secondary text
+    surface: "#0E1428"      # Deep Surface — Card backgrounds
+
+  # Typography
+  typography:
+    heading: "Panchang"     # FontShare — wide industrial-panoramic
+    body: "Satoshi"         # FontShare — geometric modernist sans-serif
+    mono: "SF Mono"         # Apple system — biometric data
+
+  # Voice & Tone
+  voice: "Grounded, direct, respectful-challenging. The Anatomist Who Sees Fractals — Rick & Morty's meta-genius + Alan Watts' paradox + Alex Grey's anatomical precision."
+  tone: "Precise but playful. Anatomical but psychedelic. Complex where complexity serves. Simple where simplicity is honest. Funny where the truth is fractal."
+
+  # Framework
+  framework: "Kha-Ba-La: Spirit observes. Body walks. Inertia gives form."
+
+  # Visual Philosophy
+  visual_philosophy:
+    - "Bioluminescent, not fluorescent — light from within organic structure"
+    - "Architectural, not decorative — sacred geometry is load-bearing"
+    - "Data as sacred form — HRV waveforms as mandalas"
+
+  # Theme (Visual Identity Theme)
+  theme: "Bioluminescent Consciousness"
+
+  # Materials (for product mockups)
+  materials:
+    - bronze
+    - leather
+    - unglazed ceramic
+    - dark wood
+    - brass
+    - amber glass
+
+  # Logo Reference
+  logo:
+    primary: "./Brand Visual Identity/logo/SVG/Asset 6.svg"
+    alternate: "./Brand Visual Identity/logo/SVG/Asset 7.svg"
+    icon: "./Brand Visual Identity/logo/8x/Asset 1@8x.png"
+    sigil: "Resonance pattern — nested sacred geometry with compass-pointed frame and lotus-form core"
+
+# Products/Offerings (The Ouroboros)
+products:
+  hero:
+    name: "Noesis Dashboard"
+    category: "Practice Platform"
+    description: "Synthesizes sixteen mirrors into a coherent field. Birth-blueprint, daily-practice, decision-support workflows."
+    price_range: "TBD"
+
+  offerings:
+    - name: "Somatic Canticles"
+      category: "Sci-Fi Trilogy"
+      description: "27-chapter trilogy where breath is physics and biorhythms are law."
+      price_range: "Free/Donation"
+
+    - name: "Personalized Bioalchemy"
+      category: "Physical Products"
+      description: "Nakshatra-informed medicinal mushroom tinctures, burnables, essential oils."
+      price_range: "$50-200"
+
+    - name: "The Mentorship Crescendo"
+      category: "Service"
+      description: "Four-stage mentorship: Dharma, Artha, Kama, Moksha."
+      price_range: "Premium"
+
+# Target Audience
+audience:
+  persona_name: "Seeker-Simon"
+  primary_age: "28-42"
+  gender_skew: "60/40 male"
+  location: "Global — Lisbon, Bali, Mexico City, Berlin, Tokyo"
+  income: "$75K-200K+"
+  occupation:
+    - "Founders"
+    - "Creative directors"
+    - "Independent consultants"
+    - "Engineers"
+  education: "Graduate degree or autodidact equivalent"
+
+  # Psychographics
+  interests:
+    - "Philosophy (not self-help)"
+    - "Systems thinking"
+    - "Consciousness research"
+    - "AI tools"
+    - "Meta-rationality"
+
+  pain_points:
+    - "Externally free, internally running inherited code"
+    - "Optimized everything except the optimizer"
+    - "Insight without authorship (therapy)"
+    - "Technique without philosophy (meditation apps)"
+    - "Efficiency without orientation (productivity)"
+    - "Opening without architecture (retreats)"
+    - "Maps without walking (books/podcasts)"
+
+  desired_outcomes:
+    - "Source-level authorship"
+    - "Cross-tradition coherence"
+    - "Biologically grounded practice"
+    - "Independence from the system itself"
+    - "Computational rigor applied to consciousness"
+    - "Embodied knowing"
+    - "Temporal orientation"
+    - "Meaning that survives Monday morning"
+
+  digital_habitat:
+    - "X/Twitter"
+    - "Reddit (r/philosophy, r/meditation, r/psychonaut, r/Enneagram)"
+    - "Substack (Ribbonfarm, Meaningness, LessWrong-adjacent)"
+
+  tech_comfort: "Terminal-comfortable, AI-native, hip to tools without needing AI as identity"
+
+# Campaign Settings
+campaign:
+  platform: "self-hosted"
+  launch_type: "soft-launch"
+  budget_tier: "lean"
+  timeline: "60 days"
+
+  channels:
+    - "X/Twitter threads"
+    - "Reddit curated resonance points"
+    - "Direct website (tryambakam.space)"
+    - "Email sequences"
+
+  content_strategy: "Questions, not ads. 3 AM recognitions. Precise articulation of commonly experienced, rarely spoken patterns."
+
+# Competitor Landscape
+competitors:
+  indirect:
+    - name: "Meditation apps"
+      gap: "Technique without philosophy, gamification of depth"
+    - name: "Therapy"
+      gap: "Insight without authorship, single tradition"
+    - name: "Productivity tools"
+      gap: "Efficiency without orientation, no temporal awareness"
+    - name: "Retreat centers"
+      gap: "Opening without architecture, no integration framework"
+    - name: "Philosophy books"
+      gap: "Maps without walking, intellectual only"
+
+# Messaging Pillars
+messaging:
+  primary: "Self-consciousness is not a state to achieve but a technology to wield."
+
+  pillars:
+    - "Consciousness is what you have. Self-consciousness is what you do with it."
+    - "The system succeeds when you no longer need it (The Quine)."
+    - "Sixteen lenses, four directions, one unrepeatable consciousness."
+    - "Not more tools. The capacity to see the tools you're already using."
+
+  soundbites:
+    - "Therapy helped me understand my story. This examines the storyteller."
+    - "Meditation taught me to watch thoughts. This examines the watcher."
+    - "Productivity optimized my actions. This examines who chose them."
+    - "I've optimized the hell out of a life I never consciously chose."
+
+# Technical Infrastructure
+infrastructure:
+  live_products:
+    - url: "selemene.tryambakam.space"
+      status: "Live"
+      description: "Selemene Engine API — 16 mirrors, sub-millisecond calculations"
+    - url: "1319.tryambakam.space"
+      status: "Live"
+      description: "Somatic Canticles — 27 biorhythm-synchronized chapters"
+
+  roadmap_products:
+    - name: "Noesis Dashboard"
+      platforms: ["Web", "Desktop", "Mobile"]
+      status: "Roadmap"
+
+  repos:
+    - "github.com/Sheshiyer/Somatic-Canticles"
+    - "github.com/Sheshiyer/Selemene-engine"
+
+# Visual Asset Requirements
+visual_assets:
+  identity:
+    - "Bento grid brand system (6-module layout)"
+    - "Embossed bronze seal (resonance pattern sigil)"
+    - "Foil-stamped wordmark (Sacred Gold on Void Black)"
+    - "Heritage engraving (precision sigil)"
+
+  products:
+    - "Ritual kit knolling (bronze, ceramic, leather, oils)"
+    - "Somatic Canticles book mockup"
+    - "Essential oil vial render"
+    - "Financial Biosensor UI mockup"
+
+  illustrations:
+    - "16 engine cards" # Already generated
+    - "Campaign visual grid"
+    - "Icon system (16 engine + 6 workflow icons)"
+    - "Dark-field photography direction"
+
+# Publishing Deliverables
+publishing:
+  formats:
+    - "NotebookLM podcast + study guide"
+    - "Marp slide decks (PDF)"
+    - "Typst reports (PDF)"
+    - "Mermaid diagrams"
+    - "Remotion video"
+
+# Generation Settings
+generation:
+  output_dir: "generated-v3"
+  provider: "fal-ai"
+  seeds_per_prompt: 2
+  batch_size: 3
+
+# BrandMint Execution Settings
+execution:
+  scenario: "brand-genesis"
+  depth: "focused"  # Waves 1-5
+  max_cost_usd: 5.00
+  non_interactive: true
+  resume_from: 3  # Starting at Wave 3 (Waves 1-2 complete manually)

@@ -1,0 +1,106 @@
+{
+  "source_folder": "/Volumes/madara/2026/twc-vault/01-Projects/Magic-Unschool/processing-intake",
+  "analyzed_at": "2026-01-28T11:20:00+05:30",
+  "analysis_method": "manual_semantic_with_ocr_fragments",
+  "note": "Scanned handwritten notes - limited OCR extraction",
+  "files": [
+    {
+      "id": "ROUTE_001",
+      "filename": "Magic Unschool.pdf",
+      "source_path": "/Volumes/madara/2026/twc-vault/01-Projects/Magic-Unschool/processing-intake/Magic Unschool.pdf",
+      "ocr_fragments": ["JAMES TRUE", "MICHEAL ASARION", "INNERVERSE", "SYMBOLIC", "THIRD EYE", "UNSCAVED"],
+      "enneagram_primary": "Type 5 - Melpomene (Investigator)",
+      "enneagram_primary_num": 5,
+      "enneagram_secondary": "Type 4 - Thalia (Individualist)",
+      "hormone_primary": "Cortisol",
+      "classification_confidence": 0.72,
+      "para_bucket": "Resources",
+      "subdomain": "Occult/Esoteric-Knowledge",
+      "moc_links": ["Occult-Library-Index.md", "Books-Master-Index.md"],
+      "routing_notes": "Educational esoteric notes referencing symbolic systems and inner work. James True/Micheal Asarion references suggest alternative knowledge frameworks.",
+      "tags": ["esoteric", "symbolic", "inner-work", "handwritten-notes"]
+    },
+    {
+      "id": "ROUTE_002",
+      "filename": "Magenarayan Notes-2.pdf",
+      "source_path": "/Volumes/madara/2026/twc-vault/01-Projects/Magic-Unschool/processing-intake/Magenarayan Notes-2.pdf",
+      "ocr_fragments": ["classmate", "LIBRA", "HORUS", "HOMUNCULUS", "DEEP"],
+      "enneagram_primary": "Type 5 - Melpomene (Investigator)",
+      "enneagram_primary_num": 5,
+      "enneagram_secondary": "Type 4 - Thalia (Individualist)",
+      "hormone_primary": "Cortisol",
+      "classification_confidence": 0.68,
+      "para_bucket": "Resources",
+      "subdomain": "Occult/Esoteric-Knowledge",
+      "moc_links": ["Occult-Library-Index.md"],
+      "routing_notes": "Personal study notes on esoteric topics. References to Horus, homunculus suggest hermetic/alchemical content.",
+      "tags": ["esoteric", "alchemy", "hermetic", "personal-notes"]
+    },
+    {
+      "id": "ROUTE_003",
+      "filename": "magenarayan notes.pdf",
+      "source_path": "/Volumes/madara/2026/twc-vault/01-Projects/Magic-Unschool/processing-intake/magenarayan notes.pdf",
+      "ocr_fragments": ["LIBRA", "HORUS", "HOMUNCULUS", "MORPHIC"],
+      "enneagram_primary": "Type 5 - Melpomene (Investigator)",
+      "enneagram_primary_num": 5,
+      "enneagram_secondary": "Type 4 - Thalia (Individualist)",
+      "hormone_primary": "Cortisol",
+      "classification_confidence": 0.68,
+      "para_bucket": "Resources",
+      "subdomain": "Occult/Esoteric-Knowledge",
+      "moc_links": ["Occult-Library-Index.md"],
+      "routing_notes": "Personal study notes volume 1. Morphic fields, astrology (Libra), hermetic symbols.",
+      "tags": ["esoteric", "morphic-fields", "astrology", "personal-notes"]
+    },
+    {
+      "id": "ROUTE_004",
+      "filename": "magenotes-3.pdf",
+      "source_path": "/Volumes/madara/2026/twc-vault/01-Projects/Magic-Unschool/processing-intake/magenotes-3.pdf",
+      "ocr_fragments": ["LIBRA", "HORUS", "HOMUNCULUS", "MORPHIC"],
+      "enneagram_primary": "Type 5 - Melpomene (Investigator)",
+      "enneagram_primary_num": 5,
+      "enneagram_secondary": "Type 4 - Thalia (Individualist)",
+      "hormone_primary": "Cortisol",
+      "classification_confidence": 0.68,
+      "para_bucket": "Resources",
+      "subdomain": "Occult/Esoteric-Knowledge",
+      "moc_links": ["Occult-Library-Index.md"],
+      "routing_notes": "Personal study notes volume 3. Continuation of esoteric research notes.",
+      "tags": ["esoteric", "personal-notes", "research"]
+    },
+    {
+      "id": "ROUTE_005",
+      "filename": "WHOLYDROPS notes.pdf",
+      "source_path": "/Volumes/madara/2026/twc-vault/01-Projects/Magic-Unschool/processing-intake/WHOLYDROPS notes.pdf",
+      "ocr_fragments": [],
+      "enneagram_primary": "Type 3 - Euterpe (Achiever/Healer)",
+      "enneagram_primary_num": 3,
+      "enneagram_secondary": "Type 5 - Melpomene (Investigator)",
+      "hormone_primary": "Endorphins",
+      "classification_confidence": 0.65,
+      "para_bucket": "Resources",
+      "subdomain": "Health/Natural-Medicine",
+      "moc_links": ["Health-Library-Index.md"],
+      "routing_notes": "WHOLYDROPS appears to be a health/wellness product or protocol. Natural medicine focus inferred from naming convention.",
+      "tags": ["health", "natural-medicine", "wellness", "protocol"]
+    }
+  ],
+  "statistics": {
+    "total_files": 5,
+    "by_enneagram": {
+      "Type 5": 4,
+      "Type 3": 1
+    },
+    "by_para": {
+      "Resources": 5,
+      "Areas": 0,
+      "Projects": 0
+    },
+    "by_subdomain": {
+      "Occult/Esoteric-Knowledge": 4,
+      "Health/Natural-Medicine": 1
+    },
+    "avg_confidence": 0.682,
+    "archetype_notes": "Collection aligns with Type 5 (Investigator) pattern - esoteric research notes"
+  }
+}
