@@ -1,0 +1,23 @@
+topic: Admin Access V3 Thread
+channel: twitter
+format: thread
+intent: imported-reuse
+summary: Thread draft v3 with cosmic-jester tone; candidate for tone-softening pass.
+required_claims:
+  runtime_claim: ""
+  pattern_claim: ""
+  enneagram_lens: ""
+  embodied_intervention: ""
+  closure_style: non-pitch
+sources:
+  areas: []
+  resources: []
+  imported_from:
+    - /Volumes/madara/2026/twc-vault/01-Projects/Products/Churned-Content/2026-02-02-Admin-Access-v3.md
+gates:
+  min_area_sources: 0
+  min_resource_sources: 0
+  meta_language_removed: false
+metadata:
+  draft_file: imported-from-products/threads/x-twitter/admin-access-v3-thread.md
+  workflow_state: imported

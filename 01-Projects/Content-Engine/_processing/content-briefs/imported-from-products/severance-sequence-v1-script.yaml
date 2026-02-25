@@ -1,0 +1,23 @@
+topic: Severance Sequence V1 Script
+channel: youtube
+format: script
+intent: imported-reuse
+summary: Long-form script/sequence for Somatic Canticles content.
+required_claims:
+  runtime_claim: ""
+  pattern_claim: ""
+  enneagram_lens: ""
+  embodied_intervention: ""
+  closure_style: non-pitch
+sources:
+  areas: []
+  resources: []
+  imported_from:
+    - /Volumes/madara/2026/twc-vault/01-Projects/Products/Churned-Content/2026-02-04-The-Severance-Sequence-v1.md
+gates:
+  min_area_sources: 0
+  min_resource_sources: 0
+  meta_language_removed: false
+metadata:
+  draft_file: imported-from-products/scripts/video-audio/severance-sequence-v1-script.md
+  workflow_state: imported

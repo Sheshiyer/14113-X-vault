@@ -1,0 +1,23 @@
+topic: Manual Post Pain Authentication
+channel: twitter
+format: single-post
+intent: imported-reuse
+summary: Single-post draft for X/Twitter around pain-as-authentication concept.
+required_claims:
+  runtime_claim: ""
+  pattern_claim: ""
+  enneagram_lens: ""
+  embodied_intervention: ""
+  closure_style: non-pitch
+sources:
+  areas: []
+  resources: []
+  imported_from:
+    - /Volumes/madara/2026/twc-vault/01-Projects/Products/Churned-Content/2026-02-02-Manual-Post.md
+gates:
+  min_area_sources: 0
+  min_resource_sources: 0
+  meta_language_removed: false
+metadata:
+  draft_file: imported-from-products/posts/x-twitter/manual-post-pain-authentication.md
+  workflow_state: imported

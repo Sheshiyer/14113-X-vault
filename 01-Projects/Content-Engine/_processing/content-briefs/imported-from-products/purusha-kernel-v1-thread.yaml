@@ -1,0 +1,23 @@
+topic: Purusha Kernel V1 Thread
+channel: twitter
+format: thread
+intent: imported-reuse
+summary: Thread draft on Purusha Kernel and distributed consciousness framing.
+required_claims:
+  runtime_claim: ""
+  pattern_claim: ""
+  enneagram_lens: ""
+  embodied_intervention: ""
+  closure_style: non-pitch
+sources:
+  areas: []
+  resources: []
+  imported_from:
+    - /Volumes/madara/2026/twc-vault/01-Projects/Products/Churned-Content/2026-02-03-Purusha-Kernel-v1.md
+gates:
+  min_area_sources: 0
+  min_resource_sources: 0
+  meta_language_removed: false
+metadata:
+  draft_file: imported-from-products/threads/x-twitter/purusha-kernel-v1-thread.md
+  workflow_state: imported
