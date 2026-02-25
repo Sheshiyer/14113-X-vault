@@ -3,7 +3,7 @@
 Date: 2026-02-25
 Context scanned:
 - `/Volumes/madara/2026/twc-vault/.claude/skills`
-- `/Volumes/madara/2026/twc-vault/_System/Hybrid_PARA_System_Implementation_Plan.md`
+- `/Volumes/madara/2026/twc-vault/04-Archives/System-Architecture-History/Hybrid_PARA_System_Implementation_Plan.md` (Archived)
 - `/Volumes/madara/2026/twc-vault/_System/scripts/memory/*`
 
 ---
@@ -26,9 +26,9 @@ Context scanned:
   - query CLI (`query_vault.py` / `vmem`)
 - Architecture is already read-only against vault content and side-loaded into `_System/memory`.
 
-### C. Hybrid PARA plan (future state)
-- The XTDB + Chroma plan is strong for long-term temporal + semantic graphing.
-- But your current FAISS/MiniLM pipeline is operational now and should be treated as execution baseline.
+### C. Hybrid PARA plan (Historical reference)
+- The XTDB + Chroma plan (now archived) is strong for potential long-term temporal + semantic graphing.
+- Current Status: Superseded by the v3.0.0 Skills + Meru (FAISS) pipeline which is operational now and treated as the execution baseline.
 
 ---
 
@@ -143,10 +143,10 @@ Result: Better reuse, less hallucinated abstraction, faster consistency.
 
 ## 6) Strategic Note on XTDB + Chroma Plan
 
-Keep it as Phase-2 architecture, not immediate blocker.
+This plan has been moved to `04-Archives/System-Architecture-History/`. Keep it as a potential Phase-2 architecture, not an immediate blocker.
 
 Recommended approach:
-- Continue production on current FAISS/MiniLM stack (already working).
+- Continue production on current v3.0.0 Skills + Meru (FAISS/MiniLM) stack (already working).
 - Add clean interfaces (`retrieve_sources`, `write_brief`, `validate_gates`) so storage backend can be swapped later.
 - Move to XTDB/Chroma only when query complexity (history + graph joins) becomes a real bottleneck.
 
