@@ -232,6 +232,12 @@ _System/openclaw/
 
 # Allow template files
 !90-Templates/**
+
+# === THOUGHTSEED PROJECT ALLOW-LIST ===
+# Critical company docs and project-specific binaries
+!*Thoughtseed*
+!**/Thoughtseed/**
+
 # Ignore temporary and migrated archive data
 04-Archives/processing-folder/
 
