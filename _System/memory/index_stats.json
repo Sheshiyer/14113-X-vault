@@ -1,0 +1,14 @@
+{
+  "file_count": 9893,
+  "chunk_count": 3202158,
+  "last_updated": "2026-02-25 19:47:13",
+  "model_name": "all-MiniLM-L6-v2",
+  "status": "production",
+  "faiss_size_gb": 4.58,
+  "meta_size_gb": 2.96,
+  "embeddings_size_gb": 4.58,
+  "finalized_at": "2026-02-25 21:44:26",
+  "architecture": "FAISS-MiniLM-v3.0",
+  "optimization": "Day 5 (Quality Scorer + SHA-256 Dedupe)",
+  "extraction_time_info": "Extraction+encoding done: 6,226 files \u2192 1,930,090 chunks in 23 shards (20774.0s)"
+}
