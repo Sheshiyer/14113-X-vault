@@ -1,0 +1,82 @@
+#!/usr/bin/env bash
+# vmem — Vault Memory Index CLI wrapper
+
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
+MEMORY_DIR="$ROOT_DIR/_System/scripts/memory"
+PY_BIN="$ROOT_DIR/.venv-meru/bin/python3"
+
+if [[ ! -x "$PY_BIN" ]]; then
+  echo "ERROR: Python venv not found at $PY_BIN" >&2
+  echo "Run: python3 -m venv $ROOT_DIR/.venv-meru && $ROOT_DIR/.venv-meru/bin/pip install -r $MEMORY_DIR/requirements-memory.txt" >&2
+  exit 1
+fi
+
+cmd="${1:-}"
+
+case "$cmd" in
+  search|s)
+    shift
+    exec "$PY_BIN" "$MEMORY_DIR/query_vault.py" "$@"
+    ;;
+  repl|r)
+    shift
+    exec "$PY_BIN" "$MEMORY_DIR/query_vault.py" "$@"
+    ;;
+  index|i)
+    shift
+    exec "$PY_BIN" "$MEMORY_DIR/index_full.py" "$@"
+    ;;
+  update|u)
+    shift
+    exec "$PY_BIN" "$MEMORY_DIR/update_index.py" "$@"
+    ;;
+  batch|b)
+    shift
+    exec "$PY_BIN" "$MEMORY_DIR/query_vault.py" --batch "$@"
+    ;;
+  status|st)
+    shift
+    exec "$PY_BIN" "$MEMORY_DIR/health_check.py" "$@"
+    ;;
+  summarize|summary|sum)
+    shift
+    exec "$PY_BIN" "$ROOT_DIR/_System/scripts/knowledge_summary.py" "$@"
+    ;;
+  time-travel|tt)
+    shift
+    exec "$PY_BIN" "$MEMORY_DIR/query_vault.py" --search-mode time-travel "$@"
+    ;;
+  api)
+    shift
+    exec "$PY_BIN" -m uvicorn semantic_search_api:app --app-dir "$MEMORY_DIR" "$@"
+    ;;
+  help|--help|-h|"")
+    cat <<'EOF'
+vmem — Vault Memory Index
+
+Commands:
+  search|s [flags]          Search index (one-shot)
+  repl|r [flags]            Interactive retrieval
+  index|i [flags]           Full index build
+  update|u [flags]          Incremental update
+  batch|b <queries.txt>     Batch query execution
+  status|st                 Index integrity status
+  summarize|sum <topic>     3-paragraph knowledge summary from top chunks
+  time-travel|tt [flags]    Date-scoped semantic retrieval (requires --start-date/--end-date)
+  api [uvicorn flags]       Run local semantic search HTTP API
+
+Examples:
+  ./vmem search --query "kriya yoga" --top 8
+  ./vmem summarize "walker shard compaction"
+  ./vmem summarize --topic "meru routing" --json
+  ./vmem time-travel --query "memory index" --start-date 2026-01-01 --end-date 2026-03-01 --top 10 --json
+  ./vmem api --host 127.0.0.1 --port 8877
+EOF
+    ;;
+  *)
+    # Treat bare input as a one-shot query
+    exec "$PY_BIN" "$MEMORY_DIR/query_vault.py" --query "$cmd"
+    ;;
+esac
