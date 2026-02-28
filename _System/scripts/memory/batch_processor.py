@@ -14,14 +14,14 @@ import re
 import hashlib
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Optional
+from typing import Optional, TextIO
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from chunker import Chunk, chunk_markdown, chunk_txt, extract_frontmatter, MAX_CHUNK_CHARS, QualityScorer
 from walker import walk_vault, safe_read, is_noisy, prepend_context, build_meta, ALL_EXTENSIONS
 from extractors import chunk_file, ExtractedDoc
-from extractors.pdf_extractor import is_scanned as pdf_is_scanned
+from extractors.pdf_extractor import parse_page_heading
 
 
 # ---------------------------------------------------------------------------
@@ -71,36 +71,104 @@ class Checkpoint:
 
     def __init__(self, path: str):
         self.path = path
+        self.journal_path = f"{path}.journal"
         self.processed_files: set[str] = set()
         self.last_batch: int = 0
+        self._dirty_paths: list[str] = []
+        self._journal_handle: TextIO | None = None
 
-    def save(self) -> None:
+    def _open_journal(self) -> TextIO:
+        if self._journal_handle is None:
+            os.makedirs(os.path.dirname(self.journal_path), exist_ok=True)
+            self._journal_handle = open(self.journal_path, "a", encoding="utf-8", buffering=1)
+        return self._journal_handle
+
+    def _write_snapshot(self) -> None:
         data = {
             "processed_files": sorted(self.processed_files),
             "last_batch": self.last_batch,
             "saved_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
         }
-        with open(self.path, "w") as f:
+        tmp_path = f"{self.path}.tmp"
+        with open(tmp_path, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2)
+        os.replace(tmp_path, self.path)
+
+        # Snapshot is authoritative; truncate journal to keep resume fast.
+        if self._journal_handle is not None:
+            self._journal_handle.seek(0)
+            self._journal_handle.truncate()
+            self._journal_handle.flush()
+        elif os.path.exists(self.journal_path):
+            with open(self.journal_path, "w", encoding="utf-8"):
+                pass
+
+    def save(self, snapshot_interval: int = 2000) -> None:
+        # Fast path: append only newly marked files for exact per-file resume.
+        if self._dirty_paths:
+            fh = self._open_journal()
+            batch_marker = self.last_batch
+            for rel_path in self._dirty_paths:
+                rec = {"rel_path": rel_path, "last_batch": batch_marker}
+                fh.write(json.dumps(rec, ensure_ascii=False, separators=(",", ":")) + "\n")
+            fh.flush()
+            self._dirty_paths.clear()
+
+        # Periodically compact to snapshot + empty journal.
+        if snapshot_interval > 0 and (self.last_batch % snapshot_interval == 0):
+            self._write_snapshot()
 
     def load(self) -> bool:
-        if not os.path.exists(self.path):
-            return False
-        with open(self.path) as f:
-            data = json.load(f)
-        self.processed_files = set(data.get("processed_files", []))
-        self.last_batch = data.get("last_batch", 0)
-        return True
+        loaded_any = False
+        if os.path.exists(self.path):
+            with open(self.path, encoding="utf-8") as f:
+                data = json.load(f)
+            self.processed_files = set(data.get("processed_files", []))
+            self.last_batch = data.get("last_batch", 0)
+            loaded_any = True
+
+        if os.path.exists(self.journal_path):
+            with open(self.journal_path, encoding="utf-8") as jf:
+                for line in jf:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        rec = json.loads(line)
+                    except json.JSONDecodeError:
+                        continue
+                    rel_path = rec.get("rel_path")
+                    if isinstance(rel_path, str) and rel_path:
+                        self.processed_files.add(rel_path)
+                        loaded_any = True
+                    lb = rec.get("last_batch")
+                    if isinstance(lb, int) and lb > self.last_batch:
+                        self.last_batch = lb
+        return loaded_any
 
     def mark(self, rel_path: str) -> None:
+        if rel_path in self.processed_files:
+            return
         self.processed_files.add(rel_path)
+        self._dirty_paths.append(rel_path)
 
     def is_done(self, rel_path: str) -> bool:
         return rel_path in self.processed_files
 
     def delete(self) -> None:
+        self.close()
         if os.path.exists(self.path):
             os.unlink(self.path)
+        if os.path.exists(self.journal_path):
+            os.unlink(self.journal_path)
+
+    def close(self) -> None:
+        if self._dirty_paths:
+            # Persist any pending marks before closing.
+            self.save(snapshot_interval=0)
+        if self._journal_handle is not None:
+            self._journal_handle.close()
+            self._journal_handle = None
 
 
 # ---------------------------------------------------------------------------
@@ -153,6 +221,7 @@ def process_file(
     vault_path: str,
     errors: ErrorAggregator,
     scanned_log: list[str],
+    dedupe: bool = True,
 ) -> tuple[list[str], list[dict]]:
     ext = os.path.splitext(rel_path)[1].lower()
 
@@ -181,10 +250,18 @@ def process_file(
         for ci, chunk in enumerate(chunks):
             q_score = QualityScorer.score(chunk.text, chunk.heading)
             if q_score < 0.3: continue
-            if _DEDUPE.is_duplicate(chunk.text): continue
+            if dedupe and _DEDUPE.is_duplicate(chunk.text): continue
 
             texts.append(prepend_context(chunk.text, rel_path, chunk.heading))
-            m = build_meta(rel_path, chunk.heading, frontmatter, ci, text=chunk.text, quality_score=q_score)
+            m = build_meta(
+                rel_path,
+                chunk.heading,
+                frontmatter,
+                ci,
+                vault_root=vault_path,
+                text=chunk.text,
+                quality_score=q_score,
+            )
             m["file_format"] = ext.lstrip(".")
             meta.append(m)
         return texts, meta
@@ -199,25 +276,40 @@ def process_file(
             return [], []
 
         if ext == ".pdf" and doc and doc.extraction_quality < 0.2:
-            scanned_log.append(rel_path)
-            errors.add(rel_path, "scanned_pdf")
-            return [], []
+            ocr_used = bool((doc.metadata or {}).get("ocr_used"))
+            if not ocr_used:
+                scanned_log.append(rel_path)
+                errors.add(rel_path, "scanned_pdf")
+                return [], []
 
         texts, meta = [], []
         fmt_label = ext.lstrip(".")
         for ci, chunk in enumerate(chunks_list):
             q_score = QualityScorer.score(chunk.text, chunk.heading)
             if q_score < 0.3: continue
-            if _DEDUPE.is_duplicate(chunk.text): continue
+            if dedupe and _DEDUPE.is_duplicate(chunk.text): continue
 
             texts.append(prepend_context(chunk.text, rel_path, chunk.heading))
-            m = build_meta(rel_path, chunk.heading, None, ci, text=chunk.text, quality_score=q_score)
+            m = build_meta(
+                rel_path,
+                chunk.heading,
+                None,
+                ci,
+                vault_root=vault_path,
+                text=chunk.text,
+                quality_score=q_score,
+            )
             m["file_format"] = fmt_label
             if doc and doc.metadata:
                 if doc.metadata.get("title"): m["doc_title"] = doc.metadata["title"]
                 if doc.metadata.get("author"): m["doc_author"] = doc.metadata["author"]
-            if ext == ".pdf" and chunk.heading and chunk.heading.startswith("Page"):
-                m["page"] = chunk.heading
+            if ext == ".pdf":
+                page_number, page_label = parse_page_heading(chunk.heading)
+                if page_label:
+                    m["page"] = page_label  # backward-compatible key
+                    m["page_label"] = page_label
+                if page_number is not None:
+                    m["page_number"] = page_number
             elif ext == ".epub" and chunk.heading:
                 m["chapter"] = chunk.heading
             meta.append(m)

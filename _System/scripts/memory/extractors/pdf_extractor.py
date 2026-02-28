@@ -15,7 +15,10 @@ Functions:
 from __future__ import annotations
 
 import os
+import re
+import subprocess
 import sys
+import tempfile
 from typing import Optional
 
 import fitz  # PyMuPDF
@@ -33,6 +36,101 @@ from extractors import ExtractedDoc
 
 _SCANNED_CHARS_PER_PAGE = 50   # below this = likely scanned/image PDF
 _MIN_QUALITY_THRESHOLD = 0.10  # quality score below this = skip
+_PAGE_LABEL_RE = re.compile(r"^\s*Page\s+(\d+)\s*$", re.IGNORECASE)
+
+_OCR_ENABLED_ENV = "MERU_PDF_OCR"
+_OCR_LANG_ENV = "MERU_PDF_OCR_LANG"
+_OCR_DPI_ENV = "MERU_PDF_OCR_DPI"
+_OCR_PAGE_LIMIT_ENV = "MERU_PDF_OCR_PAGE_LIMIT"
+_OCR_DEFAULT_LANG = "eng"
+_OCR_DEFAULT_DPI = 220
+
+
+def make_page_label(page_number: int) -> str:
+    """Return canonical PDF page label text."""
+    return f"Page {int(page_number)}"
+
+
+def parse_page_heading(heading: Optional[str]) -> tuple[Optional[int], str]:
+    """Parse a page heading into ``(page_number, page_label)``.
+
+    Returns:
+        - page_number: integer page number if detected, else None
+        - page_label: normalized label when number is detected, otherwise
+          the trimmed original heading (or empty string)
+    """
+    if not heading:
+        return None, ""
+
+    text = str(heading).strip()
+    if not text:
+        return None, ""
+
+    m = _PAGE_LABEL_RE.match(text)
+    if m:
+        page_number = int(m.group(1))
+        return page_number, make_page_label(page_number)
+
+    if text.isdigit():
+        page_number = int(text)
+        return page_number, make_page_label(page_number)
+
+    return None, text
+
+
+def _ocr_enabled() -> bool:
+    raw = os.environ.get(_OCR_ENABLED_ENV, "1").strip().lower()
+    return raw not in {"0", "false", "no", "off"}
+
+
+def _ocr_lang() -> str:
+    lang = os.environ.get(_OCR_LANG_ENV, _OCR_DEFAULT_LANG).strip()
+    return lang or _OCR_DEFAULT_LANG
+
+
+def _ocr_dpi() -> int:
+    raw = os.environ.get(_OCR_DPI_ENV, str(_OCR_DEFAULT_DPI)).strip()
+    try:
+        dpi = int(raw)
+    except Exception:
+        dpi = _OCR_DEFAULT_DPI
+    return min(max(dpi, 120), 400)
+
+
+def _ocr_page_limit() -> int:
+    raw = os.environ.get(_OCR_PAGE_LIMIT_ENV, "0").strip()
+    try:
+        n = int(raw)
+    except Exception:
+        n = 0
+    return max(0, n)
+
+
+def _ocr_page_with_tesseract(page: fitz.Page, dpi: int, lang: str) -> str:
+    scale = max(float(dpi) / 72.0, 1.0)
+    matrix = fitz.Matrix(scale, scale)
+    pix = page.get_pixmap(matrix=matrix, alpha=False)
+    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tf:
+        tmp_png = tf.name
+        pix.save(tmp_png)
+    try:
+        cmd = ["tesseract", tmp_png, "stdout", "-l", lang, "--psm", "6"]
+        proc = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        if proc.returncode != 0:
+            return ""
+        return (proc.stdout or "").strip()
+    except Exception:
+        return ""
+    finally:
+        try:
+            os.unlink(tmp_png)
+        except Exception:
+            pass
 
 
 # ---------------------------------------------------------------------------
@@ -82,12 +180,31 @@ def extract_pdf(path: str) -> ExtractedDoc:
         On corrupt or password-protected files — caller should handle.
     """
     page_texts: list[str] = []
+    ocr_used = False
+    ocr_pages = 0
+    use_ocr = _ocr_enabled()
+    ocr_dpi = _ocr_dpi()
+    ocr_lang = _ocr_lang()
+    ocr_page_cap = _ocr_page_limit()
 
     with fitz.open(path) as doc:
         meta = extract_pdf_meta(path)
         for page in doc:
             text = page.get_text("text")
+            if use_ocr and len(text.strip()) < _SCANNED_CHARS_PER_PAGE:
+                if ocr_page_cap == 0 or ocr_pages < ocr_page_cap:
+                    ocr_text = _ocr_page_with_tesseract(page, dpi=ocr_dpi, lang=ocr_lang)
+                    if len(ocr_text.strip()) > len(text.strip()):
+                        text = ocr_text
+                        ocr_used = True
+                        ocr_pages += 1
             page_texts.append(text)
+
+        if ocr_used:
+            meta["ocr_used"] = True
+            meta["ocr_pages"] = ocr_pages
+            meta["ocr_lang"] = ocr_lang
+            meta["ocr_dpi"] = ocr_dpi
 
     full_text = "\n\n".join(page_texts)
 
@@ -188,7 +305,7 @@ def chunk_pdf(doc: ExtractedDoc) -> list[Chunk]:
             offset += len(doc.page_texts[page_idx]) + 2  # account for \n\n join
             continue
 
-        page_label = f"Page {page_idx + 1}"
+        page_label = make_page_label(page_idx + 1)
 
         # Split page text into paragraph-sized chunks
         paras = split_paragraphs(page_text, MAX_CHUNK_CHARS)
@@ -245,5 +362,7 @@ __all__ = [
     "score_pdf_quality",
     "is_scanned",
     "chunk_pdf",
+    "make_page_label",
+    "parse_page_heading",
     "safe_extract_pdf",
 ]

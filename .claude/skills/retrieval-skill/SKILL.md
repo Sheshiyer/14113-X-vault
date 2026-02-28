@@ -67,6 +67,11 @@ Retrieve machine-readable results for other skills (like analysis or scaffolding
 .venv-meru/bin/python3 _System/scripts/memory/query_vault.py --query "[QUERY]" --json
 ```
 
+### ☸️ Integrated Visualization
+For a visual/real-time view of vault activity:
+- **TUI**: Use `noesis telemetry watch` to monitor live system events.
+- **Dashboard**: Visit `http://localhost:5199` (Brahman Darshanam) to see the Annamaya (File) layer state.
+
 ---
 
 ## Quality Gates

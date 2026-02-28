@@ -36,6 +36,11 @@ from embedder import (
     MEGA_BATCH_SIZE,
     DEFAULT_BATCH_SIZE,
     EMBEDDING_DIM,
+    SUPPORTED_INDEX_TYPES,
+    DEFAULT_INDEX_TYPE,
+    DEFAULT_HNSW_M,
+    DEFAULT_HNSW_EF_CONSTRUCTION,
+    DEFAULT_HNSW_EF_SEARCH,
 )
 from incremental import (
     save_file_mtimes,
@@ -45,6 +50,8 @@ from incremental import (
     save_embeddings,
     load_embeddings,
     merge_index,
+    compact_incremental_index,
+    iter_meta_records,
 )
 from batch_processor import ErrorAggregator, process_file
 
@@ -140,6 +147,10 @@ def full_rebuild(
     batch_size: int,
     mega_batch: int,
     extensions: set[str] | None = None,
+    index_type: str = DEFAULT_INDEX_TYPE,
+    hnsw_m: int = DEFAULT_HNSW_M,
+    hnsw_ef_construction: int = DEFAULT_HNSW_EF_CONSTRUCTION,
+    hnsw_ef_search: int = DEFAULT_HNSW_EF_SEARCH,
 ) -> dict:
     """Run a complete re-index (same as index_vault but saves embeddings + mtimes)."""
     os.makedirs(output_dir, exist_ok=True)
@@ -207,7 +218,13 @@ def full_rebuild(
     # Phase 3: Build FAISS index and write all outputs
     print("Phase 3/3: Building FAISS index and saving...")
 
-    index = build_faiss_index(embeddings)
+    index = build_faiss_index(
+        embeddings,
+        index_type=index_type,
+        hnsw_m=hnsw_m,
+        hnsw_ef_construction=hnsw_ef_construction,
+        hnsw_ef_search=hnsw_ef_search,
+    )
 
     faiss_path = os.path.join(output_dir, "vault.faiss")
     meta_path = os.path.join(output_dir, "meta.json")
@@ -236,6 +253,10 @@ def full_rebuild(
             "total_files_walked": total_files,
             "files_skipped": errors.total,
             "total_time_seconds": round(total_time, 1),
+            "index_type": (index_type or DEFAULT_INDEX_TYPE).lower(),
+            "hnsw_m": int(max(8, hnsw_m)) if (index_type or "").lower() == "hnsw" else None,
+            "hnsw_ef_construction": int(max(max(8, hnsw_m), hnsw_ef_construction)) if (index_type or "").lower() == "hnsw" else None,
+            "hnsw_ef_search": int(max(1, hnsw_ef_search)) if (index_type or "").lower() == "hnsw" else None,
             "mode": "full_rebuild",
         },
         path=stats_path,
@@ -259,6 +280,12 @@ def incremental_update(
     batch_size: int,
     mega_batch: int,
     extensions: set[str] | None = None,
+    use_compaction: bool = False,
+    compaction_batch: int = 50_000,
+    index_type: str = DEFAULT_INDEX_TYPE,
+    hnsw_m: int = DEFAULT_HNSW_M,
+    hnsw_ef_construction: int = DEFAULT_HNSW_EF_CONSTRUCTION,
+    hnsw_ef_search: int = DEFAULT_HNSW_EF_SEARCH,
 ) -> dict:
     """Run an incremental update: detect changes, re-embed only diffs."""
     t0 = time.monotonic()
@@ -337,36 +364,63 @@ def incremental_update(
 
     # Step 5: Merge with existing index
     print("Step 5/5: Merging index...")
-    old_embeddings = load_embeddings(emb_path)
-    old_meta = load_metadata(meta_path)
-
+    faiss_path = os.path.join(output_dir, "vault.faiss")
+    stats_path = os.path.join(output_dir, "index_stats.json")
     # All paths that changed (new + modified + deleted) need their old chunks removed
     all_changed_paths = set(new_files + modified_files + deleted_files)
 
-    merged_emb, merged_meta = merge_index(
-        old_embeddings, old_meta,
-        new_embeddings, new_meta,
-        all_changed_paths,
-    )
+    if use_compaction:
+        compact_summary = compact_incremental_index(
+            old_embeddings_path=emb_path,
+            old_meta_path=meta_path,
+            new_embeddings=new_embeddings,
+            new_meta=new_meta,
+            changed_paths=all_changed_paths,
+            output_dir=output_dir,
+            batch_size=max(1, int(compaction_batch)),
+            embedding_dim=EMBEDDING_DIM,
+            index_type=index_type,
+            hnsw_m=hnsw_m,
+            hnsw_ef_construction=hnsw_ef_construction,
+            hnsw_ef_search=hnsw_ef_search,
+        )
+        merged_chunk_count = int(compact_summary["merged_total"])
+        files_in_index = len(
+            {
+                str(rec.get("path"))
+                for rec in iter_meta_records(meta_path)
+                if isinstance(rec, dict) and rec.get("path")
+            }
+        )
+    else:
+        old_embeddings = load_embeddings(emb_path)
+        old_meta = load_metadata(meta_path)
+        merged_emb, merged_meta = merge_index(
+            old_embeddings, old_meta,
+            new_embeddings, new_meta,
+            all_changed_paths,
+        )
 
-    # Rebuild FAISS and save everything
-    index = build_faiss_index(merged_emb)
+        # Rebuild FAISS and save everything
+        index = build_faiss_index(
+            merged_emb,
+            index_type=index_type,
+            hnsw_m=hnsw_m,
+            hnsw_ef_construction=hnsw_ef_construction,
+            hnsw_ef_search=hnsw_ef_search,
+        )
+        save_index(index, faiss_path)
+        save_metadata(merged_meta, meta_path)
+        save_embeddings(merged_emb, emb_path)
+        files_in_index = len({m["path"] for m in merged_meta})
+        merged_chunk_count = len(merged_meta)
 
-    faiss_path = os.path.join(output_dir, "vault.faiss")
-    stats_path = os.path.join(output_dir, "index_stats.json")
-
-    save_index(index, faiss_path)
-    save_metadata(merged_meta, meta_path)
-    save_embeddings(merged_emb, emb_path)
     save_file_mtimes(current_map, hashes_path)
-
-    # Count unique files in the merged index
-    files_in_index = len({m["path"] for m in merged_meta})
 
     total_time = time.monotonic() - t0
     stats = save_stats(
         file_count=files_in_index,
-        chunk_count=len(merged_meta),
+        chunk_count=merged_chunk_count,
         model_name=model_name,
         extra={
             "total_files_walked": len(file_list),
@@ -374,6 +428,12 @@ def incremental_update(
             "files_modified": n_mod,
             "files_deleted": n_del,
             "chunks_reembedded": len(new_texts),
+            "incremental_compaction": bool(use_compaction),
+            "compaction_batch": int(max(1, compaction_batch)),
+            "index_type": (index_type or DEFAULT_INDEX_TYPE).lower(),
+            "hnsw_m": int(max(8, hnsw_m)) if (index_type or "").lower() == "hnsw" else None,
+            "hnsw_ef_construction": int(max(max(8, hnsw_m), hnsw_ef_construction)) if (index_type or "").lower() == "hnsw" else None,
+            "hnsw_ef_search": int(max(1, hnsw_ef_search)) if (index_type or "").lower() == "hnsw" else None,
             "total_time_seconds": round(total_time, 1),
             "mode": "incremental",
         },
@@ -381,13 +441,15 @@ def incremental_update(
     )
 
     _print_summary(
-        files_in_index, len(merged_meta), skip_log.count,
+        files_in_index, merged_chunk_count, skip_log.count,
         faiss_path, meta_path, emb_path, output_dir, total_time,
         extra_lines=[
             f"  Files new:      {n_new}",
             f"  Files modified: {n_mod}",
             f"  Files deleted:  {n_del}",
             f"  Chunks re-embedded: {len(new_texts):,}",
+            f"  Index type: {(index_type or DEFAULT_INDEX_TYPE).lower()}",
+            f"  Compaction mode: {'streaming' if use_compaction else 'classic'}",
         ],
     )
     return stats
@@ -473,6 +535,41 @@ def parse_args() -> argparse.Namespace:
         default="all",
         help="Comma-separated formats: md,txt,pdf,epub,docx or all",
     )
+    parser.add_argument(
+        "--index-type",
+        default=DEFAULT_INDEX_TYPE,
+        choices=sorted(SUPPORTED_INDEX_TYPES),
+        help="FAISS index type: flatip or hnsw",
+    )
+    parser.add_argument(
+        "--hnsw-m",
+        type=int,
+        default=DEFAULT_HNSW_M,
+        help="HNSW graph M parameter (used when --index-type=hnsw)",
+    )
+    parser.add_argument(
+        "--hnsw-ef-construction",
+        type=int,
+        default=DEFAULT_HNSW_EF_CONSTRUCTION,
+        help="HNSW efConstruction parameter (used when --index-type=hnsw)",
+    )
+    parser.add_argument(
+        "--hnsw-ef-search",
+        type=int,
+        default=DEFAULT_HNSW_EF_SEARCH,
+        help="HNSW efSearch parameter baked into built index (used when --index-type=hnsw)",
+    )
+    parser.add_argument(
+        "--incremental-compaction",
+        action="store_true",
+        help="Use streaming compaction path for incremental updates (memory-safe on large indexes)",
+    )
+    parser.add_argument(
+        "--compaction-batch",
+        type=int,
+        default=50_000,
+        help="Batch size for FAISS add during streaming compaction",
+    )
     return parser.parse_args()
 
 
@@ -485,6 +582,15 @@ def main() -> None:
     print(f"  Output:   {args.output_dir}")
     print(f"  Model:    {args.model}")
     print(f"  Batch:    {args.batch_size}")
+    if (args.index_type or DEFAULT_INDEX_TYPE).lower() == "hnsw":
+        print(
+            "  Index:    "
+            f"hnsw (m={max(8, int(args.hnsw_m))}, "
+            f"efC={max(max(8, int(args.hnsw_m)), int(args.hnsw_ef_construction))}, "
+            f"efS={max(1, int(args.hnsw_ef_search))})"
+        )
+    else:
+        print("  Index:    flatip")
     print()
 
     extensions = parse_formats(args.formats)
@@ -497,6 +603,10 @@ def main() -> None:
             batch_size=args.batch_size,
             mega_batch=args.mega_batch,
             extensions=extensions,
+            index_type=(args.index_type or DEFAULT_INDEX_TYPE).lower(),
+            hnsw_m=max(8, int(args.hnsw_m)),
+            hnsw_ef_construction=max(max(8, int(args.hnsw_m)), int(args.hnsw_ef_construction)),
+            hnsw_ef_search=max(1, int(args.hnsw_ef_search)),
         )
     else:
         stats = incremental_update(
@@ -506,6 +616,12 @@ def main() -> None:
             batch_size=args.batch_size,
             mega_batch=args.mega_batch,
             extensions=extensions,
+            use_compaction=args.incremental_compaction,
+            compaction_batch=max(1, int(args.compaction_batch)),
+            index_type=(args.index_type or DEFAULT_INDEX_TYPE).lower(),
+            hnsw_m=max(8, int(args.hnsw_m)),
+            hnsw_ef_construction=max(max(8, int(args.hnsw_m)), int(args.hnsw_ef_construction)),
+            hnsw_ef_search=max(1, int(args.hnsw_ef_search)),
         )
 
     if not stats:

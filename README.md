@@ -45,6 +45,20 @@ Automatically scaffold content briefs with explicit evidence tracing:
 .venv-meru/bin/python3 _System/scripts/scaffold_content_brief_from_memory.py --topic "Your Topic"
 ```
 
+### ☸️ Integrated Dashboards (OpenClaw)
+The vault includes real-time visualization and management tools:
+
+1. **Brahman Darshanam (Web Dashboard)**:
+   - **Path**: `_System/openclaw/ANNAMAYA/brahman-darshanam/`
+   - **Launch**: `cd [PATH] && npm install && npm run dev`
+   - **URL**: `http://localhost:5199`
+   - **Function**: Visualizes system health, file changes, and agent activity using the Pancha Kosha model.
+
+2. **Noesis (CLI/TUI)**:
+   - **Path**: `_System/openclaw/noesis/`
+   - **Launch**: `python3 -m noesis telemetry watch` (from root)
+   - **Function**: Unified CLI for system health (`noesis health`), temporal tracking (`noesis clock`), and live telemetry (`noesis telemetry watch`).
+
 ## Git Strategy
 
 This repository follows a **text-first, lean** approach:

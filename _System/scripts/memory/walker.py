@@ -44,7 +44,7 @@ def walk_vault(
 def detect_islands(root: str | Path, mocs: List[str]) -> List[str]:
     """Find files with no inbound links from the root MOCs."""
     root = Path(root)
-    all_md = {Path(p).stem for _, p in walk_vault(root) if p.endswith('.md')}
+    all_md = {Path(p).stem for _, p in walk_vault(root, extensions={".md"})}
     linked = set()
     link_pattern = re.compile(r'\[\[([^\]|]+)(?:\|[^\]]+)?\]\]')
     
@@ -83,6 +83,30 @@ def get_moc_links(root: str | Path) -> Set[str]:
 
 _MOC_LINKS = None
 
+
+def _compute_prana_signals(rel_path, vault_root=None, text=None):
+    abs_path = os.path.join(vault_root or os.getcwd(), rel_path)
+    now = time.time()
+    age_days = 3650.0
+    try:
+        mtime = os.path.getmtime(abs_path)
+        age_days = max(0.0, (now - mtime) / 86400.0)
+    except Exception:
+        pass
+
+    body = str(text or "")
+    link_count = len(re.findall(r"\[\[[^\]]+\]\]", body))
+    link_signal = min(link_count / 8.0, 1.0)
+    recency_signal = 1.0 / (1.0 + (age_days / 30.0))
+    prana_score = (0.55 * link_signal) + (0.45 * recency_signal)
+
+    return {
+        "link_count": int(link_count),
+        "age_days": round(age_days, 3),
+        "recency_score": round(recency_signal, 4),
+        "prana_score": round(prana_score, 4),
+    }
+
 def build_meta(rel_path, heading, frontmatter, chunk_idx, vault_root=None, text=None, quality_score=1.0):
     global _MOC_LINKS
     if _MOC_LINKS is None:
@@ -114,6 +138,8 @@ def build_meta(rel_path, heading, frontmatter, chunk_idx, vault_root=None, text=
 
     # Day 5: Quality Signal Boost
     priority *= (0.5 + (quality_score * 0.5))
+    prana = _compute_prana_signals(rel_path, vault_root=vault_root, text=text)
+    priority *= (0.75 + (0.5 * prana["prana_score"]))
 
     meta = {
         "path": rel_path,
@@ -121,6 +147,10 @@ def build_meta(rel_path, heading, frontmatter, chunk_idx, vault_root=None, text=
         "is_archive": is_archive,
         "priority": round(priority, 3),
         "quality_score": quality_score,
+        "prana_score": prana["prana_score"],
+        "recency_score": prana["recency_score"],
+        "age_days": prana["age_days"],
+        "link_count": prana["link_count"],
         "domain": infer_domain(rel_path),
         "heading": heading,
         "frontmatter_tags": [str(t) for t in tags],

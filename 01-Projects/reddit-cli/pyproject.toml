@@ -3,9 +3,9 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "reddit-cli"
+name = "reddit-flux"
 version = "0.1.0"
-description = "Deterministic Reddit CLI for read and publish workflows"
+description = "Reddit Flux: deterministic Reddit CLI for public reads and OAuth-powered publishing workflows"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{ name = "Sheshnarayan Iyer" }]
