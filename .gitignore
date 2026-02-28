@@ -258,4 +258,11 @@ _System/openclaw/workspace-noesis-vishwakarma/MANOMAYA/archives/v2_integration_f
 _System/openclaw/workspace-noesis-vishwakarma/MANOMAYA/archives/v2_integration_final_snapshot/workspace
 _System/openclaw/workspace-noesis-vishwakarma/MANOMAYA/archives/v2_integration_final_snapshot/workspace/sources/selemene-engine
 _System/openclaw/workspace-noesis-vishwakarma/sources/selemene-engine
+
+# === GENERATED PIPELINE OUTPUTS (DIRTY-TREE HYGIENE) ===
+processing/x-bookmarks/.state/
+processing/x-bookmarks/raw/
+processing/x-bookmarks/reports/
+processing/x-bookmarks/items/
+01-Projects/reddit-cli/.readme-gen.json
 _System/openclaw/workspace-sadhana-orchestrator

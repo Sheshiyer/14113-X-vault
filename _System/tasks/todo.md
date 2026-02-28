@@ -454,3 +454,28 @@
   - audit comment posted: `#64` comment `3977688942`
   - issue `#64` closed
   - project item status set to `Done`.
+
+## ⚙️ Phase II Repo Hygiene — Issue #68 (2026-03-01)
+- [x] Capture full dirty-tree snapshot from `git status --porcelain=v1`
+- [x] Classify dirty entries into `archive-move`, `feature/manual`, and `generated/runtime` buckets
+- [x] Produce inventory artifact with non-destructive remediation sequence
+- [x] Set issue `#68` execution status to `In Progress` in project board
+- [x] Execute archive-move reconciliation strategy (validate intended move pairs)
+- [x] Propose/apply `.gitignore` rules for recurring generated paths after intent validation
+- [ ] Reduce dirty set with scoped commits/staging plan per concern stream
+- [ ] Verify repo hygiene end-state (`clean` or explicit approved baseline set)
+
+### Review (Issue #68)
+- Dirty-tree snapshot captured at `/tmp/dirty_status_68.txt` with `136` entries:
+  - `76` deleted tracked, `18` modified tracked, `42` untracked.
+- Inventory report created:
+  - `_System/tasks/dirty_tree_inventory_2026-03-01.md`.
+- Current distribution indicates three dominant streams:
+  - archive-move drift (`01-Projects/...` deletes + `04-Archives/...` adds),
+  - active feature/manual WIP (`_System/...`, `reddit-cli`, docs),
+  - generated/runtime drift (`processing/x-bookmarks/...`, runtime metadata artifacts).
+- Archive move verification:
+  - `76/76` deleted tracked paths have corresponding files in `04-Archives/...` (missing mappings: `0`).
+- Hygiene patch applied to root `.gitignore` for generated bookmark/reddit artifacts.
+- Dirty-set reduction after ignore patch:
+  - `136 -> 115` entries (`42 -> 19` untracked).
