@@ -27,6 +27,14 @@ def _size_mb(path: str) -> float:
     return os.path.getsize(path) / (1024 * 1024) if os.path.exists(path) else 0.0
 
 
+def _count_jsonl_lines(path: str) -> int:
+    count = 0
+    with open(path, "rb") as f:
+        for _ in f:
+            count += 1
+    return count
+
+
 def _age_str(ts_iso: str) -> str:
     try:
         dt = datetime.fromisoformat(ts_iso)
@@ -82,6 +90,8 @@ def health_check(output_dir: str = _DEFAULT_OUTPUT) -> dict:
     # --- FAISS consistency ---
     faiss_path = files["vault.faiss"]
     meta_path = files["meta.json"]
+    meta_jsonl_path = os.path.join(output_dir, "meta.jsonl")
+    meta_offsets_path = os.path.join(output_dir, "meta.offsets.npy")
     if os.path.exists(faiss_path) and os.path.exists(meta_path):
         try:
             import faiss
@@ -89,13 +99,23 @@ def health_check(output_dir: str = _DEFAULT_OUTPUT) -> dict:
             report["faiss_vectors"] = index.ntotal
             report["faiss_dim"] = index.d
 
-            with open(meta_path) as f:
-                meta = json.load(f)
-            report["meta_records"] = len(meta)
+            if os.path.exists(meta_offsets_path):
+                import numpy as np
+                offsets = np.load(meta_offsets_path, mmap_mode="r")
+                report["meta_records"] = max(int(offsets.shape[0]) - 1, 0)
+                report["meta_records_source"] = "meta.offsets.npy"
+            elif os.path.exists(meta_jsonl_path):
+                report["meta_records"] = _count_jsonl_lines(meta_jsonl_path)
+                report["meta_records_source"] = "meta.jsonl"
+            else:
+                with open(meta_path) as f:
+                    meta = json.load(f)
+                report["meta_records"] = len(meta)
+                report["meta_records_source"] = "meta.json"
 
-            if index.ntotal != len(meta):
+            if index.ntotal != report["meta_records"]:
                 report["issues"].append(
-                    f"FAISS/meta mismatch: {index.ntotal} vectors vs {len(meta)} records"
+                    f"FAISS/meta mismatch: {index.ntotal} vectors vs {report['meta_records']} records"
                 )
                 report["status"] = "WARNING"
         except Exception as e:
@@ -104,8 +124,13 @@ def health_check(output_dir: str = _DEFAULT_OUTPUT) -> dict:
 
     # --- Checkpoint (interrupted build?) ---
     ckpt_path = os.path.join(output_dir, "index_checkpoint.json")
+    ckpt_journal_path = f"{ckpt_path}.journal"
     if os.path.exists(ckpt_path):
         report["issues"].append("Checkpoint file exists — interrupted build? Use --resume")
+        if report["status"] == "OK":
+            report["status"] = "WARNING"
+    if os.path.exists(ckpt_journal_path):
+        report["issues"].append("Checkpoint journal exists — resume residue detected")
         if report["status"] == "OK":
             report["status"] = "WARNING"
 
@@ -150,17 +175,21 @@ def print_report(report: dict) -> None:
 
     # File sizes
     print(f"\n  Files:")
-    for name in ["vault.faiss", "meta.json", "embeddings.npy", "file_hashes.json"]:
+    for name in ["vault.faiss", "meta.json", "meta.jsonl", "meta.offsets.npy", "embeddings.npy", "file_hashes.json"]:
         info = report.get(name, {})
         if info.get("exists"):
             print(f"    {name:20s} {info['size_mb']:>8.1f} MB")
-        else:
+        elif name in {"vault.faiss", "meta.json", "embeddings.npy", "file_hashes.json"}:
             print(f"    {name:20s}  MISSING")
 
     # FAISS consistency
     if "faiss_vectors" in report:
         match = "✓" if report.get("faiss_vectors") == report.get("meta_records") else "✗ MISMATCH"
-        print(f"\n  FAISS: {report['faiss_vectors']:,} vectors, dim={report.get('faiss_dim', '?')}  {match}")
+        src = report.get("meta_records_source", "meta")
+        print(
+            f"\n  FAISS: {report['faiss_vectors']:,} vectors, dim={report.get('faiss_dim', '?')}, "
+            f"meta={report.get('meta_records', 0):,} ({src})  {match}"
+        )
 
     # Issues
     issues = report.get("issues", [])

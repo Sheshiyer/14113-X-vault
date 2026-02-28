@@ -425,3 +425,32 @@
   - query latency p95: `0.330ms` (k=10, 200 samples), max `4.837ms`
   - max RSS: `3,574,775,808` bytes, swaps: `0`
   - issue remains `In Progress` pending explicitly agreed 10M+ closure envelope.
+
+## ⚙️ Phase III Final Audit — Issue #64 (2026-03-01)
+- [x] Capture production index parity metrics (`faiss/meta/jsonl/offsets/embeddings`)
+- [x] Clear stale build artifacts (`index_checkpoint.json`, `shards/`) for production-ready health state
+- [x] Run retrieval latency profile for `vector`, `hybrid`, and `time-travel` query paths
+- [x] Record memory envelope for query/runtime audit commands
+- [x] Publish consolidated audit comment on issue `#64` with evidence + residual risks
+- [x] Set project/issue status for `#64` based on strict acceptance outcome
+
+### Review (Issue #64)
+- Index parity snapshots (`/tmp/meru_final_audit_parity.json`, `/tmp/meru_final_audit_parity_post.json`) confirm strict alignment:
+  - `faiss_ntotal == emb_rows == offset_records == meta_jsonl_lines == 3,202,158`
+  - `index_type=IndexFlatIP`, `dim=384`.
+- Finalization cleanup completed:
+  - removed `index_checkpoint.json`, `shards/`, and `index_checkpoint.json.journal`
+  - production finalize log: `/tmp/meru_final_audit_finalize_postpatch.log`.
+- Health check now runs sidecar-first (no full `meta.json` load) and returns `status=OK`:
+  - report artifact: `/tmp/meru_final_audit_health.json`.
+- Retrieval latency benchmark executed (100 runs per mode) with no errors:
+  - report artifact: `/tmp/meru_final_audit_query_latency.json`.
+- Runtime memory envelope recorded via `/usr/bin/time -l`:
+  - parity scan max RSS: `2,811,510,784` bytes
+  - retrieval benchmark max RSS: `5,154,439,168` bytes
+  - retrieval benchmark peak memory footprint: `6,488,953,512` bytes
+  - timing artifact: `/tmp/meru_final_audit_query_latency.time`.
+- GitHub sync:
+  - audit comment posted: `#64` comment `3977688942`
+  - issue `#64` closed
+  - project item status set to `Done`.

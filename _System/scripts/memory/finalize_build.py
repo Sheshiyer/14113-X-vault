@@ -9,6 +9,7 @@ LOG_FILE = os.path.join(MEM_DIR, "build.log")
 STATS_FILE = os.path.join(MEM_DIR, "index_stats.json")
 SHARDS_DIR = os.path.join(MEM_DIR, "shards")
 CHECKPOINT = os.path.join(MEM_DIR, "index_checkpoint.json")
+CHECKPOINT_JOURNAL = f"{CHECKPOINT}.journal"
 
 def finalize():
     print("🚀 Finalizing Meru v3.0 Production Build...")
@@ -57,6 +58,9 @@ def finalize():
     if os.path.exists(CHECKPOINT):
         os.remove(CHECKPOINT)
         print("  - Deleted index_checkpoint.json")
+    if os.path.exists(CHECKPOINT_JOURNAL):
+        os.remove(CHECKPOINT_JOURNAL)
+        print("  - Deleted index_checkpoint.json.journal")
     
     print("\n🎉 Meru v3.0 is now officially in PRODUCTION.")
 
