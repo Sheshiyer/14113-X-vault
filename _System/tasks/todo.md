@@ -491,3 +491,30 @@
 - GitHub sync:
   - issue `#68` closed
   - project item status set to `Done`.
+
+## ⚙️ Phase II Perf Continuation — Issues #49 / #52 / #47 (2026-03-01)
+- [ ] Run >10M-vector HNSW benchmark envelope for `#49` (latency + memory + build/runtime stats)
+- [x] Evaluate closure viability for `#49` against sub-10ms target at high density
+- [x] Run hardware capability audit for `#52` (GPU discovery + multi-device encode viability)
+- [ ] Re-run representative full-rebuild profile for `#47` on current code baseline
+- [x] Publish consolidated evidence comments on `#49`, `#52`, `#47`
+- [x] Update project statuses based on strict acceptance outcomes
+
+### Review (Issues #49 / #52 / #47)
+- `#52` hardware probe completed (`/tmp/meru_encode_hw_probe.json`):
+  - Python `3.14.3`, CUDA devices `0`, MPS devices `1`.
+  - `encode-backend=multi` and `auto` resolve to single-device path on this host.
+  - Acceptance remains blocked on multi-device-capable hardware/runtime.
+- `#49` closure viability evaluated with consolidated artifact (`/tmp/meru_hnsw_49_closure_summary_20260301.json`):
+  - sub-10ms latency satisfied on completed local envelopes (50k/100k and prior 1M artifact),
+  - but >10M single-wave local evidence is not feasible on this 24 GiB host (projected RSS > memory envelope).
+  - issue kept `In Progress` pending segmented/distributed or higher-memory >10M run evidence.
+- `#47` rerun attempts were started on representative corpora but interrupted before a new serial+process pair completed.
+  - last reliable full-rebuild evidence remains from prior wave: `1.12x` speedup (`253.68s -> 226.62s`) vs required `>=4x`.
+  - issue kept `In Progress`; encode-stage throughput remains dominant blocker.
+- GitHub issue evidence comments posted:
+  - `#49`: `issuecomment-3977891993`
+  - `#52`: `issuecomment-3977891992`
+  - `#47`: `issuecomment-3977891996`
+- Project status verification:
+  - all three items (`#49/#52/#47`) confirmed as `In Progress` in project `14113-X Vault Meru Integration Roadmap (Phase I-III)`.
