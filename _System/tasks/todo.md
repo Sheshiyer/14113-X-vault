@@ -463,7 +463,7 @@
 - [x] Execute archive-move reconciliation strategy (validate intended move pairs)
 - [x] Propose/apply `.gitignore` rules for recurring generated paths after intent validation
 - [x] Reduce dirty set with scoped commits/staging plan per concern stream
-- [ ] Verify repo hygiene end-state (`clean` or explicit approved baseline set)
+- [x] Verify repo hygiene end-state (`clean` or explicit approved baseline set)
 
 ### Review (Issue #68)
 - Dirty-tree snapshot captured at `/tmp/dirty_status_68.txt` with `136` entries:
@@ -484,3 +484,10 @@
 - Dirty-tree progression after archive reconciliation:
   - `136 -> 115 -> 34` entries
   - current split: `18` modified, `16` untracked, `0` deleted.
+- Final cleanup stream committed:
+  - `50f9e9e` (remaining WIP baseline checkpoint).
+- End-state verification:
+  - `git status --short` is empty (clean worktree).
+- GitHub sync:
+  - issue `#68` closed
+  - project item status set to `Done`.
