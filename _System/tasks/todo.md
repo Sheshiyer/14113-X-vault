@@ -462,7 +462,7 @@
 - [x] Set issue `#68` execution status to `In Progress` in project board
 - [x] Execute archive-move reconciliation strategy (validate intended move pairs)
 - [x] Propose/apply `.gitignore` rules for recurring generated paths after intent validation
-- [ ] Reduce dirty set with scoped commits/staging plan per concern stream
+- [x] Reduce dirty set with scoped commits/staging plan per concern stream
 - [ ] Verify repo hygiene end-state (`clean` or explicit approved baseline set)
 
 ### Review (Issue #68)
@@ -479,3 +479,8 @@
 - Hygiene patch applied to root `.gitignore` for generated bookmark/reddit artifacts.
 - Dirty-set reduction after ignore patch:
   - `136 -> 115` entries (`42 -> 19` untracked).
+- Scoped archive reconciliation commit pushed:
+  - `c8ddd6f` (`76` move-only renames into `04-Archives`).
+- Dirty-tree progression after archive reconciliation:
+  - `136 -> 115 -> 34` entries
+  - current split: `18` modified, `16` untracked, `0` deleted.
