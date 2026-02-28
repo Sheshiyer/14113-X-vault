@@ -399,3 +399,29 @@
   - API smoke (`#61`): local uvicorn health + search passed (`ok=true`, non-empty hit set).
   - Time-travel smoke (`#62`): date-windowed hits include `modified_at` and chronological ordering.
   - Bridge smoke (`#63`): exported `/tmp/meru_smart_bridge.json` with `1,500` notes, `384`-dim vectors, and `6` neighbors/note.
+
+## ⚙️ Phase II Closure Push — Perf Track (2026-03-01)
+- [x] Run production-representative memory-aware assembly benchmark for `#54` at `3.2M` chunk envelope
+- [x] Run `100+` incremental compaction cycle benchmark for `#53`
+- [x] Run expanded HNSW latency benchmark for `#49` at `1,000,000` row envelope
+- [x] Close `#54` and `#53` with benchmark evidence
+- [x] Move `#64` status to `In Progress` after `#54` dependency closure
+- [x] Post updated perf evidence to `#49` and keep status `In Progress` pending explicit 10M closure envelope
+
+### Review (Perf Track Closure Push)
+- `#54` closure evidence (`/tmp/meru_asm_3m_run.log`):
+  - resume-only assembly on synthetic `32 x 100,000 = 3,200,000` chunks
+  - peak RSS checkpoints during merge: `~2.9GB -> ~5.5GB`
+  - `/usr/bin/time -l` max RSS: `5,763,366,912` bytes, swaps: `0`, exit: `0`
+  - issue closed and project status moved to `Done`.
+- `#53` closure evidence (`/tmp/meru_inc_120/benchmark_report.json`):
+  - `120` incremental compaction runs completed
+  - baseline p95 latency: `1.046ms`
+  - final p95 latency after 120 runs: `1.163ms`
+  - final `ntotal` remained stable at `20,000`
+  - issue closed and project status moved to `Done`.
+- `#49` expanded evidence (`/tmp/meru_hnsw_1m_report.json`, `/tmp/meru_hnsw_1m.log`):
+  - `IndexHNSWFlat` on `1,000,000` rows, `m=32`, `efC=200`, `efS=64`
+  - query latency p95: `0.330ms` (k=10, 200 samples), max `4.837ms`
+  - max RSS: `3,574,775,808` bytes, swaps: `0`
+  - issue remains `In Progress` pending explicitly agreed 10M+ closure envelope.
