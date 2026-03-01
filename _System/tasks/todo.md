@@ -540,5 +540,38 @@
   - `#66`: `issuecomment-3979267307` (Phase II backlog timeline migration record)
 - Project board (`/users/Sheshiyer/projects/3`) synchronized:
   - `#52` status `Done` (closed plan track)
-  - `#69` status `In Progress`, Phase `Phase II`, Module `Scale Runtime`
-  - `#70` status `Todo`, Phase `Phase II`, Module `Scale Runtime`, `Depends On=#69`
+  - `#69` status `Done` (implemented and closed), Phase `Phase II`, Module `Scale Runtime`
+  - `#70` status `In Progress`, Phase `Phase II`, Module `Scale Runtime`, `Depends On=#69`
+
+## ⚙️ Phase II Execution — Issue #69 (2026-03-01)
+- [x] Add stable `content_hash` emission at chunk metadata generation point
+- [x] Implement persistent local embedding cache store (`sqlite`) keyed by `content_hash`
+- [x] Integrate cache lookup/write path into `index_full.py` encode stage with hit/miss stats
+- [x] Add CLI controls for cache enable/path/warm-start and expose in `index_stats.json`
+- [x] Verify compile/runtime on `.venv-meru` for updated scripts
+- [x] Run bounded two-pass local benchmark to prove cache hit behavior and reduced encode work
+- [x] Post issue `#69` evidence update + update dependent issue timeline if needed
+
+### Review (Issue #69)
+- Code changes:
+  - `_System/scripts/memory/embedding_cache.py` (new sqlite cache module, bulk get/put + warm-start)
+  - `_System/scripts/memory/walker.py` (`content_hash` added at metadata generation)
+  - `_System/scripts/memory/index_full.py` (cache-integrated encode path + CLI + stats)
+- Verification:
+  - compile check passed on `.venv-meru` for all modified scripts.
+  - `index_full.py --help` shows new cache flags.
+- Benchmark evidence (bounded local two-pass, same corpus/output):
+  - baseline (`--no-embed-cache`): `29.0s`
+  - cached (`--embed-cache --embed-cache-warm-start`): `4.3s`
+  - speedup: `6.744x`
+  - cache metrics: `hits=2400`, `misses=0`, `hit_rate=100%`, warm-loaded `2400`
+- Artifacts:
+  - `/tmp/issue69_benchmark_summary.json`
+  - `/tmp/issue69_stats_baseline.json`
+  - `/tmp/issue69_stats_cached.json`
+  - `/tmp/issue69_run_baseline.log`
+  - `/tmp/issue69_run_cached.log`
+- GitHub updates:
+  - `#69` implementation evidence: `issuecomment-3979301564`
+  - `#47` dependency unblock note: `issuecomment-3979301562`
+  - `#69` closed as completed.

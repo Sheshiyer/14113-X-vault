@@ -53,6 +53,7 @@ from embedder import (
     stop_encoding_backend,
 )
 from incremental import save_file_mtimes, collect_mtimes
+from embedding_cache import EmbeddingCache, hash_chunk_text
 from batch_processor import (
     ErrorAggregator,
     Checkpoint,
@@ -200,6 +201,10 @@ def index_full(
     encode_devices: str = "auto",
     encode_cpu_workers: int = DEFAULT_ENCODE_CPU_WORKERS,
     encode_chunk_size: int | None = None,
+    embed_cache_enabled: bool = True,
+    embed_cache_path: str | None = None,
+    embed_cache_warm_start: bool = True,
+    embed_cache_warm_limit: int = 0,
     assembly_batch: int = _DEFAULT_ASSEMBLY_BATCH,
     index_type: str = DEFAULT_INDEX_TYPE,
     hnsw_m: int = DEFAULT_HNSW_M,
@@ -232,6 +237,14 @@ def index_full(
         CPU worker count used when auto-resolving CPU encoding devices.
     encode_chunk_size : int or None
         Optional sentence-transformers chunk size for multi-process encode.
+    embed_cache_enabled : bool
+        Enable persistent embedding cache keyed by chunk content hash.
+    embed_cache_path : str or None
+        Optional path to sqlite cache DB (defaults to <output_dir>/embedding_cache.sqlite3).
+    embed_cache_warm_start : bool
+        If True and cache is empty, prime from existing meta+embeddings in output_dir.
+    embed_cache_warm_limit : int
+        Optional max records to warm from existing index (0 = no limit).
     assembly_batch : int
         Chunk count per FAISS/memmap add operation during shard assembly.
     index_type : str
@@ -301,6 +314,12 @@ def index_full(
     resolved_encode_backend = encode_backend
     resolved_encode_devices: list[str] = []
     encode_backend_note: str | None = None
+    resolved_embed_cache_enabled = False
+    resolved_embed_cache_path: str | None = None
+    embed_cache_hits = 0
+    embed_cache_misses = 0
+    embed_cache_stored = 0
+    embed_cache_warm_stats: dict[str, int] | None = None
     extraction_seconds = 0.0
     extraction_files = 0
     extraction_chunks = 0
@@ -363,6 +382,46 @@ def index_full(
         )
         print(f"  Loading model: {model_name} (device={model_device})")
         chunk_deduper = ChunkDeduplicator()
+        embedding_cache: EmbeddingCache | None = None
+        if embed_cache_enabled:
+            try:
+                resolved_embed_cache_path = embed_cache_path or os.path.join(
+                    output_dir, "embedding_cache.sqlite3"
+                )
+                embedding_cache = EmbeddingCache(
+                    path=resolved_embed_cache_path,
+                    embedding_dim=EMBEDDING_DIM,
+                )
+                resolved_embed_cache_enabled = True
+                print(f"  Embedding cache: enabled ({resolved_embed_cache_path})")
+                if embed_cache_warm_start and embedding_cache.count_entries() == 0:
+                    existing_meta_path = os.path.join(output_dir, "meta.json")
+                    existing_emb_path = os.path.join(output_dir, "embeddings.npy")
+                    if os.path.exists(existing_meta_path) and os.path.exists(existing_emb_path):
+                        warm_limit = (
+                            int(embed_cache_warm_limit)
+                            if int(embed_cache_warm_limit) > 0
+                            else None
+                        )
+                        print("  Embedding cache warm-start: priming from existing index...")
+                        embed_cache_warm_stats = embedding_cache.warm_from_existing_index(
+                            meta_path=existing_meta_path,
+                            embeddings_path=existing_emb_path,
+                            limit=warm_limit,
+                        )
+                        print(
+                            "  Embedding cache warm-start: "
+                            f"loaded={embed_cache_warm_stats.get('records_loaded', 0):,} "
+                            f"seen={embed_cache_warm_stats.get('records_seen', 0):,}"
+                        )
+            except Exception as exc:
+                resolved_embed_cache_enabled = False
+                embedding_cache = None
+                resolved_embed_cache_path = None
+                print(
+                    "  Embedding cache note: "
+                    f"disabled ({type(exc).__name__}: {exc})"
+                )
 
         with DistributedExtractionCoordinator(
             backend=extraction_backend,
@@ -441,6 +500,11 @@ def index_full(
                                 dedupe_source = str(meta_item.get("text", ""))
                                 if chunk_deduper.is_duplicate(dedupe_source):
                                     continue
+                                if dedupe_source:
+                                    meta_item["content_hash"] = str(
+                                        meta_item.get("content_hash")
+                                        or hash_chunk_text(dedupe_source)
+                                    )
                                 dedup_texts.append(
                                     prepend_context(
                                         dedupe_source,
@@ -464,15 +528,67 @@ def index_full(
                         extraction_seconds += time.monotonic() - extract_t0
 
                         if batch_texts:
-                            # --- Encode this batch ---
-                            batch_embs = encode_chunked(
-                                model,
-                                batch_texts,
-                                mega_batch=mega_batch,
-                                batch_size=batch_size,
-                                pool=encode_pool,
-                                chunk_size=encode_chunk_size,
-                            )
+                            # --- Encode this batch (with optional cache hits) ---
+                            if embedding_cache is not None:
+                                batch_hashes: list[str] = []
+                                for meta_item in batch_meta:
+                                    text_value = str(meta_item.get("text", ""))
+                                    content_hash = str(
+                                        meta_item.get("content_hash")
+                                        or hash_chunk_text(text_value)
+                                    )
+                                    meta_item["content_hash"] = content_hash
+                                    batch_hashes.append(content_hash)
+
+                                cached_embeddings = embedding_cache.get_many(batch_hashes)
+                                batch_embs = np.empty(
+                                    (len(batch_texts), EMBEDDING_DIM),
+                                    dtype=np.float32,
+                                )
+                                missing_hashes: list[str] = []
+                                missing_texts: list[str] = []
+                                missing_positions: dict[str, list[int]] = {}
+
+                                for idx, content_hash in enumerate(batch_hashes):
+                                    cached = cached_embeddings.get(content_hash)
+                                    if cached is not None and int(cached.shape[0]) == EMBEDDING_DIM:
+                                        batch_embs[idx] = cached
+                                        embed_cache_hits += 1
+                                        continue
+                                    embed_cache_misses += 1
+                                    pos_list = missing_positions.get(content_hash)
+                                    if pos_list is None:
+                                        missing_positions[content_hash] = [idx]
+                                        missing_hashes.append(content_hash)
+                                        missing_texts.append(batch_texts[idx])
+                                    else:
+                                        pos_list.append(idx)
+
+                                if missing_texts:
+                                    missing_embs = encode_chunked(
+                                        model,
+                                        missing_texts,
+                                        mega_batch=mega_batch,
+                                        batch_size=batch_size,
+                                        pool=encode_pool,
+                                        chunk_size=encode_chunk_size,
+                                    )
+                                    for midx, content_hash in enumerate(missing_hashes):
+                                        emb = np.asarray(missing_embs[midx], dtype=np.float32)
+                                        for pos in missing_positions.get(content_hash, []):
+                                            batch_embs[pos] = emb
+                                    embed_cache_stored += embedding_cache.put_many(
+                                        zip(missing_hashes, missing_embs, strict=False)
+                                    )
+                            else:
+                                batch_embs = encode_chunked(
+                                    model,
+                                    batch_texts,
+                                    mega_batch=mega_batch,
+                                    batch_size=batch_size,
+                                    pool=encode_pool,
+                                    chunk_size=encode_chunk_size,
+                                )
 
                             # --- Save shard to disk ---
                             para_tag = para_name.replace("/", "_").replace(" ", "_")
@@ -507,6 +623,8 @@ def index_full(
                             checkpoint.save()
             finally:
                 stop_encoding_backend(model, encode_pool)
+                if embedding_cache is not None:
+                    embedding_cache.close()
 
         if extraction_seconds > 0:
             print(
@@ -698,6 +816,23 @@ def index_full(
             "encoding_backend": resolved_encode_backend,
             "encoding_devices": resolved_encode_devices,
             "encoding_model_device": model_device if "model_device" in locals() else "cpu",
+            "embedding_cache_enabled": resolved_embed_cache_enabled,
+            "embedding_cache_path": resolved_embed_cache_path if resolved_embed_cache_enabled else None,
+            "embedding_cache_hits": int(embed_cache_hits),
+            "embedding_cache_misses": int(embed_cache_misses),
+            "embedding_cache_stored": int(embed_cache_stored),
+            "embedding_cache_hit_rate": (
+                round(embed_cache_hits / (embed_cache_hits + embed_cache_misses), 4)
+                if (embed_cache_hits + embed_cache_misses) > 0
+                else None
+            ),
+            "embedding_cache_warm_start_enabled": bool(embed_cache_warm_start),
+            "embedding_cache_warm_records_seen": (
+                int((embed_cache_warm_stats or {}).get("records_seen", 0))
+            ),
+            "embedding_cache_warm_records_loaded": (
+                int((embed_cache_warm_stats or {}).get("records_loaded", 0))
+            ),
             "assembly_batch": max(1, int(assembly_batch)),
             "index_type": (index_type or DEFAULT_INDEX_TYPE).lower(),
             "hnsw_m": int(max(8, hnsw_m)) if (index_type or "").lower() == "hnsw" else None,
@@ -747,6 +882,18 @@ def index_full(
         extra_encode += f" ({','.join(resolved_encode_devices)})"
     print(f"  Extraction:      {extra_extract}")
     print(f"  Encoding:        {extra_encode}")
+    if resolved_embed_cache_enabled:
+        total_cache_lookups = embed_cache_hits + embed_cache_misses
+        hit_rate = (
+            (embed_cache_hits / total_cache_lookups) * 100.0
+            if total_cache_lookups > 0
+            else 0.0
+        )
+        print(
+            "  Embed cache:     "
+            f"hits={embed_cache_hits:,} misses={embed_cache_misses:,} "
+            f"stored={embed_cache_stored:,} hit_rate={hit_rate:.1f}%"
+        )
     print(f"  Total time:      {total_time:.1f}s")
     print(f"{'=' * 55}")
 
@@ -817,6 +964,29 @@ def parse_args() -> argparse.Namespace:
         help="Optional sentence-transformers chunk_size for multi-process encoding (0 disables)",
     )
     parser.add_argument(
+        "--embed-cache",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Enable persistent local embedding cache keyed by content hash",
+    )
+    parser.add_argument(
+        "--embed-cache-path",
+        default="",
+        help="Optional sqlite path for embedding cache (default: <output-dir>/embedding_cache.sqlite3)",
+    )
+    parser.add_argument(
+        "--embed-cache-warm-start",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Prime empty cache from existing meta+embeddings in output dir before indexing",
+    )
+    parser.add_argument(
+        "--embed-cache-warm-limit",
+        type=int,
+        default=0,
+        help="Optional max records to warm from existing index (0 = no limit)",
+    )
+    parser.add_argument(
         "--assembly-batch",
         type=int,
         default=_DEFAULT_ASSEMBLY_BATCH,
@@ -870,6 +1040,17 @@ def main() -> None:
         f"{args.encode_backend} (devices={args.encode_devices}, cpu_workers={args.encode_cpu_workers}, "
         f"chunk_size={args.encode_chunk_size if args.encode_chunk_size > 0 else 'auto'})"
     )
+    cache_path_display = (
+        args.embed_cache_path
+        if str(args.embed_cache_path).strip()
+        else os.path.join(args.output_dir, "embedding_cache.sqlite3")
+    )
+    print(
+        "  Cache:    "
+        f"{'enabled' if args.embed_cache else 'disabled'} "
+        f"(path={cache_path_display}, warm_start={args.embed_cache_warm_start}, "
+        f"warm_limit={args.embed_cache_warm_limit if args.embed_cache_warm_limit > 0 else 'all'})"
+    )
     print(f"  Assemble: batch={max(1, int(args.assembly_batch))}")
     if (args.index_type or DEFAULT_INDEX_TYPE).lower() == "hnsw":
         print(
@@ -899,6 +1080,10 @@ def main() -> None:
         encode_devices=args.encode_devices,
         encode_cpu_workers=args.encode_cpu_workers,
         encode_chunk_size=args.encode_chunk_size if args.encode_chunk_size > 0 else None,
+        embed_cache_enabled=bool(args.embed_cache),
+        embed_cache_path=str(args.embed_cache_path).strip() or None,
+        embed_cache_warm_start=bool(args.embed_cache_warm_start),
+        embed_cache_warm_limit=max(0, int(args.embed_cache_warm_limit)),
         assembly_batch=max(1, int(args.assembly_batch)),
         index_type=(args.index_type or DEFAULT_INDEX_TYPE).lower(),
         hnsw_m=max(8, int(args.hnsw_m)),

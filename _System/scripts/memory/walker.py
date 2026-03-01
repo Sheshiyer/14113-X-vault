@@ -2,6 +2,7 @@
 walker.py — File walker and graph analysis for PARA Vault.
 """
 from __future__ import annotations
+import hashlib
 import os, time, sys, re
 from pathlib import Path
 from typing import Generator, List, Set
@@ -158,7 +159,9 @@ def build_meta(rel_path, heading, frontmatter, chunk_idx, vault_root=None, text=
         "enneagram_uuid": f"E{para[0]}{len(rel_path)}"
     }
     if text:
-        meta["text"] = text
+        text_str = str(text)
+        meta["text"] = text_str
+        meta["content_hash"] = hashlib.sha256(text_str.encode("utf-8")).hexdigest()
     return meta
 
 def safe_read(path):
