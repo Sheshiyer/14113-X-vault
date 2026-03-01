@@ -647,3 +647,28 @@
 - GitHub sync:
   - `#70` Wave 2 evidence comment: `issuecomment-3979352512`
   - `#49` dependency progress comment: `issuecomment-3979352510`
+
+## ⚙️ Phase II Closure Push — Issues #70 / #49 / #47 (2026-03-01)
+- [x] Run denser GT10M shard-router benchmark wave for `#70` with warm latency + memory evidence
+- [x] Re-evaluate `#70` acceptance against issue criteria and close if all gates are satisfied
+- [x] Re-evaluate `#49` acceptance using combined HNSW + sharded >10M evidence and close if gate is satisfied
+- [x] Publish explicit status/timeline update for `#47` with next executable closure path
+- [x] Sync GitHub issue comments + project statuses and record artifact links in this tracker
+
+### Review (Issues #70 / #49 / #47)
+- Dense GT10M local benchmark artifacts:
+  - script: `/tmp/issue70_gt10m_dense_harness.py`
+  - harness output: `/tmp/issue70_gt10m_dense_harness.log`
+  - summary: `/tmp/issue70_gt10m_dense_summary.json`
+  - CLI output: `/tmp/issue70_gt10m_dense_cli_query.json`
+  - runtime/memory: `/tmp/issue70_gt10m_dense_time.log`
+- Measured dense-wave evidence:
+  - `total_chunks_logical = 10,300,000`
+  - `materialized_records = 500,000` (`300,000` active routed shard)
+  - `_meta_id` threshold check: `min=10,000,074`, `max=10,299,320`, `all_results_above_10m=true`
+  - warm latency (`120` runs): `p50=8.178ms`, `p95=9.623ms`, `p99=9.799ms`
+  - `/usr/bin/time -l`: max RSS `3,613,589,504` bytes; peak footprint `5,984,080,216` bytes
+- GitHub sync:
+  - `#70` closure comment: `issuecomment-3979373625` (issue closed)
+  - `#49` closure comment: `issuecomment-3979374160` (issue closed)
+  - `#47` status/timeline update: `issuecomment-3979374908` (issue remains `In Progress`)
