@@ -162,8 +162,9 @@ def rank_routes(
     buckets: list[dict],
     unit_centroids: np.ndarray,
     top_k: int,
+    model=None,
 ) -> list[dict]:
-    model = _sentence_transformer_cls()(MODEL_NAME)
+    model = model or _sentence_transformer_cls()(MODEL_NAME)
     query_vec = encode_query(model, text)
     q = np.asarray(query_vec[0], dtype=np.float32)
     q_norm = float(np.linalg.norm(q))

@@ -724,3 +724,21 @@
   - `/tmp/issue73_smoke.json`
 - Backlog sync:
   - `#67` checklist updated to mark tasks `1,3,5,6,7,8,9,12,14,17,18,22,25,26,27,28,29,30` complete.
+
+## ⚙️ Phase III Execution Wave 11 — Summary + API Surface Expansion (2026-03-01)
+- [x] Create child issues for `#67` tasks 10, 11, 19, and 20 with explicit acceptance criteria
+- [x] Add summary template modes (`research`, `executive`, `action`) in `knowledge_summary.py`
+- [x] Add provenance/source-trace blocks and paragraph citation mapping in `knowledge_summary.py`
+- [x] Add API endpoints for tag/folder recommendations in `semantic_search_api.py`
+- [x] Add API endpoints for summary and project-graph outputs in `semantic_search_api.py`
+- [x] Run compile + endpoint smoke validation and sync child issues + `#67` checklist
+
+### Review (Phase III Wave 11)
+- Child issues closed: `#74`, `#75`, `#76`, `#77`.
+- Backlog sync comment posted on `#67`: `issuecomment-3979511983`.
+- Verification artifacts:
+  - `/tmp/issue74_75_summary_smoke.json`
+  - `/tmp/issue76_77_api_smoke.json`
+  - `/tmp/issue76_folder_smoke.json`
+- Traceability correction:
+  - parallel issue creation returned non-sequential IDs; correction comments posted on `#75/#76/#77` to align task mapping.

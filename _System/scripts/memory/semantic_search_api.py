@@ -9,6 +9,7 @@ Issue #61 acceptance:
 from __future__ import annotations
 
 import os
+import sys
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Any
@@ -16,6 +17,17 @@ from typing import Any
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
+SCRIPTS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if SCRIPTS_DIR not in sys.path:
+    sys.path.insert(0, SCRIPTS_DIR)
+
+from export_project_dependency_graph import (  # type: ignore  # noqa: E402
+    build_edges,
+    build_nodes_and_centroids,
+    collect_project_samples,
+)
+from incremental import load_embeddings  # type: ignore  # noqa: E402
+from knowledge_summary import synthesize_summary  # type: ignore  # noqa: E402
 from query_vault import (
     _DEFAULT_HYBRID_ALPHA,
     _DEFAULT_HNSW_EF_SEARCH,
@@ -25,7 +37,13 @@ from query_vault import (
     load_metadata_lazy,
     run_query,
 )
+from recommend_tags_from_index import build_recommendations  # type: ignore  # noqa: E402
 from shard_router import load_sharded_router
+from suggest_semantic_folder_route import (  # type: ignore  # noqa: E402
+    build_move_plan,
+    collect_centroids,
+    rank_routes,
+)
 
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
@@ -64,6 +82,43 @@ class SearchResponse(BaseModel):
     duration_ms: float
     results: list[dict]
     info: dict
+
+
+class TagRecommendationRequest(BaseModel):
+    text: str = Field(..., min_length=1)
+    top_k: int = Field(default=20, ge=1, le=200)
+    search_mode: str = Field(default="hybrid", pattern="^(vector|hybrid|lexical)$")
+    min_domain_confidence: float = Field(default=0.0, ge=0.0, le=1.0)
+    min_enneagram_confidence: float = Field(default=0.0, ge=0.0, le=1.0)
+    min_tag_confidence: float = Field(default=0.0, ge=0.0, le=1.0)
+    abstain_mode: str = Field(default="report", pattern="^(off|report)$")
+
+
+class FolderRecommendationRequest(BaseModel):
+    text: str = Field(..., min_length=1)
+    top_k: int = Field(default=8, ge=1, le=50)
+    folder_depth: int = Field(default=2, ge=1, le=8)
+    min_chunks_per_folder: int = Field(default=8, ge=1, le=10000)
+    exclude_archives: bool = True
+    max_records: int | None = Field(default=None, ge=1)
+    current_path: str | None = None
+    dry_run_plan: bool = True
+
+
+class SummaryRequest(BaseModel):
+    topic: str = Field(..., min_length=1)
+    top_chunks: int = Field(default=12, ge=3, le=200)
+    search_mode: str = Field(default="hybrid", pattern="^(vector|hybrid|lexical)$")
+    exclude_archives: bool = True
+    template: str = Field(default="research", pattern="^(research|executive|action)$")
+
+
+class ProjectGraphRequest(BaseModel):
+    max_projects: int = Field(default=60, ge=2, le=500)
+    max_chunks_per_project: int = Field(default=64, ge=1, le=2000)
+    top_links_per_project: int = Field(default=5, ge=1, le=50)
+    min_similarity: float = Field(default=0.45, ge=0.0, le=1.0)
+    max_records: int | None = Field(default=None, ge=1)
 
 
 app = FastAPI(title="Meru Semantic Search API", version="1.0.0")
@@ -137,15 +192,23 @@ def health() -> dict:
     }
 
 
-@app.post("/search", response_model=SearchResponse)
-def search(req: SearchRequest) -> SearchResponse:
+def _ensure_service_ready(*, require_index: bool = False) -> None:
     if state.startup_error:
         raise HTTPException(status_code=503, detail=f"Service unavailable: {state.startup_error}")
     if state.meta is None:
         raise HTTPException(status_code=503, detail="Metadata is not loaded.")
-
-    if req.search_mode in {"vector", "hybrid"} and state.index is None:
+    if require_index and state.index is None:
         raise HTTPException(status_code=503, detail="FAISS index not loaded for vector/hybrid search.")
+
+
+def _run_search(req: SearchRequest | SummaryRequest | TagRecommendationRequest) -> tuple[list[dict], dict, float]:
+    search_mode = getattr(req, "search_mode", "hybrid")
+    require_index = search_mode in {"vector", "hybrid"}
+    _ensure_service_ready(require_index=require_index)
+
+    top_k = int(getattr(req, "top_k", getattr(req, "top_chunks", 8)))
+    query = str(getattr(req, "query", getattr(req, "topic", getattr(req, "text", ""))))
+    exclude_archives = bool(getattr(req, "exclude_archives", True))
 
     start = datetime.now()
     try:
@@ -153,23 +216,28 @@ def search(req: SearchRequest) -> SearchResponse:
             model=state.model,
             index=state.index,
             meta=state.meta,
-            query_text=req.query,
-            top_k=req.top_k,
-            para_filter=req.para,
-            domain_filter=req.domain,
-            format_filter=req.format,
-            exclude_archives=req.exclude_archives,
-            enneagram_filter=req.enneagram,
-            search_mode=req.search_mode,
-            use_priority=req.use_priority,
-            hybrid_alpha=req.hybrid_alpha,
-            expand_context=req.expand_context,
+            query_text=query,
+            top_k=top_k,
+            para_filter=getattr(req, "para", None),
+            domain_filter=getattr(req, "domain", None),
+            format_filter=getattr(req, "format", None),
+            exclude_archives=exclude_archives,
+            enneagram_filter=getattr(req, "enneagram", None),
+            search_mode=search_mode,
+            use_priority=bool(getattr(req, "use_priority", True)),
+            hybrid_alpha=float(getattr(req, "hybrid_alpha", _DEFAULT_HYBRID_ALPHA)),
+            expand_context=int(getattr(req, "expand_context", 0)),
             index_dir=state.index_dir,
         )
     except RuntimeError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
-
     elapsed_ms = (datetime.now() - start).total_seconds() * 1000.0
+    return results, info, elapsed_ms
+
+
+@app.post("/search", response_model=SearchResponse)
+def search(req: SearchRequest) -> SearchResponse:
+    results, info, elapsed_ms = _run_search(req)
 
     return SearchResponse(
         query=req.query,
@@ -196,3 +264,133 @@ def search_get(
         exclude_archives=exclude_archives,
     )
     return search(req).model_dump()
+
+
+@app.post("/recommend/tags")
+def recommend_tags(req: TagRecommendationRequest) -> dict:
+    results, info, elapsed_ms = _run_search(req)
+    recommendations = build_recommendations(
+        results,
+        min_domain_confidence=float(req.min_domain_confidence),
+        min_enneagram_confidence=float(req.min_enneagram_confidence),
+        min_tag_confidence=float(req.min_tag_confidence),
+        abstain_mode=req.abstain_mode,
+    )
+    return {
+        "input": {
+            "mode": "text",
+            "search_mode": req.search_mode,
+            "index_dir": os.path.abspath(state.index_dir),
+            "similar_chunks": len(results),
+            "duration_ms": round(elapsed_ms, 2),
+        },
+        "recommendations": _json_ready(recommendations),
+        "info": _json_ready(info),
+    }
+
+
+@app.post("/recommend/folders")
+def recommend_folders(req: FolderRecommendationRequest) -> dict:
+    _ensure_service_ready(require_index=False)
+    index_dir = os.path.abspath(state.index_dir)
+    try:
+        buckets, unit_centroids, records_scanned = collect_centroids(
+            index_dir,
+            depth=int(req.folder_depth),
+            min_chunks_per_bucket=int(req.min_chunks_per_folder),
+            max_records=req.max_records if req.max_records else None,
+            exclude_archives=bool(req.exclude_archives),
+        )
+        if unit_centroids.shape[0] == 0:
+            raise HTTPException(status_code=400, detail="No centroid buckets available; adjust folder-depth/min-chunks.")
+        recommendations = rank_routes(
+            req.text,
+            buckets=buckets,
+            unit_centroids=unit_centroids,
+            top_k=int(req.top_k),
+            model=state.model.get() if state.model else None,
+        )
+    except HTTPException:
+        raise
+    except RuntimeError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+    report = {
+        "summary": {
+            "mode": "text",
+            "index_dir": index_dir,
+            "records_scanned": int(records_scanned),
+            "candidate_folders": len(buckets),
+            "folder_depth": int(req.folder_depth),
+            "min_chunks_per_folder": int(req.min_chunks_per_folder),
+            "exclude_archives": bool(req.exclude_archives),
+        },
+        "recommendations": recommendations,
+    }
+    if req.dry_run_plan:
+        report["move_plan"] = build_move_plan(
+            recommendations,
+            current_path=req.current_path,
+            inferred_filename=None,
+        )
+    return _json_ready(report)
+
+
+@app.post("/summary")
+def summary(req: SummaryRequest) -> dict:
+    results, _, _ = _run_search(req)
+    summary_payload = synthesize_summary(req.topic, results, template=req.template)
+    return {
+        "topic": req.topic,
+        "template": summary_payload["template"],
+        "summary_paragraphs": summary_payload["summary_paragraphs"],
+        "summary_paragraph_count": summary_payload["summary_paragraph_count"],
+        "sections": summary_payload["sections"],
+        "source_traces": summary_payload["source_traces"],
+        "evidence": summary_payload["evidence"],
+        "retrieval": {
+            "search_mode": req.search_mode,
+            "top_chunks": len(results),
+            "index_dir": os.path.abspath(state.index_dir),
+            "exclude_archives": bool(req.exclude_archives),
+        },
+    }
+
+
+@app.post("/graph/projects")
+def project_graph(req: ProjectGraphRequest) -> dict:
+    _ensure_service_ready(require_index=False)
+    index_dir = os.path.abspath(state.index_dir)
+    emb_path = os.path.join(index_dir, "embeddings.npy")
+    if not os.path.exists(emb_path):
+        raise HTTPException(status_code=503, detail=f"embeddings.npy not found in {index_dir}")
+
+    try:
+        project_rows = collect_project_samples(
+            index_dir,
+            max_projects=max(2, int(req.max_projects)),
+            max_chunks_per_project=max(1, int(req.max_chunks_per_project)),
+            max_records=req.max_records if req.max_records else None,
+        )
+        embeddings = load_embeddings(emb_path, expected_rows=None)
+        nodes, unit_vecs = build_nodes_and_centroids(project_rows, embeddings)
+        edges = build_edges(
+            nodes,
+            unit_vecs,
+            min_similarity=float(req.min_similarity),
+            top_links_per_project=max(1, int(req.top_links_per_project)),
+        )
+    except RuntimeError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+
+    return {
+        "summary": {
+            "index_dir": index_dir,
+            "projects_considered": len(project_rows),
+            "projects_in_graph": len(nodes),
+            "edges": len(edges),
+            "min_similarity": float(req.min_similarity),
+        },
+        "nodes": _json_ready(nodes),
+        "edges": _json_ready(edges),
+    }
