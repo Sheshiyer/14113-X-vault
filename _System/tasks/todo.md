@@ -742,3 +742,19 @@
   - `/tmp/issue76_folder_smoke.json`
 - Traceability correction:
   - parallel issue creation returned non-sequential IDs; correction comments posted on `#75/#76/#77` to align task mapping.
+
+## ⚙️ Phase III Execution Wave 12 — API Governance + Curation Loop (2026-03-01)
+- [x] Create child issues for `#67` tasks 21, 23, and 24 with explicit acceptance criteria
+- [x] Add local API auth and request-rate policy controls in `semantic_search_api.py`
+- [x] Add Obsidian deep-link resolution to API outputs
+- [x] Add human-in-loop curation queue endpoints for tag/folder recommendations
+- [x] Run compile + API smoke validation and sync child issues + `#67` checklist
+
+### Review (Phase III Wave 12)
+- Child issues closed: `#78`, `#79`, `#80`.
+- Backlog sync comment posted on `#67`: `issuecomment-3979534023`.
+- Verification artifacts:
+  - `/tmp/issue78_79_80_api_auth_queue_smoke.json`
+  - `/tmp/issue78_rate_limit_smoke.json`
+- Validation method:
+  - smoke runs used fixture index `/tmp/meru_api_fixture` for deterministic API-policy verification without full-corpus lexical scan latency.

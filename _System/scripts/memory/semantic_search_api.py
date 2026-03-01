@@ -8,13 +8,19 @@ Issue #61 acceptance:
 
 from __future__ import annotations
 
+import json
 import os
 import sys
+import threading
+import time
+from collections import defaultdict, deque
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Any
+from urllib.parse import quote
+from uuid import uuid4
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel, Field
 
 SCRIPTS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -121,11 +127,34 @@ class ProjectGraphRequest(BaseModel):
     max_records: int | None = Field(default=None, ge=1)
 
 
+class CurationEnqueueRequest(BaseModel):
+    queue_type: str = Field(..., pattern="^(tag_recommendation|folder_recommendation|summary_recommendation)$")
+    payload: dict
+    source: str | None = None
+    note: str | None = None
+
+
+class CurationStatusRequest(BaseModel):
+    status: str = Field(..., pattern="^(pending|approved|rejected)$")
+    reviewer: str = Field(..., min_length=1, max_length=120)
+    note: str | None = None
+
+
 app = FastAPI(title="Meru Semantic Search API", version="1.0.0")
 
 state = SearchServiceState(index_dir=os.environ.get("MERU_INDEX_DIR", DEFAULT_INDEX_DIR))
 SHARD_ROUTER_ENABLED = os.environ.get("MERU_SHARD_ROUTER", "1").strip().lower() not in {"0", "false", "no"}
 SHARD_ROUTER_TOP_SHARDS = int(os.environ.get("MERU_ROUTER_TOP_SHARDS", "8") or "8")
+API_TOKEN = os.environ.get("MERU_API_TOKEN", "").strip()
+RATE_LIMIT_REQUESTS = int(os.environ.get("MERU_RATE_LIMIT_REQUESTS", "120") or "120")
+RATE_LIMIT_WINDOW_SECONDS = int(os.environ.get("MERU_RATE_LIMIT_WINDOW_SECONDS", "60") or "60")
+OBSIDIAN_VAULT = os.environ.get("MERU_OBSIDIAN_VAULT", os.path.basename(BASE_DIR)).strip() or os.path.basename(BASE_DIR)
+CURATION_QUEUE_FILE = os.environ.get(
+    "MERU_CURATION_QUEUE_FILE",
+    os.path.join(DEFAULT_INDEX_DIR, "curation_queue.jsonl"),
+)
+_RATE_LIMIT_LOCK = threading.Lock()
+_RATE_LIMIT_BUCKETS: dict[str, deque[float]] = defaultdict(deque)
 
 
 def _json_ready(value: Any) -> Any:
@@ -142,6 +171,131 @@ def _json_ready(value: Any) -> Any:
         return value.isoformat()
     return value
 
+
+def _obsidian_deep_link(path: str, heading: str | None = None) -> str | None:
+    rel_path = str(path or "").strip().replace("\\", "/")
+    if not rel_path:
+        return None
+    target = rel_path
+    clean_heading = str(heading or "").strip()
+    if clean_heading:
+        target = f"{target}#{clean_heading}"
+    return f"obsidian://open?vault={quote(OBSIDIAN_VAULT, safe='')}&file={quote(target, safe='')}"
+
+
+def _attach_obsidian_links(value: Any) -> Any:
+    if isinstance(value, list):
+        return [_attach_obsidian_links(v) for v in value]
+    if isinstance(value, dict):
+        out = {str(k): _attach_obsidian_links(v) for k, v in value.items()}
+        deep_link = _obsidian_deep_link(str(out.get("path") or ""), str(out.get("heading") or ""))
+        if deep_link:
+            out["obsidian_url"] = deep_link
+        return out
+    return value
+
+
+def _policy_key(request: Request) -> str:
+    auth = (request.headers.get("authorization") or "").strip()
+    if auth.startswith("Bearer "):
+        return f"token:{auth[7:].strip()}"
+    forwarded = (request.headers.get("x-forwarded-for") or "").strip()
+    if forwarded:
+        return f"ip:{forwarded.split(',')[0].strip()}"
+    host = request.client.host if request.client else "unknown"
+    return f"ip:{host}"
+
+
+def _enforce_api_policy(request: Request) -> None:
+    if API_TOKEN:
+        auth = (request.headers.get("authorization") or "").strip()
+        supplied = auth[7:].strip() if auth.startswith("Bearer ") else ""
+        if supplied != API_TOKEN:
+            raise HTTPException(status_code=401, detail="Unauthorized: valid Bearer token required.")
+
+    if RATE_LIMIT_REQUESTS <= 0:
+        return
+
+    now = time.monotonic()
+    window = max(1, int(RATE_LIMIT_WINDOW_SECONDS))
+    retry_after = 1
+    key = _policy_key(request)
+
+    with _RATE_LIMIT_LOCK:
+        bucket = _RATE_LIMIT_BUCKETS[key]
+        cutoff = now - float(window)
+        while bucket and bucket[0] <= cutoff:
+            bucket.popleft()
+
+        if len(bucket) >= int(RATE_LIMIT_REQUESTS):
+            retry_after = max(1, int(window - (now - bucket[0])))
+            raise HTTPException(
+                status_code=429,
+                detail=(
+                    f"Rate limit exceeded: max {int(RATE_LIMIT_REQUESTS)} "
+                    f"requests/{window}s for caller key {key}."
+                ),
+                headers={"Retry-After": str(retry_after)},
+            )
+
+        bucket.append(now)
+
+
+def _utc_now_iso() -> str:
+    return datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
+
+
+def _iter_queue_events(path: str):
+    if not os.path.exists(path):
+        return
+    with open(path, "r", encoding="utf-8", errors="replace") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                event = json.loads(line)
+            except Exception:
+                continue
+            if isinstance(event, dict):
+                yield event
+
+
+def _append_queue_event(path: str, event: dict) -> None:
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(event, ensure_ascii=False) + "\n")
+
+
+def _materialize_queue(path: str) -> list[dict]:
+    items: dict[str, dict] = {}
+    for event in _iter_queue_events(path):
+        event_type = str(event.get("event") or "")
+        item_id = str(event.get("item_id") or "").strip()
+        if not item_id:
+            continue
+        if event_type == "enqueue":
+            items[item_id] = {
+                "item_id": item_id,
+                "queue_type": event.get("queue_type"),
+                "payload": event.get("payload") or {},
+                "source": event.get("source"),
+                "note": event.get("note"),
+                "status": "pending",
+                "created_at": event.get("created_at"),
+                "updated_at": event.get("created_at"),
+                "reviewer": None,
+                "review_note": None,
+            }
+            continue
+        if event_type == "status_update" and item_id in items:
+            items[item_id]["status"] = event.get("status") or items[item_id].get("status")
+            items[item_id]["updated_at"] = event.get("updated_at") or items[item_id].get("updated_at")
+            items[item_id]["reviewer"] = event.get("reviewer")
+            items[item_id]["review_note"] = event.get("note")
+    rows = list(items.values())
+    rows.sort(key=lambda r: str(r.get("created_at") or ""), reverse=True)
+    return rows
 
 def _init_state() -> None:
     index_dir = os.path.abspath(state.index_dir)
@@ -188,6 +342,11 @@ def health() -> dict:
         "index_dir": os.path.abspath(state.index_dir),
         "meta_loaded": state.meta is not None,
         "index_loaded": state.index is not None,
+        "auth_required": bool(API_TOKEN),
+        "rate_limit_requests": int(RATE_LIMIT_REQUESTS),
+        "rate_limit_window_seconds": int(RATE_LIMIT_WINDOW_SECONDS),
+        "obsidian_vault": OBSIDIAN_VAULT,
+        "curation_queue_file": os.path.abspath(CURATION_QUEUE_FILE),
         "startup_error": state.startup_error,
     }
 
@@ -236,7 +395,8 @@ def _run_search(req: SearchRequest | SummaryRequest | TagRecommendationRequest) 
 
 
 @app.post("/search", response_model=SearchResponse)
-def search(req: SearchRequest) -> SearchResponse:
+def search(req: SearchRequest, request: Request) -> SearchResponse:
+    _enforce_api_policy(request)
     results, info, elapsed_ms = _run_search(req)
 
     return SearchResponse(
@@ -245,13 +405,14 @@ def search(req: SearchRequest) -> SearchResponse:
         search_mode=req.search_mode,
         hit_count=len(results),
         duration_ms=round(elapsed_ms, 2),
-        results=_json_ready(results),
+        results=_json_ready(_attach_obsidian_links(results)),
         info=_json_ready(info),
     )
 
 
 @app.get("/search")
 def search_get(
+    request: Request,
     q: str,
     top_k: int = 8,
     mode: str = "hybrid",
@@ -263,11 +424,12 @@ def search_get(
         search_mode=mode,
         exclude_archives=exclude_archives,
     )
-    return search(req).model_dump()
+    return search(req, request=request).model_dump()
 
 
 @app.post("/recommend/tags")
-def recommend_tags(req: TagRecommendationRequest) -> dict:
+def recommend_tags(req: TagRecommendationRequest, request: Request) -> dict:
+    _enforce_api_policy(request)
     results, info, elapsed_ms = _run_search(req)
     recommendations = build_recommendations(
         results,
@@ -284,13 +446,14 @@ def recommend_tags(req: TagRecommendationRequest) -> dict:
             "similar_chunks": len(results),
             "duration_ms": round(elapsed_ms, 2),
         },
-        "recommendations": _json_ready(recommendations),
+        "recommendations": _json_ready(_attach_obsidian_links(recommendations)),
         "info": _json_ready(info),
     }
 
 
 @app.post("/recommend/folders")
-def recommend_folders(req: FolderRecommendationRequest) -> dict:
+def recommend_folders(req: FolderRecommendationRequest, request: Request) -> dict:
+    _enforce_api_policy(request)
     _ensure_service_ready(require_index=False)
     index_dir = os.path.abspath(state.index_dir)
     try:
@@ -327,20 +490,36 @@ def recommend_folders(req: FolderRecommendationRequest) -> dict:
         },
         "recommendations": recommendations,
     }
+    for row in report["recommendations"]:
+        sample_paths = [str(p) for p in (row.get("sample_paths") or []) if str(p).strip()]
+        row["sample_links"] = [
+            {"path": p, "obsidian_url": _obsidian_deep_link(p)}
+            for p in sample_paths
+            if _obsidian_deep_link(p)
+        ]
     if req.dry_run_plan:
         report["move_plan"] = build_move_plan(
             recommendations,
             current_path=req.current_path,
             inferred_filename=None,
         )
-    return _json_ready(report)
+        if isinstance(report.get("move_plan"), dict):
+            move_plan = report["move_plan"]
+            current_path = str(move_plan.get("current_path") or "")
+            suggested_path = str(move_plan.get("suggested_path") or "")
+            if current_path:
+                move_plan["current_obsidian_url"] = _obsidian_deep_link(current_path)
+            if suggested_path:
+                move_plan["suggested_obsidian_url"] = _obsidian_deep_link(suggested_path)
+    return _json_ready(_attach_obsidian_links(report))
 
 
 @app.post("/summary")
-def summary(req: SummaryRequest) -> dict:
+def summary(req: SummaryRequest, request: Request) -> dict:
+    _enforce_api_policy(request)
     results, _, _ = _run_search(req)
     summary_payload = synthesize_summary(req.topic, results, template=req.template)
-    return {
+    out = {
         "topic": req.topic,
         "template": summary_payload["template"],
         "summary_paragraphs": summary_payload["summary_paragraphs"],
@@ -355,10 +534,12 @@ def summary(req: SummaryRequest) -> dict:
             "exclude_archives": bool(req.exclude_archives),
         },
     }
+    return _json_ready(_attach_obsidian_links(out))
 
 
 @app.post("/graph/projects")
-def project_graph(req: ProjectGraphRequest) -> dict:
+def project_graph(req: ProjectGraphRequest, request: Request) -> dict:
+    _enforce_api_policy(request)
     _ensure_service_ready(require_index=False)
     index_dir = os.path.abspath(state.index_dir)
     emb_path = os.path.join(index_dir, "embeddings.npy")
@@ -393,4 +574,82 @@ def project_graph(req: ProjectGraphRequest) -> dict:
         },
         "nodes": _json_ready(nodes),
         "edges": _json_ready(edges),
+    }
+
+
+@app.post("/curation/queue")
+def enqueue_curation(req: CurationEnqueueRequest, request: Request) -> dict:
+    _enforce_api_policy(request)
+    _ensure_service_ready(require_index=False)
+
+    item_id = f"cq_{uuid4().hex[:12]}"
+    now = _utc_now_iso()
+    event = {
+        "event": "enqueue",
+        "item_id": item_id,
+        "queue_type": req.queue_type,
+        "payload": req.payload,
+        "source": req.source,
+        "note": req.note,
+        "created_at": now,
+    }
+    _append_queue_event(CURATION_QUEUE_FILE, event)
+    return {
+        "ok": True,
+        "item_id": item_id,
+        "status": "pending",
+        "created_at": now,
+        "queue_file": os.path.abspath(CURATION_QUEUE_FILE),
+    }
+
+
+@app.get("/curation/queue")
+def list_curation_queue(
+    request: Request,
+    status: str | None = None,
+    limit: int = 100,
+) -> dict:
+    _enforce_api_policy(request)
+    _ensure_service_ready(require_index=False)
+    rows = _materialize_queue(CURATION_QUEUE_FILE)
+    if status:
+        rows = [r for r in rows if str(r.get("status") or "") == status]
+    rows = rows[: max(1, min(int(limit), 500))]
+    return {
+        "count": len(rows),
+        "items": _json_ready(_attach_obsidian_links(rows)),
+        "queue_file": os.path.abspath(CURATION_QUEUE_FILE),
+    }
+
+
+@app.post("/curation/queue/{item_id}/status")
+def update_curation_status(
+    item_id: str,
+    req: CurationStatusRequest,
+    request: Request,
+) -> dict:
+    _enforce_api_policy(request)
+    _ensure_service_ready(require_index=False)
+
+    rows = _materialize_queue(CURATION_QUEUE_FILE)
+    target = next((r for r in rows if str(r.get("item_id") or "") == item_id), None)
+    if target is None:
+        raise HTTPException(status_code=404, detail=f"Curation item not found: {item_id}")
+
+    now = _utc_now_iso()
+    event = {
+        "event": "status_update",
+        "item_id": item_id,
+        "status": req.status,
+        "reviewer": req.reviewer,
+        "note": req.note,
+        "updated_at": now,
+    }
+    _append_queue_event(CURATION_QUEUE_FILE, event)
+    return {
+        "ok": True,
+        "item_id": item_id,
+        "status": req.status,
+        "reviewer": req.reviewer,
+        "updated_at": now,
     }
