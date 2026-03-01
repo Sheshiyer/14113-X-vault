@@ -30,6 +30,7 @@ if SCRIPTS_DIR not in sys.path:
 from export_project_dependency_graph import (  # type: ignore  # noqa: E402
     build_edges,
     build_nodes_and_centroids,
+    compute_centrality_rankings,
     collect_project_samples,
 )
 from incremental import load_embeddings  # type: ignore  # noqa: E402
@@ -561,6 +562,11 @@ def project_graph(req: ProjectGraphRequest, request: Request) -> dict:
             min_similarity=float(req.min_similarity),
             top_links_per_project=max(1, int(req.top_links_per_project)),
         )
+        centrality_ranking = compute_centrality_rankings(
+            nodes,
+            edges,
+            top_n=max(5, min(50, int(req.max_projects))),
+        )
     except RuntimeError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
@@ -571,9 +577,11 @@ def project_graph(req: ProjectGraphRequest, request: Request) -> dict:
             "projects_in_graph": len(nodes),
             "edges": len(edges),
             "min_similarity": float(req.min_similarity),
+            "centrality_ranked": len(centrality_ranking),
         },
         "nodes": _json_ready(nodes),
         "edges": _json_ready(edges),
+        "centrality_ranking": _json_ready(centrality_ranking),
     }
 
 

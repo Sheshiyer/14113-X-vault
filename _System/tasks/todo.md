@@ -758,3 +758,18 @@
   - `/tmp/issue78_rate_limit_smoke.json`
 - Validation method:
   - smoke runs used fixture index `/tmp/meru_api_fixture` for deterministic API-policy verification without full-corpus lexical scan latency.
+
+## ⚙️ Phase III Execution Wave 13 — Graph Intelligence Delta Track (2026-03-01)
+- [x] Create child issues for `#67` tasks 15 and 16 with explicit acceptance criteria
+- [x] Add graph centrality ranking output for key projects/notes
+- [x] Add graph snapshot diff utility for temporal comparison
+- [x] Run compile + graph smoke validation and sync child issues + `#67` checklist
+
+### Review (Phase III Wave 13)
+- Child issues closed: `#82` (task 15), `#81` (task 16).
+- Backlog sync comment posted on `#67`: `issuecomment-3979540128`.
+- Verification artifacts:
+  - `/tmp/issue82_graph_snapshot.json`
+  - `/tmp/issue82_centrality_smoke.json`
+  - `/tmp/issue81_graph_diff.json`
+  - `/tmp/issue81_diff_smoke.json`

@@ -180,6 +180,59 @@ def build_edges(
     return edges
 
 
+def compute_centrality_rankings(nodes: list[dict], edges: list[dict], *, top_n: int = 20) -> list[dict]:
+    degree_counts = Counter()
+    weight_sums = defaultdict(float)
+
+    for edge in edges:
+        src = str(edge.get("source") or "")
+        dst = str(edge.get("target") or "")
+        w = float(edge.get("similarity") or 0.0)
+        if not src or not dst:
+            continue
+        degree_counts[src] += 1
+        degree_counts[dst] += 1
+        weight_sums[src] += w
+        weight_sums[dst] += w
+
+    denom = max(1, len(nodes) - 1)
+    ranking_rows = []
+    for row in nodes:
+        project = str(row.get("project") or "")
+        degree = int(degree_counts.get(project, 0))
+        weight_sum = float(weight_sums.get(project, 0.0))
+        degree_centrality = float(degree) / float(denom) if len(nodes) > 1 else 0.0
+        weighted_centrality = weight_sum / float(denom) if len(nodes) > 1 else 0.0
+        row["link_degree"] = degree
+        row["link_weight_sum"] = round(weight_sum, 4)
+        row["degree_centrality"] = round(degree_centrality, 4)
+        row["weighted_centrality"] = round(weighted_centrality, 4)
+        ranking_rows.append(
+            {
+                "project": project,
+                "link_degree": degree,
+                "link_weight_sum": round(weight_sum, 4),
+                "degree_centrality": round(degree_centrality, 4),
+                "weighted_centrality": round(weighted_centrality, 4),
+            }
+        )
+
+    ranking_rows.sort(
+        key=lambda r: (
+            -float(r["weighted_centrality"]),
+            -int(r["link_degree"]),
+            str(r["project"]).lower(),
+        )
+    )
+    return [
+        {
+            "rank": idx,
+            **row,
+        }
+        for idx, row in enumerate(ranking_rows[: max(1, int(top_n))], start=1)
+    ]
+
+
 def _mermaid_id(name: str) -> str:
     clean = "".join(ch if ch.isalnum() else "_" for ch in name)
     return f"p_{clean}"
@@ -230,6 +283,7 @@ def main() -> int:
         min_similarity=float(args.min_similarity),
         top_links_per_project=max(1, int(args.top_links_per_project)),
     )
+    centrality_ranking = compute_centrality_rankings(nodes, edges, top_n=max(5, min(50, int(args.max_projects))))
 
     graph = {
         "summary": {
@@ -238,9 +292,11 @@ def main() -> int:
             "projects_in_graph": len(nodes),
             "edges": len(edges),
             "min_similarity": float(args.min_similarity),
+            "centrality_ranked": len(centrality_ranking),
         },
         "nodes": nodes,
         "edges": edges,
+        "centrality_ranking": centrality_ranking,
     }
 
     json_path = args.output_json or os.path.join(index_dir, "project_dependency_graph.json")
@@ -256,6 +312,13 @@ def main() -> int:
         print("Cross-Project Dependency Graph")
         print(f"- Projects in graph: {graph['summary']['projects_in_graph']}")
         print(f"- Edges: {graph['summary']['edges']}")
+        if graph.get("centrality_ranking"):
+            print("- Top central projects:")
+            for row in graph["centrality_ranking"][:5]:
+                print(
+                    f"  {row['rank']}. {row['project']} "
+                    f"(weighted={row['weighted_centrality']}, degree={row['link_degree']})"
+                )
         print(f"- JSON: {json_path}")
         print(f"- Mermaid: {mermaid_path}")
     return 0
