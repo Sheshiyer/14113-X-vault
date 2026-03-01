@@ -518,3 +518,27 @@
   - `#47`: `issuecomment-3977891996`
 - Project status verification:
   - all three items (`#49/#52/#47`) confirmed as `In Progress` in project `14113-X Vault Meru Integration Roadmap (Phase I-III)`.
+
+## 🔀 Plan Migration — Mac Mini Local Track (2026-03-01)
+- [x] Record plan-change intent in tracker before GitHub updates
+- [x] Create Mac Mini-local replacement issue(s) for non-viable multi-GPU assumptions
+- [x] Mark non-viable prior plan issue(s) as `not planned` with explicit rationale
+- [x] Post cross-linked timeline/dependency update comments on active perf issues (`#49`, `#47`)
+- [x] Add new replacement issue(s) into project board and set execution statuses
+- [x] Document final migration links/evidence in tracker review section
+
+### Review (Plan Migration — Mac Mini Local Track)
+- Created replacement issues:
+  - `#69` `[P4-S1-38A] Mac Mini local encode path + content-hash cache`
+  - `#70` `[P4-S1-34A] Sharded HNSW router for >10M total chunks (Mac Mini track)`
+- Deprecated plan issue migration:
+  - `#52` closed with state reason `NOT_PLANNED` and superseded by `#69/#70`.
+- Cross-linked issue timeline comments posted:
+  - `#52`: `issuecomment-3979263342` (decision log) + close comment
+  - `#49`: `issuecomment-3979263345` (Mac Mini closure path and dependency order)
+  - `#47`: `issuecomment-3979263343` (gated on encode/cache baseline in `#69`)
+  - `#66`: `issuecomment-3979267307` (Phase II backlog timeline migration record)
+- Project board (`/users/Sheshiyer/projects/3`) synchronized:
+  - `#52` status `Done` (closed plan track)
+  - `#69` status `In Progress`, Phase `Phase II`, Module `Scale Runtime`
+  - `#70` status `Todo`, Phase `Phase II`, Module `Scale Runtime`, `Depends On=#69`
