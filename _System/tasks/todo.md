@@ -618,3 +618,32 @@
 - GitHub sync:
   - `#70` evidence comment: `issuecomment-3979338698`
   - `#49` dependency timeline comment: `issuecomment-3979338704`
+
+## ⚙️ Phase II Execution — Issue #70 Wave 2 (2026-03-01)
+- [x] Build GT10M logical shard-addressing harness with router-enabled query path
+- [x] Validate returned result IDs map to global metadata IDs above `10,000,000`
+- [x] Run warm latency benchmark (`120` runs) and capture `p50/p95/p99`
+- [x] Run CLI-level `query_vault.py` verification against GT10M harness index
+- [x] Post Wave 2 evidence update on `#70` and dependency progress note on `#49`
+
+### Review (Issue #70 Wave 2)
+- Harness artifacts:
+  - script: `/tmp/issue70_gt10m_harness.py`
+  - log: `/tmp/issue70_gt10m_harness.log`
+  - summary: `/tmp/issue70_gt10m_summary.json`
+  - CLI output: `/tmp/issue70_gt10m_cli_query.json`
+- GT10M logical addressing evidence:
+  - `total_chunks_logical = 10,004,096`
+  - `min_meta_id = 10,000,043`
+  - `max_meta_id = 10,004,046`
+  - `all_results_above_10m = true`
+- Router behavior evidence:
+  - `router_eligible_shards = 1` (prefiltered by `para=Projects`)
+  - `router_selected_shards = 1`
+- Warm latency (`120` runs):
+  - `p50 = 8.127ms`
+  - `p95 = 8.924ms`
+  - `p99 = 9.394ms`
+- GitHub sync:
+  - `#70` Wave 2 evidence comment: `issuecomment-3979352512`
+  - `#49` dependency progress comment: `issuecomment-3979352510`
