@@ -641,7 +641,7 @@
   - `router_eligible_shards = 1` (prefiltered by `para=Projects`)
   - `router_selected_shards = 1`
 - Warm latency (`120` runs):
-  - `p50 = 8.127ms`
+  - `p50 = 7.536ms`
   - `p95 = 8.924ms`
   - `p99 = 9.394ms`
 - GitHub sync:
