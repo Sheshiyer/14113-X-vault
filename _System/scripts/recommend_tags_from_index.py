@@ -87,7 +87,127 @@ def _as_list(value) -> list[str]:
     return [val] if val else []
 
 
-def build_recommendations(similar: list[dict]) -> dict:
+def _top_items(score_map: dict[str, float], limit: int) -> list[dict]:
+    total_all = sum(float(v) for v in score_map.values()) or 1.0
+    items = sorted(score_map.items(), key=lambda kv: (-float(kv[1]), str(kv[0]).lower()))[:limit]
+    return [
+        {
+            "value": key,
+            "score": round(float(val), 4),
+            "confidence": round(float(val) / total_all, 4),
+        }
+        for key, val in items
+    ]
+
+
+def _apply_threshold(
+    rows: list[dict],
+    *,
+    min_confidence: float,
+    category: str,
+    abstain_mode: str,
+) -> tuple[list[dict], list[dict]]:
+    if abstain_mode == "off":
+        return rows, []
+
+    kept = []
+    abstained = []
+    for row in rows:
+        conf = float(row.get("confidence") or 0.0)
+        if conf >= min_confidence:
+            kept.append(row)
+            continue
+        abstained.append(
+            {
+                "category": category,
+                "value": row.get("value", ""),
+                "confidence": round(conf, 4),
+                "threshold": round(float(min_confidence), 4),
+                "reason": "below_confidence_threshold",
+            }
+        )
+    return kept, abstained
+
+
+def _conflict_key(tag_value: str) -> str:
+    val = str(tag_value or "").strip().lower()
+    if not val:
+        return ""
+    if "/" in val:
+        return val.split("/", 1)[0]
+    normalized = re.sub(r"[^a-z0-9]+", "", val)
+    if len(normalized) > 4 and normalized.endswith("s"):
+        normalized = normalized[:-1]
+    return normalized or val
+
+
+def _resolve_tag_conflicts(tag_rows: list[dict]) -> tuple[list[dict], list[dict], list[dict]]:
+    groups = defaultdict(list)
+    for row in tag_rows:
+        key = _conflict_key(str(row.get("value") or ""))
+        groups[key].append(row)
+
+    resolved = []
+    conflict_resolution = []
+    conflict_rejections = []
+    for key, rows in groups.items():
+        ordered = sorted(
+            rows,
+            key=lambda r: (
+                -float(r.get("score") or 0.0),
+                -float(r.get("confidence") or 0.0),
+                str(r.get("value") or "").lower(),
+            ),
+        )
+        winner = ordered[0]
+        resolved.append(winner)
+        if len(ordered) <= 1:
+            continue
+
+        rejected = [str(r.get("value") or "") for r in ordered[1:]]
+        winner_score = float(winner.get("score") or 0.0)
+        second_score = float(ordered[1].get("score") or 0.0)
+        conflict_resolution.append(
+            {
+                "conflict_group": key,
+                "winner": str(winner.get("value") or ""),
+                "rejected": rejected,
+                "reason": (
+                    f"winner has strongest support in group "
+                    f"(score={winner_score:.4f}, margin={max(0.0, winner_score - second_score):.4f})"
+                ),
+            }
+        )
+        for row in ordered[1:]:
+            conflict_rejections.append(
+                {
+                    "category": "tags",
+                    "value": row.get("value", ""),
+                    "confidence": round(float(row.get("confidence") or 0.0), 4),
+                    "threshold": None,
+                    "reason": f"conflict_lost_to:{winner.get('value', '')}",
+                }
+            )
+
+    resolved = sorted(
+        resolved,
+        key=lambda r: (
+            -float(r.get("score") or 0.0),
+            -float(r.get("confidence") or 0.0),
+            str(r.get("value") or "").lower(),
+        ),
+    )
+    return resolved, conflict_resolution, conflict_rejections
+
+
+def build_recommendations(
+    similar: list[dict],
+    *,
+    min_domain_confidence: float,
+    min_enneagram_confidence: float,
+    min_tag_confidence: float,
+    abstain_mode: str,
+) -> dict:
     domain_scores = defaultdict(float)
     enneagram_scores = defaultdict(float)
     tag_scores = defaultdict(float)
@@ -117,22 +237,47 @@ def build_recommendations(similar: list[dict]) -> dict:
             "enneagram_uuid": rec.get("enneagram_uuid", ""),
         })
 
-    def top_items(score_map: dict[str, float], limit: int) -> list[dict]:
-        items = sorted(score_map.items(), key=lambda kv: kv[1], reverse=True)[:limit]
-        total = sum(v for _, v in items) or 1.0
-        return [
-            {
-                "value": key,
-                "score": round(val, 4),
-                "confidence": round(val / total, 4),
-            }
-            for key, val in items
-        ]
+    domain_rows = _top_items(domain_scores, limit=5)
+    enneagram_rows = _top_items(enneagram_scores, limit=3)
+    tag_rows = _top_items(tag_scores, limit=10)
+
+    domain_rows, abstained_domains = _apply_threshold(
+        domain_rows,
+        min_confidence=max(0.0, min(1.0, float(min_domain_confidence))),
+        category="domains",
+        abstain_mode=abstain_mode,
+    )
+    enneagram_rows, abstained_enneagram = _apply_threshold(
+        enneagram_rows,
+        min_confidence=max(0.0, min(1.0, float(min_enneagram_confidence))),
+        category="enneagram_types",
+        abstain_mode=abstain_mode,
+    )
+    tag_rows, abstained_tags = _apply_threshold(
+        tag_rows,
+        min_confidence=max(0.0, min(1.0, float(min_tag_confidence))),
+        category="tags",
+        abstain_mode=abstain_mode,
+    )
+    tag_rows, conflict_resolution, conflict_rejections = _resolve_tag_conflicts(tag_rows)
+    abstained_tags.extend(conflict_rejections)
 
     return {
-        "recommended_domains": top_items(domain_scores, limit=5),
-        "recommended_enneagram_types": top_items(enneagram_scores, limit=3),
-        "recommended_tags": top_items(tag_scores, limit=10),
+        "recommended_domains": domain_rows,
+        "recommended_enneagram_types": enneagram_rows,
+        "recommended_tags": tag_rows,
+        "thresholds": {
+            "domain_confidence": round(float(min_domain_confidence), 4),
+            "enneagram_confidence": round(float(min_enneagram_confidence), 4),
+            "tag_confidence": round(float(min_tag_confidence), 4),
+            "abstain_mode": abstain_mode,
+        },
+        "abstained": {
+            "domains": abstained_domains,
+            "enneagram_types": abstained_enneagram,
+            "tags": abstained_tags,
+        },
+        "conflict_resolution": conflict_resolution,
         "evidence": evidence,
     }
 
@@ -141,6 +286,15 @@ def _print_human(result: dict) -> None:
     print("Auto-tag Recommendations")
     print(f"- Input mode: {result['input']['mode']}")
     print(f"- Similar chunks used: {result['input']['similar_chunks']}")
+    thresholds = result["recommendations"].get("thresholds", {})
+    if thresholds:
+        print(
+            "- Thresholds: "
+            f"domain>={thresholds.get('domain_confidence', 0)}, "
+            f"enneagram>={thresholds.get('enneagram_confidence', 0)}, "
+            f"tag>={thresholds.get('tag_confidence', 0)}, "
+            f"abstain_mode={thresholds.get('abstain_mode', 'report')}"
+        )
     print("")
 
     print("Domain suggestions:")
@@ -161,6 +315,23 @@ def _print_human(result: dict) -> None:
     if not result["recommendations"]["recommended_tags"]:
         print("  - [none]")
 
+    conflicts = result["recommendations"].get("conflict_resolution") or []
+    if conflicts:
+        print("\nConflict resolution:")
+        for row in conflicts:
+            rejected = ", ".join(row.get("rejected") or [])
+            print(f"  - group={row.get('conflict_group')} winner={row.get('winner')} rejected=[{rejected}]")
+
+    abstained = result["recommendations"].get("abstained") or {}
+    total_abstained = sum(len(v) for v in abstained.values() if isinstance(v, list))
+    if total_abstained:
+        print(f"\nAbstained suggestions: {total_abstained}")
+        for key in ("domains", "enneagram_types", "tags"):
+            rows = abstained.get(key) or []
+            if not rows:
+                continue
+            print(f"  - {key}: {len(rows)}")
+
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Recommend domain/Enneagram/tags from similar chunks.")
@@ -176,6 +347,15 @@ def main() -> int:
     parser.add_argument("--index-dir", default=DEFAULT_INDEX_DIR, help="Index directory (vault.faiss/meta.json).")
     parser.add_argument("--query-script", default=DEFAULT_QUERY_SCRIPT, help="Path to query_vault.py.")
     parser.add_argument("--python-bin", default=DEFAULT_PYTHON, help="Python binary used to run query_vault.")
+    parser.add_argument("--min-domain-confidence", type=float, default=0.0, help="Minimum confidence for domain suggestions.")
+    parser.add_argument("--min-enneagram-confidence", type=float, default=0.0, help="Minimum confidence for Enneagram suggestions.")
+    parser.add_argument("--min-tag-confidence", type=float, default=0.0, help="Minimum confidence for tag suggestions.")
+    parser.add_argument(
+        "--abstain-mode",
+        choices=["off", "report"],
+        default="report",
+        help="When enabled, below-threshold suggestions are excluded and returned in abstained output.",
+    )
     parser.add_argument("--json", action="store_true", help="Emit JSON output.")
     args = parser.parse_args()
 
@@ -217,7 +397,13 @@ def main() -> int:
             "search_mode": args.search_mode,
             "index_dir": os.path.abspath(args.index_dir),
         },
-        "recommendations": build_recommendations(similar),
+        "recommendations": build_recommendations(
+            similar,
+            min_domain_confidence=float(args.min_domain_confidence),
+            min_enneagram_confidence=float(args.min_enneagram_confidence),
+            min_tag_confidence=float(args.min_tag_confidence),
+            abstain_mode=args.abstain_mode,
+        ),
     }
 
     if args.json:
@@ -229,4 +415,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

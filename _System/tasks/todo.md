@@ -704,3 +704,23 @@
 - GitHub sync:
   - `#47` closure comment: `issuecomment-3979386584` (issue closed)
   - `#66` Phase II completion sync: `issuecomment-3979387700`
+
+## ⚙️ Phase III Execution Wave 10 — Tag + Routing Upgrade Track (2026-03-01)
+- [x] Create child issues for `#67` tasks 6, 7, and 9 with explicit acceptance criteria
+- [x] Implement tag-confidence thresholds and abstain mode in `recommend_tags_from_index.py`
+- [x] Implement tag-conflict resolver with rationale output in `recommend_tags_from_index.py`
+- [x] Implement move-suggestion dry-run planner + risk score in `suggest_semantic_folder_route.py`
+- [x] Run compile + JSON smoke checks for updated scripts
+- [x] Update `#67` checklist and child issue statuses with artifact-backed evidence
+
+### Review (Phase III Wave 10)
+- Child issues created, evidenced, and closed:
+  - `#71` (threshold + abstain): `issuecomment-3979460853`
+  - `#72` (conflict resolver): `issuecomment-3979460858`
+  - `#73` (dry-run move planner + risk): `issuecomment-3979460867`
+- Verification artifacts:
+  - `/tmp/issue71_72_smoke.json`
+  - `/tmp/issue72_conflict_smoke.json`
+  - `/tmp/issue73_smoke.json`
+- Backlog sync:
+  - `#67` checklist updated to mark tasks `1,3,5,6,7,8,9,12,14,17,18,22,25,26,27,28,29,30` complete.

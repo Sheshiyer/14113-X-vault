@@ -173,10 +173,41 @@ def rank_routes(
     scores = np.matmul(unit_centroids, q)
     order = np.argsort(scores)[::-1][: max(1, int(top_k))]
 
+    max_chunk_count = max((int(row.get("chunk_count") or 0) for row in buckets), default=1)
+    top_score = float(scores[int(order[0])]) if len(order) else 0.0
+    second_score = float(scores[int(order[1])]) if len(order) > 1 else top_score
+    score_gap = max(0.0, top_score - second_score)
+
+    def _clamp01(v: float) -> float:
+        return max(0.0, min(1.0, float(v)))
+
     out = []
     for rank, i in enumerate(order, start=1):
         row = buckets[int(i)]
         score = float(scores[int(i)])
+        # Risk is higher when similarity is low, candidate support is sparse,
+        # or the top recommendation is ambiguous against the second-best match.
+        sim_norm = _clamp01((score + 1.0) / 2.0)
+        similarity_risk = 1.0 - sim_norm
+        support_risk = 1.0 - _clamp01(float(row["chunk_count"]) / float(max_chunk_count or 1))
+        ambiguity_risk = _clamp01(1.0 - (score_gap / 0.20))
+        archive_penalty = 1.0 if str(row.get("dominant_para") or "").lower() == "archives" else 0.0
+
+        risk_score = _clamp01(
+            (0.45 * similarity_risk)
+            + (0.25 * support_risk)
+            + (0.20 * ambiguity_risk)
+            + (0.10 * archive_penalty)
+        )
+        risk_level = "low" if risk_score < 0.33 else ("medium" if risk_score < 0.66 else "high")
+        risk_factors = [
+            {"factor": "similarity", "value": round(similarity_risk, 4)},
+            {"factor": "support_sparsity", "value": round(support_risk, 4)},
+            {"factor": "top_match_ambiguity", "value": round(ambiguity_risk, 4)},
+        ]
+        if archive_penalty > 0:
+            risk_factors.append({"factor": "archives_penalty", "value": 1.0})
+
         out.append(
             {
                 "rank": rank,
@@ -186,9 +217,61 @@ def rank_routes(
                 "dominant_para": row["dominant_para"],
                 "top_domains": row["top_domains"],
                 "sample_paths": row["sample_paths"],
+                "risk_score": round(risk_score, 4),
+                "risk_level": risk_level,
+                "risk_factors": risk_factors,
             }
         )
     return out
+
+
+def build_move_plan(
+    recommendations: list[dict],
+    *,
+    current_path: str | None,
+    inferred_filename: str | None,
+) -> dict | None:
+    if not recommendations:
+        return None
+    top = recommendations[0]
+    target_folder = str(top.get("folder") or "").strip("/")
+    if not target_folder:
+        return None
+
+    src = str(current_path or "").strip()
+    filename = ""
+    source_folder = ""
+    if src:
+        filename = os.path.basename(src)
+        source_folder = str(PurePosixPath(src).parent).strip(".")
+    elif inferred_filename:
+        filename = os.path.basename(inferred_filename)
+    if not filename:
+        filename = "incoming-note.md"
+
+    suggested_path = f"{target_folder}/{filename}".strip("/")
+    would_move = bool(src) and PurePosixPath(src).as_posix() != suggested_path
+    folder_change = bool(source_folder) and source_folder != target_folder
+    reasons = [
+        f"top semantic route: {target_folder}",
+        f"risk={top.get('risk_level')} ({top.get('risk_score')})",
+    ]
+    if folder_change:
+        reasons.append(f"folder change: {source_folder} -> {target_folder}")
+    if not src:
+        reasons.append("source path not provided; planner inferred filename only")
+
+    return {
+        "mode": "dry_run",
+        "current_path": src,
+        "suggested_path": suggested_path,
+        "target_folder": target_folder,
+        "would_move": would_move,
+        "risk_score": top.get("risk_score"),
+        "risk_level": top.get("risk_level"),
+        "risk_factors": top.get("risk_factors") or [],
+        "reasons": reasons,
+    }
 
 
 def _print_human(report: dict) -> None:
@@ -201,8 +284,16 @@ def _print_human(report: dict) -> None:
         domains = ", ".join(row.get("top_domains") or []) or "n/a"
         print(
             f"{row['rank']}. {row['folder']} | sim={row['similarity']} | "
-            f"chunks={row['chunk_count']} | para={row['dominant_para']} | domains={domains}"
+            f"chunks={row['chunk_count']} | para={row['dominant_para']} | domains={domains} | "
+            f"risk={row.get('risk_level')}({row.get('risk_score')})"
         )
+    move_plan = report.get("move_plan")
+    if move_plan:
+        print("")
+        print("Dry-run move plan")
+        print(f"- Current: {move_plan.get('current_path') or '[not provided]'}")
+        print(f"- Suggested: {move_plan.get('suggested_path')}")
+        print(f"- Risk: {move_plan.get('risk_level')} ({move_plan.get('risk_score')})")
 
 
 def main() -> int:
@@ -215,6 +306,8 @@ def main() -> int:
     parser.add_argument("--exclude-archives", action="store_true", help="Exclude Archives chunks from centroid pool.")
     parser.add_argument("--max-records", type=int, help="Optional metadata scan cap.")
     parser.add_argument("--top", type=int, default=8, help="Top folder suggestions to return.")
+    parser.add_argument("--current-path", help="Current vault-relative path for dry-run move planning.")
+    parser.add_argument("--dry-run-plan", action="store_true", help="Emit a non-mutating move plan for the top suggestion.")
     parser.add_argument("--json", action="store_true", help="Emit JSON output.")
     args = parser.parse_args()
 
@@ -235,6 +328,7 @@ def main() -> int:
             return 1
         with open(path, "r", encoding="utf-8", errors="replace") as f:
             payload = f.read()
+    file_hint = os.path.basename(args.file) if args.file else None
 
     index_dir = os.path.abspath(args.index_dir)
     if not os.path.isdir(index_dir):
@@ -271,6 +365,12 @@ def main() -> int:
         },
         "recommendations": recommendations,
     }
+    if args.dry_run_plan:
+        report["move_plan"] = build_move_plan(
+            recommendations,
+            current_path=args.current_path,
+            inferred_filename=file_hint,
+        )
 
     if args.json:
         print(json.dumps(report, indent=2, ensure_ascii=False))
