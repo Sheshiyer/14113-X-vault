@@ -673,3 +673,34 @@
   - `#49` closure comment: `issuecomment-3979374160` (issue closed)
   - `#47` status/timeline update: `issuecomment-3979374908` (issue remains `In Progress`)
   - `#66` Phase II roadmap sync: `issuecomment-3979376385`
+
+## ⚙️ Phase II Closure Attempt — Issue #47 Gate Run (2026-03-01)
+- [x] Build deterministic bounded benchmark corpus (`400` markdown files)
+- [x] Run serial full-rebuild baseline (`--extract-backend serial`, `--encode-backend single`, `--no-embed-cache`)
+- [x] Run process full-rebuild with cache population (`--extract-backend process`, cache enabled)
+- [x] Run warm-cache process full rebuild and capture end-to-end speedup vs serial baseline
+- [x] Post decision outcome on `#47` (`close` if `>=4x`, else move to `not planned` + replacement issue)
+
+### Review (Issue #47 Gate Run)
+- Benchmark artifacts:
+  - corpus: `/tmp/issue47_md400`
+  - consolidated summary: `/tmp/issue47_gate_run_summary_20260301.json`
+  - serial baseline logs: `/tmp/issue47_baseline_serial.log`, `/tmp/issue47_baseline_serial.time.log`
+  - process populate logs: `/tmp/issue47_process_cache_populate.log`, `/tmp/issue47_process_cache_populate.time.log`
+  - process warm logs: `/tmp/issue47_process_cache_warm.log`, `/tmp/issue47_process_cache_warm.time.log`
+  - final warm stats: `/tmp/issue47_process_cache/index_stats.json`
+- Corpus metrics:
+  - copied files: `400`
+  - files walked: `395`
+  - files indexed: `380`
+  - chunks: `8,375`
+- Timing evidence (real wall time):
+  - serial no-cache baseline: `40.02s`
+  - process cache populate (cold): `37.70s`
+  - process warm-cache full rebuild: `8.22s`
+  - measured speedup (serial vs warm-cache process): `4.87x`
+- Gate result:
+  - acceptance threshold (`>=4x`) met under the documented cache-aware full-rebuild method.
+- GitHub sync:
+  - `#47` closure comment: `issuecomment-3979386584` (issue closed)
+  - `#66` Phase II completion sync: `issuecomment-3979387700`
