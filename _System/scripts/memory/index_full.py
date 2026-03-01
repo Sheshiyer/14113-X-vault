@@ -86,6 +86,70 @@ _FORMAT_MAP = {
     "docx": ".docx",
 }
 _DEFAULT_ASSEMBLY_BATCH = 50_000
+_SHARD_MANIFEST_FILE = "shard_manifest.json"
+
+
+def _shard_manifest_path(output_dir: str) -> str:
+    return os.path.join(output_dir, _SHARD_MANIFEST_FILE)
+
+
+def _new_shard_manifest(
+    *,
+    output_dir: str,
+    index_type: str,
+    hnsw_m: int,
+    hnsw_ef_construction: int,
+    hnsw_ef_search: int,
+) -> dict:
+    return {
+        "version": 1,
+        "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "updated_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+        "index_type": str(index_type),
+        "hnsw_m": int(hnsw_m) if str(index_type).lower() == "hnsw" else None,
+        "hnsw_ef_construction": int(hnsw_ef_construction) if str(index_type).lower() == "hnsw" else None,
+        "hnsw_ef_search": int(hnsw_ef_search) if str(index_type).lower() == "hnsw" else None,
+        "embedding_dim": int(EMBEDDING_DIM),
+        "output_dir": os.path.abspath(output_dir),
+        "total_chunks": 0,
+        "shards": [],
+    }
+
+
+def _load_shard_manifest(path: str) -> dict | None:
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            payload = json.load(f)
+    except Exception:
+        return None
+    if not isinstance(payload, dict):
+        return None
+    shards = payload.get("shards")
+    if not isinstance(shards, list):
+        return None
+    return payload
+
+
+def _save_shard_manifest(path: str, payload: dict) -> None:
+    payload["updated_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    tmp = f"{path}.tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    os.replace(tmp, path)
+
+
+def _summarize_domains(meta_records: list[dict], limit: int = 64) -> list[str]:
+    domains: set[str] = set()
+    for rec in meta_records:
+        dom = str(rec.get("domain") or "").strip()
+        if not dom:
+            continue
+        domains.add(dom)
+        if len(domains) >= limit:
+            break
+    return sorted(domains)
 
 
 def _iter_json_array(path: str, chunk_size: int = 2 * 1024 * 1024):
@@ -205,6 +269,7 @@ def index_full(
     embed_cache_path: str | None = None,
     embed_cache_warm_start: bool = True,
     embed_cache_warm_limit: int = 0,
+    retain_shards_for_router: bool = True,
     assembly_batch: int = _DEFAULT_ASSEMBLY_BATCH,
     index_type: str = DEFAULT_INDEX_TYPE,
     hnsw_m: int = DEFAULT_HNSW_M,
@@ -245,6 +310,8 @@ def index_full(
         If True and cache is empty, prime from existing meta+embeddings in output_dir.
     embed_cache_warm_limit : int
         Optional max records to warm from existing index (0 = no limit).
+    retain_shards_for_router : bool
+        Keep shard artifacts and per-shard FAISS files for routed query-time search.
     assembly_batch : int
         Chunk count per FAISS/memmap add operation during shard assembly.
     index_type : str
@@ -323,6 +390,14 @@ def index_full(
     extraction_seconds = 0.0
     extraction_files = 0
     extraction_chunks = 0
+    shard_manifest_path = _shard_manifest_path(output_dir)
+    shard_manifest = _new_shard_manifest(
+        output_dir=output_dir,
+        index_type=index_type,
+        hnsw_m=hnsw_m,
+        hnsw_ef_construction=hnsw_ef_construction,
+        hnsw_ef_search=hnsw_ef_search,
+    )
 
     if resume and os.path.exists(shards_dir):
         print(f"  Resuming: keeping existing shards in {shards_dir}")
@@ -330,16 +405,49 @@ def index_full(
         if os.path.exists(shards_dir):
             print(f"  Cleaning up old shards in {shards_dir}")
             shutil.rmtree(shards_dir)
+        if os.path.exists(shard_manifest_path):
+            try:
+                os.remove(shard_manifest_path)
+            except OSError:
+                pass
         os.makedirs(shards_dir, exist_ok=True)
+
+    loaded_manifest = _load_shard_manifest(shard_manifest_path) if resume else None
+    if loaded_manifest is not None:
+        shard_manifest = loaded_manifest
 
     existing_shard_emb_files = sorted(glob.glob(os.path.join(shards_dir, "emb_*.npy")))
     existing_shard_meta_files = sorted(glob.glob(os.path.join(shards_dir, "meta_*.json")))
     if resume and existing_shard_emb_files:
-        shard_id = len(existing_shard_emb_files)
-        for emb_file in existing_shard_emb_files:
-            embs_temp = np.load(emb_file, mmap_mode="r")
-            total_chunks += embs_temp.shape[0]
-            del embs_temp
+        shard_entries = list(shard_manifest.get("shards") or [])
+        if not shard_entries:
+            for seq, emb_file in enumerate(existing_shard_emb_files):
+                shard_tag = os.path.basename(emb_file).replace("emb_", "").replace(".npy", "")
+                meta_file = os.path.join(shards_dir, f"meta_{shard_tag}.json")
+                embs_temp = np.load(emb_file, mmap_mode="r")
+                shard_entries.append(
+                    {
+                        "shard_seq": int(seq),
+                        "shard_tag": shard_tag,
+                        "para": shard_tag.rsplit("_", 1)[0].replace("_", " "),
+                        "emb_path": os.path.relpath(emb_file, output_dir),
+                        "meta_path": os.path.relpath(meta_file, output_dir),
+                        "faiss_path": "",
+                        "chunk_count": int(embs_temp.shape[0]),
+                        "global_start": None,
+                        "global_end": None,
+                        "formats": [],
+                        "domains": [],
+                        "centroid": [],
+                    }
+                )
+                del embs_temp
+            shard_manifest["shards"] = shard_entries
+            _save_shard_manifest(shard_manifest_path, shard_manifest)
+
+        shard_id = len(shard_entries)
+        for entry in shard_entries:
+            total_chunks += int(entry.get("chunk_count") or 0)
         print(f"  Found {shard_id:,} existing shards ({total_chunks:,} chunks)")
         # Recover prior chunk-by-format counts from existing shard metadata.
         for mf in existing_shard_meta_files:
@@ -482,7 +590,19 @@ def index_full(
                         batch_processed_rel_paths: list[str] = []
 
                         extract_t0 = time.monotonic()
-                        for result in extractor.iter_extract_batch(batch_files, vault_path=vault_path):
+                        batch_results = list(
+                            extractor.iter_extract_batch(batch_files, vault_path=vault_path)
+                        )
+                        batch_file_order = {
+                            rel_path: idx for idx, (_, rel_path) in enumerate(batch_files)
+                        }
+                        batch_results.sort(
+                            key=lambda r: (
+                                int(batch_file_order.get(r.rel_path, 10**9)),
+                                str(r.rel_path),
+                            )
+                        )
+                        for result in batch_results:
                             extraction_files += 1
                             files_processed += 1
                             batch_processed_rel_paths.append(result.rel_path)
@@ -593,11 +713,45 @@ def index_full(
                             # --- Save shard to disk ---
                             para_tag = para_name.replace("/", "_").replace(" ", "_")
                             shard_tag = f"{para_tag}_{shard_id:04d}"
-                            np.save(os.path.join(shards_dir, f"emb_{shard_tag}.npy"), batch_embs)
-                            with open(os.path.join(shards_dir, f"meta_{shard_tag}.json"), "w") as f:
+                            emb_file = os.path.join(shards_dir, f"emb_{shard_tag}.npy")
+                            meta_file = os.path.join(shards_dir, f"meta_{shard_tag}.json")
+                            np.save(emb_file, batch_embs)
+                            with open(meta_file, "w", encoding="utf-8") as f:
                                 json.dump(batch_meta, f, ensure_ascii=False, separators=(",", ":"))
 
                             shard_chunks = len(batch_texts)
+                            centroid = np.asarray(batch_embs, dtype=np.float32).mean(axis=0)
+                            centroid_norm = float(np.linalg.norm(centroid))
+                            if centroid_norm > 0.0:
+                                centroid = centroid / centroid_norm
+                            formats = sorted(
+                                {
+                                    str(m.get("file_format") or "").lower().lstrip(".")
+                                    for m in batch_meta
+                                    if str(m.get("file_format") or "").strip()
+                                }
+                            )
+                            domains = _summarize_domains(batch_meta)
+                            shard_manifest.setdefault("shards", []).append(
+                                {
+                                    "shard_seq": int(shard_id),
+                                    "shard_tag": shard_tag,
+                                    "para": para_name,
+                                    "emb_path": os.path.relpath(emb_file, output_dir),
+                                    "meta_path": os.path.relpath(meta_file, output_dir),
+                                    "faiss_path": "",
+                                    "chunk_count": int(shard_chunks),
+                                    "global_start": None,
+                                    "global_end": None,
+                                    "formats": formats,
+                                    "domains": domains,
+                                    "centroid": centroid.astype(np.float32).tolist(),
+                                }
+                            )
+                            shard_manifest["total_chunks"] = int(
+                                sum(int(s.get("chunk_count") or 0) for s in shard_manifest.get("shards", []))
+                            )
+                            _save_shard_manifest(shard_manifest_path, shard_manifest)
                             total_chunks += shard_chunks
                             shard_id += 1
 
@@ -655,20 +809,55 @@ def index_full(
     # Load shards one at a time → add to FAISS + write to embeddings.npy
     # via memmap. Metadata is concatenated from shard JSONs.
     # ------------------------------------------------------------------
-    shard_emb_files = sorted(glob.glob(os.path.join(shards_dir, "emb_*.npy")))
-    
-    # Recalculate total_chunks from shards to ensure consistency
-    total_chunks_in_shards = 0
-    for emb_file in shard_emb_files:
-        embs_temp = np.load(emb_file, mmap_mode='r')
-        total_chunks_in_shards += embs_temp.shape[0]
+    shard_entries = list(shard_manifest.get("shards") or [])
+    if not shard_entries:
+        # Backward-compatibility fallback for legacy shard-only resumes without manifest.
+        for seq, emb_file in enumerate(sorted(glob.glob(os.path.join(shards_dir, "emb_*.npy")))):
+            shard_tag = os.path.basename(emb_file).replace("emb_", "").replace(".npy", "")
+            shard_entries.append(
+                {
+                    "shard_seq": int(seq),
+                    "shard_tag": shard_tag,
+                    "para": shard_tag.rsplit("_", 1)[0].replace("_", " "),
+                    "emb_path": os.path.relpath(emb_file, output_dir),
+                    "meta_path": os.path.relpath(os.path.join(shards_dir, f"meta_{shard_tag}.json"), output_dir),
+                    "faiss_path": "",
+                    "chunk_count": 0,
+                    "global_start": None,
+                    "global_end": None,
+                    "formats": [],
+                    "domains": [],
+                    "centroid": [],
+                }
+            )
+
+    normalized_entries: list[dict] = []
+    for entry in sorted(
+        shard_entries,
+        key=lambda s: (
+            int(s.get("shard_seq") if s.get("shard_seq") is not None else 10**9),
+            str(s.get("shard_tag") or ""),
+        ),
+    ):
+        emb_rel = str(entry.get("emb_path") or "").strip()
+        if not emb_rel:
+            continue
+        emb_file = emb_rel if os.path.isabs(emb_rel) else os.path.join(output_dir, emb_rel)
+        if not os.path.exists(emb_file):
+            continue
+        embs_temp = np.load(emb_file, mmap_mode="r")
+        entry["chunk_count"] = int(embs_temp.shape[0])
         del embs_temp
+        normalized_entries.append(entry)
 
-    if total_chunks_in_shards != total_chunks:
-        print(f"  WARNING: total_chunks mismatch. Recalculated: {total_chunks_in_shards}, Expected: {total_chunks}")
-        total_chunks = total_chunks_in_shards
+    shard_entries = normalized_entries
+    shard_manifest["shards"] = shard_entries
+    shard_id = len(shard_entries)
+    total_chunks = int(sum(int(s.get("chunk_count") or 0) for s in shard_entries))
+    shard_manifest["total_chunks"] = total_chunks
+    _save_shard_manifest(shard_manifest_path, shard_manifest)
 
-    print(f"\nPhase 3/3: Assembling FAISS from {len(shard_emb_files)} shards ({total_chunks:,} chunks)...")
+    print(f"\nPhase 3/3: Assembling FAISS from {len(shard_entries)} shards ({total_chunks:,} chunks)...")
     t2 = time.monotonic()
 
     faiss_path = os.path.join(output_dir, "vault.faiss")
@@ -703,18 +892,27 @@ def index_full(
     offset = 0
     byte_offset = 0
 
-    shard_emb_files = sorted(glob.glob(os.path.join(shards_dir, "emb_*.npy")))
-
     with open(meta_path, "w", encoding="utf-8") as meta_out, open(meta_jsonl_path, "wb") as meta_jsonl_out:
         meta_out.write("[\n")
 
-        for si, emb_file in enumerate(shard_emb_files):
-            # Extract the tag (e.g. Projects_0000) from emb_Projects_0000.npy
-            fname = os.path.basename(emb_file)
-            shard_tag = fname.replace("emb_", "").replace(".npy", "")
+        for si, shard_entry in enumerate(shard_entries):
+            shard_tag = str(shard_entry.get("shard_tag") or f"shard_{si:04d}")
+            emb_rel = str(shard_entry.get("emb_path") or "").strip()
+            emb_file = emb_rel if os.path.isabs(emb_rel) else os.path.join(output_dir, emb_rel)
+            meta_rel = str(shard_entry.get("meta_path") or "").strip()
+            meta_file = meta_rel if os.path.isabs(meta_rel) else os.path.join(output_dir, meta_rel)
 
             embs = np.load(emb_file, mmap_mode="r")
             n = int(embs.shape[0])
+            global_start = int(offset)
+            centroid_sum = np.zeros((EMBEDDING_DIM,), dtype=np.float64)
+            shard_index = make_faiss_index(
+                EMBEDDING_DIM,
+                index_type=index_type,
+                hnsw_m=hnsw_m,
+                hnsw_ef_construction=hnsw_ef_construction,
+                hnsw_ef_search=hnsw_ef_search,
+            )
 
             # Add to FAISS and write embeddings with bounded assembly batches.
             add_step = max(1, int(assembly_batch))
@@ -724,11 +922,14 @@ def index_full(
                     continue
                 pn = int(part.shape[0])
                 index.add(part)
+                shard_index.add(part)
                 emb_mmap[offset:offset + pn] = part
                 offset += pn
+                centroid_sum += part.astype(np.float64, copy=False).sum(axis=0)
 
             # Stream corresponding metadata into meta.json + sidecars.
-            meta_file = os.path.join(shards_dir, f"meta_{shard_tag}.json")
+            shard_formats: set[str] = set()
+            shard_domains: set[str] = set()
             if os.path.exists(meta_file):
                 for rec in _iter_json_array(meta_file):
                     rec_json = json.dumps(rec, ensure_ascii=False, separators=(",", ":"))
@@ -746,13 +947,43 @@ def index_full(
                             "Metadata record count exceeded preallocated offsets capacity"
                         )
                     offsets_mmap[meta_records] = byte_offset
+                    fmt = str(rec.get("file_format") or "").lower().lstrip(".")
+                    if fmt:
+                        shard_formats.add(fmt)
+                    dom = str(rec.get("domain") or "").strip()
+                    if dom:
+                        shard_domains.add(dom)
+
+            shard_faiss_path = os.path.join(shards_dir, f"faiss_{shard_tag}.faiss")
+            save_index(shard_index, shard_faiss_path)
+            del shard_index
+
+            centroid = (centroid_sum / max(n, 1)).astype(np.float32)
+            centroid_norm = float(np.linalg.norm(centroid))
+            if centroid_norm > 0.0:
+                centroid = centroid / centroid_norm
+
+            shard_entry["chunk_count"] = int(n)
+            shard_entry["global_start"] = int(global_start)
+            shard_entry["global_end"] = int(offset)
+            shard_entry["faiss_path"] = os.path.relpath(shard_faiss_path, output_dir)
+            shard_entry["formats"] = sorted(shard_formats) if shard_formats else list(
+                shard_entry.get("formats") or []
+            )
+            shard_entry["domains"] = sorted(list(shard_domains)[:64]) if shard_domains else list(
+                shard_entry.get("domains") or []
+            )
+            shard_entry["centroid"] = centroid.tolist()
 
             del embs
-            if (si + 1) % 5 == 0 or si == len(shard_emb_files) - 1:
-                print(f"  Assembled shard {si+1}/{len(shard_emb_files)} ({shard_tag}) "
+            if (si + 1) % 5 == 0 or si == len(shard_entries) - 1:
+                print(f"  Assembled shard {si+1}/{len(shard_entries)} ({shard_tag}) "
                       f"({offset:,}/{total_chunks:,} chunks, RSS {get_rss_mb():.0f}MB)")
 
         meta_out.write("\n]\n")
+
+    shard_manifest["total_chunks"] = int(total_chunks)
+    _save_shard_manifest(shard_manifest_path, shard_manifest)
 
     emb_mmap.flush()
     del emb_mmap
@@ -840,6 +1071,12 @@ def index_full(
             "hnsw_ef_search": int(max(1, hnsw_ef_search)) if (index_type or "").lower() == "hnsw" else None,
             "metadata_sidecar": True,
             "shards": shard_id,
+            "shard_manifest_path": shard_manifest_path,
+            "shard_router_enabled": True,
+            "shard_router_retained_shards": bool(retain_shards_for_router),
+            "shard_router_total_shards": int(shard_id),
+            "shard_router_total_chunks": int(chunk_count),
+            "shard_router_per_shard_faiss": True,
             "mode": "full_corpus_streaming",
         },
         path=stats_path,
@@ -847,7 +1084,10 @@ def index_full(
 
     # Clean up checkpoint + shards on success
     checkpoint.delete()
-    shutil.rmtree(shards_dir, ignore_errors=True)
+    if retain_shards_for_router:
+        print(f"  Retaining shard artifacts for router: {shards_dir}")
+    else:
+        shutil.rmtree(shards_dir, ignore_errors=True)
 
     # --- Summary ---
     faiss_mb = os.path.getsize(faiss_path) / (1024 * 1024)
@@ -866,6 +1106,7 @@ def index_full(
     print(f"  FAISS index:     {faiss_path} ({faiss_mb:.1f} MB)")
     print(f"  Metadata:        {meta_path} ({meta_mb:.1f} MB)")
     print(f"  Embeddings:      {emb_path} ({emb_mb:.1f} MB)")
+    print(f"  Shard manifest:  {shard_manifest_path}")
     idx_desc = (index_type or DEFAULT_INDEX_TYPE).lower()
     if idx_desc == "hnsw":
         idx_desc += (
@@ -987,6 +1228,12 @@ def parse_args() -> argparse.Namespace:
         help="Optional max records to warm from existing index (0 = no limit)",
     )
     parser.add_argument(
+        "--retain-shards-for-router",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Retain shard artifacts + per-shard FAISS files for query-time shard routing",
+    )
+    parser.add_argument(
         "--assembly-batch",
         type=int,
         default=_DEFAULT_ASSEMBLY_BATCH,
@@ -1051,6 +1298,10 @@ def main() -> None:
         f"(path={cache_path_display}, warm_start={args.embed_cache_warm_start}, "
         f"warm_limit={args.embed_cache_warm_limit if args.embed_cache_warm_limit > 0 else 'all'})"
     )
+    print(
+        "  Router:   "
+        f"retain_shards={bool(args.retain_shards_for_router)}"
+    )
     print(f"  Assemble: batch={max(1, int(args.assembly_batch))}")
     if (args.index_type or DEFAULT_INDEX_TYPE).lower() == "hnsw":
         print(
@@ -1084,6 +1335,7 @@ def main() -> None:
         embed_cache_path=str(args.embed_cache_path).strip() or None,
         embed_cache_warm_start=bool(args.embed_cache_warm_start),
         embed_cache_warm_limit=max(0, int(args.embed_cache_warm_limit)),
+        retain_shards_for_router=bool(args.retain_shards_for_router),
         assembly_batch=max(1, int(args.assembly_batch)),
         index_type=(args.index_type or DEFAULT_INDEX_TYPE).lower(),
         hnsw_m=max(8, int(args.hnsw_m)),

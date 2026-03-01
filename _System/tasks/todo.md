@@ -575,3 +575,46 @@
   - `#69` implementation evidence: `issuecomment-3979301564`
   - `#47` dependency unblock note: `issuecomment-3979301562`
   - `#69` closed as completed.
+
+## ⚙️ Phase II Execution — Issue #70 (2026-03-01)
+- [x] Audit current monolithic assumptions and shard lifecycle in `index_full.py` + `query_vault.py`
+- [x] Define strict dependency-safe patch order for router rollout (build artifacts first, query path second)
+- [x] Add deterministic shard-manifest contract (`shard_manifest.json`) during build with stable shard ordering and offsets
+- [x] Persist per-shard FAISS indexes (`faiss_<shard_tag>.faiss`) for routed query execution
+- [x] Keep shard routing artifacts after successful build (no cleanup of required router state)
+- [x] Add query-time shard catalog loader and shard-router candidate selection (top-N shards)
+- [x] Implement global top-k merge across per-shard local search results
+- [x] Preserve filter/ranking compatibility (`para`, `domain`, `format`, hybrid lexical boosts)
+- [x] Add API parity support in `semantic_search_api.py` for shard-manifest-based loading
+- [x] Add index stats fields for shard routing footprint and router query-time telemetry
+- [x] Run compile checks for modified scripts
+- [x] Run synthetic multi-shard verification (`query_vault.py`) proving cross-shard top-k retrieval
+- [x] Run bounded latency benchmark and capture p95 under local high-density envelope
+- [x] Post GitHub evidence updates on `#70` and dependent timeline note on `#49`
+
+### Execution Order (Issue #70)
+1. Build-time artifact contract (`index_full.py`): manifest + per-shard FAISS + retention policy.
+2. Query runtime (`query_vault.py`): manifest loader + router + global merge.
+3. API parity (`semantic_search_api.py`) and telemetry fields.
+4. Verification + benchmark artifacts + GitHub/project sync.
+
+### Review (Issue #70 Wave 1)
+- Build pipeline now emits and maintains `shard_manifest.json` with deterministic shard ordering, stable shard tags, per-shard global offsets, and centroid metadata.
+- Phase 3 assembly now writes per-shard FAISS indexes (`shards/faiss_<shard_tag>.faiss`) while preserving monolithic `vault.faiss` for backward compatibility.
+- Shard artifacts are retained by default (`--retain-shards-for-router`) to support query-time routing; cleanup can still be forced via `--no-retain-shards-for-router`.
+- Query runtime now supports shard router loading (`--shard-router`, `--router-top-shards`) and performs top-N shard dispatch with global top-k merge.
+- Router now applies query-time prefilters (`para`, `domain`, `format`, `exclude-archives`) before shard selection and emits per-query router telemetry in `run_query(...)->info`.
+- API parity updated: `semantic_search_api.py` now auto-loads shard router when present (`MERU_SHARD_ROUTER`, `MERU_ROUTER_TOP_SHARDS`).
+- Health/finalization paths updated for router-aware behavior:
+  - `health_check.py` no longer flags retained shards as unassembled when manifest exists.
+  - `finalize_build.py` preserves `shards/` when shard-router artifacts are present.
+- Verification artifacts:
+  - synthetic build log: `/tmp/issue70_index_build.log`
+  - manifest validation: `/tmp/issue70_manifest_summary.json`
+  - query output sample: `/tmp/issue70_query_output.json`
+  - latency + router telemetry: `/tmp/issue70_router_latency_summary.json`
+  - health report: `/tmp/issue70_health_check.json`
+- Current bounded synthetic latency (post warm-up): `p50=6.416ms`, `p95=7.767ms`, `max=31.845ms` (small synthetic envelope; not yet >10M proof).
+- GitHub sync:
+  - `#70` evidence comment: `issuecomment-3979338698`
+  - `#49` dependency timeline comment: `issuecomment-3979338704`

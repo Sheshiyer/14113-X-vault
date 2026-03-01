@@ -31,6 +31,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import faiss
 import numpy as np
+from shard_router import load_sharded_router
 
 MODEL_NAME = "all-MiniLM-L6-v2"
 EMBEDDING_DIM = 384
@@ -475,6 +476,42 @@ def _write_export(path: str | None, content: str) -> None:
 # ---------------------------------------------------------------------------
 # A-W6-03: FAISS search wrapper
 # ---------------------------------------------------------------------------
+
+def _set_router_filters(
+    index: Any,
+    *,
+    para_filter: str | None = None,
+    domain_filter: str | None = None,
+    format_filter: str | None = None,
+    exclude_archives: bool = False,
+) -> None:
+    setter = getattr(index, "set_route_filters", None)
+    if setter is None:
+        return
+    try:
+        setter(
+            para_filter=para_filter,
+            domain_filter=domain_filter,
+            format_filter=format_filter,
+            exclude_archives=exclude_archives,
+        )
+    except Exception:
+        return
+
+
+def _capture_router_info(index: Any, info: dict) -> None:
+    getter = getattr(index, "get_last_route_info", None)
+    if getter is None:
+        return
+    try:
+        route_info = getter(clear=True)
+    except TypeError:
+        route_info = getter()
+    except Exception:
+        route_info = None
+    if isinstance(route_info, dict):
+        info["router"] = route_info
+
 
 def search(
     index,
@@ -1180,6 +1217,14 @@ def run_query(
     """Execute one retrieval call with the configured mode + filters."""
     info: dict = {}
     mode = (search_mode or "vector").lower()
+    if index is not None:
+        _set_router_filters(
+            index,
+            para_filter=para_filter,
+            domain_filter=domain_filter,
+            format_filter=format_filter,
+            exclude_archives=exclude_archives,
+        )
 
     if similar_file:
         if index is None:
@@ -1254,6 +1299,7 @@ def run_query(
                     use_priority=use_priority,
                 )
 
+    _capture_router_info(index, info)
     results = _apply_filters(
         results,
         para_filter=para_filter,
@@ -1647,7 +1693,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--index-dir",
         default=_DEFAULT_INDEX_DIR,
-        help="Directory containing vault.faiss and meta.json",
+        help="Directory containing meta.json plus vault.faiss and/or shard router artifacts",
     )
     parser.add_argument(
         "--model",
@@ -1724,6 +1770,18 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=_DEFAULT_HNSW_EF_SEARCH,
         help="FAISS HNSW efSearch override for query-time recall/latency tuning",
+    )
+    parser.add_argument(
+        "--shard-router",
+        action=argparse.BooleanOptionalAction,
+        default=True,
+        help="Use shard_manifest.json + per-shard FAISS router when available",
+    )
+    parser.add_argument(
+        "--router-top-shards",
+        type=int,
+        default=8,
+        help="Top-N shards to search per vector/hybrid query (0 = all eligible shards)",
     )
     parser.add_argument(
         "--hybrid-alpha",
@@ -1810,6 +1868,9 @@ def main() -> None:
         sys.exit(2)
     if args.expand_context < 0:
         print("ERROR: --expand-context must be >= 0.", file=sys.stderr)
+        sys.exit(2)
+    if int(args.router_top_shards) < 0:
+        print("ERROR: --router-top-shards must be >= 0.", file=sys.stderr)
         sys.exit(2)
     if args.query and args.similar_file:
         print("ERROR: Use either --query or --similar-file, not both.", file=sys.stderr)
@@ -1932,6 +1993,7 @@ def main() -> None:
 
     faiss_path = os.path.join(args.index_dir, "vault.faiss")
     meta_path = os.path.join(args.index_dir, "meta.json")
+    shard_manifest_path = os.path.join(args.index_dir, "shard_manifest.json")
 
     if not os.path.exists(meta_path):
         print(f"ERROR: Metadata not found at {meta_path}", file=sys.stderr)
@@ -1940,10 +2002,6 @@ def main() -> None:
 
     interactive_mode = not bool(args.batch or args.query or args.similar_file)
     need_index = bool(args.similar_file) or args.search_mode in ("vector", "hybrid", "time-travel")
-    if need_index and not os.path.exists(faiss_path):
-        print(f"ERROR: Index not found at {faiss_path}", file=sys.stderr)
-        print("  Run index_full.py first.", file=sys.stderr)
-        sys.exit(1)
 
     meta_store: LazyMetaStore | None = None
     prefer_lazy_meta = (not args.similar_file) and args.search_mode in ("vector", "hybrid", "time-travel")
@@ -1967,25 +2025,51 @@ def main() -> None:
                 print(f"{len(meta):,} records loaded.", file=sys.stderr)
 
     index = None
+    routed_index = None
+    if need_index and args.shard_router:
+        routed_index = load_sharded_router(
+            args.index_dir,
+            top_shards=int(args.router_top_shards),
+            hnsw_ef_search=max(1, int(args.hnsw_ef_search)),
+        )
     if need_index:
-        if interactive_mode and not args.similar_file:
-            index = LazyFaissIndex(
-                faiss_path,
-                verbose=not args.json_output,
-                estimated_ntotal=len(meta),
-                hnsw_ef_search=max(1, int(args.hnsw_ef_search)),
-            )
+        if routed_index is not None:
+            index = routed_index
             if not args.json_output:
-                print("Index loading deferred until first vector query.", file=sys.stderr)
+                selected = int(getattr(routed_index, "top_shards", int(args.router_top_shards)))
+                print(
+                    "Shard router active: "
+                    f"{len(getattr(routed_index, 'entries', [])):,} shards, "
+                    f"top={selected if selected != 0 else 'all'} "
+                    f"(manifest={shard_manifest_path}).",
+                    file=sys.stderr,
+                )
         else:
-            if not args.json_output:
-                print("Loading index...", end=" ", flush=True, file=sys.stderr)
-            index = load_index(
-                faiss_path,
-                hnsw_ef_search=max(1, int(args.hnsw_ef_search)),
-            )
-            if not args.json_output:
-                print(f"{index.ntotal:,} chunks loaded.", file=sys.stderr)
+            if not os.path.exists(faiss_path):
+                print(f"ERROR: Index not found at {faiss_path}", file=sys.stderr)
+                if args.shard_router and not os.path.exists(shard_manifest_path):
+                    print("  Neither monolithic index nor shard manifest found.", file=sys.stderr)
+                else:
+                    print("  Run index_full.py first.", file=sys.stderr)
+                sys.exit(1)
+            if interactive_mode and not args.similar_file:
+                index = LazyFaissIndex(
+                    faiss_path,
+                    verbose=not args.json_output,
+                    estimated_ntotal=len(meta),
+                    hnsw_ef_search=max(1, int(args.hnsw_ef_search)),
+                )
+                if not args.json_output:
+                    print("Index loading deferred until first vector query.", file=sys.stderr)
+            else:
+                if not args.json_output:
+                    print("Loading index...", end=" ", flush=True, file=sys.stderr)
+                index = load_index(
+                    faiss_path,
+                    hnsw_ef_search=max(1, int(args.hnsw_ef_search)),
+                )
+                if not args.json_output:
+                    print(f"{index.ntotal:,} chunks loaded.", file=sys.stderr)
 
     need_model = (not args.similar_file) and args.search_mode in ("vector", "hybrid", "time-travel")
     model: SentenceTransformer | LazySentenceModel | None = None

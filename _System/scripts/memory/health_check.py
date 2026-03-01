@@ -136,13 +136,17 @@ def health_check(output_dir: str = _DEFAULT_OUTPUT) -> dict:
 
     # --- Shards dir (incomplete assembly?) ---
     shards_dir = os.path.join(output_dir, "shards")
+    shard_manifest = os.path.join(output_dir, "shard_manifest.json")
     if os.path.isdir(shards_dir):
         import glob
         n_shards = len(glob.glob(os.path.join(shards_dir, "emb_*.npy")))
         if n_shards > 0:
-            report["issues"].append(f"Shards dir has {n_shards} unassembled shards")
-            if report["status"] == "OK":
-                report["status"] = "WARNING"
+            if os.path.exists(shard_manifest):
+                report["router_shards"] = n_shards
+            else:
+                report["issues"].append(f"Shards dir has {n_shards} unassembled shards")
+                if report["status"] == "OK":
+                    report["status"] = "WARNING"
 
     if not report["issues"]:
         report["issues"] = ["None"]
@@ -172,6 +176,8 @@ def print_report(report: dict) -> None:
         print(f"  Formats:")
         for k, v in sorted(fmt.items()):
             print(f"    {k:6s}: {v:>10,} chunks")
+    if report.get("router_shards"):
+        print(f"  Router shards: {int(report['router_shards']):,}")
 
     # File sizes
     print(f"\n  Files:")

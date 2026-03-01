@@ -25,6 +25,7 @@ from query_vault import (
     load_metadata_lazy,
     run_query,
 )
+from shard_router import load_sharded_router
 
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
@@ -68,6 +69,8 @@ class SearchResponse(BaseModel):
 app = FastAPI(title="Meru Semantic Search API", version="1.0.0")
 
 state = SearchServiceState(index_dir=os.environ.get("MERU_INDEX_DIR", DEFAULT_INDEX_DIR))
+SHARD_ROUTER_ENABLED = os.environ.get("MERU_SHARD_ROUTER", "1").strip().lower() not in {"0", "false", "no"}
+SHARD_ROUTER_TOP_SHARDS = int(os.environ.get("MERU_ROUTER_TOP_SHARDS", "8") or "8")
 
 
 def _json_ready(value: Any) -> Any:
@@ -96,7 +99,16 @@ def _init_state() -> None:
     lazy_meta = load_metadata_lazy(meta_path)
     state.meta = lazy_meta if lazy_meta is not None else load_metadata(meta_path)
 
-    if os.path.exists(faiss_path):
+    routed_index = None
+    if SHARD_ROUTER_ENABLED:
+        routed_index = load_sharded_router(
+            index_dir=index_dir,
+            top_shards=max(0, int(SHARD_ROUTER_TOP_SHARDS)),
+            hnsw_ef_search=_DEFAULT_HNSW_EF_SEARCH,
+        )
+    if routed_index is not None:
+        state.index = routed_index
+    elif os.path.exists(faiss_path):
         state.index = load_index(faiss_path, hnsw_ef_search=_DEFAULT_HNSW_EF_SEARCH)
     else:
         state.index = None
@@ -152,6 +164,7 @@ def search(req: SearchRequest) -> SearchResponse:
             use_priority=req.use_priority,
             hybrid_alpha=req.hybrid_alpha,
             expand_context=req.expand_context,
+            index_dir=state.index_dir,
         )
     except RuntimeError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc

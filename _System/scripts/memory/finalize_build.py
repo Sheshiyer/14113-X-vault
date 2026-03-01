@@ -8,6 +8,7 @@ MEM_DIR = "/Volumes/madara/2026/twc-vault/_System/memory"
 LOG_FILE = os.path.join(MEM_DIR, "build.log")
 STATS_FILE = os.path.join(MEM_DIR, "index_stats.json")
 SHARDS_DIR = os.path.join(MEM_DIR, "shards")
+SHARD_MANIFEST = os.path.join(MEM_DIR, "shard_manifest.json")
 CHECKPOINT = os.path.join(MEM_DIR, "index_checkpoint.json")
 CHECKPOINT_JOURNAL = f"{CHECKPOINT}.journal"
 
@@ -52,9 +53,13 @@ def finalize():
     print(f"✅ Updated {STATS_FILE}")
 
     print("🧹 Cleaning up temporary build artifacts...")
+    preserve_shards = bool(stats.get("shard_router_enabled")) or os.path.exists(SHARD_MANIFEST)
     if os.path.exists(SHARDS_DIR):
-        shutil.rmtree(SHARDS_DIR)
-        print("  - Deleted shards/")
+        if preserve_shards:
+            print("  - Preserved shards/ (required for shard router)")
+        else:
+            shutil.rmtree(SHARDS_DIR)
+            print("  - Deleted shards/")
     if os.path.exists(CHECKPOINT):
         os.remove(CHECKPOINT)
         print("  - Deleted index_checkpoint.json")
